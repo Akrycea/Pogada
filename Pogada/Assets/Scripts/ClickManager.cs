@@ -53,6 +53,7 @@ public class ClickManager : MonoBehaviour
                     //tutaj wywolujemy metode po kliknieciu przedmiotu
                     puzzleManager.DoorOpen();
                 }
+                //minigierka gdybyœmy potrzebowali
                 else if (rayHit.transform.name == "Minigra1")
                 {
                     Debug.Log("Klikniêto na " + rayHit.transform.name);

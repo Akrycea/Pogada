@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InterakcjeZbieranie : MonoBehaviour
 {
     public ClickManager clickManager;
+    public ColorChange colorChange;
 
     private void Start()
     {
@@ -23,6 +25,10 @@ public class InterakcjeZbieranie : MonoBehaviour
         if (keyTaken)
         {
             Debug.Log("Otwarto Wrota");
+            colorChange.szary = false;
+            colorChange.zielony = true;
+            //zmiana sceny kiedy rozwi¹¿e sie zagadke i kliknie drzwi
+            //SceneManager.LoadScene(sceneBuildIndex:1);
         }
         else
         {

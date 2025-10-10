@@ -8,21 +8,27 @@ public class PlayerMovement : MonoBehaviour
     public float movSpeed;
 
     public bool movingUp;
+    public bool movingIncline;
     
     void Start()
     {
         rbPlayer = GetComponent<Rigidbody2D>();
         movingUp = false;
+        movingIncline = false;
     }
 
     
     void Update()
     {
-        if (!movingUp)
+        if (!movingUp && !movingIncline)
         {
             Movement();
         }
-        else
+        else if (movingIncline)
+        {
+            MovementIncline();
+        }
+        else if(movingUp)
         {
             MovementUp();
         }
@@ -33,9 +39,17 @@ public class PlayerMovement : MonoBehaviour
     private void Movement()
     {
         
-            speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0);
+         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
+         rbPlayer.linearVelocity = new Vector2(speedX, 0);
         
+    }
+
+    private void MovementIncline()
+    {
+        speedY = Input.GetAxisRaw("Horizontal") * movSpeed;
+        speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
+        //mno¿enie/dzielenie speedow pozwala zmieniac k¹t
+        rbPlayer.linearVelocity = new Vector2(speedX, speedY);
     }
 
     private void MovementUp()
