@@ -24,10 +24,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Movement();
         }
-        else if (movingIncline)
-        {
-            MovementIncline();
-        }
+        //else if (movingIncline)
+        //{
+        //    MovementIncline();
+        //}
         else if(movingUp)
         {
             MovementUp();
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         speedY = Input.GetAxisRaw("Horizontal") * movSpeed;
         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
         //mno¿enie/dzielenie speedow pozwala zmieniac k¹t
-        rbPlayer.linearVelocity = new Vector2(speedX, speedY);
+        rbPlayer.linearVelocity = new Vector2(speedX*1/4, speedY);
     }
 
     private void MovementUp()
