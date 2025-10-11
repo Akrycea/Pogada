@@ -24,10 +24,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Movement();
         }
-        //else if (movingIncline)
-        //{
-        //    MovementIncline();
-        //}
+        else if (movingIncline)
+        {
+            MovementIncline();
+        }
         else if(movingUp)
         {
             MovementUp();
