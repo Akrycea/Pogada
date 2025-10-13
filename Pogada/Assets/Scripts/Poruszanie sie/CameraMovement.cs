@@ -16,15 +16,15 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        
-        if (cameraChange.cameraUp)
+        if (!cameraChange.cameraUp)
         {
-            transform.position = new Vector3(target.position.x + 6, target.position.y, -0.4f);
+            transform.position = new Vector3(target.position.x + 6, transform.position.y, -1.6f);
         }
         else
         {
-            transform.position = new Vector3(target.position.x + 6, transform.position.y, -0.4f);
+            transform.position = new Vector3(target.position.x + 30, transform.position.y, -1.6f);
         }
+        
     }
 
 }
