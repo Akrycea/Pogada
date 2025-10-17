@@ -1,0 +1,57 @@
+﻿title: TestDebata
+---
+test: lalala
+-> good choice
+    <<GoodChoice PointMeter>>
+    <<jump Test2>>
+-> vgood choice
+    <<VGoodChoice PointMeter>>
+    <<jump Test2>>
+-> bad choice
+    <<BadChoice PointMeter>>
+    <<jump Test2>>
+-> vbad choice
+    <<VBadChoice PointMeter>>
+    <<jump Test2>>
+===
+
+title: Test2
+---
+test: two
+-> good choice
+    <<GoodChoice PointMeter>>
+    <<jump Test3>>
+-> vgood choice
+    <<VGoodChoice PointMeter>>
+    <<jump Test3>>
+-> bad choice
+    <<BadChoice PointMeter>>
+    <<jump Test3>>
+-> vbad choice
+    <<VBadChoice PointMeter>>
+    <<jump Test3>>
+===
+
+title: Test3
+---
+test: three
+-> good choice
+    <<GoodChoice PointMeter>>
+    <<jump result>>
+-> vgood choice
+    <<VGoodChoice PointMeter>>
+    <<jump result>>
+-> bad choice
+    <<BadChoice PointMeter>>
+    <<jump result>>
+-> vbad choice
+    <<VBadChoice PointMeter>>
+    <<jump result>>
+===
+
+title: result
+---
+test: result
+<<Ending PointMeter>>
+
+===

@@ -19,6 +19,11 @@ public class ZnikanieObiektow : MonoBehaviour
     void Update()
     {
         spriteRenderer.color = new Color(1f, 1f, 1f, alphaLevel);
+
+        if (alphaLevel <= 0f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnMouseOver()
