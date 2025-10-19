@@ -4543,6 +4543,7 @@ GameObject:
   - component: {fileID: 1289355699}
   - component: {fileID: 1289355704}
   - component: {fileID: 1289355705}
+  - component: {fileID: 1289355706}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4593,12 +4594,13 @@ MonoBehaviour:
   slopeCheckDistance: 0.9
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
+  movingUp: 0
+  movingIncline: 0
   groundCheck: {fileID: 141549705}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  movingUp: 0
-  movingIncline: 0
+  colorChange: {fileID: 230619873}
 --- !u!212 &1289355702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4643,15 +4645,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4120901811166270815, guid: b42cfe0b2885fbf4e8a042d257226081, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 4.4, y: 7.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1289355703
@@ -4663,8 +4665,8 @@ Transform:
   m_GameObject: {fileID: 1289355698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -268.02, y: -39.03, z: 4}
-  m_LocalScale: {x: 3.5802114, y: 3.5802114, z: 3.5802114}
+  m_LocalPosition: {x: -268.3978, y: -39.6328, z: 4}
+  m_LocalScale: {x: 0.8283132, y: 0.8283132, z: 0.8283132}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4703,8 +4705,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.0699999, y: 1.7699997}
+  m_Offset: {x: 0.13353762, y: 0.011128327}
+  m_Size: {x: 2.1383336, y: 6.4661994}
   m_Direction: 0
 --- !u!81 &1289355705
 AudioListener:
@@ -4714,6 +4716,28 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289355698}
   m_Enabled: 1
+--- !u!95 &1289355706
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289355698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33ee6dab1b0a3ca4c8ae97ace1d2f8de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1344151214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5297,7 +5321,6 @@ GameObject:
   - component: {fileID: 1451051273}
   - component: {fileID: 1451051272}
   - component: {fileID: 1451051274}
-  - component: {fileID: 1451051275}
   m_Layer: 0
   m_Name: Wrota
   m_TagString: INTERAKTOWALNE
@@ -5421,22 +5444,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1451051275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451051271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c73834256d14c4c95dd61480ccf9ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorChange: {fileID: 230619873}
-  sprites:
-  - {fileID: 1693933150486810841, guid: bde0aaca2520fc047b5d6617195ea3b4, type: 3}
-  - {fileID: 4837247642444716801, guid: 1b8b2d8f4f1d5a24da5ee5990319816b, type: 3}
 --- !u!1 &1478086077
 GameObject:
   m_ObjectHideFlags: 0
