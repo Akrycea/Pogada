@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Burst.Intrinsics;
 using UnityEngine;
 
@@ -7,18 +8,22 @@ public class UniwersalnySpriteChanger : MonoBehaviour
     
     public SpriteRenderer spriteRenderer;
     public Sprite[] spriteArray;
-    int CurrentSprite = 0;
+    int CurrentSprite;
     public bool LoopSprites;
     public bool EndSprites;
+    public bool PrzenosPrzedmiotyPoEndSprites;
+
+    public PrzenoszeniePrzedmiotow przenoszeniePrzedmiotow;
 
     void Start()
     {
+        CurrentSprite = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnMouseDown()
     {
-        if (EndSprites && CurrentSprite == spriteArray.Length - 2)
+        if (EndSprites && CurrentSprite < spriteArray.Length - 1)
         {
             CurrentSprite = CurrentSprite + 1;
             spriteRenderer.sprite = spriteArray[CurrentSprite];
@@ -35,5 +40,19 @@ public class UniwersalnySpriteChanger : MonoBehaviour
                 CurrentSprite = -1;
             }
         }
+    }
+
+    private void Update()
+    {
+        if (PrzenosPrzedmiotyPoEndSprites && EndSprites && CurrentSprite == spriteArray.Length - 1)
+        {
+            StartCoroutine(Wait());
+        }
+    }
+
+    IEnumerator Wait()
+    {  
+        yield return new WaitForSeconds(0.1f);
+        przenoszeniePrzedmiotow.ZezwolPrzenoszenie = true;
     }
 }
