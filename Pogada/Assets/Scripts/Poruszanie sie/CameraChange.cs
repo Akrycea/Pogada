@@ -12,11 +12,11 @@ public class CameraChange : MonoBehaviour
     //kamera chodzaca za graczem2
     public Camera camera3;
 
+
     public bool cameraUp;
     public bool cameraDown;
     void Start()
     {
-        //camera1 = Camera.main;
         camera1.enabled = true;
 
 
@@ -29,6 +29,7 @@ public class CameraChange : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //zmienia kamere z 1 na 2
         Debug.Log("collision happened");
         if (!cameraUp)
         {
@@ -37,9 +38,11 @@ public class CameraChange : MonoBehaviour
             camera1.enabled = false;
             cameraUp = true;
         }   
+        //zmienia kamere z 2 na 3
         else
         {
             cameraUp = false;
+            cameraDown = true;
             camera3.enabled = true;
 
             camera2.enabled = false;

@@ -12,6 +12,13 @@ public class PrzenoszeniePrzedmiotow : MonoBehaviour
 
     public bool ZezwolPrzenoszenie;
 
+    //odniesienie do gracza
+    public Transform player;
+
+    private void Start()
+    {
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
+    }
     void OnMouseDown()
     {
         if (ZezwolPrzenoszenie == true)

@@ -11,6 +11,17 @@ public class ColliderDotykajacyCollider : MonoBehaviour
     public Sprite DocelowySprite;
     public GameObject ObiektOrginalny;
 
+    //odniesienie do licznika chmur
+    public ChmuryMinigierka chMinigierka;
+
+    //odniesienie do gracza
+    public Transform player;
+
+    private void Start()
+    {
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -30,6 +41,7 @@ public class ColliderDotykajacyCollider : MonoBehaviour
     {
         spriteRenderer.sprite = DocelowySprite;
         ObiektOrginalny.SetActive(false);
+        chMinigierka.doneSteps++;
     }
 
 }

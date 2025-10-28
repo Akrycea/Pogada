@@ -15,10 +15,14 @@ public class UniwersalnySpriteChanger : MonoBehaviour
 
     public PrzenoszeniePrzedmiotow przenoszeniePrzedmiotow;
 
+    public Transform player;
+
     void Start()
     {
         CurrentSprite = 0;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();//odniesienie do gracza
+
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
     void OnMouseDown()
