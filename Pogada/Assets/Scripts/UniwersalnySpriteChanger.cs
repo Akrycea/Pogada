@@ -3,18 +3,30 @@ using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 public class UniwersalnySpriteChanger : MonoBehaviour
-{ 
+{
     // robisz array na tyle ile spriteow ma byc i wkladasz je, pamietajac ze skrypt idzie po kolei oraz zaznaczasz czy chcesz by sprites sie loopowaly, czy konczyly na ostatnim
-    
+
+    [HideInInspector]
     public SpriteRenderer spriteRenderer;
+
+    //tablica ze sprite'ami
     public Sprite[] spriteArray;
+
+    //liczba na ktorym sprite jestes
     int CurrentSprite;
+
+    //wybierasz ktory typ chcesz
     public bool LoopSprites;
     public bool EndSprites;
+
+    //czy chcesz by po end sprites mozna bylo je przenosic
     public bool PrzenosPrzedmiotyPoEndSprites;
 
+    //refrence do skryptu z przenoszeniem przedmiotow
     public PrzenoszeniePrzedmiotow przenoszeniePrzedmiotow;
 
+    //gracz
+    [HideInInspector]
     public Transform player;
     [HideInInspector]
     public GameObject playerObject;

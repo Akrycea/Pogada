@@ -7,6 +7,24 @@ public class CoreDebaty : MonoBehaviour
     public int EnemyPoints;
 
 
+
+    [YarnCommand("Ending")]
+    public void Ending()
+    {
+        if (YourPoints > EnemyPoints)
+        {
+            Debug.Log("you won yay");
+        }
+
+        if (EnemyPoints > EnemyPoints)
+        {
+            Debug.Log("you lost");
+        }
+    }
+
+
+    //yarn commands, jest szansa ze to do wywalenia jest
+
     [YarnCommand("GoodChoice")]
     public void GoodChoice()
     {
@@ -32,17 +50,5 @@ public class CoreDebaty : MonoBehaviour
     }
 
 
-    [YarnCommand("Ending")]
-    public void Ending()
-    {
-        if(YourPoints > EnemyPoints)
-        {
-            Debug.Log("you won yay");
-        }
-
-        if (EnemyPoints > EnemyPoints)
-        {
-            Debug.Log("you lost");
-        }
-    }
+    
 }
