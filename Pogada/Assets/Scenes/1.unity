@@ -7891,6 +7891,7 @@ MonoBehaviour:
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
   movingUp: 0
   movingIncline: 0
+  groundCheckRadius: 150
   groundCheck: {fileID: 141549705}
   whatIsGround:
     serializedVersion: 2
@@ -7960,7 +7961,7 @@ Transform:
   m_GameObject: {fileID: 1289355698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -272.72, y: -38.5, z: 4}
+  m_LocalPosition: {x: -263.8, y: -37.7, z: 4}
   m_LocalScale: {x: 0.8283132, y: 0.8283132, z: 0.8283132}
   m_ConstrainProportionsScale: 0
   m_Children: []

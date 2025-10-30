@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public bool movingIncline;
 
     //deklaracja do czy mozna chodzic
-    private float groundCheckRadius;
+    [SerializeField]private float groundCheckRadius;
     [SerializeField]private Transform groundCheck;
     [SerializeField]private LayerMask whatIsGround;
     private bool isGrounded;
@@ -61,16 +61,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        if (!movingUp)
-        {
-            Movement();
-        }
-        else
-        {
-            //do ewentualnego usuniecia
-            MovementUp();
-        }
 
+       Movement();
 
     }
 
@@ -82,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        //sprawddza czy jest pod gore i zmienia speed zaleznie od tego
+        //sprawdza czy jest pod gore i zmienia speed zaleznie od tego
         if (isGrounded && !isOnSlope)
         {
             speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
@@ -231,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, whatIsGround);
         if (hit)
         {
-            slopeNormalPerp = Vector2.Perpendicular(hit.normal);
+            slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
 
             slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
 
