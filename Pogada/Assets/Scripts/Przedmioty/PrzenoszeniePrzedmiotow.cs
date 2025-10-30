@@ -3,20 +3,23 @@ using UnityEngine;
 public class PrzenoszeniePrzedmiotow : MonoBehaviour
 {
     // po prostu przenosi przedmioty jak je zlapiesz
-
     private Vector3 screenPoint;
     private Vector3 offset;
 
     //check if u want the object to change its rigidbody type from static to dynamic
     public bool ChangeRigidBodyType;
 
-    public bool ZezwolPrzenoszenie;
+    public bool ZezwolPrzenoszenie = true;
 
     //odniesienie do gracza
     public Transform player;
+    [HideInInspector]
+    public GameObject playerObject;
 
     private void Start()
     {
+        playerObject = GameObject.Find("Player");
+        player = playerObject.GetComponent<Transform>();
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
     void OnMouseDown()

@@ -7,18 +7,21 @@ public class ColliderDotykajacyCollider : MonoBehaviour
     public bool KluczMinigierka;
     public bool ChmuryMinigierka;
 
-    public SpriteRenderer spriteRenderer;
-    public Sprite DocelowySprite;
-    public GameObject ObiektOrginalny;
+    //odniesienie do puzzle minigierka
+    public PuzzleMinigierka puzzleMinigierka;
 
     //odniesienie do licznika chmur
     public ChmuryMinigierka chMinigierka;
 
     //odniesienie do gracza
     public Transform player;
+    [HideInInspector]
+    public GameObject playerObject;
 
     private void Start()
     {
+        playerObject = GameObject.Find("Player");
+        player = playerObject.GetComponent<Transform>();
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
@@ -27,21 +30,15 @@ public class ColliderDotykajacyCollider : MonoBehaviour
 
         if (collision.gameObject.name == ObjectName)
         {
-            Debug.Log("yay");
+            Debug.Log("kolizja dotyka desired kolizji");
 
             if (ChmuryMinigierka)
             {
-                Chmury();
+                puzzleMinigierka.Puzzle();
+                chMinigierka.doneSteps++;
             }
         }
 
-    }
-
-    void Chmury()
-    {
-        spriteRenderer.sprite = DocelowySprite;
-        ObiektOrginalny.SetActive(false);
-        chMinigierka.doneSteps++;
     }
 
 }

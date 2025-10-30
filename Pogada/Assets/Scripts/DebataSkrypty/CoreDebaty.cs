@@ -3,22 +3,9 @@ using Yarn.Unity;
 
 public class CoreDebaty : MonoBehaviour
 {
-    //public int MaxPoints;
     public int YourPoints;
     public int EnemyPoints;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     [YarnCommand("GoodChoice")]
     public void GoodChoice()
@@ -43,6 +30,7 @@ public class CoreDebaty : MonoBehaviour
     {
         EnemyPoints += 2;
     }
+
 
     [YarnCommand("Ending")]
     public void Ending()

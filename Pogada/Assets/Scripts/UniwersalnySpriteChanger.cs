@@ -16,12 +16,17 @@ public class UniwersalnySpriteChanger : MonoBehaviour
     public PrzenoszeniePrzedmiotow przenoszeniePrzedmiotow;
 
     public Transform player;
+    [HideInInspector]
+    public GameObject playerObject;
 
     void Start()
     {
         CurrentSprite = 0;
-        spriteRenderer = GetComponent<SpriteRenderer>();//odniesienie do gracza
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
+        //odniesienie do gracza
+        playerObject = GameObject.Find("Player");
+        player = playerObject.GetComponent<Transform>();
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 

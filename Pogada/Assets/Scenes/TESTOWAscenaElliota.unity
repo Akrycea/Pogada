@@ -562,7 +562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &275105423
 Transform:
   m_ObjectHideFlags: 0
@@ -797,7 +797,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -952,7 +952,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1209,7 +1209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1353,7 +1353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &842509416
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,7 +1476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1007407962
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,7 +1726,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1765,7 +1765,6 @@ GameObject:
   - component: {fileID: 1226829590}
   - component: {fileID: 1226829592}
   - component: {fileID: 1226829593}
-  - component: {fileID: 1226829594}
   m_Layer: 0
   m_Name: wycieraczka
   m_TagString: Untagged
@@ -1862,7 +1861,9 @@ MonoBehaviour:
   LoopSprites: 0
   EndSprites: 1
   PrzenosPrzedmiotyPoEndSprites: 0
-  przenoszeniePrzedmiotow: {fileID: 1226829594}
+  przenoszeniePrzedmiotow: {fileID: 0}
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!60 &1226829593
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1909,45 +1910,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5379003, y: -0.872102}
-      - {x: 1.3128418, y: -0.6845532}
-      - {x: 1.0690283, y: -0.5157593}
-      - {x: 0.7501953, y: -0.3657202}
-      - {x: 0.35634276, y: -0.21568115}
-      - {x: -0.15003906, y: -0.08439697}
-      - {x: -0.3375879, y: -0.046887208}
-      - {x: -0.76895016, y: 0.009377441}
-      - {x: -1.3315967, y: 0.009377441}
-      - {x: -1.6316748, y: -0.08439697}
-      - {x: -1.744204, y: -0.2531909}
-      - {x: -1.744204, y: -0.44073975}
-      - {x: -1.6691846, y: -0.5720239}
-      - {x: -1.3878614, y: -0.79708254}
-      - {x: -1.1628027, y: -0.9283667}
-      - {x: -0.8814795, y: -1.0784057}
-      - {x: -0.637666, y: -1.1721802}
-      - {x: -0.037509765, y: -1.3409741}
-      - {x: 0.16879395, y: -1.359729}
-      - {x: 0.48762694, y: -1.4159937}
-      - {x: 1.1628027, y: -1.4159937}
-      - {x: 1.4816357, y: -1.3034643}
-      - {x: 1.5754101, y: -1.190935}
-      - {x: 1.5754101, y: -1.0033863}
+    - - {x: 0.41060126, y: -0.16378933}
+      - {x: -0.47006607, y: 0.01682353}
+      - {x: -1.3298364, y: 0.05724889}
+      - {x: -1.7256463, y: -0.08047402}
+      - {x: -1.8386831, y: -0.37876242}
+      - {x: -1.5713732, y: -0.7709027}
+      - {x: -1.0528427, y: -1.0808542}
+      - {x: -0.48519552, y: -1.282943}
+      - {x: 0.38153374, y: -1.5080147}
+      - {x: 1.0079501, y: -1.4891685}
+      - {x: 1.4725541, y: -1.352437}
+      - {x: 1.6229696, y: -1.1915703}
+      - {x: 1.6471654, y: -0.9619571}
+      - {x: 1.4661757, y: -0.72401655}
+      - {x: 1.1053263, y: -0.4213844}
   m_UseDelaunayMesh: 0
---- !u!114 &1226829594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226829589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
 --- !u!1 &1400630129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +2210,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2274,7 +2252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1485978140
 Transform:
   m_ObjectHideFlags: 0
@@ -2519,6 +2497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeRigidBodyType: 1
   ZezwolPrzenoszenie: 1
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!114 &1726512196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2534,9 +2514,10 @@ MonoBehaviour:
   ObjectName: bramacollider
   KluczMinigierka: 1
   ChmuryMinigierka: 0
-  spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: 0}
-  ObiektOrginalny: {fileID: 0}
+  puzzleMinigierka: {fileID: 0}
+  chMinigierka: {fileID: 0}
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!1 &1731096933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,9 +2682,10 @@ MonoBehaviour:
   ObjectName: chmura1
   KluczMinigierka: 0
   ChmuryMinigierka: 1
-  spriteRenderer: {fileID: 1731096936}
-  DocelowySprite: {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  ObiektOrginalny: {fileID: 1971354896}
+  puzzleMinigierka: {fileID: 0}
+  chMinigierka: {fileID: 0}
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!50 &1731096938
 Rigidbody2D:
   serializedVersion: 5
@@ -2843,6 +2825,8 @@ MonoBehaviour:
   EndSprites: 1
   PrzenosPrzedmiotyPoEndSprites: 1
   przenoszeniePrzedmiotow: {fileID: 1971354904}
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!60 &1971354900
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2943,6 +2927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeRigidBodyType: 0
   ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!1 &1971645999
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,7 +3144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
