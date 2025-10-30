@@ -7,7 +7,6 @@ public class CoreDebaty : MonoBehaviour
     public int EnemyPoints;
 
 
-
     [YarnCommand("Ending")]
     public void Ending()
     {
