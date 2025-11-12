@@ -4,19 +4,20 @@ public class ZolwPoruszanie : MonoBehaviour
 {
     public Zolw zolw;
 
-    private Vector3 orginalnaPozycja;
+    public Transform ppp;
+
+    public Vector3 orginalnaPozycja;
     public Vector3 docelowaPozycja;
     public float szybkosc;
+
+    public bool lewoPrawo = true;
+
+    public bool cameBack = false;
 
 
     void Start()
     {
         orginalnaPozycja = gameObject.transform.position;
-<<<<<<< Updated upstream
-        //skomentowane poniewaz powodowalo problemy z kompilacja i nie dalo sie pracowac
-        //docelowaPozycja = przeszkody.transform.position;
-=======
->>>>>>> Stashed changes
     }
 
 
@@ -26,6 +27,23 @@ public class ZolwPoruszanie : MonoBehaviour
         kierunekPoruszania = kierunekPoruszania.normalized * Time.deltaTime * szybkosc;
         float maxDystans = Vector3.Distance(transform.position, docelowaPozycja);
         transform.position = transform.position + Vector3.ClampMagnitude(kierunekPoruszania, maxDystans);
+
+        if(docelowaPozycja == gameObject.transform.position)
+        {
+            if (lewoPrawo == true)
+            {
+                docelowaPozycja = orginalnaPozycja;
+                lewoPrawo = false;
+                cameBack = false;
+            }
+
+            if (lewoPrawo == false)
+            {
+                docelowaPozycja = ppp.transform.position;
+                lewoPrawo = true;
+                cameBack = true;
+            }
+        }
     }
 
 }

@@ -14,6 +14,8 @@ public class LodkaPoruszanie : MonoBehaviour
 
     public int numerTablicy = 0;
 
+    ZolwPoruszanie zolwPoruszanie;
+
 
     void Start()
     {
@@ -66,16 +68,9 @@ public class LodkaPoruszanie : MonoBehaviour
     }
 
     IEnumerator WaitZolw()
-    {
-<<<<<<< Updated upstream
-        //skomentowane poniewaz powodowalo problemy z kompilacja i nie dalo sie pracowac
-        //przeszkody.state = true;
-        yield return new WaitForSeconds(5f);
-        //przeszkody.state = false;
-=======
-        
-        yield return new WaitForSeconds(5f);
-        
->>>>>>> Stashed changes
+    {        
+        yield return new WaitForSeconds(3f);
+        numerTablicy++;
+        zolwPoruszanie.enabled = true;
     }
 }

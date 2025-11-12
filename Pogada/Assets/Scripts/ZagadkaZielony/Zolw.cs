@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class Zolw : MonoBehaviour
 {
@@ -6,13 +8,18 @@ public class Zolw : MonoBehaviour
 
     void Update()
     {
-
+        if(zolwPoruszanie.cameBack == true)
+        {
+            zolwPoruszanie.enabled = false;
+        }
     }
 
     void OnMouseDown()
     {
         zolwPoruszanie.enabled = true;
     }
+
+    
 
 
 }
