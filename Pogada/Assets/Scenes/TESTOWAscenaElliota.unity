@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 321599114}
   - component: {fileID: 321599117}
   m_Layer: 0
-  m_Name: p4
+  m_Name: zolw
   m_TagString: ZGpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1022,8 +1022,8 @@ GameObject:
   - component: {fileID: 528993583}
   - component: {fileID: 528993584}
   m_Layer: 0
-  m_Name: p2
-  m_TagString: ZGpassable
+  m_Name: patyki2
+  m_TagString: ZGnotpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1806,7 +1806,7 @@ GameObject:
   - component: {fileID: 759694867}
   - component: {fileID: 759694866}
   m_Layer: 0
-  m_Name: ppp1 (1)
+  m_Name: sciezka2
   m_TagString: ZGpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 868451105}
   - component: {fileID: 868451104}
   m_Layer: 0
-  m_Name: hhhh
+  m_Name: tlotymczasowe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 904840833}
   - component: {fileID: 904840832}
   m_Layer: 0
-  m_Name: ppp1
+  m_Name: sciezka1
   m_TagString: ZGpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3334,9 +3334,10 @@ GameObject:
   - component: {fileID: 1472609446}
   - component: {fileID: 1472609447}
   - component: {fileID: 1472609448}
+  - component: {fileID: 1472609449}
   m_Layer: 0
-  m_Name: p3
-  m_TagString: ZGpassable
+  m_Name: rybka
+  m_TagString: ZGnotpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3505,6 +3506,19 @@ MonoBehaviour:
   spriteArray:
   - {fileID: -2563035158529919731, guid: 59ae5c3096ff956409da1b82eef44653, type: 3}
   - {fileID: -1843735297685545143, guid: 5a20d0a1023c4084a994507e3c56991e, type: 3}
+--- !u!114 &1472609449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472609443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911d6d76df0b9cd4b9e10f05ea2cb4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przeszkody: {fileID: 1472609448}
 --- !u!1 &1485978139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,7 +4009,7 @@ GameObject:
   - component: {fileID: 1957467089}
   - component: {fileID: 1957467090}
   m_Layer: 0
-  m_Name: p1
+  m_Name: patyki1
   m_TagString: ZGpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4482,8 +4496,8 @@ GameObject:
   - component: {fileID: 2001490807}
   - component: {fileID: 2001490810}
   m_Layer: 0
-  m_Name: p5
-  m_TagString: ZGpassable
+  m_Name: koniec
+  m_TagString: ZGnotpassable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

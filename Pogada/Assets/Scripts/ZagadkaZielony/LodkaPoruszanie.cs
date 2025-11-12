@@ -38,18 +38,35 @@ public class LodkaPoruszanie : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("ZGpassable"))
+        if (collision.gameObject.name != "zolw")
         {
-            Debug.Log("passable");
-        }
+            if (collision.CompareTag("ZGpassable"))
+            {
+                
+            }
 
-        if (collision.CompareTag("ZGnotpassable"))
-        {
-            Debug.Log("notpassable");
-            transform.position = orginalnaPozycja;
-            docelowaPozycja = przeszkody[0].transform.position;
-            numerTablicy = 0;
-            enabled = false;
+            if (collision.CompareTag("ZGnotpassable"))
+            {
+                transform.position = orginalnaPozycja;
+                docelowaPozycja = przeszkody[0].transform.position;
+                numerTablicy = 0;
+                enabled = false;
+            }
         }
+        else if (collision.gameObject.name == "zolw")
+        {
+            StartCoroutine(WaitZolw());
+        }
+        else if (collision.gameObject.name == "koniec")
+        {
+            Debug.Log("koniec, done");
+        }
+    }
+
+    IEnumerator WaitRybka()
+    {
+        przeszkody.state = true;
+        yield return new WaitForSeconds(5f);
+        przeszkody.state = false;
     }
 }
