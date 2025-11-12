@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System.Collections;
 
 public class LodkaPoruszanie : MonoBehaviour
 {
@@ -64,11 +65,17 @@ public class LodkaPoruszanie : MonoBehaviour
         }
     }
 
-    IEnumerator WaitRybka()
+    IEnumerator WaitZolw()
     {
+<<<<<<< Updated upstream
         //skomentowane poniewaz powodowalo problemy z kompilacja i nie dalo sie pracowac
         //przeszkody.state = true;
         yield return new WaitForSeconds(5f);
         //przeszkody.state = false;
+=======
+        
+        yield return new WaitForSeconds(5f);
+        
+>>>>>>> Stashed changes
     }
 }
