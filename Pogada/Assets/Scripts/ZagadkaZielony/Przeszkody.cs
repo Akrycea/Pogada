@@ -1,16 +1,47 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Przeszkody : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool state;
+
+    [HideInInspector]
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] spriteArray;
+
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (gameObject.CompareTag("ZGpassable"))
+        {
+            state = true;
+        }
+
+        if (gameObject.CompareTag("ZGnotpassable"))
+        {
+            state = false;
+        }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (state)
+        {
+            gameObject.tag = "ZGpassable";
+            spriteRenderer.sprite = spriteArray[0];
+        }
+
+        if (!state)
+        {
+            gameObject.tag = "ZGnotpassable";
+            spriteRenderer.sprite = spriteArray[1];
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        state = !state;
     }
 }

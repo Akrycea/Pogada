@@ -52,10 +52,4 @@ public class LodkaPoruszanie : MonoBehaviour
             enabled = false;
         }
     }
-
-    private void OnMouseDown()
-    {
-        
-    }
-
 }
