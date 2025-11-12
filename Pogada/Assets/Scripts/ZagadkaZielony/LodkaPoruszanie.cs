@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -55,7 +56,7 @@ public class LodkaPoruszanie : MonoBehaviour
         }
         else if (collision.gameObject.name == "zolw")
         {
-            StartCoroutine(WaitZolw());
+           // StartCoroutine(WaitZolw());
         }
         else if (collision.gameObject.name == "koniec")
         {
@@ -65,8 +66,9 @@ public class LodkaPoruszanie : MonoBehaviour
 
     IEnumerator WaitRybka()
     {
-        przeszkody.state = true;
+        //skomentowane poniewaz powodowalo problemy z kompilacja i nie dalo sie pracowac
+        //przeszkody.state = true;
         yield return new WaitForSeconds(5f);
-        przeszkody.state = false;
+        //przeszkody.state = false;
     }
 }

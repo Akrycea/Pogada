@@ -12,7 +12,8 @@ public class ZolwPoruszanie : MonoBehaviour
     void Start()
     {
         orginalnaPozycja = gameObject.transform.position;
-        docelowaPozycja = przeszkody.transform.position;
+        //skomentowane poniewaz powodowalo problemy z kompilacja i nie dalo sie pracowac
+        //docelowaPozycja = przeszkody.transform.position;
     }
 
 
