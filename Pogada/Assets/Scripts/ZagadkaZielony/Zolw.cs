@@ -4,11 +4,11 @@ using Unity.VisualScripting;
 
 public class Zolw : MonoBehaviour
 {
-    ZolwPoruszanie zolwPoruszanie;
+    public ZolwPoruszanie zolwPoruszanie;
 
     void Update()
     {
-        if(zolwPoruszanie.cameBack == true)
+        if(zolwPoruszanie.cameBack)
         {
             zolwPoruszanie.enabled = false;
         }
@@ -16,6 +16,7 @@ public class Zolw : MonoBehaviour
 
     void OnMouseDown()
     {
+        zolwPoruszanie.cameBack = false;
         zolwPoruszanie.enabled = true;
     }
 

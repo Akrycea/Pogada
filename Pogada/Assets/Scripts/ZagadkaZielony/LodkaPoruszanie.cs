@@ -8,13 +8,13 @@ public class LodkaPoruszanie : MonoBehaviour
 {
     public Transform[] przeszkody;
 
-    private Vector3 orginalnaPozycja;
+    public Vector3 orginalnaPozycja;
     public Vector3 docelowaPozycja;
     public float szybkosc;
 
     public int numerTablicy = 0;
 
-    ZolwPoruszanie zolwPoruszanie;
+    public ZolwPoruszanie zolwPoruszanie;
 
 
     void Start()
@@ -42,7 +42,7 @@ public class LodkaPoruszanie : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name != "zolw")
+        if (collision.gameObject.name != "zolw" && collision.gameObject.name != "koniec")
         {
             if (collision.CompareTag("ZGpassable"))
             {
@@ -59,18 +59,19 @@ public class LodkaPoruszanie : MonoBehaviour
         }
         else if (collision.gameObject.name == "zolw")
         {
-           // StartCoroutine(WaitZolw());
+            //StartCoroutine(WaitZolw());
         }
         else if (collision.gameObject.name == "koniec")
         {
             Debug.Log("koniec, done");
+            enabled = false;
         }
     }
 
-    IEnumerator WaitZolw()
-    {        
-        yield return new WaitForSeconds(3f);
-        numerTablicy++;
-        zolwPoruszanie.enabled = true;
-    }
+    //IEnumerator WaitZolw()
+    //{        
+    //    yield return new WaitForSeconds(3f);
+    //    numerTablicy++;
+    //    zolwPoruszanie.enabled = true;
+    //}
 }

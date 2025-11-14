@@ -1,10 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
 public class ZolwPoruszanie : MonoBehaviour
 {
     public Zolw zolw;
 
-    public Transform ppp;
+    public Transform zolwdocelowy;
 
     public Vector3 orginalnaPozycja;
     public Vector3 docelowaPozycja;
@@ -17,7 +18,8 @@ public class ZolwPoruszanie : MonoBehaviour
 
     void Start()
     {
-        orginalnaPozycja = gameObject.transform.position;
+        orginalnaPozycja = transform.position;
+        docelowaPozycja = zolwdocelowy.transform.position;
     }
 
 
@@ -28,22 +30,42 @@ public class ZolwPoruszanie : MonoBehaviour
         float maxDystans = Vector3.Distance(transform.position, docelowaPozycja);
         transform.position = transform.position + Vector3.ClampMagnitude(kierunekPoruszania, maxDystans);
 
-        if(docelowaPozycja == gameObject.transform.position)
+        if(docelowaPozycja == transform.position)
         {
+            Debug.Log("dotknieto");
+
             if (lewoPrawo == true)
             {
-                docelowaPozycja = orginalnaPozycja;
-                lewoPrawo = false;
-                cameBack = false;
+                StartCoroutine(WaitLewo());
             }
 
             if (lewoPrawo == false)
             {
-                docelowaPozycja = ppp.transform.position;
-                lewoPrawo = true;
+                StartCoroutine(WaitPrawo());
+            }
+
+            if(lewoPrawo == false && transform.position == orginalnaPozycja)
+            {
                 cameBack = true;
+                gameObject.tag = "ZGpassable";
             }
         }
+
+        IEnumerator WaitLewo()
+        {
+            yield return new WaitForSeconds(2f);
+            docelowaPozycja = orginalnaPozycja;
+            lewoPrawo = false;
+        }
+
+        IEnumerator WaitPrawo()
+        {
+            yield return new WaitForSeconds(2f);
+            docelowaPozycja = zolwdocelowy.transform.position;
+            lewoPrawo = true;
+        }
     }
+
+
 
 }
