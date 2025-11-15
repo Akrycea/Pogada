@@ -15,6 +15,10 @@ public class ColliderDotykajacyCollider : MonoBehaviour
     //odniesienie do licznika chmur
     public ChmuryMinigierka chMinigierka;
 
+    //odniesienie do bramy, aby zmienic jej sprite
+    private SpriteChangeAfterPuzzle bramaSpriteChange;
+    private GameObject brama;
+
     //odniesienie do gracza
     [HideInInspector]
     public Transform player;
@@ -41,6 +45,16 @@ public class ColliderDotykajacyCollider : MonoBehaviour
                 //tu robi to co jest w puzzle minigierka skrypt
                 puzzleMinigierka.Puzzle();
                 chMinigierka.doneSteps++;
+            }
+            else if (KluczMinigierka)
+            {
+                //odniesienie do bramy, aby zmienic jej sprite
+                bramaSpriteChange = GameObject.Find("bramaSprite").GetComponent<SpriteChangeAfterPuzzle>();
+                //zmienia sprite bramy
+                bramaSpriteChange.myPuzzleGotCompleted();
+
+                brama = GameObject.Find("bramaStop");
+                brama.SetActive(false);
             }
         }
 

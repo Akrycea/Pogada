@@ -15,7 +15,7 @@ public class ChmuryMinigierka : MonoBehaviour
         if (doneSteps == 5)
         {
             Debug.Log(doneSteps);
-            stepsCollider = GameObject.Find("Square (16)").GetComponent<Collider2D>();
+            stepsCollider = GameObject.Find("Teren_Ch-B").GetComponent<Collider2D>();
             stepsCollider.isTrigger = false;
         }
     }
