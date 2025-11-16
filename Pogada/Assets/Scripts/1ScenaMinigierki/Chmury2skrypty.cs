@@ -87,14 +87,16 @@ public class Chmury2skrypty : MonoBehaviour
     {
         if (CurrentSprite == spriteArray.Length - 1)
         {
-            StartCoroutine(Wait());
+            //StartCoroutine(Wait());
+            ZezwolPrzenoszenie = true;
+            allowSpriteChange = false;
         }
     }
 
-    IEnumerator Wait()
-    {
-        allowSpriteChange = false;
-        yield return new WaitForSeconds(0.5f);
-        ZezwolPrzenoszenie = true;
-    }
+    //IEnumerator Wait()
+    //{
+    //    allowSpriteChange = false;
+    //    yield return new WaitForSeconds(0.5f);
+    //    ZezwolPrzenoszenie = true;
+    //}
 }

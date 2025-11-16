@@ -1,0 +1,186 @@
+title: M15_PomocZieleni
+---
+Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
+
+Bohater: Czy wzięcie pluszaka miało z tym pomóc?
+
+Viri: Pomyślałem, że jeśli go wyczyszczę, to będzie po problemie i się pogodzą.
+
+Viri: Ale woda płynęła za szybko i wyrwała mi Perełkę, i ja, ja…
+
+Viri: Ja nie wiedziałem już co zrobić!
+
+===
+
+title: M_1DebataZielieni1
+---
+->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę Liv?
+	<<VGoodChoice PointMeter>>
+	<<jump M15_DebataZielieni1_1>>
+->Co ma piernik do wiatraka?
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni1_2>>
+->To słaby pomysł.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni1_2>>
+->Czemu twoja interwencja miałaby naprawić sytuację?
+	<<GoodChoice PointMeter>>
+	<<jump M15_DebataZielieni1_1>>
+->Nie rozwiązuj problemów innych osób.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni1_2>>
+===
+
+title: M15_DebataZielieni1_1
+---
+Viri: O to się pokłócili…
+	<<jump M15_DebataZielieni2>>
+===
+
+title: M15_DebataZielieni1_2
+---
+Viri: Musiałem im pomóc! To było jedyne logiczne wyjście!
+	<<jump M15_DebataZielieni2>>
+===
+
+title: M15_DebataZielieni2
+---
+->Każ Robertowi wyczyścić pluszaka.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni2_2>>
+->Po prostu porozmawiaj z Robertem.
+	<<GoodChoice PointMeter>>
+	<<jump M15_DebataZielieni2_1>>
+->Powinieneś zostawić Perełkę.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni2_2>>
+->Powinieneś zostawić Liv w spokoju.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni2_2>>
+->Umycie Perełki chyba nie pomoże.
+	<<VGoodChoice PointMeter>>
+	<<jump M15_DebataZielieni2_1>>
+===
+
+title: M15_DebataZielieni2_1
+---
+Viri: Czemu? Przecież to Perełka jest sednem problemu.
+	<<jump M15_DebataZielieni3>>
+===
+
+title: M15_DebataZielieni2_2
+---
+Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak nie chcesz mi pomóc, to nie!
+	<<jump M15_DebataZielieni3>>
+===
+
+
+title: M15_DebataZielieni3
+---
+->Liv i Robert powinni sami o siebie zadbać.
+	<<GoodChoice PointMeter>>
+	<<jump M15_DebataZielieni3_1>>
+->Problemem jest Robert.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni3_2>>
+->Problemem jest zszarpane zaufanie Liv i Roberta.
+	<<VGoodChoice PointMeter>>
+	<<jump M15_DebataZielieni3_1>>
+->Zabawki niczego nie naprawią.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni3_2>>
+->Problemem jest rozbita rzeźba Roberta.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni3_2>>
+===
+
+title: M15_DebataZielieni3_1
+---
+Viri: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomysłem był Perełka…
+	<<jump M15_DebataZielieni4>>
+===
+title: M15_DebataZielieni3_2
+---
+Viri: Co ty możesz wiedzieć o ich problemach?
+	<<jump M15_DebataZielieni4>>
+===
+
+title: M15_DebataZielieni4
+---
+->Perełka nie ma z tą relacją nic wspólnego.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni4_2>>
+->Ich relację mogą naprawić tylko oni sami.
+	<<VGoodChoice PointMeter>>
+	<<jump M15_DebataZielieni4_1>>
+->Ich relacja to nie twoja sprawa.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni4_2>>
+->Marnujesz swój czas
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni4_2>>
+->Nic tutaj nie zdziałasz.
+	<<GoodChoice PointMeter>>
+	<<jump M15_DebataZielieni4_1>>
+===
+
+title: M15_DebataZielieni4_1
+---
+Viri: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu nic nie robić.
+	<<jump M15_DebataZielieni5>>
+===
+title: M15_DebataZielieni4_2
+---
+Viri: Nic nie rozumiesz. W ogóle ich nie znasz. Wszystko poszło właśnie o Perełkę, głupku.
+	<<jump M15_DebataZielieni5>>
+===
+
+title: M15_DebataZielieni5
+---
+->Wystarczy zmusić ich do rozmowy.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni5_2>>
+->Możemy spróbować porozmawiać z Robertem.
+	<<VGoodChoice PointMeter>>
+	<<jump M15_DebataZielieni5_1>>
+->Skupiasz się na złym problemie dzieciaku.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni5_2>>
+->Rób za mediatora.
+	<<GoodChoice PointMeter>>
+	<<jump M15_DebataZielieni5_1>>
+->Nie możesz naprawiać zabawek innych dzieci.
+	<<BadChoice PointMeter>>
+	<<jump M15_DebataZielieni5_2>>
+===
+
+title: M15_DebataZielieni5_1
+---
+Viri: Skoro uważasz, że to pomoże… 
+	<<jump M15_DebataZielieniPoDebata>>
+===
+title: M15_DebataZielieni5_2
+---
+Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
+	<<jump M15_DebataZielieniPoDebata>>
+===
+
+
+title: M15_DebataZielieniPoDebata
+---
+Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
+
+Viri: Może to po prostu nieporozumienie.
+
+Bohater: Jestem pewien, że kiedy poznamy obie strony historii, zaraz  zrozumiemy o co dokładnie chodzi i znajdziemy jakieś rozwiązanie.
+
+Viri: A co z Perełką?
+
+Bohater: Na pewno pomoże uspokoić Liv.
+
+Bohater: Może damy jej go razem z Robertem? 
+
+Bohater: Będzie to dobry prezent na pogodzenie.
+
+Viri: Dobrze!
+===
