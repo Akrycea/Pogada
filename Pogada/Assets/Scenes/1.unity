@@ -1058,10 +1058,9 @@ GameObject:
   m_Component:
   - component: {fileID: 187191539}
   - component: {fileID: 187191538}
-  - component: {fileID: 187191537}
-  - component: {fileID: 187191536}
   - component: {fileID: 187191534}
   - component: {fileID: 187191540}
+  - component: {fileID: 187191541}
   m_Layer: 0
   m_Name: chmura2
   m_TagString: Untagged
@@ -1096,45 +1095,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &187191536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187191533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
---- !u!114 &187191537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187191533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7fcec05c7d6bc4aba57afd65f5844a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 187191538}
-  spriteArray:
-  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
-  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
-  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  LoopSprites: 0
-  EndSprites: 1
-  PrzenosPrzedmiotyPoEndSprites: 1
-  przenoszeniePrzedmiotow: {fileID: 187191536}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!212 &187191538
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1264,6 +1224,27 @@ PolygonCollider2D:
       - {x: 2.2571707, y: -1.2187005}
       - {x: 2.3541126, y: 0.4375407}
   m_UseDelaunayMesh: 0
+--- !u!114 &187191541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187191533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  spriteArray:
+  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
+  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
+  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
+  MouseDown: 0
 --- !u!1 &197267384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,10 +1255,9 @@ GameObject:
   m_Component:
   - component: {fileID: 197267390}
   - component: {fileID: 197267389}
-  - component: {fileID: 197267388}
-  - component: {fileID: 197267387}
   - component: {fileID: 197267385}
   - component: {fileID: 197267391}
+  - component: {fileID: 197267392}
   m_Layer: 0
   m_Name: chmura3
   m_TagString: Untagged
@@ -1312,45 +1292,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &197267387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197267384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
---- !u!114 &197267388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197267384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7fcec05c7d6bc4aba57afd65f5844a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 197267389}
-  spriteArray:
-  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
-  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
-  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  LoopSprites: 0
-  EndSprites: 1
-  PrzenosPrzedmiotyPoEndSprites: 1
-  przenoszeniePrzedmiotow: {fileID: 197267387}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!212 &197267389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1478,6 +1419,27 @@ PolygonCollider2D:
       - {x: 2.5113447, y: -0.14418258}
       - {x: 2.0649407, y: 0.31972536}
   m_UseDelaunayMesh: 0
+--- !u!114 &197267392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197267384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  spriteArray:
+  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
+  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
+  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
+  MouseDown: 0
 --- !u!1 &222354728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,10 +1905,9 @@ GameObject:
   m_Component:
   - component: {fileID: 264387665}
   - component: {fileID: 264387664}
-  - component: {fileID: 264387663}
-  - component: {fileID: 264387662}
   - component: {fileID: 264387660}
   - component: {fileID: 264387666}
+  - component: {fileID: 264387667}
   m_Layer: 0
   m_Name: chmura1
   m_TagString: Untagged
@@ -1981,45 +1942,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &264387662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264387659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
---- !u!114 &264387663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264387659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7fcec05c7d6bc4aba57afd65f5844a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 264387664}
-  spriteArray:
-  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
-  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
-  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  LoopSprites: 0
-  EndSprites: 1
-  PrzenosPrzedmiotyPoEndSprites: 1
-  przenoszeniePrzedmiotow: {fileID: 264387662}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!212 &264387664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2147,6 +2069,27 @@ PolygonCollider2D:
       - {x: 2.4130015, y: -0.3353051}
       - {x: 1.776056, y: 0.40659976}
   m_UseDelaunayMesh: 0
+--- !u!114 &264387667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264387659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  spriteArray:
+  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
+  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
+  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
+  MouseDown: 0
 --- !u!1 &269234687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,10 +4042,9 @@ GameObject:
   m_Component:
   - component: {fileID: 687792846}
   - component: {fileID: 687792845}
-  - component: {fileID: 687792844}
-  - component: {fileID: 687792843}
   - component: {fileID: 687792841}
   - component: {fileID: 687792847}
+  - component: {fileID: 687792848}
   m_Layer: 0
   m_Name: chmura4
   m_TagString: Untagged
@@ -4137,45 +4079,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &687792843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687792840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
---- !u!114 &687792844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687792840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7fcec05c7d6bc4aba57afd65f5844a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 687792845}
-  spriteArray:
-  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
-  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
-  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  LoopSprites: 0
-  EndSprites: 1
-  PrzenosPrzedmiotyPoEndSprites: 1
-  przenoszeniePrzedmiotow: {fileID: 687792843}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!212 &687792845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4302,6 +4205,27 @@ PolygonCollider2D:
       - {x: 1.0938857, y: -1.2982426}
       - {x: 2.2078624, y: -1.091181}
   m_UseDelaunayMesh: 0
+--- !u!114 &687792848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687792840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  spriteArray:
+  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
+  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
+  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
+  MouseDown: 0
 --- !u!1 &729019427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,10 +5605,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1148579030}
   - component: {fileID: 1148579029}
-  - component: {fileID: 1148579028}
-  - component: {fileID: 1148579027}
   - component: {fileID: 1148579025}
   - component: {fileID: 1148579031}
+  - component: {fileID: 1148579032}
   m_Layer: 0
   m_Name: chmura5
   m_TagString: Untagged
@@ -5719,45 +5642,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1148579027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148579024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 0
-  ZezwolPrzenoszenie: 0
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
---- !u!114 &1148579028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148579024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7fcec05c7d6bc4aba57afd65f5844a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1148579029}
-  spriteArray:
-  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
-  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
-  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
-  LoopSprites: 0
-  EndSprites: 1
-  PrzenosPrzedmiotyPoEndSprites: 1
-  przenoszeniePrzedmiotow: {fileID: 1148579027}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!212 &1148579029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5885,6 +5769,27 @@ PolygonCollider2D:
       - {x: 2.180974, y: 0.046395127}
       - {x: 1.4330261, y: 0.96235317}
   m_UseDelaunayMesh: 0
+--- !u!114 &1148579032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148579024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZezwolPrzenoszenie: 0
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  spriteArray:
+  - {fileID: -6454930758600079245, guid: c5579a84dbebe0745a8ee2ddbd4007c0, type: 3}
+  - {fileID: 9073845281653625145, guid: ee369607c02acf54ca95d38cecceaa7e, type: 3}
+  - {fileID: 7796742072037703983, guid: 75da96b3f7c37934faf552a57dc2b0a6, type: 3}
+  MouseDown: 0
 --- !u!1 &1185200742
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,7 +6395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b304ebed9e131d47a7d0fb7a5a15183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movSpeed: 15
+  movSpeed: 50
   slopeCheckDistance: 0.9
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
@@ -7031,7 +6936,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

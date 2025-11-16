@@ -31,6 +31,8 @@ public class UniwersalnySpriteChanger : MonoBehaviour
     [HideInInspector]
     public GameObject playerObject;
 
+    private bool allowSpriteChange = true;
+
     void Start()
     {
         CurrentSprite = 0;
@@ -44,21 +46,24 @@ public class UniwersalnySpriteChanger : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (EndSprites && CurrentSprite < spriteArray.Length - 1)
+        if (allowSpriteChange)
         {
-            CurrentSprite = CurrentSprite + 1;
-            spriteRenderer.sprite = spriteArray[CurrentSprite];
-            
-        } 
-
-        if (LoopSprites)
-        {
-            CurrentSprite = CurrentSprite + 1;
-            spriteRenderer.sprite = spriteArray[CurrentSprite];
-
-            if (CurrentSprite == spriteArray.Length - 1)
+            if (EndSprites && CurrentSprite < spriteArray.Length - 1)
             {
-                CurrentSprite = -1;
+                CurrentSprite = CurrentSprite + 1;
+                spriteRenderer.sprite = spriteArray[CurrentSprite];
+
+            }
+
+            if (LoopSprites)
+            {
+                CurrentSprite = CurrentSprite + 1;
+                spriteRenderer.sprite = spriteArray[CurrentSprite];
+
+                if (CurrentSprite == spriteArray.Length - 1)
+                {
+                    CurrentSprite = -1;
+                }
             }
         }
     }
@@ -73,7 +78,8 @@ public class UniwersalnySpriteChanger : MonoBehaviour
 
     IEnumerator Wait()
     {  
-        yield return new WaitForSeconds(1f);
+        allowSpriteChange = false;
+        yield return new WaitForSeconds(0.5f);
         przenoszeniePrzedmiotow.ZezwolPrzenoszenie = true;
     }
 }
