@@ -25,6 +25,9 @@ public class ColliderDotykajacyCollider : MonoBehaviour
     [HideInInspector]
     public GameObject playerObject;
 
+    public Wycieraczka wycieraczka;
+    public PrzenoszeniePrzedmiotow przenoszeniePrzedmiotow;
+
     private void Start()
     {
         //to wszystko do gracza jest
@@ -46,7 +49,7 @@ public class ColliderDotykajacyCollider : MonoBehaviour
                 puzzleMinigierka.Puzzle();
                 chMinigierka.doneSteps++;
             }
-            else if (KluczMinigierka)
+            else if (KluczMinigierka && wycieraczka.otwartaWycieraczka == true)
             {
                 //odniesienie do bramy, aby zmienic jej sprite
                 bramaSpriteChange = GameObject.Find("bramaSprite").GetComponent<SpriteChangeAfterPuzzle>();
