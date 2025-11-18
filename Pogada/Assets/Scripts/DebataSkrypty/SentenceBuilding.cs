@@ -11,6 +11,7 @@ using Yarn.Unity;
 
 public class SentenceBuilding : MonoBehaviour
 {
+    public GameObject BudowanieZdanObiekt;
     public string word;
 
     //budowane przez gracza zdanie, poczatkowo puste i wypelnia sie z klikaniem
@@ -61,36 +62,42 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer2))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer3))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer4))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer5))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer6))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
             dialogueRunner.StartDialogue("M15_Z");
+            BudowanieZdanObiekt.SetActive(false);
         }
 
         //jesli zdanie jest mid

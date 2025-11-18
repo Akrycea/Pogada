@@ -5,6 +5,9 @@ using Yarn.Unity;
 public class YarnCommands : MonoBehaviour
 {
     public DialogueRunner dialRunner;
+
+    public ColorChange colorChange;
+
     //po rozmowie z zielonym pozwala pogadac z granat
     private ClickDialog granat;
     [YarnCommand("granatOdpalDialog")]
@@ -29,5 +32,12 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M15_PomocZieleni");
+    }
+
+    [YarnCommand("zielonywygranadebata")]
+    public void zielonywygranadebata()
+    {
+        colorChange.szary = false;
+        colorChange.zielony = true;
     }
 }

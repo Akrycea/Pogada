@@ -16,6 +16,8 @@ public class LodkaPoruszanie : MonoBehaviour
 
     public ZolwPoruszanie zolwPoruszanie;
 
+    public ZielonyDebataPlayer zielonyDebataPlayer;
+
 
     void Start()
     {
@@ -63,6 +65,8 @@ public class LodkaPoruszanie : MonoBehaviour
         }
         else if (collision.gameObject.name == "koniec")
         {
+            zielonyDebataPlayer.wygranaMinigierka = true;
+            gameObject.SetActive(false);
             Debug.Log("koniec, done");
             enabled = false;
         }
