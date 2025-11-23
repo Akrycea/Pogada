@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3989124476",
+    "Type": "Event",
+    "GUID": "{14732FA4-F86C-4AAB-96A3-DB4B5A7684C8}",
+    "Language": "SFX",
+    "Hash": "{423B4415-8230-E34A-BF64-7E4381F7E80D}",
+    "ObjectPath": "Play_OLD_MOUTAIN_v2",
+    "ShortName": "Play_OLD_MOUTAIN_v2",
+    "Path": "Event/Play_OLD_MOUTAIN_v2.bnk",
+    "Media": [
+     {
+      "Id": "239732216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "OLD_MOUTAIN_v2.wav",
+      "Path": "Media/239732216.wem",
+      "CachePath": "D1/{D1469D60-7A49-BC9A-ABC9-8B3A16B82CE1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3989124476",
+      "Name": "Play_OLD_MOUTAIN_v2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_OLD_MOUTAIN_v2",
+      "GUID": "{14732FA4-F86C-4AAB-96A3-DB4B5A7684C8}",
+      "DurationType": "OneShot",
+      "DurationMin": "185.1923",
+      "DurationMax": "185.1923",
+      "MediaRefs": [
+       {
+        "Id": "239732216"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9F9443CD-1AFD-A87A-C07F-9E8962E26B7F}"
+ }
+}

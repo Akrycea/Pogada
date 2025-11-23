@@ -1,0 +1,232 @@
+Event	ID	Name			Wwise Object Path	Notes
+	410464667	Play_Pick_Up_Key_01			\Default Work Unit\SFX\Mountain\Play_Pick_Up_Key_01	
+	1024492458	Play_Rug_Mountain			\Default Work Unit\SFX\Mountain\Play_Rug_Mountain	
+	2138404147	AMB_Mountain_No_Color			\Default Work Unit\Ambient\AMB_Mountain_No_Color	
+	2385628198	Footsteps			\Default Work Unit\Footsteps\Footsteps	
+	2647172752	Play_Voice_5			\Default Work Unit\Vocie\Play_Voice_5	
+	2647172753	Play_Voice_4			\Default Work Unit\Vocie\Play_Voice_4	
+	2647172754	Play_Voice_7			\Default Work Unit\Vocie\Play_Voice_7	
+	2647172755	Play_Voice_6			\Default Work Unit\Vocie\Play_Voice_6	
+	2647172756	Play_Voice_1			\Default Work Unit\Vocie\Play_Voice_1	
+	2647172758	Play_Voice_3			\Default Work Unit\Vocie\Play_Voice_3	
+	2647172759	Play_Voice_2			\Default Work Unit\Vocie\Play_Voice_2	
+	3706461557	Play_Brama			\Default Work Unit\SFX\Mountain\Play_Brama	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	2195636714	Dirt	Footsteps			
+	3464232719	Clouds	Footsteps			
+
+Effect plug-ins	ID	Name	Type				Notes
+	161226115	Compressor (Custom)	Wwise Compressor			
+	264249939	Parametric EQ (Custom)	Wwise Parametric EQ			
+	276416426	Deep (Custom)	Wwise Flanger			
+	315950382	Not_A_Yellow_Submarine (Custom)	Wwise RoomVerb			
+	338845067	Deep (Custom)	Wwise Flanger			
+	450305673	Delay (Custom)	Wwise Delay			
+	562621993	Deep (Custom)	Wwise Flanger			
+	565213176	Parametric EQ (Custom)	Wwise Parametric EQ			
+	679712982	Many_Odd_Harm_Notches (Custom)	Wwise Flanger			
+	777293691	RoomVerb (Custom)	Wwise RoomVerb			
+	799409132	Parametric EQ (Custom)	Wwise Parametric EQ			
+	809495692	Parametric EQ (Custom)	Wwise Parametric EQ			
+	865329710	Echoes_Linear (Custom)	Wwise Delay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	15932906	Voice3_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BC\{BC06C57B-CE23-6C5A-C9C4-1A9134AF5F89}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_5		9924
+	19202382	Voice2_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\91\{916B2168-180C-FB5D-7C2B-C145DD2E19CC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_7		9206
+	23039238	Voice4_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\73\{73FD87E7-FE3F-1695-C8D5-E2E092174D3F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_6		8534
+	26251264	Voice5_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DA\{DAEEAFF2-8619-E1CD-8645-2A404F28800B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_8		17122
+	28350374	Voice2_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\41\{41F7DA4E-DA58-C83B-97A5-A84A80F43A55}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_1		5698
+	38684256	VoiceVoice1_14	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DE\{DEA0E86E-675F-73E6-17EB-CF692CF7DA76}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_14		15738
+	38686875	Voice5_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\39\{39A179B5-B5FA-EE62-0237-01319788D009}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_2		10680
+	40616492	FT DIRT 18	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\8E\{8E000798-C336-F149-65CE-23F62447B2BC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 18		48230
+	45624527	Voice7_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BD\{BDE3B3C6-7E3E-7837-4DEE-BBFCBF9A31B7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_1		2526
+	48959739	Voice2_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\A7\{A7F225AF-EFD9-FE67-5494-3C30A100C4D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_11		5844
+	53518904	Voice2_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1B\{1BDB1A68-6AAD-64FF-F1AA-7BE809520B82}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_6		9342
+	53795787	Voice2_13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E7\{E74A2BBF-D582-59CC-4513-4F2186E2C4EC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_13		7982
+	54108784	VoiceVoice1_12	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\CB\{CBF02459-5100-DD58-A71A-F67E61525B04}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_12		17210
+	76187179	Voice6_15 (16)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\84\{849F25EF-27B0-4C8E-0E04-74AF9B8BED33}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (16)		8542
+	81323668	Voice4_16	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B7\{B766020B-BE3D-0263-2C3E-5D6833198868}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_16		10874
+	84210477	Brama	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9B\{9B397E60-97FD-9D72-9899-4E7244E2662D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mountain_No_Color\Mountain_No_Color\Brama		338460
+	89397288	Voice3_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DC\{DCFD8176-3474-CF04-78DA-EAB5C99C2085}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_3		10194
+	90428042	WIATR	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2F\{2FB149EF-BAA8-8D72-C1E9-B51462F23EC8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\WIATR		5790606
+	99461500	Voice5_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9B\{9BB60216-320A-720B-0765-5B32CE1D12B8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_1		10448
+	101173167	Voice4_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\39\{393B1EA8-1A69-F2B2-0918-A876EB1CF71E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_4		10782
+	101656523	BRS_Dust_Fall_Rocks_Sand_Hesitate	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\31\{31EFB87E-C0A0-A872-075A-F7D1D54DB33F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Rocks\BRS_Dust_Fall_Rocks_Sand_Hesitate		395360
+	108302281	Voice4_13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DD\{DD9DBE50-C454-2CEA-061B-AADC137023EB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_13		8478
+	115912996	Voice7_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BB\{BBAB90C1-569E-A3FB-7974-53F949F1816E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_6		3910
+	127448687	Voice4_14	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\19\{19D00C51-EB7A-D322-57ED-02909B8D77E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_14		10966
+	135193425	Voice2_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1E\{1EAEDDD1-0D8E-F8C8-D3E6-D4C2932827F1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_2		9226
+	137415819	Voice7_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\AC\{AC675544-B37B-EBBC-7479-9FD23B90FE63}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_2		2974
+	141991554	Voice3_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\73\{73FACCFB-A5FA-A0A6-0B43-0E93C69675E6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_10		8320
+	149334678	FT DIRT 13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\79\{793B1478-D0C1-24B7-182A-AB284CDE037C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 13		51080
+	150109448	Voice4_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\32\{32F5159D-4339-AAD9-9B67-81B6DA98580E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_1		11074
+	156426024	FT_CLOUD_1_011	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2F\{2FE694B5-C523-7AEC-EDBF-8CF08164D721}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_011		61572
+	162917297	Voice6_15 (13)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E8\{E8FF9F57-A4A6-2899-6AC1-5258D0B25CDF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (13)		10578
+	163080755	Voice6_15 (15)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1F\{1FA81EA4-3D56-303B-419C-1514A4BCE504}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (15)		8750
+	164289925	Voice6_15 (21)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\33\{33054521-3906-DA96-6B64-562E576887C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (21)		7618
+	165199325	Voice3_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1F\{1F94E6EA-1C3C-25D9-B364-8EB79636593C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_6		9172
+	172424702	FT DIRT 9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F4\{F46F3904-F246-383D-A66A-A75A5B9162F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 9		52454
+	184375362	Voice4_18	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2C\{2C85399F-FBE8-275C-B33D-4C2C3AAA9E20}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_18		6496
+	188708515	Voice3_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\FD\{FD61615A-08CA-EBE6-D8BB-9CC8EEE9D61C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_4		5892
+	190415896	Voice5_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5A\{5AB2DC19-249F-D24E-FEDD-DE03B1083735}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_4		9928
+	191156002	Birds_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E9\{E99FCD21-D6CA-2B92-F81C-12DB3F423A31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_10		256624
+	193667991	VoiceVoice1_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1E\{1E2580C2-A44C-F8CA-72FC-A327E545F3FA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_5		14524
+	195634114	Voice5_26	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\05\{05566FC3-1A23-9B01-E7FD-BF5ECFF64695}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_26		13268
+	197091982	Voice6_15 (9)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\77\{77D29F7B-756F-5CC3-CB17-BDCA78D3F9EA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (9)		11028
+	200047412	Voice2_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\42\{42D50276-9379-EE44-C24D-08E9C4D37B5C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_8		5800
+	202275751	Voice2_12	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\01\{01BF69A0-5AC5-EA95-15B0-392F961EA020}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_12		10166
+	217259838	VoiceVoice1_23	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\4D\{4D816943-D6B0-19C7-3695-C9EF7854CF7C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_23		32924
+	217960756	FT DIRT 19	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\81\{816C846D-784D-F3E6-0586-970FB53E0CC4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 19		59572
+	221131853	Voice4_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\88\{88A04314-0180-2823-702B-49E1E5DBD18C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_11		14344
+	223449459	Voice6_15 (5)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\4B\{4BEC412C-FC5E-3818-988B-A7ABA5EB9279}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (5)		12822
+	231434989	FT DIRT 4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\6D\{6DA88762-EBAC-D33D-4969-9D502E8B7C3E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 4		50232
+	234466374	Voice5_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\82\{82B1C38D-D540-D2BB-35F3-DD28638C4D40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_6		9724
+	248565747	FT_CLOUD_1_002	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D2\{D2E93ABB-08F8-1F4B-1BB3-E9CDA69C732D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_002		77848
+	251802457	Voice5_17	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\4F\{4F317FD1-C739-D6EA-2C5B-CEBCC905842A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_17		14502
+	253444241	Voice5_21	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5F\{5F597917-4D34-0579-77D1-53DABBDE257B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_21		20256
+	259082923	Voice6_15 (2)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\25\{2580434E-A6CF-8D05-AC9E-69E759077DDC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (2)		8396
+	268884244	VoiceVoice1_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F3\{F3EABA94-A88C-41C3-D572-47D1CFE01F1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_4		13796
+	269153616	Voice2_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9F\{9F424D20-E22D-9F86-CB3C-4CEFFF8FC5E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_9		10704
+	272095443	Voice3_16	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\94\{948A4784-669F-2A7D-8A94-F68B02278FA2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_16		9152
+	276131225	FT DIRT 3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BD\{BDF61EBF-2865-4594-DDFB-701BE14D5E01}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 3		48860
+	285251926	FT DIRT 7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\79\{7910C649-E6ED-E36F-699D-3F57D3440812}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 7		54378
+	288135203	Voice3_20	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\C3\{C3DA0AD8-E2FF-5F85-1FF4-A1FDD6DEEF7C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_20		8084
+	294195396	FT DIRT 6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\3E\{3E5ABCFA-5388-1C4D-698C-8E5EE91189F2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 6		45446
+	295827108	Voice4_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\60\{6057B028-965A-6118-6218-D4400DFD23F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_3		11060
+	295962096	Birds_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\52\{52706E27-5A0F-10E3-7B0E-C045DE3CD0B8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_2		208500
+	302343837	Voice3_23	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B7\{B751CBB9-CC9E-79E2-6272-1464AB9AEC93}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_23		8700
+	316401327	Voice3_21	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5A\{5ABBC87E-1164-056B-0A09-89216CB75C7C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_21		9772
+	322294254	FT_CLOUD_1_008	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\01\{01FBE1BC-EE22-66EF-94E2-7A0E5D734BB9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_008		67546
+	325118292	Pick_Up_Key	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DD\{DD3ED01C-23DB-46BF-E8B3-C0D7942703FB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mountain_No_Color\Mountain_No_Color\Pick_Up_Key		531452
+	328171468	VoiceVoice1_19	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\84\{84FAF963-8691-60F4-4B48-874B6FF327E7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_19		28014
+	329300402	Voice3_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BE\{BE4DF102-3F41-B659-7D92-83E523532871}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_9		11980
+	342853067	FT DIRT 15	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\09\{090DEE0F-02DB-0E9D-8843-1D5CAEAC5266}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 15		52176
+	344437541	VoiceVoice1_13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9F\{9F430CC6-69A0-B617-5C64-F7D91356699F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_13		18684
+	360795826	Voice3_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1A\{1AFF8BB0-B022-E7D7-11F2-9C7AF49AB522}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_1		7270
+	361424706	Voice3_18	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\20\{203A8F66-302D-6917-0DBF-0F99423291D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_18		5874
+	362717277	Voice2_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D7\{D73658EC-B046-8565-0BA0-D8987E1D9233}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_3		10032
+	366369507	FT_CLOUD_1_007	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\7B\{7BD373A5-A325-E22E-AA52-90D4E4A02862}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_007		70452
+	378770041	Birds_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B1\{B1497F8C-AC03-9DAD-65C4-3D8617C733CD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_5		226968
+	381728242	Voice6_15 (19)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1A\{1A255F05-0173-AA1E-7ACD-FF1E61F02F14}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (19)		8338
+	387109108	Voice6_15 (11)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\49\{49481426-A0D9-2648-8AB1-C926CAF01FC6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (11)		8304
+	405347486	Voice5_22	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\77\{772C2E54-816B-A39C-3003-DEDC40348538}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_22		9944
+	407767801	Voice6_15 (17)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\8D\{8D2648A5-2A47-0EE0-6704-93429BF5E4F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (17)		11464
+	412088007	Voice4_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\36\{365531FA-32C9-562B-C8D0-E9774877683F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_7		9628
+	414078144	Voice5_16	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B7\{B7FF9FD2-B747-8F9B-C878-68358CCD4FA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_16		20446
+	421469573	FT_CLOUD_1_003	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\7D\{7DCB432B-8256-A2D8-0654-D11AA192F14F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_003		55628
+	421676008	VoiceVoice1_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BE\{BED7BE8C-5C60-8446-CBDD-B5A3B005B85A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_10		22612
+	432307913	Voice4_20	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\AE\{AED8768B-0B1D-493D-A484-5981F3E6669F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_20		7174
+	432675822	FT DIRT 5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\30\{30C46364-5ED5-78C3-080E-46659820BABA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 5		46734
+	435915455	UI_Audio_Panel_Choice_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\13\{13611E77-464E-64EB-CBFD-D5C2A708661F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\UI_Sound_Chose_Dial_Menu\UI_Sound_Chose_Dial_Menu\UI_Audio_Panel_Choice_2		68868
+	440075300	Voice5_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\71\{71FBE1A4-7169-C9C2-952A-67D2F533F43B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_3		14466
+	443625284	Voice4_22	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\98\{985D70D9-2D1E-E5C3-9990-E1CB8B6CBC34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_22		10582
+	447394253	Voice3_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\85\{859A58EE-9D8B-1F16-61FC-130CEE215363}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_11		11742
+	448576072	VoiceVoice1_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\79\{79E02A7B-B263-5974-2C02-FBEA46894D35}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_3		15884
+	458070790	Voice3_13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\C2\{C2768DC7-9FCB-B8EE-D04A-4810C5B5362C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_13		16234
+	458445729	FT DIRT 16	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\0C\{0CB6EC52-E44B-ABAB-4F02-314A237CB9FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 16		51332
+	466072117	Voice4_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\24\{24A26154-B285-AC5A-145E-68DF56BBE499}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_9		9338
+	474635327	Voice2_14	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\41\{4181755E-C5E4-11A8-DA6C-B7174BDA85D3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_14		12226
+	482599553	VoiceVoice1_22	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\34\{34382D98-B648-6DFC-7EE0-46A184F3E07F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_22		15738
+	484602768	Voice4_17	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F3\{F3C67B16-49AC-21D2-6130-26C4641E3A2D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_17		6498
+	487545217	FT DIRT 14	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\28\{2843595C-87B1-6DF1-08B3-B64D4A3D1501}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 14		54646
+	493715021	Voice4_12	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\49\{495558B5-6CB2-0D36-97DF-74C47FFD6D28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_12		8818
+	497095125	FT DIRT 1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\3E\{3E8F58B2-8BC7-A681-2F91-4D5542306B3A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 1		53196
+	507871561	Voice6_15 (8)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D5\{D5506756-8662-EFDB-D79C-14C99D196EC9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (8)		17072
+	508131125	VoiceVoice1_6	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D3\{D38170B0-CD65-4A14-10D7-9F986F937F52}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_6		12918
+	508633197	VoiceVoice1_20	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\10\{10604F2E-5994-C7F5-FE91-172FB446B9C6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_20		20648
+	510512155	FT_CLOUD_1_005	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\55\{55CDB77F-31E6-5AD1-19FA-09C44C12E57F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_005		71078
+	511690319	BRS_Dust_Fall_Rocks_Gritty_Fst_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\1C\{1CDDA9AD-D5A2-9AD3-015D-AC09D311D585}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Rocks\BRS_Dust_Fall_Rocks_Gritty_Fst_2		286816
+	511744637	VoiceVoice1_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\01\{017703D1-9197-79B0-E34F-1207D9945348}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_8		11260
+	516562996	Voice2_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\AC\{AC74D243-EA25-728A-A591-D1E562832CE1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_4		11014
+	523026686	Voice2_15	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D3\{D388F83E-B5A7-46A8-7F65-CAC8891DDA96}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_15		11406
+	523404419	FT_CLOUD_1_004	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\83\{83015D8C-CE8A-F030-FC39-14203198D085}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_004		57386
+	526853153	Voice4_23	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D9\{D9D8F215-96D0-4394-C44C-E6ADD79FC1DA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_23		13896
+	539272724	VoiceVoice1_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5D\{5DDCC8EC-C8A2-25DE-2ACB-9FBDFFAFC456}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_2		14864
+	546069482	Birds_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F9\{F91F4986-AE66-FCB3-1E5A-1044C2655117}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_9		252000
+	549091140	WIATR #2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\49\{49D708B8-6869-0842-AA2E-22C608EAA84C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\WIATR #2		5752760
+	554189427	FT DIRT 20	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B7\{B7B2BF30-A3EB-F155-53FC-2AF7C4627DAC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 20		55260
+	573992544	Birds_13	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\10\{1005F78C-DFB9-1058-E126-899EBEE42368}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_13		263080
+	576769008	Voice5_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9A\{9AE2C9AC-368D-D8AE-F64B-08245ACBB8C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_5		10470
+	577391926	Voice4_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\0A\{0A80302A-5675-AE25-789F-DB8B870111F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_8		10290
+	579473122	VoiceVoice1_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B4\{B414DF15-E376-694B-7DF6-9ACCB3A14756}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_9		19174
+	610647138	ESM_Stone_Debris_Falling_to_Ground_1_Organic_Elemental_Debris_Shatter_Splatter_Foley_Sound_Design_Source_Rock_	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\01\{01060EBB-889F-9A8E-ABE4-C7120FF53EEC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Rocks\ESM_Stone_Debris_Falling_to_Ground_1_Organic_Elemental_Debris_Shatter_Splatter_Foley_Sound_Design_Source_Rock_		1332408
+	614823831	Voice7_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\0E\{0EEA22E7-8238-4A18-D4A1-8AEDA9234BD7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_3		2676
+	615183449	Voice4_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F7\{F763E5E3-8790-0665-41CC-C6B6EA0CCE11}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_10		8350
+	615480068	Voice5_20	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F0\{F06F174A-328A-0F8F-DF37-0A598D4325D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_20		16208
+	615901723	Voice4_24	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\EA\{EABBEF39-47B3-731D-6C4A-27721A5F5CB0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_24		11716
+	616229362	Voice3_17	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\A2\{A2BE7320-6D68-CF0C-AB69-119B0C199B4F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_17		9706
+	626055845	Voice4_21	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9D\{9D64BE7A-9D22-B4DD-0BD2-6A5A3F8FB712}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_21		8574
+	629879325	FT DIRT 17	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\60\{6068D0E5-0070-33F7-E570-B53FBB90B57A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 17		50544
+	633044602	FF_SFFX_ambience_other_worlds_windy	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\FF\{FFAD8CB8-A40F-269B-01F1-0C19C76782F9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\FF_SFFX_ambience_other_worlds_windy		3418320
+	637203285	Voice3_15	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\6B\{6B6E4C4F-FBB0-49D6-EDCA-021FE3545061}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_15		13240
+	638004542	FT_CLOUD_1_009	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\49\{4997E52E-958C-E95E-0D72-C35F0288968B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_009		76848
+	638764019	Voice3_12	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B7\{B70D4C96-B8FC-1CD6-0680-746307E3947A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_12		6464
+	639172632	Voice7_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\54\{54380BAA-76DF-A48F-D1F8-9ED2D5D97175}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_9		3086
+	644638427	FT_CLOUD_1_006	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D9\{D96D46A7-1A03-24A1-03EB-0951081182F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_006		50260
+	648878696	Voice2_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F9\{F960AF4D-7EC5-E00A-3F66-DCCC6451B351}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_10		10354
+	657580755	Voice4_15	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\68\{68E6F7E1-DAF9-D61C-1F48-F2CEB5101A53}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_15		9778
+	667709135	Voice5_24	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BE\{BE1DA2E4-B1C0-D5F7-760F-7E5AA80C70A4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_24		11250
+	670247221	FT DIRT 11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\4B\{4B1D4634-4CC3-2E2D-300F-88D4395AD4E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 11		48480
+	674147860	Voice4_19	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5E\{5E26CBF0-1EB9-4754-C0D8-87EBFCA37637}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_19		8040
+	682951309	FT DIRT 12	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D9\{D9C936C3-46DE-0F2A-2751-5D5C4D2EEE9B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 12		56588
+	686750772	Voice6_15 (1)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\A1\{A1EECA27-4ED2-3B8C-9188-D6D24A76BC69}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (1)		8160
+	690558029	Voice5_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\7F\{7FE41B04-4CB5-E72D-707D-ADBD4D2A095C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_7		8016
+	695651044	Voice3_14	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\14\{1473C4FE-0DA0-89FF-DACD-4D570D985406}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_14		6132
+	697381245	Birds_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\87\{87D3D23A-4603-2C29-3A9B-EB40C6E4FC0D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_11		261120
+	698402778	Voice3_19	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\B3\{B3C0B856-CDE7-E387-BF93-25C92616F57C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_19		7568
+	700964703	Voice7_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\D6\{D6737839-806F-584B-2E6A-7C9B6B0A87D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_7		4432
+	713104976	VoiceVoice1_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\61\{613570E4-49AA-511A-30C8-F33477BAE63C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_1		16648
+	726824017	Birds_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E3\{E346E749-32A9-B0D3-99B1-36E3C1B2C33D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_8		249696
+	727419278	BRS_Dust_Debris_Falls_Rocks_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\8F\{8F9618E1-6B74-A264-1F7C-2F0917072173}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Rocks\BRS_Dust_Debris_Falls_Rocks_2		489568
+	744981244	Birds_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\56\{56E137A3-A046-8838-FCB3-D53DA7807C40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_4		225424
+	745121070	Voice5_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\65\{65A01375-7B1D-BE6C-0755-5C42852ACC9D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_11		7722
+	763200929	Voice5_18	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\15\{1518A978-1BC0-57D7-5D79-484A8FF33C26}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_18		15748
+	773568720	Voice6_15 (4)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\FA\{FACA70D5-256A-C14F-F5F8-246A249AD2B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (4)		13196
+	774809473	Voice3_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\68\{68DC2EF8-302E-4E91-C07A-13F1A6C67E85}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_2		4818
+	779884292	FT_CLOUD_1_010	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5E\{5EFAD2D8-0530-0572-06EF-B80526ECC769}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_010		75104
+	786359102	FT DIRT 2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\44\{4440DBF4-381F-3C05-5F7B-EAD2A6967C08}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 2		50464
+	798052017	VoiceVoice1_21	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\40\{40EBEF3C-E720-6B25-5233-B795E5335B8C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_21		21138
+	801019638	Voice5_23	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\59\{59D792ED-A7DF-0FCA-87C6-BD077AF4C811}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_23		17114
+	804019989	Voice5_25	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\59\{597BC250-4575-96AC-4A76-33845FFBDBE0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_25		11966
+	810082382	VoiceVoice1_11	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\07\{0766C38D-0321-83E4-A61C-4AB5CD3BF5AA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_11		23594
+	813512041	Voice3_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\86\{86BD15A7-23D1-50AB-C453-52530B9655E6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_7		5700
+	840655708	VoiceVoice1_15	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\72\{72CE7969-BC6A-AEB6-A965-1A0713EBA793}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_15		25068
+	844823879	Voice5_9	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F7\{F7FF1305-DC81-0D11-DB4D-85A8D79E7433}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_9		13012
+	854166475	Voice3_22	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E9\{E91CA9BA-4825-5F8C-4099-19D8696EC892}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_22		8358
+	855924617	FT_CLOUD_1_013	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\16\{163B7363-0B40-8969-3D0D-1A3EC45BB172}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_013		61648
+	856965145	Voice6_15 (7)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2B\{2B98B7A7-EEA1-53F7-A33B-8E67B59C3DBE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (7)		8610
+	869426219	Voice6_15 (12)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\71\{71664496-1871-A15C-9D17-D703075D4944}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (12)		9820
+	873652446	Voice6_15 (10)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\CF\{CF5612C4-F3ED-EDD0-FCF6-B4765BA62D6C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (10)		10050
+	876386815	Voice5_10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\60\{607493F0-5130-01E8-A69F-0DDEF3F6269F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_5\Voice5_10		10608
+	876639578	FT_CLOUD_1_012	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\DA\{DAEE4113-06D8-0187-7F4B-DF2E10CDA6BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_012		67432
+	878626747	Voice6_15 (18)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2D\{2DE4E738-58B7-5639-19FF-B1CC6A755D10}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (18)		8988
+	889654955	FT DIRT 10	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\71\{715A2FCA-6098-D8CC-75A1-C8AC4F1C4834}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 10		50312
+	900172580	Voice6_15 (3)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\A8\{A8D9707B-76A0-A406-D5B3-52CCB9481BAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (3)		11188
+	921683905	Voice4_2	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\82\{82348407-BA6C-F8D5-14F2-C518103A7D42}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_2		7578
+	931585822	Voice6_15 (20)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9F\{9FC6471C-3EF6-2F23-40B3-6BDEE2233436}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (20)		9370
+	943988139	BRS_Dust_Debris_Falls_Sandy_Rocks	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\38\{38F81FB8-8782-D007-CE93-43E6879DC9FF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Rocks\BRS_Dust_Debris_Falls_Sandy_Rocks		471136
+	947527372	FT DIRT 8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\2F\{2F153CED-F800-C2A2-F5DF-5DE25F349483}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 8		52458
+	954091250	Birds_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\7D\{7D648A51-223C-02B8-3E16-EB3B5F9AB899}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_1		189296
+	963363756	FT_CLOUD_1_001	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\A2\{A2DD5B71-B632-6E58-A5EE-AF21BAAE761F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Clouds\FT_CLOUD_1_001		61618
+	968711281	Voice7_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\64\{646E9DC9-CCA3-8582-68F9-4E55F0997780}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_8		4208
+	969917447	UI_Audio_Panel_Choice_1	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\63\{63D492FC-E952-0D01-83D6-E3E584D75EC5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\UI_Sound_Chose_Dial_Menu\UI_Sound_Chose_Dial_Menu\UI_Audio_Panel_Choice_1		78408
+	973939433	Voice2_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\BD\{BD947569-64FF-8A33-3BF8-824519236C23}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_2\Voice2_5		16406
+	977475206	Voice7_4	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\9B\{9BCEF6AB-7B1E-1BCE-C9E5-16756216C91E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_4		3198
+	978292317	Rug_Mountain	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5C\{5CC76DF3-4F3D-75CB-18EF-70D5A5EE5EDF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mountain_No_Color\Mountain_No_Color\Rug_Mountain		219874
+	980977940	VoiceVoice1_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\54\{54E448B5-09B1-299C-D6E3-CBB00B0D6EA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_7		20156
+	983861994	FT DIRT 21	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\E2\{E27822C4-FD9D-8EB9-B61C-2A4890BFC115}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\FootSteps\Footsteps\Dirt\FT DIRT 21		54530
+	997632834	Voice4_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\CF\{CF43BA36-923C-08D1-E446-8FF0CFCAE00B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_4\Voice4_5		9626
+	1000238122	Birds_7	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\CF\{CF052F44-D16E-137A-2406-A9E6C1DBB352}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_7		240096
+	1003095733	VoiceVoice1_18	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\37\{37B76145-6E27-59C0-193F-120FCF545C1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_18		17702
+	1013836030	Voice3_8	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\02\{0221E3A9-8CA1-FC4C-C290-FCC412804897}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_3\Voice3_8		9590
+	1014994997	VoiceVoice1_17	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\4D\{4D9E9148-DC22-6E75-6AA5-45B883E9FA60}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_17		16228
+	1019466413	VoiceVoice1_16	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\CD\{CD38DF74-0BB2-9B86-BE7B-EA7173EE7B2F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_1\VoiceVoice1_16		23104
+	1033712985	Birds_3	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\F1\{F196D361-799A-9C62-3788-4517C461B4D9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient\Mountain_No_Color\Birds\Birds_3		219524
+	1040543268	Voice6_15 (14)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\C2\{C2566ABB-522A-A73E-9217-C555A215D6E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (14)		9084
+	1055314572	Voice7_5	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\8D\{8D71DCCA-A2ED-9FC1-EF00-EA7312AED556}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_7\Voice7_5		4466
+	1058343330	Voice6_15 (6)	D:\Pogoda\Pogada_WWISE_music\Pogada_music\.cache\5A\{5A26D5C5-3FDF-A037-C3F2-E41C769BBFD1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\Voice_6\Voice6_15 (6)		11598
+
