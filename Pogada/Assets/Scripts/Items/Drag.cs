@@ -9,7 +9,7 @@ public class Drag : MonoBehaviour
     //check if u want the object to change its rigidbody type from static to dynamic
     public bool ChangeRigidBodyType;
     //pozwol na przenoszenie, normalnie na true
-    public bool ZezwolPrzenoszenie = true;
+    public bool AllowDrag = true;
 
     //odniesienie do gracza
     [HideInInspector]
@@ -17,28 +17,19 @@ public class Drag : MonoBehaviour
     [HideInInspector]
     public GameObject playerObject;
 
-    public bool MouseDown = false;
-
     private void Start()
     {
-        //znowu, to wszystko do playera jest nmg z niego
+        //znowu, to wszystko do playera
         playerObject = GameObject.Find("Player");
         player = playerObject.GetComponent<Transform>();
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
-    void OnMouseUp()
-    {
-        MouseDown = false;
-    }
 
     void OnMouseDown()
     {
-        MouseDown = true;
-
-        if (ZezwolPrzenoszenie == true)
+        if (AllowDrag == true)
         {
-            //to cos robi
             screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
             offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
@@ -51,9 +42,10 @@ public class Drag : MonoBehaviour
         }
     }
 
+
     void OnMouseDrag()
     {
-        if (ZezwolPrzenoszenie == true && MouseDown == false)
+        if (AllowDrag == true)
         {
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 

@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class Lodka : MonoBehaviour
+public class Boat : MonoBehaviour
 {
-    public LodkaPoruszanie lodkaPoruszanie;
-    public ZolwPoruszanie zolwPoruszanie;
+    public BoatMovement boatMovement;
+    public TurtleMovement turtleMovement;
 
     private bool isRunning = false;
 
@@ -25,7 +25,7 @@ public class Lodka : MonoBehaviour
 
     void OnMouseDown()
     {
-        lodkaPoruszanie.enabled = true;
+        boatMovement.enabled = true;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -33,18 +33,17 @@ public class Lodka : MonoBehaviour
         
         if (collision.gameObject.name == "zolw" && isRunning == false)
         {
-            StartCoroutine(WaitZolw());
+            StartCoroutine(WaitTurtle());
         }
 
-        IEnumerator WaitZolw()
+        IEnumerator WaitTurtle()
         {
             isRunning = true;
             yield return new WaitForSeconds(0.5f);
-            lodkaPoruszanie.enabled = false;
-            yield return new WaitForSeconds(3f);
-            //lodkaPoruszanie.numerTablicy++;
-            lodkaPoruszanie.enabled = true;
-            zolwPoruszanie.enabled = true;
+            boatMovement.enabled = false;
+            yield return new WaitForSeconds(2f);
+            boatMovement.enabled = true;
+            turtleMovement.enabled = true;
         }
     }
 }

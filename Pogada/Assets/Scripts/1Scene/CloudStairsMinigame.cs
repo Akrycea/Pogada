@@ -1,15 +1,10 @@
 using UnityEngine;
 
-public class ChmuryMinigierka : MonoBehaviour
+public class CloudStairsMinigame : MonoBehaviour
 {
     public int doneSteps = 0;
     private Collider2D stepsCollider;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (doneSteps == 5)

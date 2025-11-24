@@ -20,10 +20,10 @@ public class SpriteChanger : MonoBehaviour
     public bool EndSprites;
 
     //czy chcesz by po end sprites mozna bylo je przenosic
-    public bool AllowDrag;
+    //public bool AllowDragAfter;
 
     //refrence do skryptu z przenoszeniem przedmiotow
-    public Drag drag;
+    //public Drag drag;
 
     //gracz
     [HideInInspector]
@@ -32,6 +32,7 @@ public class SpriteChanger : MonoBehaviour
     public GameObject playerObject;
 
     private bool allowSpriteChange = true;
+
 
     void Start()
     {
@@ -52,7 +53,6 @@ public class SpriteChanger : MonoBehaviour
             {
                 CurrentSprite = CurrentSprite + 1;
                 spriteRenderer.sprite = spriteArray[CurrentSprite];
-
             }
 
             if (LoopSprites)
@@ -67,13 +67,4 @@ public class SpriteChanger : MonoBehaviour
             }
         }
     }
-
-    //private void Update()
-    //{
-    //    if (PrzenosPrzedmiotyPoEndSprites && EndSprites && CurrentSprite == spriteArray.Length - 1)
-    //    {
-            
-    //    }
-    //}
-    // errmmm tu cos zepsules napraw stary
 }

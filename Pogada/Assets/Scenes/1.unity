@@ -651,63 +651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   YourPoints: 0
   EnemyPoints: 0
---- !u!1 &84499292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 84499294}
-  - component: {fileID: 84499293}
-  m_Layer: 0
-  m_Name: WwiseGlobal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &84499293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84499292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65c9ef84451a9c4c8d0c0891d048138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: a9debcddd6c7b5c4185643a89216280f, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
---- !u!4 &84499294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84499292}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &85738757
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,13 +727,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura5
-  KluczMinigierka: 0
-  ChmuryMinigierka: 1
-  puzzleMinigierka: {fileID: 85738763}
-  chMinigierka: {fileID: 1240299764}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 0}
+  doormat: {fileID: 0}
   drag: {fileID: 0}
 --- !u!60 &85738761
 PolygonCollider2D:
@@ -1699,10 +1642,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 187191533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c0d5f6c933d3e42b6cd127f09ab799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZezwolPrzenoszenie: 0
   player: {fileID: 0}
   playerObject: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -1710,6 +1652,7 @@ MonoBehaviour:
   - {fileID: 3096924134369124351, guid: c1cf094e4759f014ab4f9df366e65399, type: 3}
   - {fileID: 2291901516356788292, guid: bba7f55737b190b4b854e1df17787ffd, type: 3}
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
+  allowDrag: 0
   MouseDown: 0
 --- !u!1 &197267384
 GameObject:
@@ -1895,10 +1838,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 197267384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c0d5f6c933d3e42b6cd127f09ab799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZezwolPrzenoszenie: 0
   player: {fileID: 0}
   playerObject: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -1906,6 +1848,7 @@ MonoBehaviour:
   - {fileID: 3096924134369124351, guid: c1cf094e4759f014ab4f9df366e65399, type: 3}
   - {fileID: 2291901516356788292, guid: bba7f55737b190b4b854e1df17787ffd, type: 3}
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
+  allowDrag: 0
   MouseDown: 0
 --- !u!1 &222354728
 GameObject:
@@ -2529,10 +2472,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 264387659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c0d5f6c933d3e42b6cd127f09ab799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZezwolPrzenoszenie: 0
   player: {fileID: 0}
   playerObject: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -2540,6 +2482,7 @@ MonoBehaviour:
   - {fileID: 3096924134369124351, guid: c1cf094e4759f014ab4f9df366e65399, type: 3}
   - {fileID: 2291901516356788292, guid: bba7f55737b190b4b854e1df17787ffd, type: 3}
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
+  allowDrag: 0
   MouseDown: 0
 --- !u!1 &269234687
 GameObject:
@@ -2690,8 +2633,6 @@ MonoBehaviour:
   - {fileID: -172402906349268719, guid: 377a0d272773b774fa13555d3d6b280d, type: 3}
   LoopSprites: 0
   EndSprites: 1
-  AllowDrag: 0
-  drag: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
 --- !u!212 &269549801
@@ -2761,8 +2702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43db9bb0b8c4f92478c18544a62bb9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otwartaWycieraczka: 0
-  drag: {fileID: 0}
+  openDoormat: 0
+  drag: {fileID: 1600121958}
 --- !u!1 &281969452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,13 +3662,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura2
-  KluczMinigierka: 0
-  ChmuryMinigierka: 1
-  puzzleMinigierka: {fileID: 456713956}
-  chMinigierka: {fileID: 1240299764}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 0}
+  doormat: {fileID: 0}
   drag: {fileID: 0}
 --- !u!60 &456713954
 PolygonCollider2D:
@@ -4971,10 +4912,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 687792840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c0d5f6c933d3e42b6cd127f09ab799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZezwolPrzenoszenie: 0
   player: {fileID: 0}
   playerObject: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -4982,6 +4922,7 @@ MonoBehaviour:
   - {fileID: 3096924134369124351, guid: c1cf094e4759f014ab4f9df366e65399, type: 3}
   - {fileID: 2291901516356788292, guid: bba7f55737b190b4b854e1df17787ffd, type: 3}
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
+  allowDrag: 0
   MouseDown: 0
 --- !u!1 &729019427
 GameObject:
@@ -5519,7 +5460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &907097187
 Transform:
   m_ObjectHideFlags: 0
@@ -7113,10 +7054,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148579024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a5ade590af5b94c92f87a6976f2fd2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c0d5f6c933d3e42b6cd127f09ab799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZezwolPrzenoszenie: 0
   player: {fileID: 0}
   playerObject: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -7124,6 +7064,7 @@ MonoBehaviour:
   - {fileID: 3096924134369124351, guid: c1cf094e4759f014ab4f9df366e65399, type: 3}
   - {fileID: 2291901516356788292, guid: bba7f55737b190b4b854e1df17787ffd, type: 3}
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
+  allowDrag: 0
   MouseDown: 0
 --- !u!1 &1185200742
 GameObject:
@@ -7234,13 +7175,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura3
-  KluczMinigierka: 0
-  ChmuryMinigierka: 1
-  puzzleMinigierka: {fileID: 1231764839}
-  chMinigierka: {fileID: 1240299764}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 0}
+  doormat: {fileID: 0}
   drag: {fileID: 0}
 --- !u!60 &1231764837
 PolygonCollider2D:
@@ -7748,7 +7689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b304ebed9e131d47a7d0fb7a5a15183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movSpeed: 15
+  movSpeed: 50
   slopeCheckDistance: 0.9
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
@@ -8060,13 +8001,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura1
-  KluczMinigierka: 0
-  ChmuryMinigierka: 1
-  puzzleMinigierka: {fileID: 1393569511}
-  chMinigierka: {fileID: 1240299764}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 0}
+  doormat: {fileID: 0}
   drag: {fileID: 0}
 --- !u!60 &1393569509
 PolygonCollider2D:
@@ -8838,14 +8779,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: bramacollider
-  KluczMinigierka: 1
-  ChmuryMinigierka: 0
-  puzzleMinigierka: {fileID: 1393569511}
-  chMinigierka: {fileID: 0}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 269549802}
-  drag: {fileID: 0}
+  doormat: {fileID: 0}
+  drag: {fileID: 1600121958}
 --- !u!114 &1600121958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8859,10 +8800,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangeRigidBodyType: 1
-  ZezwolPrzenoszenie: 0
+  AllowDrag: 1
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  MouseDown: 0
 --- !u!60 &1600121959
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9167,13 +9107,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura4
-  KluczMinigierka: 0
-  ChmuryMinigierka: 1
-  puzzleMinigierka: {fileID: 1640449134}
-  chMinigierka: {fileID: 1240299764}
+  KeyMinigame: 0
+  CloudStairsMinigame: 0
+  puzzleMinigame: {fileID: 0}
+  stairsMinigame: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  wycieraczka: {fileID: 0}
+  doormat: {fileID: 0}
   drag: {fileID: 0}
 --- !u!60 &1640449132
 PolygonCollider2D:
@@ -10277,6 +10217,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1930048987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1930048989}
+  - component: {fileID: 1930048988}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1930048988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930048987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a65c9ef84451a9c4c8d0c0891d048138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: a9debcddd6c7b5c4185643a89216280f, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1930048989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930048987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1956130391
 GameObject:
   m_ObjectHideFlags: 0
@@ -10795,10 +10792,10 @@ SceneRoots:
   - {fileID: 729019428}
   - {fileID: 665351461}
   - {fileID: 157563553}
+  - {fileID: 316294174}
   - {fileID: 182486128}
   - {fileID: 230619872}
   - {fileID: 434145511}
   - {fileID: 907097187}
   - {fileID: 392574998}
-  - {fileID: 316294174}
-  - {fileID: 84499294}
+  - {fileID: 1930048989}

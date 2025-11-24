@@ -1,7 +1,7 @@
 using UnityEngine;
 using Yarn.Unity;
 
-public class ClickDialog : MonoBehaviour
+public class ClickDialogue : MonoBehaviour
 {
     public string nazwaDialogu;
     public DialogueRunner dialogueRunner;

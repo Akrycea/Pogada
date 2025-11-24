@@ -9,19 +9,19 @@ public class YarnCommands : MonoBehaviour
     public ColorChange colorChange;
 
     //po rozmowie z zielonym pozwala pogadac z granat
-    private ClickDialog granat;
+    private ClickDialogue granat;
     [YarnCommand("granatOdpalDialog")]
     public void granatOdpalaDialog()
     {
-        granat = GameObject.Find("Granat").GetComponent<ClickDialog>();
+        granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
         granat.nazwaDialogu = "D4_PoznanieGranat";
     }
     //zmienia dialog zielonego po kliknieciu na drugi
-    private ClickDialog zielony;
+    private ClickDialogue zielony;
     [YarnCommand("zielony2dialog")]
     public void zielony2dialog()
     {
-        zielony = GameObject.Find("Zielony").GetComponent<ClickDialog>();
+        zielony = GameObject.Find("Zielony").GetComponent<ClickDialogue>();
         zielony.nazwaDialogu = "D5_PomocZieleni";
         zielony.dialoguePlayed = false;
     }

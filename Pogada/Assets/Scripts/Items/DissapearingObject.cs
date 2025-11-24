@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class ZnikanieObiektow : MonoBehaviour
+public class ObjectDissapearing : MonoBehaviour
 {
     [HideInInspector]
     public SpriteRenderer spriteRenderer;

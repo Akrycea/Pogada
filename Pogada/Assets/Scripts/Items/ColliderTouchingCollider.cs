@@ -7,17 +7,17 @@ public class ColliderTouchingCollider : MonoBehaviour
     public string ObjectName;
 
     //wybierasz ktora minigierke chcesz
-    public bool KluczMinigierka;
-    public bool ChmuryMinigierka;
+    public bool KeyMinigame;
+    public bool CloudStairsMinigame;
 
     //odniesienie do puzzle minigierka
-    public PuzzleMinigierka puzzleMinigierka;
+    public PuzzleMinigame puzzleMinigame;
     //odniesienie do licznika chmur
-    public ChmuryMinigierka chMinigierka;
+    public CloudStairsMinigame stairsMinigame;
 
     //odniesienie do bramy, aby zmienic jej sprite
     private SpriteChangeAfterPuzzle bramaSpriteChange;
-    private GameObject brama;
+    private GameObject gate;
 
     //odniesienie do gracza
     [HideInInspector]
@@ -25,7 +25,7 @@ public class ColliderTouchingCollider : MonoBehaviour
     [HideInInspector]
     public GameObject playerObject;
 
-    public Wycieraczka wycieraczka;
+    public Doormat doormat;
     public Drag drag;
 
     private void Start()
@@ -43,21 +43,21 @@ public class ColliderTouchingCollider : MonoBehaviour
         {
             Debug.Log("kolizja dotyka desired kolizji");
 
-            if (ChmuryMinigierka)
+            if (CloudStairsMinigame)
             {
                 //tu robi to co jest w puzzle minigierka skrypt
-                puzzleMinigierka.Puzzle();
-                chMinigierka.doneSteps++;
+                puzzleMinigame.Puzzle();
+                stairsMinigame.doneSteps++;
             }
-            else if (KluczMinigierka && wycieraczka.otwartaWycieraczka == true)
+            else if (KeyMinigame && doormat.openDoormat == true)
             {
                 //odniesienie do bramy, aby zmienic jej sprite
                 bramaSpriteChange = GameObject.Find("bramaSprite").GetComponent<SpriteChangeAfterPuzzle>();
                 //zmienia sprite bramy
                 bramaSpriteChange.myPuzzleGotCompleted();
 
-                brama = GameObject.Find("bramaStop");
-                brama.SetActive(false);
+                gate = GameObject.Find("bramaStop");
+                gate.SetActive(false);
             }
         }
 

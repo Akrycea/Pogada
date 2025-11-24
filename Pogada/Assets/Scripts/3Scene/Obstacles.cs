@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Przeszkody : MonoBehaviour
+public class Obstacles : MonoBehaviour
 {
     public bool state;
 

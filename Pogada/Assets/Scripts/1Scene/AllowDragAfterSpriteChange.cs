@@ -4,16 +4,14 @@ using UnityEngine;
 using System.Collections;
 using TMPro.Examples;
 
-public class Chmury2skrypty : MonoBehaviour
+public class AllowDragAfterSpriteChange : MonoBehaviour
 {
-    //uniwersalny sprite changer i przenoszenie przedmiotow razem
+    // Pozwala na przenoszenie obiektu, gdy zmieni mu sie sprite (ilosc razy, zalezy od spriteow w tablicy) -> Drag oraz Sprite Changer zlaczone w jedno
+
 
     // po prostu przenosi przedmioty jak je zlapiesz
     private Vector3 screenPoint;
     private Vector3 offset;
-
-    
-    public bool ZezwolPrzenoszenie = false;
 
     //odniesienie do gracza
     [HideInInspector]
@@ -30,8 +28,11 @@ public class Chmury2skrypty : MonoBehaviour
     //liczba na ktorym sprite jestes
     int CurrentSprite;
 
+    public bool allowDrag = false;
+
     private bool allowSpriteChange = true;
 
+    [HideInInspector]
     public bool MouseDown = false;
 
 
@@ -58,9 +59,8 @@ public class Chmury2skrypty : MonoBehaviour
             }
         }
 
-        if (ZezwolPrzenoszenie == true)
+        if (allowDrag == true)
         {
-            //to cos robi
             screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
             offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
@@ -74,7 +74,7 @@ public class Chmury2skrypty : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (ZezwolPrzenoszenie == true && MouseDown == false)
+        if (allowDrag == true && MouseDown == false)
         {
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 
@@ -87,16 +87,8 @@ public class Chmury2skrypty : MonoBehaviour
     {
         if (CurrentSprite == spriteArray.Length - 1)
         {
-            //StartCoroutine(Wait());
-            ZezwolPrzenoszenie = true;
+            allowDrag = true;
             allowSpriteChange = false;
         }
     }
-
-    //IEnumerator Wait()
-    //{
-    //    allowSpriteChange = false;
-    //    yield return new WaitForSeconds(0.5f);
-    //    ZezwolPrzenoszenie = true;
-    //}
 }
