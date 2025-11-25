@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: a138ed1cec568949ae50ac5ef6b6f2b7
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866168464
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866158460
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4f5515c0fc7dd443875d761b63b55d64
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853877504768
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b11b922c8c70d848a202b3c1e8c666c7
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866178449
     List:
     - name: Pogada
       guid: 62f62a8bfa32c64cb08ba50fd164596f
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2e751f066be7bd429be54bfb4721995c
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853880702914
     List:
     - name: AMB_Mountain_No_Color
       guid: 265962007da03b4bbaf1351bdbc9f6e2
@@ -379,8 +379,8 @@ MonoBehaviour:
         guid: 265962007da03b4bbaf1351bdbc9f6e2
       Path: Events\Default Work Unit\Ambient\AMB_Mountain_No_Color
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ambient
       guid: 790f8a366a4c584bb4648c994d77e913
       id: 77978275
@@ -413,8 +413,8 @@ MonoBehaviour:
         guid: 0625387433f30e42a550ad3aacdde0c2
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
-      maxDuration: 0.695412
-      minDuration: 0.3427633
+      maxDuration: -1
+      minDuration: -1
     - name: Footsteps
       guid: 597005017e762c438ac3b51c07469df9
       id: 2385628198
@@ -476,8 +476,8 @@ MonoBehaviour:
         guid: 750d18926d7eea4c9c07b192fefe9a3a
       Path: Events\Default Work Unit\SFX\Mountain\Play_Brama
       maxAttenuation: 0
-      maxDuration: 3.524625
-      minDuration: 3.524625
+      maxDuration: -1
+      minDuration: -1
     - name: Play_OLD_MOUTAIN_v2
       guid: a42f73146cf8ab4a96a3db4b5a7684c8
       id: 3989124476
@@ -493,8 +493,8 @@ MonoBehaviour:
         guid: a42f73146cf8ab4a96a3db4b5a7684c8
       Path: Events\Default Work Unit\Play_OLD_MOUTAIN_v2
       maxAttenuation: 0
-      maxDuration: 185.1923
-      minDuration: 185.1923
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Pick_Up_Key_01
       guid: f7d58ab78b71734585ce65ad6100a3ee
       id: 410464667
@@ -516,8 +516,8 @@ MonoBehaviour:
         guid: f7d58ab78b71734585ce65ad6100a3ee
       Path: Events\Default Work Unit\SFX\Mountain\Play_Pick_Up_Key_01
       maxAttenuation: 0
-      maxDuration: 2.6732087
-      minDuration: 2.6732087
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Rug_Mountain
       guid: 04a4034c34db644c9a79e1b38095c437
       id: 1024492458
@@ -539,8 +539,8 @@ MonoBehaviour:
         guid: 04a4034c34db644c9a79e1b38095c437
       Path: Events\Default Work Unit\SFX\Mountain\Play_Rug_Mountain
       maxAttenuation: 0
-      maxDuration: 2.289354
-      minDuration: 2.289354
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_1
       guid: 28ac67f341bd674391506bd3c2d145ca
       id: 2647172756
@@ -559,8 +559,8 @@ MonoBehaviour:
         guid: 28ac67f341bd674391506bd3c2d145ca
       Path: Events\Default Work Unit\Vocie\Play_Voice_1
       maxAttenuation: 0
-      maxDuration: 0.19191763
-      minDuration: 0.03662958
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_2
       guid: 829bde0721ca094598d984163ae0d787
       id: 2647172759
@@ -579,8 +579,8 @@ MonoBehaviour:
         guid: 829bde0721ca094598d984163ae0d787
       Path: Events\Default Work Unit\Vocie\Play_Voice_2
       maxAttenuation: 0
-      maxDuration: 0.25603053
-      minDuration: 0.04935904
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_3
       guid: 56bb12a7f738314184359cafc9c37b09
       id: 2647172758
@@ -599,8 +599,8 @@ MonoBehaviour:
         guid: 56bb12a7f738314184359cafc9c37b09
       Path: Events\Default Work Unit\Vocie\Play_Voice_3
       maxAttenuation: 0
-      maxDuration: 0.20576853
-      minDuration: 0.031894147
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_4
       guid: b031ecdc8254ef43bdde8c9d2d499811
       id: 2647172753
@@ -619,8 +619,8 @@ MonoBehaviour:
         guid: b031ecdc8254ef43bdde8c9d2d499811
       Path: Events\Default Work Unit\Vocie\Play_Voice_4
       maxAttenuation: 0
-      maxDuration: 0.15633634
-      minDuration: 0.06941748
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_5
       guid: ae18ddb232a79943ad9ebc2228ba32fb
       id: 2647172752
@@ -639,8 +639,8 @@ MonoBehaviour:
         guid: ae18ddb232a79943ad9ebc2228ba32fb
       Path: Events\Default Work Unit\Vocie\Play_Voice_5
       maxAttenuation: 0
-      maxDuration: 0.21320716
-      minDuration: 0.07897858
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_6
       guid: d0ab56752638914f8f2db8d6018152a4
       id: 2647172755
@@ -659,8 +659,8 @@ MonoBehaviour:
         guid: d0ab56752638914f8f2db8d6018152a4
       Path: Events\Default Work Unit\Vocie\Play_Voice_6
       maxAttenuation: 0
-      maxDuration: 0.13479094
-      minDuration: 0.05903934
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Voice_7
       guid: f8395f4e2a39b0459d80aa8eb5e951ac
       id: 2647172754
@@ -679,8 +679,8 @@ MonoBehaviour:
         guid: f8395f4e2a39b0459d80aa8eb5e951ac
       Path: Events\Default Work Unit\Vocie\Play_Voice_7
       maxAttenuation: 0
-      maxDuration: 0.046854697
-      minDuration: 0.025754957
+      maxDuration: -1
+      minDuration: -1
     - name: SFX
       guid: ef4b3eb39f52ee45b4c5665ed70acd6b
       id: 393239870
@@ -727,7 +727,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 986cf6ee0190bb4fa1fea9e879959242
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853880702914
     List: []
   - PhysicalPath: Game Parameters\Factory Soundseed Air Game Syncs.wwu
     PathAndIcons:
@@ -740,7 +740,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Soundseed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853880702914
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -894,7 +894,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dc4fb57fe03cd64ab13d93c5a28f4f3f
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866168464
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -908,7 +908,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5059fb513c289439331c8a8709d7761
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866168464
     List:
     - name: Footsteps
       guid: 424c3ef059f0ca45b43c7080d6314e2e
@@ -972,7 +972,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 72cef684772ba34eb029d46b34aa9401
     GuidInternal: 
-    m_lastTime: -8584376878284775808
+    m_lastTime: -8584376853866168464
     List: []
   ExpandedFileSystemItemIds: 0100000002000000030000000500000006000000070000000e0000000f000000
   ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000e0000000f000000
