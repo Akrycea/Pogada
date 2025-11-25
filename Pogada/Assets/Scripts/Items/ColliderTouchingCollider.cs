@@ -7,11 +7,15 @@ public class ColliderTouchingCollider : MonoBehaviour
     public string ObjectName;
 
     //wybierasz ktora minigierke chcesz
+    public bool PuzzleMinigame;
+
     public bool KeyMinigame;
     public bool CloudStairsMinigame;
+    public bool Statues;
 
     //odniesienie do puzzle minigierka
     public PuzzleMinigame puzzleMinigame;
+
     //odniesienie do licznika chmur
     public CloudStairsMinigame stairsMinigame;
 
@@ -19,21 +23,22 @@ public class ColliderTouchingCollider : MonoBehaviour
     private SpriteChangeAfterPuzzle bramaSpriteChange;
     private GameObject gate;
 
+    public Doormat doormat;
+
+    public StatueControl statueControl;
+
     //odniesienie do gracza
     [HideInInspector]
     public Transform player;
     [HideInInspector]
     public GameObject playerObject;
 
-    public Doormat doormat;
-    public Drag drag;
-
     private void Start()
     {
         //to wszystko do gracza jest
-        playerObject = GameObject.Find("Player");
-        player = playerObject.GetComponent<Transform>();
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
+        //playerObject = GameObject.Find("Player");
+        //player = playerObject.GetComponent<Transform>();
+        //Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -43,13 +48,20 @@ public class ColliderTouchingCollider : MonoBehaviour
         {
             Debug.Log("kolizja dotyka desired kolizji");
 
+            if (PuzzleMinigame)
+            {
+                puzzleMinigame.Puzzle();
+            }
+
             if (CloudStairsMinigame)
             {
                 //tu robi to co jest w puzzle minigierka skrypt
                 puzzleMinigame.Puzzle();
                 stairsMinigame.doneSteps++;
             }
-            else if (KeyMinigame && doormat.openDoormat == true)
+
+
+            if (KeyMinigame && doormat.openDoormat == true)
             {
                 //odniesienie do bramy, aby zmienic jej sprite
                 bramaSpriteChange = GameObject.Find("bramaSprite").GetComponent<SpriteChangeAfterPuzzle>();
@@ -59,6 +71,15 @@ public class ColliderTouchingCollider : MonoBehaviour
                 gate = GameObject.Find("bramaStop");
                 gate.SetActive(false);
             }
+
+            if (Statues)
+            {
+                puzzleMinigame.Puzzle();
+
+                gameObject.tag = "CZplaceable";
+                statueControl.Status();
+            }
+            
         }
 
     }

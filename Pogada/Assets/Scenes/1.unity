@@ -662,8 +662,8 @@ GameObject:
   - component: {fileID: 85738758}
   - component: {fileID: 85738762}
   - component: {fileID: 85738761}
-  - component: {fileID: 85738760}
   - component: {fileID: 85738759}
+  - component: {fileID: 85738760}
   - component: {fileID: 85738763}
   m_Layer: 0
   m_Name: chmura5polozenie
@@ -728,9 +728,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectName: chmura5
   KeyMinigame: 0
-  CloudStairsMinigame: 0
-  puzzleMinigame: {fileID: 0}
-  stairsMinigame: {fileID: 0}
+  CloudStairsMinigame: 1
+  puzzleMinigame: {fileID: 85738763}
+  stairsMinigame: {fileID: 434145512}
   player: {fileID: 0}
   playerObject: {fileID: 0}
   doormat: {fileID: 0}
@@ -862,8 +862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
-  ObiektOrginalny: {fileID: 1148579024}
+  targetSprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
+  ogObject: {fileID: 1148579024}
 --- !u!1 &95335567
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434145511}
+  - component: {fileID: 434145512}
   m_Layer: 0
   m_Name: StairsCloudMinigame
   m_TagString: Untagged
@@ -3313,6 +3314,19 @@ Transform:
   - {fileID: 488800465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434145512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434145510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50680f352c2aebf4c90f4c6b8f16c9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doneSteps: 0
 --- !u!1 &448184416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,9 +3677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectName: chmura2
   KeyMinigame: 0
-  CloudStairsMinigame: 0
-  puzzleMinigame: {fileID: 0}
-  stairsMinigame: {fileID: 0}
+  CloudStairsMinigame: 1
+  puzzleMinigame: {fileID: 456713956}
+  stairsMinigame: {fileID: 434145512}
   player: {fileID: 0}
   playerObject: {fileID: 0}
   doormat: {fileID: 0}
@@ -3797,8 +3811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
-  ObiektOrginalny: {fileID: 187191533}
+  targetSprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
+  ogObject: {fileID: 187191533}
 --- !u!1 &462298615
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,7 +5474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &907097187
 Transform:
   m_ObjectHideFlags: 0
@@ -7176,9 +7190,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectName: chmura3
   KeyMinigame: 0
-  CloudStairsMinigame: 0
-  puzzleMinigame: {fileID: 0}
-  stairsMinigame: {fileID: 0}
+  CloudStairsMinigame: 1
+  puzzleMinigame: {fileID: 1231764839}
+  stairsMinigame: {fileID: 434145512}
   player: {fileID: 0}
   playerObject: {fileID: 0}
   doormat: {fileID: 0}
@@ -7310,8 +7324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
-  ObiektOrginalny: {fileID: 197267384}
+  targetSprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
+  ogObject: {fileID: 197267384}
 --- !u!1001 &1240299757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8002,9 +8016,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectName: chmura1
   KeyMinigame: 0
-  CloudStairsMinigame: 0
-  puzzleMinigame: {fileID: 0}
-  stairsMinigame: {fileID: 0}
+  CloudStairsMinigame: 1
+  puzzleMinigame: {fileID: 1393569511}
+  stairsMinigame: {fileID: 434145512}
   player: {fileID: 0}
   playerObject: {fileID: 0}
   doormat: {fileID: 0}
@@ -8136,8 +8150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
-  ObiektOrginalny: {fileID: 264387659}
+  targetSprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
+  ogObject: {fileID: 264387659}
 --- !u!1 &1413261790
 GameObject:
   m_ObjectHideFlags: 0
@@ -9042,8 +9056,8 @@ GameObject:
   - component: {fileID: 1640449129}
   - component: {fileID: 1640449133}
   - component: {fileID: 1640449132}
-  - component: {fileID: 1640449131}
   - component: {fileID: 1640449130}
+  - component: {fileID: 1640449131}
   - component: {fileID: 1640449134}
   m_Layer: 0
   m_Name: chmura4polozenie
@@ -9108,9 +9122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectName: chmura4
   KeyMinigame: 0
-  CloudStairsMinigame: 0
-  puzzleMinigame: {fileID: 0}
-  stairsMinigame: {fileID: 0}
+  CloudStairsMinigame: 1
+  puzzleMinigame: {fileID: 1640449134}
+  stairsMinigame: {fileID: 434145512}
   player: {fileID: 0}
   playerObject: {fileID: 0}
   doormat: {fileID: 0}
@@ -9242,8 +9256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  DocelowySprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
-  ObiektOrginalny: {fileID: 687792840}
+  targetSprite: {fileID: -2119995992084361910, guid: d2e0c34c35df7e34cac4b96be5c5a15c, type: 3}
+  ogObject: {fileID: 687792840}
 --- !u!1 &1641492592
 GameObject:
   m_ObjectHideFlags: 0

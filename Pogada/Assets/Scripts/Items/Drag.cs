@@ -20,9 +20,9 @@ public class Drag : MonoBehaviour
     private void Start()
     {
         //znowu, to wszystko do playera
-        playerObject = GameObject.Find("Player");
-        player = playerObject.GetComponent<Transform>();
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
+        //playerObject = GameObject.Find("Player");
+        //player = playerObject.GetComponent<Transform>();
+        //Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
 
