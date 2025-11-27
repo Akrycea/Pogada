@@ -727,14 +727,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura5
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 1
+  Statues: 0
   puzzleMinigame: {fileID: 85738763}
   stairsMinigame: {fileID: 434145512}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 0}
 --- !u!60 &85738761
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2087,9 +2089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f1c7f72309b9c46999566739f856a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorChange: {fileID: 230619873}
-  Klucz: {fileID: 1600121955}
-  keyTaken: 0
 --- !u!4 &230619872
 Transform:
   m_ObjectHideFlags: 0
@@ -3676,14 +3675,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura2
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 1
+  Statues: 0
   puzzleMinigame: {fileID: 456713956}
   stairsMinigame: {fileID: 434145512}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 0}
 --- !u!60 &456713954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7189,14 +7190,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura3
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 1
+  Statues: 0
   puzzleMinigame: {fileID: 1231764839}
   stairsMinigame: {fileID: 434145512}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 0}
 --- !u!60 &1231764837
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7704,7 +7707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 50
-  slopeCheckDistance: 0.9
+  slopeCheckDistance: 15
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
   movingUp: 0
@@ -8015,14 +8018,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura1
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 1
+  Statues: 0
   puzzleMinigame: {fileID: 1393569511}
   stairsMinigame: {fileID: 434145512}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 0}
 --- !u!60 &1393569509
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8793,14 +8798,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: bramacollider
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 0
+  Statues: 0
   puzzleMinigame: {fileID: 0}
   stairsMinigame: {fileID: 0}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 1600121958}
 --- !u!114 &1600121958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9121,14 +9128,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: chmura4
+  PuzzleMinigame: 0
   KeyMinigame: 0
   CloudStairsMinigame: 1
+  Statues: 0
   puzzleMinigame: {fileID: 1640449134}
   stairsMinigame: {fileID: 434145512}
+  doormat: {fileID: 0}
+  statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
-  doormat: {fileID: 0}
-  drag: {fileID: 0}
 --- !u!60 &1640449132
 PolygonCollider2D:
   m_ObjectHideFlags: 0

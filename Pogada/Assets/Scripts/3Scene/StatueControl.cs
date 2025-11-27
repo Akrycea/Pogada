@@ -21,8 +21,6 @@ public class StatueControl : MonoBehaviour
     {
         if (ground.gameObject.CompareTag("CZplaceable"))
         {
-            Debug.Log("its reading the tag");
-
             sunParts[0].SetActive(true);
             //moonParts[0].SetActive(true);
         }
