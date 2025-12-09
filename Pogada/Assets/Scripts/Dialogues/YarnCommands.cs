@@ -26,7 +26,7 @@ public class YarnCommands : MonoBehaviour
         zielony.dialoguePlayed = false;
     }
 
-    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty zielonego
     [YarnCommand("zielony2debata")]
     public void zielony2debata()
     {
@@ -34,10 +34,30 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M15_PomocZieleni");
     }
 
+    //triggeruje powrót kolorów po wygranej debacie zielonego
     [YarnCommand("zielonywygranadebata")]
     public void zielonywygranadebata()
     {
         colorChange.szary = false;
         colorChange.zielony = true;
+    }
+
+    //odpala dialog o blueprincie z zielonym po dotknieciu collideru
+    private CollisionDialogue dialtriggerBlueprints;
+    [YarnCommand("playBlueprintDialGreen")]
+    public void triggerPlaysBlueprintDialogue()
+    {
+        dialtriggerBlueprints = GameObject.Find("DialTriggerBlueprint").GetComponent<CollisionDialogue>();
+        dialtriggerBlueprints.nazwaDialogu = "D6_ZnalezcCzerwien";
+    }
+
+    //tutaj daj odpalenie minigierki ukladania zdan czerwonego
+
+    //triggeruje powrót kolorów po wygranej debacie zielonego
+    [YarnCommand("czerwonywygranadebata")]
+    public void czerwonywygranadebata()
+    {
+        colorChange.zielony = false;
+        colorChange.czerwony = true;
     }
 }

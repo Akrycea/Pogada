@@ -1,0 +1,213 @@
+﻿title: M2_PoznanieCzerwieni
+---
+Robert: Przeprosiłem ją tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
+
+Robert: A potem zaczęła kłamać mi prosto w twarz.
+
+Robert: Nie jestem żadnym kradziejem!
+
+Bohater:  Czy to cię tak zdenerwowało?
+
+Robert: Tak. Ja nie kradnę. I nie kłamię!
+
+Bohater: Wierzę ci. 
+
+Robert: Ona w ogóle nie wierzyła. I nie słuchała co mówię.
+	<<jump M2_PoznanieCzerwieni1>>
+===
+
+title: M2_PoznanieCzerwieni1
+---
+Jak zaczęło się to zamieszanie?
+	<<GoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni1_1>>
+Oddaj Liv jej pluszaka.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni1_2>>
+Czemu ukradłeś Perełkę?
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni1_2>>
+Jak to było z tym pluszakiem?
+	<<VGoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni1_1>>
+Po co brudziłeś Perełkę?
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni1_2>>
+===
+
+title: M2_PoznanieCzerwieni1_1
+---
+Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pobrudziłem, przypadek!
+	<<jump M2_PoznanieCzerwieni2>>
+===
+
+title: M2_PoznanieCzerwieni1_2
+---
+Robert: Już przepraszałem Liv za Perełkę. To była głupia pomyłka. Jej to nie obchodzi.
+	<<jump M2_PoznanieCzerwieni2>>
+===
+
+title: M2_PoznanieCzerwieni2
+---
+Czemu jeszcze nie powiedziałeś tego Liv?
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni2_2>>
+Może wytłumaczymy to Liv razem?
+	<<VGoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni2_1>>
+Specjalnie czy nie, zepsułeś jej zabawkę.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni2_2>>
+Powiedz to Liv.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni2_2>>
+Ja mogę z nią porozmawiać.
+	<<GoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni2_1>>
+===
+
+title: M2_PoznanieCzerwieni2_1
+---
+Robert: Może by zadziałało. Chyba wolałbym, żeby mi po prostu uwierzyła.
+	<<jump M2_PoznanieCzerwieni3>>
+===
+
+title: M2_PoznanieCzerwieni2_2
+---
+Robert: Mówiłem ci przecież, że ona mnie nie słucha! Ty też nie  jak widać.
+	<<jump M2_PoznanieCzerwieni3>>
+===
+
+title: M2_PoznanieCzerwieni3
+---
+Powinieneś pogodzić się z tym, że ci nie wierzy.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni3_2>>
+Może jesteś za mało przekonujący.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni3_2>>
+Po tym, jak opadła złość, może będzie skłonna.
+	<<VGoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni3_1>>
+Ciężko uwierzyć bez dowodów.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni3_2>>
+Może uwierzyć grupie.
+	<<GoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni3_1>>
+===
+
+title: M2_PoznanieCzerwieni3_1
+---
+Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kłamczuchą!
+	<<jump M2_PoznanieCzerwieni4>>
+===
+
+title: M2_PoznanieCzerwieni3_2
+---
+Robert: odzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
+	<<jump M2_PoznanieCzerwieni4>>
+===
+
+title: M2_PoznanieCzerwieni4
+---
+Któreś z was nie mówi prawdy, to pewne.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni4_2>>
+Mówiła, że rozbiłeś statuę ze złości.
+	<<VGoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni4_1>>
+Miała rację, że psujesz rzeczy, jak się złościsz.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni4_2>>
+Wspominała, że nie radzisz sobie ze złością.
+	<<GoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni4_1>>
+Nie unoś się.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni4_2>>
+===
+
+title: M2_PoznanieCzerwieni4_1
+---
+Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
+	<<jump M2_PoznanieCzerwieni5>>
+===
+
+title: M2_PoznanieCzerwieni4_2
+---
+Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i cała reszta!
+	<<jump M2_PoznanieCzerwieni5>>
+===
+
+title: M2_PoznanieCzerwieni5
+---
+Wydajesz się bardzo przeżywać strach innych dzieci.
+	<<GoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni5_1>>
+Wydaje mi się, że kłamiesz.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni5_2>>
+Liv chyba miała rację.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni5_2>>
+A jednak wygląda na to, że zależało ci na statule.
+	<<VGoodChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni5_1>>
+Zniszczyłeś pluszaka, masz za swoje.
+	<<BadChoice PointMeter>>
+	<<jump M2_PoznanieCzerwieni5_2>>
+===
+
+title: M2_PoznanieCzerwieni5_1
+---
+Robert: ...
+	<<jump M2_PoznanieCzerwieniPoDebata>>
+===
+
+title: M2_PoznanieCzerwieni5_2
+---
+Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To nie tak, że chcę taki być!
+	<<jump M2_PoznanieCzerwieniPoDebata>>
+===
+
+title: M2_PoznanieCzerwieniPoDebata
+---
+Robert: Nie chciałem rozbijać statuy, ale Liv mnie okropnie zdenerowała i nie wiedziałem co zrobić!
+
+Robert: Miałem wrażenie, że jeśli czegoś nie zrobię, to wybuchnę!
+
+Robert: Nie złościełem się specjalnie, nigdy nie robię tego specjalnie.
+
+Viri: Wiemy, że nie jesteś straszny specjalnie…
+
+Robert: W ogóle nie chcę być straszny.
+
+Bohater: Czy zniszczenie statuy pomogło ci ze złością?
+
+Robert: Trochę.
+
+Robert: Ale potem zrobiło mi się przykro.
+
+Bohater: Może musisz mieć dla siebie miejsce, gdzie możesz być zły.
+
+Bohater: Mógłbyć przygotować sobie rzeczy do niszczenia, jak puste kartki papieru do rozdarcia.
+
+Bohater: Pozbyłbyś się złości w bardziej kontrolowany sposób.
+
+Robert: Wolałbym się nie złościć w ogóle.
+
+Bohater: Niestety, nie da się od tego uciec.
+
+Bohater: Nie ma nic złego w złości. Trzeba po prostu znaleźc własny sposób na radzenie sobie z nią.
+
+Viri: Jakby Liv usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
+
+Viri: Proszę, spróbuj z nią porozmawiać.
+
+Viri: Pójdziemy z tobą, pomożemy…
+
+Robert: No dobrze. Ale potrzymaj mnie za rękę.
+
+<<czerwonywygranadebata Dialogi>>
+==
