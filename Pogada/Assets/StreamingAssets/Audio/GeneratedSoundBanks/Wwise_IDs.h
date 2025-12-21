@@ -16,6 +16,9 @@ namespace AK
         static const AkUniqueID AMB_MOUNTAIN_NO_COLOR = 2138404147U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID PLAY_BRAMA = 3706461557U;
+        static const AkUniqueID PLAY_FOREST = 207755397U;
+        static const AkUniqueID PLAY_FROG_MINIGAME = 1308393748U;
+        static const AkUniqueID PLAY_MOUNTAIN_NO_COLOR = 860406411U;
         static const AkUniqueID PLAY_OLD_MOUTAIN_V2 = 3989124476U;
         static const AkUniqueID PLAY_PICK_UP_KEY_01 = 410464667U;
         static const AkUniqueID PLAY_RUG_MOUNTAIN = 1024492458U;
@@ -27,6 +30,21 @@ namespace AK
         static const AkUniqueID PLAY_VOICE_6 = 2647172755U;
         static const AkUniqueID PLAY_VOICE_7 = 2647172754U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AMBIENT = 77978275U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
