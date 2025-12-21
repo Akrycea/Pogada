@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: a138ed1cec568949ae50ac5ef6b6f2b7
     GuidInternal: 
-    m_lastTime: -8584352621296784358
+    m_lastTime: -8584382051935251304
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584352621296784358
+    m_lastTime: -8584387365372869943
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4f5515c0fc7dd443875d761b63b55d64
     GuidInternal: 
-    m_lastTime: -8584352621306320506
+    m_lastTime: -8584382051935271300
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b11b922c8c70d848a202b3c1e8c666c7
     GuidInternal: 
-    m_lastTime: -8584352621296794344
+    m_lastTime: -8584352617748166082
     List:
     - name: Pogada
       guid: 62f62a8bfa32c64cb08ba50fd164596f
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2e751f066be7bd429be54bfb4721995c
     GuidInternal: 
-    m_lastTime: -8584352621309045393
+    m_lastTime: -8584352617748178497
     List:
     - name: AMB_Mountain_No_Color
       guid: 265962007da03b4bbaf1351bdbc9f6e2
@@ -399,23 +399,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Footsteps
-      guid: 0625387433f30e42a550ad3aacdde0c2
-      id: 2385628198
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 2e751f066be7bd429be54bfb4721995c
-      - ElementName: Footsteps
-        ObjectType: 4
-        guid: 0625387433f30e42a550ad3aacdde0c2
-      Path: Events\Default Work Unit\Footsteps
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Footsteps
       guid: 597005017e762c438ac3b51c07469df9
       id: 2385628198
       PathAndIcons:
@@ -432,6 +415,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 597005017e762c438ac3b51c07469df9
       Path: Events\Default Work Unit\Footsteps\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footsteps
+      guid: 0625387433f30e42a550ad3aacdde0c2
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e751f066be7bd429be54bfb4721995c
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: 0625387433f30e42a550ad3aacdde0c2
+      Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -475,6 +475,57 @@ MonoBehaviour:
         ObjectType: 3
         guid: 750d18926d7eea4c9c07b192fefe9a3a
       Path: Events\Default Work Unit\SFX\Mountain\Play_Brama
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Forest
+      guid: 7242daa70bf5e5469df4ce0b8f753de8
+      id: 207755397
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e751f066be7bd429be54bfb4721995c
+      - ElementName: Play_Forest
+        ObjectType: 3
+        guid: 7242daa70bf5e5469df4ce0b8f753de8
+      Path: Events\Default Work Unit\Play_Forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Frog_MiniGame
+      guid: b9b5fa9adaa78c4799d5149c6c415f88
+      id: 1308393748
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e751f066be7bd429be54bfb4721995c
+      - ElementName: Play_Frog_MiniGame
+        ObjectType: 3
+        guid: b9b5fa9adaa78c4799d5149c6c415f88
+      Path: Events\Default Work Unit\Play_Frog_MiniGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Mountain_No_Color
+      guid: d0e2dd79332d11408098e1947747d16f
+      id: 860406411
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e751f066be7bd429be54bfb4721995c
+      - ElementName: Play_Mountain_No_Color
+        ObjectType: 3
+        guid: d0e2dd79332d11408098e1947747d16f
+      Path: Events\Default Work Unit\Play_Mountain_No_Color
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -727,7 +778,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 986cf6ee0190bb4fa1fea9e879959242
     GuidInternal: 
-    m_lastTime: -8584352621309045393
+    m_lastTime: -8584382051935346790
     List: []
   - PhysicalPath: Game Parameters\Factory Soundseed Air Game Syncs.wwu
     PathAndIcons:
@@ -740,7 +791,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Soundseed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8584352621309045393
+    m_lastTime: -8584387365142535369
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -894,8 +945,58 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dc4fb57fe03cd64ab13d93c5a28f4f3f
     GuidInternal: 
-    m_lastTime: -8584352621296794344
-    List: []
+    m_lastTime: -8584352617748188491
+    List:
+    - name: Music_State
+      guid: 0ed64df98d28d24a9dd0a01d16244c7d
+      id: 3826569560
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dc4fb57fe03cd64ab13d93c5a28f4f3f
+      - ElementName: Music_State
+        ObjectType: 9
+        guid: 0ed64df98d28d24a9dd0a01d16244c7d
+      Path: States\Default Work Unit\Music_State
+      values:
+      - name: Ambient
+        guid: b83f39e0b721b34ba895fd7a12562026
+        id: 77978275
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dc4fb57fe03cd64ab13d93c5a28f4f3f
+        - ElementName: Music_State
+          ObjectType: 9
+          guid: 0ed64df98d28d24a9dd0a01d16244c7d
+        - ElementName: Ambient
+          ObjectType: 8
+          guid: b83f39e0b721b34ba895fd7a12562026
+      - name: None
+        guid: 6f4f9a5f043c604d8f22b25f3be165cc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dc4fb57fe03cd64ab13d93c5a28f4f3f
+        - ElementName: Music_State
+          ObjectType: 9
+          guid: 0ed64df98d28d24a9dd0a01d16244c7d
+        - ElementName: None
+          ObjectType: 8
+          guid: 6f4f9a5f043c604d8f22b25f3be165cc
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -908,7 +1009,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5059fb513c289439331c8a8709d7761
     GuidInternal: 
-    m_lastTime: -8584352621296784358
+    m_lastTime: -8584381933884630194
     List:
     - name: Footsteps
       guid: 424c3ef059f0ca45b43c7080d6314e2e
@@ -972,11 +1073,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 72cef684772ba34eb029d46b34aa9401
     GuidInternal: 
-    m_lastTime: -8584352621296784358
+    m_lastTime: -8584382051935205990
     List: []
-  ExpandedFileSystemItemIds: 02000000030000001d0000001e000000
-  ExpandedWaapiItemIds: 02000000030000001d0000001e000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
