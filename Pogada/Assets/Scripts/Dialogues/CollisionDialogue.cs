@@ -9,7 +9,7 @@ public class CollisionDialogue : MonoBehaviour
     //bool mozna zmienic na public i wykorzystac w  innym skrypcie np. po odpaleniu tego dialogu mozna cos zrobic
     public bool dialoguePlayed = false;
 
-    public void OnTriggerEnter2D(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (!dialoguePlayed && other.name == "Player")
         {
