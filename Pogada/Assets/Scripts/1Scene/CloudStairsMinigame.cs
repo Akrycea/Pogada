@@ -9,7 +9,6 @@ public class CloudStairsMinigame : MonoBehaviour
     {
         if (doneSteps == 5)
         {
-            Debug.Log(doneSteps);
             stepsCollider = GameObject.Find("Teren_Ch-B").GetComponent<Collider2D>();
             stepsCollider.isTrigger = false;
         }

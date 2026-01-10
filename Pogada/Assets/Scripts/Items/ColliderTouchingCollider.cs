@@ -1,5 +1,6 @@
 using TMPro.Examples;
 using UnityEngine;
+using Yarn.Unity;
 
 public class ColliderTouchingCollider : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class ColliderTouchingCollider : MonoBehaviour
     public bool CloudStairsMinigame;
     public bool Statues;
 
+    //dialoguerunner zeby cos powiedziec po rozwiazaniu zagadki
+    private DialogueRunner dialogueRunner;
+
     //odniesienie do puzzle minigierka
     public PuzzleMinigame puzzleMinigame;
 
@@ -20,7 +24,7 @@ public class ColliderTouchingCollider : MonoBehaviour
     public CloudStairsMinigame stairsMinigame;
 
     //odniesienie do bramy, aby zmienic jej sprite
-    private SpriteChangeAfterPuzzle bramaSpriteChange;
+    private SpriteChangeAfterPuzzle gateSpriteChange;
     private GameObject gate;
 
     public Doormat doormat;
@@ -64,12 +68,15 @@ public class ColliderTouchingCollider : MonoBehaviour
             if (KeyMinigame && doormat.openDoormat == true)
             {
                 //odniesienie do bramy, aby zmienic jej sprite
-                bramaSpriteChange = GameObject.Find("bramaSprite").GetComponent<SpriteChangeAfterPuzzle>();
+                gateSpriteChange = GameObject.Find("gateSprite").GetComponent<SpriteChangeAfterPuzzle>();
                 //zmienia sprite bramy
-                bramaSpriteChange.myPuzzleGotCompleted();
+                gateSpriteChange.myPuzzleGotCompleted();
 
-                gate = GameObject.Find("bramaStop");
+                gate = GameObject.Find("gateStop");
                 gate.SetActive(false);
+
+                dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+                dialogueRunner.StartDialogue("P1_Brama_fin");
             }
 
             if (Statues)

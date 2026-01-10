@@ -1628,6 +1628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157563553}
+  - component: {fileID: 157563554}
   m_Layer: 0
   m_Name: Dialogues
   m_TagString: Untagged
@@ -1652,6 +1653,20 @@ Transform:
   - {fileID: 68600936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157563554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157563552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb2cb70cecc6ca4480e11c453fe5c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialRunner: {fileID: 1240299761}
+  colorChange: {fileID: 230619873}
 --- !u!1 &182486127
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,7 +8001,7 @@ PrefabInstance:
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: 3567ec3391107ca408f77f6e1f1c71dc, type: 3}
+      objectReference: {fileID: 7545569452688597077, guid: a5d2e7f0e69432f4380d7f33fc7e91cd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8039,6 +8054,17 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
+--- !u!114 &1240299761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 1240299757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1240299764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9461,14 +9487,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: bramacollider
+  ObjectName: gateCollider
   PuzzleMinigame: 0
-  KeyMinigame: 0
+  KeyMinigame: 1
   CloudStairsMinigame: 0
   Statues: 0
   puzzleMinigame: {fileID: 0}
   stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
+  doormat: {fileID: 269549802}
   statueControl: {fileID: 0}
   player: {fileID: 0}
   playerObject: {fileID: 0}
@@ -10293,6 +10319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794887887}
   - component: {fileID: 1794887888}
+  - component: {fileID: 1794887889}
   m_Layer: 0
   m_Name: gateCollider
   m_TagString: Untagged
@@ -10349,7 +10376,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.437378, y: 1.2526703}
+  m_Offset: {x: 2.437378, y: 0.99484634}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10359,8 +10386,23 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.4918823, y: 1.7845612}
+  m_Size: {x: 2.4918823, y: 2.300209}
   m_EdgeRadius: 0
+--- !u!114 &1794887889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794887886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2481e91fc086a349926577df3f99ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nazwaDialogu: P1_Brama_1
+  dialogueRunner: {fileID: 1240299761}
+  dialoguePlayed: 0
 --- !u!1 &1803414871
 GameObject:
   m_ObjectHideFlags: 0
@@ -11291,10 +11333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

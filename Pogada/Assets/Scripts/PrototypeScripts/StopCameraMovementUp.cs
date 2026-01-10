@@ -19,7 +19,6 @@ public class StopCameraMovementUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("dotkniete");
         camera4.enabled = false;
         camera5.enabled = true;
         cameraChange.cameraUp = false;
