@@ -1,0 +1,234 @@
+﻿title: M3_PogodzenieGranat
+---
+Liv: Mój kochany Perełka!
+
+Liv: I jeszcze go pan wyczyścił!
+
+Liv: Hurra!
+
+Bohater: To Viri wyczyścił Perełkę, jemu należą się za to podziękowania.
+
+Liv: Viri?
+
+Liv: Chwila, nie pozwoliłam ci dotykać pana Perełki!
+
+Viri: Ja… Ja wiem, ale, ale chciałem  tylko pomóc…
+
+Viri: To… To ja zabrałem ci pana Perełkę jak nie patrzyłaś!
+
+Viri: Chciałem, żebyś pogodziła się z Robertem.
+
+Robert: Mówiłem, że nie dotykałem Perełki.
+===
+
+title: M3_PogodenieGranat1
+---
+Robert nie kłamał podczas waszej kłótni.
+	<<VGoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat_1>>
+
+Wygląda na to, że doszło do nieporozumienia.
+	<<GoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat_1>>
+
+Niepotrzebnie przezywałaś brata.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat_2>>
+
+Przestańcie się skupiać na pluszaku.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat_2>>
+
+Robertowi należą się przeprosiny.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat_2>>
+===
+
+title: M3_PogodzenieGranat_1
+---
+Liv: No i? Pobrudzenie Perełki to i tak jego wina.
+	<<jump M3_PogodzenieGranat2>>
+===
+
+title: M3_PgodzenieGranat_2
+---
+Liv: Perełka jest najważniejszą częścią tej rodziny! Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
+	<<jump M3_PogodzenieGranat2>>
+===
+title: M3_PogodenieGranat2
+---
+Czy przeprosił cię za to?
+	<<VGoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat2_1>>
+
+Sama mówiłaś, że Robert wyraził skruchę.
+	<<GoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat2_1>>
+
+Wybacz mu i po problemie.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat2_2>>
+
+Już prowadziliście tą rozmowę.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat2_2>>
+
+Przeprosił, więc jest uniewinniony.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat2_2>>
+===
+
+title: M3_PogodzenieGranat2_1
+---
+Liv: Tylko dlatego, że mama go tak nauczyła. Nigdy nie przeprasza z serduszka, jak się powinno.
+	<<jump M3_PogodzenieGranat3>>
+===
+
+title: M3_PgodzenieGranat2_2
+---
+Liv: Nie wybaczę komuś, kto mówi przeprosiny na odwal! Niech znowu zamknie się w swoim brzydkim domku.
+	<<jump M3_PogodzenieGranat3>>
+===
+title: M3_PogodenieGranat3
+---
+Zakładanie intencji innych może być mylące.
+	<<VGoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat3_1>>
+
+Robert starał się poprawnie przeprosić na własny sposób.
+	<<GoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat3_1>>
+
+Przeprosiny to przeprosiny.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat3_2>>
+
+Nie wiesz przecież, co się dzieje w jego głowie.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat3_2>>
+
+Powinnaś ufać mu bezgranicznie.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat3_2>>
+===
+
+title: M3_PogodzenieGranat3_1
+---
+Liv: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
+	<<jump M3_PogodzenieGranat4>>
+===
+
+title: M3_PgodzenieGranat3_2
+---
+Liv: Nie wierzę nikomu, kto się tak wścieka.
+	<<jump M3_PogodzenieGranat4>>
+===
+title: M3_PogodenieGranat4
+---
+Mówił szczerze, złościł się, bo mu nie ufałaś.
+	<<VGoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat4_1>>
+
+Nikt nie lubi, jak nazywa się go kłamczuchem.
+	<<GoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat4_1>>
+
+Też bym się zezłościł na jego miejscu.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat4_2>>
+
+Skoro sobie nie ufacie, to nie ma o czym mówić.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat4_2>>
+
+Odwracasz uwagę od rzeczywistego problemu.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat4_2>>
+===
+
+title: M3_PogodzenieGranat4_1
+---
+Liv: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rzeźbą. Wredzioch.
+	<<jump M3_PogodzenieGranat5>>
+===
+
+title: M3_PgodzenieGranat4_2
+---
+Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozwalać rzeczy gzieś indziej. Z dala ode mnie.
+	<<jump M3_PogodzenieGranat5>>
+===
+title: M3_PogodenieGranat5
+---
+Mówił szczerze, złościł się, bo mu nie ufałaś.
+	<<VGoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat5_1>>
+
+Nikt nie lubi, jak nazywa się go kłamczuchem.
+	<<GoodChoice PointMeter>>
+	<<jump M3_PogodzenieGranat5_1>>
+
+Też bym się zezłościł na jego miejscu.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat5_2>>
+
+Skoro sobie nie ufacie, to nie ma o czym mówić.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat5_2>>
+
+Odwracasz uwagę od rzeczywistego problemu.
+	<<BadChoice PointMeter>>
+	<<jump M3_PogodzenieGranat5_2>>
+===
+
+title: M3_PogodzenieGranat5_1
+---
+Liv: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę. 
+	<<jump M3_PogodzenieGranatPoDebata>>
+===
+
+title: M3_PgodzenieGranat5_2
+---
+Liv: Ugh, nie chce więcej widzieć jego wybuchów straszności.
+	<<jump M3_PogodzenieGranatPoDebata>>
+===
+
+
+title: M3_PogodzenieGranatPoDebata
+---
+Liv: I tak nie chce mi się już być złą.
+
+Robert: …Dziękuję.
+
+Robert: Nie chciałem pobrudzić Perełki.
+
+Liv: Wierzę ci już, wierzę!
+
+Viri: To, ten, jesteśmy wszyscy pogodzeni?
+
+Robert: Nikt się z tobą nie kłócił.
+
+Bohater: Cieszę się, że wszyscy się już dogadują.
+
+Bohater: Robert, chętnie pomogę ci z przygotowaniem  tych rzeczy, o których rozmawialiśmy, jak już rozwiąże się problem z resztą kolorów.
+
+Liv: O czym gadaliście? O czym, o czym?
+
+Robert: Pan powiedział, że jak jestem zły, to pomoże przygotowanie sobie rzeczy, których mogę użyć, żeby nie wybuchnąc.
+
+Liv: Ty też masz wtedy takie wrażenie?
+
+Robert: Też?
+
+Liv: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
+
+Viri: A… A ja też mogę?
+
+Liv: Jasne!
+
+Bohater: Zanim mi się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
+
+Liv: [nwm co trzeba kliknąć itp żeby przejśc dalej] Powinna być gdzieś tam ze swoim zwierzakiem.
+
+Bohater: Dziękuję.
+<<granatwygranadebata Dialogi>>
+===
