@@ -24,6 +24,8 @@ public class SentenceBuilding : MonoBehaviour
     public List<string> rightAnswer4 = new List<string>();
     public List<string> rightAnswer5 = new List<string>();
     public List<string> rightAnswer6 = new List<string>();
+    public List<string> rightAnswer7 = new List<string>();
+    public List<string> rightAnswer8 = new List<string>();
 
     //mid odpowiedzi mozna zrobic tyle ile potrzeba
     public List<string> midAnswer = new List<string>();
@@ -36,18 +38,9 @@ public class SentenceBuilding : MonoBehaviour
 
     //dialog runner
     public DialogueRunner dialogueRunner;
-
-    void Start()
-    {
-
-    }
-
-
-    void Update()
-    {
-       
-
-    }
+    public string nazwaDialoguGOOD;
+    public string nazwaDialoguMID;
+    public string nazwaDialoguBAD;
 
     //tu mozna zrobic ze musisz zaliczyc kilka pod rzad dobrze
     public void checkSentence()
@@ -61,42 +54,56 @@ public class SentenceBuilding : MonoBehaviour
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer2))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer3))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer4))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer5))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer6))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Poprawna odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z");
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            BudowanieZdanObiekt.SetActive(false);
+        }
+        else if (sentence.SequenceEqual(rightAnswer7))
+        {
+            Debug.Log("wygrana");
+            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            BudowanieZdanObiekt.SetActive(false);
+        }
+        else if (sentence.SequenceEqual(rightAnswer8))
+        {
+            Debug.Log("wygrana");
+            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
 
@@ -105,25 +112,25 @@ public class SentenceBuilding : MonoBehaviour
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Mid odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z_Mid");
+            dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer2))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Mid odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z_Mid");
+            dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer3))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Mid odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z_Mid");
+            dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer4))
         {
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "Mid odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z_Mid");
+            dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
 
 
@@ -134,7 +141,7 @@ public class SentenceBuilding : MonoBehaviour
         {
             Debug.Log("fail");
             budowaneZdanieUI.text = "Z≥a odpowiedü!";
-            dialogueRunner.StartDialogue("M15_Z_Bad");
+            dialogueRunner.StartDialogue(nazwaDialoguBAD);
         }
 
         sentence.Clear();

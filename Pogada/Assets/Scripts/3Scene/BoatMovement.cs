@@ -16,7 +16,7 @@ public class BoatMovement : MonoBehaviour
 
     public TurtleMovement turtleMovement;
 
-    public ZielonyDebataPlayer zielonyDebataPlayer;
+    public DebataPlayer zielonyDebataPlayer;
 
 
     void Start()

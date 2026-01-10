@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ZielonyDebataPlayer : MonoBehaviour
+public class DebataPlayer : MonoBehaviour
 {
     public bool wygranaMinigierka;
 

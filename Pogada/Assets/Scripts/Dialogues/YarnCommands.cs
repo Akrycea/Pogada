@@ -75,13 +75,61 @@ public class YarnCommands : MonoBehaviour
         dialtriggerBlueprints.nazwaDialogu = "D6_ZnalezcCzerwien";
     }
 
-    //tutaj daj odpalenie minigierki ukladania zdan czerwonego
+    //odpalenie minigierki ukladania zdan czerwonego
+    private DebataPlayer czerwonydebata;
+    [YarnCommand("czerwonyDebata")]
+    public void czerwonyDebata()
+    {
+        czerwonydebata = GameObject.Find("Czerwony").GetComponent<DebataPlayer>();
+        czerwonydebata.wygranaMinigierka = true;
+    }
 
-    //triggeruje powrót kolorów po wygranej debacie zielonego
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
+    [YarnCommand("czerwony2debata")]
+    public void czerwony2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M2_PoznanieCzerwieni");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie czerwonego
     [YarnCommand("czerwonywygranadebata")]
     public void czerwonywygranadebata()
     {
         colorChange.zielony = false;
         colorChange.czerwony = true;
+    }
+
+    //po debacie z czerwonym pozwala pogadac z granat i zaczac jej quest
+    [YarnCommand("granatOdpalQuest")]
+    public void granatOdpalaQuest()
+    {
+        granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
+        granat.nazwaDialogu = "D8_PrzekoanieCzerwieni";
+    }
+
+    //odpalenie minigierki ukladania zdan granat
+    private DebataPlayer granatdebata;
+    [YarnCommand("granatDebata")]
+    public void granatDebata()
+    {
+        granatdebata = GameObject.Find("Granat").GetComponent<DebataPlayer>();
+        granatdebata.wygranaMinigierka = true;
+    }
+
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty granat
+    [YarnCommand("granat2debata")]
+    public void granat2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M3_PogodzenieGranat");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie granat
+    [YarnCommand("granatwygranadebata")]
+    public void granatwygranadebata()
+    {
+        colorChange.czerwony = false;
+        colorChange.granat = true;
     }
 }
