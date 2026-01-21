@@ -47,6 +47,8 @@ public class ColliderTouchingCollider : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("kolizja dotyka kolizji");
+
         //jesli dotknieta kolizja zgadza sie z ta ktora wybralismy to zrob to
         if (collision.gameObject.name == ObjectName)
         {

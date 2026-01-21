@@ -7,7 +7,9 @@ public class StatueControl : MonoBehaviour
     public GameObject[] sunParts;
     public GameObject[] moonParts;
 
+    [SerializeField]
     private int sunNumber = 0;
+    [SerializeField]
     private int moonNumber = 0;
 
     public DebataPlayer debataPlayer;
@@ -35,9 +37,10 @@ public class StatueControl : MonoBehaviour
         }
 
 
-        if (sunNumber == sunParts.Lenght - 1 && moonParts == moonParts.Lenght - 1)
+        if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
         {
-            debataPlayer.wygranaMinigierka = true;
+            Debug.Log("statuly wygrane");
+            //debataPlayer.wygranaMinigierka = true;
         }
     }
 }
