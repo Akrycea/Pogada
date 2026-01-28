@@ -18,19 +18,19 @@ Robert: Ona w ogóle nie wierzyła. I nie słuchała co mówię.
 
 title: M2_PoznanieCzerwieni1
 ---
-Jak zaczęło się to zamieszanie?
+->Jak zaczęło się to zamieszanie?
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
-Oddaj Liv jej pluszaka.
+->Oddaj Liv jej pluszaka.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
-Czemu ukradłeś Perełkę?
+->Czemu ukradłeś Perełkę?
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
-Jak to było z tym pluszakiem?
+->Jak to było z tym pluszakiem?
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
-Po co brudziłeś Perełkę?
+->Po co brudziłeś Perełkę?
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ===
@@ -49,19 +49,19 @@ Robert: Już przepraszałem Liv za Perełkę. To była głupia pomyłka. Jej to 
 
 title: M2_PoznanieCzerwieni2
 ---
-Czemu jeszcze nie powiedziałeś tego Liv?
+->Czemu jeszcze nie powiedziałeś tego Liv?
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
-Może wytłumaczymy to Liv razem?
+->Może wytłumaczymy to Liv razem?
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
-Specjalnie czy nie, zepsułeś jej zabawkę.
+->Specjalnie czy nie, zepsułeś jej zabawkę.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
-Powiedz to Liv.
+->Powiedz to Liv.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
-Ja mogę z nią porozmawiać.
+->Ja mogę z nią porozmawiać.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ===
@@ -80,19 +80,19 @@ Robert: Mówiłem ci przecież, że ona mnie nie słucha! Ty też nie  jak wida�
 
 title: M2_PoznanieCzerwieni3
 ---
-Powinieneś pogodzić się z tym, że ci nie wierzy.
+->Powinieneś pogodzić się z tym, że ci nie wierzy.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
-Może jesteś za mało przekonujący.
+->Może jesteś za mało przekonujący.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
-Po tym, jak opadła złość, może będzie skłonna.
+->Po tym, jak opadła złość, może będzie skłonna.
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
-Ciężko uwierzyć bez dowodów.
+->Ciężko uwierzyć bez dowodów.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
-Może uwierzyć grupie.
+->Może uwierzyć grupie.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ===
@@ -111,19 +111,19 @@ Robert: odzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłami
 
 title: M2_PoznanieCzerwieni4
 ---
-Któreś z was nie mówi prawdy, to pewne.
+->Któreś z was nie mówi prawdy, to pewne.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
-Mówiła, że rozbiłeś statuę ze złości.
+->Mówiła, że rozbiłeś statuę ze złości.
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
-Miała rację, że psujesz rzeczy, jak się złościsz.
+->Miała rację, że psujesz rzeczy, jak się złościsz.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
-Wspominała, że nie radzisz sobie ze złością.
+->Wspominała, że nie radzisz sobie ze złością.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
-Nie unoś się.
+->Nie unoś się.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ===
@@ -142,19 +142,19 @@ Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i c
 
 title: M2_PoznanieCzerwieni5
 ---
-Wydajesz się bardzo przeżywać strach innych dzieci.
+->Wydajesz się bardzo przeżywać strach innych dzieci.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
-Wydaje mi się, że kłamiesz.
+->Wydaje mi się, że kłamiesz.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
-Liv chyba miała rację.
+->Liv chyba miała rację.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
-A jednak wygląda na to, że zależało ci na statule.
+->A jednak wygląda na to, że zależało ci na statule.
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
-Zniszczyłeś pluszaka, masz za swoje.
+->Zniszczyłeś pluszaka, masz za swoje.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ===
@@ -210,4 +210,5 @@ Viri: Pójdziemy z tobą, pomożemy…
 Robert: No dobrze. Ale potrzymaj mnie za rękę.
 
 <<czerwonywygranadebata Dialogi>>
+<<granatOdpalQuest Dialogi>>
 ===

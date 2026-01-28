@@ -6,13 +6,14 @@ public class BirdArguining : MonoBehaviour
 {
     public GameObject birdOnUI;
     public GameObject minigame;
+    public GameObject Debata;
 
     public DialogueRunner dialogueRunner;
 
 
     public void OnMouseDown()
     {
-        if(birdOnUI.activeInHierarchy == true)
+        if(birdOnUI.activeInHierarchy == true && Debata.activeInHierarchy == false)
         {
             dialogueRunner.StartDialogue("D3_PtakWraca");
         }

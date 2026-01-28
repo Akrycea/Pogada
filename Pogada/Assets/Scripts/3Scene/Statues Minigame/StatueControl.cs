@@ -1,5 +1,6 @@
 using TMPro.Examples;
 using UnityEngine;
+using Yarn.Unity;
 
 public class StatueControl : MonoBehaviour
 {
@@ -12,35 +13,45 @@ public class StatueControl : MonoBehaviour
     [SerializeField]
     private int moonNumber = 0;
 
-    public DebataPlayer debataPlayer;
+    //public DebataPlayer debataPlayer;
+
+    public BirdsWin birsWin;
+
+    public GameObject SunHead;
+    public GameObject MoonHead;
+
+    //birdOnUI.activeInHierarchy
 
     //gameObject.CompareTag("")
 
+    private DialogueRunner dialogueRunner;
+
+    public GameObject Czerwony;
+
     public void Status()
     {
-        //if (ground.gameObject.CompareTag("CZplaceable"))
-        //{
-        //    sunParts[0].SetActive(true);
-        //    moonParts[0].SetActive(true);
-        //}
-
-        if (sunParts[sunNumber].CompareTag("CZplaceable") && sunNumber < sunParts.Length - 1)
+        if (sunParts[sunNumber].CompareTag("CZplaceable") && sunNumber < sunParts.Length - 1 && birsWin.birdsWin == 5)
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
         }
 
-        if (moonParts[moonNumber].CompareTag("CZplaceable") && moonNumber < moonParts.Length - 1)
+        if (moonParts[moonNumber].CompareTag("CZplaceable") && moonNumber < moonParts.Length - 1 && birsWin.birdsWin == 5)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);
         }
 
 
-        if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
+        if (SunHead.activeInHierarchy == false && MoonHead.activeInHierarchy == false)
         {
             Debug.Log("statuly wygrane");
             //debataPlayer.wygranaMinigierka = true;
+
+            dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+            dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
+            Czerwony.SetActive(true);
+
         }
     }
 }

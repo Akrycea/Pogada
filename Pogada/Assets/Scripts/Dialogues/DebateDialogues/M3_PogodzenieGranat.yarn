@@ -19,27 +19,24 @@ Viri: To… To ja zabrałem ci pana Perełkę jak nie patrzyłaś!
 Viri: Chciałem, żebyś pogodziła się z Robertem.
 
 Robert: Mówiłem, że nie dotykałem Perełki.
+<<jump M3_PogodenieGranat1>>
 ===
 
 title: M3_PogodenieGranat1
 ---
-Robert nie kłamał podczas waszej kłótni.
+->Robert nie kłamał podczas waszej kłótni.
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
-
-Wygląda na to, że doszło do nieporozumienia.
+->Wygląda na to, że doszło do nieporozumienia.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
-
-Niepotrzebnie przezywałaś brata.
+->Niepotrzebnie przezywałaś brata.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
-
-Przestańcie się skupiać na pluszaku.
+->Przestańcie się skupiać na pluszaku.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
-
-Robertowi należą się przeprosiny.
+->Robertowi należą się przeprosiny.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ===
@@ -50,30 +47,26 @@ Liv: No i? Pobrudzenie Perełki to i tak jego wina.
 	<<jump M3_PogodzenieGranat2>>
 ===
 
-title: M3_PgodzenieGranat_2
+title: M3_PogodzenieGranat_2
 ---
 Liv: Perełka jest najważniejszą częścią tej rodziny! Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
 	<<jump M3_PogodzenieGranat2>>
 ===
-title: M3_PogodenieGranat2
+title: M3_PogodzenieGranat2
 ---
-Czy przeprosił cię za to?
+->Czy przeprosił cię za to?
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
-
-Sama mówiłaś, że Robert wyraził skruchę.
+->Sama mówiłaś, że Robert wyraził skruchę.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
-
-Wybacz mu i po problemie.
+->Wybacz mu i po problemie.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
-
-Już prowadziliście tą rozmowę.
+->Już prowadziliście tą rozmowę.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
-
-Przeprosił, więc jest uniewinniony.
+->Przeprosił, więc jest uniewinniony.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ===
@@ -89,25 +82,21 @@ title: M3_PgodzenieGranat2_2
 Liv: Nie wybaczę komuś, kto mówi przeprosiny na odwal! Niech znowu zamknie się w swoim brzydkim domku.
 	<<jump M3_PogodzenieGranat3>>
 ===
-title: M3_PogodenieGranat3
+title: M3_PogodzenieGranat3
 ---
-Zakładanie intencji innych może być mylące.
+->Zakładanie intencji innych może być mylące.
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
-
-Robert starał się poprawnie przeprosić na własny sposób.
+->Robert starał się poprawnie przeprosić na własny sposób.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
-
-Przeprosiny to przeprosiny.
+->Przeprosiny to przeprosiny.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
-
-Nie wiesz przecież, co się dzieje w jego głowie.
+->Nie wiesz przecież, co się dzieje w jego głowie.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
-
-Powinnaś ufać mu bezgranicznie.
+->Powinnaś ufać mu bezgranicznie.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ===
@@ -118,30 +107,26 @@ Liv: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie 
 	<<jump M3_PogodzenieGranat4>>
 ===
 
-title: M3_PgodzenieGranat3_2
+title: M3_PogodzenieGranat3_2
 ---
 Liv: Nie wierzę nikomu, kto się tak wścieka.
 	<<jump M3_PogodzenieGranat4>>
 ===
-title: M3_PogodenieGranat4
+title: M3_PogodzenieGranat4
 ---
-Mówił szczerze, złościł się, bo mu nie ufałaś.
+->Mówił szczerze, złościł się, bo mu nie ufałaś.
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
-
-Nikt nie lubi, jak nazywa się go kłamczuchem.
+->Nikt nie lubi, jak nazywa się go kłamczuchem.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
-
-Też bym się zezłościł na jego miejscu.
+->Też bym się zezłościł na jego miejscu.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
-
-Skoro sobie nie ufacie, to nie ma o czym mówić.
+->Skoro sobie nie ufacie, to nie ma o czym mówić.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
-
-Odwracasz uwagę od rzeczywistego problemu.
+->Odwracasz uwagę od rzeczywistego problemu.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ===
@@ -152,30 +137,26 @@ Liv: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rz
 	<<jump M3_PogodzenieGranat5>>
 ===
 
-title: M3_PgodzenieGranat4_2
+title: M3_PogodzenieGranat4_2
 ---
 Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozwalać rzeczy gzieś indziej. Z dala ode mnie.
 	<<jump M3_PogodzenieGranat5>>
 ===
-title: M3_PogodenieGranat5
+title: M3_PogodzenieGranat5
 ---
-Mówił szczerze, złościł się, bo mu nie ufałaś.
+->Mówił szczerze, złościł się, bo mu nie ufałaś.
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
-
-Nikt nie lubi, jak nazywa się go kłamczuchem.
+->Nikt nie lubi, jak nazywa się go kłamczuchem.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
-
-Też bym się zezłościł na jego miejscu.
+->Też bym się zezłościł na jego miejscu.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
-
-Skoro sobie nie ufacie, to nie ma o czym mówić.
+->Skoro sobie nie ufacie, to nie ma o czym mówić.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
-
-Odwracasz uwagę od rzeczywistego problemu.
+->Odwracasz uwagę od rzeczywistego problemu.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ===
@@ -186,7 +167,7 @@ Liv: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę.
 	<<jump M3_PogodzenieGranatPoDebata>>
 ===
 
-title: M3_PgodzenieGranat5_2
+title: M3_PogodzenieGranat5_2
 ---
 Liv: Ugh, nie chce więcej widzieć jego wybuchów straszności.
 	<<jump M3_PogodzenieGranatPoDebata>>

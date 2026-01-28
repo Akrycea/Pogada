@@ -4,12 +4,6 @@ public class BirdTaken : MonoBehaviour
 {
     public ClickDialogue clickDialogue;
     public GameObject BirdOnUI;
-
-    void Start()
-    {
-        
-    }
-
  
     void Update()
     {

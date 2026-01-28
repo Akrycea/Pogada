@@ -11,7 +11,7 @@ public class ClickDialogue : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (!dialoguePlayed)
+        if (!dialoguePlayed && nazwaDialogu != "")
         {
             dialogueRunner.StartDialogue(nazwaDialogu);
             dialoguePlayed=true;

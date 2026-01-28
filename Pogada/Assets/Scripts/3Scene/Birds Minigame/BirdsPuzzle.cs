@@ -11,6 +11,8 @@ public class BirdsPuzzle : MonoBehaviour
 
     public BirdsWin birdsWin;
 
+    public GameObject ChatBox;
+
     void Start()
     {
         currentPosition = gameObject.transform.position;
@@ -28,10 +30,6 @@ public class BirdsPuzzle : MonoBehaviour
             isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
             collision.gameObject.tag = "BirdTaken";
-        }
-        else if (collision.CompareTag("BirdTaken"))
-        {
-
         }
 
         if(collision.gameObject.name == WinObject)
@@ -52,8 +50,7 @@ public class BirdsPuzzle : MonoBehaviour
 
         if (collision.gameObject.name == WinObject)
         {
-            birdsWin.birdsWin -= 1;
-            
+            birdsWin.birdsWin -= 1;    
         }
 
         Debug.Log(birdsWin.birdsWin);
@@ -65,6 +62,17 @@ public class BirdsPuzzle : MonoBehaviour
         {
             gameObject.transform.position = currentPosition;
         }
+    }
+
+
+    public void OnMouseOver()
+    {
+        ChatBox.SetActive(true);
+    }
+
+    public void OnMouseExit()
+    {
+        ChatBox.gameObject.SetActive(false);
     }
 
 }

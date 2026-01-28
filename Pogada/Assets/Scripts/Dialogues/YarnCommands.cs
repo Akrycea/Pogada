@@ -64,10 +64,13 @@ public class YarnCommands : MonoBehaviour
     {
         colorChange.szary = false;
         colorChange.zielony = true;
+        granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
+        granat.nazwaDialogu = "D8_PrzekonanieCzerwieni";
     }
 
     //odpala dialog o blueprincie z zielonym po dotknieciu collideru
     private CollisionDialogue dialtriggerBlueprints;
+    
     [YarnCommand("playBlueprintDialGreen")]
     public void triggerPlaysBlueprintDialogue()
     {
@@ -75,6 +78,16 @@ public class YarnCommands : MonoBehaviour
         dialtriggerBlueprints.nazwaDialogu = "D6_ZnalezcCzerwien";
     }
 
+    public GameObject Blueprints;
+    //pokazanie blueprintow
+    [YarnCommand("showblueprints")]
+    public void showblueprints() 
+    {
+        Blueprints.gameObject.SetActive(true);
+    }
+
+    public GameObject Czerwony;
+  
     //odpalenie minigierki ukladania zdan czerwonego
     private DebataPlayer czerwonydebata;
     [YarnCommand("czerwonyDebata")]
@@ -105,7 +118,7 @@ public class YarnCommands : MonoBehaviour
     public void granatOdpalaQuest()
     {
         granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
-        granat.nazwaDialogu = "D8_PrzekoanieCzerwieni";
+        granat.nazwaDialogu = "D8_PrzekonanieCzerwieni";
     }
 
     //odpalenie minigierki ukladania zdan granat
@@ -131,5 +144,21 @@ public class YarnCommands : MonoBehaviour
     {
         colorChange.czerwony = false;
         colorChange.granat = true;
+    }
+
+
+    
+    //odslania liscie i zagadke z rzeczka
+    [YarnCommand("odslonliscie")]
+    public void odlosnliscie()
+    {
+        GameObject.Find("liscie").SetActive(false);
+    }
+
+    //usun rybki na UI
+    [YarnCommand("DeleteFishUI")]
+    public void UsunRybyUI()
+    {
+        GameObject.Find("FishOnUI").SetActive(false);
     }
 }

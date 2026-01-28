@@ -103,42 +103,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0742_0
-      rect:
-        serializedVersion: 2
-        x: 3741
-        y: 1136
-        width: 580
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a00d38cec08f66890800000000000000
-      internalID: -7465006597928660982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_0742_1
       rect:
         serializedVersion: 2
-        x: 1724
-        y: 244
-        width: 1836
-        height: 835
+        x: 3375
+        y: 813
+        width: 185
+        height: 266
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 92.5, y: -59.488556}
+        - {x: 92.5, y: -48.37405}
+        - {x: 92.5, y: 125.75318}
+        - {x: 88.909836, y: 133}
+        - {x: 14.857101, y: 133}
+        - {x: -14.763993, y: 118.343506}
+        - {x: -59.195637, y: 62.77099}
+        - {x: -77.70882, y: 29.427477}
+        - {x: -77.70882, y: -66.898224}
+        - {x: -66.60091, y: -115.06107}
+        - {x: -22.169268, y: -118.76591}
+        - {x: 44.478195, y: -118.76591}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 359e35a9f5a47cd30800000000000000
       internalID: 4451608531150563667
@@ -150,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 44dd6792062874948ae5a231f2171e95
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +149,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IMG_0742_1: 4451608531150563667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

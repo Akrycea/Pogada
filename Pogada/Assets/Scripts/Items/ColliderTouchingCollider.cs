@@ -75,7 +75,7 @@ public class ColliderTouchingCollider : MonoBehaviour
                 gateSpriteChange.myPuzzleGotCompleted();
 
                 gate = GameObject.Find("gateStop");
-                gate.SetActive(false);
+                gate.gameObject.SetActive(false);
 
                 dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
                 dialogueRunner.StartDialogue("P1_Brama_fin");

@@ -11,7 +11,7 @@ public class CollisionDialogue : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!dialoguePlayed && other.name == "Player")
+        if (!dialoguePlayed && other.name == "Player" && nazwaDialogu != "")
         {
             dialogueRunner.StartDialogue(nazwaDialogu);
             dialoguePlayed = true;
