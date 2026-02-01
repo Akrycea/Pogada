@@ -4,12 +4,12 @@ using UnityEngine;
 using System.Collections;
 using TMPro.Examples;
 
-public class AllowDragAfterSpriteChange : MonoBehaviour
+public class CloudStairsPlacement : MonoBehaviour
 {
     // Pozwala na przenoszenie obiektu, gdy zmieni mu sie sprite (ilosc razy, zalezy od spriteow w tablicy) -> Drag oraz Sprite Changer zlaczone w jedno
 
 
-    // do przenoszenia przedmiotu jak je zlapiesz
+    // po prostu przenosi przedmioty jak je zlapiesz
     private Vector3 screenPoint;
     private Vector3 offset;
 
