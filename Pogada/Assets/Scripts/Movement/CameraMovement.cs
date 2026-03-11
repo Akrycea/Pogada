@@ -4,35 +4,39 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    //target to follow player left-right
+    public Transform playerTarget;
 
-    public Transform target;
     public CameraChange cameraChange;
 
     public bool cameraFreeMovement = false;
 
+    private float OgHorizontalTargetDistance;
+    private float OgVerticalTargetDistance;
+    private float OgZetTargetDistance = -1.6f;
+
+    private float YcameraHight;
+
+    public EditCamera editCameraScript;
+
 
     void Start()
     {
-
+        OgHorizontalTargetDistance = 6;
+        OgVerticalTargetDistance = -37.87426f;
     }
 
 
     void Update()
     {
-        //sprawdza czy jest wlaczona duza kamera i od tego zaleznie ustawia kamere
-        if (!cameraChange.cameraUp)
-        {
-            
-           transform.position = new Vector3(target.position.x + 6, transform.position.y, -1.6f);
-            
-        }
-        else
-        {
-            transform.position = new Vector3(target.position.x + 30, transform.position.y, -1.6f);
-        }
+        transform.position = new Vector3(playerTarget.position.x + OgHorizontalTargetDistance,
+            OgVerticalTargetDistance, OgZetTargetDistance);
+    }
 
-
-
+    public void ChangeCameraPosition()
+    {
+        OgHorizontalTargetDistance = editCameraScript.horizontalTargetDistance;
+        OgVerticalTargetDistance = editCameraScript.verticalTargetDistance;
     }
 
 }
