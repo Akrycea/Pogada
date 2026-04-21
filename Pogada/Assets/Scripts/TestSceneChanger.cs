@@ -3,21 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class TestSceneChanger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public bool unload;
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("1", LoadSceneMode.Additive);
-
+        if (unload)
+        {
+            SceneManager.UnloadSceneAsync("4");
+        }
+        else
+        {
+            SceneManager.LoadScene("4", LoadSceneMode.Additive);
+        }
     }
 }
