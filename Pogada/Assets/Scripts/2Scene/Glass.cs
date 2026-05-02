@@ -2,58 +2,50 @@ using UnityEngine;
 
 public class Glass : MonoBehaviour
 {
+    public Vector3 startPosition;
+    public Vector3 currentPosition;
+
     public string ObjectName;
     public string WinObject;
 
-    private bool isOnObject = true;
+    private bool isOnObject = false;
 
-    public Vector3 currentPosition;
-
-    public BirdsWin birdsWin;
-
-    public GameObject ChatBox;
+    public GameObject picture;
 
     void Start()
     {
-        currentPosition = gameObject.transform.position;
+        startPosition = gameObject.transform.position;
+        currentPosition = startPosition;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Hit collision");
-        //Debug.Log(collision.gameObject.name);
-        //Debug.Log(collision.gameObject.transform.position);
-
-
-        if (collision.CompareTag("BirdFree"))
+        if (collision.CompareTag("Free"))
         {
             isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
-            collision.gameObject.tag = "BirdTaken";
+            collision.gameObject.tag = "Taken";
         }
 
         if (collision.gameObject.name == WinObject)
         {
-            birdsWin.birdsWin += 1;
+            
         }
-
-        Debug.Log(birdsWin.birdsWin);
     }
 
     void OnTriggerExit2D(Collider2D collision)
-    {
+    {       
         if (isOnObject == true)
         {
-            collision.gameObject.tag = "BirdFree";
+            collision.gameObject.tag = "Free";
             isOnObject = false;
+            currentPosition = startPosition;
         }
 
         if (collision.gameObject.name == WinObject)
         {
-            birdsWin.birdsWin -= 1;
+            
         }
-
-        Debug.Log(birdsWin.birdsWin);
     }
 
     void Update()
@@ -61,6 +53,15 @@ public class Glass : MonoBehaviour
         if (Input.GetMouseButton(0) == false)
         {
             gameObject.transform.position = currentPosition;
+
+            if(isOnObject == true)
+            {
+                picture.SetActive(true);
+            }
+        }
+        if (isOnObject== false)
+        {
+            picture.SetActive(false);
         }
     }
 }

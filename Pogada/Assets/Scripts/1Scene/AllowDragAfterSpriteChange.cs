@@ -1,6 +1,5 @@
 using UnityEngine;
 using Unity.Burst.Intrinsics;
-using UnityEngine;
 using System.Collections;
 using TMPro.Examples;
 

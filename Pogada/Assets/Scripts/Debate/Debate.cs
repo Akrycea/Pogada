@@ -15,7 +15,7 @@ public class Debate : MonoBehaviour
             Debug.Log("you won");
         }
 
-        if (EnemyPoints > EnemyPoints)
+        if (EnemyPoints > YourPoints)
         {
             Debug.Log("you lost");
         }

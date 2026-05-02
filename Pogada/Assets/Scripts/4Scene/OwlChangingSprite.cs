@@ -7,6 +7,12 @@ public class OwlChangingSprite : MonoBehaviour
 {
     public Image spriteRenderer;
     public Sprite[] spriteArray;
+    public GameObject OwlOnUI;
+
+    public void TurnUIon()
+    {
+        OwlOnUI.SetActive(true);
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {

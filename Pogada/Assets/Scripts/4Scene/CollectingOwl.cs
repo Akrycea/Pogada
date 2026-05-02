@@ -1,29 +1,30 @@
 using UnityEngine;
 using UnityEngine.XR;
+using Yarn.Unity;
 
 public class CollectingOwl : MonoBehaviour
 {
-
-    //public FishWon fishWon;
-
-    public GameObject OwlOnUI;
-    public GameObject Colliders;
+    //public GameObject OwlOnUI;
 
     private StateManager stateManager;
+    public OwlChangingSprite Owl;
+
+    //public ClickDialogue dialogue;
 
     void Start()
     {
-        //Colliders = GameObject.Find("Hand");
-        stateManager = GameObject.Find("PuzzleManager").GetComponent<StateManager>();
-        OwlOnUI = GameObject.Find("OwlOnUI");
+        //nie wiem jak inczej zrobic reference do innej sceny
+        stateManager = GameObject.Find("StateManager").GetComponent<StateManager>();
+        Owl = GameObject.Find("Player").GetComponent<OwlChangingSprite>();
     }
 
     private void OnMouseDown()
     {
-        //fishWon.allFish += 1;
         gameObject.SetActive(false);
         stateManager.OwlCollected = true;
-        OwlOnUI.SetActive(true);
-        //Colliders.SetActive(true);
+        Owl.TurnUIon();
+        //dialogue.nazwaDialogu = 
+        //ukladanie zdan ^
     }
 }
+
