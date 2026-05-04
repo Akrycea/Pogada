@@ -11,8 +11,11 @@ public class CameraMovement : MonoBehaviour
 
     public bool cameraFreeMovement = false;
 
+    [SerializeField]
     private float OgHorizontalTargetDistance;
+    [SerializeField]
     private float OgVerticalTargetDistance;
+
     private float OgZetTargetDistance = -1.6f;
 
     private float YcameraHight;
@@ -22,8 +25,9 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        OgHorizontalTargetDistance = 6;
-        OgVerticalTargetDistance = -37.87426f;
+        //dont want to fotget those floats, rn you need to put them in in the inspector
+        //OgHorizontalTargetDistance = 6;
+       // OgVerticalTargetDistance = -37.87426f;
     }
 
 
