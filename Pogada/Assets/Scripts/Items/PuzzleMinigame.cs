@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class PuzzleMinigame : MonoBehaviour
@@ -11,14 +12,19 @@ public class PuzzleMinigame : MonoBehaviour
     //obiekt ktory przenosimy
     public GameObject ogObject;
 
+    public string ObjectName;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void Puzzle()
-    { 
-        spriteRenderer.sprite = targetSprite;
-        ogObject.SetActive(false);
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == ObjectName)
+        {
+            spriteRenderer.sprite = targetSprite;
+            ogObject.SetActive(false);
+        }
     }
 }

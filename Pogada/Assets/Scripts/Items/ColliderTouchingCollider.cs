@@ -8,11 +8,10 @@ public class ColliderTouchingCollider : MonoBehaviour
     public string ObjectName;
 
     //wybierasz ktora minigierke chcesz
-    public bool PuzzleMinigame;
+  
 
     public bool KeyMinigame;
     public bool CloudStairsMinigame;
-    public bool Statues;
 
     //dialoguerunner zeby cos powiedziec po rozwiazaniu zagadki
     private DialogueRunner dialogueRunner;
@@ -54,19 +53,6 @@ public class ColliderTouchingCollider : MonoBehaviour
         {
             Debug.Log("kolizja dotyka desired kolizji");
 
-            if (PuzzleMinigame)
-            {
-                puzzleMinigame.Puzzle();
-            }
-
-            if (CloudStairsMinigame)
-            {
-                //tu robi to co jest w puzzle minigierka skrypt
-                puzzleMinigame.Puzzle();
-                stairsMinigame.doneSteps++;
-            }
-
-
             if (KeyMinigame && doormat.openDoormat == true)
             {
                 //odniesienie do bramy, aby zmienic jej sprite
@@ -81,13 +67,7 @@ public class ColliderTouchingCollider : MonoBehaviour
                 dialogueRunner.StartDialogue("P1_Brama_fin");
             }
 
-            if (Statues)
-            {
-                puzzleMinigame.Puzzle();
-
-                gameObject.tag = "CZplaceable";
-                statueControl.Status();
-            }
+            
             
         }
 

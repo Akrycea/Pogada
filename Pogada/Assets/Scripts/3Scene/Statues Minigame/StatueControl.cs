@@ -30,13 +30,13 @@ public class StatueControl : MonoBehaviour
 
     public void Status()
     {
-        if (sunParts[sunNumber].CompareTag("CZplaceable") && sunNumber < sunParts.Length - 1 && birsWin.birdsWin == 5)
+        if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length - 1 && birsWin.birdsWin == 5)
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
         }
 
-        if (moonParts[moonNumber].CompareTag("CZplaceable") && moonNumber < moonParts.Length - 1 && birsWin.birdsWin == 5)
+        if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1 && birsWin.birdsWin == 5)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);

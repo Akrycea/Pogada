@@ -130,12 +130,11 @@ GameObject:
   - component: {fileID: 16756095}
   - component: {fileID: 16756096}
   - component: {fileID: 16756099}
-  - component: {fileID: 16756098}
   - component: {fileID: 16756097}
   - component: {fileID: 16756101}
   m_Layer: 0
   m_Name: OGHead
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,8 +148,8 @@ Transform:
   m_GameObject: {fileID: 16756094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.12, y: 2.21, z: 9.989683}
-  m_LocalScale: {x: 2.3306, y: 2.3306, z: 2.3306}
+  m_LocalPosition: {x: 6.31, y: -1.4, z: 9.989683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -225,29 +224,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 1243594306}
---- !u!114 &16756098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16756094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: MHead
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 16756097}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
+  ObjectName: 
 --- !u!60 &16756099
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1049,7 +1026,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: 3.02, z: 9.989683}
-  m_LocalScale: {x: 1.9976699, y: 1.9976699, z: 1.9976699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -1098,8 +1075,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0.7034235, b: 1, a: 1}
+  m_Sprite: {fileID: -3033962309406360609, guid: bbc7109de73fdf84cb545150055ebf75, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1190,7 +1167,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 2.8000002, y: 2.9009733}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4201,12 +4178,11 @@ GameObject:
   - component: {fileID: 398145606}
   - component: {fileID: 398145607}
   - component: {fileID: 398145610}
-  - component: {fileID: 398145609}
   - component: {fileID: 398145608}
   - component: {fileID: 398145612}
   m_Layer: 0
   m_Name: OGTorsoDown
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4220,8 +4196,8 @@ Transform:
   m_GameObject: {fileID: 398145605}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.260002, y: -1.1700001, z: 9.989683}
-  m_LocalScale: {x: 1.9976699, y: 1.9976699, z: 1.9976699}
+  m_LocalPosition: {x: 6.7, y: -2.53, z: 9.989683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -4275,7 +4251,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 2.8000002, y: 2.9009733}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -4296,29 +4272,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 67342282}
---- !u!114 &398145609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398145605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: MTorsoDown
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 398145608}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
+  ObjectName: 
 --- !u!60 &398145610
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4357,8 +4311,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 2.8000002, y: 2.9009733}
+    newSize: {x: 2.8000002, y: 2.9009733}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5306,8 +5260,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.8188683, b: 0.043396115, a: 1}
+  m_Sprite: {fileID: 7220704950876504313, guid: a5484b37e7800354f8a60e49a8d1f1f3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5327,7 +5281,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 17, y: -1.62, z: 9.989683}
-  m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334016056}
@@ -5370,7 +5324,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.64, y: 3.9413223}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6266,10 +6220,9 @@ GameObject:
   - component: {fileID: 798218958}
   - component: {fileID: 798218957}
   - component: {fileID: 798218956}
-  - component: {fileID: 798218955}
   m_Layer: 0
   m_Name: OGLegs
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6283,35 +6236,12 @@ Transform:
   m_GameObject: {fileID: 798218953}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.43, y: -2.3455, z: 9.989683}
+  m_LocalPosition: {x: 8.46, y: -3.79, z: 9.989683}
   m_LocalScale: {x: 1, y: 3.0770044, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334016056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &798218955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798218953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: Legs
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 798218956}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!114 &798218956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6327,6 +6257,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 1099904038}
+  ObjectName: 
 --- !u!50 &798218957
 Rigidbody2D:
   serializedVersion: 5
@@ -6712,7 +6643,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 0.093085766, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6731,7 +6662,7 @@ Transform:
   m_GameObject: {fileID: 840791400}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.7, y: -2.51, z: 9.985032}
+  m_LocalPosition: {x: 7.37, y: -5.94, z: 9.985032}
   m_LocalScale: {x: 6.9840155, y: 5.2741394, z: 5.2741394}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9575,8 +9506,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0.95807403, b: 0.26981127, a: 1}
+  m_Sprite: {fileID: -1311089580918641180, guid: 63c85ce4dad74004891a90afcb0e5844, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9596,7 +9527,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 4.17, y: -0.47, z: 9.989683}
-  m_LocalScale: {x: 2.4119344, y: 2.4119344, z: 2.4119344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334016056}
@@ -9638,8 +9569,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.36, y: 4.5115137}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9758,8 +9689,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9547169, g: 0.78155196, b: 0.041431006, a: 1}
+  m_Sprite: {fileID: -5547788304761821353, guid: b5813c36c1a9f284b80cf9e71cecffab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9779,7 +9710,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.24, y: -5.01, z: 9.989683}
-  m_LocalScale: {x: 1, y: 3.0770044, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334016056}
@@ -9822,7 +9753,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.0800002, y: 3.7512586}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9848,37 +9779,13 @@ GameObject:
   - component: {fileID: 1115313470}
   - component: {fileID: 1115313469}
   - component: {fileID: 1115313468}
-  - component: {fileID: 1115313467}
   m_Layer: 0
   m_Name: OGHead
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1115313467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115313466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: Head
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 1115313468}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!114 &1115313468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9894,6 +9801,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 1973423769}
+  ObjectName: 
 --- !u!50 &1115313469
 Rigidbody2D:
   serializedVersion: 5
@@ -10038,7 +9946,7 @@ Transform:
   m_GameObject: {fileID: 1115313466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.070007, y: 3.25, z: 9.989683}
+  m_LocalPosition: {x: 8.32, y: 1.03, z: 9.989683}
   m_LocalScale: {x: 2.5337, y: 2.5337, z: 2.5337}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10657,7 +10565,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15.5, y: 4.1, z: 9.989683}
-  m_LocalScale: {x: 2.3306, y: 2.3306, z: 2.3306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -10706,8 +10614,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.7670708, b: 1, a: 1}
+  m_Sprite: {fileID: -6861306803392217323, guid: 36285fc584363994ba0f0c7628b5b24d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10798,7 +10706,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.02, y: 4.161396}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10856,8 +10764,8 @@ Transform:
   m_GameObject: {fileID: 1253369375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.43, y: -1.9, z: 9.989683}
-  m_LocalScale: {x: 2.3786354, y: 2.3786354, z: 2.3786354}
+  m_LocalPosition: {x: 6.1, y: 3.2, z: 9.989683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -10906,8 +10814,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0, g: 0.76703596, b: 1, a: 1}
+  m_Sprite: {fileID: -7254447487243667316, guid: 024e433a29ed9f9498163323ab0e37a1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10997,8 +10905,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5200002, y: 2.3707955}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11023,7 +10931,6 @@ GameObject:
   - component: {fileID: 1261661012}
   - component: {fileID: 1261661011}
   - component: {fileID: 1261661010}
-  - component: {fileID: 1261661009}
   m_Layer: 0
   m_Name: OGGround
   m_TagString: Untagged
@@ -11031,29 +10938,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1261661009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261661008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: Ground
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 1261661010}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!114 &1261661010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11069,6 +10953,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5052479492865838497, guid: ffd18f0f299d9024b81897bc563f6671, type: 3}
   ogObject: {fileID: 840791400}
+  ObjectName: 
 --- !u!50 &1261661011
 Rigidbody2D:
   serializedVersion: 5
@@ -11953,37 +11838,13 @@ GameObject:
   - component: {fileID: 1351904959}
   - component: {fileID: 1351904958}
   - component: {fileID: 1351904957}
-  - component: {fileID: 1351904956}
   m_Layer: 0
   m_Name: OGTorsoDown
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1351904956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351904955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: TorsoDown
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 1351904957}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!114 &1351904957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11999,6 +11860,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 632645366}
+  ObjectName: 
 --- !u!50 &1351904958
 Rigidbody2D:
   serializedVersion: 5
@@ -12141,7 +12003,7 @@ Transform:
   m_GameObject: {fileID: 1351904955}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.010002, y: 0.3699999, z: 9.989683}
+  m_LocalPosition: {x: 8.38, y: -1.79, z: 9.989683}
   m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15116,12 +14978,11 @@ GameObject:
   - component: {fileID: 1740432098}
   - component: {fileID: 1740432099}
   - component: {fileID: 1740432102}
-  - component: {fileID: 1740432101}
   - component: {fileID: 1740432100}
   - component: {fileID: 1740432104}
   m_Layer: 0
   m_Name: OGTorsoUp
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15135,8 +14996,8 @@ Transform:
   m_GameObject: {fileID: 1740432097}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.18, y: 0.73, z: 9.989683}
-  m_LocalScale: {x: 2.3786354, y: 2.3786354, z: 2.3786354}
+  m_LocalPosition: {x: 6.52, y: -2.19, z: 9.989683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938896931}
@@ -15211,29 +15072,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 1253369375}
---- !u!114 &1740432101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740432097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: MTorsoUp
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 1740432100}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
+  ObjectName: 
 --- !u!60 &1740432102
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16495,37 +16334,13 @@ GameObject:
   - component: {fileID: 1898178933}
   - component: {fileID: 1898178932}
   - component: {fileID: 1898178931}
-  - component: {fileID: 1898178930}
   m_Layer: 0
   m_Name: OGTorsoUp
-  m_TagString: Untagged
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1898178930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898178929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c18e45110e6114e8ffdaf57ba291ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectName: TorsoUp
-  PuzzleMinigame: 0
-  KeyMinigame: 0
-  CloudStairsMinigame: 0
-  Statues: 1
-  puzzleMinigame: {fileID: 1898178931}
-  stairsMinigame: {fileID: 0}
-  doormat: {fileID: 0}
-  statueControl: {fileID: 532345726}
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
 --- !u!114 &1898178931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16541,6 +16356,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   targetSprite: {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
   ogObject: {fileID: 1079451662}
+  ObjectName: 
 --- !u!50 &1898178932
 Rigidbody2D:
   serializedVersion: 5
@@ -16682,7 +16498,7 @@ Transform:
   m_GameObject: {fileID: 1898178929}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 13.040001, y: 1.46, z: 9.989683}
+  m_LocalPosition: {x: 8.11, y: -0.95, z: 9.989683}
   m_LocalScale: {x: 2.4119344, y: 2.4119344, z: 2.4119344}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17964,8 +17780,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5, type: 3}
-  m_Color: {r: 1, g: 0.8663769, b: 0, a: 1}
+  m_Sprite: {fileID: 3142291708126914703, guid: 2bf4cae8edfd80e47b024306c5097660, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17985,7 +17801,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.6, y: -6.3, z: 9.989683}
-  m_LocalScale: {x: 2.5337, y: 2.5337, z: 2.5337}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334016056}
@@ -18028,7 +17844,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8828125, y: 1}
+    oldSize: {x: 4.96, y: 4.851628}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
