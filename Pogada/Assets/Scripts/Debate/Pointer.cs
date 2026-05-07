@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class Pointer : MonoBehaviour
 {
@@ -12,6 +13,15 @@ public class Pointer : MonoBehaviour
     private float direction = 1f; // 1 for moving towards B, -1 for moving towards A
     private RectTransform pointerTransform;
     private Vector3 targetPosition;
+
+    public Jab jab;
+
+    public string good;
+    public string bad;
+
+    public DialogueRunner dialogueRunner;
+
+    public GameObject jabOBJ;
 
     void Start()
     {
@@ -49,10 +59,14 @@ public class Pointer : MonoBehaviour
         if (RectTransformUtility.RectangleContainsScreenPoint(safeZone, pointerTransform.position, null))
         {
             Debug.Log("Success!");
+            dialogueRunner.StartDialogue(good);
+            jabOBJ.SetActive(false);
         }
         else
         {
             Debug.Log("Fail!");
+            dialogueRunner.StartDialogue(bad);
+            jabOBJ.SetActive(false);
         }
     }
 }

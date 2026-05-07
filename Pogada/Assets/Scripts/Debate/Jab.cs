@@ -1,28 +1,22 @@
 using UnityEngine;
-using UnityEngine.UI;
-using static UnityEditor.PlayerSettings;
-using static UnityEngine.RuleTile.TilingRuleOutput;
+using Yarn.Unity;
 
 public class Jab : MonoBehaviour
 {
-    public RectTransform SafeZoneUI;
+    public GameObject jabOBJ;
 
-    //for testing on scene
-    private void Start()
+    public JabbingInBG jabbingInBG;
+    public Pointer pointer;
+
+    [YarnCommand("Jab")]
+    public void Jabbing(string good, string bad)
     {
-        JabbingIn();
-    }
+        jabOBJ.SetActive(true);
+        jabbingInBG.JabbingInZone();
 
-    //reference to this, when you want the Jab in the debate
-    public void JabbingIn()
-    {
-        var pos = SafeZoneUI.localPosition;
-        SafeZoneUI.localPosition = new Vector3(Random.Range(-756, -272), pos.y, pos.z);
+        pointer.good = good;
+        pointer.bad = bad;
 
-        //SafeZoneUI.transform.anchorPosition = new Vector2(0,0);
-
-        //to trzeba jakos madrze obliczyc i ustalic ale narazie daje randomowe numerki
-        SafeZoneUI.sizeDelta = new Vector2(Random.Range(50,500), 100);
-
+        Debug.Log("Jab command executed with good: " + good + " and bad: " + bad);
     }
 }
