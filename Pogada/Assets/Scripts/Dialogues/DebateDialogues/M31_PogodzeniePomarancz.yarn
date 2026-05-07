@@ -1,0 +1,186 @@
+﻿title: M31_PogodzeniePomarancz
+---
+Lute: Nie zniosę tego, jeśli będzie na mnie zła.
+
+Lute: A na pewno będzie.
+
+Bohater: Udało mi się znaleźć jej zwierzaka, to na pewno trochę załagodzi sytuację.
+
+Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam rady spojrzeć jej w oczy.
+	<<jump M31_DebataPomarancz1>>
+===
+
+title: M31_DebataPomarancz1
+---
+->Jesteś za słaba.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz1_2>>
+->Musisz powiedzieć jej co się stało.
+	<<GoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz1_1>>
+->Nie masz się czego bać.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz1_2>>
+->To co ze zwierzakiem?
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz1_2>>
+->Ktoś powinien oddać Lus jej zwierzaka.
+	<<VGoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz1_1>>
+===
+
+title: M31_DebataPomarancz1_1
+---
+Lute: Ja nie mogę tego zrobić! Nigdy już nie pozwoli mi się bawić z Chmurką. To okropne.
+	<<jump M31_DebataPomarancz2>>
+===
+
+title: M31_DebataPomarancz1_2
+---
+Lute: Nie obchodzi mnie to. Lus pomyśli, że jestem najgorsza przez zgubienie Chmurki. Może rzeczywiście jestem.
+	<<jump M31_DebataPomarancz2>>
+===
+
+title: M31_DebataPomarancz2
+---
+->Na pewno Lus wybaczy ci, jeśli przeprosisz osobiście.
+	<<VGoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz2_1>>
+->Użalanie się nad sobą nie pomoże.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz2_2>>
+->Może moglibyśmy zrobić to razem?
+	<<GoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz2_1>>
+->Wytłumacz Lus sytuację i sprawa rozwiązana.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz2_2>>
+->Może Lus miałaby rację.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz2_2>>
+===
+
+title: M31_DebataPomarancz2_1
+---
+Lute: Mama powinna się tym zająć. Ona zawsze ma rację i jej zawsze trzeba wybaczyć. Zazwyczaj już by za mnie z nią porozmawiała.
+	<<jump M31_DebataPomarancz3>>
+===
+
+title: M31_DebataPomarancz2_2
+---
+Lute: Ja pójdę po mamę najlepiej. Jak najszybciej.
+	<<jump M31_DebataPomarancz3>>
+===
+
+title: M31_DebataPomarancz3
+---
+->Nie możesz wykorzystywać innych do tego.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz3_2>>
+->Nie wiemy, kiedy wasza mama wróci.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz3_2>>
+->Nie bądź tchórzem.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz3_2>>
+->Obecnie to my mamy Chmurkę, możemy rozwiązać to tu i teraz.
+	<<VGoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz3_1>>
+->Ja się wami obecnie zajmuję.
+	<<GoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz3_1>>
+===
+
+title: M31_DebataPomarancz3_1
+---
+Lute: A na pana się można denerwować? Bo jak nie, to pan niech pójdzie pogadać z Lus. W końcu rozwiązuje pan nasze problemy, prawda?
+	<<jump M31_DebataPomarancz4>>
+===
+
+title: M31_DebataPomarancz3_2
+---
+Lute: Jeśli tak panu zależy na naszych problemach, to pan się tym zajmie nie ja!
+	<<jump M31_DebataPomarancz4>>
+===
+
+title: M31_DebataPomarancz4
+---
+->Ja tylko pomagam wam je rozwiązywać.
+	<<VGoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz4_1>>
+->Inne dzieci poradziły sobie same.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz4_2>>
+->Nie będę rozwiązywać waszych problemów.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz4_2>>
+->Nie robię niczego za nikogo.
+	<<GoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz4_1>>
+->Jesteś już na tyle duża, abyś robiła to sama.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz4_2>>
+===
+
+title: M31_DebataPomarancz4_1
+---
+Lute: Co? Robertowi i Liv też pan tylko pomógł? Ja nie chcę sama tak się tym zajmować.
+	<<jump M31_DebataPomarancz5>>
+===
+
+title: M31_DebataPomarancz4_2
+---
+Lute: Widziałam przecież, że za innych pan robił rzeczy. Ja też tak chcę.
+	<<jump M31_DebataPomarancz5>>
+===
+
+title: M31_DebataPomarancz5
+---
+->Tylko pomogłem, oni sami rozwiązali swoje problemy.
+	<<GoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz5_1>>
+->Musisz sama rozwiązać ten problem.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz5_2>>
+->Ja również porozmawiam z Lus.
+	<<VGoodChoice PointMeter>>
+	<<jump M31_DebataPomarancz5_1>>
+->Nie mogę cały czas poświęcać czasu na wasze problemy.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz5_2>>
+->Mogę co najwyżej zanieść tam  Chmurkę, ale to ty się wypowiesz.
+	<<BadChoice PointMeter>>
+	<<jump M31_DebataPomarancz5_2>>
+===
+
+title: M31_DebataPomarancz5_1
+---
+Lute: No, jeśli to pan będzie gadał, to dobra.
+	<<jump M31_DebataPomaranczPoDebata>>
+===
+
+title: M31_DebataPomarancz5_2
+---
+Lute: Nie chcę, nie chcę! Boję się. Niech pan z Lus pogada.
+	<<jump M31_DebataPomaranczPoDebata>>
+===
+
+title: M31_DebataPomaranczPoDebata
+---
+Lute: Bo ja wolę nie.
+
+Bohater: Rozwiążemy ten problem razem.
+
+Bohater: Lus na pewno ucieszy się do Chmurki.
+
+Bohater: Wiesz jak możemy ją znaleźć?
+
+Lute: Może Chmurka nas do niej zaprowadzi.
+
+Lute: Proszę Chmurka? Ładnie proszę?
+
+Lute: O, już węszy.
+
+Bohater: Cudownie.
+<<pomaranczwygranadebata Dialogi>>
+===

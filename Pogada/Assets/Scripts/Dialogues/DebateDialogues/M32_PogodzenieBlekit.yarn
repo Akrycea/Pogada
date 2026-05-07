@@ -1,0 +1,197 @@
+﻿title: M32_PogodzenieBlekit
+---
+Lute: Nie sama, z panem.
+
+Lute: …
+
+Bohater: A więc, Lute przyszła oddać ci Chmurkę i przeprosić.
+
+Lus: Ona czy pan?
+	<<jump M32_PogodzenieBlekit1>>
+===
+
+title: M32_PogodzenieBlekit1
+---
+->Potrzebuje trochę zachęty.
+	<<GoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit1_1>>
+->Co za różnica?
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit1_2>>
+->Nie cieszysz się do Chmurki?
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit1_2>>
+->Ja się w to nie mieszam.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit1_2>>
+->Lute jest trochę nieśmiała, to wszystko.
+	<<VGoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit1_1>>
+===
+
+title: M32_PogodzenieBlekit1_1
+---
+Lus: Eh, jak zawsze. Jak mam jej uwierzyć, jeśli zawsze przeprasza mama?
+	<<jump M32_PogodzenieBlekit2>>
+===
+
+title: M32_PogodzenieBlekit1_2
+---
+Lus: Lute nie mogła tego zrobić sama?
+===
+
+title: M32_PogodzenieBlekit2
+---
+->Zaufaj starszym.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit2_2>>
+->Twoje wymagania nie pomagają.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit2_2>>
+->Teraz przeprosi sama.
+	<<VGoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit2_1>>
+->Przeprosiny to przeprosiny.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit2_2>>
+->Pomysł przeprosin jest jej.
+	<<GoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit2_1>>
+===
+
+title: M32_PogodzenieBlekit2_1
+---
+Lus: Nadal słyszę pana, a nie ją. Sama nigdy by do mnie nie przyszła.
+	<<jump M32_PogodzenieBlekit3>>
+===
+
+title: M32_PogodzenieBlekit2_2
+---
+Lus: Oczywiście, że pan tak mówi. To nie załatwi sprawy. Lute niepotrzebnie pana targała ze sobą.
+	<<jump M32_PogodzenieBlekit3>>
+===
+
+title: M32_PogodzenieBlekit3
+---
+->Powinnaś bardziej skupić się na potrzebach siostry.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit3_2>>
+->Najważniejsze, że jest.
+	<<VGoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit3_1>>
+->Daj jej spokój.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit3_2>>
+->Nie musi mówić za siebie.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit3_2>>
+->Musisz dać jej szansę zebrać się w sobie.
+	<<GoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit3_1>>
+===
+
+title: M32_PogodzenieBlekit3_1
+---
+Lus: Pan jej nie zna. Ile mogę wybaczać dorosłemu a nie jej?
+	<<jump M32_PogodzenieBlekit4>>
+===
+
+title: M32_PogodzenieBlekit3_2
+---
+Lus: Cała Lute. Wykorzysta innych, żeby zmusić mnie do wybaczenia. Sama ma to gdzieś.
+	<<jump M32_PogodzenieBlekit4>>
+===
+
+title: M32_PogodzenieBlekit4
+---
+->Powinnaś być ponad tym i dać sobie spokój.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit4_2>>
+->Najważniejsze, że zwierzakowi nic się nie stało.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit4_2>>
+->Szukała rozwiązania, specjalnie poprosiła mnie o pomoc, żeby się dogadać.
+	<<GoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit4_1>>
+->Przeprosiny są jej, nie moje, obiecuję.
+	<<VGoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit4_1>>
+->Obrażanie się nie jest rozwiązaniem.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit4_2>>
+===
+
+title: M32_PogodzenieBlekit4_1
+---
+Lus: Co z tego, skoro potrzebuje pana do prostych przeprosin?
+	<<jump M32_PogodzenieBlekit5>>
+===
+
+title: M32_PogodzenieBlekit4_2
+---
+Lus: Nie będę tego więcej ignorować. Niech już mnie pan przeprosi i miejmy to za sobą. Ja nie zamierzam wybaczać.
+	<<jump M32_PogodzenieBlekit5>>
+===
+
+title: M32_PogodzenieBlekit5
+---
+->Jej przeprosiny są z serca, ja za nią przepraszać nie będę.
+	<<VGoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit5_1>>
+->Lute potrzebuje wsparcia, ale to nic złego.
+	<<GoodChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit5_1>>
+->Licza się jej słowa, nie kompani.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit5_2>>
+->Wszyscy mnie potrzebujecie.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit5_2>>
+->Nie skupiaj się na jej sposobie rozwiązywania problemów.
+	<<BadChoice PointMeter>>
+	<<jump M32_PogodzenieBlekit5_2>>
+===
+
+title: M32_PogodzenieBlekit5_1
+---
+Lus: Skoro tak…
+	<<jump M31_DebataBlekitPoDebata>>
+===
+
+title: M31_DebataPomarancz5_2
+---
+Lus: Pan tylko odwraca uwagę od problemu.
+	<<jump M31_DebataBlekitPoDebata>>
+===
+
+title: M31_DebataBlekitPoDebata
+---
+Lus: To niech się wypowie.
+
+Lus: Ma dorosłego obok, niech się wykaże.
+
+Bohater: Dasz radę.
+
+Lute: Dobra. Dobra, poradzę sobie.
+
+Lute: Przepraszam za całą sytuację Lus! Nie chciałam zgubić Chmurki!
+
+Lute: Bałam się, że okropnie się na mnie obrazisz i już nigdy nie będzie jak kiedyś!
+
+Lute: Okropnie tego nie chciałam. I powinnam była ci powiedzieć.
+
+Lute: Więc ten…
+
+Lus: W porządku, nie musisz już krzyczeć.
+
+Lus: Dziękuję za przeprosiny. Wybaczone.
+
+Lus: Następnym razem proszę przyjdź od razu do mnie.
+
+Lute: I wtedy się na mnie nie zdenerwujesz?
+
+Lus: Nie.
+
+Lute: Dobrze. Przyjdę.
+<<blekitwygranadebata Dialogi>>
+===

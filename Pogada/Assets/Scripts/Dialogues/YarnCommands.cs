@@ -146,8 +146,108 @@ public class YarnCommands : MonoBehaviour
         colorChange.granat = true;
     }
 
+    //odpalenie minigierki ukladania zdan pomarancz WIP
+    //private DebataPlayer pomaranczdebata;
+    //[YarnCommand("pomaranczDebata")]
+    //public void pomaranczDebata()
+    //{
+    //    pomaranczdebata = GameObject.Find("Pomarañcz").GetComponent<DebataPlayer>();
+    //    pomaranczdebata.wygranaMinigierka = true;
+    //}
 
-    
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
+    [YarnCommand("pomarnacz2debata")]
+    public void pomarnacz2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M31_PogodzeniePomarancz");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie czerwonego
+    [YarnCommand("pomaranczwygranadebata")]
+    public void pomaranczwygranadebata()
+    {
+        colorChange.granat = false;
+        colorChange.pomarancz = true;
+    }
+
+    //odpalenie minigierki ukladania zdan blekit WIP
+    //private DebataPlayer blekitdebata;
+    //[YarnCommand("blekitDebata")]
+    //public void blekitDebata()
+    //{
+    //    blekitdebata = GameObject.Find("B³êkit").GetComponent<DebataPlayer>();
+    //    blekitdebata.wygranaMinigierka = true;
+    //}
+
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
+    [YarnCommand("blekit2debata")]
+    public void blekit2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M32_PogodzenieBlekit");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie czerwonego
+    [YarnCommand("blekitwygranadebata")]
+    public void blekitwygranadebata()
+    {
+        colorChange.pomarancz = false;
+        colorChange.niebieski = true;
+    }
+
+    //odpalenie minigierki ukladania zdan fioletDwa WIP
+    //private DebataPlayer fioletDwadebata;
+    //[YarnCommand("fioletDwaDebata")]
+    //public void fioletDwaDebata()
+    //{
+    //    fioletDwadebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
+    //    fioletDwadebata.wygranaMinigierka = true;
+    //}
+
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
+    [YarnCommand("fioletDwa2debata")]
+    public void fioletDwa2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M4_PrzekonanieFiolet");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie czerwonego
+    [YarnCommand("fioletwygranadebata")]
+    public void fioletwygranadebata()
+    {
+        colorChange.niebieski = false;
+        colorChange.fiolet = true;
+    }
+
+    //odpalenie minigierki ukladania zdan zolc WIP
+    //private DebataPlayer zolcdebata;
+    //[YarnCommand("zolcDebata")]
+    //public void zolcDebata()
+    //{
+    //    zolcdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
+    //    zolcdebata.wygranaMinigierka = true;
+    //}
+
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
+    [YarnCommand("zolc2debata")]
+    public void zolc2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M5_PogodzenieDzieci");
+    }
+
+    //triggeruje powrót kolorów po wygranej debacie czerwonego
+    [YarnCommand("zolcwygranadebata")]
+    public void zolcwygranadebata()
+    {
+        colorChange.fiolet = false;
+        colorChange.zolty = true;
+    }
+
+
+
     //odslania liscie i zagadke z rzeczka
     [YarnCommand("odslonliscie")]
     public void odlosnliscie()

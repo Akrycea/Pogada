@@ -1,0 +1,186 @@
+﻿title: M4_PrzekonanieFiolet
+---
+Bohater: Musisz przeprosić Aureusa.
+
+Violaceus: Rozmawialiśmy już o tym staruszku. Spadaj na drzewo.
+
+Bohater: Twój brat rozważa odejście z niebios, nie może do tego dojść.
+
+Bohater: Musisz go przed tym powstrzymać.
+
+Violaceus: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
+	<<jump M4_DebataFiolet1>>
+===
+
+title: M4_DebataFiolet1
+---
+->Może to ty powinieneś opuścić niebiosa.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet1_2>>
+->Naprawdę nie masz empatii.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet1_2>>
+->Nie możesz tak traktować mojego kolegi.
+	<<GoodChoice PointMeter>>
+	<<jump M4_DebataFiolet1_1>>
+->Brak kolorów to wszystko wasza wina.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet1_2>>
+->Przez to jak się traktujecie nawzajem świat nie ma kolorów.
+	<<VGoodChoice PointMeter>>
+	<<jump M4_DebataFiolet1_1>>
+===
+
+title: M4_DebataFiolet1_1
+---
+Violaceus: Ktoś pytał?
+	<<jump M4_DebataFiolet2>>
+===
+
+title: M31_DebataPomarancz1_2
+---
+Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
+	<<jump M4_DebataFiolet2>>
+===
+
+title: M4_DebataFiolet2
+---
+->Skoro tak bardzo ufasz dorosłym, to posłuchaj się mnie.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet2_2>>
+->Nie pozwolę, żeby przez was moje dzieci żyły bez kolorów.
+	<<GoodChoice PointMeter>>
+	<<jump M4_DebataFiolet2_1>>
+->Mam dość ciebie i twojej upartości.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet2_2>>
+->Wasza kłótnia kosztuje nas nasze kolory.
+	<<VGoodChoice PointMeter>>
+	<<jump M4_DebataFiolet2_1>>
+->Słaby z ciebie bóg.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet2_2>>
+===
+
+title: M4_DebataFiolet2_1
+---
+Violaceus: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zrozumie.
+	<<jump M4_DebataFiolet3>>
+===
+
+title: M4_DebataFiolet2_2
+---
+Violaceus: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
+	<<jump M4_DebataFiolet3>>
+===
+
+title: M4_DebataFiolet3
+---
+->Tak naprawdę ty masz z tym problem, nie mama.
+	<<VGoodChoice PointMeter>>
+	<<jump M4_DebataFiolet3_1>>
+->Nic dziwnego, że mama was mi zostawiła.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet3_2>>
+->Rozumiem, że mam rację.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet3_2>>
+->Jesteś samolubny.
+	<<GoodChoice PointMeter>>
+	<<jump M4_DebataFiolet3_1>>
+->Nie jesteś centrum wszechświata.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet3_2>>
+===
+
+title: M4_DebataFiolet3_1
+---
+Violaceus: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskazuje mi dobrą drogę.
+	<<jump M4_DebataFiolet4>>
+===
+
+title: M4_DebataFiolet3_2
+---
+Violacus: Skoro tak, to po co się pan wpycha między mnie a Aureusa? Nie masz śmiertelniku własnych dzieci, żeby im przeszkadzać?
+	<<jump M4_DebataFiolet4>>
+===
+
+title: M4_DebataFiolet4
+---
+->Nie masz pojęcia, co robisz.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet4_2>>
+->Czy wasza mama kazała ci się tak zachowywać?
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet4_2>>
+->Nie masz pojęcia czego wasza mama tak naprawdę chce.
+	<<GoodChoice PointMeter>>
+	<<jump M4_DebataFiolet4_1>>
+->Ja najlepiej zajmę się tą sytuacją.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet4_2>>
+->Mama kocha Aureusa tak czy siak.
+	<<VGoodChoice PointMeter>>
+	<<jump M4_DebataFiolet4_1>>
+===
+
+title: M4_DebataFiolet4_1
+---
+Violaceus: Wcale nie! Inaczej bym się nie wykłócał!
+	<<jump M4_DebataFiolet5>>
+===
+
+title: M4_DebataFiolet4_2
+---
+Violaceus: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to co ty, pewnie swoją zostawiłeś.
+	<<jump M4_DebataFiolet5>>
+===
+
+title: M4_DebataFiolet5
+---
+->Skoro tak dobrze się znasz, to zrób coś.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet5_2>>
+->Kłócisz się zamiast przekonać do siebie Aureusa.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet5_2>>
+->Nie możesz być tego pewien.
+	<<GoodChoice PointMeter>>
+	<<jump M4_DebataFiolet5_1>>
+->Mama na pewno porozmawiałby z Aureusem.
+	<<VGoodChoice PointMeter>>
+	<<jump M4_DebataFiolet5_1>>
+->Widocznie lubisz siedzieć bezczynnie.
+	<<BadChoice PointMeter>>
+	<<jump M4_DebataFiolet5_2>>
+===
+
+title: M4_DebataFiolet5_1
+---
+Violaceus: Hm.
+	<<jump M4_DebataFioletPoDebata>>
+===
+
+title: M4_DebataFiolet5_2
+---
+Violaceus: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej niż pan!
+	<<jump M4_DebataFioletPoDebata>>
+===
+
+title: M4_DebataFioletPoDebata
+---
+Violaceus: …
+
+Bohater: Porozmawiaj z nim
+
+Bohater: Przekonasz się, że niezależnie od imienia, to nadal twoj brat.
+
+Bohater: Kochasz go? To będziesz go kochał nieważne co.
+
+Bohater: Daj mu szansę.
+
+Violaceus: Już dobra, dobra!
+
+Violaceus: Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
+<<fioletwygranadebata Dialogi>>
+===

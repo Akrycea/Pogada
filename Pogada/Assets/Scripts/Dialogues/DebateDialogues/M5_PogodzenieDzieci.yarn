@@ -1,0 +1,188 @@
+﻿title: M5_PogodzenieDzieci
+---
+Aureus: Czego chcecie?
+
+Bohater: Martwiliśmy się o ciebie.
+
+Bohater: Daj nam szansę, Violaceus zgodził się porozmawiać.
+
+Violaceus: …
+
+Bohater: Eh, słuchaj…
+	<<jump M5_PogodzenieDzieci1>>
+===
+
+title: M5_PogodzenieDzieci1
+---
+->Robisz z igły widły.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci1_2>>
+->Jesteś dla nas ważny, zostań.
+	<<VGoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci1_1>>
+->Oboje jesteście bardzo uparci.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci1_2>>
+->Nie możesz odejść.
+	<<GoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci1_1>>
+->Odchodzenie to nonsens.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci1_2>>
+===
+
+title: M5_PogodzenieDzieci1_1
+---
+Aureus: To przez moją kłótnię nie ma żółtego, prawda?
+	<<jump M5_PogodzenieDzieci2>>
+===
+
+title: M5_PogodzenieDzieci1_2
+---
+Aureus: Kiedy to wszystko moja wina.
+	<<jump M5_PogodzenieDzieci2>>
+===
+
+title: M5_PogodzenieDzieci2
+---
+->Nie możecie rozstać się w niezgodzie.
+	<<GoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci2_1>>
+->Świat bardzo was potrzebuje.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci2_2>>
+->Przeproście się, proszę.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci2_2>>
+->Nie obrażaj się proszę.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci2_2>>
+->Odejście z domu nie rozwiąże waszej kłótni.
+	<<VGoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci2_1>>
+===
+
+title: M5_PogodzenieDzieci2_1
+---
+Aureus: Może. Ale jeśli mam tu żyć, to chcę żyć jako Aureus. Jako ja.
+	<<jump M5_PogodzenieDzieci3>>
+===
+
+title: M5_PogodzenieDzieci2_2
+---
+Aureus: Nie. Nie, muszę myśleć też chociaż trochę o sobie.
+	<<jump M5_PogodzenieDzieci3>>
+===
+
+title: M5_PogodzenieDzieci3
+---
+->Oboje musicie pójść na kompromis, żeby żyć w zgodzie.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci3_2>>
+->Możesz żyć jako ty.
+	<<GoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci3_1>>
+->Twoja opinia na temat samego siebie jest najważniejsza.
+	<<VGoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci3_1>>
+->Opinia Violaceusa nie powinna wpływać na twoje plany na życie.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci3_2>>
+->Możesz po prostu żyć bez Violaceusa.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci3_2>>
+===
+
+title: M5_PogodzenieDzieci3_1
+---
+Aureus: Niby tak. Ale, nawet jeśli to głupie, chcę, żeby mój własny brat mnie wspierał. Nie chcę żyć bez niego.
+	<<jump M5_PogodzenieDzieci4>>
+===
+
+title: M5_PogodzenieDzieci3_2
+---
+Aureus: Chcę, żeby mnie kochał! On powinien mnie kochać, nieważne co!
+	<<jump M5_PogodzenieDzieci4>>
+===
+
+title: M5_PogodzenieDzieci4
+---
+->Niezależnie od czyjejkolwiek opinii, Aureus ma prawo do szczęścia.
+	<<GoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci4_1>>
+->Przestań zasłaniać się zdaniem innych.
+	<<VGoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci4_1>>
+->Ta konwersacja cały czas kręci się wkoło wokół ciebie.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci4_2>>
+->Musisz przestać być taki zapatrzony w siebie.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci4_2>>
+->Twoja opinia nie ma tu znaczenia.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci4_2>>
+===
+
+title: M5_PogodzenieDzieci4_1
+---
+Aureus: Właśnie! Pomyśl o nas, nie o innych. O mnie.
+	<<jump M5_PogodzenieDzieci5>>
+===
+
+title: M5_PogodzenieDzieci4_2
+---
+Aureus: Właśnie! Jesteś strasznie… Strasznie samolubny!
+	<<jump M5_PogodzenieDzieci5>>
+===
+
+title: M5_PogodzenieDzieci5
+---
+->Ty będziesz żałować straty brata.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci5_2>>
+->Czemu zajmujesz się przyszłością zamiast bratem?
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci5_2>>
+->Nigdy nie wiadomo jak życie się potoczy, ale ważne, że będziecie miec siebie nawzajem.
+	<<VGoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci5_1>>
+->Nie ochronisz go przed jego własnymi uczuciami.
+	<<BadChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci5_2>>
+->Możecie zawsze w przyszłości przejść przez to razem.
+	<<GoodChoice PointMeter>>
+	<<jump M5_PogodzenieDzieci5_1>>
+===
+
+title: M5_PogodzenieDzieci5_1
+---
+Aureus: Proszę? Jeśli będę musiał, to zrobię to sam, ale nie chcę żyć bez ciebie.
+	<<jump M5_DebataZolcPoDebata>>
+===
+
+title: M5_PogodzenieDzieci5_2
+---
+Aureus: Po prostu skup się na chwilę na tu i teraz. Nie chcę cię stracić.
+	<<jump M5_DebataZolcPoDebata>>
+===
+
+title: M5_DebataZolcPoDebata
+---
+Violaceus: … No dobrze.
+
+Violaceus: Nie wiem czy to dobra decyzja, ale życie samemu rzeczywiście byłoby słabe.
+
+Violaceus: No ale czy nie przeraża cię taka zmiana trochę?
+
+Aureus: Trochę tak.
+
+Aureus: Ale tak jestem szczęśliwszy, nawet jeśli trochę się boję.
+
+Violaceus: Zawsze byłeś zbyt optymistyczny.
+
+Violaceus: No, ale głupio byłoby nie dać temu szansy.
+
+Violaceus: I nie chciałbym, żebyś odszedł.
+<<zolcwygranadebata Dialogi>>
+===
