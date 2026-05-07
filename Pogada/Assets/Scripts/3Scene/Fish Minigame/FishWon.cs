@@ -5,15 +5,16 @@ public class FishWon : MonoBehaviour
     public int allFish;
     public bool allFishFound;
 
-    public GameObject allFishOnUI;
-
     private ClickDialogue granat;
 
     private bool done = false;
 
-    void Update()
+
+    public void FishWin()
     {
-        if (allFish == 4 && done == false)
+        allFish++;
+
+        if (allFish == 4)
         {
             allFishFound = true;
             Debug.Log("Fish Minigame Won");
@@ -21,8 +22,6 @@ public class FishWon : MonoBehaviour
             granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
             granat.nazwaDialogu = "D8_5RybkiGranat";
             granat.dialoguePlayed = false;
-
-            done = true;
         }
     }
 }

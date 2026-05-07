@@ -8,7 +8,7 @@ public class Fish : MonoBehaviour
 
     private void OnMouseDown()
     {
-        fishWon.allFish += 1;
+        fishWon.FishWin();
         gameObject.SetActive(false);
         fishOnUI.SetActive(true);
     }

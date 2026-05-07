@@ -11,20 +11,6 @@ public class Drag : MonoBehaviour
     //pozwol na przenoszenie, normalnie na true
     public bool AllowDrag = true;
 
-    //odniesienie do gracza
-    [HideInInspector]
-    public Transform player;
-    [HideInInspector]
-    public GameObject playerObject;
-
-    private void Start()
-    {
-        //znowu, to wszystko do playera
-        //playerObject = GameObject.Find("Player");
-        //player = playerObject.GetComponent<Transform>();
-        //Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
-    }
-
 
     void OnMouseDown()
     {

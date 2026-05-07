@@ -5,7 +5,7 @@ public class Doormat : MonoBehaviour
     public bool openDoormat = false;
 
     public Drag drag;
-
+      
     private Collider2D doormatCollider;
 
     public void OnMouseDown()

@@ -25,12 +25,6 @@ public class SpriteChanger : MonoBehaviour
     //refrence do skryptu z przenoszeniem przedmiotow
     //public Drag drag;
 
-    //gracz
-    [HideInInspector]
-    public Transform player;
-    [HideInInspector]
-    public GameObject playerObject;
-
     private bool allowSpriteChange = true;
 
 
@@ -38,11 +32,6 @@ public class SpriteChanger : MonoBehaviour
     {
         CurrentSprite = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        //odniesienie do gracza
-        playerObject = GameObject.Find("Player");
-        player = playerObject.GetComponent<Transform>();
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
 
     void OnMouseDown()

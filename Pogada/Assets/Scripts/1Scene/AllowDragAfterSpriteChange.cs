@@ -12,12 +12,6 @@ public class AllowDragAfterSpriteChange : MonoBehaviour
     private Vector3 screenPoint;
     private Vector3 offset;
 
-    //odniesienie do gracza
-    [HideInInspector]
-    public Transform player;
-    [HideInInspector]
-    public GameObject playerObject;
-
     [HideInInspector]
     public SpriteRenderer spriteRenderer;
 
@@ -39,12 +33,8 @@ public class AllowDragAfterSpriteChange : MonoBehaviour
     {
         CurrentSprite = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        //znowu, to wszystko do playera jest nmg z niego
-        playerObject = GameObject.Find("Player");
-        player = playerObject.GetComponent<Transform>();
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
     }
+
     void OnMouseDown()
     {
         if (allowSpriteChange)
