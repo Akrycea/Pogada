@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9943ed47c474418e003cbab757122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: 
+  currentObject: {fileID: 776297739}
   WinObject: place6
   currentPosition: {x: 24.500006, y: 1.3600003, z: 9.725433}
   birdsWin: {fileID: 1802856947}
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 56342689}
   m_Layer: 0
   m_Name: place6
-  m_TagString: BirdFree
+  m_TagString: Free
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1666,7 +1666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: autoStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: startNode
@@ -3531,7 +3531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9943ed47c474418e003cbab757122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: 
+  currentObject: {fileID: 394399718}
   WinObject: place5
   currentPosition: {x: 24.500006, y: 1.3600003, z: 9.725433}
   birdsWin: {fileID: 1802856947}
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 394399720}
   m_Layer: 0
   m_Name: place4
-  m_TagString: BirdTaken
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4847,6 +4847,7 @@ MonoBehaviour:
   SunHead: {fileID: 1973423769}
   MoonHead: {fileID: 1243594306}
   Czerwony: {fileID: 164577014}
+  stateManager: {fileID: 0}
 --- !u!1 &567737025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5928,7 +5929,7 @@ GameObject:
   - component: {fileID: 776297741}
   m_Layer: 0
   m_Name: place3
-  m_TagString: BirdTaken
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8088,7 +8089,7 @@ GameObject:
   - component: {fileID: 942826594}
   m_Layer: 0
   m_Name: place1
-  m_TagString: BirdTaken
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9800,7 +9801,7 @@ GameObject:
   - component: {fileID: 1126263809}
   m_Layer: 0
   m_Name: place5
-  m_TagString: BirdTaken
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11440,7 +11441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1334272402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11484,7 +11485,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5086690886255336400, guid: 0b41a29a7f0105e4f87ea2dd283616eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12045,7 +12046,7 @@ Transform:
   m_GameObject: {fileID: 1361693957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.7, y: -0.3, z: 4}
+  m_LocalPosition: {x: 30.13, y: 1.22, z: 4}
   m_LocalScale: {x: 0.8283132, y: 0.8283132, z: 0.8283132}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13017,7 +13018,7 @@ Transform:
   m_GameObject: {fileID: 1444676900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.01, y: -3.7, z: 0}
+  m_LocalPosition: {x: 66.57, y: -3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14595,7 +14596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9943ed47c474418e003cbab757122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: 
+  currentObject: {fileID: 1887737628}
   WinObject: place1
   currentPosition: {x: 21.77001, y: 1.7900001, z: 9.725433}
   birdsWin: {fileID: 1802856947}
@@ -15230,7 +15231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1802856947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15243,9 +15244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bff255fb0c28774693c962660c91ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birdsWin: 0
   dialogueRunner: {fileID: 1748553146}
   BlueprintUI: {fileID: 68235487}
+  stateManager: {fileID: 0}
 --- !u!4 &1802856948
 Transform:
   m_ObjectHideFlags: 0
@@ -15530,7 +15531,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5.3
   m_Depth: 100
   m_CullingMask:
@@ -15611,7 +15612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9943ed47c474418e003cbab757122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: 
+  currentObject: {fileID: 1126263807}
   WinObject: place3
   currentPosition: {x: 24.500006, y: 1.3600003, z: 9.725433}
   birdsWin: {fileID: 1802856947}
@@ -16019,7 +16020,7 @@ GameObject:
   - component: {fileID: 1887737630}
   m_Layer: 0
   m_Name: place2
-  m_TagString: BirdTaken
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16971,7 +16972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9943ed47c474418e003cbab757122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectName: 
+  currentObject: {fileID: 942826592}
   WinObject: place2
   currentPosition: {x: 24.500006, y: 1.3600003, z: 9.725433}
   birdsWin: {fileID: 1802856947}

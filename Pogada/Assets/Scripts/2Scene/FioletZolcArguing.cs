@@ -5,6 +5,7 @@ public class FioletZolcArguing : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
 
+
     public void OnMouseDown()
     {
         dialogueRunner.StartDialogue("D2_PoznanieFiolet");

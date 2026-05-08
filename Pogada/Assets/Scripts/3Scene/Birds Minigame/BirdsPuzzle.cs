@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class BirdsPuzzle : MonoBehaviour
 {
-    public string ObjectName;
+    public GameObject currentObject;
     public string WinObject;
 
-    private bool isOnObject = true;
+    //private bool isOnObject = true;
 
     public Vector3 currentPosition;
 
     public BirdsWin birdsWin;
 
     public GameObject ChatBox;
+
+    
 
     void Start()
     {
@@ -20,40 +22,27 @@ public class BirdsPuzzle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Hit collision");
-        //Debug.Log(collision.gameObject.name);
-        //Debug.Log(collision.gameObject.transform.position);
-
-
-        if (collision.CompareTag("BirdFree"))
+        if (collision.CompareTag("Free"))
         {
-            isOnObject = true;
+            //isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
-            collision.gameObject.tag = "BirdTaken";
+            collision.gameObject.tag = "Taken";
+            currentObject.gameObject.tag = "Free";
+            currentObject = collision.gameObject;
         }
 
         if(collision.gameObject.name == WinObject)
         {
-            birdsWin.birdsWin += 1;
-        }
-
-        Debug.Log(birdsWin.birdsWin);
+            birdsWin.GoodSpot();
+        }  
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (isOnObject == true)
-        {
-            collision.gameObject.tag = "BirdFree";
-            isOnObject = false;
-        }
-
         if (collision.gameObject.name == WinObject)
         {
-            birdsWin.birdsWin -= 1;    
+            birdsWin.BadSpot(); 
         }
-
-        Debug.Log(birdsWin.birdsWin);
     }
 
     void Update()
@@ -65,6 +54,7 @@ public class BirdsPuzzle : MonoBehaviour
     }
 
 
+    //showing the chatbox when the player is hovering over the bird, and hiding it when they are not
     public void OnMouseOver()
     {
         ChatBox.SetActive(true);

@@ -4,23 +4,34 @@ using Yarn.Unity;
 
 public class BirdsWin : MonoBehaviour
 {
-    public int birdsWin;
+    private int birdsWin;
 
     public DialogueRunner dialogueRunner;
 
     public GameObject BlueprintUI;
 
-    private bool dialoguePlayed = false;   
+    private bool dialoguePlayed = false;
 
-    // Update is called once per frame
-    void Update()
+    public StateManager stateManager;
+
+
+    public void GoodSpot()
     {
+        birdsWin++;
+
         if (birdsWin == 5 && Input.GetMouseButton(0) == false && dialoguePlayed == false)
-        {  
+        {
             Debug.Log("birds won");
             dialogueRunner.StartDialogue("D3_PtakiWygrana");
             dialoguePlayed = true;
+            stateManager.BirdMinigameWon = true;
+
         }
+    }
+
+    public void BadSpot()
+    {
+        birdsWin--;
     }
 
     [YarnCommand("ShowBlueprintsOnUI")]
