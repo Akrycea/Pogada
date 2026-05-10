@@ -9,6 +9,8 @@ public class FishWon : MonoBehaviour
 
     private bool done = false;
 
+    public StateManager stateManager;
+
 
     public void FishWin()
     {
@@ -17,6 +19,7 @@ public class FishWon : MonoBehaviour
         if (allFish == 4)
         {
             allFishFound = true;
+            stateManager.FishMinigameWon = true;
             Debug.Log("Fish Minigame Won");
 
             granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();

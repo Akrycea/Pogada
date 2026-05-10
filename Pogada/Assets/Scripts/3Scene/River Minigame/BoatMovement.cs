@@ -36,20 +36,13 @@ public class BoatMovement : MonoBehaviour
         {
             arrayNumber ++;
             targetPosition = obstacles[arrayNumber].transform.position;
-        }
-
-        
+        }    
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name != "zolw" && collision.gameObject.name != "koniec")
         {
-            if (collision.CompareTag("ZGpassable"))
-            {
-                
-            }
-
             if (collision.CompareTag("ZGnotpassable"))
             {
                 transform.position = startPosition;
@@ -57,10 +50,6 @@ public class BoatMovement : MonoBehaviour
                 arrayNumber = 0;
                 enabled = false;
             }
-        }
-        else if (collision.gameObject.name == "zolw")
-        {
-            
         }
         else if (collision.gameObject.name == "koniec")
         {

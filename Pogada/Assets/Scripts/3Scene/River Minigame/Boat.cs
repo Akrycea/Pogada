@@ -8,21 +8,6 @@ public class Boat : MonoBehaviour
 
     private bool isRunning = false;
 
-    //gracz
-    [HideInInspector]
-    public Transform player;
-    [HideInInspector]
-    public GameObject playerObject;
-
-
-    void Start()
-    {
-        //odniesienie do gracza
-        playerObject = GameObject.Find("Player");
-        player = playerObject.GetComponent<Transform>();
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
-    }
-
     void OnMouseDown()
     {
         boatMovement.enabled = true;
