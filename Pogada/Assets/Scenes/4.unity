@@ -444,7 +444,7 @@ Transform:
   m_GameObject: {fileID: 340066885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -93.9, y: 28.7, z: 0}
+  m_LocalPosition: {x: -112.83999, y: 40.55, z: 0}
   m_LocalScale: {x: 2.4401, y: 2.4401, z: 2.4401}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1016,6 +1016,7 @@ MonoBehaviour:
   colorChange: {fileID: 159523415}
   Blueprints: {fileID: 0}
   Czerwony: {fileID: 0}
+  GranatDrzwi: {fileID: 0}
 --- !u!4 &641062021
 Transform:
   m_ObjectHideFlags: 0
@@ -1565,7 +1566,7 @@ Transform:
   m_GameObject: {fileID: 784498294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 133.04875, y: 6.531047, z: 0.5}
+  m_LocalPosition: {x: 132.78, y: 6.97, z: 0.5}
   m_LocalScale: {x: 0.6678, y: 0.6678, z: 0.6678}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2662,7 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2481e91fc086a349926577df3f99ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nazwaDialogu: D3_PoznanieZieleni
+  nazwaDialogu: D10_PoznaniePomarancz
   dialogueRunner: {fileID: 361573738}
   dialoguePlayed: 0
 --- !u!95 &1388577437
@@ -3125,7 +3126,7 @@ Transform:
   m_GameObject: {fileID: 1751437051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -134.67, y: 33.69, z: 0}
+  m_LocalPosition: {x: -41.9, y: 34.8, z: 0}
   m_LocalScale: {x: 1.8114, y: 1.8114, z: 1.8114}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3675,7 +3676,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.619648, y: 0.1936419}
+  m_Offset: {x: 0.619648, y: -0.106832385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3685,7 +3686,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.02079, y: 5.8022847}
+  m_Size: {x: 4.02079, y: 2.3604758}
   m_EdgeRadius: 0
 --- !u!4 &2063419192
 Transform:
@@ -3696,7 +3697,7 @@ Transform:
   m_GameObject: {fileID: 2063419188}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134.9, y: 1.6, z: -0.23591574}
+  m_LocalPosition: {x: 133.97, y: 1.44, z: -0.23591574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

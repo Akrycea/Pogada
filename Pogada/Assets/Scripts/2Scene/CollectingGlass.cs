@@ -7,6 +7,7 @@ public class CollectingGlass : MonoBehaviour
     void Start()
     {
        stateManager = GameObject.Find("PuzzleManager").GetComponent<StateManager>();
+
     }
 
     private void OnMouseDown()

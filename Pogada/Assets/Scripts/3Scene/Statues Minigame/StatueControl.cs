@@ -15,7 +15,7 @@ public class StatueControl : MonoBehaviour
 
     //public DebataPlayer debataPlayer;
 
-    public BirdsWin birsWin;
+    //public BirdsWin birsWin;
 
     public GameObject SunHead;
     public GameObject MoonHead;
@@ -32,13 +32,13 @@ public class StatueControl : MonoBehaviour
 
     public void Status()
     {
-        if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length - 1 && stateManager.BirdMinigameWon)
+        if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length - 1)
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
         }
 
-        if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1 && stateManager.BirdMinigameWon)
+        if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);

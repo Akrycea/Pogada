@@ -12,6 +12,8 @@ public class Glass : MonoBehaviour
 
     public GameObject picture;
 
+    public GlassMinigameWin glassMinigameWin;
+
     void Start()
     {
         startPosition = gameObject.transform.position;
@@ -29,7 +31,7 @@ public class Glass : MonoBehaviour
 
         if (collision.gameObject.name == WinObject)
         {
-            
+            glassMinigameWin.GoodSpot(); 
         }
     }
 
@@ -44,7 +46,7 @@ public class Glass : MonoBehaviour
 
         if (collision.gameObject.name == WinObject)
         {
-            
+            glassMinigameWin.BadSpot();
         }
     }
 

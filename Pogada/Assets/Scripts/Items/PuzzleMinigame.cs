@@ -14,6 +14,8 @@ public class PuzzleMinigame : MonoBehaviour
 
     public string ObjectName;
 
+    public StatueControl statueControl;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -21,10 +23,11 @@ public class PuzzleMinigame : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == ObjectName)
+        if (collision.gameObject == ogObject)
         {
             spriteRenderer.sprite = targetSprite;
             ogObject.SetActive(false);
+            statueControl.Status();
         }
     }
 }

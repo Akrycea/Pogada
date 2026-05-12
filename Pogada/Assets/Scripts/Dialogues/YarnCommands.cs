@@ -138,12 +138,15 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M3_PogodzenieGranat");
     }
 
+    public GameObject GranatDrzwi;
+
     //triggeruje powrót kolorów po wygranej debacie granat
     [YarnCommand("granatwygranadebata")]
     public void granatwygranadebata()
     {
         colorChange.czerwony = false;
         colorChange.granat = true;
+        GranatDrzwi.SetActive(true);
     }
 
     //odpalenie minigierki ukladania zdan pomarancz WIP
@@ -194,6 +197,7 @@ public class YarnCommands : MonoBehaviour
     {
         colorChange.pomarancz = false;
         colorChange.niebieski = true;
+        dialRunner.StartDialogue("D12_PoznanieZolci");
     }
 
     //odpalenie minigierki ukladania zdan fioletDwa WIP
