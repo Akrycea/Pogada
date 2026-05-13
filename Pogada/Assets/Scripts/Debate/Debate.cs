@@ -6,7 +6,6 @@ public class Debate : MonoBehaviour
     public int YourPoints;
     public int EnemyPoints;
 
-
     [YarnCommand("Ending")]
     public void Ending()
     {

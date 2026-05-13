@@ -49,6 +49,7 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M1_PoznanieFiolet");
     }
 
+
     //po rozmowie z zielonym pozwala pogadac z granat
     private ClickDialogue granat;
     [YarnCommand("granatOdpalDialog")]
@@ -235,8 +236,8 @@ public class YarnCommands : MonoBehaviour
     }
 
     //triggeruje powrót kolorów po wygranej debacie czerwonego
-    [YarnCommand("fioletwygranadebata")]
-    public void fioletwygranadebata()
+    [YarnCommand("fiolet2wygranadebata")]
+    public void fiolet2wygranadebata()
     {
         colorChange.niebieski = false;
         colorChange.fiolet = true;
@@ -266,7 +267,6 @@ public class YarnCommands : MonoBehaviour
         colorChange.fiolet = false;
         colorChange.zolty = true;
     }
-
 
 
     //odslania liscie i zagadke z rzeczka
