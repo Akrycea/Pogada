@@ -7,9 +7,164 @@ Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try 
 Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
 Fiolet: Hm, no może…
-
-//debata
+	<<jump M1_PoznanieFiolet1>>
 ===
+
+title: M1_PoznanieFiolet1
+---
+->Nie powinieneś bez powodu krzyczeć na brata.
+	<<GoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet1_1>>
+->Od kiedy rodzeństwa się kłócą?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet1_2>>
+->Co ci zrobił?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet1_2>>
+->O co się pokłóciliście?
+	<<VGoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet1_1>>
+->O co się darliście?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet1_2>>
+===
+
+title: M1_PoznanieFiolet1_1
+---
+Dziecko 2: Vus ma jakiś głupi pomysł, że chce nagle imię zmieniać.
+	<<jump M1_PoznanieFiolet2>>
+===
+
+title: M1_PoznanieFiolet1_2
+---
+Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
+	<<jump M1_PoznanieFiolet2>>
+===
+
+title: M1_PoznanieFiolet2
+---
+->I o to cały ten krzyk?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet2_2>>
+->Czemu uważasz, że sprawi tym przykrość mamie?
+	<<VGoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet2_1>>
+->Każdy ma swoje imię i może robić z nim co chce.
+	<<GoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet2_1>>
+->Wydaje mi się, że waszych rodziców to zupełnie nie interesuje.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet2_2>>
+->Co tobie do tego?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet2_2>>
+===
+
+title: M1_PoznanieFiolet1_1
+---
+Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego tylko żałował.
+	<<jump M1_PoznanieFiolet3>>
+===
+
+title: M1_PoznanieFiolet2_2
+---
+Dziecko 2: Mamie na pewno będzie przykro z tego powodu! Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie.
+	<<jump M1_PoznanieFioleti3>>
+===
+
+title: M1_PoznanieFiolet3
+---
+->Nie możesz innym narzucać swoich zasad.
+	<<GoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet3_1>>
+->Kogo obchodzi mama? Jesteście już duzi.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet3_2>>
+->To tylko imię.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet3_2>>
+->Może mama cieszyłaby się ze szczęścia Vusa?
+	<<VGoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet3_1>>
+->A co, jakbyś ty chciał zmienić imię?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet3_2>>
+===
+
+title: M1_PoznanieFiolet3_1
+---
+Dziecko 2: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczęśliwa! A to ona jest najważniejsza.
+	<<jump M1_PoznanieFiolet4>>
+===
+
+title: M1_PoznanieFiolet3_2
+---
+Dziecko 2: Zasad się nie łamie i kropka!
+	<<jump M1_PoznanieFiolet4>>
+===
+
+title: M1_PoznanieFiolet4
+---
+->Rozmawiałem z waszą mamą i na nic takiego nie narzekała.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet4_2>>
+->Czemu jej nie spytacie?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet4_2>>
+->Jako rodzeństwo powinniście się chyba zawsze wspierać?
+	<<VGoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet4_1>>
+->Sam sobie wymyśliłeś te zasady.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet4_2>>
+->Chyba ty jesteś bardziej przeciwko temu, niż wasza mama.
+	<<GoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet4_1>>
+===
+
+title: M1_PoznanieFiolet4_1
+---
+Dziecko 2: Przecież ja go wspieram! Powstrzymuję go przed złym wyborem.
+	<<jump M1_PoznanieFiolet5>>
+===
+
+title: M1_PoznanieFiolet4_2
+---
+Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
+	<<jump M1_PoznanieFiolet5>>
+===
+
+title: M1_PoznanieFiolet5
+---
+->Powinieneś dać dorosłym się tym zająć.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet5_2>>
+->Krzyczenie na niego nikomu nie pomoże.
+	<<VGoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet5_1>>
+->Światu brakuje kolorów, a wy skupiacie się na imionach?
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet5_2>>
+->Krzyczenie na niego nikomu nie pomoże.
+	<<GoodChoice PointMeter>>
+	<<jump M1_PoznanieFiolet5_1>>
+->Ta cała kłótnia nie ma sensu.
+	<<BadChoice PointMeter>>
+	<<jump M1_PoznanieFiolet5_2>>
+===
+
+title: M1_PoznanieFiolet5_1
+---
+Dziecko 2: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i nie uciekał.
+	<<jump M1_PoznanieFioletPoDebacie>>
+===
+
+title: M1_PoznanieFiolet5_2
+---
+Dziecko 2: Śmiertelnik jak ty nie zrozumie.
+	<<jump M1_PoznanieFioletPoDebacie>>
+===
+
 
 title: M1_PoznanieFioletPoDebacie
 ---
@@ -44,4 +199,6 @@ Fiolet: Nie. Pewnie mama wie.
 Fiolet: Powiedz Aureusowi, jak go znajdziesz, żeby się słuchał mamy.
 
 Bohater: Wszyscy porozmawiamy, jak go znajdę. Do później.
+
+<<Ending Debate>>
 ===

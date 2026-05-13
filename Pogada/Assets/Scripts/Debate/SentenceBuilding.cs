@@ -32,6 +32,11 @@ public class SentenceBuilding : MonoBehaviour
     public List<string> midAnswer2 = new List<string>();
     public List<string> midAnswer3 = new List<string>();
     public List<string> midAnswer4 = new List<string>();
+    public List<string> midAnswer5 = new List<string>();
+    public List<string> midAnswer6 = new List<string>();
+    public List<string> midAnswer7 = new List<string>();
+    public List<string> midAnswer8 = new List<string>();
+
 
     //pokazuje budowane zdanie na ui
     public TMP_Text budowaneZdanieUI;

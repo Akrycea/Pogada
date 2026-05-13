@@ -32,6 +32,23 @@ public class YarnCommands : MonoBehaviour
         brama.dialoguePlayed = false;
     }
 
+    //odpalenie minigierki ukladania zdan fiolet WIP
+    private DebataPlayer fioletdebata;
+    [YarnCommand("fioletDebata")]
+    public void fioletDebata()
+    {
+        fioletdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
+        fioletdebata.wygranaMinigierka = true;
+    }
+
+    //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty fioletowego
+    [YarnCommand("fiolet2debata")]
+    public void fiolet2debata()
+    {
+        Debug.Log("odpalam debate");
+        dialRunner.StartDialogue("M1_PoznanieFiolet");
+    }
+
     //po rozmowie z zielonym pozwala pogadac z granat
     private ClickDialogue granat;
     [YarnCommand("granatOdpalDialog")]
