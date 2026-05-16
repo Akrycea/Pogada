@@ -12,7 +12,7 @@ Robert: Tak. Ja nie kradnę. I nie kłamię!
 
 Bohater: Wierzę ci. 
 
-Robert: Ona w ogóle nie wierzyła. I nie słuchała co mówię.
+Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
 	<<jump M2_PoznanieCzerwieni1>>
 ===
 
@@ -43,7 +43,7 @@ Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pob
 
 title: M2_PoznanieCzerwieni1_2
 ---
-Robert: Już przepraszałem Liv za Perełkę. To była głupia pomyłka. Jej to nie obchodzi.
+Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A Liv nie słucha.
 	<<jump M2_PoznanieCzerwieni2>>
 ===
 
@@ -68,13 +68,25 @@ title: M2_PoznanieCzerwieni2
 
 title: M2_PoznanieCzerwieni2_1
 ---
-Robert: Może by zadziałało. Chyba wolałbym, żeby mi po prostu uwierzyła.
-	<<jump M2_PoznanieCzerwieni3>>
+Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
+	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
 ===
 
 title: M2_PoznanieCzerwieni2_2
 ---
-Robert: Mówiłem ci przecież, że ona mnie nie słucha! Ty też nie  jak widać.
+Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
+	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
+===
+
+title: M2_Z_Jab_1_1
+---
+Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
+	<<jump M2_PoznanieCzerwieni3>>
+===
+
+title: M2_Z_Jab_1_2
+---
+Viri: Przestań krzyczeć!
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
@@ -86,7 +98,7 @@ title: M2_PoznanieCzerwieni3
 ->Może jesteś za mało przekonujący.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
-->Po tym, jak opadła złość, może będzie skłonna.
+->Mogła nie uwierzyć w złości, czynami możesz ją przekonać.
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ->Ciężko uwierzyć bez dowodów.
@@ -105,7 +117,7 @@ Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kł
 
 title: M2_PoznanieCzerwieni3_2
 ---
-Robert: odzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
+Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
 
@@ -131,12 +143,37 @@ title: M2_PoznanieCzerwieni4
 title: M2_PoznanieCzerwieni4_1
 ---
 Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
-	<<jump M2_PoznanieCzerwieni5>>
+	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
 title: M2_PoznanieCzerwieni4_2
 ---
 Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i cała reszta!
+	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
+===
+
+
+title: M2_Z_Jab_2_1
+---
+Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
+	<<Jab Dialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
+===
+
+title: M2_Z_Jab_2_2
+---
+Viri: Przestań krzyczeć!
+	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
+===
+
+title: M2_C_JAB_1_1
+---
+Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
+	<<jump M2_PoznanieCzerwieni5>>
+===
+
+title: M2_C_JAB_1_2
+---
+Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 
@@ -145,13 +182,13 @@ title: M2_PoznanieCzerwieni5
 ->Wydajesz się bardzo przeżywać strach innych dzieci.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
-->Wydaje mi się, że kłamiesz.
+->Wydaje mi się, że kłamiesz i cię to stresuje.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Liv chyba miała rację.
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
-->A jednak wygląda na to, że zależało ci na statule.
+->Nie ma nic złego w tym, że się złościsz.
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Zniszczyłeś pluszaka, masz za swoje.
@@ -173,9 +210,13 @@ Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem
 
 title: M2_PoznanieCzerwieniPoDebata
 ---
-Robert: Nie chciałem rozbijać statuy, ale Liv mnie okropnie zdenerowała i nie wiedziałem co zrobić!
+Bohater: Nie ma nic złego w tym, że się denerwujesz.
 
-Robert: Miałem wrażenie, że jeśli czegoś nie zrobię, to wybuchnę!
+Bohater: Po prostu trzeba może pomyśleć co robisz w związku z tymi emocjami.
+
+Robert: Nie chciałem rozbijać statuy, dobra?
+
+Robert: Po prostu miałem wrażenie, że jeśli czegoś nie zrobię, to wybuchnę!
 
 Robert: Nie złościełem się specjalnie, nigdy nie robię tego specjalnie.
 
@@ -187,19 +228,17 @@ Bohater: Czy zniszczenie statuy pomogło ci ze złością?
 
 Robert: Trochę.
 
-Robert: Ale potem zrobiło mi się przykro.
+Robert: Ale potem zrobiło mi się tylko gorzej. Lubiłem te statuetę.
 
 Bohater: Może musisz mieć dla siebie miejsce, gdzie możesz być zły.
 
-Bohater: Mógłbyć przygotować sobie rzeczy do niszczenia, jak puste kartki papieru do rozdarcia.
-
-Bohater: Pozbyłbyś się złości w bardziej kontrolowany sposób.
+Bohater: Miejsce, gdzie pozbyłbyś się złości w bardziej kontrolowany sposób. Gdzie miałbyś chwilę na wyciszenie dla siebie.
 
 Robert: Wolałbym się nie złościć w ogóle.
 
-Bohater: Niestety, nie da się od tego uciec.
+Bohater: Trzeba się czasem zezłościć. To wcale nie jest zawsze złe.
 
-Bohater: Nie ma nic złego w złości. Trzeba po prostu znaleźc własny sposób na radzenie sobie z nią.
+Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od niej.
 
 Viri: Jakby Liv usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
 
@@ -208,7 +247,6 @@ Viri: Proszę, spróbuj z nią porozmawiać.
 Viri: Pójdziemy z tobą, pomożemy…
 
 Robert: No dobrze. Ale potrzymaj mnie za rękę.
-
 <<czerwonywygranadebata Dialogi>>
 <<granatOdpalQuest Dialogi>>
 ===
