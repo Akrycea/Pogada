@@ -6,7 +6,7 @@ public class YarnCommands : MonoBehaviour
 {
     //deklaracje potrzebne do 99% komend
     public DialogueRunner dialRunner;
-    public ColorChange colorChange;
+    public StateManager stateManager;
 
     //komentarze bohatera na P1_Brama
     private ClickDialogue brama;
@@ -32,7 +32,7 @@ public class YarnCommands : MonoBehaviour
         brama.dialoguePlayed = false;
     }
 
-    //odpalenie minigierki ukladania zdan fiolet WIP
+    //nastepne klikniecie  na fiolet powinno odpalic budowanie zdan debata
     private DebataPlayer fioletdebata;
     [YarnCommand("fioletDebata")]
     public void fioletDebata()
@@ -80,8 +80,6 @@ public class YarnCommands : MonoBehaviour
     [YarnCommand("zielonywygranadebata")]
     public void zielonywygranadebata()
     {
-        colorChange.szary = false;
-        colorChange.zielony = true;
         granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
         granat.nazwaDialogu = "D8_PrzekonanieCzerwieni";
     }
@@ -123,14 +121,6 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M2_PoznanieCzerwieni");
     }
 
-    //triggeruje powrót kolorów po wygranej debacie czerwonego
-    [YarnCommand("czerwonywygranadebata")]
-    public void czerwonywygranadebata()
-    {
-        colorChange.zielony = false;
-        colorChange.czerwony = true;
-    }
-
     //po debacie z czerwonym pozwala pogadac z granat i zaczac jej quest
     [YarnCommand("granatOdpalQuest")]
     public void granatOdpalaQuest()
@@ -162,8 +152,6 @@ public class YarnCommands : MonoBehaviour
     [YarnCommand("granatwygranadebata")]
     public void granatwygranadebata()
     {
-        colorChange.czerwony = false;
-        colorChange.granat = true;
         GranatDrzwi.SetActive(true);
     }
 
@@ -184,13 +172,6 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M31_PogodzeniePomarancz");
     }
 
-    //triggeruje powrót kolorów po wygranej debacie czerwonego
-    [YarnCommand("pomaranczwygranadebata")]
-    public void pomaranczwygranadebata()
-    {
-        colorChange.granat = false;
-        colorChange.pomarancz = true;
-    }
 
     //odpalenie minigierki ukladania zdan blekit WIP
     //private DebataPlayer blekitdebata;
@@ -213,8 +194,6 @@ public class YarnCommands : MonoBehaviour
     [YarnCommand("blekitwygranadebata")]
     public void blekitwygranadebata()
     {
-        colorChange.pomarancz = false;
-        colorChange.niebieski = true;
         dialRunner.StartDialogue("D12_PoznanieZolci");
     }
 
@@ -235,14 +214,6 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M4_PrzekonanieFiolet");
     }
 
-    //triggeruje powrót kolorów po wygranej debacie czerwonego
-    [YarnCommand("fiolet2wygranadebata")]
-    public void fiolet2wygranadebata()
-    {
-        colorChange.niebieski = false;
-        colorChange.fiolet = true;
-    }
-
     //odpalenie minigierki ukladania zdan zolc WIP
     //private DebataPlayer zolcdebata;
     //[YarnCommand("zolcDebata")]
@@ -258,14 +229,6 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M5_PogodzenieDzieci");
-    }
-
-    //triggeruje powrót kolorów po wygranej debacie czerwonego
-    [YarnCommand("zolcwygranadebata")]
-    public void zolcwygranadebata()
-    {
-        colorChange.fiolet = false;
-        colorChange.zolty = true;
     }
 
 

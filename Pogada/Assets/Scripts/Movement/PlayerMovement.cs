@@ -44,11 +44,11 @@ public class PlayerMovement : MonoBehaviour
     
     //deklaracje do animacji i zmiany koloru animacji
     private Animator animator;
-    public ColorChange colorChange;
+    public StateManager stateManager;
     void Start()
     {
         //to pozniej gdzie indziej przeniesc ale to musi byc kiedys wywolywane poki co
-        colorChange.szary = true;
+        stateManager.szary = true;
 
         rbPlayer = GetComponent<Rigidbody2D>();
         rbPlayer.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -152,35 +152,35 @@ public class PlayerMovement : MonoBehaviour
         if (speedX != 0)
         {
             //za pomoca ColorChange animacja ma odpowiednie kolory
-            if (colorChange.szary == true)
+            if (stateManager.szary == true)
             {
                 animator.Play("WalkCycle0");
             }
-            else if (colorChange.zielony == true)
+            else if (stateManager.zielony == true)
             {
                 animator.Play("WalkCycle1");
             }
-            else if (colorChange.czerwony == true)
+            else if (stateManager.czerwony == true)
             {
                 animator.Play("WalkCycle2");
             }
-            else if (colorChange.granat == true)
+            else if (stateManager.granat == true)
             {
                 animator.Play("WalkCycle3");
             }
-            else if (colorChange.pomarancz == true)
+            else if (stateManager.pomarancz == true)
             {
                 animator.Play("WalkCycle4");
             }
-            else if (colorChange.niebieski == true)
+            else if (stateManager.niebieski == true)
             {
                 animator.Play("WalkCycle5");
             }
-            else if (colorChange.fiolet == true)
+            else if (stateManager.fiolet == true)
             {
                 animator.Play("WalkCycle6");
             }
-            else if (colorChange.zolty == true)
+            else if (stateManager.zolty == true)
             {
                 animator.Play("WalkCycle7");
             }
@@ -188,35 +188,35 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             //za pomoca ColorChange animacja ma odpowiednie kolory
-            if (colorChange.szary == true)
+            if (stateManager.szary == true)
             {
                 animator.Play("Idle0");
             }
-            else if (colorChange.zielony == true)
+            else if (stateManager.zielony == true)
             {
                 animator.Play("Idle1");
             }
-            else if (colorChange.czerwony == true)
+            else if (stateManager.czerwony == true)
             {
                 animator.Play("Idle2");
             }
-            else if (colorChange.granat == true)
+            else if (stateManager.granat == true)
             {
                 animator.Play("Idle3");
             }
-            else if (colorChange.pomarancz == true)
+            else if (stateManager.pomarancz == true)
             {
                 animator.Play("Idle4");
             }
-            else if (colorChange.niebieski == true)
+            else if (stateManager.niebieski == true)
             {
                 animator.Play("Idle5");
             }
-            else if (colorChange.fiolet == true)
+            else if (stateManager.fiolet == true)
             {
                 animator.Play("Idle6");
             }
-            else if (colorChange.zolty == true)
+            else if (stateManager.zolty == true)
             {
                 animator.Play("Idle7");
             }

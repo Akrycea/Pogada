@@ -58,56 +58,56 @@ public class SentenceBuilding : MonoBehaviour
         if (sentence.SequenceEqual(rightAnswer))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer2))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer3))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer4))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer5))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer6))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer7))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer8))
         {
             Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Poprawna odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             BudowanieZdanObiekt.SetActive(false);
         }
@@ -115,26 +115,26 @@ public class SentenceBuilding : MonoBehaviour
         //jesli zdanie jest mid
         else if (sentence.SequenceEqual(midAnswer))
         {
-            Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Mid odpowiedü!";
+            Debug.Log("mid");
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer2))
         {
-            Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Mid odpowiedü!";
+            Debug.Log("mid");
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer3))
         {
-            Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Mid odpowiedü!";
+            Debug.Log("mid");
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
         else if (sentence.SequenceEqual(midAnswer4))
         {
-            Debug.Log("wygrana");
-            budowaneZdanieUI.text = "Mid odpowiedü!";
+            Debug.Log("mid");
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguMID);
         }
 
@@ -145,10 +145,9 @@ public class SentenceBuilding : MonoBehaviour
         else 
         {
             Debug.Log("fail");
-            budowaneZdanieUI.text = "Z≥a odpowiedü!";
+            budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguBAD);
         }
-
         sentence.Clear();
     }
 

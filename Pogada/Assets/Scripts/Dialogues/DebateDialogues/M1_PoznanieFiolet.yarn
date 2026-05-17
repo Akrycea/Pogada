@@ -7,6 +7,7 @@ Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try 
 Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
 Fiolet: Hm, no może…
+	<<UpdateDebateNumber PointMeter>>
 	<<jump M1_PoznanieFiolet1>>
 ===
 
@@ -170,7 +171,7 @@ Dziecko 2: Śmiertelnik jak ty nie zrozumie.
 
 title: M1_PoznanieFioletPoDebacie
 ---
-Dialog po debacie
+<<Ending PointMeter>>
 
 Bohater: Czy wiesz może, gdzie Aureus mógł uciec?
 
