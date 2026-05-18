@@ -147,8 +147,6 @@ public class SentenceBuilding : MonoBehaviour
         }
 
 
-
-
         //jesli zdanie jest zle
         else 
         {

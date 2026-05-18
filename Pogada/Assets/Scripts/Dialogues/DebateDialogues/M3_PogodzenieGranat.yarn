@@ -44,14 +44,27 @@ title: M3_PogodenieGranat1
 title: M3_PogodzenieGranat_1
 ---
 Liv: No i? Pobrudzenie Perełki to i tak jego wina.
-	<<jump M3_PogodzenieGranat2>>
+	<<Jab Dialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
 title: M3_PogodzenieGranat_2
 ---
 Liv: Perełka jest najważniejszą częścią tej rodziny! Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
+	<<Jab Dialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
+===
+
+title:M3_C_Jab_1_1
+---
+Robert: No przepraszam bardzo za ubrudzenie Perełki. Jeszcze czegoś?
 	<<jump M3_PogodzenieGranat2>>
 ===
+
+title:M3_C_Jab_1_2
+---
+Robert: Widzi pan? To jak rozmowa ze ścianą. Przepraszam, słyszysz głuchoto?
+	<<jump M3_PogodzenieGranat2>>
+===
+
 title: M3_PogodzenieGranat2
 ---
 ->Czy przeprosił cię za to?
@@ -104,14 +117,39 @@ title: M3_PogodzenieGranat3
 title: M3_PogodzenieGranat3_1
 ---
 Liv: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
-	<<jump M3_PogodzenieGranat4>>
+	<<Jab Dialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
 
 title: M3_PogodzenieGranat3_2
 ---
-Liv: Nie wierzę nikomu, kto się tak wścieka.
+Liv: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
+	<<Jab Dialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
+===
+
+title:M3_C_Jab_2_1
+---
+Robert: To przepraszam! Rozumiesz, przepraszam, nie chciałem, przestań o tym gadać! Naprawdę przepraszam.
+	<<Jab Dialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
+===
+
+title:M3_C_Jab_2_2
+---
+Robert: Przepraszam, przepraszam, przepraszam! Rozumiesz? Przepraszam! Dostałaś swoje przeprosiny, daj mi spokój!
+	<<Jab Dialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
+===
+
+title:M3_Z_Jab_1_1
+---
+Viri: Skoro przeprosił, to się liczy! Musisz mu uwierzyć, sprójrz na niego.
 	<<jump M3_PogodzenieGranat4>>
 ===
+
+title:M3_Z_Jab_1_2
+---
+Viri: Liv odpuść już proszę. 
+	<<jump M3_PogodzenieGranat4>>
+===
+
 title: M3_PogodzenieGranat4
 ---
 ->Mówił szczerze, złościł się, bo mu nie ufałaś.

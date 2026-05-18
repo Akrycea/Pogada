@@ -93,12 +93,24 @@ title: M32_PogodzenieBlekit3
 title: M32_PogodzenieBlekit3_1
 ---
 Lus: Pan jej nie zna. Ile mogę wybaczać dorosłemu a nie jej?
-	<<jump M32_PogodzenieBlekit4>>
+	<<Jab Dialogi "M32_P_Jab_1_1" "M32_P_Jab_1_2" >>
 ===
 
 title: M32_PogodzenieBlekit3_2
 ---
 Lus: Cała Lute. Wykorzysta innych, żeby zmusić mnie do wybaczenia. Sama ma to gdzieś.
+	<<Jab Dialogi "M32_P_Jab_1_1" "M32_P_Jab_1_2" >>
+===
+
+title: M32_P_Jab_1_1
+---
+Lus: Po prostu lepiej jak zajmuje się tym ktoś, kto wie co robi.
+	<<jump M32_PogodzenieBlekit4>>
+===
+
+title: M32_P_Jab_1_2
+---
+Lus: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzić.
 	<<jump M32_PogodzenieBlekit4>>
 ===
 
