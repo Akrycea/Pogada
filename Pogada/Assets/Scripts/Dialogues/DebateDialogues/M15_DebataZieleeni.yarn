@@ -158,17 +158,18 @@ title: M15_DebataZielieni5
 title: M15_DebataZielieni5_1
 ---
 Viri: Skoro uważasz, że to pomoże… 
-	<<jump M15_DebataZielieniPoDebata>>
+	<<Ending PointMeter>>
 ===
 title: M15_DebataZielieni5_2
 ---
 Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
-	<<jump M15_DebataZielieniPoDebata>>
+	<<Ending PointMeter>>
 ===
 
 
 title: M15_DebataZielieniPoDebata
 ---
+<<debateWon Zielony>>
 Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
 
 Viri: Może to po prostu nieporozumienie.

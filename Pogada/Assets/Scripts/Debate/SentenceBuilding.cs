@@ -12,7 +12,7 @@ using Yarn.Unity;
 public class SentenceBuilding : MonoBehaviour
 {
     public GameObject BudowanieZdanObiekt;
-    public string word;
+    //chyba niepotrzebne? public string word;
 
     //budowane przez gracza zdanie, poczatkowo puste i wypelnia sie z klikaniem
     public List<string> sentence = new List<string>();
@@ -50,7 +50,7 @@ public class SentenceBuilding : MonoBehaviour
     //tu mozna zrobic ze musisz zaliczyc kilka pod rzad dobrze
     public void checkSentence()
     {
-        Debug.Log("Zdanie zbudowane.");
+        //Debug.Log("Zdanie zbudowane.");
 
         //sprawdza czy listy s¹ takie same i na tej podstawie wygrana/przegrana
 
@@ -60,6 +60,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer2))
@@ -67,6 +68,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer3))
@@ -74,6 +76,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer4))
@@ -81,6 +84,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer5))
@@ -88,6 +92,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer6))
@@ -95,6 +100,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer7))
@@ -102,6 +108,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer8))
@@ -109,6 +116,7 @@ public class SentenceBuilding : MonoBehaviour
             Debug.Log("wygrana");
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
+            CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
         }
 
@@ -149,6 +157,27 @@ public class SentenceBuilding : MonoBehaviour
             dialogueRunner.StartDialogue(nazwaDialoguBAD);
         }
         sentence.Clear();
+    }
+
+    public bool firstObject;
+    public void CorrectSentence()
+    {
+        if (firstObject)
+        {
+            gameObject.SetActive(false);
+        }
+        else 
+        {
+            nextSentenceBuilding();
+        }
+    }
+
+    //odpala kolejne budowanie zdan jesli nie jest ostatnim
+    public GameObject nextSentenceBuildingObject;
+    public void nextSentenceBuilding()
+    {
+        nextSentenceBuildingObject.SetActive(true);
+        gameObject.SetActive(false);
     }
 
 }

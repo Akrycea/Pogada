@@ -12,13 +12,7 @@ public class Word : MonoBehaviour
         sentenceScript.sentence.Add(gameObject.name);
         Debug.Log("Added word '" + gameObject.name + "' to sentence.");
 
-        if (budowaneZdanieUI.text != "Poprawna odpowiedü!" && budowaneZdanieUI.text != "Z≥a odpowiedü!")
-        {
-            budowaneZdanieUI.text = budowaneZdanieUI.text + gameObject.name + " ";
-        }
-        else
-        {
-            budowaneZdanieUI.text = gameObject.name + " ";
-        }
+        budowaneZdanieUI.text = budowaneZdanieUI.text + gameObject.name + " ";
+
     }
 }

@@ -158,17 +158,18 @@ title: M5_PogodzenieDzieci5
 title: M5_PogodzenieDzieci5_1
 ---
 Aureus: Proszę? Jeśli będę musiał, to zrobię to sam, ale nie chcę żyć bez ciebie.
-	<<jump M5_DebataZolcPoDebata>>
+	<<Ending Debate>>
 ===
 
 title: M5_PogodzenieDzieci5_2
 ---
 Aureus: Po prostu skup się na chwilę na tu i teraz. Nie chcę cię stracić.
-	<<jump M5_DebataZolcPoDebata>>
+	<<Ending Debate>>
 ===
 
 title: M5_DebataZolcPoDebata
 ---
+<<debateWon Żółty>>
 Violaceus: … No dobrze.
 
 Violaceus: Nie wiem czy to dobra decyzja, ale życie samemu rzeczywiście byłoby słabe.

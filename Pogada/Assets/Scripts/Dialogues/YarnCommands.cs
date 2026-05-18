@@ -7,6 +7,7 @@ public class YarnCommands : MonoBehaviour
     //deklaracje potrzebne do 99% komend
     public DialogueRunner dialRunner;
     public StateManager stateManager;
+    public SentenceBuilding sentenceBuilding;
 
     //komentarze bohatera na P1_Brama
     private ClickDialogue brama;
@@ -34,16 +35,16 @@ public class YarnCommands : MonoBehaviour
 
     //nastepne klikniecie  na fiolet powinno odpalic budowanie zdan debata
     private DebataPlayer fioletdebata;
-    [YarnCommand("fioletDebata")]
-    public void fioletDebata()
+    [YarnCommand("fioletBudowanieZdan")]
+    public void fioletBudowanieZdan()
     {
         fioletdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
         fioletdebata.wygranaMinigierka = true;
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty fioletowego
-    [YarnCommand("fiolet2debata")]
-    public void fiolet2debata()
+    [YarnCommand("fioletDebata")]
+    public void fioletDebata()
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M1_PoznanieFiolet");
@@ -106,16 +107,16 @@ public class YarnCommands : MonoBehaviour
   
     //odpalenie minigierki ukladania zdan czerwonego
     private DebataPlayer czerwonydebata;
-    [YarnCommand("czerwonyDebata")]
-    public void czerwonyDebata()
+    [YarnCommand("czerwonyBudowanieZdan")]
+    public void czerwonyBudowanieZdan()
     {
         czerwonydebata = GameObject.Find("Czerwony").GetComponent<DebataPlayer>();
         czerwonydebata.wygranaMinigierka = true;
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
-    [YarnCommand("czerwony2debata")]
-    public void czerwony2debata()
+    [YarnCommand("czerwonyDebata")]
+    public void czerwonyDebata()
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M2_PoznanieCzerwieni");
@@ -230,6 +231,7 @@ public class YarnCommands : MonoBehaviour
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M5_PogodzenieDzieci");
     }
+
 
 
     //odslania liscie i zagadke z rzeczka

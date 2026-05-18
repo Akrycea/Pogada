@@ -10,6 +10,7 @@ public class Debate : MonoBehaviour
     public int debateNumber = 0;
 
     public StateManager stateManager;
+    public DialogueRunner dialogueRunner;
 
     [YarnCommand("Ending")]
     public void Ending()
@@ -18,38 +19,57 @@ public class Debate : MonoBehaviour
         {
             Debug.Log("you won");
             //checks which debate is active and activates the appropriate color
-            if (debateNumber == 2)
+            if(debateNumber == 1)
             {
+                stateManager.Violaceus1DebateWon = true;
+                dialogueRunner.StartDialogue("M1_PoznanieFioletPoDebacie");
+            }
+            else if (debateNumber == 2)
+            {
+                stateManager.ViriDebateWon = true;
+                dialogueRunner.StartDialogue("M15_DebataZielieniPoDebata");
                 stateManager.szary = false;
                 stateManager.zielony = true;
             }
             else if (debateNumber == 3) 
             {
+                stateManager.RobertDebateWon = true;
+                dialogueRunner.StartDialogue("M2_PoznanieCzerwieniPoDebata");
                 stateManager.zielony = false;
                 stateManager.granat = true;
             }
             else if (debateNumber == 4)
             {
+                stateManager.LivDebateWon = true;
+                dialogueRunner.StartDialogue("M3_PogodzenieGranatPoDebata");
                 stateManager.granat = false;
                 stateManager.czerwony = true;
             }
             else if (debateNumber == 5)
             {
+                stateManager.LuteDebateWon = true;
+                dialogueRunner.StartDialogue("M31_DebataPomaranczPoDebata");
                 stateManager.czerwony = false;
                 stateManager.pomarancz = true;
             }
             else if (debateNumber == 6)
             {
+                stateManager.LusDebateWon = true;
+                dialogueRunner.StartDialogue("M31_DebataBlekitPoDebata");
                 stateManager.pomarancz = false;
                 stateManager.niebieski = true;
             }
             else if (debateNumber == 7)
             {
+                stateManager.Violaceus2DebateWon = true;
+                dialogueRunner.StartDialogue("M4_DebataFioletPoDebata");
                 stateManager.niebieski = false;
                 stateManager.fiolet = true;
             }
             else if (debateNumber == 8)
             {
+                stateManager.AureusDebateWon = true;
+                dialogueRunner.StartDialogue("M5_DebataZolcPoDebata");
                 stateManager.fiolet = false;
                 stateManager.zolty = true;
             }
@@ -60,7 +80,7 @@ public class Debate : MonoBehaviour
         {
             Debug.Log("you lost");
             YourPoints = 0;
-            debateNumber =  debateNumber--;
+            debateNumber = debateNumber--;
         }
     }
 
