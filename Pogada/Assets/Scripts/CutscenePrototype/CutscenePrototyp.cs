@@ -7,8 +7,10 @@ public class CutscenePrototyp : MonoBehaviour
     public Sprite[] sprites;
     private SpriteRenderer spriteRenderer;
 
-    //int ile razy sie kliknelo
-    private int p;
+    [SerializeField]
+    private Sprite myNewSprite;
+
+    private int counter;
 
     private void Start()
     {
@@ -17,31 +19,17 @@ public class CutscenePrototyp : MonoBehaviour
         spriteRenderer.sprite = sprites[0];
 
         //zerujemy kliki na poczatku
-        p = 0;
+        counter = 0;
     }
     private void OnMouseDown()
     {
-        //sprawdza jaki jest art i ustawia nastepny
-        if (spriteRenderer.sprite == sprites[0])
-        {
-            spriteRenderer.sprite = sprites[1];
-        }
-        else if (spriteRenderer.sprite == sprites[1])
-        {
-            spriteRenderer.sprite = sprites[2];
-        }
-        //liczy klik i dodaje go do licznika
-        p++;
-    }
+        counter++;
+        spriteRenderer.sprite = sprites[counter];
 
-    private void Update()
-    {
-        //jesli klikniemy dostateczna ilosc razy to nastepna scena
-        if (p>=3)
+        if (counter >= 3)
         {
+            counter = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
-
-
 }
