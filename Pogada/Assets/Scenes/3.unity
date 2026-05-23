@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentObject: {fileID: 776297739}
   WinObject: place6
-  currentPosition: {x: 24.500006, y: 1.3600003, z: 9.725433}
+  currentPosition: {x: 24.500006, y: 1.36, z: 9.725433}
   birdsWin: {fileID: 1802856947}
   ChatBox: {fileID: 897718081}
 --- !u!114 &37309736
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -7020743086858551499, guid: f8375fe38d82c464b87429a06dc431e3, type: 3}
   - {fileID: -7020743086858551499, guid: f8375fe38d82c464b87429a06dc431e3, type: 3}
@@ -4759,13 +4759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 384850618}
-  budowanieZdan2: {fileID: 1282308469}
-  budowanieZdan3: {fileID: 1372473491}
-  debateWon: 0
-  playedDebates: 0
 --- !u!60 &164577020
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7258,7 +7251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -2636316123870170325, guid: bbcd7b6d5508cc84dab410cecbf0c5f2, type: 3}
   - {fileID: 7456699552378138022, guid: 3471e2efdcab7a04da0f14d56630cf75, type: 3}
@@ -8654,7 +8647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -3189541678697732831, guid: cca0d2208c0f5344f990ecccacd9b88b, type: 3}
   - {fileID: -3189541678697732831, guid: cca0d2208c0f5344f990ecccacd9b88b, type: 3}
@@ -10078,7 +10071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: 0b1491dba7dd01d46aeb7dd3d720664b, type: 3}
   - {fileID: 21300000, guid: 7413b1722e056694cb6e519a57fccd93, type: 3}
@@ -10571,7 +10564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -4024436819732162704, guid: 0d76b89da20c96644a7398c9486b7454, type: 3}
   - {fileID: -4024436819732162704, guid: 0d76b89da20c96644a7398c9486b7454, type: 3}
@@ -13898,13 +13891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 1284073160}
-  budowanieZdan2: {fileID: 2088705826}
-  budowanieZdan3: {fileID: 1208325562}
-  debateWon: 0
-  playedDebates: 0
 --- !u!1 &415334467
 GameObject:
   m_ObjectHideFlags: 0
@@ -22426,7 +22412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: 70da3ff248078c34c9662e951d221548, type: 3}
   - {fileID: 21300000, guid: 16953283d7e0afc41a2bc2d0f6da6ffa, type: 3}
@@ -24716,7 +24702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: 3d018151d21383b45bac318b74f0ecbe, type: 3}
   - {fileID: 21300000, guid: 4b37793b7a265fa469de5e08f6604bb9, type: 3}
@@ -25651,7 +25637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -9070598385448794690, guid: e7ce29aa362166b4e88c1145f2d60b5d, type: 3}
   - {fileID: -739379599464435098, guid: fe51f3dd4e522b24f9b0befd83c7a390, type: 3}
@@ -26671,7 +26657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: 2bff57c58853ead46a3688fb9d59c070, type: 3}
   - {fileID: 21300000, guid: 553e3c31c8074ad4e971715887db1ee9, type: 3}
@@ -37499,7 +37485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: 76071b5f06bfe274ba489534654c1624, type: 3}
   - {fileID: 21300000, guid: 76071b5f06bfe274ba489534654c1624, type: 3}
@@ -39778,7 +39764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -2119394297033011603, guid: 078a5e5512dc212468d082bf9c20c1e4, type: 3}
   - {fileID: -2119394297033011603, guid: 078a5e5512dc212468d082bf9c20c1e4, type: 3}
@@ -40037,7 +40023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -103652514524611386, guid: 19df05879e10da940b4d2a72ad83e430, type: 3}
   - {fileID: -5460120879056048268, guid: dd556c6248852e34fb04b95319002897, type: 3}
@@ -42442,7 +42428,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
 --- !u!212 &1361693963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42507,7 +42493,7 @@ Transform:
   m_GameObject: {fileID: 1361693957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70.2, y: -0.96, z: 4}
+  m_LocalPosition: {x: -82, y: -0, z: 4}
   m_LocalScale: {x: 0.8283132, y: 0.8283132, z: 0.8283132}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43852,13 +43838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 797316536}
-  budowanieZdan2: {fileID: 1545348202}
-  budowanieZdan3: {fileID: 745457836}
-  debateWon: 0
-  playedDebates: 0
 --- !u!1 &1392694027
 GameObject:
   m_ObjectHideFlags: 0
@@ -44886,13 +44865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 1363406371}
-  budowanieZdan2: {fileID: 607024357}
-  budowanieZdan3: {fileID: 1306346005}
-  debateWon: 0
-  playedDebates: 0
 --- !u!1 &1425124847
 GameObject:
   m_ObjectHideFlags: 0
@@ -47535,7 +47507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 3875031504885072904, guid: bddad12e3a0a51f48b332cef3670f71f, type: 3}
   - {fileID: 294617826335484878, guid: 04aae26a151052942897838be672c548, type: 3}
@@ -48698,7 +48670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 21300000, guid: ad24abf182c9e6d4a9104582a0f75ec7, type: 3}
   - {fileID: 21300000, guid: 0df82e3110808c941a3fee03e5a0b8da, type: 3}
@@ -49784,7 +49756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -1778812390617171567, guid: c30065d03e125d44d9334a3518229a3c, type: 3}
   - {fileID: -1778812390617171567, guid: c30065d03e125d44d9334a3518229a3c, type: 3}
@@ -50519,7 +50491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 13943903728197553, guid: 8d2724f28fe4609489690c3282e8cce8, type: 3}
   - {fileID: 13943903728197553, guid: 8d2724f28fe4609489690c3282e8cce8, type: 3}
@@ -51533,7 +51505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -29428214990291271, guid: 58532c6eb6a99fd4f96ead9b335459e6, type: 3}
   - {fileID: -29428214990291271, guid: 58532c6eb6a99fd4f96ead9b335459e6, type: 3}
@@ -54476,7 +54448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -9000053346514262703, guid: 221befe34f091ee4493bab192a8e85f0, type: 3}
   - {fileID: 6898110968040145199, guid: 77888948c8709624d9258500223b45d7, type: 3}
@@ -54944,7 +54916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 6245266351328343062, guid: f28ea0dd4bb2aed4cab8fcf7cadb6587, type: 3}
   - {fileID: 6245266351328343062, guid: f28ea0dd4bb2aed4cab8fcf7cadb6587, type: 3}
@@ -58560,7 +58532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: -6095369519657673257, guid: 2522fa9effa03dc4193a3747b4e893f8, type: 3}
   - {fileID: -6625630824426668987, guid: a901fd64136d653468874032d74be4a0, type: 3}
@@ -59665,7 +59637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 0}
+  stateManager: {fileID: 905840117}
   sprites:
   - {fileID: 3446380908136866697, guid: 1d58f55847948304c9baecf41dc601b5, type: 3}
   - {fileID: 3909361194742481956, guid: 0b7a7e8a334b55a4e97488dea70bf288, type: 3}
