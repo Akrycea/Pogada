@@ -7,7 +7,6 @@ public class YarnCommands : MonoBehaviour
     //deklaracje potrzebne do 99% komend
     public DialogueRunner dialRunner;
     public StateManager stateManager;
-    public SentenceBuilding sentenceBuilding;
 
     //komentarze bohatera na P1_Brama
     private ClickDialogue brama;

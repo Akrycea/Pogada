@@ -73,15 +73,14 @@ public class Debate : MonoBehaviour
                 stateManager.fiolet = false;
                 stateManager.zolty = true;
             }
-            YourPoints = 0;
         }
 
-        if (EnemyPoints > YourPoints)
+        if (EnemyPoints > YourPoints || EnemyPoints == YourPoints)
         {
             Debug.Log("you lost");
-            YourPoints = 0;
             debateNumber = debateNumber--;
         }
+        YourPoints = 0;
     }
 
     //updates the debate number so the debate script knows WHICH debate is currently playing

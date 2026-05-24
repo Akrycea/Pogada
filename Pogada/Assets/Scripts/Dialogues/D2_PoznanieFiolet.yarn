@@ -9,15 +9,22 @@ Dziecko1: Kłamczuch jesteś! I ty i mama! Każde dziecko wie, że można być k
 Dziecko2: Nie wcale nie! Tak nie można i kropka!
 
 Dziecko1: Wredzioch i złośliwiec!
+<<RunAway Żółć>>
+	<<jump D2_PoznanieFiolet_2>>
+//tu zolty powinien uciec
 ===
 
 title: D2_PoznanieFiolet_2
 ---
 Bohater: Co tu się dzieje?
-
-Dziecko2: I co pan zrobił? Ten głupol przez pana uciekł i będzie miał durne pomysły!
+//vus dodane na potrzeby dema
+Dziecko2: I co pan zrobił? Ten głupol Vus przez pana uciekł i będzie miał durne pomysły!
 
 Bohater: Chwila, chwila, wydaje mi się, że kłócił się z tobą, nie ze mną.
 
 Dziecko2: Ta, ode mnie by nie uciekł!
+
+//tu dac odpalanie sie debaty fiolet1
+Bohater: Nieważne, muszę pójść go znaleźć.
+<<UpdateDebateNumber PointMeter>>
 ===

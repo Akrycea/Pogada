@@ -4,13 +4,13 @@ using Yarn.Unity;
 
 public class BirdsWin : MonoBehaviour
 {
-    private int birdsWin;
+    [SerializeField]private int birdsWin;
 
     public DialogueRunner dialogueRunner;
 
     public GameObject BlueprintUI;
 
-    private bool dialoguePlayed = false;
+    [SerializeField]private bool dialoguePlayed = false;
 
     public StateManager stateManager;
 
