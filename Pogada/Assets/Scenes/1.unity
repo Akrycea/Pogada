@@ -572,7 +572,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  colorChange: {fileID: 230619873}
+  stateManager: {fileID: 264848931}
 --- !u!212 &40098668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -863,6 +863,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   YourPoints: 0
   EnemyPoints: 0
+  debateNumber: 0
+  stateManager: {fileID: 0}
+  dialogueRunner: {fileID: 0}
 --- !u!1 &85738757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,9 +1540,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialRunner: {fileID: 1240299761}
-  colorChange: {fileID: 230619873}
+  stateManager: {fileID: 0}
+  sentenceBuilding: {fileID: 0}
   Blueprints: {fileID: 0}
   Czerwony: {fileID: 0}
+  GranatDrzwi: {fileID: 0}
 --- !u!1 &182486127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,6 +2416,78 @@ MonoBehaviour:
   - {fileID: -8612233074661669249, guid: 94848567fb974fb4ebb9fe9fee0ee8ce, type: 3}
   allowDrag: 0
   MouseDown: 0
+--- !u!1 &264848930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264848932}
+  - component: {fileID: 264848931}
+  m_Layer: 0
+  m_Name: StateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &264848931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264848930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b830107406970648b82bc790fadc8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RiverMinigameWon: 0
+  BirdMinigameWon: 0
+  StatueMinigameWon: 0
+  FishMinigameWon: 0
+  OwlMinigameWon: 0
+  GlassMinigameWon: 0
+  MyNewEnum: 0
+  BirdCollected: 0
+  FishCollected: 0
+  BlueprintCollected: 0
+  OwlCollected: 0
+  GlassCollected: 0
+  Violaceus1DebateWon: 0
+  ViriDebateWon: 0
+  LivDebateWon: 0
+  RobertDebateWon: 0
+  LuteDebateWon: 0
+  LusDebateWon: 0
+  Violaceus2DebateWon: 0
+  AureusDebateWon: 0
+  szary: 0
+  zielony: 0
+  czerwony: 0
+  granat: 0
+  pomarancz: 0
+  niebieski: 0
+  fiolet: 0
+  zolty: 0
+--- !u!4 &264848932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264848930}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -71.2489, y: -5.826605, z: -0.0616138}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269234687
 GameObject:
   m_ObjectHideFlags: 0
@@ -10129,6 +10206,7 @@ SceneRoots:
   - {fileID: 729019428}
   - {fileID: 665351461}
   - {fileID: 157563553}
+  - {fileID: 264848932}
   - {fileID: 1577280360}
   - {fileID: 182486128}
   - {fileID: 230619872}

@@ -4,7 +4,7 @@ public class Parallax : MonoBehaviour
 {
     private float lenght, startpos;
     public GameObject camera;
-    public float paralaxEffect;
+    [SerializeField] private float paralaxEffect;
     void Start()
     {
         startpos = transform.position.x;

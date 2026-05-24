@@ -4759,6 +4759,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
 --- !u!60 &164577020
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13891,6 +13898,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
 --- !u!1 &415334467
 GameObject:
   m_ObjectHideFlags: 0
@@ -26584,7 +26598,7 @@ Transform:
   m_GameObject: {fileID: 887425292}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 3.8}
+  m_LocalPosition: {x: 1, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27666,13 +27680,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b830107406970648b82bc790fadc8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CloudMinigameWon: 0
   RiverMinigameWon: 0
   BirdMinigameWon: 0
   StatueMinigameWon: 0
   FishMinigameWon: 0
   OwlMinigameWon: 0
   GlassMinigameWon: 0
+  MyNewEnum: 0
   BirdCollected: 0
   FishCollected: 0
   BlueprintCollected: 0
@@ -43838,6 +43852,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
 --- !u!1 &1392694027
 GameObject:
   m_ObjectHideFlags: 0
@@ -44865,6 +44886,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
 --- !u!1 &1425124847
 GameObject:
   m_ObjectHideFlags: 0
@@ -54722,7 +54750,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
-  orthographic: 1
+  orthographic: 0
   orthographic size: 8.66
   m_Depth: 100
   m_CullingMask:
