@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
     //target to follow player left-right
     public Transform playerTarget;
 
-    public CameraChange cameraChange;
+    //public CameraChange cameraChange;
 
     public bool cameraFreeMovement = false;
 

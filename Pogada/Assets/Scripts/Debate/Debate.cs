@@ -36,20 +36,20 @@ public class Debate : MonoBehaviour
                 stateManager.RobertDebateWon = true;
                 dialogueRunner.StartDialogue("M2_PoznanieCzerwieniPoDebata");
                 stateManager.zielony = false;
-                stateManager.granat = true;
+                stateManager.czerwony = true;
             }
             else if (debateNumber == 4)
             {
                 stateManager.LivDebateWon = true;
                 dialogueRunner.StartDialogue("M3_PogodzenieGranatPoDebata");
-                stateManager.granat = false;
-                stateManager.czerwony = true;
+                stateManager.czerwony = false;
+                stateManager.granat = true;
             }
             else if (debateNumber == 5)
             {
                 stateManager.LuteDebateWon = true;
                 dialogueRunner.StartDialogue("M31_DebataPomaranczPoDebata");
-                stateManager.czerwony = false;
+                stateManager.granat = false;
                 stateManager.pomarancz = true;
             }
             else if (debateNumber == 6)

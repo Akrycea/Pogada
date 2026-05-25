@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 40098662}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 98.4, y: 71.25, z: 4}
+  m_LocalPosition: {x: 97.56, y: 70.44, z: 4}
   m_LocalScale: {x: 0.8283132, y: 0.8283132, z: 0.8283132}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1541,7 +1541,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialRunner: {fileID: 1240299761}
   stateManager: {fileID: 0}
-  sentenceBuilding: {fileID: 0}
   Blueprints: {fileID: 0}
   Czerwony: {fileID: 0}
   GranatDrzwi: {fileID: 0}
@@ -5247,7 +5246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 1585830326}
-  fov: 163
+  size: 26.74
   horizontalTargetDistance: 10
   verticalTargetDistance: -4
   camMovementScript: {fileID: 1585830324}
@@ -8086,10 +8085,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 40098669}
-  cameraChange: {fileID: 0}
   cameraFreeMovement: 0
   OgHorizontalTargetDistance: 6
-  OgVerticalTargetDistance: -37
+  OgVerticalTargetDistance: -0.15
   editCameraScript: {fileID: 0}
 --- !u!114 &1585830325
 MonoBehaviour:
@@ -8887,7 +8885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 1585830326}
-  fov: 90
+  size: 0
   horizontalTargetDistance: 10
   verticalTargetDistance: 15
   camMovementScript: {fileID: 1585830324}

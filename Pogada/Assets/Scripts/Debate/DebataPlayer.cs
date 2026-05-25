@@ -18,6 +18,7 @@ public class DebataPlayer : MonoBehaviour
     {
         if (wygranaMinigierka && playedDebates ==  0  && !debateWon)
         {
+            Debug.Log("starting sentence building");
             budowanieZdan1.SetActive(true);
             playedDebates++;
         }

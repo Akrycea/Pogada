@@ -127,6 +127,7 @@ public class YarnCommands : MonoBehaviour
     {
         granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
         granat.nazwaDialogu = "D8_PrzekonanieCzerwieni";
+        granat.dialoguePlayed = false;
     }
 
     //odpalenie minigierki ukladania zdan granat

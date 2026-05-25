@@ -15,6 +15,8 @@ public class CollisionDialogue : MonoBehaviour
         {
             dialogueRunner.StartDialogue(nazwaDialogu);
             dialoguePlayed = true;
+            //deletes the trigger to not obscure other colliders
+            gameObject.SetActive(false);
         }
     }
 }

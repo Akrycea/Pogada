@@ -7,21 +7,25 @@ public class EditCamera : MonoBehaviour
     [SerializeField] private Camera cameraMain;
 
     //editable parameters; DO NOT LEAVE EMPTY!
-    [SerializeField] private float fov;
+    [SerializeField] private float size;
     public float horizontalTargetDistance;
     public float verticalTargetDistance;
 
     public CameraMovement camMovementScript;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        camMovementScript.editCameraScript = gameObject.GetComponent<EditCamera>();
-        ChangeCameraParameters();
+        if (other.name == "Player")
+        {
+            Debug.Log("touhed camera");
+            camMovementScript.editCameraScript = gameObject.GetComponent<EditCamera>();
+            ChangeCameraParameters();
+        }
     }
         
 
     private void ChangeCameraParameters()
     {
-        cameraMain.fieldOfView = fov;
+        cameraMain.orthographicSize = size;
         camMovementScript.ChangeCameraPosition();
     }
 }

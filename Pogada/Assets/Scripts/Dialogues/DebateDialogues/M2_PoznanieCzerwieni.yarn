@@ -166,13 +166,13 @@ Viri: Przestań krzyczeć!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
-title: M2_C_JAB_1_1
+title: M2_C_Jab_1_1
 ---
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 
-title: M2_C_JAB_1_2
+title: M2_C_Jab_1_2
 ---
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 	<<jump M2_PoznanieCzerwieni5>>
@@ -200,13 +200,13 @@ title: M2_PoznanieCzerwieni5
 title: M2_PoznanieCzerwieni5_1
 ---
 Robert: ...
-	<<Ending Debate>>
+	<<Ending PointMeter>>
 ===
 
 title: M2_PoznanieCzerwieni5_2
 ---
 Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To nie tak, że chcę taki być!
-	<<Ending Debate>>
+	<<Ending PointMeter>>
 ===
 
 title: M2_PoznanieCzerwieniPoDebata
@@ -249,6 +249,5 @@ Viri: Proszę, spróbuj z nią porozmawiać.
 Viri: Pójdziemy z tobą, pomożemy…
 
 Robert: No dobrze. Ale potrzymaj mnie za rękę.
-<<czerwonywygranadebata Dialogi>>
 <<granatOdpalQuest Dialogi>>
 ===
