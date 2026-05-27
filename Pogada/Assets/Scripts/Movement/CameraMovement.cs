@@ -39,8 +39,8 @@ public class CameraMovement : MonoBehaviour
 
     public void ChangeCameraPosition()
     {
-        OgHorizontalTargetDistance = editCameraScript.horizontalTargetDistance;
-        OgVerticalTargetDistance = editCameraScript.verticalTargetDistance;
+        //OgHorizontalTargetDistance = editCameraScript.horizontalTargetDistance;
+        //OgVerticalTargetDistance = editCameraScript.verticalTargetDistance;
     }
 
 }
