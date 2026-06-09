@@ -8,9 +8,9 @@ public class CutscenePrototyp : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     [SerializeField]
-    private Sprite myNewSprite;
+    //private Sprite myNewSprite;
 
-    private int counter;
+    private float counter;
 
     private void Start()
     {
@@ -21,15 +21,39 @@ public class CutscenePrototyp : MonoBehaviour
         //zerujemy kliki na poczatku
         counter = 0;
     }
-    private void OnMouseDown()
+
+    private void Update()
     {
-        counter++;
-        spriteRenderer.sprite = sprites[counter];
+        counter = counter + 1 * Time.deltaTime/4;
+
+        if(counter <1)
+        {
+            spriteRenderer.sprite = sprites[0];
+        }
+        else if (counter >= 1 && counter < 2)
+        {
+            spriteRenderer.sprite = sprites[1];
+        }
+        else if (counter >= 2)
+        {
+            spriteRenderer.sprite = sprites[2];
+        }
 
         if (counter >= 3)
         {
-            counter = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //counter = 0;
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+    //private void OnMouseDown()
+    //{
+    //    counter++;
+    //    spriteRenderer.sprite = sprites[]
+
+    //    if (counter >= 3)
+    //    {
+    //        counter = 0;
+    //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    //    }
+    //}
 }
