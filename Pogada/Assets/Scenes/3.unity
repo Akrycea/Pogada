@@ -1154,7 +1154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 6579082690575129240, guid: 18c95171ac6b8984e80c3c268bbc6708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10119,11 +10119,11 @@ Transform:
   m_GameObject: {fileID: 345397938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 98.98, y: 0.84, z: 7.6}
+  m_LocalPosition: {x: 98.98, y: 0.84, z: 11.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 838590738}
+  m_Father: {fileID: 957517500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &345397940
 MonoBehaviour:
@@ -11875,9 +11875,9 @@ MonoBehaviour:
   - WASZA
   - ROZMOWA
   rightAnswer6:
+  - "PROSZ\u0118"
   - POWIEDZ
   - MI
-  - "PROSZ\u0118"
   - JAK
   - "POSZ\u0141A"
   - WASZA
@@ -24112,9 +24112,11 @@ MonoBehaviour:
   - CIEBIE
   - "PERE\u0141K\u0118"
   rightAnswer4:
-  - 
+  - "PRZYNIOS\u0141EM"
+  - "PERE\u0141K\u0118"
   rightAnswer5:
-  - 
+  - MAM
+  - "PERE\u0141K\u0118"
   rightAnswer6:
   - 
   rightAnswer7:
@@ -25447,7 +25449,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 30370891}
-  - {fileID: 345397939}
   m_Father: {fileID: 1165364429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &838590739
@@ -30521,6 +30522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 345397939}
   - {fileID: 23548563}
   - {fileID: 1242517868}
   - {fileID: 1376319619}
@@ -34505,6 +34507,8 @@ GameObject:
   - component: {fileID: 1076905265}
   - component: {fileID: 1076905268}
   - component: {fileID: 1076905269}
+  - component: {fileID: 1076905270}
+  - component: {fileID: 1076905271}
   m_Layer: 0
   m_Name: CinemachineCameraGateAndForest
   m_TagString: Untagged
@@ -34621,6 +34625,35 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!114 &1076905270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076905264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 0
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &1076905271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076905264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e9285c3e32cb46bcd29018a6c35b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079451662
 GameObject:
   m_ObjectHideFlags: 0
@@ -57940,6 +57973,7 @@ GameObject:
   - component: {fileID: 1855470029}
   - component: {fileID: 1855470028}
   - component: {fileID: 1855470027}
+  - component: {fileID: 1855470031}
   m_Layer: 0
   m_Name: CinemachineCameraVillage
   m_TagString: Untagged
@@ -58044,6 +58078,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 536311725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855470031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855470026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 0
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1859730494
 GameObject:
   m_ObjectHideFlags: 0
