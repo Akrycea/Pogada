@@ -36,7 +36,7 @@ public class CameraShake : MonoBehaviour
             cinemachineCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
 
         cinemachineBasicMultiChannelPerlin.AmplitudeGain = 3f;
-        shakeTimer = 2f;
+        shakeTimer = 1f;
     }
 
     [YarnCommand("longCamShakeSTART")]

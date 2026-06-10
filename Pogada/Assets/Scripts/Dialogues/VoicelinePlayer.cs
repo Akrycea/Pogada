@@ -1,25 +1,35 @@
+using System;
 using UnityEngine;
+using Yarn.Unity;
 
 public class VoicelinePlayer : MonoBehaviour
 {
-    //private AudioSource MyAudioSource;
+    private AudioSource MyAudioSource;
+
+    public AudioClip[] voicelineClips;
 
     //public string nazwaAudio;
 
-    //void Start()
-    //{
-    //    MyAudioSource = GetComponent<AudioSource>();
-    //}
+    void Start()
+    {
+        MyAudioSource = gameObject.GetComponent<AudioSource>();
+    }
 
+    [YarnCommand("voiceline")]
+    public void VoicelinePlay(int clipNumber)
+    {
+        if(MyAudioSource.isPlaying)
+        {
+            MyAudioSource.Stop();
+        }
+        AudioClip clip = voicelineClips[clipNumber];
+        MyAudioSource.PlayOneShot(clip);
 
-    //void Update()
-    //{
-        
-    //}
+    }
 
-    //public void playMyVoiceline()
-    //{
-    //    //MyAudioSource.outp
-    //    MyAudioSource.Play();
-    //}
+    [YarnCommand("voicelineEnd")]
+    public void VoicelineEnd()
+    {
+        MyAudioSource.Stop();
+    }
 }

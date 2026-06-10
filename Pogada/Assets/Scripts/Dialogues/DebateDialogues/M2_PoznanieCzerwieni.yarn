@@ -1,17 +1,24 @@
 ﻿title: M2_PoznanieCzerwieni
 ---
+<<voiceline Czerwony 15>>
 Robert: Przeprosiłem ją tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
 
+<<voiceline Czerwony 16>>
 Robert: A potem zaczęła kłamać mi prosto w twarz.
 
+<<voiceline Czerwony 17>>
 Robert: Nie jestem żadnym kradziejem!
 
+<<voicelineEnd Czerwony>>
 Bohater:  Czy to cię tak zdenerwowało?
 
-Robert: Tak. Ja nie kradnę. I nie kłamię!
+<<voiceline Czerwony 18>>
+Robert: Ja nie kradnę. I nie kłamię!
 
+<<voicelineEnd Czerwony>>
 Bohater: Wierzę ci. 
 
+<<voiceline Czerwony 19>>
 Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
 <<UpdateDebateNumber PointMeter>>
 	<<jump M2_PoznanieCzerwieni1>>
@@ -38,12 +45,14 @@ title: M2_PoznanieCzerwieni1
 
 title: M2_PoznanieCzerwieni1_1
 ---
+<<voiceline Czerwony 20>>
 Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pobrudziłem, przypadek!
 	<<jump M2_PoznanieCzerwieni2>>
 ===
 
 title: M2_PoznanieCzerwieni1_2
 ---
+<<voiceline Czerwony 21>>
 Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A Liv nie słucha.
 	<<jump M2_PoznanieCzerwieni2>>
 ===
@@ -69,24 +78,28 @@ title: M2_PoznanieCzerwieni2
 
 title: M2_PoznanieCzerwieni2_1
 ---
+<<voiceline Czerwony 22>>
 Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
 	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
 ===
 
 title: M2_PoznanieCzerwieni2_2
 ---
+<<voiceline Czerwony 23>>
 Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
 	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
 ===
 
 title: M2_Z_Jab_1_1
 ---
+<<voicelineEnd Czerwony>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
 title: M2_Z_Jab_1_2
 ---
+<<voicelineEnd Czerwony>>
 Viri: Przestań krzyczeć!
 	<<jump M2_PoznanieCzerwieni3>>
 ===
@@ -112,12 +125,14 @@ title: M2_PoznanieCzerwieni3
 
 title: M2_PoznanieCzerwieni3_1
 ---
+<<voiceline Czerwony 24>>
 Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kłamczuchą!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
 
 title: M2_PoznanieCzerwieni3_2
 ---
+<<voiceline Czerwony 25>>
 Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
@@ -143,12 +158,14 @@ title: M2_PoznanieCzerwieni4
 
 title: M2_PoznanieCzerwieni4_1
 ---
+<<voiceline Czerwony 26>>
 Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
 title: M2_PoznanieCzerwieni4_2
 ---
+<<voiceline Czerwony 27>>
 Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i cała reszta!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
@@ -156,24 +173,28 @@ Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i c
 
 title: M2_Z_Jab_2_1
 ---
+<<voicelineEnd Czerwony>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<Jab Dialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
 ===
 
 title: M2_Z_Jab_2_2
 ---
+<<voicelineEnd Czerwony>>
 Viri: Przestań krzyczeć!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
 title: M2_C_Jab_1_1
 ---
+<<voiceline Czerwony 28>>
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 
 title: M2_C_Jab_1_2
 ---
+<<voiceline Czerwony 29>>
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 	<<jump M2_PoznanieCzerwieni5>>
 ===
@@ -199,12 +220,14 @@ title: M2_PoznanieCzerwieni5
 
 title: M2_PoznanieCzerwieni5_1
 ---
+<<voiceline Czerwony 30>>
 Robert: ...
 	<<Ending PointMeter>>
 ===
 
 title: M2_PoznanieCzerwieni5_2
 ---
+<<voiceline Czerwony 31>>
 Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To nie tak, że chcę taki być!
 	<<Ending PointMeter>>
 ===
@@ -217,28 +240,39 @@ Bohater: Nie ma nic złego w tym, że się denerwujesz.
 
 Bohater: Po prostu trzeba może pomyśleć co robisz w związku z tymi emocjami.
 
+<<voiceline Czerwony 32>>
 Robert: Nie chciałem rozbijać statuy, dobra?
 
+<<voiceline Czerwony 33>>
 Robert: Po prostu miałem wrażenie, że jeśli czegoś nie zrobię, to wybuchnę!
 
+<<voiceline Czerwony 34>>
 Robert: Nie złościełem się specjalnie, nigdy nie robię tego specjalnie.
 
+<<voicelineEnd Czerwony>>
 Viri: Wiemy, że nie jesteś straszny specjalnie…
 
+<<voiceline Czerwony 35>>
 Robert: W ogóle nie chcę być straszny.
 
+<<voicelineEnd Czerwony>>
 Bohater: Czy zniszczenie statuy pomogło ci ze złością?
 
+<<voiceline Czerwony 36>>
 Robert: Trochę.
 
-Robert: Ale potem zrobiło mi się tylko gorzej. Lubiłem te statuetę.
+<<voiceline Czerwony 37>>
+Robert: Ale potem zrobiło mi się tylko gorzej. Lubiłem te statuę.
 
+<<voicelineEnd Czerwony>>
 Bohater: Może musisz mieć dla siebie miejsce, gdzie możesz być zły.
 
 Bohater: Miejsce, gdzie pozbyłbyś się złości w bardziej kontrolowany sposób. Gdzie miałbyś chwilę na wyciszenie dla siebie.
 
+<<voiceline Czerwony 38>>
 Robert: Wolałbym się nie złościć w ogóle.
 
+<<voicelineEnd Czerwony>>
 Bohater: Trzeba się czasem zezłościć. To wcale nie jest zawsze złe.
 
 Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od niej.
@@ -249,6 +283,7 @@ Viri: Proszę, spróbuj z nią porozmawiać.
 
 Viri: Pójdziemy z tobą, pomożemy…
 
+<<voiceline Czerwony 39>>
 Robert: No dobrze. Ale potrzymaj mnie za rękę.
 <<granatOdpalQuest Dialogi>>
 ===
