@@ -11,6 +11,12 @@ public class BirdTaken : MonoBehaviour
         {
             BirdOnUI.SetActive(true);
             gameObject.SetActive(false);
+
+            //bo nie dziala build
+            bMinigame = GameObject.Find("BirdsMinigame").GetComponent<BirdsWin>();
+            bMinigame.birdsWin = 4;
+            bMinigame.GoodSpot();
         }
     }
+    private BirdsWin bMinigame;
 }

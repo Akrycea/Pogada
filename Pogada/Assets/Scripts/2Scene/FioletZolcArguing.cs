@@ -5,10 +5,9 @@ public class FioletZolcArguing : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
 
-
-    public void OnMouseDown()
+    [YarnCommand("fightCloudDisappear")]
+    public void fightCloudDisappear()
     {
-        dialogueRunner.StartDialogue("D2_PoznanieFiolet");
         gameObject.SetActive(false);
     }
 }
