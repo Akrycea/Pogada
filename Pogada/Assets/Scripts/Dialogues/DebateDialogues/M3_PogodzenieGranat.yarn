@@ -183,19 +183,19 @@ Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozw
 ===
 title: M3_PogodzenieGranat5
 ---
-->Mówił szczerze, złościł się, bo mu nie ufałaś.
+->Nie zrobił tego, aby cię wystraszyć.
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
-->Nikt nie lubi, jak nazywa się go kłamczuchem.
+->Widać, że żałuje, daj mu szansę.
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
-->Też bym się zezłościł na jego miejscu.
+->Jego złość jest osobnym problemem.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
-->Skoro sobie nie ufacie, to nie ma o czym mówić.
+->Zareagował poprawnie.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
-->Odwracasz uwagę od rzeczywistego problemu.
+->Powinnaś przestać się na tym skupiać.
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ===
@@ -217,7 +217,7 @@ title: M3_PogodzenieGranatPoDebata
 ---
 <<debateWon Granat>>
 <<camShake CinemachineCameraVillage>>
-Liv: I tak nie chce mi się już być złą.
+Liv: I tak nie chce mi się już być zła.
 
 Robert: …Dziękuję.
 
@@ -231,26 +231,29 @@ Robert: Nikt się z tobą nie kłócił.
 
 Bohater: Cieszę się, że wszyscy się już dogadują.
 
-Bohater: Robert, chętnie pomogę ci z przygotowaniem  tych rzeczy, o których rozmawialiśmy, jak już rozwiąże się problem z resztą kolorów.
+Bohater: Robert, pamiętaj proszę o czym gadaliśmy wcześniej.
+
+Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 
 Liv: O czym gadaliście? O czym, o czym?
 
-Robert: Pan powiedział, że jak jestem zły, to pomoże przygotowanie sobie rzeczy, których mogę użyć, żeby nie wybuchnąc.
+Robert: Pan powiedział, że jest okej, jak jestem zły. Tylko muszę poćwiczyć nie wybuchanie.
 
-Liv: Ty też masz wtedy takie wrażenie?
+Liv: Ty też masz wtedy takie wrażenie? Że wybuchniesz?
 
 Robert: Też?
 
 Liv: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
 
-Viri: A… A ja też mogę?
+Viri: A, a ja też mogę?
 
 Liv: Jasne!
 
 Bohater: Zanim mi się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
 
-Liv: [nwm co trzeba kliknąć itp żeby przejśc dalej] Powinna być gdzieś tam ze swoim zwierzakiem.
+Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
 
 Bohater: Dziękuję.
+<<thankYouScreen Granat>>
 <<granatwygranadebata Dialogi>>
 ===
