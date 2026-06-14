@@ -36,12 +36,14 @@ public class StatueControl : MonoBehaviour
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
+            sunParts[sunNumber].tag = "Free";
         }
 
         if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);
+            moonParts[moonNumber].tag = "Free";
         }
 
 
