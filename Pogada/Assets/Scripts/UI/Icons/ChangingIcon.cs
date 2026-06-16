@@ -4,19 +4,31 @@ using Yarn.Unity;
 
 public class ChangingIcon : MonoBehaviour
 {
-    public Image spriteRenderer;
- 
-    // icons, going in order -> angry, happy, sad 
-    public Sprite[] Robert;
-    public Sprite[] Lute;
-    public Sprite[] Aureus;
-    public Sprite[] Viri;
-    public Sprite[] Lus;
-    public Sprite[] Liv;
-    public Sprite[] Violaceus;
+    [SerializeField]
+    private Image spriteRenderer;
 
-    public Sprite[] Slonce;
-    public Sprite[] Ksiezyc;
+    public PlayerIcon playerIcon;
+
+    // icons, going in order -> angry, happy, sad
+    [SerializeField]
+    private Sprite[] Robert;
+    [SerializeField]
+    private Sprite[] Lute;
+    [SerializeField]
+    private Sprite[] Aureus;
+    [SerializeField]
+    private Sprite[] Viri;
+    [SerializeField]
+    private Sprite[] Lus;
+    [SerializeField]
+    private Sprite[] Liv;
+    [SerializeField]
+    private Sprite[] Violaceus;
+
+    [SerializeField]
+    private Sprite[] Slonce;
+    [SerializeField]
+    private Sprite[] Ksiezyc;
 
     [YarnCommand("ChangeIcon")]
     public void ChangeIcon(string characterName, string emotion)
@@ -55,6 +67,8 @@ public class ChangingIcon : MonoBehaviour
         }
         if (characterIcons != null)
         {
+            playerIcon.HidePlayerIcon();
+            gameObject.SetActive(true);
             switch (emotion)
             {
                 case "angry":
@@ -68,6 +82,12 @@ public class ChangingIcon : MonoBehaviour
                     break;
             }
         }
+    }
+
+    [YarnCommand("HideIcon")]
+    public void HideIcon()
+    {
+        gameObject.SetActive(false);
     }
 
 }
