@@ -90,14 +90,12 @@ public class PlayerIcon : MonoBehaviour
         }
 
     }
-    //using transparency insteadof set acive for the demo
+
     private Image image;
     [YarnCommand ("HidePlayerIcon")]
     public void HidePlayerIcon()
      {
-        image = gameObject.GetComponent<Image>();
-        Color c = image.color;
-        c.a = 0;
-        //gameObject.SetActive(false);
+
+        gameObject.SetActive(false);
         }
     }

@@ -1,14 +1,20 @@
 title: D2_PoznanieFiolet
 ---
+<<IconsOn Dialogi>>
 <<longCamShakeSTART CinemachineCameraGateAndForest>>
+<<ChangeIcon Icons "Aureus" "angry">>
 Dziecko1: Nie masz racji! Mogę być, kim chcę!
 
+<<ChangeIcon Icons "Violaceus" "angry">>
 Dziecko2: Nie, kiedy sprawiasz tym przykrość mamie!
 
+<<ChangeIcon Icons "Aureus" "angry">>
 Dziecko1: Kłamczuch jesteś! I ty i mama! Każde dziecko wie, że można być kim się tylko chce! A ty jesteś wredzioch!
 
+<<ChangeIcon Icons "Violaceus" "angry">>
 Dziecko2: Nie wcale nie! Tak nie można i kropka!
 
+<<ChangeIcon Icons "Aureus" "angry">>
 Dziecko1: Wredzioch i złośliwiec!
 <<longCamShakeEND CinemachineCameraGateAndForest>>
 <<fightCloudDisappear KłocąceSieDzieci>>
@@ -19,15 +25,31 @@ Dziecko1: Wredzioch i złośliwiec!
 
 title: D2_PoznanieFiolet_2
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Co tu się dzieje?
+<<HidePlayerIcon IconsPlayer>>
 //vus dodane na potrzeby dema
+
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Dziecko2: I co pan zrobił? Ten głupol Vus przez pana uciekł i będzie miał durne pomysły!
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Chwila, chwila, wydaje mi się, że kłócił się z tobą, nie ze mną.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Dziecko2: Ta, ode mnie by nie uciekł!
+<<HideIcon Icons>>
 
 //tu dac odpalanie sie debaty fiolet1
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Nieważne, muszę pójść go znaleźć.
+<<HidePlayerIcon IconsPlayer>>
 <<UpdateDebateNumber PointMeter>>
 ===

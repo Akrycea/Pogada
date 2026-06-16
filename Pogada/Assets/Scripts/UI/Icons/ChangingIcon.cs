@@ -33,10 +33,6 @@ public class ChangingIcon : MonoBehaviour
     [YarnCommand("ChangeIcon")]
     public void ChangeIcon(string characterName, string emotion)
     {
-        image = gameObject.GetComponent<Image>();
-        Color c = image.color;
-        c.a = 255;
-
         Sprite[] characterIcons = null;
 
         switch (characterName)
@@ -87,15 +83,12 @@ public class ChangingIcon : MonoBehaviour
             }
         }
     }
-    //using transparency insteadof set acive for the demo
-    private Image image;
+
+
     [YarnCommand("HideIcon")]
     public void HideIcon()
     {
-        image = gameObject.GetComponent<Image>();
-        Color c = image.color;
-        c.a = 0;
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
 }

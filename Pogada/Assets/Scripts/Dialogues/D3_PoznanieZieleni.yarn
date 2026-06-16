@@ -1,35 +1,73 @@
 ﻿title: D3_PoznanieZieleni
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Oh. Dzień dobry.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: …
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Czy coś się stało, że jesteś taki smętny?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: …
 
 Dziecko: No… Może…
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Chcesz o tym porozmawiać?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: Chyba nie. Może z mamą? Albo tatą.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Niestety wasi rodzice wyjechali na trochę. Ja się wami zajmuję.
 
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Nie musisz mi mówić, jeśli nie chcesz.
 
 Bohater: Będę szukał Lus, może z nią chciałbyś porozmawiać?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "angry">>
 Dziecko: Hm… Nie, nie…
 
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: Rozmawiała z Liv, a Liv już mnie nie kocha.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Jak to?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: …
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Dziecko: Możesz próbować…
+<<HideIcon Icons>>
 <<granatOdpalDialog Dialogi>>
 ===

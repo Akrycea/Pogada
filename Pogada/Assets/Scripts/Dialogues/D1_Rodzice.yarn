@@ -38,6 +38,7 @@ Bohater: Bogowie słońca i księżyca! Czy nie widzicie, że całemu światu od
 Bohater: Dzieci się boją, a dorośli nie mogą ogórka od marchewki odróżnić! Musicie to naprawić!
 <<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<ChangeIcon Icons "Slonce" "sad">>
 Słońce: Kolory? Oh nie, ja już nie mam na nie siły.
 
@@ -53,11 +54,13 @@ Księżyc: Śmiertelniku! Dobrze, że jesteś. Istnieje proste rozwiązanie nasz
 Księżyc: Z dobroci naszych serc i z czystej woli boskiej, pozwalamy ci zająć się naszą niesforną siódemką dzieci. To zadanie dla nie byle kogo! Ale pokonane wyzwania i niepewności odmienią twoje życie. Na pewno uda ci się przekonać dzieciaki do współpracy.
 <<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
 <<voicelineEnd Księżyc>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Słucham? 
 <<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<ChangeIcon Icons "Slonce" "happy">>
 Słońce: Nie martw się, dzieci są nauczone, że miłość zawsze wskazuje dobrą drogę! Na pewno będą się zachowywać.
 
@@ -70,6 +73,7 @@ Księżyc: Fajrant!
 <<RunAway Rodzice>>
 <<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
 <<voicelineEnd Księżyc>>
 <<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Chwila, chwila! Nie możecie po prostu oddać mi swoich dzieci!
@@ -77,5 +81,5 @@ Bohater: Chwila, chwila! Nie możecie po prostu oddać mi swoich dzieci!
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory. Też zrobiłbym się szary, gdyby rodzice mnie zostawili.
 <<IconsOff Dialogi>>
-<<IconPlayerOff Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
