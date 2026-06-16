@@ -30,23 +30,30 @@ public class StatueControl : MonoBehaviour
 
     public StateManager stateManager;
 
-    public void Status()
+    public void StatusSun()
     {
         if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length - 1)
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
             sunParts[sunNumber].tag = "Free";
+            StatusWin();
         }
+    }
 
+    public void StatusMoon()
+    {
         if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);
             moonParts[moonNumber].tag = "Free";
+            StatusWin();
         }
+    }
 
-
+    public void StatusWin()
+    {
         if (SunHead.activeInHierarchy == false && MoonHead.activeInHierarchy == false)
         {
             Debug.Log("statuly wygrane");

@@ -27,7 +27,17 @@ public class PuzzleMinigame : MonoBehaviour
         {
             spriteRenderer.sprite = targetSprite;
             ogObject.SetActive(false);
-            statueControl.Status();
+            statueControl.StatusWin();
+
+            if (transform.parent.name == "Sun")
+            {
+                statueControl.StatusSun();
+            }
+
+            if (transform.parent.name == "Moon")
+            {
+                statueControl.StatusMoon();
+            }
         }
     }
 }
