@@ -78,13 +78,13 @@ public class PlayerIcon : MonoBehaviour
             switch (emotion)
             {
                 case "angry":
-                    this.characterIcons.sprite = characterIcons[0];
+                    image.sprite = characterIcons[0];
                     break;
                 case "happy":
-                    this.characterIcons.sprite = characterIcons[1];
+                    image.sprite = characterIcons[1];
                     break;
                 case "sad":
-                    this.characterIcons.sprite = characterIcons[2];
+                    image.sprite = characterIcons[2];
                     break;
             }
         }
@@ -94,7 +94,7 @@ public class PlayerIcon : MonoBehaviour
     private Image image;
     [YarnCommand ("HidePlayerIcon")]
     public void HidePlayerIcon()
-    {
+     {
         image = gameObject.GetComponent<Image>();
         Color c = image.color;
         c.a = 0;
