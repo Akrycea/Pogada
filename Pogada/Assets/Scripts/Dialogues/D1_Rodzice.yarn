@@ -1,54 +1,81 @@
 ﻿title: D1_Rodzice
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Slonce" "angry">>
 Słońce: Ah! Nie zniosę tego ani chwili dłużej! Ciągły krzyk i lament...
 
+<<ChangeIcon Icons "Ksiezyc" "sad">>
 <<voiceline Księżyc 0>>
 Księżyc: Cóż poradzić? Jest ich po prostu za dużo.
 
+<<ChangeIcon Icons "Slonce" "sad">>
 <<voicelineEnd Księżyc>>
 Słońce: Nie wiem, nie wiem. Może ja muszę po prostu na jakiś czas wyjechać.
 
+<<ChangeIcon Icons "Ksiezyc" "angry">>
 <<voiceline Księżyc 1>>
 Księżyc: Przecież sam sobie z nimi nie poradzę, oni się cały czas kłócą!
 
+<<ChangeIcon Icons "Slonce" "angry">>
 <<voicelineEnd Księżyc>>
 Słońce: Ja cały czas to znoszę! Jak zwykle, wszyscy przeciwko mnie.
 
+<<ChangeIcon Icons "Ksiezyc" "sad">>
 <<voiceline Księżyc 2>>
 Księżyc: Nie przeciwko tobie, kochanie…
 
+<<ChangeIcon Icons "Ksiezyc" "angry">>
 <<voiceline Księżyc 3>>
 Księżyc: Chwila, a ktoś ty? Cóż śmiertelnik robi w naszym boskim domu? Zgubiłeś się chłopcze?
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Księżyc>>
 Bohater: Bogowie słońca i księżyca! Czy nie widzicie, że całemu światu odebrało kolory? 
 
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Dzieci się boją, a dorośli nie mogą ogórka od marchewki odróżnić! Musicie to naprawić!
+<<HidePlayerIcon IconsPlayer>>
 
+<<ChangeIcon Icons "Slonce" "sad">>
 Słońce: Kolory? Oh nie, ja już nie mam na nie siły.
 
+<<ChangeIcon Icons "Ksiezyc" "angry">>
 <<voiceline Księżyc 4>>
 Księżyc: Ja się sam nie będę nimi zajmował! Jeśli ty masz od nich odpocząć, to i ja zamierzam.
 
+<<ChangeIcon Icons "Ksiezyc" "happy">>
 <<voiceline Księżyc 5>>
 Księżyc: Śmiertelniku! Dobrze, że jesteś. Istnieje proste rozwiązanie naszego problemu.
 
 <<voiceline Księżyc 6>>
 Księżyc: Z dobroci naszych serc i z czystej woli boskiej, pozwalamy ci zająć się naszą niesforną siódemką dzieci. To zadanie dla nie byle kogo! Ale pokonane wyzwania i niepewności odmienią twoje życie. Na pewno uda ci się przekonać dzieciaki do współpracy.
+<<HideIcon Icons>>
 
 <<voicelineEnd Księżyc>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Słucham? 
+<<HidePlayerIcon IconsPlayer>>
 
+<<ChangeIcon Icons "Slonce" "happy">>
 Słońce: Nie martw się, dzieci są nauczone, że miłość zawsze wskazuje dobrą drogę! Na pewno będą się zachowywać.
 
+<<ChangeIcon Icons "Slonce" "happy">>
 Słońce: W końcu, fajrant.
 
+<<ChangeIcon Icons "Ksiezyc" "happy">>
 <<voiceline Księżyc 7>>
 Księżyc: Fajrant!
 <<RunAway Rodzice>>
+<<HideIcon Icons>>
 
 <<voicelineEnd Księżyc>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Chwila, chwila! Nie możecie po prostu oddać mi swoich dzieci!
 
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory. Też zrobiłbym się szary, gdyby rodzice mnie zostawili.
+<<IconsOff Dialogi>>
+<<IconPlayerOff Dialogi>>
 ===

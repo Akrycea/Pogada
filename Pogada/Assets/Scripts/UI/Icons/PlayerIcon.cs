@@ -32,6 +32,10 @@ public class PlayerIcon : MonoBehaviour
     [YarnCommand("ChangePlayerIcon")]
     public void ChangePlayerIcon(string emotion)
     {
+        image = gameObject.GetComponent<Image>();
+        Color c = image.color;
+        c.a = 100;
+
         Sprite[] characterIcons = null;
 
         if (stateManager.szary == true)
@@ -86,10 +90,14 @@ public class PlayerIcon : MonoBehaviour
         }
 
     }
-
+    //using transparency insteadof set acive for the demo
+    private Image image;
     [YarnCommand ("HidePlayerIcon")]
     public void HidePlayerIcon()
-        {
-            gameObject.SetActive(false);
+    {
+        image = gameObject.GetComponent<Image>();
+        Color c = image.color;
+        c.a = 0;
+        //gameObject.SetActive(false);
         }
     }
