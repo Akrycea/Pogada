@@ -16,8 +16,6 @@ public class OwlChangingSprite : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("jest w colliderze");
-
         if (other.gameObject.name == "owlcollider1")
         {
             Debug.Log("owl collider 1");

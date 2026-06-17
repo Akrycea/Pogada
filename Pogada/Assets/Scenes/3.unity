@@ -11469,7 +11469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &361573738
 Transform:
   m_ObjectHideFlags: 0
@@ -17221,23 +17221,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6d84f7f8b63c14e9300d5d603715da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground: {fileID: 1261661008}
   sunParts:
   - {fileID: 798218953}
   - {fileID: 1351904955}
   - {fileID: 1898178929}
+  - {fileID: 1115313466}
   - {fileID: 1115313466}
   moonParts:
   - {fileID: 991483159}
   - {fileID: 398145605}
   - {fileID: 1740432097}
   - {fileID: 16756094}
+  - {fileID: 16756094}
   sunNumber: 0
   moonNumber: 0
-  SunHead: {fileID: 1973423769}
-  MoonHead: {fileID: 1243594306}
-  Czerwony: {fileID: 164577014}
   stateManager: {fileID: 905840117}
+  Czerwony: {fileID: 164577014}
 --- !u!1 &536311724
 GameObject:
   m_ObjectHideFlags: 0
@@ -26219,7 +26218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &840791401
 Rigidbody2D:
   serializedVersion: 5
@@ -28228,7 +28227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890972811}
   m_Layer: 0
-  m_Name: ---DIALOGI & EVENT SYSTEM ---
+  m_Name: ----  DIALOGUES & MANAGERS  ----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29026,7 +29025,7 @@ MonoBehaviour:
   LusDebateWon: 0
   Violaceus2DebateWon: 0
   AureusDebateWon: 0
-  szary: 0
+  szary: 1
   zielony: 0
   czerwony: 0
   granat: 0
@@ -38753,7 +38752,7 @@ Transform:
   m_GameObject: {fileID: 1180005334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.65, y: 4.57, z: 10.066829}
+  m_LocalPosition: {x: -3.89, y: 2.87, z: 10.066829}
   m_LocalScale: {x: 0.8759, y: 0.8759, z: 0.8759}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43761,7 +43760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315606427}
   m_Layer: 0
-  m_Name: ---NPC---
+  m_Name: -----    NPC   -----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50002,7 +50001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529762464}
   m_Layer: 0
-  m_Name: ---PUZZLE---
+  m_Name: ----  PUZZLES  ----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57371,6 +57370,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1790730906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790730907}
+  m_Layer: 0
+  m_Name: ----------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790730907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790730906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -88.05365, y: 49.235573, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792606664
 GameObject:
   m_ObjectHideFlags: 0
@@ -58063,7 +58093,7 @@ Camera:
   far clip plane: 1000
   field of view: 90
   orthographic: 1
-  orthographic size: 7.105263
+  orthographic size: 3.618421
   m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
@@ -58088,7 +58118,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -113.200005, y: -0.09021425, z: -6}
+  m_LocalPosition: {x: -113.20002, y: -0.09021425, z: -6}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59450,7 +59480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859730495}
   m_Layer: 0
-  m_Name: ---SWIAT---
+  m_Name: ------   SWIAT    ------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65244,7 +65274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085372770}
   m_Layer: 0
-  m_Name: ---
+  m_Name: -----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67449,12 +67479,12 @@ SceneRoots:
   - {fileID: 1810761316}
   - {fileID: 536311725}
   - {fileID: 19729234}
+  - {fileID: 1935998100}
   - {fileID: 1859730495}
   - {fileID: 2049511276}
   - {fileID: 153193845}
   - {fileID: 1165364429}
   - {fileID: 513801740}
-  - {fileID: 1935998100}
   - {fileID: 1315606427}
   - {fileID: 2060085667}
   - {fileID: 164577018}
@@ -67473,12 +67503,13 @@ SceneRoots:
   - {fileID: 899233013}
   - {fileID: 905840118}
   - {fileID: 1529762464}
-  - {fileID: 361573738}
   - {fileID: 457455737}
   - {fileID: 1802856948}
   - {fileID: 2121220834}
   - {fileID: 974259423}
+  - {fileID: 361573738}
   - {fileID: 340066886}
+  - {fileID: 1790730907}
   - {fileID: 1957896406}
   - {fileID: 1978218374}
   - {fileID: 942493339}
