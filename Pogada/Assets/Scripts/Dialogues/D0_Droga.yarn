@@ -1,0 +1,17 @@
+﻿title: D0_Droga
+---
+<<blockPlayerMovement Dialogi>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Nigdy nie marzyła mi się taka wyprawa.
+
+<<ChangePlayerIcon IconsPlayer "happy">>
+Bohater: Tyle lat w spokojnej krainie, zdążyłem się przyzwyczaić.
+
+Bohater: Oby bogowie mnie wysłuchali.
+
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Już tęsknię za rodziną.
+<<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
+===

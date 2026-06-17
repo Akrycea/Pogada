@@ -16,6 +16,7 @@ public class Key : MonoBehaviour
 
     public GameObject gateStop;
 
+    private bool dialoguPlayed = false;
  
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,10 +28,18 @@ public class Key : MonoBehaviour
             gateSpriteChange1.myPuzzleGotCompleted();
             gateSpriteChange2 = gateSpriteChange2.GetComponent<SpriteChangeAfterPuzzle>();
             gateSpriteChange2.myPuzzleGotCompleted();
+
+
             gateSprite.SetActive(false);
 
             gateStop.gameObject.SetActive(false);
-            dialogueRunner.StartDialogue("P1_Brama_fin");
+
+            //as to not play the dialogue again by accident
+            if (!dialoguPlayed)
+            {
+                dialogueRunner.StartDialogue("P1_Brama_fin");
+                dialoguPlayed=true;
+            }
         }
 
     }
