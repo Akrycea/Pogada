@@ -1,30 +1,42 @@
 ﻿title: P1_Brama_1
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 Zamknięte na trzy spusty. Trzeba by znaleźć klucz.
 <<bramaPuzzle2 Dialogues>>
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_2
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 Zamknięte. Kto nie trzyma zapasowego klucza pod wycieraczką?
 <<bramaPuzzle3 Dialogues>>
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_3
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 <<blockPlayerMovement Dialogi>>
 Nie przejdę bez klucza. Może jakiś się znajdzie w okolicy?
 <<bramaPuzzle1 Dialogues>>
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_fin
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 Otwarte. Zobaczmy co kryją te całe niebiosa. 
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===

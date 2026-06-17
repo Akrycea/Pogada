@@ -160,7 +160,8 @@ public class SentenceBuilding : MonoBehaviour
     public void EraseLastWord()
     {
         sentence.RemoveAt(sentence.Count - 1);
-        budowaneZdanieUI.text = budowaneZdanieUI.text + " ";
+        //trzeba dodac usuwanie zdania z napisu? confused jak
+        //budowaneZdanieUI.text = budowaneZdanieUI.text - budowaneZdanieUI;
     }
 
     public bool firstObject;

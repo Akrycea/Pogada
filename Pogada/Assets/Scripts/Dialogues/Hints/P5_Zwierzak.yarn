@@ -1,21 +1,30 @@
 ﻿title: P5_Zwierzak
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 Musi być gdzieś niedaleko.
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P5_Zwierzak_1
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 Kurczę! Cóż, pozostaje dalej szukać.
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 //<<bramaPuzzle2 Dialogues>>
 ===
 
 title: P5_Zwierzak_fin
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 Zguba znaleziona. Może teraz Lute będzie chętna do przeproszenia Lus.
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===

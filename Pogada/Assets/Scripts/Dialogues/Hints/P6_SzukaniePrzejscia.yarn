@@ -1,13 +1,19 @@
 ﻿title: P6_SzukaniePrzejscia
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 Czyżby Chmurka coś wyczuwała?
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P6_SzukaniePrzejscia_fin
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 Oto przejście! Dziękuję Chmurko.
 <<unblockPlayerMovement Dialogi>>
+<<HidePlayerIcon IconsPlayer>>
 ===
