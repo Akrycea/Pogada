@@ -4,35 +4,25 @@ using Yarn.Unity;
 
 public class StatueControl : MonoBehaviour
 {
-    public GameObject ground;
-    public GameObject[] sunParts;
-    public GameObject[] moonParts;
+    [SerializeField]
+    private GameObject[] sunParts;
+    [SerializeField]
+    private GameObject[] moonParts;
 
     [SerializeField]
     private int sunNumber = 0;
     [SerializeField]
     private int moonNumber = 0;
 
-    //public DebataPlayer debataPlayer;
-
-    //public BirdsWin birsWin;
-
-    public GameObject SunHead;
-    public GameObject MoonHead;
-
-    //birdOnUI.activeInHierarchy
-
-    //gameObject.CompareTag("")
+    public StateManager stateManager;
 
     private DialogueRunner dialogueRunner;
-
-    public GameObject Czerwony;
-
-    public StateManager stateManager;
+    [SerializeField]
+    private GameObject Czerwony;
 
     public void StatusSun()
     {
-        if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length - 1)
+        if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length)
         {
             sunNumber++;
             sunParts[sunNumber].SetActive(true);
@@ -43,7 +33,7 @@ public class StatueControl : MonoBehaviour
 
     public void StatusMoon()
     {
-        if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length - 1)
+        if (moonParts[moonNumber].CompareTag("Free") && moonNumber < moonParts.Length)
         {
             moonNumber++;
             moonParts[moonNumber].SetActive(true);
@@ -52,17 +42,13 @@ public class StatueControl : MonoBehaviour
         }
     }
 
-    public void StatusWin()
+   public void StatusWin()
     {
-        if (SunHead.activeInHierarchy == false && MoonHead.activeInHierarchy == false)
+        if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
         {
-            Debug.Log("statuly wygrane");
-            //debataPlayer.wygranaMinigierka = true;
-
             dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
             dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
             Czerwony.SetActive(true);
-
         }
     }
 }
