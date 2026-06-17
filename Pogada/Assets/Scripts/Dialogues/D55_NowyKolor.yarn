@@ -1,5 +1,6 @@
 ﻿title: D55_NowyKolor
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Ha! Niesamowite!
@@ -26,4 +27,5 @@ Viri: Może, jeśli Robert i Liv poczują się jak ja, to też wrócą im kolory
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Warto sprawdzić.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 ===

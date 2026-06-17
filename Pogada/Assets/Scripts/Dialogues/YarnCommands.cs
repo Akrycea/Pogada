@@ -8,6 +8,25 @@ public class YarnCommands : MonoBehaviour
     public DialogueRunner dialRunner;
     public StateManager stateManager;
 
+    [SerializeField]
+    private PlayerMovement playerMovement;
+    //blokuje gracza podczas dialogu
+    [YarnCommand("blockPlayerMovement")]
+    public void blockPlayerMovement()
+    {
+        Debug.Log("blocking player movement");
+        playerMovement.canPlayerMove = false;
+    }
+
+    //odblokowuje gracza podczas dialogu
+    [YarnCommand("unblockPlayerMovement")]
+    public void unblockPlayerMovement()
+    {
+        Debug.Log("UNblocking player movement");
+        playerMovement.canPlayerMove = true;
+    }
+
+
     //komentarze bohatera na P1_Brama
     private ClickDialogue brama;
     [YarnCommand("bramaPuzzle1")]

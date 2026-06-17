@@ -1,6 +1,7 @@
 ﻿title: D7_PoznanieCzerwieni
 ---
 //voiceline nie dziala?
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "happy">>
 <<voiceline Czerwony 0>>
@@ -61,5 +62,6 @@ Bohater: A co ze statuą?
 <<voiceline Czerwony 5>>
 Robert: Nie chcę o tym gadać.
 <<HideIcon Icons>>
+<<unblockPlayerMovement Dialogi>>
 <<czerwonyBudowanieZdan Dialogi>>
 ===

@@ -1,9 +1,11 @@
 ﻿title: D105_NowyKolor3
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Coraz żywiej dookoła.
 
 Bohater: Jeszcze tylko parę kolorów do przywrócenia.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 ===

@@ -3,6 +3,9 @@ using Yarn.Unity;
 
 public class Debate : MonoBehaviour
 {
+    [SerializeField]
+    private PlayerMovement playerMovement;
+
     public int YourPoints;
     public int EnemyPoints;
 
@@ -79,6 +82,7 @@ public class Debate : MonoBehaviour
         {
             Debug.Log("you lost");
             debateNumber = debateNumber--;
+            playerMovement.canPlayerMove = true;
         }
         YourPoints = 0;
     }

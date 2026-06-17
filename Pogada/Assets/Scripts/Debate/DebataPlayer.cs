@@ -3,6 +3,8 @@ using Yarn.Unity;
 
 public class DebataPlayer : MonoBehaviour
 {
+    [SerializeField]
+    private PlayerMovement playerMovement;
     public StateManager stateManager;
     public bool wygranaMinigierka;
 
@@ -20,6 +22,8 @@ public class DebataPlayer : MonoBehaviour
         {
             Debug.Log("starting sentence building");
             budowanieZdan1.SetActive(true);
+            Debug.Log("blocking player movement");
+            playerMovement.canPlayerMove = false;
             playedDebates++;
         }
         else if (wygranaMinigierka && playedDebates == 1 && !debateWon)

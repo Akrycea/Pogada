@@ -1,5 +1,6 @@
 ﻿title: D5_PomocZieleni
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Porozmawiałem z Liv.
@@ -78,5 +79,6 @@ Viri: To wszystko moja wina…
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Nie przejmuj się. Ja się tym zajmę.
+<<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 ===

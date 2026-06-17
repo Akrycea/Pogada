@@ -1,5 +1,6 @@
 ﻿title: D4_PoznanieGranat
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dzień dobry.
@@ -138,5 +139,6 @@ Liv: Bez Perełki nic nie mówię.
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: No tak…
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 <<zielony2dialog Dialogi>>
 ===

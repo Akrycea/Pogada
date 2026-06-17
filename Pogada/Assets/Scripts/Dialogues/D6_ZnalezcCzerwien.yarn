@@ -1,5 +1,6 @@
 ﻿title: D6_ZnalezcCzerwien
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 Viri: Ik! Niech pan nie pozwoli, żeby mnie Liv zobaczyła.
@@ -87,5 +88,6 @@ Viri: No… Tak…
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Nie martw się. Super, że masz te plany.
+<<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 ===

@@ -1,5 +1,6 @@
 ﻿title: D12_PoznanieZolci
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lus" "sad">>
 Lus: Aureus? Wybacz, musiałam porozmawiać z Lute. Ale już jestem.
@@ -71,4 +72,5 @@ Bohater: Twardszy, rozumiem.
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dziękuję.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 ===

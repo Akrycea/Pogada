@@ -1,5 +1,6 @@
 ﻿title: D13_Koniec
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: W końcu, wszystkie kolory przywrócone.
@@ -94,4 +95,5 @@ Księżyc: Ah nie umiem wam odmówić.
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: To komu w drogę, temu czas.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 ===

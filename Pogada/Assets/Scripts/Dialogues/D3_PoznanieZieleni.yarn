@@ -1,5 +1,6 @@
 ﻿title: D3_PoznanieZieleni
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Oh. Dzień dobry.
@@ -69,5 +70,6 @@ Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
 <<ChangeIcon Icons "Viri" "sad">>
 Dziecko: Możesz próbować…
 <<HideIcon Icons>>
+<<unblockPlayerMovement Dialogi>>
 <<granatOdpalDialog Dialogi>>
 ===

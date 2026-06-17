@@ -1,5 +1,6 @@
 title: D2_PoznanieFiolet
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<longCamShakeSTART CinemachineCameraGateAndForest>>
 <<ChangeIcon Icons "Aureus" "angry">>
@@ -51,5 +52,6 @@ Dziecko2: Ta, ode mnie by nie uciekł!
 <<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Nieważne, muszę pójść go znaleźć.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 <<UpdateDebateNumber PointMeter>>
 ===

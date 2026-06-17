@@ -1,5 +1,6 @@
 ﻿title: D8_PrzekonanieCzerwieni
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
 Liv: Nie teraz! Wszystkie moje rybki mi się pogubiły!
@@ -16,4 +17,5 @@ Liv: Nie teraz powiedziałam!
 
 Liv: Niech pan je połapie!
 <<HideIcon Icons>>
+<<unblockPlayerMovement Dialogi>>
 ===

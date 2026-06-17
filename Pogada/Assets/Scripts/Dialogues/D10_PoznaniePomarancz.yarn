@@ -1,5 +1,6 @@
 ﻿title: D10_PoznaniePomarancz
 ---
+<<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
 Lute: Dzień dobry.
@@ -63,4 +64,5 @@ Lute:  A na mamę nie może być.
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: No dobrze, zobaczymy jak się sytuacja potoczy.
 <<HidePlayerIcon IconsPlayer>>
+<<unblockPlayerMovement Dialogi>>
 ===

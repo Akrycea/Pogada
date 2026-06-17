@@ -12,12 +12,10 @@ public class PlayerMovement : MonoBehaviour
     float speedY;
     public float movSpeed;
     private Vector2 newVelocity;
+    //allows or doesnt allow for movement
+    public bool canPlayerMove = true;
 
     private int facingDirection = 1;
-
-    //deklaracje do chodzenia przyciskami
-    public bool LBPressed = false;
-    public bool RBPressed = false;
 
 
     //deklaracje do chodzenia pod gore
@@ -69,9 +67,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-
-       Movement();
-
+        Movement();
     }
 
     //sprawdza czy dotyka ziemi, tak = zbiera info fizyki
@@ -80,62 +76,49 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
 
-
     private void Movement()
     {
+
         //sprawdza czy jest pod gore i zmienia speed zaleznie od tego
         if (isGrounded && !isOnSlope)
         {
             speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0.0f);
+            if (canPlayerMove)
+            {
+                rbPlayer.simulated = true;
+                rbPlayer.linearVelocity = new Vector2(speedX, 0.0f);
+            }
+            else
+            {
+                rbPlayer.simulated = false;
+            }
         }
         else if (isGrounded && isOnSlope)
-        {
+        {            
             speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(slopeNormalPerp.x * -speedX, slopeNormalPerp.y * -speedX);
+            if (canPlayerMove)
+            {
+                rbPlayer.simulated = true;
+                rbPlayer.linearVelocity = new Vector2(slopeNormalPerp.x * -speedX, slopeNormalPerp.y * -speedX);
+            }
+            else
+            {
+                rbPlayer.simulated = false;
+            }
         }
         else if (!isGrounded)
         {
             speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0);
+            if (canPlayerMove)
+            {
+                rbPlayer.simulated = true;
+                rbPlayer.linearVelocity = new Vector2(speedX, 0);
+            }
+            else
+            {
+                rbPlayer.simulated = false;
+            }
         }
-
-        //chodzenie w prawo przyciskiem
-        if (isGrounded && !isOnSlope && RBPressed)
-        {
-            speedX = 1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0.0f);
-        }
-        else if (isGrounded && isOnSlope && RBPressed)
-        {
-            speedX = 1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(slopeNormalPerp.x * -speedX, slopeNormalPerp.y * -speedX);
-        }
-        else if (!isGrounded && RBPressed)
-        {
-            speedX = 1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0);
-        }
-
-
-        //chodzenie w lewo przyciskiem
-        if (isGrounded && !isOnSlope && LBPressed)
-        {
-            speedX = -1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0.0f);
-            Debug.Log(movSpeed);
-        }
-        else if (isGrounded && isOnSlope && LBPressed)
-        {
-            speedX = -1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(slopeNormalPerp.x * -speedX, slopeNormalPerp.y * -speedX);
-        }
-        else if (!isGrounded && LBPressed)
-        {
-            speedX = -1 * movSpeed;
-            rbPlayer.linearVelocity = new Vector2(speedX, 0);
-        }
-
 
         //odwraca postac zaleznie od tego w ktora strone idzie
         if (speedX > 0 && facingDirection == -1)
@@ -149,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         //odpala odpowiednia animacje podczas chodzenia
-        if (speedX != 0)
+        if (speedX != 0 && canPlayerMove)
         {
             //za pomoca ColorChange animacja ma odpowiednie kolory
             if (stateManager.szary == true)
