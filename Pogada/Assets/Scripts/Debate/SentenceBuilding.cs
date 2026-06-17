@@ -157,6 +157,12 @@ public class SentenceBuilding : MonoBehaviour
         sentence.Clear();
     }
 
+    public void EraseLastWord()
+    {
+        sentence.RemoveAt(sentence.Count - 1);
+        budowaneZdanieUI.text = budowaneZdanieUI.text + " ";
+    }
+
     public bool firstObject;
     public void CorrectSentence()
     {
