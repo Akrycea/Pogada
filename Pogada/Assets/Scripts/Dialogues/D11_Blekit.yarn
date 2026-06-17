@@ -1,13 +1,24 @@
 ﻿title: D11_Blekit
 ---
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Czy to ty jesteś Lus?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Lus" "happy">>
 Lus: Tak. Potrzebuje pan czegoś?
 
+<<ChangeIcon Icons "Lus" "sad">>
 Lus: Jestem trochę zajęta. Mój brat jest bardzo smutny.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Chciałem porozmawiać z Aureusem. Podobno miał być z tobą.
 
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Znalazłem też twoją siostrę.
+<<HidePlayerIcon IconsPlayer>>
 <<<blekitDebata Dialogi>>>
 ===

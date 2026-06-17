@@ -1,41 +1,65 @@
 ﻿title: D7_PoznanieCzerwieni
 ---
+//voiceline nie dziala?
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Robert" "happy">>
 <<voiceline Czerwony 0>>
 Robert: Co robicie.
 <<voiceline Czerwony 0>>
 
+<<ChangeIcon Icons "Viri" "happy">>
 <<voicelineEnd Czerwony>>
 Viri: Odbudowaliśmy twoją statuę!
 
+<<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 1>>
 Robert: To moja statua, sam chciałem ją naprawić. Po co ją dotykaliście?
 
+<<ChangeIcon Icons "Viri" "happy">>
 <<voicelineEnd Czerwony>>
 Viri: Żebyś.. Żebyś z nami pogadał…
 
+<<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 2>>
 Robert: Czemu miałbym chcieć z wami rozmawiać po tym.
 
+<<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Czerwony>>
 Viri: Um, no, bo się pokłóciłeś z Liv.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Chcielibyśmy dowiedzieć się, jak ta sytuacja wyglądała z twojej perspektywy.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "happy">>
 Viri: Mógłbyś, em, oddać Perełkę Liv? Teraz już jest czysty i na pewno ci wybaczy…
 
+<<ChangeIcon Icons "Robert" "happy">>
 <<voiceline Czerwony 3>>
 Robert: Ja nie chcę jej już widzieć. Sam jej go oddaj.
 
+<<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Czerwony>>
 Viri: Ojej ale… Ale wtedy się nie pogodzicie…
 
+<<ChangeIcon Icons "Robert" "sad">>
 <<voiceline Czerwony 4>>
 Robert: Próbowałem się z nią pogodzić, a ona nazwała mnie kradziejem. 
+<<HideIcon Icons>>
 
 <<voicelineEnd Czerwony>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: A co ze statuą?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Robert" "sad">>
 <<voiceline Czerwony 5>>
 Robert: Nie chcę o tym gadać.
+<<HideIcon Icons>>
 <<czerwonyBudowanieZdan Dialogi>>
 ===
