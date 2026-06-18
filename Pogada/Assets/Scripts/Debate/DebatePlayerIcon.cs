@@ -26,7 +26,7 @@ public class DebatePlayerIcon : MonoBehaviour
     [SerializeField]
     private Sprite[] playerZolc;
 
-    [YarnCommand("ChangePlayerIcon")]
+    [YarnCommand("ChangeDebatePlayerIcon")]
     public void ChangePlayerIcon(string emotion)
     {
         Sprite[] characterIcons = null;

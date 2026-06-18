@@ -7,8 +7,6 @@ public class DebateKidsIcons : MonoBehaviour
     [SerializeField]
     private Image spriteRenderer;
 
-    public PlayerIcon playerIcon;
-
     // icons, going in order -> angry, angrytalk, happy, happytalk, sad, sadtalk
     [SerializeField]
     private Sprite[] Robert;

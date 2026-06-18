@@ -98,7 +98,7 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         debateManager.StartDebate();
-        debateDial.StartDialogue("M15_PomocZieleni");
+       
         
     }
 
@@ -145,7 +145,7 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         debateManager.StartDebate();
-        debateDial.StartDialogue("M2_PoznanieCzerwieni");
+       
         
     }
 
@@ -173,7 +173,7 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         debateManager.StartDebate();
-        debateDial.StartDialogue("M3_PogodzenieGranat");
+        
         
     }
 
