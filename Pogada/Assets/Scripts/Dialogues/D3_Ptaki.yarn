@@ -1,13 +1,15 @@
 ﻿title: D3_PtakSam
 ---
 <<blockPlayerMovement Dialogi>>
-Cała moja rodzina jest skłocona, me serce na kwałki robite i nadzieja stracona.
+<<voiceline BirdVoicelines 0>>
+Cała moja rodzina jest skłócona, me serce na kwałki rozbite i nadzieja stracona.
 <<unblockPlayerMovement Dialogi>>
 ===
 
 title: D3_PtakWraca
 ---
 <<blockPlayerMovement Dialogi>>
+<<voiceline BirdVoicelines 1>>
 Porozmawiać z nimi bym chciał, ale dogadać się nie możemy. Każdy czegoś innego chce i jak się pogodzić, nie wiemy.
 <<unblockPlayerMovement Dialogi>>
 <<BirdsArguining BirdsArguing>>
@@ -16,14 +18,12 @@ Porozmawiać z nimi bym chciał, ale dogadać się nie możemy. Każdy czegoś i
 title: D3_PtakiWygrana
 ---
 <<blockPlayerMovement Dialogi>>
+<<voiceline BirdVoicelines 2>>
 Te wszystkie kłótnie na nic były. Plusy dogadywania się wszyscy widzimy!
 
+<<voicelineEnd BirdVoicelines>>
+<<voiceline BirdVoicelines 3>>
 Dzięki tobie to się stało. Przyjmij ten prezent, za pomoc twoją.
 <<unblockPlayerMovement Dialogi>>
 <<ShowBlueprintsOnUI BirdsMinigame>>
-===
-
-title: D3_PtakiKlocaceSie
----
-placeholder bohater sobie mysli ze wow nie da sie z nim pogadac czy cos
 ===
