@@ -8,6 +8,10 @@ public class YarnCommands : MonoBehaviour
     public DialogueRunner dialRunner;
     public StateManager stateManager;
 
+    public DialogueRunner debateDial;
+
+    public DebateManager debateManager;
+
     [SerializeField]
     private PlayerMovement playerMovement;
     //blokuje gracza podczas dialogu
@@ -66,6 +70,7 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M1_PoznanieFiolet");
+        
     }
 
 
@@ -92,7 +97,9 @@ public class YarnCommands : MonoBehaviour
     public void zielony2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M15_PomocZieleni");
+        debateManager.StartDebate();
+        debateDial.StartDialogue("M15_PomocZieleni");
+        
     }
 
     //triggeruje powrót kolorów po wygranej debacie zielonego
@@ -137,7 +144,9 @@ public class YarnCommands : MonoBehaviour
     public void czerwonyDebata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M2_PoznanieCzerwieni");
+        debateManager.StartDebate();
+        debateDial.StartDialogue("M2_PoznanieCzerwieni");
+        
     }
 
     //po debacie z czerwonym pozwala pogadac z granat i zaczac jej quest
@@ -163,7 +172,9 @@ public class YarnCommands : MonoBehaviour
     public void granat2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M3_PogodzenieGranat");
+        debateManager.StartDebate();
+        debateDial.StartDialogue("M3_PogodzenieGranat");
+        
     }
 
     public GameObject GranatDrzwi;

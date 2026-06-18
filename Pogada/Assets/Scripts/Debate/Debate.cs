@@ -15,6 +15,8 @@ public class Debate : MonoBehaviour
     public StateManager stateManager;
     public DialogueRunner dialogueRunner;
 
+    public DebateManager debateManager;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -33,6 +35,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M15_DebataZielieniPoDebata");
                 stateManager.szary = false;
                 stateManager.zielony = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 3) 
             {
@@ -40,6 +43,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M2_PoznanieCzerwieniPoDebata");
                 stateManager.zielony = false;
                 stateManager.czerwony = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 4)
             {
@@ -47,6 +51,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M3_PogodzenieGranatPoDebata");
                 stateManager.czerwony = false;
                 stateManager.granat = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 5)
             {
