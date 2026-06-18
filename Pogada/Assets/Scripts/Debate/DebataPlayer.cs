@@ -16,10 +16,14 @@ public class DebataPlayer : MonoBehaviour
 
     public int playedDebates = 0;
 
+    [SerializeField]
+    public TurnOffCollider turnOffCollider;
+
     public void OnMouseDown()
     {
         if (wygranaMinigierka && playedDebates ==  0  && !debateWon)
         {
+            turnOffCollider.DisableAllExceptSpecificTag();
             Debug.Log("starting sentence building");
             budowanieZdan1.SetActive(true);
             Debug.Log("blocking player movement");

@@ -19,6 +19,9 @@ public class DebateManager : MonoBehaviour
 
     public DialogueRunner debateDial;
 
+    [SerializeField]
+    public TurnOffCollider turnOffCollider;
+
     public void OnMouseDown()
     {
         StartDebate();
@@ -63,5 +66,6 @@ public class DebateManager : MonoBehaviour
     {
         debate.SetActive(false);
         dialogue.SetActive(true);
+        turnOffCollider.EnableAllColliders();
     }
 }

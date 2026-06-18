@@ -1,14 +1,15 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class TurnOffCollider : MonoBehaviour
 {
-
+    [YarnCommand("DisableColliders")]
     public void DisableAllExceptSpecificTag()
     {
         //Find every collider in the scene (including inactive ones)
-        Collider[] allColliders = FindObjectsByType<Collider>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        Collider2D[] allColliders = FindObjectsByType<Collider2D>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-        foreach (Collider col in allColliders)
+        foreach (Collider2D col in allColliders)
         {
             //Check if the GameObject hosting the collider has the excluded tag
             if (col.CompareTag("Ground"))
@@ -21,14 +22,18 @@ public class TurnOffCollider : MonoBehaviour
         }
     }
 
+
+    [YarnCommand("EnableColliders")]
     public void EnableAllColliders()
     {
         //Find every collider in the scene (including inactive ones)
-        Collider[] allColliders = FindObjectsByType<Collider>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-        foreach (Collider col in allColliders)
+        Collider2D[] allColliders = FindObjectsByType<Collider2D>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (Collider2D col in allColliders)
         {
             // Enable all colliders
             col.enabled = true;
         }
     }
+
+
 }
