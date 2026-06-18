@@ -5824,6 +5824,7 @@ MonoBehaviour:
   budowanieZdan3: {fileID: 1372473491}
   debateWon: 0
   playedDebates: 0
+  turnOffCollider: {fileID: 905840120}
 --- !u!95 &164577021
 Animator:
   serializedVersion: 7
@@ -16133,6 +16134,7 @@ MonoBehaviour:
   budowanieZdan3: {fileID: 1208325562}
   debateWon: 0
   playedDebates: 0
+  turnOffCollider: {fileID: 0}
 --- !u!60 &413875700
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31939,6 +31941,7 @@ GameObject:
   - component: {fileID: 905840118}
   - component: {fileID: 905840117}
   - component: {fileID: 905840119}
+  - component: {fileID: 905840120}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -32018,7 +32021,19 @@ MonoBehaviour:
   dialogue: {fileID: 1511099220}
   debateScript: {fileID: 975314286}
   debateDial: {fileID: 484167111}
-  turnOffCollider: {fileID: 0}
+  turnOffCollider: {fileID: 905840120}
+--- !u!114 &905840120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905840116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff725b3c232e1084c86ded19d5d2ae66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &913789040
 GameObject:
   m_ObjectHideFlags: 0
@@ -52166,6 +52181,7 @@ MonoBehaviour:
   budowanieZdan3: {fileID: 1372473491}
   debateWon: 0
   playedDebates: 0
+  turnOffCollider: {fileID: 905840120}
 --- !u!114 &1385958523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53435,6 +53451,7 @@ MonoBehaviour:
   budowanieZdan3: {fileID: 1306346005}
   debateWon: 0
   playedDebates: 0
+  turnOffCollider: {fileID: 905840120}
 --- !u!114 &1423638214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62873,7 +62890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1736408654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62984,7 +63001,7 @@ Transform:
   m_GameObject: {fileID: 1736408653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -107.6, y: 2.4, z: 0}
+  m_LocalPosition: {x: -107.6, y: 11.89, z: 0}
   m_LocalScale: {x: 3.3878, y: 3.3878, z: 3.3878}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63010,6 +63027,7 @@ MonoBehaviour:
   budowanieZdan3: {fileID: 1306346005}
   debateWon: 0
   playedDebates: 0
+  turnOffCollider: {fileID: 905840120}
 --- !u!1 &1740432097
 GameObject:
   m_ObjectHideFlags: 0
