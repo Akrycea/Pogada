@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Yarn.Unity;
 
 public class BoatMovement : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class BoatMovement : MonoBehaviour
     public TurtleMovement turtleMovement;
 
     public DebataPlayer zielonyDebataPlayer;
+
+    [SerializeField]
+    private DialogueRunner dialogueRunner;
+
 
 
     void Start()
@@ -54,6 +59,7 @@ public class BoatMovement : MonoBehaviour
         else if (collision.gameObject.name == "koniec")
         {
             zielonyDebataPlayer.wygranaMinigierka = true;
+            dialogueRunner.StartDialogue("P2_Rzeczka_fin");
             gameObject.SetActive(false);
             Debug.Log("koniec, done");
             enabled = false;

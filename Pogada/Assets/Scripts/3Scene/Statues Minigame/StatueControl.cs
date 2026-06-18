@@ -47,7 +47,8 @@ public class StatueControl : MonoBehaviour
         if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
         {
             dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
-            dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
+            dialogueRunner.StartDialogue("P3_Statua_fin");
+            //dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
             Czerwony.SetActive(true);
         }
     }

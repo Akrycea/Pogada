@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class FishWon : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class FishWon : MonoBehaviour
     private bool done = false;
 
     public StateManager stateManager;
+
+    [SerializeField]
+    private DialogueRunner dialogueRunner;
 
 
     public void FishWin()
@@ -25,6 +29,7 @@ public class FishWon : MonoBehaviour
             granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
             granat.nazwaDialogu = "D8_5RybkiGranat";
             granat.dialoguePlayed = false;
+            dialogueRunner.StartDialogue("P4_Rybki_fin");
         }
     }
 }

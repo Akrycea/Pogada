@@ -30,6 +30,12 @@ public class YarnCommands : MonoBehaviour
         playerMovement.canPlayerMove = true;
     }
 
+    //sets character's next dialogue
+    [YarnCommand("changeCharacterDialogue")]
+    public void changeCharDialogue(string character, string dialogue)
+    {
+        GameObject.Find(character).GetComponent<ClickDialogue>().nazwaDialogu = dialogue;
+    }
 
     //komentarze bohatera na P1_Brama
     private ClickDialogue brama;
@@ -267,6 +273,7 @@ public class YarnCommands : MonoBehaviour
     public void odlosnliscie()
     {
         GameObject.Find("liscie").SetActive(false);
+        GameObject.Find("lodka").GetComponent<Collider2D>().enabled = true;
     }
 
     //usun rybki na UI
