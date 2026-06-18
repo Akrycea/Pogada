@@ -68,22 +68,22 @@ public class DebatePlayerIcon : MonoBehaviour
         {
             switch (emotion)
             {
-                case "angry":
+                case "accuse":
                     spriteRenderer.sprite = characterIcons[0];
                     break;
-                case "angrytalk":
+                case "accusetalk":
                     spriteRenderer.sprite = characterIcons[1];
                     break;
-                case "happy":
+                case "distress":
                     spriteRenderer.sprite = characterIcons[2];
                     break;
-                case "happytalk":
+                case "distresstalk":
                     spriteRenderer.sprite = characterIcons[3];
                     break;
-                case "sad":
+                case "understand":
                     spriteRenderer.sprite = characterIcons[4];
                     break;
-                case "sadtalk":
+                case "understandtalk":
                     spriteRenderer.sprite = characterIcons[5];
                     break;
             }
