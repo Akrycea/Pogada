@@ -98,8 +98,6 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         debateManager.StartDebate();
-       
-        
     }
 
     //triggeruje powrót kolorów po wygranej debacie zielonego

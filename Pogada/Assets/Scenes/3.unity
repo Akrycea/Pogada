@@ -30041,7 +30041,6 @@ GameObject:
   - component: {fileID: 905840118}
   - component: {fileID: 905840117}
   - component: {fileID: 905840119}
-  - component: {fileID: 905840120}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -30121,26 +30120,6 @@ MonoBehaviour:
   dialogue: {fileID: 1511099220}
   debateScript: {fileID: 975314286}
   debateDial: {fileID: 484167111}
---- !u!114 &905840120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905840116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb2cb70cecc6ca4480e11c453fe5c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialRunner: {fileID: 1748553146}
-  stateManager: {fileID: 905840117}
-  debateDial: {fileID: 484167111}
-  debateManager: {fileID: 905840119}
-  playerMovement: {fileID: 1361693962}
-  Blueprints: {fileID: 1180005334}
-  Czerwony: {fileID: 164577014}
-  GranatDrzwi: {fileID: 1003694823}
 --- !u!1 &914244282
 GameObject:
   m_ObjectHideFlags: 0
@@ -31183,7 +31162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: autoStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: startNode
@@ -36913,9 +36892,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb2cb70cecc6ca4480e11c453fe5c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialRunner: {fileID: 0}
+  dialRunner: {fileID: 1748553146}
   stateManager: {fileID: 905840117}
-  debateDial: {fileID: 0}
+  debateDial: {fileID: 484167111}
   debateManager: {fileID: 905840119}
   playerMovement: {fileID: 0}
   Blueprints: {fileID: 0}
