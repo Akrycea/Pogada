@@ -1,12 +1,14 @@
 title: M15_PomocZieleni
 ---
-//musza byc dwa razy bo inaczej nie dziala??
+<<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
 
-Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
-
+<<ChangeDebateIcon DebateChildren "Viri" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: Czy wzięcie pluszaka miało z tym pomóc?
 
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 Viri: Pomyślałem, że jeśli go wyczyszczę, to będzie po problemie i się pogodzą.
 
 Viri: Ale woda płynęła za szybko i wyrwała mi Perełkę, i ja, ja…
@@ -19,62 +21,82 @@ Viri: Ja nie wiedziałem już co zrobić!
 
 title: M_1DebataZielieni1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę Liv?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni1_1>>
 ->Co ma piernik do wiatraka?
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
 ->To słaby pomysł.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
 ->Czemu twoja interwencja miałaby naprawić sytuację?
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni1_1>>
 ->Nie rozwiązuj problemów innych osób.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
 ===
 
 title: M15_DebataZielieni1_1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: O to się pokłócili…
 	<<jump M15_DebataZielieni2>>
 ===
 
 title: M15_DebataZielieni1_2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Musiałem im pomóc! To było jedyne logiczne wyjście!
 	<<jump M15_DebataZielieni2>>
 ===
 
 title: M15_DebataZielieni2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Każ Robertowi wyczyścić pluszaka.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Po prostu porozmawiaj z Robertem.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni2_1>>
 ->Powinieneś zostawić Perełkę.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Powinieneś zostawić Liv w spokoju.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Umycie Perełki chyba nie pomoże.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni2_1>>
 ===
 
 title: M15_DebataZielieni2_1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: Czemu? Przecież to Perełka jest sednem problemu.
 	<<jump M15_DebataZielieni3>>
 ===
 
 title: M15_DebataZielieni2_2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak nie chcesz mi pomóc, to nie!
 	<<jump M15_DebataZielieni3>>
 ===
@@ -82,90 +104,120 @@ Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak ni
 
 title: M15_DebataZielieni3
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angry">>
 ->Liv i Robert powinni sami o siebie zadbać.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni3_1>>
 ->Problemem jest Robert.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
 ->Problemem jest zszarpane zaufanie Liv i Roberta.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni3_1>>
 ->Zabawki niczego nie naprawią.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
 ->Problemem jest rozbita rzeźba Roberta.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
 ===
 
 title: M15_DebataZielieni3_1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomysłem był Perełka…
 	<<jump M15_DebataZielieni4>>
 ===
 title: M15_DebataZielieni3_2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Co ty możesz wiedzieć o ich problemach?
 	<<jump M15_DebataZielieni4>>
 ===
 
 title: M15_DebataZielieni4
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Perełka nie ma z tą relacją nic wspólnego.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
 ->Ich relację mogą naprawić tylko oni sami.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni4_1>>
 ->Ich relacja to nie twoja sprawa.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
-->Marnujesz swój czas
+->Marnujesz swój czas.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
 ->Nic tutaj nie zdziałasz.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni4_1>>
 ===
 
 title: M15_DebataZielieni4_1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu nic nie robić.
 	<<jump M15_DebataZielieni5>>
 ===
 title: M15_DebataZielieni4_2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nic nie rozumiesz. W ogóle ich nie znasz. Wszystko poszło właśnie o Perełkę, głupku.
 	<<jump M15_DebataZielieni5>>
 ===
 
 title: M15_DebataZielieni5
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angry">>
 ->Wystarczy zmusić ich do rozmowy.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
 ->Możemy spróbować porozmawiać z Robertem.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni5_1>>
 ->Skupiasz się na złym problemie dzieciaku.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
 ->Rób za mediatora.
+	<<ChangeDebatePlayerIcon DebatePlayer "understamdtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni5_1>>
 ->Nie możesz naprawiać zabawek innych dzieci.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
 ===
 
 title: M15_DebataZielieni5_1
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: Skoro uważasz, że to pomoże… 
 	<<Ending PointMeter>>
 ===
 title: M15_DebataZielieni5_2
 ---
+<<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
 	<<Ending PointMeter>>
 ===
@@ -175,21 +227,37 @@ title: M15_DebataZielieniPoDebata
 ---
 <<debateWon Zielony>>
 <<camShake CinemachineCameraGateAndForest>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
 
+<<ChangeIcon Icons "Viri" "angry">>
 Viri: Może to po prostu nieporozumienie.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Jestem pewien, że kiedy poznamy obie strony historii, zaraz  zrozumiemy o co dokładnie chodzi i znajdziemy jakieś rozwiązanie.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "happy">>
 Viri: A co z Perełką?
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Na pewno pomoże uspokoić Liv.
 
 Bohater: Może damy jej go razem z Robertem? 
 
 Bohater: Będzie to dobry prezent na pogodzenie.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "happy">>
 Viri: Dobrze!
+<<HideIcon Icons>>
 
 <<zielonywygranadebata Dialogi>> 
 <<playBlueprintDialGreen Dialogi>>

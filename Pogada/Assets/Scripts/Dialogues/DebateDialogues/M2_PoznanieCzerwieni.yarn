@@ -1,6 +1,7 @@
 ﻿title: M2_PoznanieCzerwieni
 ---
 <<voiceline Czerwony 15>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Przeprosiłem ją tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
 
 <<voiceline Czerwony 16>>
@@ -10,15 +11,19 @@ Robert: A potem zaczęła kłamać mi prosto w twarz.
 Robert: Nie jestem żadnym kradziejem!
 
 <<voicelineEnd Czerwony>>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater:  Czy to cię tak zdenerwowało?
 
 <<voiceline Czerwony 18>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ja nie kradnę. I nie kłamię!
 
 <<voicelineEnd Czerwony>>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: Wierzę ci. 
 
 <<voiceline Czerwony 19>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
 <<UpdateDebateNumber PointMeter>>
 	<<jump M2_PoznanieCzerwieni1>>
@@ -27,18 +32,23 @@ Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
 title: M2_PoznanieCzerwieni1
 ---
 ->Jak zaczęło się to zamieszanie?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Oddaj Liv jej pluszaka.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Czemu ukradłeś Perełkę?
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Jak to było z tym pluszakiem?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Po co brudziłeś Perełkę?
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ===
@@ -46,6 +56,7 @@ title: M2_PoznanieCzerwieni1
 title: M2_PoznanieCzerwieni1_1
 ---
 <<voiceline Czerwony 20>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pobrudziłem, przypadek!
 	<<jump M2_PoznanieCzerwieni2>>
 ===
@@ -53,6 +64,7 @@ Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pob
 title: M2_PoznanieCzerwieni1_2
 ---
 <<voiceline Czerwony 21>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A Liv nie słucha.
 	<<jump M2_PoznanieCzerwieni2>>
 ===
@@ -60,18 +72,23 @@ Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba!
 title: M2_PoznanieCzerwieni2
 ---
 ->Czemu jeszcze nie powiedziałeś tego Liv?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Może wytłumaczymy to Liv razem?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ->Specjalnie czy nie, zepsułeś jej zabawkę.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Powiedz to Liv.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Ja mogę z nią porozmawiać.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ===
@@ -79,6 +96,7 @@ title: M2_PoznanieCzerwieni2
 title: M2_PoznanieCzerwieni2_1
 ---
 <<voiceline Czerwony 22>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
 	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
 ===
@@ -86,6 +104,7 @@ Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
 title: M2_PoznanieCzerwieni2_2
 ---
 <<voiceline Czerwony 23>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
 	<<Jab Dialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
 ===
@@ -107,18 +126,23 @@ Viri: Przestań krzyczeć!
 title: M2_PoznanieCzerwieni3
 ---
 ->Powinieneś pogodzić się z tym, że ci nie wierzy.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może jesteś za mało przekonujący.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Mogła nie uwierzyć w złości, czynami możesz ją przekonać.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ->Ciężko uwierzyć bez dowodów.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może uwierzyć grupie.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ===
@@ -126,6 +150,7 @@ title: M2_PoznanieCzerwieni3
 title: M2_PoznanieCzerwieni3_1
 ---
 <<voiceline Czerwony 24>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kłamczuchą!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
@@ -133,6 +158,7 @@ Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kł
 title: M2_PoznanieCzerwieni3_2
 ---
 <<voiceline Czerwony 25>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
@@ -140,18 +166,23 @@ Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłam
 title: M2_PoznanieCzerwieni4
 ---
 ->Któreś z was nie mówi prawdy, to pewne.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->Mówiła, że rozbiłeś statuę ze złości.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Miała rację, że psujesz rzeczy, jak się złościsz.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->Wspominała, że nie radzisz sobie ze złością.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Nie unoś się.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ===
@@ -159,6 +190,7 @@ title: M2_PoznanieCzerwieni4
 title: M2_PoznanieCzerwieni4_1
 ---
 <<voiceline Czerwony 26>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
@@ -166,6 +198,7 @@ Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mn
 title: M2_PoznanieCzerwieni4_2
 ---
 <<voiceline Czerwony 27>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i cała reszta!
 	<<Jab Dialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
@@ -188,6 +221,7 @@ Viri: Przestań krzyczeć!
 title: M2_C_Jab_1_1
 ---
 <<voiceline Czerwony 28>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 	<<jump M2_PoznanieCzerwieni5>>
 ===
@@ -195,6 +229,7 @@ Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 title: M2_C_Jab_1_2
 ---
 <<voiceline Czerwony 29>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 	<<jump M2_PoznanieCzerwieni5>>
 ===
@@ -202,18 +237,23 @@ Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 title: M2_PoznanieCzerwieni5
 ---
 ->Wydajesz się bardzo przeżywać strach innych dzieci.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Wydaje mi się, że kłamiesz i cię to stresuje.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Liv chyba miała rację.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Nie ma nic złego w tym, że się złościsz.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Zniszczyłeś pluszaka, masz za swoje.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ===
@@ -221,6 +261,7 @@ title: M2_PoznanieCzerwieni5
 title: M2_PoznanieCzerwieni5_1
 ---
 <<voiceline Czerwony 30>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: ...
 	<<Ending PointMeter>>
 ===
@@ -228,6 +269,7 @@ Robert: ...
 title: M2_PoznanieCzerwieni5_2
 ---
 <<voiceline Czerwony 31>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To nie tak, że chcę taki być!
 	<<Ending PointMeter>>
 ===
