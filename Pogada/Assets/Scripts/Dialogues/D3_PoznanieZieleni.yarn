@@ -1,5 +1,6 @@
 ﻿title: D3_PoznanieZieleni
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
@@ -72,4 +73,5 @@ Dziecko: Możesz próbować…
 <<HideIcon Icons>>
 <<unblockPlayerMovement Dialogi>>
 <<granatOdpalDialog Dialogi>>
+<<EnableColliders StateManager>>
 ===

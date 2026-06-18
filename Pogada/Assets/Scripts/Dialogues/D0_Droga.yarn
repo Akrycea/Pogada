@@ -1,5 +1,6 @@
 ﻿title: D0_Droga
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
@@ -18,4 +19,5 @@ Bohater: Oby bogowie mnie wysłuchali.
 Bohater: Już tęsknię za rodziną.
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

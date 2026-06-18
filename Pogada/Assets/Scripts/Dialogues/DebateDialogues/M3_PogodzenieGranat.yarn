@@ -1,17 +1,22 @@
 ﻿title: M3_PogodzenieGranat
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 Liv: Mój kochany Perełka!
 
 Liv: I jeszcze go pan wyczyścił!
 
 Liv: Hurra!
 
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: To Viri wyczyścił Perełkę, jemu należą się za to podziękowania.
 
+<<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 Liv: Viri?
 
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 Liv: Chwila, nie pozwoliłam ci dotykać pana Perełki!
 
+<<ChangeDebateIcon DebateChildren "Liv" "angry">>
 Viri: Ja… Ja wiem, ale, ale chciałem  tylko pomóc…
 
 Viri: To… To ja zabrałem ci pana Perełkę jak nie patrzyłaś!
@@ -26,188 +31,258 @@ Robert: Mówiłem, że nie dotykałem Perełki.
 title: M3_PogodenieGranat1
 ---
 ->Robert nie kłamał podczas waszej kłótni.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Wygląda na to, że doszło do nieporozumienia.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Niepotrzebnie przezywałaś brata.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->Przestańcie się skupiać na pluszaku.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->Robertowi należą się przeprosiny.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ===
 
 title: M3_PogodzenieGranat_1
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Liv: No i? Pobrudzenie Perełki to i tak jego wina.
 	<<Jab Dialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
 title: M3_PogodzenieGranat_2
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Liv: Perełka jest najważniejszą częścią tej rodziny! Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
 	<<Jab Dialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
 title:M3_C_Jab_1_1
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Ribert" "sad">>
+<<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: No przepraszam bardzo za ubrudzenie Perełki. Jeszcze czegoś?
+	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat2>>
 ===
 
 title:M3_C_Jab_1_2
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Robert" "angry">>
+<<ChangeDebateIcon DebateChildren "Liv" "angry">>
 Robert: Widzi pan? To jak rozmowa ze ścianą. Przepraszam, słyszysz głuchoto?
+	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat2>>
 ===
 
 title: M3_PogodzenieGranat2
 ---
 ->Czy przeprosił cię za to?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Sama mówiłaś, że Robert wyraził skruchę.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Wybacz mu i po problemie.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Już prowadziliście tą rozmowę.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Przeprosił, więc jest uniewinniony.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ===
 
 title: M3_PogodzenieGranat2_1
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Liv: Tylko dlatego, że mama go tak nauczyła. Nigdy nie przeprasza z serduszka, jak się powinno.
 	<<jump M3_PogodzenieGranat3>>
 ===
 
 title: M3_PgodzenieGranat2_2
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Liv: Nie wybaczę komuś, kto mówi przeprosiny na odwal! Niech znowu zamknie się w swoim brzydkim domku.
 	<<jump M3_PogodzenieGranat3>>
 ===
 title: M3_PogodzenieGranat3
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Zakładanie intencji innych może być mylące.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->Robert starał się poprawnie przeprosić na własny sposób.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->Przeprosiny to przeprosiny.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Nie wiesz przecież, co się dzieje w jego głowie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Powinnaś ufać mu bezgranicznie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ===
 
 title: M3_PogodzenieGranat3_1
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
 	<<Jab Dialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
 
 title: M3_PogodzenieGranat3_2
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
 	<<Jab Dialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
 
 title:M3_C_Jab_2_1
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Robert" "sad">>
+<<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: To przepraszam! Rozumiesz, przepraszam, nie chciałem, przestań o tym gadać! Naprawdę przepraszam.
+	<<HideIcon Icons>>
 	<<Jab Dialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
 ===
 
 title:M3_C_Jab_2_2
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Robert" "angry">>
+<<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: Przepraszam, przepraszam, przepraszam! Rozumiesz? Przepraszam! Dostałaś swoje przeprosiny, daj mi spokój!
+	<<HideIcon Icons>>
 	<<Jab Dialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
 ===
 
 title:M3_Z_Jab_1_1
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "angry">>
 Viri: Skoro przeprosił, to się liczy! Musisz mu uwierzyć, sprójrz na niego.
+	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat4>>
 ===
 
 title:M3_Z_Jab_1_2
 ---
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
 Viri: Liv odpuść już proszę. 
+	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat4>>
 ===
 
 title: M3_PogodzenieGranat4
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Mówił szczerze, złościł się, bo mu nie ufałaś.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Nikt nie lubi, jak nazywa się go kłamczuchem.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Też bym się zezłościł na jego miejscu.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Skoro sobie nie ufacie, to nie ma o czym mówić.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Odwracasz uwagę od rzeczywistego problemu.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ===
 
 title: M3_PogodzenieGranat4_1
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rzeźbą. Wredzioch.
 	<<jump M3_PogodzenieGranat5>>
 ===
 
 title: M3_PogodzenieGranat4_2
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozwalać rzeczy gzieś indziej. Z dala ode mnie.
 	<<jump M3_PogodzenieGranat5>>
 ===
 title: M3_PogodzenieGranat5
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Nie zrobił tego, aby cię wystraszyć.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Widać, że żałuje, daj mu szansę.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Jego złość jest osobnym problemem.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Zareagował poprawnie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Powinnaś przestać się na tym skupiać.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ===
 
 title: M3_PogodzenieGranat5_1
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę. 
 	<<Ending PointMeter>>
 ===
 
 title: M3_PogodzenieGranat5_2
 ---
+<<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Liv: Ugh, nie chce więcej widzieć jego wybuchów straszności.
 	<<Ending PointMeter>>
 ===
@@ -217,44 +292,74 @@ title: M3_PogodzenieGranatPoDebata
 ---
 <<debateWon Granat>>
 <<camShake CinemachineCameraVillage>>
+<<DisableColliders StateManager>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Liv" "sad">>
 Liv: I tak nie chce mi się już być zła.
 
+<<ChangeIcon Icons "Robert" "sad">>
 Robert: …Dziękuję.
 
+<<ChangeIcon Icons "Robert" "happy">>
 Robert: Nie chciałem pobrudzić Perełki.
 
+<<ChangeIcon Icons "Liv" "angry">>
 Liv: Wierzę ci już, wierzę!
 
+<<ChangeIcon Icons "Viri" "sad">>
 Viri: To, ten, jesteśmy wszyscy pogodzeni?
 
+<<ChangeIcon Icons "Robert" "happy">>
 Robert: Nikt się z tobą nie kłócił.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Cieszę się, że wszyscy się już dogadują.
 
 Bohater: Robert, pamiętaj proszę o czym gadaliśmy wcześniej.
 
 Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Liv" "happy">>
 Liv: O czym gadaliście? O czym, o czym?
 
+<<ChangeIcon Icons "Robert" "happy">>
 Robert: Pan powiedział, że jest okej, jak jestem zły. Tylko muszę poćwiczyć nie wybuchanie.
 
+<<ChangeIcon Icons "Liv" "sad">>
 Liv: Ty też masz wtedy takie wrażenie? Że wybuchniesz?
 
+<<ChangeIcon Icons "Robert" "sad">>
 Robert: Też?
 
+<<ChangeIcon Icons "Liv" "happy">>
 Liv: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
 
+<<ChangeIcon Icons "Viri" "happy">>
 Viri: A, a ja też mogę?
 
+<<ChangeIcon Icons "Liv" "happy">>
 Liv: Jasne!
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Zanim mi się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dziękuję.
+<<HidePlayerIcon IconsPlayer>>
 <<thankYouScreen Granat>>
 <<granatwygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

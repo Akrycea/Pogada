@@ -1,5 +1,6 @@
 ﻿title: D4_PoznanieGranat
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
@@ -107,12 +108,14 @@ Liv: Nie, nic takiego mu nie powiedziałam. Ale straszny z niego mazgaja, to pew
 Bohater: No dobrze, z nim też porozmawiam.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Przy okazji, czy wiesz może gdzie pobiegł Aureus?
+Bohater: Przy okazji, czy wiesz może gdzie pobiegł Vus?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
-Liv: Pewnie kryje się gdzieś z Lus.
+Liv: Liv: Chyba raczej Aureus, chyba że mu się znowu odmieniło i wrócił do starego imienia.
+
+Liv: Violaceus strasznie się go czepia cały czas, pewnie kryje się gdzieś z Lus.  Pewnie kryje się gdzieś z Lus.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
@@ -141,4 +144,5 @@ Bohater: No tak…
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
 <<zielony2dialog Dialogi>>
+<<EnableColliders StateManager>>
 ===

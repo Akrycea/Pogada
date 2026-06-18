@@ -1,5 +1,6 @@
 ﻿title: D8_PrzekonanieCzerwieni
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
@@ -18,4 +19,5 @@ Liv: Nie teraz powiedziałam!
 Liv: Niech pan je połapie!
 <<HideIcon Icons>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

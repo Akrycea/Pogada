@@ -1,5 +1,6 @@
 ﻿title: D7_PoznanieCzerwieni
 ---
+<<DisableColliders StateManager>>
 //voiceline nie dziala?
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
@@ -39,7 +40,7 @@ Bohater: Chcielibyśmy dowiedzieć się, jak ta sytuacja wyglądała z twojej pe
 Viri: Mógłbyś, em, oddać Perełkę Liv? Teraz już jest czysty i na pewno ci wybaczy…
 
 <<ChangeIcon Icons "Robert" "happy">>
-<<voiceline Czerwony 3>>
+//<<voiceline Czerwony 3>>
 Robert: Ja nie chcę jej już widzieć. Sam jej go oddaj.
 
 <<ChangeIcon Icons "Viri" "sad">>
@@ -64,4 +65,5 @@ Robert: Nie chcę o tym gadać.
 <<HideIcon Icons>>
 <<unblockPlayerMovement Dialogi>>
 <<czerwonyBudowanieZdan Dialogi>>
+<<EnableColliders StateManager>>
 ===

@@ -54,11 +54,11 @@ public class DebateManager : MonoBehaviour
         }
         else if (debateScript.debateNumber == 2)
         {
-            debateDial.StartDialogue("M15_PomocZieleni");
+            debateDial.StartDialogue("M2_PoznanieCzerwieni");
         }
         else if (debateScript.debateNumber == 3)
         {
-            debateDial.StartDialogue("M15_PomocZieleni");
+            debateDial.StartDialogue("M3_PogodzenieGranat");
         }
     }
 

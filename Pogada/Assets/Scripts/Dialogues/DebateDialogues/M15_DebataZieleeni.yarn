@@ -225,10 +225,11 @@ Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogo
 
 title: M15_DebataZielieniPoDebata
 ---
-<<debateWon Zielony>>
-<<camShake CinemachineCameraGateAndForest>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<debateWon Zielony>>
+<<camShake CinemachineCameraGateAndForest>>
+<<DisableColliders StateManager>>
 Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
 
 <<ChangeIcon Icons "Viri" "angry">>
@@ -263,4 +264,5 @@ Viri: Dobrze!
 <<playBlueprintDialGreen Dialogi>>
 <<RunAway Zielony>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

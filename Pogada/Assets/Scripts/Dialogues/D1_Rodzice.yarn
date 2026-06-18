@@ -1,5 +1,6 @@
 ﻿title: D1_Rodzice
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Slonce" "angry">>
@@ -84,4 +85,5 @@ Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory. Te�
 <<IconsOff Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

@@ -1,5 +1,6 @@
 title: D2_PoznanieFiolet
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<longCamShakeSTART CinemachineCameraGateAndForest>>
@@ -44,7 +45,7 @@ Bohater: Chwila, chwila, wydaje mi się, że kłócił się z tobą, nie ze mną
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Dziecko2: Ta, ode mnie by nie uciekł!
+Dziecko2: Ta, ode mnie by nie uciekł! Teraz pewnie ukrywa się gdzieś z Lus!
 <<HideIcon Icons>>
 
 //tu dac odpalanie sie debaty fiolet1
@@ -54,4 +55,5 @@ Bohater: Nieważne, muszę pójść go znaleźć.
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
 <<UpdateDebateNumber PointMeter>>
+<<EnableColliders StateManager>>
 ===

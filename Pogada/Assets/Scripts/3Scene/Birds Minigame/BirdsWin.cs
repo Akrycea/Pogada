@@ -22,7 +22,7 @@ public class BirdsWin : MonoBehaviour
         birdsWin++;
 
         //wasnt working,commenting other ifs is a temporary solution for the demo
-        if (birdsWin == 5)// && Input.GetMouseButton(0) == false && dialoguePlayed == false)
+        if (birdsWin == 5)// && Input.GetMouseButton(0) == false) //&& dialoguePlayed == false)
         {
             Debug.Log("birds won");
             dialogueRunner.StartDialogue("D3_PtakiWygrana");

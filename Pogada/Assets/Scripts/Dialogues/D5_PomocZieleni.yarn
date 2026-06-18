@@ -1,5 +1,6 @@
 ﻿title: D5_PomocZieleni
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
@@ -81,4 +82,5 @@ Viri: To wszystko moja wina…
 Bohater: Nie przejmuj się. Ja się tym zajmę.
 <<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
+<<EnableColliders StateManager>>
 ===
