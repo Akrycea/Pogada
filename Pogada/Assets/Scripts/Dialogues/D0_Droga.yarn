@@ -3,13 +3,17 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 0>>
 Bohater: Nigdy nie marzyła mi się taka wyprawa.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 1>>
 Bohater: Tyle lat w spokojnej krainie, zdążyłem się przyzwyczaić.
 
+<<voiceline Player 2>>
 Bohater: Oby bogowie mnie wysłuchali.
 
+<<voiceline Player 3>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Już tęsknię za rodziną.
 <<HidePlayerIcon IconsPlayer>>
