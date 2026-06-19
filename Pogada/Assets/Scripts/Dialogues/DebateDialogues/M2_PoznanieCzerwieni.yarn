@@ -120,6 +120,7 @@ title: M2_Z_Jab_1_1
 ---
 <<voicelineEnd Czerwony>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
+	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
@@ -127,6 +128,7 @@ title: M2_Z_Jab_1_2
 ---
 <<voicelineEnd Czerwony>>
 Viri: Przestań krzyczeć!
+	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
@@ -221,6 +223,7 @@ title: M2_Z_Jab_2_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
+	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
 ===
@@ -231,6 +234,7 @@ title: M2_Z_Jab_2_2
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angru">>
 Viri: Przestań krzyczeć!
+	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
@@ -241,6 +245,7 @@ title: M2_C_Jab_1_1
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
+	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 
@@ -250,6 +255,7 @@ title: M2_C_Jab_1_2
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
+	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 

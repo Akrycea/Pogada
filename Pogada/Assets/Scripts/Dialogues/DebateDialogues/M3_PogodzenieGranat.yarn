@@ -74,6 +74,7 @@ title:M3_C_Jab_1_1
 <<ChangeIcon Icons "Ribert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: No przepraszam bardzo za ubrudzenie Perełki. Jeszcze czegoś?
+	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat2>>
 ===
@@ -84,6 +85,7 @@ title:M3_C_Jab_1_2
 <<ChangeIcon Icons "Robert" "angry">>
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 Robert: Widzi pan? To jak rozmowa ze ścianą. Przepraszam, słyszysz głuchoto?
+	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat2>>
 ===
@@ -174,6 +176,7 @@ title:M3_C_Jab_2_1
 <<ChangeIcon Icons "Robert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: To przepraszam! Rozumiesz, przepraszam, nie chciałem, przestań o tym gadać! Naprawdę przepraszam.
+	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
 ===
@@ -184,6 +187,7 @@ title:M3_C_Jab_2_2
 <<ChangeIcon Icons "Robert" "angry">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 Robert: Przepraszam, przepraszam, przepraszam! Rozumiesz? Przepraszam! Dostałaś swoje przeprosiny, daj mi spokój!
+	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
 ===
@@ -193,6 +197,7 @@ title:M3_Z_Jab_1_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angry">>
 Viri: Skoro przeprosił, to się liczy! Musisz mu uwierzyć, sprójrz na niego.
+	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat4>>
 ===
@@ -202,6 +207,7 @@ title:M3_Z_Jab_1_2
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 Viri: Liv odpuść już proszę. 
+	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat4>>
 ===

@@ -20,7 +20,7 @@ public class FishWon : MonoBehaviour
     {
         allFish++;
 
-        if (allFish == 4)
+        if (allFish == 5)
         {
             allFishFound = true;
             stateManager.FishMinigameWon = true;
