@@ -1628,6 +1628,8 @@ MonoBehaviour:
   stateManager: {fileID: 0}
   dialogueRunner: {fileID: 0}
   debateManager: {fileID: 0}
+  debateSlider: {fileID: 0}
+  enemySlider: {fileID: 0}
 --- !u!1 &222672881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10645,7 +10647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: startNode
-      value: TESTJAB
+      value: D2_PoznanieFiolet_2
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: yarnProject
@@ -18474,7 +18476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1926531653
 MonoBehaviour:
   m_ObjectHideFlags: 0
