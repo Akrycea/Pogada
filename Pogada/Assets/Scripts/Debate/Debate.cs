@@ -28,6 +28,7 @@ public class Debate : MonoBehaviour
         {
             Debug.Log("you won");
             //checks which debate is active and activates the appropriate color
+
             if(debateNumber == 1)
             {
                 stateManager.Violaceus1DebateWon = true;
@@ -94,6 +95,7 @@ public class Debate : MonoBehaviour
             playerMovement.canPlayerMove = true;
         }
         YourPoints = 0;
+        UpdateDebateSliders();
     }
 
     //updates the debate number so the debate script knows WHICH debate is currently playing
