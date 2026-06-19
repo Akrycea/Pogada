@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 public class Debate : MonoBehaviour
@@ -16,6 +17,9 @@ public class Debate : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     public DebateManager debateManager;
+
+    public Slider debateSlider;
+    public Slider enemySlider;
 
     [YarnCommand("Ending")]
     public void Ending()
@@ -105,27 +109,35 @@ public class Debate : MonoBehaviour
     [YarnCommand("GoodChoice")]
     public void GoodChoice()
     {
+        UpdateDebateSliders();
         YourPoints += 1; 
     }
 
     [YarnCommand("BadChoice")]
     public void BadChoice()
     {
+        UpdateDebateSliders();
         EnemyPoints += 1;
     }
 
     [YarnCommand("VGoodChoice")]
     public void VGoodChoice()
     {
+        UpdateDebateSliders();
         YourPoints += 2;
     }
 
     [YarnCommand("VBadChoice")]
     public void VBadChoice()
     {
+        UpdateDebateSliders();
         EnemyPoints += 2;
     }
 
+    public void UpdateDebateSliders()
+    {
+        debateSlider.value = YourPoints;
+        enemySlider.value = EnemyPoints;
+    }
 
-    
 }
