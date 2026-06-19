@@ -238,6 +238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialRunner: {fileID: 1051193667}
   stateManager: {fileID: 0}
+  debateDial: {fileID: 0}
+  debateManager: {fileID: 0}
+  playerMovement: {fileID: 0}
   Blueprints: {fileID: 0}
   Czerwony: {fileID: 0}
   GranatDrzwi: {fileID: 0}
@@ -1618,11 +1621,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e2920b42e9aca4db184c5a7ffcc876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
   YourPoints: 0
   EnemyPoints: 0
   debateNumber: 0
   stateManager: {fileID: 0}
   dialogueRunner: {fileID: 0}
+  debateManager: {fileID: 0}
 --- !u!1 &222672881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,7 +5383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6d84f7f8b63c14e9300d5d603715da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground: {fileID: 416747166}
   sunParts:
   - {fileID: 1756942790}
   - {fileID: 1875807030}
@@ -5387,10 +5391,8 @@ MonoBehaviour:
   moonParts: []
   sunNumber: 0
   moonNumber: 0
-  SunHead: {fileID: 0}
-  MoonHead: {fileID: 0}
-  Czerwony: {fileID: 0}
   stateManager: {fileID: 0}
+  Czerwony: {fileID: 0}
 --- !u!1 &622830151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7500,8 +7502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 15
-  LBPressed: 0
-  RBPressed: 0
+  canPlayerMove: 1
   slopeCheckDistance: 0.9
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
@@ -12184,6 +12185,7 @@ MonoBehaviour:
   arrayNumber: 0
   turtleMovement: {fileID: 0}
   zielonyDebataPlayer: {fileID: 0}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &1293313931
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18467,7 +18469,7 @@ GameObject:
   - component: {fileID: 1926531654}
   - component: {fileID: 1926531653}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Jab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
