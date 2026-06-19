@@ -20415,7 +20415,6 @@ GameObject:
   - component: {fileID: 567737026}
   - component: {fileID: 567737028}
   - component: {fileID: 567737027}
-  - component: {fileID: 567737029}
   m_Layer: 5
   m_Name: Bird (1)
   m_TagString: Untagged
@@ -20480,23 +20479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567737025}
   m_CullTransparentMesh: 1
---- !u!114 &567737029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567737025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  sprites:
-  - {fileID: 13943903728197553, guid: 8d2724f28fe4609489690c3282e8cce8, type: 3}
-  - {fileID: 13943903728197553, guid: 8d2724f28fe4609489690c3282e8cce8, type: 3}
-  - {fileID: 13943903728197553, guid: 8d2724f28fe4609489690c3282e8cce8, type: 3}
 --- !u!1 &571799496
 GameObject:
   m_ObjectHideFlags: 0
@@ -21110,7 +21092,6 @@ GameObject:
   - component: {fileID: 579733056}
   - component: {fileID: 579733058}
   - component: {fileID: 579733057}
-  - component: {fileID: 579733059}
   m_Layer: 5
   m_Name: Bird (3)
   m_TagString: Untagged
@@ -21175,23 +21156,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579733055}
   m_CullTransparentMesh: 1
---- !u!114 &579733059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579733055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  sprites:
-  - {fileID: -3189541678697732831, guid: cca0d2208c0f5344f990ecccacd9b88b, type: 3}
-  - {fileID: -3189541678697732831, guid: cca0d2208c0f5344f990ecccacd9b88b, type: 3}
-  - {fileID: -1501240970721481947, guid: 908a42cd7b15c714493b96eeabc71fc3, type: 3}
 --- !u!1 &581246376
 GameObject:
   m_ObjectHideFlags: 0
@@ -30298,7 +30262,6 @@ GameObject:
   - component: {fileID: 858940912}
   - component: {fileID: 858940914}
   - component: {fileID: 858940913}
-  - component: {fileID: 858940915}
   m_Layer: 5
   m_Name: Bird (2)
   m_TagString: Untagged
@@ -30363,23 +30326,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858940911}
   m_CullTransparentMesh: 1
---- !u!114 &858940915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858940911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  sprites:
-  - {fileID: -2119394297033011603, guid: 078a5e5512dc212468d082bf9c20c1e4, type: 3}
-  - {fileID: -2119394297033011603, guid: 078a5e5512dc212468d082bf9c20c1e4, type: 3}
-  - {fileID: -2119394297033011603, guid: 078a5e5512dc212468d082bf9c20c1e4, type: 3}
 --- !u!1 &861282298
 GameObject:
   m_ObjectHideFlags: 0
@@ -51045,7 +50991,6 @@ GameObject:
   - component: {fileID: 1350148951}
   - component: {fileID: 1350148953}
   - component: {fileID: 1350148952}
-  - component: {fileID: 1350148954}
   m_Layer: 5
   m_Name: Bird (4)
   m_TagString: Untagged
@@ -51110,23 +51055,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350148950}
   m_CullTransparentMesh: 1
---- !u!114 &1350148954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350148950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  sprites:
-  - {fileID: -2636316123870170325, guid: bbcd7b6d5508cc84dab410cecbf0c5f2, type: 3}
-  - {fileID: 7456699552378138022, guid: 3471e2efdcab7a04da0f14d56630cf75, type: 3}
-  - {fileID: 7456699552378138022, guid: 3471e2efdcab7a04da0f14d56630cf75, type: 3}
 --- !u!1 &1351904955
 GameObject:
   m_ObjectHideFlags: 0
@@ -69471,7 +69399,6 @@ GameObject:
   - component: {fileID: 1895531397}
   - component: {fileID: 1895531400}
   - component: {fileID: 1895531399}
-  - component: {fileID: 1895531398}
   m_Layer: 5
   m_Name: Bird (5)
   m_TagString: Untagged
@@ -69498,23 +69425,6 @@ RectTransform:
   m_AnchoredPosition: {x: -597.4849, y: -53.5019}
   m_SizeDelta: {x: 141.9737, y: 136.0837}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1895531398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895531396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateManager: {fileID: 905840117}
-  sprites:
-  - {fileID: -1778812390617171567, guid: c30065d03e125d44d9334a3518229a3c, type: 3}
-  - {fileID: -1778812390617171567, guid: c30065d03e125d44d9334a3518229a3c, type: 3}
-  - {fileID: 5826736274423642966, guid: a821e17ca80ecf44eb8a104a00cbb432, type: 3}
 --- !u!114 &1895531399
 MonoBehaviour:
   m_ObjectHideFlags: 0
