@@ -1,5 +1,6 @@
 using TMPro.Examples;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Yarn.Unity;
 
 public class StatueControl : MonoBehaviour
@@ -20,6 +21,19 @@ public class StatueControl : MonoBehaviour
     [SerializeField]
     private GameObject Czerwony;
 
+    public ShowBlueprints showBlueprints;
+
+
+    public void Update()
+    {
+        if (showBlueprints.done == true)
+        {
+            sunParts[0].SetActive(true);
+            moonParts[0].SetActive(true);
+            sunParts[0].tag = "Free";
+            moonParts[0].tag = "Free";
+        }
+    }
     public void StatusSun()
     {
         if (sunParts[sunNumber].CompareTag("Free") && sunNumber < sunParts.Length)

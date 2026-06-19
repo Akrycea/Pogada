@@ -19509,6 +19509,7 @@ MonoBehaviour:
   moonNumber: 0
   stateManager: {fileID: 905840117}
   Czerwony: {fileID: 164577014}
+  showBlueprints: {fileID: 0}
 --- !u!1 &536311724
 GameObject:
   m_ObjectHideFlags: 0
@@ -28261,11 +28262,11 @@ GameObject:
   - component: {fileID: 798218960}
   m_Layer: 0
   m_Name: OGLegs
-  m_TagString: Free
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &798218954
 Transform:
   m_ObjectHideFlags: 0
@@ -37045,11 +37046,11 @@ GameObject:
   - component: {fileID: 991483161}
   m_Layer: 0
   m_Name: OGTorsoDown2
-  m_TagString: Free
+  m_TagString: Taken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &991483160
 Transform:
   m_ObjectHideFlags: 0
@@ -44403,6 +44404,7 @@ MonoBehaviour:
   - {fileID: -1182246150547011103, guid: 2c849e489c4dc8a4db9d407934c36592, type: 3}
   - {fileID: -362449857995124905, guid: e36b91dcbb73cb0488866fa97efec78b, type: 3}
   blueprintsUI: {fileID: 68235487}
+  done: 0
 --- !u!61 &1180005338
 BoxCollider2D:
   m_ObjectHideFlags: 0

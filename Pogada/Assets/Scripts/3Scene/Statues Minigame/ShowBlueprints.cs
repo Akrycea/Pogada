@@ -10,6 +10,8 @@ public class ShowBlueprints : MonoBehaviour
 
     public GameObject blueprintsUI;
 
+    public bool done = false;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -21,6 +23,7 @@ public class ShowBlueprints : MonoBehaviour
         {
             blueprintsUI.SetActive(false);
             spriteRenderer.sprite = spriteArray[1];
+            done = true;
         }
     }
 }
