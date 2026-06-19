@@ -11,9 +11,6 @@ public class BirdArguining : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     [SerializeField]
-    private GameObject birdsOnBranch;
-
-    [SerializeField]
     private GameObject birdCameraButton;
 
 
@@ -33,7 +30,6 @@ public class BirdArguining : MonoBehaviour
     public void BirdsArguning()
     {
         birdOnUI.SetActive(false);
-        //birdsOnBranch.SetActive(true);
         birdCameraButton.SetActive(true);
         gameObject.SetActive(false);
         minigame.SetActive(true);
