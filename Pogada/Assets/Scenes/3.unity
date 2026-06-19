@@ -5297,35 +5297,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358531, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 38.51
+      value: 1.9883182
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358531, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 12.22875
+      value: 2.3993654
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358531, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 6.9550843
+      value: 0.5745593
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358531, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -762
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358531, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 211
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986393358535, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 270316787}
     - target: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7a184148437294a7b8d96378a700727d, type: 3}
     - target: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986446477831, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_Sprite
@@ -10022,6 +10034,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &270316787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2958262986393358536, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 156005769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271712096
 GameObject:
   m_ObjectHideFlags: 0
@@ -51006,7 +51029,6 @@ MonoBehaviour:
   minigame: {fileID: 1802856946}
   Debata: {fileID: 1363406371}
   dialogueRunner: {fileID: 1748553146}
-  birdsOnBranch: {fileID: 0}
   birdCameraButton: {fileID: 305539691}
 --- !u!114 &1334272407
 MonoBehaviour:
@@ -62608,7 +62630,7 @@ MonoBehaviour:
   WinObject: place1
   currentPosition: {x: 21.77001, y: 1.7900001, z: 9.725433}
   birdsWin: {fileID: 1802856947}
-  ChatBox: {fileID: 390049399}
+  ChatBox: {fileID: 1298119529}
 --- !u!50 &1691068072
 Rigidbody2D:
   serializedVersion: 5
