@@ -17,6 +17,11 @@ public class TurnOffCollider : MonoBehaviour
                 continue; // Skip this collider and move to the next one
             }
 
+            if (col.CompareTag("puzzle"))
+            {
+                continue; // Skip this collider and move to the next one
+            }
+
             //Disable all other colliders
             col.enabled = false;
         }

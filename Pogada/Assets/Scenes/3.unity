@@ -2801,7 +2801,7 @@ GameObject:
   - component: {fileID: 67342287}
   m_Layer: 0
   m_Name: MTorsoDown
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!60 &67342287
 PolygonCollider2D:
@@ -14623,7 +14623,7 @@ GameObject:
   - component: {fileID: 387872945}
   m_Layer: 0
   m_Name: MTorsoDown2
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14749,7 +14749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!212 &387872948
 SpriteRenderer:
@@ -23668,7 +23668,7 @@ GameObject:
   - component: {fileID: 632645372}
   m_Layer: 0
   m_Name: TorsoDown
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23712,7 +23712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!212 &632645370
 SpriteRenderer:
@@ -40323,7 +40323,7 @@ GameObject:
   - component: {fileID: 1079451668}
   m_Layer: 0
   m_Name: TorsoUp
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40367,7 +40367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!212 &1079451666
 SpriteRenderer:
@@ -40893,7 +40893,7 @@ GameObject:
   - component: {fileID: 1099904044}
   m_Layer: 0
   m_Name: Legs
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40937,7 +40937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!212 &1099904042
 SpriteRenderer:
@@ -46824,7 +46824,7 @@ GameObject:
   - component: {fileID: 1243594311}
   m_Layer: 0
   m_Name: MHead
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46938,7 +46938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!60 &1243594311
 PolygonCollider2D:
@@ -47122,7 +47122,7 @@ GameObject:
   - component: {fileID: 1253369380}
   m_Layer: 0
   m_Name: MTorsoUp
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47236,7 +47236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!60 &1253369380
 PolygonCollider2D:
@@ -67125,7 +67125,7 @@ Camera:
   far clip plane: 1000
   field of view: 90
   orthographic: 1
-  orthographic size: 3.8026316
+  orthographic size: 7.105263
   m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
@@ -72013,7 +72013,7 @@ GameObject:
   - component: {fileID: 1973423775}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72057,7 +72057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532056d38f3b4b2408df318b0f0d9f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeRigidBodyType: 1
+  ChangeRigidBodyType: 0
   AllowDrag: 1
 --- !u!212 &1973423773
 SpriteRenderer:
