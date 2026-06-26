@@ -20,16 +20,6 @@ public class BirdsWin : MonoBehaviour
     public void GoodSpot()
     {
         birdsWin++;
-
-        //wasnt working,commenting other ifs is a temporary solution for the demo
-        if (birdsWin == 5)// && Input.GetMouseButton(0) == false) //&& dialoguePlayed == false)
-        {
-            Debug.Log("birds won");
-            dialogueRunner.StartDialogue("D3_PtakiWygrana");
-            dialoguePlayed = true;
-            stateManager.BirdMinigameWon = true;
-
-        }
     }
 
     public void BadSpot()
@@ -41,5 +31,22 @@ public class BirdsWin : MonoBehaviour
     public void BlueprintsUI()
     {
        BlueprintUI.SetActive(true);
+    }
+
+    public void Update()
+    {
+
+        if (birdsWin == 5 && Input.GetMouseButton(0) == false && dialoguePlayed == false)
+        {
+            Debug.Log("birds won");
+            dialogueRunner.StartDialogue("D3_PtakiWygrana");
+            dialoguePlayed = true;
+            stateManager.BirdMinigameWon = true;
+
+            //turning it off so the if doesnt get checked after winning the minigame
+            //to save memory
+            gameObject.GetComponent<BirdsWin>().enabled = false;
+
+        }
     }
 }

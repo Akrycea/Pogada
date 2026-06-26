@@ -4,25 +4,31 @@
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Slonce" "angry">>
+<<voiceline Słońce 0>>
 Słońce: Ah! Nie zniosę tego ani chwili dłużej! Ciągły krzyk i lament...
 
 <<ChangeIcon Icons "Ksiezyc" "sad">>
+<<voicelineEnd Słońce>>
 <<voiceline Księżyc 0>>
 Księżyc: Cóż poradzić? Jest ich po prostu za dużo.
 
 <<ChangeIcon Icons "Slonce" "sad">>
 <<voicelineEnd Księżyc>>
+<<voiceline Słońce 1>>
 Słońce: Nie wiem, nie wiem. Może ja muszę po prostu na jakiś czas wyjechać.
 
 <<ChangeIcon Icons "Ksiezyc" "angry">>
+<<voicelineEnd Słońce>>
 <<voiceline Księżyc 1>>
 Księżyc: Przecież sam sobie z nimi nie poradzę, oni się cały czas kłócą!
 
 <<ChangeIcon Icons "Slonce" "angry">>
 <<voicelineEnd Księżyc>>
+<<voiceline Słońce 2>>
 Słońce: Ja cały czas to znoszę! Jak zwykle, wszyscy przeciwko mnie.
 
 <<ChangeIcon Icons "Ksiezyc" "sad">>
+<<voicelineEnd Słońce>>
 <<voiceline Księżyc 2>>
 Księżyc: Nie przeciwko tobie, kochanie…
 
@@ -34,17 +40,22 @@ Księżyc: Chwila, a ktoś ty? Cóż śmiertelnik robi w naszym boskim domu? Zgu
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Księżyc>>
+<<voiceline Player 0>>
 Bohater: Bogowie słońca i księżyca! Czy nie widzicie, że całemu światu odebrało kolory? 
 
 <<ChangePlayerIcon IconsPlayer "angry">>
+<<voiceline Player 1>>
 Bohater: Dzieci się boją, a dorośli nie mogą ogórka od marchewki odróżnić! Musicie to naprawić!
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Slonce" "sad">>
+<<voiceline Słońce 3>>
 Słońce: Kolory? Oh nie, ja już nie mam na nie siły.
 
 <<ChangeIcon Icons "Ksiezyc" "angry">>
+<<voicelineEnd Słońce>>
 <<voiceline Księżyc 4>>
 Księżyc: Ja się sam nie będę nimi zajmował! Jeśli ty masz od nich odpocząć, to i ja zamierzam.
 
@@ -58,18 +69,23 @@ Księżyc: Z dobroci naszych serc i z czystej woli boskiej, pozwalamy ci zająć
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Księżyc>>
+<<voiceline Player 2>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Słucham? 
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Slonce" "happy">>
+<<voiceline Słońce 4>>
 Słońce: Nie martw się, dzieci są nauczone, że miłość zawsze wskazuje dobrą drogę! Na pewno będą się zachowywać.
 
 <<ChangeIcon Icons "Slonce" "happy">>
+<<voiceline Słońce 5>>
 Słońce: W końcu, fajrant.
 
 <<ChangeIcon Icons "Ksiezyc" "happy">>
+<<voicelineEnd Słońce>>
 <<voiceline Księżyc 7>>
 Księżyc: Fajrant!
 <<RunAway Rodzice>>
@@ -78,10 +94,15 @@ Księżyc: Fajrant!
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Księżyc>>
 <<ChangePlayerIcon IconsPlayer "angry">>
+<<voiceline Player 3>>
 Bohater: Chwila, chwila! Nie możecie po prostu oddać mi swoich dzieci!
 
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory. Też zrobiłbym się szary, gdyby rodzice mnie zostawili.
+<<voiceline Player 4>>
+Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory. 
+
+<<voiceline Player 5>>
+Bohater: Też zrobiłbym się szary, gdyby rodzice mnie zostawili.
 <<IconsOff Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>

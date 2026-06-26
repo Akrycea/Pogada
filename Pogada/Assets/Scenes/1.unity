@@ -2671,6 +2671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 264848932}
   - component: {fileID: 264848931}
+  - component: {fileID: 264848933}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -2733,6 +2734,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264848933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264848930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff725b3c232e1084c86ded19d5d2ae66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &269234687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,7 +4648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 608130844}
   - component: {fileID: 608130845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gateStop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4651,7 +4664,7 @@ Transform:
   m_GameObject: {fileID: 608130843}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 0.71910095, z: -3.099245}
+  m_LocalPosition: {x: 3.46, y: 1.41, z: -3.099245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
