@@ -6777,13 +6777,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b830107406970648b82bc790fadc8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CloudMinigameWon: 0
   RiverMinigameWon: 0
   BirdMinigameWon: 0
   StatueMinigameWon: 0
   FishMinigameWon: 0
   OwlMinigameWon: 0
   GlassMinigameWon: 0
+  MyNewEnum: 0
   BirdCollected: 0
   FishCollected: 0
   BlueprintCollected: 0
@@ -7194,7 +7194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 2012318517}
-  cameraChange: {fileID: 0}
   cameraFreeMovement: 0
   OgHorizontalTargetDistance: 0
   OgVerticalTargetDistance: 0
@@ -15541,6 +15540,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
+  turnOffCollider: {fileID: 0}
 --- !u!1 &1152572356
 GameObject:
   m_ObjectHideFlags: 0
@@ -16708,7 +16716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialRunner: {fileID: 1635921403}
   stateManager: {fileID: 0}
-  sentenceBuilding: {fileID: 0}
+  debateDial: {fileID: 0}
+  debateManager: {fileID: 0}
+  playerMovement: {fileID: 0}
   Blueprints: {fileID: 0}
   Czerwony: {fileID: 0}
   GranatDrzwi: {fileID: 0}
@@ -22971,6 +22981,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  stateManager: {fileID: 0}
+  wygranaMinigierka: 0
+  budowanieZdan1: {fileID: 0}
+  budowanieZdan2: {fileID: 0}
+  budowanieZdan3: {fileID: 0}
+  debateWon: 0
+  playedDebates: 0
+  turnOffCollider: {fileID: 0}
 --- !u!1 &1667245042
 GameObject:
   m_ObjectHideFlags: 0
@@ -24145,11 +24164,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e2920b42e9aca4db184c5a7ffcc876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
   YourPoints: 0
   EnemyPoints: 0
   debateNumber: 0
   stateManager: {fileID: 0}
   dialogueRunner: {fileID: 0}
+  debateManager: {fileID: 0}
+  debateSlider: {fileID: 0}
+  enemySlider: {fileID: 0}
 --- !u!1 &1794654365
 GameObject:
   m_ObjectHideFlags: 0
@@ -27385,8 +27408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 15
-  LBPressed: 0
-  RBPressed: 0
+  canPlayerMove: 1
   slopeCheckDistance: 0.9
   noFriction: {fileID: 6200000, guid: f46738cf82c18ec4f8aac3eb5e5bb274, type: 2}
   fullFriction: {fileID: 6200000, guid: 0856fa1440b9b904dab2e473a3b65ef8, type: 2}
