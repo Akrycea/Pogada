@@ -4,24 +4,30 @@ using Yarn.Unity;
 
 public class CollectingOwl : MonoBehaviour
 {
-    //public GameObject OwlOnUI;
-
+    [SerializeField]
     private StateManager stateManager;
-    public OwlChangingSprite Owl;
+    [SerializeField]
+    private OwlChangingSprite Owl;
+    [SerializeField]
+    private GameObject owlMinigame;
+
+    [SerializeField]
+    private DebataPlayer debataPlayer;
 
     //public ClickDialogue dialogue;
 
     void Start()
     {
-        //nie wiem jak inczej zrobic reference do innej sceny
-        stateManager = GameObject.Find("StateManager").GetComponent<StateManager>();
-        Owl = GameObject.Find("Player").GetComponent<OwlChangingSprite>();
+
     }
 
     private void OnMouseDown()
     {
         gameObject.SetActive(false);
         stateManager.OwlCollected = true;
+        owlMinigame.SetActive(true);
+        debataPlayer.wygranaMinigierka = true;
+        debataPlayer.sentenceBuilding();
         Owl.TurnUIon();
         //dialogue.nazwaDialogu = 
         //ukladanie zdan ^

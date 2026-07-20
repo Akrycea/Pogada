@@ -21,7 +21,11 @@ public class DebataPlayer : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (wygranaMinigierka && playedDebates ==  0  && !debateWon)
+        sentenceBuilding();
+    }
+    public void sentenceBuilding()
+    {
+        if (wygranaMinigierka && playedDebates == 0 && !debateWon)
         {
             turnOffCollider.DisableAllExceptSpecificTag();
             Debug.Log("starting sentence building");

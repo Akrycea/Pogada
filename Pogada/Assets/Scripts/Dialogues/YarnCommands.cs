@@ -187,7 +187,7 @@ public class YarnCommands : MonoBehaviour
     [YarnCommand("granatwygranadebata")]
     public void granatwygranadebata()
     {
-        GranatDrzwi.SetActive(true);
+        GranatDrzwi.SetActive(false);
     }
 
     //odpalenie minigierki ukladania zdan pomarancz WIP
