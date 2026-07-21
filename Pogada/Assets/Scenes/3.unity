@@ -6751,7 +6751,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -81.15381, y: -2.0995784}
+  m_Offset: {x: -76.44631, y: -2.0995784}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6761,7 +6761,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.606834, y: 10.01168}
+  m_Size: {x: 10.191849, y: 10.01168}
   m_EdgeRadius: 0
 --- !u!1 &162497949 stripped
 GameObject:
@@ -16119,7 +16119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &361573738
 Transform:
   m_ObjectHideFlags: 0
@@ -24399,7 +24399,7 @@ Transform:
   m_GameObject: {fileID: 513801739}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.3612, y: -3.523364, z: 0.11016416}
+  m_LocalPosition: {x: 40.3612, y: -3.523364, z: 38.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37219,7 +37219,10 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 1.8078918, y: -2.902833}
-      - {x: -14.483985, y: -3.8322098}
+      - {x: -5.3262634, y: -3.2510414}
+      - {x: -5.8135376, y: 17.778538}
+      - {x: -10.74678, y: 8.683437}
+      - {x: -11.79132, y: -4.1489897}
       - {x: 0.07777268, y: -13.528497}
       - {x: 17.669764, y: -10.668179}
       - {x: 37.342194, y: 0.5891094}
@@ -37237,7 +37240,7 @@ Transform:
   m_GameObject: {fileID: 781812230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -109.1, y: 58.1, z: -0.21022342}
+  m_LocalPosition: {x: -63.5, y: 57, z: -0.21022342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76508,7 +76511,7 @@ PolygonCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: -1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -93832,7 +93835,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -124.4, y: 1.7, z: 0.003184298}
-  m_LocalScale: {x: 3.4026587, y: 1.8306085, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361573738}
@@ -93850,7 +93853,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OwlOnUI: {fileID: 774245511}
-  colliders: {fileID: 0}
+  colliders: {fileID: 641062019}
+  player: {fileID: 1361693964}
+  teleport: {fileID: 1996602349}
 --- !u!212 &1964556284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93940,7 +93945,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2.791874, y: 3.69735}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -93950,7 +93955,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.2, y: 3.2}
+  m_Size: {x: 12.405647, y: 15.122064}
   m_EdgeRadius: 0
 --- !u!1 &1969288752
 GameObject:
@@ -95273,6 +95278,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991321007}
   m_CullTransparentMesh: 1
+--- !u!1 &1996602348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996602349}
+  m_Layer: 0
+  m_Name: Teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996602349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996602348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -63.9, y: 60.5, z: -118.38544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003585937
 GameObject:
   m_ObjectHideFlags: 0
@@ -101265,3 +101301,4 @@ SceneRoots:
   - {fileID: 1790730907}
   - {fileID: 1289156275}
   - {fileID: 1736408657}
+  - {fileID: 1996602349}
