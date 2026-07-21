@@ -8,14 +8,22 @@ public class OwlWin : MonoBehaviour
     [SerializeField]
     private GameObject colliders;
 
+    [SerializeField] private Transform player;
+    [SerializeField] private Transform teleport;
+
     private void OnMouseDown()
     {
-        if(OwlOnUI.activeInHierarchy == true)
+        Debug.Log("OwlWin Click");
+
+        if (OwlOnUI.activeInHierarchy == true)
         {
             //win
             OwlOnUI.SetActive(false);
             colliders.SetActive(false);
             //tutaj przenies do nastepnej sceny
+
+            player.position = teleport.position;
+
         }
     }
 }
