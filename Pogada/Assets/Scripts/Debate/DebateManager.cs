@@ -60,6 +60,23 @@ public class DebateManager : MonoBehaviour
         {
             debateDial.StartDialogue("M3_PogodzenieGranat");
         }
+        else if (debateScript.debateNumber == 4)
+        {
+            debateDial.StartDialogue("M31_PogodzeniePomarancz");
+        }
+        else if (debateScript.debateNumber == 5)
+        {
+            debateDial.StartDialogue("M32_PogodzenieBlekit");
+        }
+        else if (debateScript.debateNumber == 6)
+        {
+            debateDial.StartDialogue("M4_PrzekonanieFiolet");
+        }
+        else if (debateScript.debateNumber == 7)
+        {
+            debateDial.StartDialogue("M5_PogodzenieDzieci");
+        }
+
     }
 
     public void EndDebate()

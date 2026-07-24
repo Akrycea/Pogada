@@ -10,6 +10,7 @@ public class OwlWin : MonoBehaviour
 
     [SerializeField] private Transform player;
     [SerializeField] private Transform teleport;
+    [SerializeField] private EditCamera editCamera;
 
     private void OnMouseDown()
     {
@@ -23,6 +24,8 @@ public class OwlWin : MonoBehaviour
             //tutaj przenies do nastepnej sceny
 
             player.position = teleport.position;
+            editCamera.ChangeCamera();
+
 
         }
     }

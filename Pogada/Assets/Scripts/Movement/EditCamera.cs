@@ -25,7 +25,7 @@ public class EditCamera : MonoBehaviour
     }
 
     [SerializeField] private GameObject nextCamera;
-    private void ChangeCamera()
+    public void ChangeCamera()
     {
         if (nextCamera.activeSelf == false)
         {
