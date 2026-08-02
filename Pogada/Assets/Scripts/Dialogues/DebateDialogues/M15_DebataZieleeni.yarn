@@ -1,18 +1,23 @@
 title: M15_PomocZieleni
 ---
+<<voiceline Zielony 33>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
 
+<<voicelineEnd Zielony>>
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: Czy wzięcie pluszaka miało z tym pomóc?
 
+<<voiceline Zielony 34>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 Viri: Pomyślałem, że jeśli go wyczyszczę, to będzie po problemie i się pogodzą.
 
+<<voiceline Zielony 35>>
 Viri: Ale woda płynęła za szybko i wyrwała mi Perełkę, i ja, ja…
 
+<<voiceline Zielony 36>>
 Viri: Ja nie wiedziałem już co zrobić!
 <<UpdateDebateNumber PointMeter>>
 	<<jump M_1DebataZielieni1>>
@@ -46,6 +51,7 @@ title: M_1DebataZielieni1
 
 title: M15_DebataZielieni1_1
 ---
+<<voiceline Zielony 37>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: O to się pokłócili…
@@ -54,6 +60,7 @@ Viri: O to się pokłócili…
 
 title: M15_DebataZielieni1_2
 ---
+<<voiceline Zielony 38>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Musiałem im pomóc! To było jedyne logiczne wyjście!
@@ -87,6 +94,7 @@ title: M15_DebataZielieni2
 
 title: M15_DebataZielieni2_1
 ---
+<<voiceline Zielony 39>>
 <<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: Czemu? Przecież to Perełka jest sednem problemu.
@@ -95,6 +103,7 @@ Viri: Czemu? Przecież to Perełka jest sednem problemu.
 
 title: M15_DebataZielieni2_2
 ---
+<<voiceline Zielony 40>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak nie chcesz mi pomóc, to nie!
@@ -129,6 +138,7 @@ title: M15_DebataZielieni3
 
 title: M15_DebataZielieni3_1
 ---
+<<voiceline Zielony 41>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomysłem był Perełka…
@@ -136,6 +146,7 @@ Viri: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomy
 ===
 title: M15_DebataZielieni3_2
 ---
+<<voiceline Zielony 42>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Co ty możesz wiedzieć o ich problemach?
@@ -169,6 +180,7 @@ title: M15_DebataZielieni4
 
 title: M15_DebataZielieni4_1
 ---
+<<voiceline Zielony 43>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu nic nie robić.
@@ -176,6 +188,7 @@ Viri: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu ni
 ===
 title: M15_DebataZielieni4_2
 ---
+<<voiceline Zielony 44>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nic nie rozumiesz. W ogóle ich nie znasz. Wszystko poszło właśnie o Perełkę, głupku.
@@ -209,6 +222,7 @@ title: M15_DebataZielieni5
 
 title: M15_DebataZielieni5_1
 ---
+<<voiceline Zielony 45>>
 <<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Viri: Skoro uważasz, że to pomoże… 
@@ -216,6 +230,7 @@ Viri: Skoro uważasz, że to pomoże…
 ===
 title: M15_DebataZielieni5_2
 ---
+<<voiceline Zielony 46>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
@@ -230,22 +245,27 @@ title: M15_DebataZielieniPoDebata
 <<debateWon Zielony>>
 <<camShake CinemachineCameraGateAndForest>>
 <<DisableColliders StateManager>>
+<<voiceline Zielony 47>>
 Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
 
 <<ChangeIcon Icons "Viri" "angry">>
+<<voiceline Zielony 48>>
 Viri: Może to po prostu nieporozumienie.
 <<HideIcon Icons>>
 
+<<voicelineEnd Zielony>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Jestem pewien, że kiedy poznamy obie strony historii, zaraz  zrozumiemy o co dokładnie chodzi i znajdziemy jakieś rozwiązanie.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voiceline Zielony 49>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: A co z Perełką?
 <<HideIcon Icons>>
 
+<<voicelineEnd Zielony>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Na pewno pomoże uspokoić Liv.
@@ -257,6 +277,7 @@ Bohater: Będzie to dobry prezent na pogodzenie.
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
+<<voiceline Zielony 50>>
 Viri: Dobrze!
 <<HideIcon Icons>>
 

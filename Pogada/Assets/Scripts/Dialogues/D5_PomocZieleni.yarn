@@ -12,50 +12,69 @@ Bohater: Nie musisz się o to już martwić.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voiceline Zielony 11>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: Tak? Serio?
-
-<<ChangeIcon Icons "Viri" "sad">>
-Viri: Dziękuję…
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Serio serio.
+<<HidePlayerIcon IconsPlayer>>
+
+<<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 12>>
+Viri: Mam nadzieję, że serio
+<<HideIcon Icons>>
+
+<<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Chyba nie poprawiło ci to humoru.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 13>>
 Viri: No… Jest jeszcze jedna sprawa.
 
+<<voiceline Zielony 14>>
 Viri: Ale nie wiem, czy chce się pan w to mieszać.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Cokolwiek to jest, mogę spróbować pomóc, jeśli sobie tego życzysz.
+Bohater: Cokolwiek to jest, pomogę.
 
-Bohater: Jeśli chcesz możesz się najpierw namyśleć.
+Bohater: Liv wspomniała o skradzionym Perełce, więc muszę go poszukać.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Liv wspomniała o srkadzionym Perełce, więc muszę go poszukać.
+Bohater: Jeśli chcesz możesz się w tym czasie namyślić, czy chcesz pomocy.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voiceline Zielony 15>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: Oh.
 
+<<voiceline Zielony 16>>
 Viri: Wiem gdzie jest.
 
+<<voiceline Zielony 17>>
 Viri: Chciałem, żeby ona i Robert się pogodzili i, em…
 
+<<voiceline Zielony 18>>
 Viri: …Zwinąłem jej pluszaka, a teraz…
 
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 19>>
 Viri: Teraz jest w rzece i nie wiem jak go wyciągnąć!
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: O jejku.
 
@@ -64,22 +83,25 @@ Bohater: Gdzie jest dokładnie? Wyciągnę go.
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
-Viri: Jest za tymi krzaczkami.
+<<voiceline Zielony 20>>
+Viri: Jest zaklinowany w rzece, za krzakami, trzeba je odgarnąć. A ja nie sięgam.
 
 <<odslonliscie Dialogi>>
 
-Viri: Wystarczy by pluszak przepłynął na drugą stronę,
+<<voiceline Zielony 21>>
+Viri: Ale nie wiem, czy komukolwiek uda się go kiedykolwiek odzyskać.
 
-Viri: ale jest po drodze dużo przeszkód...
+<<voiceline Zielony 22>>
+Viri: Musiałby jakoś spłynąć wzdłuż rzeki. A może zahaczyć o tyle rzeczy… To niemożliwe!
 
-Viri: Nie wiem, czy komukolwiek uda się go kiedykolwiek odzyskać.
-
+<<voiceline Zielony 23>>
 Viri: To wszystko moja wina…
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Nie przejmuj się. Ja się tym zajmę.
+Bohater: Nie zgubiłeś Perełki specjalnie. To zwykły, nieszczęśliwy wypadek. Poczekaj, zaraz pan Perełka wróci cały i zdrowy.
 <<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 <<EnableColliders StateManager>>

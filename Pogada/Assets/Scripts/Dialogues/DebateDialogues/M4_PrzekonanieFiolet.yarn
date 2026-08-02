@@ -2,12 +2,15 @@
 ---
 Bohater: Musisz przeprosić Aureusa.
 
+<<voiceline Fiolet 38>>
 Violaceus: Rozmawialiśmy już o tym staruszku. Spadaj na drzewo.
 
+<<voicelineEnd Fiolet>>
 Bohater: Twój brat rozważa odejście z niebios, nie może do tego dojść.
 
 Bohater: Musisz go przed tym powstrzymać.
 
+<<voiceline Fiolet 39>>
 Violaceus: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
 <<UpdateDebateNumber PointMeter>>
 	<<jump M4_DebataFiolet1>>
@@ -34,12 +37,14 @@ title: M4_DebataFiolet1
 
 title: M4_DebataFiolet1_1
 ---
+<<voiceline Fiolet 40>>
 Violaceus: Ktoś pytał?
 	<<jump M4_DebataFiolet2>>
 ===
 
 title: M31_DebataFiolet1_2
 ---
+<<voiceline Fiolet 41>>
 Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
 	<<jump M4_DebataFiolet2>>
 ===
@@ -65,12 +70,14 @@ title: M4_DebataFiolet2
 
 title: M4_DebataFiolet2_1
 ---
+<<voiceline Fiolet 42>>
 Violaceus: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zrozumie.
 	<<jump M4_DebataFiolet3>>
 ===
 
 title: M4_DebataFiolet2_2
 ---
+<<voiceline Fiolet 43>>
 Violaceus: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
 	<<jump M4_DebataFiolet3>>
 ===
@@ -96,12 +103,14 @@ title: M4_DebataFiolet3
 
 title: M4_DebataFiolet3_1
 ---
+<<voiceline Fiolet 44>>
 Violaceus: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskazuje mi dobrą drogę.
 	<<jump M4_DebataFiolet4>>
 ===
 
 title: M4_DebataFiolet3_2
 ---
+<<voiceline Fiolet 45>>
 Violacus: Skoro tak, to po co się pan wpycha między mnie a Aureusa? Nie masz śmiertelniku własnych dzieci, żeby im przeszkadzać?
 	<<jump M4_DebataFiolet4>>
 ===
@@ -127,12 +136,14 @@ title: M4_DebataFiolet4
 
 title: M4_DebataFiolet4_1
 ---
+<<voiceline Fiolet 46>>
 Violaceus: Wcale nie! Inaczej bym się nie wykłócał!
 	<<jump M4_DebataFiolet5>>
 ===
 
 title: M4_DebataFiolet4_2
 ---
+<<voiceline Fiolet 47>>
 Violaceus: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to co ty, pewnie swoją zostawiłeś.
 	<<jump M4_DebataFiolet5>>
 ===
@@ -158,12 +169,14 @@ title: M4_DebataFiolet5
 
 title: M4_DebataFiolet5_1
 ---
-Violaceus: Hm.
+<<voiceline Fiolet 10>>
+Violaceus: Hm, no może...
 	<<Ending PointMeter>>
 ===
 
 title: M4_DebataFiolet5_2
 ---
+<<voiceline Fiolet 48>>
 Violaceus: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej niż pan!
 	<<Ending PointMeter>>
 ===
@@ -171,6 +184,7 @@ Violaceus: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej ni�
 title: M4_DebataFioletPoDebata
 ---
 <<debateWon Fiolet>>
+<<voiceline Fiolet 7>>
 Violaceus: …
 
 Bohater: Porozmawiaj z nim
@@ -181,9 +195,8 @@ Bohater: Kochasz go? To będziesz go kochał nieważne co.
 
 Bohater: Daj mu szansę.
 
-Violaceus: Już dobra, dobra!
-
-Violaceus: Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
+<<voiceline Fiolet 49>>
+Violaceus: Już dobra, dobra! Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
 <<fioletwygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>
 ===

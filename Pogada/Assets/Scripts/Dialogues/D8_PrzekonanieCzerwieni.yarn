@@ -4,18 +4,22 @@
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
+<<voiceline Granat 20>>
 Liv: Nie teraz! Wszystkie moje rybki mi się pogubiły!
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voicelineEnd Granat>>
 Bohater: Chciałbym tylko z tobą porozmawiać o Robercie…
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
+<<voiceline Granat 21>>
 Liv: Nie teraz powiedziałam!
 
+<<voiceline Granat 22>>
 Liv: Niech pan je połapie!
 <<HideIcon Icons>>
 <<unblockPlayerMovement Dialogi>>

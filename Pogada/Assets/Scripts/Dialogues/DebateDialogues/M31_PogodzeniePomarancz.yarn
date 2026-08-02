@@ -1,11 +1,15 @@
 ﻿title: M31_PogodzeniePomarancz
 ---
+<<voiceline Pomarańcz 19>>
 Lute: Nie zniosę tego, jeśli będzie na mnie zła.
 
+<<voiceline Pomarańcz 20>>
 Lute: A na pewno będzie.
 
+<<voicelineEnd Pomarańcz>>
 Bohater: Udało mi się znaleźć jej zwierzaka, to na pewno trochę załagodzi sytuację.
 
+<<voiceline Pomarańcz 21>>
 Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam rady spojrzeć jej w oczy.
 <<UpdateDebateNumber PointMeter>>
 	<<jump M31_DebataPomarancz1>>
@@ -32,12 +36,17 @@ title: M31_DebataPomarancz1
 
 title: M31_DebataPomarancz1_1
 ---
-Lute: Ja nie mogę tego zrobić! Nigdy już nie pozwoli mi się bawić z Chmurką. To okropne.
+<<voiceline Pomarańcz 22>>
+Lute: Ja nie mogę tego zrobić! 
+
+<<voiceline Pomarańcz 23>>
+Lute: Nigdy już nie pozwoli mi się bawić z Chmurką. To okropne.
 	<<jump M31_DebataPomarancz2>>
 ===
 
 title: M31_DebataPomarancz1_2
 ---
+<<voiceline Pomarańcz 24>>
 Lute: Nie obchodzi mnie to. Lus pomyśli, że jestem najgorsza przez zgubienie Chmurki. Może rzeczywiście jestem.
 	<<jump M31_DebataPomarancz2>>
 ===
@@ -63,12 +72,14 @@ title: M31_DebataPomarancz2
 
 title: M31_DebataPomarancz2_1
 ---
+<<voiceline Pomarańcz 25>>
 Lute: Mama powinna się tym zająć. Ona zawsze ma rację i jej zawsze trzeba wybaczyć. Zazwyczaj już by za mnie z nią porozmawiała.
 	<<jump M31_DebataPomarancz3>>
 ===
 
 title: M31_DebataPomarancz2_2
 ---
+<<voiceline Pomarańcz 26>>
 Lute: Ja pójdę po mamę najlepiej. Jak najszybciej.
 	<<jump M31_DebataPomarancz3>>
 ===
@@ -94,12 +105,20 @@ title: M31_DebataPomarancz3
 
 title: M31_DebataPomarancz3_1
 ---
-Lute: A na pana się można denerwować? Bo jak nie, to pan niech pójdzie pogadać z Lus. W końcu rozwiązuje pan nasze problemy, prawda?
+<<voiceline Pomarańcz 27>>
+Lute: A na pana się można denerwować?
+
+<<voiceline Pomarańcz 28>>
+Lute: Bo jak nie, to pan niech pójdzie pogadać z Lus. 
+
+<<voiceline Pomarańcz 29>>
+Lute: W końcu rozwiązuje pan nasze problemy, prawda?
 	<<jump M31_DebataPomarancz4>>
 ===
 
 title: M31_DebataPomarancz3_2
 ---
+<<voiceline Pomarańcz 30>>
 Lute: Jeśli tak panu zależy na naszych problemach, to pan się tym zajmie nie ja!
 	<<jump M31_DebataPomarancz4>>
 ===
@@ -125,12 +144,14 @@ title: M31_DebataPomarancz4
 
 title: M31_DebataPomarancz4_1
 ---
+<<voiceline Pomarańcz 31>>
 Lute: Co? Robertowi i Liv też pan tylko pomógł? Ja nie chcę sama tak się tym zajmować.
 	<<jump M31_DebataPomarancz5>>
 ===
 
 title: M31_DebataPomarancz4_2
 ---
+<<voiceline Pomarańcz 32>>
 Lute: Widziałam przecież, że za innych pan robił rzeczy. Ja też tak chcę.
 	<<jump M31_DebataPomarancz5>>
 ===
@@ -156,12 +177,14 @@ title: M31_DebataPomarancz5
 
 title: M31_DebataPomarancz5_1
 ---
+<<voiceline Pomarańcz 33>>
 Lute: No, jeśli to pan będzie gadał, to dobra.
 	<<Ending PointMeter>>
 ===
 
 title: M31_DebataPomarancz5_2
 ---
+<<voiceline Pomarańcz 34>>
 Lute: Nie chcę, nie chcę! Boję się. Niech pan z Lus pogada.
 	<<Ending PointMeter>>
 ===
@@ -169,20 +192,26 @@ Lute: Nie chcę, nie chcę! Boję się. Niech pan z Lus pogada.
 title: M31_DebataPomaranczPoDebata
 ---
 <<debateWon Pomarańcz>>
+<<voiceline Pomarańcz 35>>
 Lute: Bo ja wolę nie.
 
+<<voicelineEnd Pomarańcz>>
 Bohater: Rozwiążemy ten problem razem.
 
 Bohater: Lus na pewno ucieszy się do Chmurki.
 
 Bohater: Wiesz jak możemy ją znaleźć?
 
+<<voiceline Pomarańcz 36>>
 Lute: Może Chmurka nas do niej zaprowadzi.
 
+<<voiceline Pomarańcz 37>>
 Lute: Proszę Chmurka? Ładnie proszę?
 
+<<voiceline Pomarańcz 38>>
 Lute: O, już węszy.
 
+<<voicelineEnd Pomarańcz>>
 Bohater: Cudownie.
 <<unblockPlayerMovement Dialogi>>
 ===

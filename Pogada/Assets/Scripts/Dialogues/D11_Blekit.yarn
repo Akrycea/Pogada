@@ -8,13 +8,16 @@ Bohater: Czy to ty jesteś Lus?
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lus" "happy">>
+<<voiceline Błękit 18>>
 Lus: Tak. Potrzebuje pan czegoś?
 
 <<ChangeIcon Icons "Lus" "sad">>
+<<voiceline Błękit 19>>
 Lus: Jestem trochę zajęta. Mój brat jest bardzo smutny.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Błękit>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Chciałem porozmawiać z Aureusem. Podobno miał być z tobą.
 

@@ -1,14 +1,14 @@
 ﻿title: M2_PoznanieCzerwieni
 ---
-<<voiceline Czerwony 15>>
+<<voiceline Czerwony 16>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Przeprosiłem ją tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
 
-<<voiceline Czerwony 16>>
-Robert: A potem zaczęła kłamać mi prosto w twarz.
-
 <<voiceline Czerwony 17>>
+Robert: A potem zaczęła mi kłamać prosto w twarz.
+
+<<voiceline Czerwony 18>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 Robert: Nie jestem żadnym kradziejem!
 
@@ -16,7 +16,7 @@ Robert: Nie jestem żadnym kradziejem!
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater:  Czy to cię tak zdenerwowało?
 
-<<voiceline Czerwony 18>>
+<<voiceline Czerwony 19>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ja nie kradnę. I nie kłamię!
 
@@ -24,7 +24,7 @@ Robert: Ja nie kradnę. I nie kłamię!
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: Wierzę ci. 
 
-<<voiceline Czerwony 19>>
+<<voiceline Czerwony 20>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
@@ -58,7 +58,7 @@ title: M2_PoznanieCzerwieni1
 
 title: M2_PoznanieCzerwieni1_1
 ---
-<<voiceline Czerwony 20>>
+<<voiceline Czerwony 21>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pobrudziłem, przypadek!
@@ -67,7 +67,7 @@ Robert: Pożyczyłem pana Perełkę, żeby go namalować. Przez przypadek go pob
 
 title: M2_PoznanieCzerwieni1_2
 ---
-<<voiceline Czerwony 21>>
+<<voiceline Czerwony 22>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A Liv nie słucha.
@@ -100,7 +100,7 @@ title: M2_PoznanieCzerwieni2
 
 title: M2_PoznanieCzerwieni2_1
 ---
-<<voiceline Czerwony 22>>
+<<voiceline Czerwony 23>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
@@ -109,7 +109,7 @@ Robert: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
 
 title: M2_PoznanieCzerwieni2_2
 ---
-<<voiceline Czerwony 23>>
+<<voiceline Czerwony 24>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
@@ -119,6 +119,7 @@ Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słu
 title: M2_Z_Jab_1_1
 ---
 <<voicelineEnd Czerwony>>
+<<voiceline Zielony 67>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
@@ -127,6 +128,7 @@ Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 title: M2_Z_Jab_1_2
 ---
 <<voicelineEnd Czerwony>>
+<<voiceline Zielony 68>>
 Viri: Przestań krzyczeć!
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
@@ -158,19 +160,25 @@ title: M2_PoznanieCzerwieni3
 
 title: M2_PoznanieCzerwieni3_1
 ---
-<<voiceline Czerwony 24>>
+<<voiceline Czerwony 25>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Robert: Albo znowu powie mi, że jestem agresywny. Nie jestem! Jest okropną kłamczuchą!
+Robert: Albo znowu powie mi, że jestem agresywny.
+
+<<voiceline Czerwony 58>>
+Robert: Nie jestem! Jest okropną kłamczuchą!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
 
 title: M2_PoznanieCzerwieni3_2
 ---
-<<voiceline Czerwony 25>>
+<<voiceline Czerwony 26>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie, kłamie, kłamie!
+Robert: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie!
+
+<<voiceline Czerwony 59>>
+Robert: Kłamie! Kłamie!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
 
@@ -200,16 +208,19 @@ title: M2_PoznanieCzerwieni4
 
 title: M2_PoznanieCzerwieni4_1
 ---
-<<voiceline Czerwony 26>>
+<<voiceline Czerwony 27>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Robert: Nic wam do mojej statuy i złości! Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
+Robert: Nic wam do mojej statuy i złości! 
+
+<<voiceline Czerwony 60>>
+Robert: Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
 	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
 title: M2_PoznanieCzerwieni4_2
 ---
-<<voiceline Czerwony 27>>
+<<voiceline Czerwony 28>>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak Liv i cała reszta!
@@ -222,6 +233,7 @@ title: M2_Z_Jab_2_1
 <<voicelineEnd Czerwony>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
+<<voiceline Zielony 69>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -233,6 +245,7 @@ title: M2_Z_Jab_2_2
 <<voicelineEnd Czerwony>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angru">>
+<<voiceline Zielony 70>>
 Viri: Przestań krzyczeć!
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -241,7 +254,7 @@ Viri: Przestań krzyczeć!
 
 title: M2_C_Jab_1_1
 ---
-<<voiceline Czerwony 28>>
+<<voiceline Czerwony 29>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
@@ -251,7 +264,7 @@ Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 
 title: M2_C_Jab_1_2
 ---
-<<voiceline Czerwony 29>>
+<<voiceline Czerwony 30>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
@@ -285,7 +298,7 @@ title: M2_PoznanieCzerwieni5
 
 title: M2_PoznanieCzerwieni5_1
 ---
-<<voiceline Czerwony 30>>
+<<voiceline Czerwony 31>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: ...
@@ -294,10 +307,10 @@ Robert: ...
 
 title: M2_PoznanieCzerwieni5_2
 ---
-<<voiceline Czerwony 31>>
+<<voiceline Czerwony 32>>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To nie tak, że chcę taki być!
+Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem agresywny! To, to nie tak, że chcę taki być!
 	<<Ending PointMeter>>
 ===
 
@@ -314,24 +327,26 @@ Bohater: Nie ma nic złego w tym, że się denerwujesz.
 Bohater: Po prostu trzeba może pomyśleć co robisz w związku z tymi emocjami.
 <<HidePlayerIcon IconsPlayer>>
 
-<<voiceline Czerwony 32>>
+<<voiceline Czerwony 33>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "happy">>
 Robert: Nie chciałem rozbijać statuy, dobra?
 
-<<voiceline Czerwony 33>>
+<<voiceline Czerwony 34>>
 <<ChangeIcon Icons "Robert" "angry">>
 Robert: Po prostu miałem wrażenie, że jeśli czegoś nie zrobię, to wybuchnę!
 
-<<voiceline Czerwony 34>>
+<<voiceline Czerwony 35>>
 <<ChangeIcon Icons "Robert" "sad">>
 Robert: Nie złościełem się specjalnie, nigdy nie robię tego specjalnie.
 
 <<voicelineEnd Czerwony>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 71>>
 Viri: Wiemy, że nie jesteś straszny specjalnie…
 
-<<voiceline Czerwony 35>>
+<<voicelineEnd Zielony>>
+<<voiceline Czerwony 36>>
 <<ChangeIcon Icons "Robert" "happy">>
 Robert: W ogóle nie chcę być straszny.
 <<HideIcon Icons>>
@@ -342,11 +357,11 @@ Robert: W ogóle nie chcę być straszny.
 Bohater: Czy zniszczenie statuy pomogło ci ze złością?
 <<HidePlayerIcon IconsPlayer>>
 
-<<voiceline Czerwony 36>>
+<<voiceline Czerwony 37>>
 <<ChangeIcon Icons "Robert" "happy">>
 Robert: Trochę.
 
-<<voiceline Czerwony 37>>
+<<voiceline Czerwony 38>>
 Robert: Ale potem zrobiło mi się tylko gorzej. Lubiłem te statuę.
 <<HideIcon Icons>>
 
@@ -359,7 +374,7 @@ Bohater: Może musisz mieć dla siebie miejsce, gdzie możesz być zły.
 Bohater: Miejsce, gdzie pozbyłbyś się złości w bardziej kontrolowany sposób. Gdzie miałbyś chwilę na wyciszenie dla siebie.
 <<HidePlayerIcon IconsPlayer>>
 
-<<voiceline Czerwony 38>>
+<<voiceline Czerwony 39>>
 <<ChangeIcon Icons "Robert" "sad">>
 Robert: Wolałbym się nie złościć w ogóle.
 <<HideIcon Icons>>
@@ -373,15 +388,19 @@ Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od niej.
 <<HidePlayerIcon IconsPlayer>>
 
 <<ChangeIcon Icons "Viri" "happy">>
+<<voiceline Zielony 72>>
 Viri: Jakby Liv usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
 
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 73>>
 Viri: Proszę, spróbuj z nią porozmawiać.
 
 <<ChangeIcon Icons "Viri" "happy">>
+<<voiceline Zielony 74>>
 Viri: Pójdziemy z tobą, pomożemy…
 
-<<voiceline Czerwony 39>>
+<<voicelineEnd Zielony>>
+<<voiceline Czerwony 40>>
 <<ChangeIcon Icons "Robert" "happy">>
 Robert: No dobrze. Ale potrzymaj mnie za rękę.
 <<HideIcon Icons>>

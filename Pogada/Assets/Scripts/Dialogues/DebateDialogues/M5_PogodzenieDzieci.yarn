@@ -1,7 +1,9 @@
 ﻿title: M5_PogodzenieDzieci
 ---
+<<voiceline Żółć2 15>>
 Aureus: Czego chcecie?
 
+<<voicelineEnd Żółć2>>
 Bohater: Martwiliśmy się o ciebie.
 
 Bohater: Daj nam szansę, Violaceus zgodził się porozmawiać.
@@ -34,37 +36,43 @@ title: M5_PogodzenieDzieci1
 
 title: M5_PogodzenieDzieci1_1
 ---
+<<voiceline Żółć2 16>>
 Aureus: To przez moją kłótnię nie ma żółtego, prawda?
 	<<Jab Dialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" >>
 ===
 
 title: M5_PogodzenieDzieci1_2
 ---
+<<voiceline Żółć2 17>>
 Aureus: Kiedy to wszystko moja wina.
 	<<Jab Dialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_1_1
 ---
+<<voiceline Fiolet 50>>
 Violaceus: Tak, musimy się pogodzić, żeby świat się naprawił.
 	<<Jab Dialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_1_2
 ---
+<<voiceline Fiolet 51>>
 Violaceus: Tak, twoje wygłupy zaszły za daleko. Wszystkie kolory wróciły, tylko nie ty.
 	<<Jab Dialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 ===
 
 title: M5_P_Jab_1_1
 ---
-Lus:  Nie możecie tak zostać pokłóceni. Będzie wam to tylko ciążyć.
+<<voiceline Pomarańcz 48>>
+Lute:  Nie możecie tak zostać pokłóceni. Będzie wam to tylko ciążyć.
 	<<jump M5_PogodzenieDzieci2>>
 ===
 
 title: M5_P_Jab_1_2
 ---
-Lus:  Musicie się przeprosić, przecież jesteśmy rodzeństwem.
+<<voiceline Pomarańcz 49>>
+Lute:  Musicie się przeprosić, przecież jesteśmy rodzeństwem.
 	<<jump M5_PogodzenieDzieci2>>
 ===
 
@@ -89,12 +97,14 @@ title: M5_PogodzenieDzieci2
 
 title: M5_PogodzenieDzieci2_1
 ---
+<<voiceline Żółć2 18>>
 Aureus: Może. Ale jeśli mam tu żyć, to chcę żyć jako Aureus. Jako ja.
 	<<Jab Dialogi "" "" >>
 ===
 
 title: M5_PogodzenieDzieci2_2
 ---
+<<voiceline Żółć2 19>>
 Aureus: Nie. Nie, muszę myśleć też chociaż trochę o sobie.
 	<<Jab Dialogi "" "" >>
 ===
@@ -102,48 +112,56 @@ Aureus: Nie. Nie, muszę myśleć też chociaż trochę o sobie.
 
 title: M5_F_Jab_2_1
 ---
+<<voiceline Fiolet 52>>
 Violaceus: Vus już nie przesadzaj, przecież jesteś sobą.
 	<<Jab Dialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_2_2
 ---
+ <<voiceline Fiolet 53>>
 Violaceus: Vus gdybyś tylko odpuścił to imię, to nie miałbyś żadnego problemu.
 	<<Jab Dialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
 ===
 
 title: M5_B_Jab_1_1
 ---
+<<voiceline Błękit 27>>
 Lus: Łatwo ci mówić Violaceus, kiedy my nazywamy cię tak, jak ty chcesz.
 	<<Jab Dialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
 ===
 
 title: M5_B_Jab_1_2
 ---
+<<voiceline Błękit 28>>
 Lus: Naprawdę nie powinieneś się wypowiadać Violaceus. Wszyscy mówią na ciebie tak, jak lubisz.
 	<<Jab Dialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
 ===
 
 title: M5_F_Jab_3_1
 ---
-Violaceus: Może Vus powinien zrobić dla mnie wyjatek. Ciężko się tak nagle przerzucić, a przecież dla rodziny się robi wyjątki.
+<<voiceline Fiolet 54>>
+Violaceus: Może Vus powinien zrobić dla mnie wyjątek. Ciężko się tak nagle przerzucić, a przecież dla rodziny się robi wyjątki.
 	<<Jab Dialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_3_2
 ---
+<<voiceline Fiolet 55>>
 Violaceus: No właśnie, ja nie wybrzydzam, jak niektórzy. Nie zmuszam nikogo do nagłych zmian.
 	<<Jab Dialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
 ===
 
 title: M5_G_Jab_1_1
 ---
+<<voiceline Granat 57>>
 Liv: Pomyśl o Aureusie, chociaż przez chwilę, a nie ciągle ty, ty , ty.
 	<<jump M5_PogodzenieDzieci3>>
 ===
 
 title: M5_G_Jab_1_2
 ---
+<<voiceline Granat 58>>
 Liv: Jeśli jesteś za głupi, żeby nauczyć się nowego imienia, to raczej z tobą jest problem.
 	<<jump M5_PogodzenieDzieci3>>
 ===
@@ -169,48 +187,56 @@ title: M5_PogodzenieDzieci3
 
 title: M5_PogodzenieDzieci3_1
 ---
+<<voiceline Żółć2 20>>
 Aureus: Niby tak. Ale, nawet jeśli to głupie, chcę, żeby mój własny brat mnie wspierał. Nie chcę żyć bez niego.
 	<<Jab Dialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" >>
 ===
 
 title: M5_PogodzenieDzieci3_2
 ---
+<<voiceline Żółć2 21>>
 Aureus: Chcę, żeby mnie kochał! On powinien mnie kochać, nieważne co!
 	<<Jab Dialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" >>
 ===
 
 title: M5_F_Jab_4_1
 ---
+<<voiceline Fiolet 56>>
 Violaceus: Czemu nagle ta sytuacja spada na mnie?
 	<<Jab Dialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
 ===
 
 title: M5_F_Jab_4_2
 ---
+<<voiceline Fiolet 57>>
 Violaceus: Wspieram cię, po prostu musisz zacząć słuchać!
 	<<Jab Dialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
 ===
 
 title: M5_D_Jab_3_1
 ---
+<<voiceline Żółć2 22>>
 Aureus: Wiesz co?Ja… Ja się super staram z tobą pogodzić, też musisz się postarać!
 	<<Jab Dialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" >>
 ===
 
 title: M5_D_Jab_3_2
 ---
+<<voiceline Żółć2 23>>
 Aureus: Może, skoro tak ci to wszystko przeszkadza, to ty powinieneś stąd sobie pójść!
 	<<Jab Dialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" >>
 ===
 
 title: M5_F_Jab_5_1
 ---
+<<voiceline Fiolet 58>>
 Violaceus: Czy naprawdę nikogo tutaj nie obchodzi serduszko mamy?
 	<<jump M5_PogodzenieDzieci4>>
 ===
 
 title: M5_F_Jab_5_2
 ---
+<<voiceline Fiolet 59>>
 Violaceus: Czy naprawdę wszyscy zamierzają po prostu słuchać jakiegoś śmiertelnika? Halo, jesteśmy bogami!
 	<<jump M5_PogodzenieDzieci4>>
 ===
@@ -236,60 +262,73 @@ title: M5_PogodzenieDzieci4
 
 title: M5_PogodzenieDzieci4_1
 ---
+<<voiceline Żółć2 24>>
 Aureus: Właśnie! Pomyśl o nas, nie o innych. O mnie.
 	<<Jab Dialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" >>
 ===
 
 title: M5_PogodzenieDzieci4_2
 ---
+<<voiceline Żółć2 25>>
 Aureus: Właśnie! Jesteś strasznie… Strasznie samolubny!
 	<<Jab Dialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" >>
 ===
 
 title: M5_F_Jab_6_1
 ---
+<<voiceline Fiolet 60>>
 Violaceus: Czemu nagle wszyscy są przeciwko mnie?
 	<<Jab Dialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_6_2
 ---
+<<voiceline Fiolet 61>>
 Violaceus: Przestańcie się jednoczyć przeciwko mnie!
 	<<Jab Dialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
 ===
 
 title: M5_C_Jab_1_1
 ---
+<<voiceline Czerwony 54>>
 Robert: Sam zawsze mówisz, że rodzina jest najważniejsza. Aureus jest równie ważny, co ty.
 	<<Jab Dialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
 ===
 
 title: M5_C_Jab_1_2
 ---
-Robert: Nie zachowuj się jak głupek. Przestań być wredny dla Aureusa i udawać, że się na ciebie uwzięliśmy.
+<<voiceline Czerwony 55>>
+Robert: Nie zachowuj się jak głupek. 
+
+<<voiceline Czerwony 56>>
+Robert: Przestań być wredny dla Aureusa i udawać, że się na ciebie uwzięliśmy.
 	<<Jab Dialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
 ===
 
 title: M5_Z_Jab_1_1
 ---
+<<voiceline Zielony 82>>
 Viri: Violaceus proszę? Aureus wydaje się taki nieszczęśliwy… Przecież ty też nie lubisz jak jest smutny!
 	<<Jab Dialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
 ===
 
 title: M5_Z_Jab_1_2
 ---
+<<voiceline Zielony 83>>
 Viri: Violaceus, przecież mama nigdy nie miałaby nic przeciwko. Znam ją. Nigdy!
 	<<Jab Dialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
 ===
 
 title: M5_F_Jab_7_1
 ---
+<<voiceline Fiolet 62>>
 Violaceus: … Ale co jeśli będziesz tego żałować?
 	<<jump M5_PogodzenieDzieci5>>
 ===
 
 title: M5_F_Jab_7_2
 ---
+<<voiceline Fiolet 63>>
 Violaceus: Będziesz tego żałować, nie mogę na to pozwolić. Próbuję cię chronić Vus! 
 	<<jump M5_PogodzenieDzieci5>>
 ===
@@ -315,12 +354,17 @@ title: M5_PogodzenieDzieci5
 
 title: M5_PogodzenieDzieci5_1
 ---
-Aureus: Proszę? Jeśli będę musiał, to zrobię to sam, ale nie chcę żyć bez ciebie.
+<<voiceline Żółć2 26>>
+Aureus: Proszę? 
+
+<<voiceline Żółć2 27>>
+Aureus: Jeśli będę musiał, to zrobię to sam, ale nie chcę żyć bez ciebie.
 	<<Ending PointMeter>>
 ===
 
 title: M5_PogodzenieDzieci5_2
 ---
+<<voiceline Żółć2 28>>
 Aureus: Po prostu skup się na chwilę na tu i teraz. Nie chcę cię stracić.
 	<<Ending PointMeter>>
 ===
@@ -328,20 +372,30 @@ Aureus: Po prostu skup się na chwilę na tu i teraz. Nie chcę cię stracić.
 title: M5_DebataZolcPoDebata
 ---
 <<debateWon Żółty>>
+<<voiceline Fiolet 64>>
 Violaceus: … No dobrze.
 
+<<voiceline Fiolet 65>>
 Violaceus: Nie wiem czy to dobra decyzja, ale życie samemu rzeczywiście byłoby słabe.
 
+<<voiceline Fiolet 66>>
 Violaceus: No ale czy nie przeraża cię taka zmiana trochę?
 
+<<voicelineEnd Fiolet>>
+<<voiceline Żółć2 29>>
 Aureus: Trochę tak.
 
+<<voiceline Żółć2 30>>
 Aureus: Ale tak jestem szczęśliwszy, nawet jeśli trochę się boję.
 
+<<voicelineEnd Żółć2>>
+<<voiceline Fiolet 67>>
 Violaceus: Zawsze byłeś zbyt optymistyczny.
 
-Violaceus: No, ale głupio byłoby nie dać temu szansy.
+<<voiceline Fiolet 68>>
+Violaceus: No, ale głupio by było nie dać temu szansy.
 
+<<voiceline Fiolet 69>>
 Violaceus: I nie chciałbym, żebyś odszedł.
 <<zolcwygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>

@@ -1,28 +1,40 @@
 ﻿title: M3_PogodzenieGranat
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
+<<voiceline Granat 34>>
 Liv: Mój kochany Perełka!
 
+<<voiceline Granat 45>>
 Liv: I jeszcze go pan wyczyścił!
 
+<<voiceline Granat 36>>
 Liv: Hurra!
 
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
+<<voicelineEnd Granat>>
 Bohater: To Viri wyczyścił Perełkę, jemu należą się za to podziękowania.
 
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
+<<voiceline Granat 37>>
 Liv: Viri?
 
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
+<<voiceline Granat 38>>
 Liv: Chwila, nie pozwoliłam ci dotykać pana Perełki!
 
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
+<<voicelineEnd Granat>>
+<<voiceline Zielony 75>>
 Viri: Ja… Ja wiem, ale, ale chciałem  tylko pomóc…
 
+<<voiceline Zielony 76>>
 Viri: To… To ja zabrałem ci pana Perełkę jak nie patrzyłaś!
 
+<<voiceline Zielony 77>>
 Viri: Chciałem, żebyś pogodziła się z Robertem.
 
+<<voicelineEnd Zielony>>
+<<voiceline Czerwony 41>>
 Robert: Mówiłem, że nie dotykałem Perełki.
 <<UpdateDebateNumber PointMeter>>
 <<jump M3_PogodenieGranat1>>
@@ -56,6 +68,7 @@ title: M3_PogodzenieGranat_1
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
+<<voiceline Granat 39>>
 Liv: No i? Pobrudzenie Perełki to i tak jego wina.
 	<<Jab DebataDialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
@@ -64,7 +77,11 @@ title: M3_PogodzenieGranat_2
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Liv: Perełka jest najważniejszą częścią tej rodziny! Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
+<<voiceline Granat 40>>
+Liv: Perełka jest najważniejszym członkiem tej rodziny! 
+
+<<voiceline Granat 41>>
+Liv: Robert okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
 	<<Jab DebataDialogi  "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
@@ -73,6 +90,7 @@ title:M3_C_Jab_1_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Ribert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
+<<voiceline Czerwony 42>>
 Robert: No przepraszam bardzo za ubrudzenie Perełki. Jeszcze czegoś?
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -84,7 +102,11 @@ title:M3_C_Jab_1_2
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
-Robert: Widzi pan? To jak rozmowa ze ścianą. Przepraszam, słyszysz głuchoto?
+<<voiceline Czerwony 43>>
+Robert: Widzi pan? To jak rozmowa ze ścianą. 
+
+<<voiceline Czerwony 44>>
+Robert: Przepraszam, słyszysz głuchoto?
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<jump M3_PogodzenieGranat2>>
@@ -118,6 +140,7 @@ title: M3_PogodzenieGranat2_1
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
+<<voiceline Granat 42>>
 Liv: Tylko dlatego, że mama go tak nauczyła. Nigdy nie przeprasza z serduszka, jak się powinno.
 	<<jump M3_PogodzenieGranat3>>
 ===
@@ -126,7 +149,11 @@ title: M3_PgodzenieGranat2_2
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Liv: Nie wybaczę komuś, kto mówi przeprosiny na odwal! Niech znowu zamknie się w swoim brzydkim domku.
+<<voiceline Granat 43>>
+Liv: Nie wybaczę komuś, kto mówi przeprosiny na odwal! 
+
+<<voiceline Granat 44>>
+Liv: Niech znowu zamknie się w swoim brzydkim domku.
 	<<jump M3_PogodzenieGranat3>>
 ===
 title: M3_PogodzenieGranat3
@@ -158,6 +185,7 @@ title: M3_PogodzenieGranat3_1
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<voiceline Granat 45>>
 Liv: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
@@ -166,6 +194,7 @@ title: M3_PogodzenieGranat3_2
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<voiceline Granat 46>>
 Liv: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
@@ -175,7 +204,11 @@ title:M3_C_Jab_2_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
-Robert: To przepraszam! Rozumiesz, przepraszam, nie chciałem, przestań o tym gadać! Naprawdę przepraszam.
+<<voiceline Czerwony 45>>
+Robert: To przepraszam! 
+
+<<voiceline Czerwony 46>>
+Robert: Rozumiesz, przepraszam, nie chciałem, przestań o tym gadać! Naprawdę przepraszam.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
@@ -186,6 +219,7 @@ title:M3_C_Jab_2_2
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
+<<voiceline Czerwony 47>>
 Robert: Przepraszam, przepraszam, przepraszam! Rozumiesz? Przepraszam! Dostałaś swoje przeprosiny, daj mi spokój!
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -196,6 +230,7 @@ title:M3_Z_Jab_1_1
 ---
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angry">>
+<<voiceline Zielony 78>>
 Viri: Skoro przeprosił, to się liczy! Musisz mu uwierzyć, sprójrz na niego.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -206,6 +241,7 @@ title:M3_Z_Jab_1_2
 ---
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 79>>
 Viri: Liv odpuść już proszę. 
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -241,6 +277,7 @@ title: M3_PogodzenieGranat4_1
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<voiceline Granat 47>>
 Liv: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rzeźbą. Wredzioch.
 	<<jump M3_PogodzenieGranat5>>
 ===
@@ -249,7 +286,8 @@ title: M3_PogodzenieGranat4_2
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozwalać rzeczy gzieś indziej. Z dala ode mnie.
+<<voiceline Granat 48>>
+Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozwalać rzeczy gdzieś indziej. Z dala ode mnie.
 	<<jump M3_PogodzenieGranat5>>
 ===
 title: M3_PogodzenieGranat5
@@ -281,6 +319,7 @@ title: M3_PogodzenieGranat5_1
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<voiceline Granat 49>>
 Liv: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę. 
 	<<Ending PointMeter>>
 ===
@@ -289,6 +328,7 @@ title: M3_PogodzenieGranat5_2
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
+<<voiceline Granat 50>>
 Liv: Ugh, nie chce więcej widzieć jego wybuchów straszności.
 	<<Ending PointMeter>>
 ===
@@ -301,25 +341,36 @@ title: M3_PogodzenieGranatPoDebata
 <<DisableColliders StateManager>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "sad">>
-Liv: I tak nie chce mi się już być zła.
+<<voiceline Granat 51>>
+Liv: I tak nie chce mi się już być złą.
 
 <<ChangeIcon Icons "Robert" "sad">>
+<<voicelineEnd Granat>>
+<<voiceline Czerwony 48>>
 Robert: …Dziękuję.
 
 <<ChangeIcon Icons "Robert" "happy">>
+<<voiceline Czerwony 49>>
 Robert: Nie chciałem pobrudzić Perełki.
 
 <<ChangeIcon Icons "Liv" "angry">>
+<<voicelineEnd Czerwony>>
+<<voiceline Granat 52>>
 Liv: Wierzę ci już, wierzę!
 
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Granat>>
+<<voiceline Zielony 80>>
 Viri: To, ten, jesteśmy wszyscy pogodzeni?
 
+<<voicelineEnd Zielony>>
 <<ChangeIcon Icons "Robert" "happy">>
+<<voiceline Czerwony 50>>
 Robert: Nikt się z tobą nie kłócił.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Czerwony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Cieszę się, że wszyscy się już dogadują.
 
@@ -330,37 +381,56 @@ Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voiceline Granat 53>>
 Liv: O czym gadaliście? O czym, o czym?
 
 <<ChangeIcon Icons "Robert" "happy">>
-Robert: Pan powiedział, że jest okej, jak jestem zły. Tylko muszę poćwiczyć nie wybuchanie.
+<<voicelineEnd Granat>>
+<<voiceline Czerwony 51>>
+Robert: Pan powiedział, że jest okej, jak jestem zły. 
+
+<<voiceline Czerwony 52>>
+Robert: Tylko muszę poćwiczyć nie wybuchanie.
 
 <<ChangeIcon Icons "Liv" "sad">>
+<<voicelineEnd Czerwony>>
+<<voiceline Granat 54>>
 Liv: Ty też masz wtedy takie wrażenie? Że wybuchniesz?
 
 <<ChangeIcon Icons "Robert" "sad">>
+<<voicelineEnd Granat>>
+<<voiceline Czerwony 53>>
 Robert: Też?
 
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Czerwony>>
+<<voiceline Granat 55>>
 Liv: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
 
 <<ChangeIcon Icons "Viri" "happy">>
+<<voicelineEnd Granat>>
+<<voiceline Zielony 81>>
 Viri: A, a ja też mogę?
 
+<<voicelineEnd Zielony>>
 <<ChangeIcon Icons "Liv" "happy">>
-Liv: Jasne!
+<<voiceline Czerwony 57>>
+Robert: Ano!
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Czerwony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Zanim mi się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voiceline Granat 56>>
 Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dziękuję.
 <<HidePlayerIcon IconsPlayer>>

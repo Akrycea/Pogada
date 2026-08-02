@@ -3,9 +3,11 @@
 <<blockPlayerMovement Dialogi>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
+<<voiceline Pomarańcz 1>>
 Lute: Dzień dobry.
 
 <<ChangeIcon Icons "Lute" "happy">>
+<<voiceline Pomarańcz 2>>
 Lute: Pan się nami zajmuje?
 <<HideIcon Icons>>
 
@@ -16,7 +18,11 @@ Bohater: Skąd wiesz?
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "happy">>
-Lute: Widziałam jak pan rozmawał z Violaceusem. Próbowałam dogonić Aureusa, ale był dla mnie za szybki.
+<<voiceline Pomarańcz 3>>
+Lute: Widziałam jak pan rozmawał z Violaceusem. 
+
+<<voiceline Pomarańcz 4>>
+Lute: Próbowałam dogonić Aureusa, ale był dla mnie za szybki.
 
 <<ChangeIcon Icons "Lute" "sad">>
 Lute: Może pan przekazać coś mojej mamie?
@@ -29,11 +35,16 @@ Bohater: Oczywiście, jak tylko ponownie na nią wpadnę.
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
-Lute: Zgubiłam zwierzaka Lus. Czy możesz go znaleźć i jej oddać?
+<<voiceline Pomarańcz 5>>
+Lute: Zgubiłam zwierzaka Lus. 
+
+<<voiceline Pomarańcz 6>>
+Lute: Czy możesz go znaleźć i jej oddać?
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voicelineEnd Pomarańcz>>
 Bohater: O jejku.
 
 Bohater: Cały czas coś gubicie, co dzieciaki? Może ja spróbuję go znaleźć?
@@ -44,24 +55,29 @@ Bohater: Przed chwilą znalazłem zagubionego pluszaka Liv, mam do tego chyba sm
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "angry">>
+<<voiceline Pomarańcz 7>>
 Lute: Może pan spróbować, ale to mama powinna oddać go Lus.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voicelineEnd Pomarańcz>>
 Bohater: Czemu tak sądzisz?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
+<<voiceline Pomarańcz 8>>
 Lute: Bo na mnie będzie zła bo źle zrobiłam.
 
 <<ChangeIcon Icons "Lute" "happy">>
-Lute:  A na mamę nie może być.
+<<voiceline Pomarańcz 9>>
+Lute:  A na mamę nie może być zła.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voicelineEnd Pomarańcz>>
 Bohater: No dobrze, zobaczymy jak się sytuacja potoczy.
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>

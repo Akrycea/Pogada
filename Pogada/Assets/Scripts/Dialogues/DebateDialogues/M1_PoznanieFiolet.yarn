@@ -6,6 +6,7 @@ Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try 
 
 Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
+<<voiceline Fiolet 10>>
 Fiolet: Hm, no może…
 	<<UpdateDebateNumber PointMeter>>
 	<<jump M1_PoznanieFiolet1>>
@@ -32,12 +33,14 @@ title: M1_PoznanieFiolet1
 
 title: M1_PoznanieFiolet1_1
 ---
-Dziecko 2: Vus ma jakiś głupi pomysł, że chce nagle imię zmieniać.
+<<voiceline Fiolet 11>>
+Dziecko 2: Vus ma jakiś głupi pomysł, że chce imię zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
 
 title: M1_PoznanieFiolet1_2
 ---
+<<voiceline Fiolet 12>>
 Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
@@ -63,13 +66,18 @@ title: M1_PoznanieFiolet2
 
 title: M1_PoznanieFiolet2_1
 ---
-Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego tylko żałował.
+<<voiceline Fiolet 13>>
+Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego żałował.
 	<<jump M1_PoznanieFiolet3>>
 ===
 
 title: M1_PoznanieFiolet2_2
 ---
-Dziecko 2: Mamie na pewno będzie przykro z tego powodu! Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie.
+<<voiceline Fiolet 14>>
+Dziecko 2: Mamie na pewno będzie przykro z tego powodu! 
+
+<<voiceline Fiolet 15>>
+Dziecko 2: Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie!
 	<<jump M1_PoznanieFioleti3>>
 ===
 
@@ -94,12 +102,14 @@ title: M1_PoznanieFiolet3
 
 title: M1_PoznanieFiolet3_1
 ---
+<<voiceline Fiolet 16>>
 Dziecko 2: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczęśliwa! A to ona jest najważniejsza.
 	<<jump M1_PoznanieFiolet4>>
 ===
 
 title: M1_PoznanieFiolet3_2
 ---
+<<voiceline Fiolet 17>>
 Dziecko 2: Zasad się nie łamie i kropka!
 	<<jump M1_PoznanieFiolet4>>
 ===
@@ -125,12 +135,17 @@ title: M1_PoznanieFiolet4
 
 title: M1_PoznanieFiolet4_1
 ---
-Dziecko 2: Przecież ja go wspieram! Powstrzymuję go przed złym wyborem.
+<<voiceline Fiolet 18>>
+Dziecko 2: Przecież ja go wspieram! 
+
+<<voiceline Fiolet 19>>
+Dziecko 2: Powstrzymuję go przed złym wyborem.
 	<<jump M1_PoznanieFiolet5>>
 ===
 
 title: M1_PoznanieFiolet4_2
 ---
+<<voiceline Fiolet 20>>
 Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
 	<<jump M1_PoznanieFiolet5>>
 ===
@@ -156,12 +171,14 @@ title: M1_PoznanieFiolet5
 
 title: M1_PoznanieFiolet5_1
 ---
+<<voiceline Fiolet 21>>
 Dziecko 2: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i nie uciekał.
 	<<Ending Debate>>
 ===
 
 title: M1_PoznanieFiolet5_2
 ---
+<<voiceline Fiolet 22>>
 Dziecko 2: Śmiertelnik jak ty nie zrozumie.
 	<<Ending Debate>>
 ===
@@ -176,28 +193,38 @@ Bohater: Znajdę go i porozmawiam z nim, i zaraz zapomnicie o tej waszej sprzecz
 
 Bohater: Może ma jakieś miejsce, w którym lubi się zaszyć?
 
+<<voiceline Fiolet 23>>
 Fiolet: Hm, jak komukolwiek jest źle to się biegnie do Lus.
 
+<<voiceline Fiolet 24>>
 Fiolet: Ona najlepiej przytula.
 
+<<voicelineEnd Fiolet>>
 Bohater: Wiesz, gdzie ją znajdę?
 
+<<voiceline Fiolet 25>>
 Fiolet: Chyba pocieszała wcześniej Liv, która pożarła się o coś z resztą. Powinny być w wiosce niedaleko stąd.
 
+<<voicelineEnd Fiolet>>
 Bohater: Dizękuję. Pójdę ich poszukać.
 
 Bohater: Przemyśl proszę nasza rozmowę. I żadnych więcej kłótni!
 
 Bohater: Na ten moment to ja się wami zajmuję i nie chcę żadnych bójek.
 
+<<voiceline Fiolet 26>>
 Fiolet: My się nie biliśmy! Po prostu przemawiałem mu do rozsądku.
 
+<<voicelineEnd Fiolet>>
 Bohater: Pogadamy o tym jeszcze. Czy wiesz może, czemu świat nie ma kolorów?
 
+<<voiceline Fiolet 27>>
 Fiolet: Nie. Pewnie mama wie.
 
-Fiolet: Powiedz Aureusowi, jak go znajdziesz, żeby się słuchał mamy.
+<<voiceline Fiolet 28>>
+Fiolet: Powiedz Vusowi, jak go znajdziesz, żeby się słuchał mamy.
 
+<<voicelineEnd Fiolet>>
 Bohater: Wszyscy porozmawiamy, jak go znajdę. Do później.
 <<unblockPlayerMovement Dialogi>>
 ===

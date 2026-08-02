@@ -4,37 +4,68 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Oh. Dzień dobry.
+Bohater: Dzień dobry.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 1>>
 Dziecko: …
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Czy coś się stało, że jesteś taki smętny?
+Bohater: Szukam Vusa, widziałeś go może?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
-Dziecko: …
-
-Dziecko: No… Może…
+<<voiceline Zielony 2>>
+Dziecko: A jakie to ma znaczenie? 
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Pokłócił się z bratem i chciałem zbadać sprawę.
+<<HidePlayerIcon IconsPlayer>>
+
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 3>>
+Dziecko: I tak się już nigdy nie pogodzą…
+<<HideIcon Icons>>
+
+<<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Czy… coś się stało, że jesteś taki smętny?
+<<HidePlayerIcon IconsPlayer>>
+
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 4>>
+Dziecko: ...
+
+<<voiceline Zielony 5>>
+Dziecko: No, może...
+<<HideIcon Icons>>
+
+<<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Chcesz o tym porozmawiać?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 6>>
 Dziecko: Chyba nie. Może z mamą? Albo tatą.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Niestety wasi rodzice wyjechali na trochę. Ja się wami zajmuję.
 
@@ -46,29 +77,35 @@ Bohater: Będę szukał Lus, może z nią chciałbyś porozmawiać?
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angry">>
+<<voiceline Zielony 7>>
 Dziecko: Hm… Nie, nie…
 
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 8>>
 Dziecko: Rozmawiała z Liv, a Liv już mnie nie kocha.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Jak to?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 7>>
 Dziecko: …
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
+<<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voiceline Zielony 10>>
 Dziecko: Możesz próbować…
 <<HideIcon Icons>>
 <<unblockPlayerMovement Dialogi>>
