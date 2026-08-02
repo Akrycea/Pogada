@@ -53,11 +53,20 @@ public class BirdsPuzzle : MonoBehaviour
         }
     }
 
+    private bool hasSaidVoiceline = false;
+    private AudioSource audio;
 
     //showing the chatbox when the player is hovering over the bird, and hiding it when they are not
     public void OnMouseOver()
     {
         ChatBox.SetActive(true);
+
+        if (!hasSaidVoiceline)
+        {
+            audio = gameObject.GetComponent<AudioSource>();
+            audio.Play();
+            hasSaidVoiceline = true;
+        }
     }
 
     public void OnMouseExit()
