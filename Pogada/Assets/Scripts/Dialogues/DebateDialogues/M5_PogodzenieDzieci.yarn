@@ -4,12 +4,15 @@
 Aureus: Czego chcecie?
 
 <<voicelineEnd Żółć2>>
+<<voiceline Player 313>>
 Bohater: Martwiliśmy się o ciebie.
 
+<<voiceline Player 314>>
 Bohater: Daj nam szansę, Violaceus zgodził się porozmawiać.
 
 Violaceus: …
 
+<<voiceline Player 315>>
 Bohater: Eh, słuchaj…
 <<UpdateDebateNumber PointMeter>>
 	<<jump M5_PogodzenieDzieci1>>
@@ -18,18 +21,28 @@ Bohater: Eh, słuchaj…
 title: M5_PogodzenieDzieci1
 ---
 ->Robisz z igły widły.
+	<<voiceline Player 316>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci1_2>>
 ->Jesteś dla nas ważny, zostań.
+	<<voiceline Player 317>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci1_1>>
 ->Oboje jesteście bardzo uparci.
+	<<voiceline Player 318>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci1_2>>
 ->Nie możesz odejść.
+	<<voiceline Player 319>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci1_1>>
 ->Odchodzenie to nonsens.
+	<<voiceline Player 320>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci1_2>>
 ===
@@ -79,18 +92,28 @@ Lute:  Musicie się przeprosić, przecież jesteśmy rodzeństwem.
 title: M5_PogodzenieDzieci2
 ---
 ->Nie możecie rozstać się w niezgodzie.
+	<<voiceline Player 321>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci2_1>>
 ->Świat bardzo was potrzebuje.
+	<<voiceline Player 322>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci2_2>>
 ->Przeproście się, proszę.
+	<<voiceline Player 323>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci2_2>>
 ->Nie obrażaj się proszę.
+	<<voiceline Player 324>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci2_2>>
 ->Odejście z domu nie rozwiąże waszej kłótni.
+	<<voiceline Player 325>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci2_1>>
 ===
@@ -169,18 +192,28 @@ Liv: Jeśli jesteś za głupi, żeby nauczyć się nowego imienia, to raczej z t
 title: M5_PogodzenieDzieci3
 ---
 ->Oboje musicie pójść na kompromis, żeby żyć w zgodzie.
+	<<voiceline Player 326>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci3_2>>
 ->Możesz żyć jako ty.
+	<<voiceline Player 327>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci3_1>>
 ->Twoja opinia na temat samego siebie jest najważniejsza.
+	<<voiceline Player 328>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci3_1>>
 ->Opinia Violaceusa nie powinna wpływać na twoje plany na życie.
+	<<voiceline Player 329>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci3_2>>
 ->Możesz po prostu żyć bez Violaceusa.
+	<<voiceline Player 330>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci3_2>>
 ===
@@ -244,18 +277,28 @@ Violaceus: Czy naprawdę wszyscy zamierzają po prostu słuchać jakiegoś śmie
 title: M5_PogodzenieDzieci4
 ---
 ->Niezależnie od czyjejkolwiek opinii, Aureus ma prawo do szczęścia.
+	<<voiceline Player 331>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci4_1>>
 ->Przestań zasłaniać się zdaniem innych.
+	<<voiceline Player 332>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci4_1>>
 ->Ta konwersacja cały czas kręci się wkoło wokół ciebie.
+	<<voiceline Player 333>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci4_2>>
 ->Musisz przestać być taki zapatrzony w siebie.
+	<<voiceline Player 334>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci4_2>>
 ->Twoja opinia nie ma tu znaczenia.
+	<<voiceline Player 335>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci4_2>>
 ===
@@ -336,18 +379,28 @@ Violaceus: Będziesz tego żałować, nie mogę na to pozwolić. Próbuję cię 
 title: M5_PogodzenieDzieci5
 ---
 ->Ty będziesz żałować straty brata.
+	<<voiceline Player 336>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci5_2>>
 ->Czemu zajmujesz się przyszłością zamiast bratem?
+	<<voiceline Player 337>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci5_2>>
 ->Nigdy nie wiadomo jak życie się potoczy, ale ważne, że będziecie miec siebie nawzajem.
+	<<voiceline Player 338>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci5_1>>
 ->Nie ochronisz go przed jego własnymi uczuciami.
+	<<voiceline Player 339>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci5_2>>
 ->Możecie zawsze w przyszłości przejść przez to razem.
+	<<voiceline Player 340>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M5_PogodzenieDzieci5_1>>
 ===

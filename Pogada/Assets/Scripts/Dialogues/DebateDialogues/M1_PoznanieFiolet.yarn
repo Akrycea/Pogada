@@ -1,12 +1,16 @@
 ﻿title: M1_PoznanieFiolet
 ---
+<<voiceline Player 9>>
 Bohater: To co się teraz liczy, to odnalezienie twojego rodzeństwa i wytłumaczenie całej sprawy.
 
+<<voiceline Player 10>>
 Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try miga.
 
+<<voiceline Player 11>>
 Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
-<<voiceline Fiolet 10>>
+<<voicelineEnd Player>>
+<<voiceline Fiolet 12>>
 Fiolet: Hm, no może…
 	<<UpdateDebateNumber PointMeter>>
 	<<jump M1_PoznanieFiolet1>>
@@ -15,18 +19,28 @@ Fiolet: Hm, no może…
 title: M1_PoznanieFiolet1
 ---
 ->Nie powinieneś bez powodu krzyczeć na brata.
+	<<voiceline Player 12>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->Od kiedy rodzeństwa się kłócą?
+	<<voiceline Player 13>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->Co ci zrobił?
+	<<voiceline Player 14>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->O co się pokłóciliście?
+	<<voiceline Player 15>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->O co się darliście?
+	<<voiceline Player 16>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ===
@@ -48,18 +62,28 @@ Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
 title: M1_PoznanieFiolet2
 ---
 ->I o to cały ten krzyk?
+	<<voiceline Player 17>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Czemu uważasz, że sprawi tym przykrość mamie?
+	<<voiceline Player 18>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Każdy ma swoje imię i może robić z nim co chce.
+	<<voiceline Player 19>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Wydaje mi się, że waszych rodziców to zupełnie nie interesuje.
+	<<voiceline Player 20>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Co tobie do tego?
+	<<voiceline Player 21>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ===
@@ -84,18 +108,28 @@ Dziecko 2: Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie!
 title: M1_PoznanieFiolet3
 ---
 ->Nie możesz innym narzucać swoich zasad.
+	<<voiceline Player 22>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->Kogo obchodzi mama? Jesteście już duzi.
+	<<voiceline Player 23>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->To tylko imię.
+	<<voiceline Player 24>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->Może mama cieszyłaby się ze szczęścia Vusa?
+	<<voiceline Player 25>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->A co, jakbyś ty chciał zmienić imię?
+	<<voiceline Player 26>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ===
@@ -117,18 +151,28 @@ Dziecko 2: Zasad się nie łamie i kropka!
 title: M1_PoznanieFiolet4
 ---
 ->Rozmawiałem z waszą mamą i na nic takiego nie narzekała.
+	<<voiceline Player 27>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Czemu jej nie spytacie?
+	<<voiceline Player 28>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Jako rodzeństwo powinniście się chyba zawsze wspierać?
+	<<voiceline Player 29>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_1>>
 ->Sam sobie wymyśliłeś te zasady.
+	<<voiceline Player 30>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Chyba ty jesteś bardziej przeciwko temu, niż wasza mama.
+	<<voiceline Player 31>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_1>>
 ===
@@ -153,18 +197,28 @@ Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
 title: M1_PoznanieFiolet5
 ---
 ->Powinieneś dać dorosłym się tym zająć.
+	<<voiceline Player 32>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ->Krzyczenie na niego nikomu nie pomoże.
+	<<voiceline Player 33>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Światu brakuje kolorów, a wy skupiacie się na imionach?
+	<<voiceline Player 34>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
-->Krzyczenie na niego nikomu nie pomoże.
+->To nie jest aż tak poważny temat, żeby się o to kłócić.
+	<<voiceline Player 35>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Ta cała kłótnia nie ma sensu.
+	<<voiceline Player 36>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ===
@@ -187,12 +241,16 @@ Dziecko 2: Śmiertelnik jak ty nie zrozumie.
 title: M1_PoznanieFioletPoDebacie
 ---
 <<debateWon Fiolet>>
+<<voiceline Player 37>>
 Bohater: Czy wiesz może, gdzie Aureus mógł uciec?
 
-Bohater: Znajdę go i porozmawiam z nim, i zaraz zapomnicie o tej waszej sprzeczce.
+<<voiceline Player 38>>
+Bohater: Znajdę go i porozmawiam z nim. Zaraz wyjaśnimy tą sprawę.
 
-Bohater: Może ma jakieś miejsce, w którym lubi się zaszyć?
+<<voiceline Player 39>>
+Bohater: Wiesz, gdzie mógł się zaszyć?
 
+<<voicelineEnd Player>>
 <<voiceline Fiolet 23>>
 Fiolet: Hm, jak komukolwiek jest źle to się biegnie do Lus.
 
@@ -200,24 +258,32 @@ Fiolet: Hm, jak komukolwiek jest źle to się biegnie do Lus.
 Fiolet: Ona najlepiej przytula.
 
 <<voicelineEnd Fiolet>>
+<<voiceline Player 40>>
 Bohater: Wiesz, gdzie ją znajdę?
 
+<<voicelineEnd Player>>
 <<voiceline Fiolet 25>>
 Fiolet: Chyba pocieszała wcześniej Liv, która pożarła się o coś z resztą. Powinny być w wiosce niedaleko stąd.
 
 <<voicelineEnd Fiolet>>
+<<voiceline Player 41>>
 Bohater: Dizękuję. Pójdę ich poszukać.
 
+<<voiceline Player 42>>
 Bohater: Przemyśl proszę nasza rozmowę. I żadnych więcej kłótni!
 
+<<voiceline Player 43>>
 Bohater: Na ten moment to ja się wami zajmuję i nie chcę żadnych bójek.
 
+<<voicelineEnd Player>>
 <<voiceline Fiolet 26>>
 Fiolet: My się nie biliśmy! Po prostu przemawiałem mu do rozsądku.
 
 <<voicelineEnd Fiolet>>
+<<voiceline Player 44>>
 Bohater: Pogadamy o tym jeszcze. Czy wiesz może, czemu świat nie ma kolorów?
 
+<<voicelineEnd Player>>
 <<voiceline Fiolet 27>>
 Fiolet: Nie. Pewnie mama wie.
 
@@ -225,6 +291,10 @@ Fiolet: Nie. Pewnie mama wie.
 Fiolet: Powiedz Vusowi, jak go znajdziesz, żeby się słuchał mamy.
 
 <<voicelineEnd Fiolet>>
-Bohater: Wszyscy porozmawiamy, jak go znajdę. Do później.
+<<voiceline Player 45>>
+Bohater: Wszyscy porozmawiamy, jak go znajdę. 
+
+<<voiceline Player 46>>
+Bohater: Do później.
 <<unblockPlayerMovement Dialogi>>
 ===

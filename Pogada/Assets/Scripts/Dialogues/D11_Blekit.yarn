@@ -3,11 +3,13 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 243>>
 Bohater: Czy to ty jesteś Lus?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lus" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Błękit 18>>
 Lus: Tak. Potrzebuje pan czegoś?
 
@@ -18,10 +20,12 @@ Lus: Jestem trochę zajęta. Mój brat jest bardzo smutny.
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Błękit>>
+<<voiceline Player 244>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Chciałem porozmawiać z Aureusem. Podobno miał być z tobą.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 245>>
 Bohater: Znalazłem też twoją siostrę.
 <<HidePlayerIcon IconsPlayer>>
 <<blekitDebata Dialogi>>

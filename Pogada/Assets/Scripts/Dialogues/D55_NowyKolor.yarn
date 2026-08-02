@@ -3,18 +3,22 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 116>>
 Bohater: Ha! Niesamowite!
 
+<<voiceline Player 117>>
 Bohater: Ta piękna zieleń, skąd ona się wzięła?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 51>>
 Viri: Oh, hm, jakoś mi rzeczywiście inaczej.
 <<HideIcon Icons>>
 
 <<voicelineEnd Zielony>>
+<<voiceline Player 118>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: To tylko tak trzymaj! W takim tempie wszyscy będziemy się cieszyć piękną tęczą już niedługo.
@@ -22,11 +26,13 @@ Bohater: To tylko tak trzymaj! W takim tempie wszyscy będziemy się cieszyć pi
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 52>>
 Viri: Może, jeśli Robert i Liv poczują się jak ja, to też wrócą im kolory.
 <<HideIcon Icons>>
 
 <<voicelineEnd Zielony>>
+<<voiceline Player 119>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Warto sprawdzić.

@@ -13,17 +13,21 @@ Robert: A potem zaczęła mi kłamać prosto w twarz.
 Robert: Nie jestem żadnym kradziejem!
 
 <<voicelineEnd Czerwony>>
+<<voiceline Player 135>>
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater:  Czy to cię tak zdenerwowało?
 
+<<voicelineEnd Player>>
 <<voiceline Czerwony 19>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Robert: Ja nie kradnę. I nie kłamię!
 
 <<voicelineEnd Czerwony>>
+<<voiceline Player 136>>
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
-Bohater: Wierzę ci. 
+Bohater: Spokojnie. Wierzę ci. 
 
+<<voicelineEnd Player>>
 <<voiceline Czerwony 20>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
@@ -35,22 +39,32 @@ Robert: Ona w ogóle nie wierzyła. A ja nie kłamię!
 title: M2_PoznanieCzerwieni1
 ---
 ->Jak zaczęło się to zamieszanie?
+	<<voiceline Player 137>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Oddaj Liv jej pluszaka.
+	<<voiceline Player 138>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Czemu ukradłeś Perełkę?
+	<<voiceline Player 139>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Jak to było z tym pluszakiem?
+	<<voiceline Player 140>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Po co brudziłeś Perełkę?
+	<<voiceline Player 141>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
@@ -77,22 +91,32 @@ Robert: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba!
 title: M2_PoznanieCzerwieni2
 ---
 ->Czemu jeszcze nie powiedziałeś tego Liv?
+	<<voiceline Player 142>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Może wytłumaczymy to Liv razem?
+	<<voiceline Player 143>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ->Specjalnie czy nie, zepsułeś jej zabawkę.
+	<<voiceline Player 144>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Powiedz to Liv.
+	<<voiceline Player 145>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Ja mogę z nią porozmawiać.
+	<<voiceline Player 146>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
@@ -137,22 +161,32 @@ Viri: Przestań krzyczeć!
 title: M2_PoznanieCzerwieni3
 ---
 ->Powinieneś pogodzić się z tym, że ci nie wierzy.
+	<<voiceline Player 147>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może jesteś za mało przekonujący.
+	<<voiceline Player 148>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Mogła nie uwierzyć w złości, czynami możesz ją przekonać.
+	<<voiceline Player 149>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ->Ciężko uwierzyć bez dowodów.
+	<<voiceline Player 150>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może uwierzyć grupie.
+	<<voiceline Player 151>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
@@ -185,22 +219,32 @@ Robert: Kłamie! Kłamie!
 title: M2_PoznanieCzerwieni4
 ---
 ->Któreś z was nie mówi prawdy, to pewne.
+	<<voiceline Player 152>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->Mówiła, że rozbiłeś statuę ze złości.
+	<<voiceline Player 153>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Miała rację, że psujesz rzeczy, jak się złościsz.
+	<<voiceline Player 154>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->Wspominała, że nie radzisz sobie ze złością.
+	<<voiceline Player 155>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Nie unoś się.
+	<<voiceline Player 156>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
@@ -275,22 +319,32 @@ Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 title: M2_PoznanieCzerwieni5
 ---
 ->Wydajesz się bardzo przeżywać strach innych dzieci.
+	<<voiceline Player 157>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Wydaje mi się, że kłamiesz i cię to stresuje.
+	<<voiceline Player 158>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Liv chyba miała rację.
+	<<voiceline Player 159>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Nie ma nic złego w tym, że się złościsz.
+	<<voiceline Player 160>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Zniszczyłeś pluszaka, masz za swoje.
+	<<voiceline Player 161>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
@@ -321,12 +375,15 @@ title: M2_PoznanieCzerwieniPoDebata
 <<DisableColliders StateManager>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 162>>
 Bohater: Nie ma nic złego w tym, że się denerwujesz.
 
+<<voiceline Player 163>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Po prostu trzeba może pomyśleć co robisz w związku z tymi emocjami.
 <<HidePlayerIcon IconsPlayer>>
 
+<<voicelineEnd Player>>
 <<voiceline Czerwony 33>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "happy">>
@@ -354,9 +411,11 @@ Robert: W ogóle nie chcę być straszny.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Czerwony>>
+<<voiceline Player 164>>
 Bohater: Czy zniszczenie statuy pomogło ci ze złością?
 <<HidePlayerIcon IconsPlayer>>
 
+<<voicelineEnd Player>>
 <<voiceline Czerwony 37>>
 <<ChangeIcon Icons "Robert" "happy">>
 Robert: Trochę.
@@ -368,12 +427,15 @@ Robert: Ale potem zrobiło mi się tylko gorzej. Lubiłem te statuę.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Czerwony>>
+<<voiceline Player 165>>
 Bohater: Może musisz mieć dla siebie miejsce, gdzie możesz być zły.
 
+<<voiceline Player 166>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Miejsce, gdzie pozbyłbyś się złości w bardziej kontrolowany sposób. Gdzie miałbyś chwilę na wyciszenie dla siebie.
 <<HidePlayerIcon IconsPlayer>>
 
+<<voicelineEnd Player>>
 <<voiceline Czerwony 39>>
 <<ChangeIcon Icons "Robert" "sad">>
 Robert: Wolałbym się nie złościć w ogóle.
@@ -382,12 +444,15 @@ Robert: Wolałbym się nie złościć w ogóle.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voicelineEnd Czerwony>>
+<<voiceline Player 167>>
 Bohater: Trzeba się czasem zezłościć. To wcale nie jest zawsze złe.
 
-Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od niej.
+<<voiceline Player 168>>
+Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od złości.
 <<HidePlayerIcon IconsPlayer>>
 
 <<ChangeIcon Icons "Viri" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 72>>
 Viri: Jakby Liv usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
 

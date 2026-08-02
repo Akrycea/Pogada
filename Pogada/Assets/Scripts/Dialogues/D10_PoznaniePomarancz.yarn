@@ -13,11 +13,14 @@ Lute: Pan się nami zajmuje?
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voicelineEnd Pomarańcz>>
+<<voiceline Player 204>>
 Bohater: Skąd wiesz?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 3>>
 Lute: Widziałam jak pan rozmawał z Violaceusem. 
 
@@ -30,11 +33,14 @@ Lute: Może pan przekazać coś mojej mamie?
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voicelineEnd Pomarańcz>>
+<<voiceline Player 205>>
 Bohater: Oczywiście, jak tylko ponownie na nią wpadnę.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 5>>
 Lute: Zgubiłam zwierzaka Lus. 
 
@@ -45,16 +51,20 @@ Lute: Czy możesz go znaleźć i jej oddać?
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 206>>
 Bohater: O jejku.
 
+<<voiceline Player 207>>
 Bohater: Cały czas coś gubicie, co dzieciaki? Może ja spróbuję go znaleźć?
 
+<<voiceline Player 208>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Przed chwilą znalazłem zagubionego pluszaka Liv, mam do tego chyba smykałkę.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "angry">>
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 7>>
 Lute: Może pan spróbować, ale to mama powinna oddać go Lus.
 <<HideIcon Icons>>
@@ -62,22 +72,25 @@ Lute: Może pan spróbować, ale to mama powinna oddać go Lus.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 209>>
 Bohater: Czemu tak sądzisz?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Lute" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 8>>
 Lute: Bo na mnie będzie zła bo źle zrobiłam.
 
 <<ChangeIcon Icons "Lute" "happy">>
 <<voiceline Pomarańcz 9>>
-Lute:  A na mamę nie może być zła.
+Lute: A na mamę nie może być zła.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 210>>
 Bohater: No dobrze, zobaczymy jak się sytuacja potoczy.
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>

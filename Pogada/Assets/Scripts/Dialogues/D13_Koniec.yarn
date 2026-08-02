@@ -3,25 +3,30 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 341>>
 Bohater: W końcu, wszystkie kolory przywrócone.
 
+<<voiceline Player 342>>
 Bohater: Pewnie cała rodzina się cieszy w domu.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Aureus" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Żółć2 31>>
 Aureus: Nie tęskni pan za nimi?
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Żółć2>>
+<<voiceline Player 343>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Najbardziej na świecie.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 59>>
 Liv: To czemu pan tu jeszcze siedzi? Psik!
 
@@ -34,11 +39,13 @@ Lute: Właśnie, przecież na pana czekają w domu.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 344>>
 Bohater: Nie mogę was zostawić bez opieki, więc do powrotu waszych rodziców-
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Ksiezyc" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Księżyc 8>>
 Księżyc: Huhu, gdzie jest moja zgraja rozbójników?
 <<HideIcon Icons>>
@@ -48,11 +55,13 @@ Dzieci: Tata!
 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 345>>
 Bohater: Skąd…?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Ksiezyc" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Księżyc 9>>
 Księżyc: Pan wybaczy, panie śmiertelniku. Zamierzałem przyjść zbadać sytuację już po powrocie zielonego, ale mieliśmy zarezerwowany masaż na piętnastą.
 <<HideIcon Icons>>
@@ -60,14 +69,17 @@ Księżyc: Pan wybaczy, panie śmiertelniku. Zamierzałem przyjść zbadać sytu
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Księżyc>>
+<<voiceline Player 346>>
 Bohater: Ah, tak…
 
+<<voiceline Player 347>>
 <<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Cóż, dzieci bardzo państwa potrzebowały.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Ksiezyc" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Księżyc 10>>
 Księżyc: Bywa. Ale widzę, że pan sobie świetnie poradził!
 
@@ -122,6 +134,7 @@ Księżyc: Ah nie umiem wam odmówić.
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Księżyc>>
+<<voiceline Player 348>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: To komu w drogę, temu czas.
 <<HidePlayerIcon IconsPlayer>>

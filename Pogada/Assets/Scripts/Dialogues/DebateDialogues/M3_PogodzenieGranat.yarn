@@ -12,9 +12,11 @@ Liv: Hurra!
 
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 <<voicelineEnd Granat>>
+<<voiceline Player 172>>
 Bohater: To Viri wyczyścił Perełkę, jemu należą się za to podziękowania.
 
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
+<<voicelineEnd Player>>
 <<voiceline Granat 37>>
 Liv: Viri?
 
@@ -43,22 +45,32 @@ Robert: Mówiłem, że nie dotykałem Perełki.
 title: M3_PogodenieGranat1
 ---
 ->Robert nie kłamał podczas waszej kłótni.
+	<<voiceline Player 173>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Wygląda na to, że doszło do nieporozumienia.
+	<<voiceline Player 175>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Niepotrzebnie przezywałaś brata.
+	<<voiceline Player 176>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->Przestańcie się skupiać na pluszaku.
+	<<voiceline Player 177>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->Robertowi należą się przeprosiny.
+	<<voiceline Player 178>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
@@ -115,22 +127,32 @@ Robert: Przepraszam, słyszysz głuchoto?
 title: M3_PogodzenieGranat2
 ---
 ->Czy przeprosił cię za to?
+	<<voiceline Player 179>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Sama mówiłaś, że Robert wyraził skruchę.
+	<<voiceline Player 180>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Wybacz mu i po problemie.
+	<<voiceline Player 181>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Już prowadziliście tą rozmowę.
+	<<voiceline Player 182>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Przeprosił, więc jest uniewinniony.
+	<<voiceline Player 183>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
@@ -160,22 +182,32 @@ title: M3_PogodzenieGranat3
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Zakładanie intencji innych może być mylące.
+	<<voiceline Player 184>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->Robert starał się poprawnie przeprosić na własny sposób.
+	<<voiceline Player 185>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->Przeprosiny to przeprosiny.
+	<<voiceline Player 186>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Nie wiesz przecież, co się dzieje w jego głowie.
+	<<voiceline Player 187>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Powinnaś ufać mu bezgranicznie.
+	<<voiceline Player 188>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
@@ -252,22 +284,32 @@ title: M3_PogodzenieGranat4
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Mówił szczerze, złościł się, bo mu nie ufałaś.
+	<<voiceline Player 189>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Nikt nie lubi, jak nazywa się go kłamczuchem.
+	<<voiceline Player 190>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Też bym się zezłościł na jego miejscu.
+	<<voiceline Player 191>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Skoro sobie nie ufacie, to nie ma o czym mówić.
+	<<voiceline Player 192>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Odwracasz uwagę od rzeczywistego problemu.
+	<<voiceline Player 193>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
@@ -293,23 +335,33 @@ Liv: To nie jest mój problem. Ja mam Perełkę, a Robert może sobie iść rozw
 title: M3_PogodzenieGranat5
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
-->Nie zrobił tego, aby cię wystraszyć.
+->Nie robił tego, aby cię wystraszyć.
+	<<voiceline Player 194>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Widać, że żałuje, daj mu szansę.
+	<<voiceline Player 195>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Jego złość jest osobnym problemem.
+	<<voiceline Player 196>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Zareagował poprawnie.
+	<<voiceline Player 197>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Powinnaś przestać się na tym skupiać.
+	<<voiceline Player 198>>
+	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
@@ -372,15 +424,19 @@ Robert: Nikt się z tobą nie kłócił.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Czerwony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 199>>
 Bohater: Cieszę się, że wszyscy się już dogadują.
 
+<<voiceline Player 200>>
 Bohater: Robert, pamiętaj proszę o czym gadaliśmy wcześniej.
 
+<<voiceline Player 201>>
 Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 53>>
 Liv: O czym gadaliście? O czym, o czym?
 
@@ -421,10 +477,12 @@ Robert: Ano!
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Czerwony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Zanim mi się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
+<<voiceline Player 202>>
+Bohater: Zanim się rozbiegniecie, Liv powiedz mi prosze gdzie jest Lus?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<voiceline Granat 56>>
 Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
 <<HideIcon Icons>>
@@ -432,6 +490,7 @@ Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś t
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 203>>
 Bohater: Dziękuję.
 <<HidePlayerIcon IconsPlayer>>
 <<granatwygranadebata Dialogi>>

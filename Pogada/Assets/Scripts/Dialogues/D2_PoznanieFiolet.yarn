@@ -34,11 +34,13 @@ title: D2_PoznanieFiolet_2
 ---
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 6>>
 Bohater: Co tu się dzieje?
 <<HidePlayerIcon IconsPlayer>>
 //vus dodane na potrzeby dema
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 6>>
 Dziecko2: I co pan zrobił? Ten głupol przez pana uciekł i będzie miał durne pomysły!
@@ -47,20 +49,24 @@ Dziecko2: I co pan zrobił? Ten głupol przez pana uciekł i będzie miał durne
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd KłocąceSieDzieci>>
 <<ChangePlayerIcon IconsPlayer "angry">>
-Bohater: Chwila, chwila, wydaje mi się, że kłócił się z tobą, nie ze mną.
+<<voiceline Player 7>>
+Bohater: Wydaje mi się, że kłócił się z tobą, nie ze mną.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 7>>
 Dziecko2: Ta, ode mnie by nie uciekł!
 <<HideIcon Icons>>
 
 <<voicelineEnd KłocąceSieDzieci>>
+<<fightCloudDisable KłocąceSieDzieci>>
 //tu dac odpalanie sie debaty fiolet1
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "angry">>
-Bohater: Nieważne, muszę pójść go znaleźć.
+<<voiceline Player 8>>
+Bohater: Cóż, musimy go znaleźć. Wasi rodzice wyjechali i zostawili was pod moją opieką.
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
 //to tu bedzie chyba do usuniecia bo bylo na expo v

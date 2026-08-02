@@ -7,8 +7,10 @@ Lute: Nie sama, z panem.
 Lute: …
 
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 246>>
 Bohater: A więc, Lute przyszła oddać ci Chmurkę i przeprosić.
 
+<<voicelineEnd Player>>
 <<voiceline Błękit 1>>
 Lus: Ona czy pan?
 <<UpdateDebateNumber PointMeter>>
@@ -18,18 +20,28 @@ Lus: Ona czy pan?
 title: M32_PogodzenieBlekit1
 ---
 ->Potrzebuje trochę zachęty.
+	<<voiceline Player 247>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_1>>
 ->Co za różnica?
+	<<voiceline Player 248>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Nie cieszysz się do Chmurki?
+	<<voiceline Player 249>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Ja się w to nie mieszam.
+	<<voiceline Player 250>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Lute jest trochę nieśmiała, to wszystko.
+	<<voiceline Player 251>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_1>>
 ===
@@ -50,18 +62,28 @@ Lus: Lute nie mogła tego zrobić sama?
 title: M32_PogodzenieBlekit2
 ---
 ->Zaufaj starszym.
+	<<voiceline Player 252>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Twoje wymagania nie pomagają.
+	<<voiceline Player 253>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Teraz przeprosi sama.
+	<<voiceline Player 254>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_1>>
 ->Przeprosiny to przeprosiny.
+	<<voiceline Player 255>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Pomysł przeprosin jest jej.
+	<<voiceline Player 256>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_1>>
 ===
@@ -83,18 +105,28 @@ Lus: Oczywiście, że pan tak mówi. To nie załatwi sprawy. Lute niepotrzebnie 
 title: M32_PogodzenieBlekit3
 ---
 ->Powinnaś bardziej skupić się na potrzebach siostry.
+	<<voiceline Player 257>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Najważniejsze, że jest.
+	<<voiceline Player 258>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_1>>
 ->Daj jej spokój.
+	<<voiceline Player 259>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Nie musi mówić za siebie.
+	<<voiceline Player 260>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Musisz dać jej szansę zebrać się w sobie.
+	<<voiceline Player 261>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_1>>
 ===
@@ -132,18 +164,28 @@ Lute: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzi
 title: M32_PogodzenieBlekit4
 ---
 ->Powinnaś być ponad tym i dać sobie spokój.
+	<<voiceline Player 262>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Najważniejsze, że zwierzakowi nic się nie stało.
+	<<voiceline Player 263>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Szukała rozwiązania, specjalnie poprosiła mnie o pomoc, żeby się dogadać.
+	<<voiceline Player 264>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Przeprosiny są jej, nie moje, obiecuję.
+	<<voiceline Player 265>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Obrażanie się nie jest rozwiązaniem.
+	<<voiceline Player 266>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ===
@@ -165,18 +207,28 @@ Lus: Nie będę tego więcej ignorować. Niech już mnie pan przeprosi i miejmy 
 title: M32_PogodzenieBlekit5
 ---
 ->Jej przeprosiny są z serca, ja za nią przepraszać nie będę.
+	<<voiceline Player 267>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->Lute potrzebuje wsparcia, ale to nic złego.
+	<<voiceline Player 268>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->Licza się jej słowa, nie kompani.
+	<<voiceline Player 269>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ->Wszyscy mnie potrzebujecie.
+	<<voiceline Player 270>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ->Nie skupiaj się na jej sposobie rozwiązywania problemów.
+	<<voiceline Player 271>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ===
@@ -205,8 +257,10 @@ Lus: To niech się wypowie.
 Lus: Ma dorosłego obok, niech się wykaże.
 
 <<voicelineEnd Błękit>>
+<<voiceline Player 272>>
 Bohater: Dasz radę.
 
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 43>>
 Lute: Dobra. Dobra, poradzę sobie.
 

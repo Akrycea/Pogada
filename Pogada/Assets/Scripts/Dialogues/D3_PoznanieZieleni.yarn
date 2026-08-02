@@ -4,10 +4,12 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 47>>
 Bohater: Dzień dobry.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 1>>
 Dziecko: …
@@ -16,10 +18,12 @@ Dziecko: …
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 48>>
 Bohater: Szukam Vusa, widziałeś go może?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 2>>
 Dziecko: A jakie to ma znaczenie? 
@@ -28,10 +32,12 @@ Dziecko: A jakie to ma znaczenie?
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 49>>
 Bohater: Pokłócił się z bratem i chciałem zbadać sprawę.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 3>>
 Dziecko: I tak się już nigdy nie pogodzą…
@@ -40,10 +46,12 @@ Dziecko: I tak się już nigdy nie pogodzą…
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 50>>
 Bohater: Czy… coś się stało, że jesteś taki smętny?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 4>>
 Dziecko: ...
@@ -54,12 +62,14 @@ Dziecko: No, może...
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
+<<voiceline Player 51>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Chcesz o tym porozmawiać?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 6>>
 Dziecko: Chyba nie. Może z mamą? Albo tatą.
 <<HideIcon Icons>>
@@ -67,15 +77,19 @@ Dziecko: Chyba nie. Może z mamą? Albo tatą.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 52>>
 Bohater: Niestety wasi rodzice wyjechali na trochę. Ja się wami zajmuję.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 53>>
 Bohater: Nie musisz mi mówić, jeśli nie chcesz.
 
+<<voiceline Player 54>>
 Bohater: Będę szukał Lus, może z nią chciałbyś porozmawiać?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "angry">>
 <<voiceline Zielony 7>>
 Dziecko: Hm… Nie, nie…
@@ -88,11 +102,13 @@ Dziecko: Rozmawiała z Liv, a Liv już mnie nie kocha.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 55>>
 Bohater: Jak to?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 7>>
 Dziecko: …
 <<HideIcon Icons>>
@@ -100,11 +116,13 @@ Dziecko: …
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 56>>
 Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 10>>
 Dziecko: Możesz próbować…
 <<HideIcon Icons>>

@@ -7,8 +7,10 @@ Lute: Nie zniosę tego, jeśli będzie na mnie zła.
 Lute: A na pewno będzie.
 
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 211>>
 Bohater: Udało mi się znaleźć jej zwierzaka, to na pewno trochę załagodzi sytuację.
 
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 21>>
 Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam rady spojrzeć jej w oczy.
 <<UpdateDebateNumber PointMeter>>
@@ -18,18 +20,28 @@ Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam
 title: M31_DebataPomarancz1
 ---
 ->Jesteś za słaba.
+	<<voiceline Player 212>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Musisz powiedzieć jej co się stało.
+	<<voiceline Player 213>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_1>>
 ->Nie masz się czego bać.
+	<<voiceline Player 214>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->To co ze zwierzakiem?
+	<<voiceline Player 215>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Ktoś powinien oddać Lus jej zwierzaka.
+	<<voiceline Player 216>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_1>>
 ===
@@ -54,18 +66,28 @@ Lute: Nie obchodzi mnie to. Lus pomyśli, że jestem najgorsza przez zgubienie C
 title: M31_DebataPomarancz2
 ---
 ->Na pewno Lus wybaczy ci, jeśli przeprosisz osobiście.
+	<<voiceline Player 217>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Użalanie się nad sobą nie pomoże.
+	<<voiceline Player 218>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może moglibyśmy zrobić to razem?
+	<<voiceline Player 219>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Wytłumacz Lus sytuację i sprawa rozwiązana.
+	<<voiceline Player 220>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może Lus miałaby rację.
+	<<voiceline Player 221>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ===
@@ -86,19 +108,29 @@ Lute: Ja pójdę po mamę najlepiej. Jak najszybciej.
 
 title: M31_DebataPomarancz3
 ---
-->Nie możesz wykorzystywać innych do tego.
+->Nie możesz wykorzystywać do tego innych.
+	<<voiceline Player 222>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie wiemy, kiedy wasza mama wróci.
+	<<voiceline Player 223>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie bądź tchórzem.
+	<<voiceline Player 224>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Obecnie to my mamy Chmurkę, możemy rozwiązać to tu i teraz.
+	<<voiceline Player 225>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_1>>
 ->Ja się wami obecnie zajmuję.
+	<<voiceline Player 226>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_1>>
 ===
@@ -126,18 +158,28 @@ Lute: Jeśli tak panu zależy na naszych problemach, to pan się tym zajmie nie 
 title: M31_DebataPomarancz4
 ---
 ->Ja tylko pomagam wam je rozwiązywać.
+	<<voiceline Player 227>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Inne dzieci poradziły sobie same.
+	<<voiceline Player 228>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie będę rozwiązywać waszych problemów.
+	<<voiceline Player 229>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie robię niczego za nikogo.
+	<<voiceline Player 220>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Jesteś już na tyle duża, abyś robiła to sama.
+	<<voiceline Player 231>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ===
@@ -159,18 +201,28 @@ Lute: Widziałam przecież, że za innych pan robił rzeczy. Ja też tak chcę.
 title: M31_DebataPomarancz5
 ---
 ->Tylko pomogłem, oni sami rozwiązali swoje problemy.
+	<<voiceline Player 232>>
+	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_1>>
 ->Musisz sama rozwiązać ten problem.
+	<<voiceline Player 233>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Ja również porozmawiam z Lus.
+	<<voiceline Player 234>>
+	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_1>>
 ->Nie mogę cały czas poświęcać czasu na wasze problemy.
+	<<voiceline Player 235>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Mogę co najwyżej zanieść tam  Chmurkę, ale to ty się wypowiesz.
+	<<voiceline Player 236>>
+	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ===
@@ -196,12 +248,16 @@ title: M31_DebataPomaranczPoDebata
 Lute: Bo ja wolę nie.
 
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 237>>
 Bohater: Rozwiążemy ten problem razem.
 
+<<voiceline Player 238>>
 Bohater: Lus na pewno ucieszy się do Chmurki.
 
+<<voiceline Player 239>>
 Bohater: Wiesz jak możemy ją znaleźć?
 
+<<voicelineEnd Player>>
 <<voiceline Pomarańcz 36>>
 Lute: Może Chmurka nas do niej zaprowadzi.
 
@@ -212,6 +268,7 @@ Lute: Proszę Chmurka? Ładnie proszę?
 Lute: O, już węszy.
 
 <<voicelineEnd Pomarańcz>>
+<<voiceline Player 240>>
 Bohater: Cudownie.
 <<unblockPlayerMovement Dialogi>>
 ===

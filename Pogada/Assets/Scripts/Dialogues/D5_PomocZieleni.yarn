@@ -4,14 +4,18 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 75>>
 Bohater: Porozmawiałem z Liv.
 
+<<voiceline Player 76>>
 Bohater: Powiedziała, że nadal cię kocha.
 
-Bohater: Nie musisz się o to już martwić.
+<<voiceline Player 77>>
+Bohater: Nie musisz się już o to martwić.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<voiceline Zielony 11>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: Tak? Serio?
@@ -20,10 +24,12 @@ Viri: Tak? Serio?
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 78>>
 Bohater: Serio serio.
 <<HidePlayerIcon IconsPlayer>>
 
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 12>>
 Viri: Mam nadzieję, że serio
 <<HideIcon Icons>>
@@ -31,11 +37,13 @@ Viri: Mam nadzieję, że serio
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 79>>
 Bohater: Chyba nie poprawiło ci to humoru.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 13>>
 Viri: No… Jest jeszcze jedna sprawa.
 
@@ -46,15 +54,19 @@ Viri: Ale nie wiem, czy chce się pan w to mieszać.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 80>>
 Bohater: Cokolwiek to jest, pomogę.
 
+<<voiceline Player 81>>
 Bohater: Liv wspomniała o skradzionym Perełce, więc muszę go poszukać.
 
+<<voiceline Player 82>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Jeśli chcesz możesz się w tym czasie namyślić, czy chcesz pomocy.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
+<<voicelineEnd Player>>
 <<voiceline Zielony 15>>
 <<ChangeIcon Icons "Viri" "happy">>
 Viri: Oh.
@@ -76,13 +88,16 @@ Viri: Teraz jest w rzece i nie wiem jak go wyciągnąć!
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 83>>
 Bohater: O jejku.
 
+<<voiceline Player 84>>
 Bohater: Gdzie jest dokładnie? Wyciągnę go.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Zielony 20>>
 Viri: Jest zaklinowany w rzece, za krzakami, trzeba je odgarnąć. A ja nie sięgam.
 
@@ -101,7 +116,11 @@ Viri: To wszystko moja wina…
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Nie zgubiłeś Perełki specjalnie. To zwykły, nieszczęśliwy wypadek. Poczekaj, zaraz pan Perełka wróci cały i zdrowy.
+<<voiceline Player 85>>
+Bohater: Nie zgubiłeś Perełki specjalnie. To zwykły, nieszczęśliwy wypadek. 
+
+<<voiceline Player 86>>
+Bohater: Poczekaj, zaraz pan Perełka wróci cały i zdrowy.
 <<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
 <<EnableColliders StateManager>>

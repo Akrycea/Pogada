@@ -4,13 +4,16 @@
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 57>>
 Bohater: Dzień dobry.
 
+<<voiceline Player 58>>
 Bohater: Czy ty jesteś Liv?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Granat 1>>
 Liv: Możliwe.
 <<HideIcon Icons>>
@@ -18,11 +21,13 @@ Liv: Możliwe.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 59>>
 Bohater: Czemu płaczesz?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
+<<voicelineEnd Player>>
 <<voiceline Granat 2>>
 Liv: Głupi Robert zniszczył pana Perełkę!
 
@@ -38,11 +43,16 @@ Liv: Teraz już nigdy nie będzie taki sam!
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Czy mógłbym go zobaczyć? Na pewno uda nam się go jakoś uratować.
+<<voiceline Player 60>>
+Bohater: Czy mógłbym go zobaczyć? 
+
+<<voiceline Player 61>>
+Bohater: Na pewno uda nam się go jakoś uratować.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
+<<voicelineEnd Player>>
 <<voiceline Granat 5>>
 Liv: Nie. Ten okropniuch go ukradł. Poza tym, nie znam pana. Ktoś ty?!
 <<HideIcon Icons>>
@@ -50,13 +60,16 @@ Liv: Nie. Ten okropniuch go ukradł. Poza tym, nie znam pana. Ktoś ty?!
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 62>>
 Bohater: Opiekuję się wami pod nieobecność rodziców. 
 
+<<voiceline Player 63>>
 Bohater: Robert ukradł ci Perełkę?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Granat 6>>
 Liv: Tak. Zostawiłam go tylko na chwilę i puf! Nie ma go.
 <<HideIcon Icons>>
@@ -64,11 +77,13 @@ Liv: Tak. Zostawiłam go tylko na chwilę i puf! Nie ma go.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 64>>
 Bohater: Poszukam pana Perełki, na pewno zaraz się znajdzie.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 7>>
 Liv: Możesz spróbować. Przy okazji powiedz Robertowi ode mnie, że jest kłamczuchem i jest straszny.
 <<HideIcon Icons>>
@@ -76,11 +91,13 @@ Liv: Możesz spróbować. Przy okazji powiedz Robertowi ode mnie, że jest kłam
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 65>>
 Bohater: Zobaczymy.
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 8>>
 Liv: Naprawdę jest! Wie pan, że to on zepsuł tą statuę?
 
@@ -99,16 +116,20 @@ Liv: Nie znoszę na to patrzeć. Nie było wiadomo, czy popchnie tą swoją głu
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "angry">>
+<<voiceline Player 66>>
 Bohater: Na pewno z nim o tym porozawiam.
 
+<<voiceline Player 67>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Czy coś jeszcze się stało?
 
+<<voiceline Player 68>>
 Bohater: Słyszałem coś o tym, że podobno nie kochasz już jednego ze swoich braci?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "sad">>
+<<voicelineEnd Player>>
 <<voiceline Granat 12>>
 Liv: Hm?
 
@@ -123,25 +144,30 @@ Liv: Nie, nic takiego mu nie powiedziałam. Ale straszny z niego mazgaja, to pew
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 69>>
 Bohater: No dobrze, z nim też porozmawiam.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 70>>
 Bohater: Przy okazji, czy wiesz może gdzie pobiegł Vus?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 51>>
 Liv: Chyba raczej Aureus, chyba że mu się znowu odmieniło i wrócił do starego imienia.
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "sad">>
+<<voiceline Player 71>>
 Bohater: Aureus, to to nowe?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 16>>
 Liv: Ja tak słyszałam.
 
@@ -152,11 +178,13 @@ Liv: Violaceus strasznie się go czepia cały czas, pewnie kryje się gdzieś z 
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voicelineEnd Granat>>
+<<voiceline Player 72>>
 Bohater: A wiesz, gdzie są?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
+<<voicelineEnd Player>>
 <<voiceline Granat 18>>
 Liv: Wiem.
 <<HideIcon Icons>>
@@ -164,11 +192,13 @@ Liv: Wiem.
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Granat>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+<<voiceline Player 73>>
 Bohater: Czy… mogłabyś mi powiedzieć proszę?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "angry">>
+<<voicelineEnd Player>>
 <<voiceline Granat 19>>
 Liv: Bez Perełki nic nie mówię.
 <<HideIcon Icons>>
@@ -176,6 +206,7 @@ Liv: Bez Perełki nic nie mówię.
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voicelineEnd Granat>>
+<<voiceline Player 74>>
 Bohater: No tak…
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
