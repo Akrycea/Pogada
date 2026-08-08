@@ -15,17 +15,6 @@ public class PotionMinigame : MonoBehaviour
 
     [SerializeField] private DebataPlayer debataPlayer;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,6 +33,7 @@ public class PotionMinigame : MonoBehaviour
             {
                 Debug.Log("loss");
                 ResetIngredients();
+                System.Array.Clear(playersItems, 0, playersItems.Length);
             }
         }
     }

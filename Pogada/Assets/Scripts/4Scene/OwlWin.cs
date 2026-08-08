@@ -16,8 +16,8 @@ public class OwlWin : MonoBehaviour
     {
         Debug.Log("OwlWin Click");
 
-        if (OwlOnUI.activeInHierarchy == true)
-        {
+        //if (//OwlOnUI.activeInHierarchy == true)
+        //{
             //win
             OwlOnUI.SetActive(false);
             colliders.SetActive(false);
@@ -27,6 +27,6 @@ public class OwlWin : MonoBehaviour
             editCamera.ChangeCamera();
 
 
-        }
+        //}
     }
 }
