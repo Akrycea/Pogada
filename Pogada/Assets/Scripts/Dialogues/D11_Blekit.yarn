@@ -1,5 +1,6 @@
 ﻿title: D11_Blekit
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
@@ -27,6 +28,7 @@ Bohater: Chciałem porozmawiać z Aureusem. Podobno miał być z tobą.
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 245>>
 Bohater: Znalazłem też twoją siostrę.
+<<EnableColliders StateManager>>
 <<HidePlayerIcon IconsPlayer>>
 <<blekitDebata Dialogi>>
 ===

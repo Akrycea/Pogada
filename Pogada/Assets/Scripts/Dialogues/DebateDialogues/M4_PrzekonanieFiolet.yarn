@@ -59,7 +59,7 @@ Violaceus: Ktoś pytał?
 	<<jump M4_DebataFiolet2>>
 ===
 
-title: M31_DebataFiolet1_2
+title: M4_DebataFiolet1_2
 ---
 <<voiceline Fiolet 41>>
 Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
@@ -259,6 +259,7 @@ Bohater: To będziesz go kochał nieważne co. Daj mu szansę.
 <<voicelineEnd Player>>
 <<voiceline Fiolet 49>>
 Violaceus: Już dobra, dobra! Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
-<<fioletwygranadebata Dialogi>>
+// <<fioletDwa2debata Dialogi>>
 <<unblockPlayerMovement Dialogi>>
+<<EnableColliders StateManager>>
 ===

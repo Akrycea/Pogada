@@ -13,6 +13,8 @@ public class PotionMinigame : MonoBehaviour
 
     public List<IngredientControl> myIngredients = new();
 
+    [SerializeField] private DebataPlayer debataPlayer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +38,7 @@ public class PotionMinigame : MonoBehaviour
             if (recipe.SequenceEqual(playersItems))
             {
                 Debug.Log("Win");
+                debataPlayer.wygranaMinigierka = true;
             }
             else
             {

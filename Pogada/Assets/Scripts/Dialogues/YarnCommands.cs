@@ -249,6 +249,8 @@ public class YarnCommands : MonoBehaviour
         dialRunner.StartDialogue("M4_PrzekonanieFiolet");
     }
 
+
+
     //odpalenie minigierki ukladania zdan zolc WIP
     private DebataPlayer zolcdebata;
     [YarnCommand("zolcDebata")]

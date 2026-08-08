@@ -3359,8 +3359,8 @@ Transform:
   m_GameObject: {fileID: 60042939}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.8, y: 3.6599998, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.7996004, y: 2.5242999, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -9499,8 +9499,8 @@ Transform:
   m_GameObject: {fileID: 196921225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.96, y: 1.29, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.8945003, y: 1.1186, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -9632,7 +9632,7 @@ GameObject:
   - component: {fileID: 199545461}
   m_Layer: 0
   m_Name: "DebataPomara\u0144cz I"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10300,7 +10300,7 @@ GameObject:
   - component: {fileID: 213988738}
   m_Layer: 0
   m_Name: "CI\u0118"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13357,6 +13357,98 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &290623110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290623112}
+  - component: {fileID: 290623111}
+  - component: {fileID: 290623113}
+  m_Layer: 0
+  m_Name: DebugFioletPuzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &290623111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290623110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56ddeb47a5ac794b8cdb60391dfd459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debataPlayer: {fileID: 413875699}
+--- !u!4 &290623112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290623110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.61, y: -1.62, z: 9.547575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &290623113
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290623110}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.5317135, y: 0.784904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.3298836, y: 8.849057}
+  m_EdgeRadius: 0
 --- !u!1 &293181510
 GameObject:
   m_ObjectHideFlags: 0
@@ -14899,7 +14991,7 @@ GameObject:
   - component: {fileID: 328391581}
   m_Layer: 0
   m_Name: "PRZEPROSI\u0106"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17198,7 +17290,7 @@ GameObject:
   - component: {fileID: 368807039}
   m_Layer: 0
   m_Name: Z
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21203,12 +21295,12 @@ MonoBehaviour:
   playerMovement: {fileID: 1361693962}
   stateManager: {fileID: 905840117}
   wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 1284073160}
-  budowanieZdan2: {fileID: 2088705826}
-  budowanieZdan3: {fileID: 1208325562}
+  budowanieZdan1: {fileID: 2071135192}
+  budowanieZdan2: {fileID: 988624295}
+  budowanieZdan3: {fileID: 729134500}
   debateWon: 0
   playedDebates: 0
-  turnOffCollider: {fileID: 0}
+  turnOffCollider: {fileID: 905840120}
 --- !u!60 &413875700
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21947,7 +22039,7 @@ GameObject:
   - component: {fileID: 425801063}
   m_Layer: 0
   m_Name: "CHCIA\u0141A"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24093,7 +24185,7 @@ GameObject:
   - component: {fileID: 472540114}
   m_Layer: 0
   m_Name: LUTE
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25394,7 +25486,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 90
+    FieldOfView: 10.8
     OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -29456,7 +29548,7 @@ GameObject:
   - component: {fileID: 589714670}
   m_Layer: 0
   m_Name: "ZAPROWADZI\u0106"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33764,7 +33856,7 @@ GameObject:
   - component: {fileID: 643257348}
   m_Layer: 3
   m_Name: Ground4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38442,7 +38534,7 @@ GameObject:
   - component: {fileID: 772268866}
   m_Layer: 0
   m_Name: DebateBlekit
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38969,7 +39061,7 @@ GameObject:
   - component: {fileID: 781812231}
   m_Layer: 3
   m_Name: Ground5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39238,8 +39330,8 @@ Transform:
   m_GameObject: {fileID: 790332441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.41, y: 5.1, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3820004, y: 3.3783998, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -39373,7 +39465,7 @@ GameObject:
   - component: {fileID: 790396860}
   m_Layer: 0
   m_Name: "MO\u017BEMY"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42619,8 +42711,8 @@ Transform:
   m_GameObject: {fileID: 858511991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.35, y: 5.62, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.7190003, y: 3.6869, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -43568,7 +43660,7 @@ GameObject:
   - component: {fileID: 877954226}
   m_Layer: 0
   m_Name: LUS
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57681,8 +57773,8 @@ Transform:
   m_GameObject: {fileID: 1123458812}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: 4.98, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.7379997, y: 3.3072999, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -59241,7 +59333,7 @@ GameObject:
   - component: {fileID: 1157041510}
   m_Layer: 0
   m_Name: MUSI
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63548,7 +63640,7 @@ GameObject:
   - component: {fileID: 1249927112}
   m_Layer: 0
   m_Name: "POROZMAWIA\u0106"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67475,7 +67567,7 @@ GameObject:
   - component: {fileID: 1308105540}
   m_Layer: 0
   m_Name: "DebataB\u0142\u0119kit I"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69039,7 +69131,7 @@ GameObject:
   - component: {fileID: 1346706774}
   m_Layer: 3
   m_Name: Village&FieldsBlock
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71653,8 +71745,8 @@ Transform:
   m_GameObject: {fileID: 1379371062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.82, y: 2.9, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.2183003, y: 2.0735, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -73508,15 +73600,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e565d9118bd0642ad0594c1db67492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
-  stateManager: {fileID: 0}
+  playerMovement: {fileID: 1361693962}
+  stateManager: {fileID: 905840117}
   wygranaMinigierka: 0
-  budowanieZdan1: {fileID: 0}
-  budowanieZdan2: {fileID: 0}
-  budowanieZdan3: {fileID: 0}
+  budowanieZdan1: {fileID: 1952494718}
+  budowanieZdan2: {fileID: 1930130150}
+  budowanieZdan3: {fileID: 1514248415}
   debateWon: 0
   playedDebates: 0
-  turnOffCollider: {fileID: 0}
+  turnOffCollider: {fileID: 905840120}
 --- !u!95 &1413625643
 Animator:
   serializedVersion: 7
@@ -76710,7 +76802,7 @@ GameObject:
   - component: {fileID: 1468598444}
   m_Layer: 0
   m_Name: Z
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80026,7 +80118,7 @@ GameObject:
   - component: {fileID: 1536215915}
   m_Layer: 0
   m_Name: "TOB\u0104"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80571,8 +80663,8 @@ Transform:
   m_GameObject: {fileID: 1540453404}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17275624, y: 0.93849885, z: -5.9948683}
-  m_LocalScale: {x: 0.6694365, y: 0.6433094, z: 1.4987171}
+  m_LocalPosition: {x: -0.15, y: 0.91, z: -5.5575}
+  m_LocalScale: {x: 0.39706105, y: 0.38156435, z: 0.8889299}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1039252690}
@@ -86859,7 +86951,7 @@ GameObject:
   - component: {fileID: 1696943525}
   m_Layer: 0
   m_Name: "DebataBl\u0119kit II"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87662,8 +87754,8 @@ Transform:
   m_GameObject: {fileID: 1713979737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.12, y: 0.57, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.71189976, y: 0.69150007, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -87847,8 +87939,8 @@ Transform:
   m_GameObject: {fileID: 1715926677}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 3.37, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.7676997, y: 2.3523, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -87982,7 +88074,7 @@ GameObject:
   - component: {fileID: 1716359020}
   m_Layer: 0
   m_Name: CHCESZ
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90046,7 +90138,7 @@ GameObject:
   - component: {fileID: 1755129082}
   m_Layer: 0
   m_Name: "MAM\u0104"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90329,7 +90421,7 @@ GameObject:
   - component: {fileID: 1761880530}
   m_Layer: 0
   m_Name: PLANUJE
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92806,7 +92898,7 @@ Camera:
   far clip plane: 1000
   field of view: 90
   orthographic: 1
-  orthographic size: 2.2960527
+  orthographic size: 7.105263
   m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
@@ -92831,7 +92923,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -115.52665, y: 2.2356772, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -93818,6 +93910,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentObject: 0
   myIngredients: []
+  debataPlayer: {fileID: 1413625642}
 --- !u!61 &1840813840
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94586,8 +94679,8 @@ Transform:
   m_GameObject: {fileID: 1850594384}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 3.43, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.85410035, y: 2.3878999, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -100669,7 +100762,7 @@ GameObject:
   - component: {fileID: 1982657565}
   m_Layer: 0
   m_Name: MUSISZ
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101623,7 +101716,7 @@ GameObject:
   - component: {fileID: 2006426871}
   m_Layer: 0
   m_Name: "POROZMAWIA\u0106"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102194,8 +102287,8 @@ Transform:
   m_GameObject: {fileID: 2016685252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.18, y: 1.82, z: -3.944561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.74739957, y: 1.4329001, z: -4.3413}
+  m_LocalScale: {x: 0.59312725, y: 0.59312725, z: 0.59312725}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2071135194}
@@ -106247,7 +106340,7 @@ GameObject:
   - component: {fileID: 2127011090}
   m_Layer: 0
   m_Name: "DebataB\u0142\u0119kit III"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107739,3 +107832,4 @@ SceneRoots:
   - {fileID: 965293440}
   - {fileID: 1675722088}
   - {fileID: 898513867}
+  - {fileID: 290623112}
