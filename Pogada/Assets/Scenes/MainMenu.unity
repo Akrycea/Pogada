@@ -278,7 +278,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287777958}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8f4f17ff554987f4881772495f0c562e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7e35ae1d4717e7042897c6fe7ba8348a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1495693001}
@@ -292,14 +292,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -333,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f585d192413375458f08c00a7f5b2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneDuration: 10
+  cutsceneDuration: 11
 --- !u!1 &486162127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1340,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2039299424
