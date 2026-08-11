@@ -24,6 +24,8 @@ public class BirdsPuzzle : MonoBehaviour
     {
         if (collision.CompareTag("Free"))
         {
+
+
             //isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
             collision.gameObject.tag = "Taken";

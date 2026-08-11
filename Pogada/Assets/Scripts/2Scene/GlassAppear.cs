@@ -4,14 +4,10 @@ public class GlassAppear : MonoBehaviour
 {
     public StateManager stateManager;
     public GameObject glass;
-    private bool hasAppeared = false;
+ 
 
-    void Update()
+    private void OnMouseDown()
     {
-        if (stateManager.GlassCollected && hasAppeared == false)
-        {
-            glass.SetActive(true);
-            hasAppeared = true;
-        }
+        glass.SetActive(true);
     }
 }

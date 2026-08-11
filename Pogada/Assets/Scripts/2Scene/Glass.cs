@@ -4,6 +4,7 @@ public class Glass : MonoBehaviour
 {
     public Vector3 startPosition;
     public Vector3 currentPosition;
+    public Vector3 picturePosition;
 
     public string ObjectName;
     public string WinObject;
@@ -14,40 +15,70 @@ public class Glass : MonoBehaviour
 
     public GlassMinigameWin glassMinigameWin;
 
+    [SerializeField] private GameObject currentObject;
+
+    
+
     void Start()
     {
         startPosition = gameObject.transform.position;
         currentPosition = startPosition;
+
+        picturePosition = picture.transform.position;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Free"))
         {
-            isOnObject = true;
+            //isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
             collision.gameObject.tag = "Taken";
+
+            if (currentObject != null)
+            {
+                currentObject.gameObject.tag = "Free";
+            }
+            currentObject = collision.gameObject;
+
+
+            picture.SetActive(true);
+            picture.transform.position = currentPosition;
+            picture.transform.position += Vector3.right * 10f;
+
+
+            if (collision.gameObject.name == WinObject)
+            {
+                glassMinigameWin.GoodSpot();
+                picture.SetActive(true);
+                picture.transform.position = picturePosition;
+            }
         }
 
-        if (collision.gameObject.name == WinObject)
-        {
-            glassMinigameWin.GoodSpot(); 
-        }
+        
+
     }
 
     void OnTriggerExit2D(Collider2D collision)
-    {       
-        if (isOnObject == true)
-        {
-            collision.gameObject.tag = "Free";
-            isOnObject = false;
-            currentPosition = startPosition;
-        }
+    {
+        //if (isOnObject == true)
+        //{
+        //    collision.gameObject.tag = "Free";
+        //    isOnObject = false;
+        //    currentPosition = startPosition;
+        //    picture.SetActive(false);
+        //}
+
+        currentPosition = startPosition;
+        picture.SetActive(false);
+        currentObject.gameObject.tag = "Free";
 
         if (collision.gameObject.name == WinObject)
         {
             glassMinigameWin.BadSpot();
         }
+
+
     }
 
     void Update()
@@ -56,14 +87,26 @@ public class Glass : MonoBehaviour
         {
             gameObject.transform.position = currentPosition;
 
-            if(isOnObject == true)
+            if(currentPosition == startPosition)
             {
-                picture.SetActive(true);
+                currentObject = null;
+
+                if (currentObject != null)
+                {
+                    currentObject.gameObject.tag = "Free";
+                }
             }
+
+            //if(isOnObject == true)
+            //{
+            //    picture.SetActive(true);
+            //    picture.transform.position = currentPosition;
+            //    picture.transform.position += Vector3.right * 20f;
+            //}
         }
-        if (isOnObject== false)
-        {
-            picture.SetActive(false);
-        }
+        //if (isOnObject== false)
+        //{
+        //    picture.SetActive(false);
+        //}
     }
 }
