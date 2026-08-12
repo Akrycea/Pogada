@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class YarnCommands : MonoBehaviour
@@ -266,6 +267,19 @@ public class YarnCommands : MonoBehaviour
     {
         Debug.Log("odpalam debate");
         dialRunner.StartDialogue("M5_PogodzenieDzieci");
+    }
+
+    [YarnCommand("zolcwygranadebata")]
+    public void zolcwygranadebata()
+    {
+        dialRunner.StartDialogue("D13_Koniec");
+    }
+
+    [YarnCommand("Koniec")]
+    public void Koniec()
+    {
+        Debug.Log("KONIEC");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 
