@@ -2055,6 +2055,7 @@ GameObject:
   - component: {fileID: 40098670}
   - component: {fileID: 40098672}
   - component: {fileID: 40098671}
+  - component: {fileID: 40098673}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2137,7 +2138,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40098662}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2385,6 +2386,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &40098673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40098662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d905b9173ae0a642a72c703d6c31909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRigidbody: {fileID: 40098666}
 --- !u!1 &43267242
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,10 @@ public class GlassAppear : MonoBehaviour
 
     private void OnMouseDown()
     {
-        glass.SetActive(true);
+        if(stateManager.GlassCollected == true)
+        {
+            glass.SetActive(true);
+        }
+            
     }
 }
