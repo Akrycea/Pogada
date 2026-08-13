@@ -4,7 +4,7 @@ using Yarn.Unity;
 public class GlassMinigameWin : MonoBehaviour
 {
 
-    private int glassWin;
+    [SerializeField] private int glassWin;
 
     public DialogueRunner dialogueRunner;
 
@@ -19,7 +19,7 @@ public class GlassMinigameWin : MonoBehaviour
     {
         glassWin++;
 
-        if (glassWin == 4 && Input.GetMouseButton(0) == false && dialoguePlayed == false)
+        if (glassWin == 4)
         {
             Debug.Log("glass won");
             //Fiolt.SetActive(true);
