@@ -21,6 +21,8 @@ public class Debate : MonoBehaviour
     public Slider debateSlider;
     public Slider enemySlider;
 
+    [SerializeField] private TurnOffCollider turnOffCollider;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -64,6 +66,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M31_DebataPomaranczPoDebata");
                 stateManager.granat = false;
                 stateManager.pomarancz = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 6)
             {
@@ -71,6 +74,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M31_DebataBlekitPoDebata");
                 stateManager.pomarancz = false;
                 stateManager.niebieski = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 7)
             {
@@ -78,6 +82,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M4_DebataFioletPoDebata");
                 stateManager.niebieski = false;
                 stateManager.fiolet = true;
+                debateManager.EndDebate();
             }
             else if (debateNumber == 8)
             {
@@ -85,6 +90,7 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M5_DebataZolcPoDebata");
                 stateManager.fiolet = false;
                 stateManager.zolty = true;
+                debateManager.EndDebate();
             }
         }
 
@@ -93,6 +99,7 @@ public class Debate : MonoBehaviour
             Debug.Log("you lost");
             debateNumber = debateNumber--;
             playerMovement.canPlayerMove = true;
+            turnOffCollider.EnableAllColliders();
         }
         YourPoints = 0;
         UpdateDebateSliders();

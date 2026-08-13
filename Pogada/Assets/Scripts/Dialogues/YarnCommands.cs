@@ -205,7 +205,7 @@ public class YarnCommands : MonoBehaviour
     public void pomarnacz2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M31_PogodzeniePomarancz");
+        debateManager.StartDebate();
     }
 
 
@@ -223,7 +223,7 @@ public class YarnCommands : MonoBehaviour
     public void blekit2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M32_PogodzenieBlekit");
+        debateManager.StartDebate();
     }
 
     //triggeruje powrót kolorów po wygranej debacie czerwonego
@@ -247,7 +247,7 @@ public class YarnCommands : MonoBehaviour
     public void fioletDwa2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M4_PrzekonanieFiolet");
+        debateManager.StartDebate();
     }
 
 
@@ -266,7 +266,7 @@ public class YarnCommands : MonoBehaviour
     public void zolc2debata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M5_PogodzenieDzieci");
+        debateManager.StartDebate();
     }
 
     [YarnCommand("zolcwygranadebata")]
