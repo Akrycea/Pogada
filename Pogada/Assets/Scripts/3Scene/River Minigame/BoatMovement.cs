@@ -21,6 +21,8 @@ public class BoatMovement : MonoBehaviour
     [SerializeField]
     private DialogueRunner dialogueRunner;
 
+    public ClickTurnOffAnimator animator;
+
 
 
     void Start()
@@ -54,6 +56,7 @@ public class BoatMovement : MonoBehaviour
                 targetPosition = obstacles[0].transform.position;
                 arrayNumber = 0;
                 enabled = false;
+                animator.TurnOnAnimator();
             }
         }
         else if (collision.gameObject.name == "koniec")

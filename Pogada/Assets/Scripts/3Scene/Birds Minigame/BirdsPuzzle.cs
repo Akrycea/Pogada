@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class BirdsPuzzle : MonoBehaviour
 {
-    public GameObject currentObject;
-    public string WinObject;
+    [SerializeField] private GameObject currentObject;
+    [SerializeField] private GameObject WinObject;
 
-    //private bool isOnObject = true;
+    [SerializeField] private Vector2 currentPosition;
 
-    public Vector3 currentPosition;
+    [SerializeField] private BirdsWin birdsWin;
 
-    public BirdsWin birdsWin;
-
-    public GameObject ChatBox;
+    [SerializeField] private GameObject ChatBox;
 
     
 
@@ -24,16 +22,15 @@ public class BirdsPuzzle : MonoBehaviour
     {
         if (collision.CompareTag("Free"))
         {
-
-
-            //isOnObject = true;
             currentPosition = collision.gameObject.transform.position;
+
             collision.gameObject.tag = "Taken";
+
             currentObject.gameObject.tag = "Free";
             currentObject = collision.gameObject;
         }
 
-        if(collision.gameObject.name == WinObject)
+        if(collision.gameObject == WinObject)
         {
             birdsWin.GoodSpot();
         }  
@@ -41,7 +38,7 @@ public class BirdsPuzzle : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == WinObject)
+        if (collision.gameObject == WinObject)
         {
             birdsWin.BadSpot(); 
         }
@@ -57,6 +54,7 @@ public class BirdsPuzzle : MonoBehaviour
 
     private bool hasSaidVoiceline = false;
     private AudioSource audio;
+
 
     //showing the chatbox when the player is hovering over the bird, and hiding it when they are not
     public void OnMouseOver()

@@ -250,6 +250,14 @@ public class YarnCommands : MonoBehaviour
         debateManager.StartDebate();
     }
 
+    [SerializeField] private GameObject przepis;
+
+    [YarnCommand("fioletDwaWygranadebata")]
+    public void fioletDwaWygranadebata()
+    {
+        przepis.SetActive(true);
+    }
+
 
 
     //odpalenie minigierki ukladania zdan zolc WIP
