@@ -35,6 +35,7 @@ public class Debate : MonoBehaviour
             {
                 stateManager.Violaceus1DebateWon = true;
                 dialogueRunner.StartDialogue("M1_PoznanieFioletPoDebacie");
+                debateManager.EndDebate();
             }
             else if (debateNumber == 2)
             {

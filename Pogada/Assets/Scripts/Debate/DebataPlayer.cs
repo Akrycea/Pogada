@@ -1,5 +1,7 @@
 using UnityEngine;
 using Yarn.Unity;
+using UnityEngine.UIElements;
+using System.Collections;
 
 public class DebataPlayer : MonoBehaviour
 {
@@ -19,10 +21,26 @@ public class DebataPlayer : MonoBehaviour
     [SerializeField]
     public TurnOffCollider turnOffCollider;
 
+    public DebateManager debateManager;
+
+
+
     public void OnMouseDown()
     {
+        if (wygranaMinigierka)
+        {
+            debateManager.StartDebate();
+            //sentenceBuilding();
+            StartCoroutine(WaitForPogadanka());
+        }
+    }
+
+    private IEnumerator WaitForPogadanka()
+    {
+        yield return new WaitForSeconds(3f);
         sentenceBuilding();
     }
+
     public void sentenceBuilding()
     {
         if (wygranaMinigierka && playedDebates == 0 && !debateWon)

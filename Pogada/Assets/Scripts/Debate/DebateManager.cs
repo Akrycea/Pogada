@@ -22,6 +22,8 @@ public class DebateManager : MonoBehaviour
     [SerializeField]
     public TurnOffCollider turnOffCollider;
 
+    public DebataPlayer sentenceBuilding;
+
     public void OnMouseDown()
     {
         StartDebate();
@@ -29,11 +31,7 @@ public class DebateManager : MonoBehaviour
 
     public void StartDebate()
     {
-        debate.SetActive(true);
-        dialogue.SetActive(false);
-        StartCoroutine(ShowPogadanka());
-
-        
+        StartCoroutine(ShowPogadanka()); 
     }
 
     private IEnumerator ShowPogadanka()
@@ -44,9 +42,17 @@ public class DebateManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         pogadanka.SetActive(false);
 
+        //sentenceBuilding.sentenceBuilding();
+    }
+
+    public void ShowDebate()
+    {
+        debate.SetActive(true);
+        dialogue.SetActive(false);
+
         if (debateScript.debateNumber == 0)
         {
-            debateDial.StartDialogue("M15_PomocZieleni");
+            debateDial.StartDialogue("M1_PoznanieFiolet");
         }
         else if (debateScript.debateNumber == 1)
         {
@@ -76,7 +82,6 @@ public class DebateManager : MonoBehaviour
         {
             debateDial.StartDialogue("M5_PogodzenieDzieci");
         }
-
     }
 
     public void EndDebate()

@@ -63,12 +63,14 @@ public class YarnCommands : MonoBehaviour
     }
 
     //nastepne klikniecie  na fiolet powinno odpalic budowanie zdan debata
-    private DebataPlayer fioletdebata;
+    public FioletDebataPlayer fioletDebataPlayer;
     [YarnCommand("fioletBudowanieZdan")]
     public void fioletBudowanieZdan()
     {
-        fioletdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
-        fioletdebata.wygranaMinigierka = true;
+        //fioletdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
+        //fioletdebata.wygranaMinigierka = true;
+
+        fioletDebataPlayer.fioletSentenceBuilding();
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty fioletowego
@@ -76,8 +78,8 @@ public class YarnCommands : MonoBehaviour
     public void fioletDebata()
     {
         Debug.Log("odpalam debate");
-        dialRunner.StartDialogue("M1_PoznanieFiolet");
-        
+        debateManager.ShowDebate();
+
     }
 
 
@@ -104,7 +106,7 @@ public class YarnCommands : MonoBehaviour
     public void zielony2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
+        debateManager.ShowDebate();
     }
 
     //triggeruje powrót kolorów po wygranej debacie zielonego
@@ -149,9 +151,9 @@ public class YarnCommands : MonoBehaviour
     public void czerwonyDebata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
-       
-        
+        debateManager.ShowDebate();
+
+
     }
 
     //po debacie z czerwonym pozwala pogadac z granat i zaczac jej quest
@@ -177,9 +179,9 @@ public class YarnCommands : MonoBehaviour
     public void granat2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
-        
-        
+        debateManager.ShowDebate();
+
+
     }
 
     public GameObject GranatDrzwi;
@@ -205,7 +207,7 @@ public class YarnCommands : MonoBehaviour
     public void pomarnacz2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
+        debateManager.ShowDebate();
     }
 
 
@@ -223,7 +225,7 @@ public class YarnCommands : MonoBehaviour
     public void blekit2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
+        debateManager.ShowDebate();
     }
 
     //triggeruje powrót kolorów po wygranej debacie czerwonego
@@ -247,7 +249,7 @@ public class YarnCommands : MonoBehaviour
     public void fioletDwa2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
+        debateManager.ShowDebate();
     }
 
     [SerializeField] private GameObject przepis;
@@ -274,7 +276,7 @@ public class YarnCommands : MonoBehaviour
     public void zolc2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.StartDebate();
+        debateManager.ShowDebate();
     }
 
     [YarnCommand("zolcwygranadebata")]
