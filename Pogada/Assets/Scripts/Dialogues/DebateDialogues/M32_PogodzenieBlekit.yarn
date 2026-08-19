@@ -1,5 +1,7 @@
 ﻿title: M32_PogodzenieBlekit
 ---
+<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Pomarańcz 39>>
 Lute: Nie sama, z panem.
 
@@ -8,10 +10,12 @@ Lute: …
 
 <<voicelineEnd Pomarańcz>>
 <<voiceline Player 246>>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: A więc, Lute przyszła oddać ci Chmurkę i przeprosić.
 
 <<voicelineEnd Player>>
 <<voiceline Błękit 1>>
+<<ChangeDebateIcon DebateChildren "Lus" "sadtalk">>
 Lus: Ona czy pan?
 <<UpdateDebateNumber PointMeter>>
 	<<jump M32_PogodzenieBlekit1>>
@@ -20,26 +24,36 @@ Lus: Ona czy pan?
 title: M32_PogodzenieBlekit1
 ---
 ->Potrzebuje trochę zachęty.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 247>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_1>>
 ->Co za różnica?
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 248>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Nie cieszysz się do Chmurki?
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 249>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Ja się w to nie mieszam.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 250>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Lute jest trochę nieśmiała, to wszystko.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 251>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
@@ -49,6 +63,8 @@ title: M32_PogodzenieBlekit1
 title: M32_PogodzenieBlekit1_1
 ---
 <<voiceline Błękit 2>>
+<<ChangeDebateIcon DebateChildren "Lus" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Eh, jak zawsze. Jak mam jej uwierzyć, jeśli zawsze przeprasza mama?
 	<<jump M32_PogodzenieBlekit2>>
 ===
@@ -56,32 +72,44 @@ Lus: Eh, jak zawsze. Jak mam jej uwierzyć, jeśli zawsze przeprasza mama?
 title: M32_PogodzenieBlekit1_2
 ---
 <<voiceline Błękit 3>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Lute nie mogła tego zrobić sama?
 ===
 
 title: M32_PogodzenieBlekit2
 ---
 ->Zaufaj starszym.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 252>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Twoje wymagania nie pomagają.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 253>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Teraz przeprosi sama.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 254>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_1>>
 ->Przeprosiny to przeprosiny.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 255>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Pomysł przeprosin jest jej.
+	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 256>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
@@ -91,6 +119,8 @@ title: M32_PogodzenieBlekit2
 title: M32_PogodzenieBlekit2_1
 ---
 <<voiceline Błękit 4>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Nadal słyszę pana, a nie ją. Sama nigdy by do mnie nie przyszła.
 	<<jump M32_PogodzenieBlekit3>>
 ===
@@ -98,6 +128,8 @@ Lus: Nadal słyszę pana, a nie ją. Sama nigdy by do mnie nie przyszła.
 title: M32_PogodzenieBlekit2_2
 ---
 <<voiceline Błękit 5>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lus: Oczywiście, że pan tak mówi. To nie załatwi sprawy. Lute niepotrzebnie pana targała ze sobą.
 	<<jump M32_PogodzenieBlekit3>>
 ===
@@ -105,26 +137,36 @@ Lus: Oczywiście, że pan tak mówi. To nie załatwi sprawy. Lute niepotrzebnie 
 title: M32_PogodzenieBlekit3
 ---
 ->Powinnaś bardziej skupić się na potrzebach siostry.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 257>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Najważniejsze, że jest.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 258>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_1>>
 ->Daj jej spokój.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 259>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Nie musi mówić za siebie.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 260>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Musisz dać jej szansę zebrać się w sobie.
+	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 261>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
@@ -133,20 +175,25 @@ title: M32_PogodzenieBlekit3
 
 title: M32_PogodzenieBlekit3_1
 ---
+<<voiceline Błękit 6>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Pan jej nie zna. Ile mogę wybaczać dorosłemu a nie jej?
 	<<Jab DebataDialogi "M32_P_Jab_1_1" "M32_P_Jab_1_2" >>
 ===
 
 title: M32_PogodzenieBlekit3_2
 ---
-<<voiceline Błękit 6>>
+<<voiceline Błękit 7>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Cała Lute. Wykorzysta innych, żeby zmusić mnie do wybaczenia. Sama ma to gdzieś.
 	<<Jab DebataDialogi "M32_P_Jab_1_1" "M32_P_Jab_1_2" >>
 ===
 
 title: M32_P_Jab_1_1
 ---
-<<voiceline Błękit 7>>
+<<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 41>>
 Lute: Po prostu lepiej jak zajmuje się tym ktoś, kto wie co robi.
 	<<jump M32_PogodzenieBlekit4>>
@@ -162,26 +209,36 @@ Lute: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzi
 title: M32_PogodzenieBlekit4
 ---
 ->Powinnaś być ponad tym i dać sobie spokój.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 262>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Najważniejsze, że zwierzakowi nic się nie stało.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 263>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Szukała rozwiązania, specjalnie poprosiła mnie o pomoc, żeby się dogadać.
+	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 264>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Przeprosiny są jej, nie moje, obiecuję.
+	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 265>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Obrażanie się nie jest rozwiązaniem.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 266>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -191,6 +248,8 @@ title: M32_PogodzenieBlekit4
 title: M32_PogodzenieBlekit4_1
 ---
 <<voiceline Błękit 8>>
+<<ChangeDebateIcon DebateChildren "Lus" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lus: Co z tego, skoro potrzebuje pana do prostych przeprosin?
 	<<jump M32_PogodzenieBlekit5>>
 ===
@@ -198,6 +257,8 @@ Lus: Co z tego, skoro potrzebuje pana do prostych przeprosin?
 title: M32_PogodzenieBlekit4_2
 ---
 <<voiceline Błękit 9>>
+<<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Lus: Nie będę tego więcej ignorować. Niech już mnie pan przeprosi i miejmy to za sobą. Ja nie zamierzam wybaczać.
 	<<jump M32_PogodzenieBlekit5>>
 ===
@@ -205,26 +266,36 @@ Lus: Nie będę tego więcej ignorować. Niech już mnie pan przeprosi i miejmy 
 title: M32_PogodzenieBlekit5
 ---
 ->Jej przeprosiny są z serca, ja za nią przepraszać nie będę.
+	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 267>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->Lute potrzebuje wsparcia, ale to nic złego.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 268>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->Licza się jej słowa, nie kompani.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 269>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ->Wszyscy mnie potrzebujecie.
+	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 270>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ->Nie skupiaj się na jej sposobie rozwiązywania problemów.
+	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 271>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -234,6 +305,8 @@ title: M32_PogodzenieBlekit5
 title: M32_PogodzenieBlekit5_1
 ---
 <<voiceline Błękit 10>>
+<<ChangeDebateIcon DebateChildren "Lus" "happytalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Skoro tak…
 	<<Ending PointMeter>>
 ===
@@ -241,6 +314,8 @@ Lus: Skoro tak…
 title: M31_DebataBlekit5_2
 ---
 <<voiceline Błękit 11>>
+<<ChangeDebateIcon DebateChildren "Lus" "sadtalk">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lus: Pan tylko odwraca uwagę od problemu.
 	<<Ending PointMeter>>
 ===
@@ -249,20 +324,30 @@ title: M31_DebataBlekitPoDebata
 ---
 <<debateWon Błękit>>
 <<voiceline Błękit 12>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Lus" "sad">>
 Lus: To niech się wypowie.
 
 <<voiceline Błękit 13>>
+<<ChangeIcon Icons "Lus" "angry">>
 Lus: Ma dorosłego obok, niech się wykaże.
+<<HideIcon Icons>>
 
 <<voicelineEnd Błękit>>
 <<voiceline Player 272>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dasz radę.
+<<HidePlayerIcon IconsPlayer>>
 
 <<voicelineEnd Player>>
 <<voiceline Pomarańcz 43>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Lute" "sad">>
 Lute: Dobra. Dobra, poradzę sobie.
 
 <<voiceline Pomarańcz 44>>
+<<ChangeIcon Icons "Lute" "angry">>
 Lute: Przepraszam za całą sytuację Lus! Nie chciałam zgubić Chmurki!
 
 <<voiceline Pomarańcz 45>>
@@ -270,9 +355,11 @@ Lute: Bałam się, że okropnie się na mnie obrazisz i już nigdy nie będzie j
 
 <<voicelineEnd Pomarańcz>>
 <<voiceline Błękit 14>>
+<<ChangeIcon Icons "Lus" "sad">>
 Lus: W porządku, nie musisz już krzyczeć.
 
 <<voiceline Błękit 15>>
+<<ChangeIcon Icons "Lus" "happy">>
 Lus: Dziękuję za przeprosiny. Wybaczone.
 
 <<voiceline Błękit 16>>
@@ -280,6 +367,7 @@ Lus: Następnym razem proszę przyjdź od razu do mnie.
 
 <<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 46>>
+<<ChangeIcon Icons "Lute" "sad">>
 Lute: I wtedy się na mnie nie zdenerwujesz?
 
 <<voicelineEnd Pomarańcz>>
@@ -288,7 +376,9 @@ Lus: Nie.
 
 <<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 47>>
+<<ChangeIcon Icons "Lute" "happy">>
 Lute: Dobrze. Przyjdę.
+<<HideIcon Icons>>
 <<blekitwygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>
 ===

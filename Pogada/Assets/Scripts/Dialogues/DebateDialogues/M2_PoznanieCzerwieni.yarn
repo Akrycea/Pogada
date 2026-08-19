@@ -371,11 +371,11 @@ Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem
 title: M2_PoznanieCzerwieniPoDebata
 ---
 <<debateWon Czerwony>>
-<<camShake CinemachineCameraVillage>>
 <<DisableColliders StateManager>>
+<<voiceline Player 162>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-<<voiceline Player 162>>
+<<camShake CinemachineCameraVillage>>
 Bohater: Nie ma nic złego w tym, że się denerwujesz.
 
 <<voiceline Player 163>>

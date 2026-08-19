@@ -1,5 +1,7 @@
 ﻿title: M1_PoznanieFiolet
 ---
+<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 <<voiceline Player 9>>
 Bohater: To co się teraz liczy, to odnalezienie twojego rodzeństwa i wytłumaczenie całej sprawy.
 
@@ -11,6 +13,7 @@ Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
 <<voicelineEnd Player>>
 <<voiceline Fiolet 12>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Fiolet: Hm, no może…
 	<<UpdateDebateNumber PointMeter>>
 	<<jump M1_PoznanieFiolet1>>
@@ -19,26 +22,36 @@ Fiolet: Hm, no może…
 title: M1_PoznanieFiolet1
 ---
 ->Nie powinieneś bez powodu krzyczeć na brata.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 12>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->Od kiedy rodzeństwa się kłócą?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 13>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->Co ci zrobił?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 14>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->O co się pokłóciliście?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 15>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->O co się darliście?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 16>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -48,6 +61,7 @@ title: M1_PoznanieFiolet1
 title: M1_PoznanieFiolet1_1
 ---
 <<voiceline Fiolet 11>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Vus ma jakiś głupi pomysł, że chce imię zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
@@ -55,6 +69,7 @@ Dziecko 2: Vus ma jakiś głupi pomysł, że chce imię zmieniać.
 title: M1_PoznanieFiolet1_2
 ---
 <<voiceline Fiolet 12>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
@@ -62,26 +77,36 @@ Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
 title: M1_PoznanieFiolet2
 ---
 ->I o to cały ten krzyk?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 17>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Czemu uważasz, że sprawi tym przykrość mamie?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 18>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Każdy ma swoje imię i może robić z nim co chce.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 19>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Wydaje mi się, że waszych rodziców to zupełnie nie interesuje.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 20>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Co tobie do tego?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 21>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -91,6 +116,7 @@ title: M1_PoznanieFiolet2
 title: M1_PoznanieFiolet2_1
 ---
 <<voiceline Fiolet 13>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego żałował.
 	<<jump M1_PoznanieFiolet3>>
 ===
@@ -98,36 +124,47 @@ Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jak
 title: M1_PoznanieFiolet2_2
 ---
 <<voiceline Fiolet 14>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Mamie na pewno będzie przykro z tego powodu! 
 
 <<voiceline Fiolet 15>>
 Dziecko 2: Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie!
-	<<jump M1_PoznanieFioleti3>>
+	<<jump M1_PoznanieFiolet3>>
 ===
 
 title: M1_PoznanieFiolet3
 ---
 ->Nie możesz innym narzucać swoich zasad.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 22>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->Kogo obchodzi mama? Jesteście już duzi.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 23>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->To tylko imię.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 24>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->Może mama cieszyłaby się ze szczęścia Vusa?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 25>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->A co, jakbyś ty chciał zmienić imię?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 26>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -137,6 +174,7 @@ title: M1_PoznanieFiolet3
 title: M1_PoznanieFiolet3_1
 ---
 <<voiceline Fiolet 16>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Dziecko 2: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczęśliwa! A to ona jest najważniejsza.
 	<<jump M1_PoznanieFiolet4>>
 ===
@@ -144,6 +182,7 @@ Dziecko 2: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczę
 title: M1_PoznanieFiolet3_2
 ---
 <<voiceline Fiolet 17>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Zasad się nie łamie i kropka!
 	<<jump M1_PoznanieFiolet4>>
 ===
@@ -151,26 +190,36 @@ Dziecko 2: Zasad się nie łamie i kropka!
 title: M1_PoznanieFiolet4
 ---
 ->Rozmawiałem z waszą mamą i na nic takiego nie narzekała.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 27>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Czemu jej nie spytacie?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 28>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Jako rodzeństwo powinniście się chyba zawsze wspierać?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 29>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_1>>
 ->Sam sobie wymyśliłeś te zasady.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 30>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Chyba ty jesteś bardziej przeciwko temu, niż wasza mama.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 31>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
@@ -180,6 +229,7 @@ title: M1_PoznanieFiolet4
 title: M1_PoznanieFiolet4_1
 ---
 <<voiceline Fiolet 18>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Przecież ja go wspieram! 
 
 <<voiceline Fiolet 19>>
@@ -190,6 +240,7 @@ Dziecko 2: Powstrzymuję go przed złym wyborem.
 title: M1_PoznanieFiolet4_2
 ---
 <<voiceline Fiolet 20>>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
 	<<jump M1_PoznanieFiolet5>>
 ===
@@ -197,26 +248,36 @@ Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
 title: M1_PoznanieFiolet5
 ---
 ->Powinieneś dać dorosłym się tym zająć.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 32>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ->Krzyczenie na niego nikomu nie pomoże.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 33>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Światu brakuje kolorów, a wy skupiacie się na imionach?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 34>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ->To nie jest aż tak poważny temat, żeby się o to kłócić.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 35>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Ta cała kłótnia nie ma sensu.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 36>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -226,6 +287,7 @@ title: M1_PoznanieFiolet5
 title: M1_PoznanieFiolet5_1
 ---
 <<voiceline Fiolet 21>>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Dziecko 2: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i nie uciekał.
 	<<Ending PointMeter>>
 ===
@@ -233,6 +295,7 @@ Dziecko 2: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i
 title: M1_PoznanieFiolet5_2
 ---
 <<voiceline Fiolet 22>>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Dziecko 2: Śmiertelnik jak ty nie zrozumie.
 	<<Ending PointMeter>>
 ===
@@ -240,61 +303,93 @@ Dziecko 2: Śmiertelnik jak ty nie zrozumie.
 
 title: M1_PoznanieFioletPoDebacie
 ---
+<<IconPlayerOn Dialogi>>
 <<debateWon Fiolet>>
 <<voiceline Player 37>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Czy wiesz może, gdzie Aureus mógł uciec?
 
 <<voiceline Player 38>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Znajdę go i porozmawiam z nim. Zaraz wyjaśnimy tą sprawę.
 
 <<voiceline Player 39>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Wiesz, gdzie mógł się zaszyć?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<voiceline Fiolet 23>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Fiolet: Hm, jak komukolwiek jest źle to się biegnie do Lus.
 
 <<voiceline Fiolet 24>>
 Fiolet: Ona najlepiej przytula.
+<<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 40>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Wiesz, gdzie ją znajdę?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<voiceline Fiolet 25>>
+<<ChangeIcon Icons "Violaceus" "happy">>
 Fiolet: Chyba pocieszała wcześniej Liv, która pożarła się o coś z resztą. Powinny być w wiosce niedaleko stąd.
+<<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 41>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Dizękuję. Pójdę ich poszukać.
 
 <<voiceline Player 42>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Przemyśl proszę nasza rozmowę. I żadnych więcej kłótni!
 
 <<voiceline Player 43>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Na ten moment to ja się wami zajmuję i nie chcę żadnych bójek.
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<voiceline Fiolet 26>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Fiolet: My się nie biliśmy! Po prostu przemawiałem mu do rozsądku.
+<<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 44>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Pogadamy o tym jeszcze. Czy wiesz może, czemu świat nie ma kolorów?
+<<HidePlayerIcon IconsPlayer>>
 
+<<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<voiceline Fiolet 27>>
+<<ChangeIcon Icons "Violaceus" "sad">>
 Fiolet: Nie. Pewnie mama wie.
 
 <<voiceline Fiolet 28>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Fiolet: Powiedz Vusowi, jak go znajdziesz, żeby się słuchał mamy.
+<<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 45>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "angry">>
 Bohater: Wszyscy porozmawiamy, jak go znajdę. 
 
 <<voiceline Player 46>>
 Bohater: Do później.
+<<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
 ===
