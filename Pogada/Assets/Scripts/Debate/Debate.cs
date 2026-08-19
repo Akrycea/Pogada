@@ -103,6 +103,7 @@ public class Debate : MonoBehaviour
             turnOffCollider.EnableAllColliders();
         }
         YourPoints = 0;
+        EnemyPoints = 0;
         UpdateDebateSliders();
     }
 
