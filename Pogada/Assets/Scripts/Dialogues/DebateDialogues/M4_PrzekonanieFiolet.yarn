@@ -1,16 +1,21 @@
 ﻿title: M4_PrzekonanieFiolet
 ---
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 <<voiceline Player 280>>
 Bohater: Musisz przeprosić Aureusa.
 
 <<voiceline Fiolet 38>>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Violaceus: Rozmawialiśmy już o tym staruszku. Spadaj na drzewo.
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 281>>
+<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 Bohater: Twój brat rozważa odejście z niebios.
 
 <<voiceline Player 282>>
+<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 Bohater: Nie może do tego dojść.
 
 <<voiceline Player 283>>
@@ -18,6 +23,7 @@ Bohater: Musisz go przed tym powstrzymać.
 
 <<voicelineEnd Player>>
 <<voiceline Fiolet 39>>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Violaceus: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
 <<UpdateDebateNumber PointMeter>>
 	<<jump M4_DebataFiolet1>>
@@ -26,26 +32,36 @@ Violaceus: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
 title: M4_DebataFiolet1
 ---
 ->Może to ty powinieneś opuścić niebiosa.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 284>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet1_2>>
 ->Naprawdę nie masz empatii.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 285>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet1_2>>
 ->Nie możesz tak traktować mojego kolegi.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 312>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet1_1>>
 ->Brak kolorów to wszystko wasza wina.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 286>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet1_2>>
 ->Przez to jak się traktujecie nawzajem świat nie ma kolorów.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 287>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
@@ -55,6 +71,8 @@ title: M4_DebataFiolet1
 title: M4_DebataFiolet1_1
 ---
 <<voiceline Fiolet 40>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Violaceus: Ktoś pytał?
 	<<jump M4_DebataFiolet2>>
 ===
@@ -62,6 +80,8 @@ Violaceus: Ktoś pytał?
 title: M4_DebataFiolet1_2
 ---
 <<voiceline Fiolet 41>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
 	<<jump M4_DebataFiolet2>>
 ===
@@ -69,26 +89,36 @@ Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
 title: M4_DebataFiolet2
 ---
 ->Skoro tak bardzo ufasz dorosłym, to posłuchaj się mnie.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 288>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet2_2>>
 ->Nie pozwolę, żeby przez was moje dzieci żyły bez kolorów.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 289>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet2_1>>
 ->Mam dość ciebie i twojej upartości.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 290>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet2_2>>
 ->Wasza kłótnia kosztuje nas nasze kolory.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 291>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M4_DebataFiolet2_1>>
 ->Słaby z ciebie bóg.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 292>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -98,6 +128,8 @@ title: M4_DebataFiolet2
 title: M4_DebataFiolet2_1
 ---
 <<voiceline Fiolet 42>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Violaceus: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zrozumie.
 	<<jump M4_DebataFiolet3>>
 ===
@@ -105,6 +137,8 @@ Violaceus: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zroz
 title: M4_DebataFiolet2_2
 ---
 <<voiceline Fiolet 43>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Violaceus: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
 	<<jump M4_DebataFiolet3>>
 ===
@@ -112,26 +146,36 @@ Violaceus: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
 title: M4_DebataFiolet3
 ---
 ->Tak naprawdę ty masz z tym problem, nie mama.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 293>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M4_DebataFiolet3_1>>
 ->Nic dziwnego, że mama was mi zostawiła.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 294>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet3_2>>
 ->Rozumiem, że mam rację.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 295>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet3_2>>
 ->Jesteś samolubny.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 296>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet3_1>>
 ->Nie jesteś centrum wszechświata.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 297>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -141,6 +185,8 @@ title: M4_DebataFiolet3
 title: M4_DebataFiolet3_1
 ---
 <<voiceline Fiolet 44>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Violaceus: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskazuje mi dobrą drogę.
 	<<jump M4_DebataFiolet4>>
 ===
@@ -148,6 +194,8 @@ Violaceus: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskaz
 title: M4_DebataFiolet3_2
 ---
 <<voiceline Fiolet 45>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Violacus: Skoro tak, to po co się pan wpycha między mnie a Aureusa? Nie masz śmiertelniku własnych dzieci, żeby im przeszkadzać?
 	<<jump M4_DebataFiolet4>>
 ===
@@ -155,26 +203,36 @@ Violacus: Skoro tak, to po co się pan wpycha między mnie a Aureusa? Nie masz �
 title: M4_DebataFiolet4
 ---
 ->Nie masz pojęcia, co robisz.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 298>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet4_2>>
 ->Czy wasza mama kazała ci się tak zachowywać?
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 299>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet4_2>>
 ->Nie masz pojęcia czego wasza mama tak naprawdę chce.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 300>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet4_1>>
 ->Ja najlepiej zajmę się tą sytuacją.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 301>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet4_2>>
 ->Mama kocha Aureusa tak czy siak.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 302>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
@@ -184,6 +242,8 @@ title: M4_DebataFiolet4
 title: M4_DebataFiolet4_1
 ---
 <<voiceline Fiolet 46>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Violaceus: Wcale nie! Inaczej bym się nie wykłócał!
 	<<jump M4_DebataFiolet5>>
 ===
@@ -191,6 +251,8 @@ Violaceus: Wcale nie! Inaczej bym się nie wykłócał!
 title: M4_DebataFiolet4_2
 ---
 <<voiceline Fiolet 47>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Violaceus: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to co ty, pewnie swoją zostawiłeś.
 	<<jump M4_DebataFiolet5>>
 ===
@@ -198,26 +260,36 @@ Violaceus: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to c
 title: M4_DebataFiolet5
 ---
 ->Skoro tak dobrze się znasz, to zrób coś.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 303>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet5_2>>
 ->Kłócisz się zamiast przekonać do siebie Aureusa.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 304>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet5_2>>
 ->Nie możesz być tego pewien.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 305>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet5_1>>
 ->Mama na pewno porozmawiałby z Aureusem.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 306>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M4_DebataFiolet5_1>>
 ->Widocznie lubisz siedzieć bezczynnie.
+	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 307>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -227,6 +299,8 @@ title: M4_DebataFiolet5
 title: M4_DebataFiolet5_1
 ---
 <<voiceline Fiolet 10>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Violaceus: Hm, no może...
 	<<Ending PointMeter>>
 ===
@@ -234,6 +308,8 @@ Violaceus: Hm, no może...
 title: M4_DebataFiolet5_2
 ---
 <<voiceline Fiolet 48>>
+<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Violaceus: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej niż pan!
 	<<Ending PointMeter>>
 ===
@@ -242,23 +318,35 @@ title: M4_DebataFioletPoDebata
 ---
 <<debateWon Fiolet>>
 <<voiceline Fiolet 7>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Violaceus: …
+<<HideIcon Icons>>
 
+<<IconPlayerOn Dialogi>>
 <<voiceline Player 308>>
-Bohater: Porozmawiaj z nim
+<<ChangePlayerIcon IconsPlayer "sad">>
+Bohater: Porozmawiaj z nim.
 
 <<voiceline Player 309>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Przekonasz się, że niezależnie od imienia, to nadal twoj brat.
 
 <<voiceline Player 310>>
+<<ChangePlayerIcon IconsPlayer "sad">>
 Bohater: Kochasz go? 
 
 <<voiceline Player 311>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: To będziesz go kochał nieważne co. Daj mu szansę.
+<<HidePlayerIcon IconsPlayer>>
 
 <<voicelineEnd Player>>
 <<voiceline Fiolet 49>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Violaceus" "angry">>
 Violaceus: Już dobra, dobra! Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
+<<HideIcon Icons>>
 <<fioletDwaWygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>

@@ -143,7 +143,7 @@ Robert: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słu
 title: M2_Z_Jab_1_1
 ---
 <<voicelineEnd Czerwony>>
-<<voiceline Zielony 67>>
+<<voiceline Zielony 68>>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
@@ -152,7 +152,7 @@ Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 title: M2_Z_Jab_1_2
 ---
 <<voicelineEnd Czerwony>>
-<<voiceline Zielony 68>>
+<<voiceline Zielony 67>>
 Viri: Przestań krzyczeć!
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3>>
@@ -278,7 +278,7 @@ title: M2_Z_Jab_2_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
 <<voiceline Zielony 69>>
-Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
+Viri: Nikt nie ma nic do twojej złości, po prostu jak psujesz rzeczy to jesteś trochę straszny.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
@@ -290,7 +290,7 @@ title: M2_Z_Jab_2_2
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angru">>
 <<voiceline Zielony 70>>
-Viri: Przestań krzyczeć!
+Viri: Znowu się złościsz, jak zawsze.
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
@@ -371,11 +371,11 @@ Robert: Nikt mnie nie słucha, nikt! Nie jestem ani kłamczuchem, ani nie jestem
 title: M2_PoznanieCzerwieniPoDebata
 ---
 <<debateWon Czerwony>>
-<<camShake CinemachineCameraVillage>>
 <<DisableColliders StateManager>>
+<<voiceline Player 162>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-<<voiceline Player 162>>
+<<camShake CinemachineCameraVillage>>
 Bohater: Nie ma nic złego w tym, że się denerwujesz.
 
 <<voiceline Player 163>>

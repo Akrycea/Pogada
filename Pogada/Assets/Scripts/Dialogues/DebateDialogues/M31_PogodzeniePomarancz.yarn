@@ -1,6 +1,8 @@
 ﻿title: M31_PogodzeniePomarancz
 ---
 <<voiceline Pomarańcz 19>>
+<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: Nie zniosę tego, jeśli będzie na mnie zła.
 
 <<voiceline Pomarańcz 20>>
@@ -8,10 +10,13 @@ Lute: A na pewno będzie.
 
 <<voicelineEnd Pomarańcz>>
 <<voiceline Player 211>>
+<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 Bohater: Udało mi się znaleźć jej zwierzaka, to na pewno trochę załagodzi sytuację.
 
 <<voicelineEnd Player>>
 <<voiceline Pomarańcz 21>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam rady spojrzeć jej w oczy.
 <<UpdateDebateNumber PointMeter>>
 	<<jump M31_DebataPomarancz1>>
@@ -20,26 +25,36 @@ Lute: Ale nadal będzie taka zawiedziona, ja nie chcę na nią patrzeć! Nie dam
 title: M31_DebataPomarancz1
 ---
 ->Jesteś za słaba.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 212>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Musisz powiedzieć jej co się stało.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 213>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_1>>
 ->Nie masz się czego bać.
+	<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 214>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->To co ze zwierzakiem?
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 215>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Ktoś powinien oddać Lus jej zwierzaka.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 216>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
@@ -49,6 +64,8 @@ title: M31_DebataPomarancz1
 title: M31_DebataPomarancz1_1
 ---
 <<voiceline Pomarańcz 22>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lute: Ja nie mogę tego zrobić! 
 
 <<voiceline Pomarańcz 23>>
@@ -59,6 +76,8 @@ Lute: Nigdy już nie pozwoli mi się bawić z Chmurką. To okropne.
 title: M31_DebataPomarancz1_2
 ---
 <<voiceline Pomarańcz 24>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lute: Nie obchodzi mnie to. Lus pomyśli, że jestem najgorsza przez zgubienie Chmurki. Może rzeczywiście jestem.
 	<<jump M31_DebataPomarancz2>>
 ===
@@ -66,26 +85,36 @@ Lute: Nie obchodzi mnie to. Lus pomyśli, że jestem najgorsza przez zgubienie C
 title: M31_DebataPomarancz2
 ---
 ->Na pewno Lus wybaczy ci, jeśli przeprosisz osobiście.
+	<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 217>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Użalanie się nad sobą nie pomoże.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 218>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może moglibyśmy zrobić to razem?
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 219>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Wytłumacz Lus sytuację i sprawa rozwiązana.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 220>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może Lus miałaby rację.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 221>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -95,6 +124,8 @@ title: M31_DebataPomarancz2
 title: M31_DebataPomarancz2_1
 ---
 <<voiceline Pomarańcz 25>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: Mama powinna się tym zająć. Ona zawsze ma rację i jej zawsze trzeba wybaczyć. Zazwyczaj już by za mnie z nią porozmawiała.
 	<<jump M31_DebataPomarancz3>>
 ===
@@ -102,6 +133,8 @@ Lute: Mama powinna się tym zająć. Ona zawsze ma rację i jej zawsze trzeba wy
 title: M31_DebataPomarancz2_2
 ---
 <<voiceline Pomarańcz 26>>
+<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lute: Ja pójdę po mamę najlepiej. Jak najszybciej.
 	<<jump M31_DebataPomarancz3>>
 ===
@@ -109,26 +142,36 @@ Lute: Ja pójdę po mamę najlepiej. Jak najszybciej.
 title: M31_DebataPomarancz3
 ---
 ->Nie możesz wykorzystywać do tego innych.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 222>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie wiemy, kiedy wasza mama wróci.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 223>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie bądź tchórzem.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 224>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Obecnie to my mamy Chmurkę, możemy rozwiązać to tu i teraz.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 225>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_1>>
 ->Ja się wami obecnie zajmuję.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 226>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
@@ -138,12 +181,15 @@ title: M31_DebataPomarancz3
 title: M31_DebataPomarancz3_1
 ---
 <<voiceline Pomarańcz 27>>
+<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: A na pana się można denerwować?
 
 <<voiceline Pomarańcz 28>>
 Lute: Bo jak nie, to pan niech pójdzie pogadać z Lus. 
 
 <<voiceline Pomarańcz 29>>
+<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 Lute: W końcu rozwiązuje pan nasze problemy, prawda?
 	<<jump M31_DebataPomarancz4>>
 ===
@@ -151,6 +197,8 @@ Lute: W końcu rozwiązuje pan nasze problemy, prawda?
 title: M31_DebataPomarancz3_2
 ---
 <<voiceline Pomarańcz 30>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Lute: Jeśli tak panu zależy na naszych problemach, to pan się tym zajmie nie ja!
 	<<jump M31_DebataPomarancz4>>
 ===
@@ -158,26 +206,36 @@ Lute: Jeśli tak panu zależy na naszych problemach, to pan się tym zajmie nie 
 title: M31_DebataPomarancz4
 ---
 ->Ja tylko pomagam wam je rozwiązywać.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 227>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Inne dzieci poradziły sobie same.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 228>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie będę rozwiązywać waszych problemów.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 229>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie robię niczego za nikogo.
+<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<voiceline Player 220>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Jesteś już na tyle duża, abyś robiła to sama.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 231>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -187,6 +245,8 @@ title: M31_DebataPomarancz4
 title: M31_DebataPomarancz4_1
 ---
 <<voiceline Pomarańcz 31>>
+<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: Co? Robertowi i Liv też pan tylko pomógł? Ja nie chcę sama tak się tym zajmować.
 	<<jump M31_DebataPomarancz5>>
 ===
@@ -194,6 +254,8 @@ Lute: Co? Robertowi i Liv też pan tylko pomógł? Ja nie chcę sama tak się ty
 title: M31_DebataPomarancz4_2
 ---
 <<voiceline Pomarańcz 32>>
+<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+<<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 Lute: Widziałam przecież, że za innych pan robił rzeczy. Ja też tak chcę.
 	<<jump M31_DebataPomarancz5>>
 ===
@@ -201,26 +263,36 @@ Lute: Widziałam przecież, że za innych pan robił rzeczy. Ja też tak chcę.
 title: M31_DebataPomarancz5
 ---
 ->Tylko pomogłem, oni sami rozwiązali swoje problemy.
+	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 232>>
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_1>>
 ->Musisz sama rozwiązać ten problem.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 233>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Ja również porozmawiam z Lus.
+	<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 234>>
 	<<wait 2>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_1>>
 ->Nie mogę cały czas poświęcać czasu na wasze problemy.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 235>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Mogę co najwyżej zanieść tam  Chmurkę, ale to ty się wypowiesz.
+	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 236>>
 	<<wait 2>>
 	<<BadChoice PointMeter>>
@@ -230,6 +302,8 @@ title: M31_DebataPomarancz5
 title: M31_DebataPomarancz5_1
 ---
 <<voiceline Pomarańcz 33>>
+<<ChangeDebateIcon DebateChildren "Lute" "happy">>
+<<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lute: No, jeśli to pan będzie gadał, to dobra.
 	<<Ending PointMeter>>
 ===
@@ -237,6 +311,8 @@ Lute: No, jeśli to pan będzie gadał, to dobra.
 title: M31_DebataPomarancz5_2
 ---
 <<voiceline Pomarańcz 34>>
+<<ChangeDebateIcon DebateChildren "Lute" "angry">>
+<<ChangeDebatePlayerIcon DebatePlayer "distress">>
 Lute: Nie chcę, nie chcę! Boję się. Niech pan z Lus pogada.
 	<<Ending PointMeter>>
 ===
@@ -245,10 +321,15 @@ title: M31_DebataPomaranczPoDebata
 ---
 <<debateWon Pomarańcz>>
 <<voiceline Pomarańcz 35>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Lute" "angry">>
 Lute: Bo ja wolę nie.
+<<HideIcon Icons>>
 
 <<voicelineEnd Pomarańcz>>
 <<voiceline Player 237>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Rozwiążemy ten problem razem.
 
 <<voiceline Player 238>>
@@ -259,17 +340,25 @@ Bohater: Wiesz jak możemy ją znaleźć?
 
 <<voicelineEnd Player>>
 <<voiceline Pomarańcz 36>>
+<<HidePlayerIcon IconsPlayer>>
+<<IconsOn Dialogi>>
+<<ChangeIcon Icons "Lute" "sad">>
 Lute: Może Chmurka nas do niej zaprowadzi.
 
 <<voiceline Pomarańcz 37>>
 Lute: Proszę Chmurka? Ładnie proszę?
 
 <<voiceline Pomarańcz 38>>
+<<ChangeIcon Icons "Lute" "happy">>
 Lute: O, już węszy.
+<<HideIcon Icons>>
 
 <<voicelineEnd Pomarańcz>>
 <<voiceline Player 240>>
+<<IconPlayerOn Dialogi>>
+<<ChangePlayerIcon IconsPlayer "happy">>
 Bohater: Cudownie.
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>
+<<HidePlayerIcon IconsPlayer>>
 ===
