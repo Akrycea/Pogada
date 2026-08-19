@@ -25723,6 +25723,7 @@ GameObject:
   - component: {fileID: 505790738}
   - component: {fileID: 505790737}
   - component: {fileID: 505790736}
+  - component: {fileID: 505790742}
   - component: {fileID: 505790735}
   m_Layer: 0
   m_Name: CinemachineCameraGateTree
@@ -25869,6 +25870,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 536311725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505790742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505790734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e9285c3e32cb46bcd29018a6c35b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506804902
 GameObject:
   m_ObjectHideFlags: 0
@@ -91879,6 +91892,7 @@ GameObject:
   - component: {fileID: 1756727629}
   - component: {fileID: 1756727628}
   - component: {fileID: 1756727627}
+  - component: {fileID: 1756727632}
   m_Layer: 0
   m_Name: CinemachineFields
   m_TagString: Untagged
@@ -92000,6 +92014,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 536311725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756727632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756727626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e9285c3e32cb46bcd29018a6c35b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761880525
 GameObject:
   m_ObjectHideFlags: 0
@@ -94531,7 +94557,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -30.393139, y: -1.0577825, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -97014,6 +97040,7 @@ GameObject:
   - component: {fileID: 1855470028}
   - component: {fileID: 1855470027}
   - component: {fileID: 1855470031}
+  - component: {fileID: 1855470032}
   m_Layer: 0
   m_Name: CinemachineCameraVillage
   m_TagString: Untagged
@@ -97135,6 +97162,18 @@ MonoBehaviour:
   AmplitudeGain: 0
   FrequencyGain: 1
   m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &1855470032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855470026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e9285c3e32cb46bcd29018a6c35b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1858330810
 GameObject:
   m_ObjectHideFlags: 0
