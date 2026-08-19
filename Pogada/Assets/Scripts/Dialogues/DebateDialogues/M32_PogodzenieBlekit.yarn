@@ -75,6 +75,7 @@ title: M32_PogodzenieBlekit1_2
 <<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Lus: Lute nie mogła tego zrobić sama?
+	<<jump M32_PogodzenieBlekit2>>
 ===
 
 title: M32_PogodzenieBlekit2
@@ -196,6 +197,7 @@ title: M32_P_Jab_1_1
 <<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 41>>
 Lute: Po prostu lepiej jak zajmuje się tym ktoś, kto wie co robi.
+	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4>>
 ===
 
@@ -203,6 +205,7 @@ title: M32_P_Jab_1_2
 ---
 <<voiceline Pomarańcz 42>>
 Lute: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzić.
+	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4>>
 ===
 
