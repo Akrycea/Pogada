@@ -144,6 +144,7 @@ public class YarnCommands : MonoBehaviour
     {
         czerwonydebata = GameObject.Find("Czerwony").GetComponent<DebataPlayer>();
         czerwonydebata.wygranaMinigierka = true;
+        czerwonydebata.SentenceBuildingStart();
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego
@@ -218,6 +219,7 @@ public class YarnCommands : MonoBehaviour
     {
         blekitdebata = GameObject.Find("B³êkit").GetComponent<DebataPlayer>();
         blekitdebata.wygranaMinigierka = true;
+        blekitdebata.SentenceBuildingStart();
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty czerwonego

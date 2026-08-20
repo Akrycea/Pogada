@@ -28,6 +28,7 @@ public class PotionMinigame : MonoBehaviour
             {
                 Debug.Log("Win");
                 debataPlayer.wygranaMinigierka = true;
+                debataPlayer.SentenceBuildingStart();
             }
             else
             {
