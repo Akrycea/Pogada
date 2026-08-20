@@ -6,13 +6,11 @@ public class GlassMinigameWin : MonoBehaviour
 
     [SerializeField] private int glassWin;
 
-    public DialogueRunner dialogueRunner;
-
-    private bool dialoguePlayed = false;
-
     public StateManager stateManager;
 
-    public GameObject Fiolt;
+    [SerializeField] private DebataPlayer debataPlayer;
+
+
 
 
     public void GoodSpot()
@@ -22,13 +20,10 @@ public class GlassMinigameWin : MonoBehaviour
         if (glassWin == 4)
         {
             Debug.Log("glass won");
-            //Fiolt.SetActive(true);
             stateManager.GlassMinigameWon = true;
-            //DBATA HR
-            //dialogueRunner.StartDialogue("");
-            //dialoguePlayed = true;
+            debataPlayer.wygranaMinigierka = true;
 
-
+            debataPlayer.SentenceBuildingStart();
         }
     }
 

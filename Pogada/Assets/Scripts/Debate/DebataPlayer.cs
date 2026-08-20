@@ -29,10 +29,18 @@ public class DebataPlayer : MonoBehaviour
     {
         if (wygranaMinigierka)
         {
-            debateManager.StartDebate();
-            //sentenceBuilding();
-            StartCoroutine(WaitForPogadanka());
+            //debateManager.StartDebate();
+            ////sentenceBuilding();
+            //StartCoroutine(WaitForPogadanka());
+
+            SentenceBuildingStart();
         }
+    }
+
+    public void SentenceBuildingStart()
+    {
+        debateManager.StartDebate();
+        StartCoroutine(WaitForPogadanka());
     }
 
     private IEnumerator WaitForPogadanka()
