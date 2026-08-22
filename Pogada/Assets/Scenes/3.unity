@@ -2154,6 +2154,7 @@ GameObject:
   - component: {fileID: 37309741}
   - component: {fileID: 37309742}
   - component: {fileID: 37309743}
+  - component: {fileID: 37309744}
   m_Layer: 0
   m_Name: bird5 nietoperz
   m_TagString: Untagged
@@ -2257,7 +2258,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77b1ac107adf7fb4c8749c3f47561fa2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2467,6 +2468,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &37309744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37309733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &45925103
 GameObject:
   m_ObjectHideFlags: 0
@@ -16357,6 +16370,7 @@ GameObject:
   - component: {fileID: 354958328}
   - component: {fileID: 354958334}
   - component: {fileID: 354958335}
+  - component: {fileID: 354958336}
   m_Layer: 0
   m_Name: bird2 samotnik
   m_TagString: Untagged
@@ -16496,7 +16510,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77b1ac107adf7fb4c8749c3f47561fa2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16647,6 +16661,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &354958336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354958326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &357449563
 GameObject:
   m_ObjectHideFlags: 0
@@ -88031,6 +88057,7 @@ GameObject:
   - component: {fileID: 1691068077}
   - component: {fileID: 1691068078}
   - component: {fileID: 1691068079}
+  - component: {fileID: 1691068080}
   m_Layer: 0
   m_Name: bird fan zielonego
   m_TagString: Untagged
@@ -88120,7 +88147,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77b1ac107adf7fb4c8749c3f47561fa2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88352,6 +88379,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1691068080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691068067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1695363393
 GameObject:
   m_ObjectHideFlags: 0
@@ -94653,6 +94692,7 @@ GameObject:
   - component: {fileID: 1815162102}
   - component: {fileID: 1815162103}
   - component: {fileID: 1815162104}
+  - component: {fileID: 1815162105}
   m_Layer: 0
   m_Name: bird3 feniks
   m_TagString: Untagged
@@ -94742,7 +94782,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77b1ac107adf7fb4c8749c3f47561fa2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94964,6 +95004,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1815162105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815162093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818197704
 GameObject:
   m_ObjectHideFlags: 0
@@ -99993,6 +100045,7 @@ GameObject:
   - component: {fileID: 1920950313}
   - component: {fileID: 1920950319}
   - component: {fileID: 1920950320}
+  - component: {fileID: 1920950321}
   m_Layer: 0
   m_Name: bird4 zielony
   m_TagString: Untagged
@@ -100132,7 +100185,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77b1ac107adf7fb4c8749c3f47561fa2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100283,6 +100336,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1920950321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920950311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927252395
 GameObject:
   m_ObjectHideFlags: 0
