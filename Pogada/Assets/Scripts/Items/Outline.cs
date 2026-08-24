@@ -3,6 +3,7 @@ using UnityEngine;
 public class Outline : MonoBehaviour
 {
     private Renderer ObjectRenderer;
+    [SerializeField] private float outlineWidth;
     void Start()
     {
         ObjectRenderer = GetComponent<Renderer>();
@@ -14,6 +15,7 @@ public class Outline : MonoBehaviour
     private void OnMouseOver()
     {
         ObjectRenderer.material.SetFloat("_OutlineActive", 1.1f);
+        ObjectRenderer.material.SetFloat("_OutlineSize", outlineWidth);
     }
 
     private void OnMouseExit()
