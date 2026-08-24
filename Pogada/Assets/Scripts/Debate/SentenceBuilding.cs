@@ -40,6 +40,9 @@ public class SentenceBuilding : MonoBehaviour
 
     //pokazuje budowane zdanie na ui
     public TMP_Text budowaneZdanieUI;
+    [SerializeField] private GameObject currentUI;
+
+    [SerializeField] private GameObject[] sentenceUIs;
 
     //dialog runner
     public DialogueRunner dialogueRunner;
@@ -61,7 +64,6 @@ public class SentenceBuilding : MonoBehaviour
             budowaneZdanieUI.text = "";
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             CorrectSentence();
-            BudowanieZdanObiekt.SetActive(false);
         }
         else if (sentence.SequenceEqual(rightAnswer2))
         {
@@ -110,6 +112,7 @@ public class SentenceBuilding : MonoBehaviour
             dialogueRunner.StartDialogue(nazwaDialoguGOOD);
             CorrectSentence();
             BudowanieZdanObiekt.SetActive(false);
+
         }
         else if (sentence.SequenceEqual(rightAnswer8))
         {
@@ -175,12 +178,15 @@ public class SentenceBuilding : MonoBehaviour
         {
             nextSentenceBuilding();
         }
+        currentUI.SetActive(false);
     }
 
     //odpala kolejne budowanie zdan jesli nie jest ostatnim
     public GameObject nextSentenceBuildingObject;
+    public GameObject nextUI;
     public void nextSentenceBuilding()
     {
+        nextUI.SetActive(true);
         nextSentenceBuildingObject.SetActive(true);
         gameObject.SetActive(false);
     }

@@ -14,6 +14,10 @@ public class DebataPlayer : MonoBehaviour
     public GameObject budowanieZdan2;
     public GameObject budowanieZdan3;
 
+    [SerializeField] private GameObject UI1;
+    [SerializeField] private GameObject UI2;
+    [SerializeField] private GameObject UI3;
+
     public bool debateWon;
 
     public int playedDebates = 0;
@@ -56,6 +60,7 @@ public class DebataPlayer : MonoBehaviour
             turnOffCollider.DisableAllExceptSpecificTag();
             Debug.Log("starting sentence building");
             budowanieZdan1.SetActive(true);
+            UI1.SetActive(true);
             Debug.Log("blocking player movement");
             playerMovement.canPlayerMove = false;
             playedDebates++;
@@ -63,11 +68,13 @@ public class DebataPlayer : MonoBehaviour
         else if (wygranaMinigierka && playedDebates == 1 && !debateWon)
         {
             budowanieZdan2.SetActive(true);
+            UI2.SetActive(true);
             playedDebates++;
         }
         else if (wygranaMinigierka && playedDebates >= 2 && !debateWon)
         {
             budowanieZdan3.SetActive(true);
+            UI3.SetActive(true);
             playedDebates++;
         }
     }

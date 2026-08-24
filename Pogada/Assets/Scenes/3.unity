@@ -268,37 +268,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.0900002, y: 0.8208008}
   m_EdgeRadius: 0
---- !u!1 &1417116
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1417117}
-  m_Layer: 0
-  m_Name: DebateCanvases
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1417117
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417116}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1309848552}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018547
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2345455
 RectTransform:
   m_ObjectHideFlags: 0
@@ -443,7 +412,7 @@ RectTransform:
   - {fileID: 1928803443}
   - {fileID: 97451274}
   - {fileID: 293181511}
-  m_Father: {fileID: 2071135194}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -499,8 +468,8 @@ Canvas:
   m_GameObject: {fileID: 2345454}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -511,7 +480,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &4681019
 GameObject:
@@ -1684,7 +1653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &21538384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1700,7 +1669,7 @@ RectTransform:
   - {fileID: 1172570570}
   - {fileID: 2098671616}
   - {fileID: 1842397912}
-  m_Father: {fileID: 1930130152}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1756,8 +1725,8 @@ Canvas:
   m_GameObject: {fileID: 21538383}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1768,7 +1737,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &22068334
 GameObject:
@@ -4251,19 +4220,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81405891}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.9446182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2076173601}
   - {fileID: 1575243718}
   - {fileID: 770578211}
-  m_Father: {fileID: 1514248417}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 15.526633, y: 1.7357937}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &81405893
@@ -4315,8 +4284,8 @@ Canvas:
   m_GameObject: {fileID: 81405891}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -4327,7 +4296,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &81887072
 GameObject:
@@ -4868,7 +4837,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7717,6 +7686,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 384850618}
   budowanieZdan2: {fileID: 1282308469}
   budowanieZdan3: {fileID: 1372473491}
+  UI1: {fileID: 914244282}
+  UI2: {fileID: 493036541}
+  UI3: {fileID: 664502693}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -9967,12 +9939,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 882703793}
+  currentUI: {fileID: 401521683}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M31_1_P
   nazwaDialoguMID: M13_1_P_Mid
   nazwaDialoguBAD: M13_1_P_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 199545460}
+  nextUI: {fileID: 401521683}
 --- !u!4 &199545462
 Transform:
   m_ObjectHideFlags: 0
@@ -9993,7 +9992,6 @@ Transform:
   - {fileID: 368807038}
   - {fileID: 877954225}
   - {fileID: 1755129081}
-  - {fileID: 401521684}
   - {fileID: 897107598}
   m_Father: {fileID: 644632965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16348,7 +16346,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -16464,7 +16462,31 @@ Transform:
   m_LocalPosition: {x: -104.19029, y: 42.50083, z: -0.046847202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2003585938}
+  - {fileID: 21538384}
+  - {fileID: 81405892}
+  - {fileID: 1751038285}
+  - {fileID: 1254839018}
+  - {fileID: 2127536396}
+  - {fileID: 401521684}
+  - {fileID: 1097777491}
+  - {fileID: 640257060}
+  - {fileID: 1910570899}
+  - {fileID: 878647011}
+  - {fileID: 1668702447}
+  - {fileID: 914244283}
+  - {fileID: 493036542}
+  - {fileID: 664502694}
+  - {fileID: 455477354}
+  - {fileID: 1795317706}
+  - {fileID: 830279759}
+  - {fileID: 692186606}
+  - {fileID: 1228192240}
+  - {fileID: 1949265815}
+  - {fileID: 2345455}
+  - {fileID: 937484271}
+  - {fileID: 1696720007}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354958326
@@ -17796,7 +17818,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18539,12 +18561,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 460058544}
+  currentUI: {fileID: 914244282}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M2_1_C
   nazwaDialoguMID: M2_1_C_Mid
   nazwaDialoguBAD: M2_1_C_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 384850618}
+  nextUI: {fileID: 914244282}
 --- !u!4 &384850620
 Transform:
   m_ObjectHideFlags: 0
@@ -18573,7 +18622,6 @@ Transform:
   - {fileID: 1991124248}
   - {fileID: 1660427883}
   - {fileID: 1872339300}
-  - {fileID: 914244283}
   - {fileID: 1135595067}
   m_Father: {fileID: 1393232187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20689,7 +20737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &401521684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20705,7 +20753,7 @@ RectTransform:
   - {fileID: 1145874520}
   - {fileID: 882703795}
   - {fileID: 1763094644}
-  m_Father: {fileID: 199545462}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20761,8 +20809,8 @@ Canvas:
   m_GameObject: {fileID: 401521683}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -20773,7 +20821,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &408088305
 GameObject:
@@ -21653,6 +21701,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 2071135192}
   budowanieZdan2: {fileID: 988624295}
   budowanieZdan3: {fileID: 729134500}
+  UI1: {fileID: 2345454}
+  UI2: {fileID: 937484270}
+  UI3: {fileID: 1696720006}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -21979,6 +22030,7 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 1208325562}
   playerMovement: {fileID: 1361693962}
   debateManager: {fileID: 905840119}
+  UI: {fileID: 1949265814}
 --- !u!1 &415334467
 GameObject:
   m_ObjectHideFlags: 0
@@ -22027,7 +22079,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -24038,7 +24090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &455477354
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24054,7 +24106,7 @@ RectTransform:
   - {fileID: 970168795}
   - {fileID: 1792606667}
   - {fileID: 652698476}
-  m_Father: {fileID: 797316538}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -24110,8 +24162,8 @@ Canvas:
   m_GameObject: {fileID: 455477353}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -24122,7 +24174,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &457455736
 GameObject:
@@ -25678,12 +25730,12 @@ GameObject:
   - component: {fileID: 493036544}
   - component: {fileID: 493036543}
   m_Layer: 5
-  m_Name: DebateCanvasZ2
+  m_Name: DebateCanvasC2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &493036542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25699,7 +25751,7 @@ RectTransform:
   - {fileID: 622416819}
   - {fileID: 469006029}
   - {fileID: 444806215}
-  m_Father: {fileID: 1282308471}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25755,8 +25807,8 @@ Canvas:
   m_GameObject: {fileID: 493036541}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -25767,7 +25819,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &495955719
 GameObject:
@@ -32012,12 +32064,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 865138583}
+  currentUI: {fileID: 878647010}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M15_2_Z
   nazwaDialoguMID: M15_2_Z_Mid
   nazwaDialoguBAD: M15_2_Z_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1363406371}
+  nextUI: {fileID: 878647010}
 --- !u!4 &607024359
 Transform:
   m_ObjectHideFlags: 0
@@ -32046,7 +32125,6 @@ Transform:
   - {fileID: 2050561324}
   - {fileID: 1101825681}
   - {fileID: 1539091773}
-  - {fileID: 878647011}
   - {fileID: 1220947447}
   m_Father: {fileID: 683184322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34628,7 +34706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &640257060
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34644,7 +34722,7 @@ RectTransform:
   - {fileID: 899706678}
   - {fileID: 925145056}
   - {fileID: 1017704704}
-  m_Father: {fileID: 1951377864}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34700,8 +34778,8 @@ Canvas:
   m_GameObject: {fileID: 640257059}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -34712,7 +34790,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &641062019
 GameObject:
@@ -35239,7 +35317,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -35627,7 +35705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &664502694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35643,7 +35721,7 @@ RectTransform:
   - {fileID: 1114149244}
   - {fileID: 1914889888}
   - {fileID: 1631704849}
-  m_Father: {fileID: 1372473493}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -35699,8 +35777,8 @@ Canvas:
   m_GameObject: {fileID: 664502693}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -35711,7 +35789,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &671730154
 GameObject:
@@ -36505,7 +36583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692186606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36521,7 +36599,7 @@ RectTransform:
   - {fileID: 547990025}
   - {fileID: 351511109}
   - {fileID: 663828245}
-  m_Father: {fileID: 1284073162}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -36577,8 +36655,8 @@ Canvas:
   m_GameObject: {fileID: 692186605}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -36589,7 +36667,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &692365799
 GameObject:
@@ -37777,12 +37855,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 856494420}
+  currentUI: {fileID: 1696720006}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M4_3_F
   nazwaDialoguMID: M4_3_F_Mid
   nazwaDialoguBAD: M4_3_F_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 988624295}
+  nextUI: {fileID: 937484270}
 --- !u!4 &729134502
 Transform:
   m_ObjectHideFlags: 0
@@ -37806,7 +37911,6 @@ Transform:
   - {fileID: 1431018328}
   - {fileID: 76246833}
   - {fileID: 565244584}
-  - {fileID: 1696720007}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &729525673
@@ -38510,12 +38614,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 237886061}
+  currentUI: {fileID: 830279758}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M3_3_G
   nazwaDialoguMID: M3_3_G_Mid
   nazwaDialoguBAD: M3_3_G_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1545348202}
+  nextUI: {fileID: 1795317705}
 --- !u!4 &745457838
 Transform:
   m_ObjectHideFlags: 0
@@ -38544,7 +38675,6 @@ Transform:
   - {fileID: 924552121}
   - {fileID: 2093378683}
   - {fileID: 1630521538}
-  - {fileID: 830279759}
   - {fileID: 1686450451}
   m_Father: {fileID: 976107269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41240,12 +41370,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1792606665}
+  currentUI: {fileID: 455477353}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M3_1_G
   nazwaDialoguMID: M3_1_G_Mid
   nazwaDialoguBAD: M3_1_G_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 797316536}
+  nextUI: {fileID: 455477353}
 --- !u!4 &797316538
 Transform:
   m_ObjectHideFlags: 0
@@ -41274,7 +41431,6 @@ Transform:
   - {fileID: 1039134020}
   - {fileID: 408398555}
   - {fileID: 95845693}
-  - {fileID: 455477354}
   - {fileID: 1196438639}
   m_Father: {fileID: 976107269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42655,7 +42811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &830279759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42671,7 +42827,7 @@ RectTransform:
   - {fileID: 1365462709}
   - {fileID: 237886063}
   - {fileID: 185785555}
-  m_Father: {fileID: 745457838}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -42727,8 +42883,8 @@ Canvas:
   m_GameObject: {fileID: 830279758}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -42739,7 +42895,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &832446998
 GameObject:
@@ -43963,7 +44119,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -45071,7 +45227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &878647011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45087,7 +45243,7 @@ RectTransform:
   - {fileID: 4681020}
   - {fileID: 865138585}
   - {fileID: 1461301858}
-  m_Father: {fileID: 607024359}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -45143,8 +45299,8 @@ Canvas:
   m_GameObject: {fileID: 878647010}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -45155,7 +45311,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &881773790
 GameObject:
@@ -45527,7 +45683,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -47420,12 +47576,12 @@ GameObject:
   - component: {fileID: 914244285}
   - component: {fileID: 914244284}
   m_Layer: 5
-  m_Name: DebateCanvasZ1
+  m_Name: DebateCanvasC1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &914244283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47441,7 +47597,7 @@ RectTransform:
   - {fileID: 1915542984}
   - {fileID: 460058546}
   - {fileID: 1713204789}
-  m_Father: {fileID: 384850620}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -47497,8 +47653,8 @@ Canvas:
   m_GameObject: {fileID: 914244282}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -47509,7 +47665,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &916317320
 GameObject:
@@ -48291,7 +48447,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -48756,8 +48912,20 @@ PrefabInstance:
       value: 4293717228
       objectReference: {fileID: 0}
     - target: {fileID: 8150228081625468094, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1810761315}
+    - target: {fileID: 8150228081625468094, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150228081625468094, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_PixelPerfect
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150228081625468094, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: autoStart
@@ -48958,7 +49126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &937484271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48974,7 +49142,7 @@ RectTransform:
   - {fileID: 599228484}
   - {fileID: 415334470}
   - {fileID: 1881461742}
-  m_Father: {fileID: 988624297}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -49030,8 +49198,8 @@ Canvas:
   m_GameObject: {fileID: 937484270}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -49042,7 +49210,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &937910547
 GameObject:
@@ -52081,12 +52249,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 415334468}
+  currentUI: {fileID: 937484270}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M4_2_F
   nazwaDialoguMID: M4_2_F_Mid
   nazwaDialoguBAD: M4_2_F_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 2071135192}
+  nextUI: {fileID: 2345454}
 --- !u!4 &988624297
 Transform:
   m_ObjectHideFlags: 0
@@ -52110,7 +52305,6 @@ Transform:
   - {fileID: 684542517}
   - {fileID: 937910548}
   - {fileID: 1636466037}
-  - {fileID: 937484271}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990518192
@@ -56895,7 +57089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1097777491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56911,7 +57105,7 @@ RectTransform:
   - {fileID: 1666301459}
   - {fileID: 2020302551}
   - {fileID: 1472586698}
-  m_Father: {fileID: 1117702086}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -56967,8 +57161,8 @@ Canvas:
   m_GameObject: {fileID: 1097777490}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -56979,7 +57173,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1099904038
 GameObject:
@@ -58792,12 +58986,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 2020302549}
+  currentUI: {fileID: 1097777490}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M31_2_P
   nazwaDialoguMID: M31_2_P_Mid
   nazwaDialoguBAD: M31_2_P_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 199545460}
+  nextUI: {fileID: 401521683}
 --- !u!4 &1117702086
 Transform:
   m_ObjectHideFlags: 0
@@ -58818,7 +59039,6 @@ Transform:
   - {fileID: 245168447}
   - {fileID: 1616083465}
   - {fileID: 409999717}
-  - {fileID: 1097777491}
   m_Father: {fileID: 644632965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1119395240
@@ -63440,12 +63660,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1646628726}
+  currentUI: {fileID: 1949265814}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M1_3_F
   nazwaDialoguMID: M1_3_F_Mid
   nazwaDialoguBAD: M1_3_F_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 2088705826}
+  nextUI: {fileID: 1228192239}
 --- !u!4 &1208325564
 Transform:
   m_ObjectHideFlags: 0
@@ -63479,7 +63726,6 @@ Transform:
   - {fileID: 1207510978}
   - {fileID: 92802539}
   - {fileID: 1141320880}
-  - {fileID: 1949265815}
   - {fileID: 134490499}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64150,7 +64396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1228192240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -64166,7 +64412,7 @@ RectTransform:
   - {fileID: 538975782}
   - {fileID: 654958227}
   - {fileID: 606241677}
-  m_Father: {fileID: 2088705828}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -64222,8 +64468,8 @@ Canvas:
   m_GameObject: {fileID: 1228192239}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -64234,7 +64480,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1230921614
 GameObject:
@@ -65243,7 +65489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1254839018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -65259,7 +65505,7 @@ RectTransform:
   - {fileID: 1120850290}
   - {fileID: 1979694666}
   - {fileID: 222946578}
-  m_Father: {fileID: 1696943526}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -65315,8 +65561,8 @@ Canvas:
   m_GameObject: {fileID: 1254839017}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -65327,7 +65573,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1256289521
 GameObject:
@@ -67430,12 +67676,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 469006027}
+  currentUI: {fileID: 493036541}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M2_2_C
   nazwaDialoguMID: M2_2_C_Mid
   nazwaDialoguBAD: M2_2_C_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 384850618}
+  nextUI: {fileID: 914244282}
 --- !u!4 &1282308471
 Transform:
   m_ObjectHideFlags: 0
@@ -67464,7 +67737,6 @@ Transform:
   - {fileID: 1411502389}
   - {fileID: 1003131197}
   - {fileID: 946381684}
-  - {fileID: 493036542}
   - {fileID: 254862790}
   m_Father: {fileID: 1393232187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67723,12 +67995,39 @@ MonoBehaviour:
   - VUS
   - "UCIEK\u0141"
   budowaneZdanieUI: {fileID: 351511107}
+  currentUI: {fileID: 692186605}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M1_1_F
   nazwaDialoguMID: M1_1_F_Mid
   nazwaDialoguBAD: M1_1_F_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 1284073160}
+  nextUI: {fileID: 692186605}
 --- !u!4 &1284073162
 Transform:
   m_ObjectHideFlags: 0
@@ -67762,7 +68061,6 @@ Transform:
   - {fileID: 574462809}
   - {fileID: 1328124256}
   - {fileID: 1638802410}
-  - {fileID: 692186606}
   - {fileID: 571799497}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68492,12 +68790,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1174551150}
+  currentUI: {fileID: 1668702446}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M15_3_Z
   nazwaDialoguMID: M15_3_Z_Mid
   nazwaDialoguBAD: M15_3_Z_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 607024357}
+  nextUI: {fileID: 878647010}
 --- !u!4 &1306346007
 Transform:
   m_ObjectHideFlags: 0
@@ -68526,7 +68851,6 @@ Transform:
   - {fileID: 1282814136}
   - {fileID: 2132764807}
   - {fileID: 977710022}
-  - {fileID: 1668702447}
   - {fileID: 864572915}
   m_Father: {fileID: 683184322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68713,12 +69037,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1957559349}
+  currentUI: {fileID: 1751038284}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M32_1_B
   nazwaDialoguMID: M32_1_B_Mid
   nazwaDialoguBAD: M32_1_B_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 1308105539}
+  nextUI: {fileID: 1751038284}
 --- !u!4 &1308105541
 Transform:
   m_ObjectHideFlags: 0
@@ -68742,41 +69093,8 @@ Transform:
   - {fileID: 1468598440}
   - {fileID: 1761880526}
   - {fileID: 589714666}
-  - {fileID: 1751038285}
   - {fileID: 1912914720}
   m_Father: {fileID: 772268866}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1309848551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1309848552}
-  m_Layer: 0
-  m_Name: ---DEBATES---
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1309848552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309848551}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.787174, y: -0.6900599, z: 0.67459583}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1417117}
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1311256061
 GameObject:
@@ -70286,7 +70604,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -72055,12 +72373,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 890041695}
+  currentUI: {fileID: 1910570898}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M15_1_Z
   nazwaDialoguMID: M15_1_Z_Mid
   nazwaDialoguBAD: M15_1_Z_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 1363406371}
+  nextUI: {fileID: 1910570898}
 --- !u!4 &1363406373
 Transform:
   m_ObjectHideFlags: 0
@@ -72089,7 +72434,6 @@ Transform:
   - {fileID: 604819442}
   - {fileID: 635214434}
   - {fileID: 202634298}
-  - {fileID: 1910570899}
   - {fileID: 1969288753}
   m_Father: {fileID: 683184322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72343,12 +72687,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1914889886}
+  currentUI: {fileID: 664502693}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M12_3_C
   nazwaDialoguMID: M2_3_C_Mid
   nazwaDialoguBAD: M2_3_C_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1282308469}
+  nextUI: {fileID: 493036541}
 --- !u!4 &1372473493
 Transform:
   m_ObjectHideFlags: 0
@@ -72377,7 +72748,6 @@ Transform:
   - {fileID: 289773844}
   - {fileID: 396374486}
   - {fileID: 2025226373}
-  - {fileID: 664502694}
   - {fileID: 2086283141}
   m_Father: {fileID: 1393232187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73621,6 +73991,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 797316536}
   budowanieZdan2: {fileID: 1545348202}
   budowanieZdan3: {fileID: 745457836}
+  UI1: {fileID: 455477353}
+  UI2: {fileID: 1795317705}
+  UI3: {fileID: 830279758}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -74295,19 +74668,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.039701954, y: 0.38642353}
-      - {x: -0.8339431, y: 0.8328448}
-      - {x: -0.92773473, y: 0.6429816}
-      - {x: -1.1047122, y: 0.48034105}
-      - {x: -1.4621317, y: 0.1559849}
-      - {x: -0.8916225, y: -0.18152352}
-      - {x: 0.3862583, y: -0.5009937}
-      - {x: 1.0251987, y: -0.8559606}
-      - {x: 0.9004657, y: -0.78564477}
-      - {x: 1.0629685, y: -0.4643227}
-      - {x: 1.1695448, y: -0.28563344}
-      - {x: 1.1672934, y: 0.20297948}
-      - {x: 1.0052223, y: 0.261185}
+    - - {x: -0.035567135, y: 0.29651976}
+      - {x: -0.6654614, y: 0.6808042}
+      - {x: -0.7512774, y: 0.42841175}
+      - {x: -0.91299045, y: 0.41436347}
+      - {x: -1.0121224, y: -0.018805727}
+      - {x: -0.64948183, y: -0.08709277}
+      - {x: 0.35445464, y: -0.28997052}
+      - {x: 0.48824373, y: -0.30609396}
+      - {x: 0.6217982, y: -0.34459123}
+      - {x: 0.7498332, y: -0.3087355}
+      - {x: 0.9068284, y: 0.03036201}
+      - {x: 0.9092018, y: 0.23360676}
+      - {x: 0.8017825, y: 0.32322386}
   m_UseDelaunayMesh: 0
 --- !u!1 &1403303173
 GameObject:
@@ -74907,6 +75280,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 1952494718}
   budowanieZdan2: {fileID: 1930130150}
   budowanieZdan3: {fileID: 1514248415}
+  UI1: {fileID: 2003585937}
+  UI2: {fileID: 21538383}
+  UI3: {fileID: 81405891}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -75868,6 +76244,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 1363406371}
   budowanieZdan2: {fileID: 607024357}
   budowanieZdan3: {fileID: 1306346005}
+  UI1: {fileID: 1910570898}
+  UI2: {fileID: 878647010}
+  UI3: {fileID: 1668702446}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -80075,12 +80454,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1575243716}
+  currentUI: {fileID: 81405891}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M5_3_D
   nazwaDialoguMID: M5_3_D_Mid
   nazwaDialoguBAD: M5_3_D_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1930130150}
+  nextUI: {fileID: 21538383}
 --- !u!4 &1514248417
 Transform:
   m_ObjectHideFlags: 0
@@ -80109,7 +80515,6 @@ Transform:
   - {fileID: 374465280}
   - {fileID: 306414451}
   - {fileID: 1338628783}
-  - {fileID: 81405892}
   m_Father: {fileID: 1497666614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1516353746
@@ -81945,12 +82350,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 799810074}
+  currentUI: {fileID: 1795317705}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M3_2_G
   nazwaDialoguMID: M3_2_G_Mid
   nazwaDialoguBAD: M3_2_G_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 797316536}
+  nextUI: {fileID: 455477353}
 --- !u!4 &1545348204
 Transform:
   m_ObjectHideFlags: 0
@@ -81979,7 +82411,6 @@ Transform:
   - {fileID: 999032906}
   - {fileID: 506804903}
   - {fileID: 350327644}
-  - {fileID: 1795317706}
   - {fileID: 648124753}
   m_Father: {fileID: 976107269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82964,7 +83395,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -86261,7 +86692,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -87296,7 +87727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1668702447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87312,7 +87743,7 @@ RectTransform:
   - {fileID: 888202576}
   - {fileID: 1174551152}
   - {fileID: 328913092}
-  m_Father: {fileID: 1306346007}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -87368,8 +87799,8 @@ Canvas:
   m_GameObject: {fileID: 1668702446}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -87380,7 +87811,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1675722084
 GameObject:
@@ -88392,7 +88823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1696720007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88408,7 +88839,7 @@ RectTransform:
   - {fileID: 1048444308}
   - {fileID: 856494422}
   - {fileID: 950249399}
-  m_Father: {fileID: 729134502}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -88464,8 +88895,8 @@ Canvas:
   m_GameObject: {fileID: 1696720006}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -88476,7 +88907,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1696943524
 GameObject:
@@ -88548,12 +88979,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1979694664}
+  currentUI: {fileID: 1254839017}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M32_2_B
   nazwaDialoguMID: M32_2_B_Mid
   nazwaDialoguBAD: M32_2_B_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1308105539}
+  nextUI: {fileID: 1751038284}
 --- !u!4 &1696943526
 Transform:
   m_ObjectHideFlags: 0
@@ -88577,7 +89035,6 @@ Transform:
   - {fileID: 586826210}
   - {fileID: 378232601}
   - {fileID: 1411926498}
-  - {fileID: 1254839018}
   m_Father: {fileID: 772268866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1698929824
@@ -90695,6 +91152,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 1363406371}
   budowanieZdan2: {fileID: 607024357}
   budowanieZdan3: {fileID: 1306346005}
+  UI1: {fileID: 0}
+  UI2: {fileID: 0}
+  UI3: {fileID: 0}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -91331,7 +91791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1751038285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -91347,7 +91807,7 @@ RectTransform:
   - {fileID: 1938405206}
   - {fileID: 1957559351}
   - {fileID: 2124843458}
-  m_Father: {fileID: 1308105541}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -91403,8 +91863,8 @@ Canvas:
   m_GameObject: {fileID: 1751038284}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -91415,7 +91875,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1752751028
 GameObject:
@@ -93391,7 +93851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1795317706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93407,7 +93867,7 @@ RectTransform:
   - {fileID: 628104597}
   - {fileID: 799810076}
   - {fileID: 418534805}
-  m_Father: {fileID: 1545348204}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -93463,8 +93923,8 @@ Canvas:
   m_GameObject: {fileID: 1795317705}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -93475,7 +93935,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1798977293
 GameObject:
@@ -94259,9 +94719,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.18611111
-    width: 0.13320313
-    height: 1
+    y: -0.3549921
+    width: 1
+    height: 1.711569
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
@@ -96381,6 +96841,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 199545460}
   budowanieZdan2: {fileID: 1117702084}
   budowanieZdan3: {fileID: 1951377862}
+  UI1: {fileID: 0}
+  UI2: {fileID: 0}
+  UI3: {fileID: 0}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -99632,7 +100095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1910570899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99648,7 +100111,7 @@ RectTransform:
   - {fileID: 596920508}
   - {fileID: 890041697}
   - {fileID: 1843958228}
-  m_Father: {fileID: 1363406373}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -99704,8 +100167,8 @@ Canvas:
   m_GameObject: {fileID: 1910570898}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -99716,7 +100179,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1912914719
 GameObject:
@@ -100596,12 +101059,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 2098671614}
+  currentUI: {fileID: 21538383}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M5_2_D
   nazwaDialoguMID: M5_2_D_Mid
   nazwaDialoguBAD: M5_2_D_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1952494718}
+  nextUI: {fileID: 2003585937}
 --- !u!4 &1930130152
 Transform:
   m_ObjectHideFlags: 0
@@ -100630,7 +101120,6 @@ Transform:
   - {fileID: 590597459}
   - {fileID: 1186752006}
   - {fileID: 756145931}
-  - {fileID: 21538384}
   m_Father: {fileID: 1497666614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935998099
@@ -101065,7 +101554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1949265815
 RectTransform:
   m_ObjectHideFlags: 0
@@ -101081,7 +101570,7 @@ RectTransform:
   - {fileID: 977207684}
   - {fileID: 1646628728}
   - {fileID: 1584654259}
-  m_Father: {fileID: 1208325564}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -101137,8 +101626,8 @@ Canvas:
   m_GameObject: {fileID: 1949265814}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -101149,7 +101638,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &1951377862
 GameObject:
@@ -101239,12 +101728,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 925145054}
+  currentUI: {fileID: 640257059}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M31_3_P
   nazwaDialoguMID: M31_3_P_Mid
   nazwaDialoguBAD: M31_3_P_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1117702084}
+  nextUI: {fileID: 1097777490}
 --- !u!4 &1951377864
 Transform:
   m_ObjectHideFlags: 0
@@ -101266,7 +101782,6 @@ Transform:
   - {fileID: 714409093}
   - {fileID: 477764090}
   - {fileID: 1731080940}
-  - {fileID: 640257060}
   m_Father: {fileID: 644632965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1952277004
@@ -101489,12 +102004,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 1344874723}
+  currentUI: {fileID: 2003585937}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M5_1_D
   nazwaDialoguMID: M5_1_D_Mid
   nazwaDialoguBAD: M5_1_D_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 1952494718}
+  nextUI: {fileID: 2003585937}
 --- !u!4 &1952494720
 Transform:
   m_ObjectHideFlags: 0
@@ -101523,7 +102065,6 @@ Transform:
   - {fileID: 472149608}
   - {fileID: 705504495}
   - {fileID: 2035616944}
-  - {fileID: 2003585938}
   - {fileID: 824254160}
   m_Father: {fileID: 1497666614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101575,7 +102116,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -102331,7 +102872,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -103310,7 +103851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2003585938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -103326,7 +103867,7 @@ RectTransform:
   - {fileID: 1847263369}
   - {fileID: 1344874725}
   - {fileID: 522814552}
-  m_Father: {fileID: 1952494720}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -103382,8 +103923,8 @@ Canvas:
   m_GameObject: {fileID: 2003585937}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -103394,7 +103935,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &2004850022
 GameObject:
@@ -104299,7 +104840,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -105680,12 +106221,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 97451272}
+  currentUI: {fileID: 2345454}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M4_1_F
   nazwaDialoguMID: M4_1_F_Mid
   nazwaDialoguBAD: M4_1_F_Bad
   firstObject: 1
   nextSentenceBuildingObject: {fileID: 2071135192}
+  nextUI: {fileID: 2345454}
 --- !u!4 &2071135194
 Transform:
   m_ObjectHideFlags: 0
@@ -105709,7 +106277,6 @@ Transform:
   - {fileID: 2016685253}
   - {fileID: 858511992}
   - {fileID: 1850594385}
-  - {fileID: 2345455}
   - {fileID: 1540453405}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106326,12 +106893,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 654958225}
+  currentUI: {fileID: 1228192239}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M1_2_F
   nazwaDialoguMID: M1_2_F_Mid
   nazwaDialoguBAD: M1_2_F_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1284073160}
+  nextUI: {fileID: 692186605}
 --- !u!4 &2088705828
 Transform:
   m_ObjectHideFlags: 0
@@ -106365,7 +106959,6 @@ Transform:
   - {fileID: 616334013}
   - {fileID: 72185127}
   - {fileID: 885239506}
-  - {fileID: 1228192240}
   - {fileID: 228968525}
   m_Father: {fileID: 198972677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107000,7 +107593,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -108149,12 +108742,39 @@ MonoBehaviour:
   midAnswer8:
   - 
   budowaneZdanieUI: {fileID: 377801330}
+  currentUI: {fileID: 2127536395}
+  sentenceUIs:
+  - {fileID: 2003585937}
+  - {fileID: 21538383}
+  - {fileID: 81405891}
+  - {fileID: 1751038284}
+  - {fileID: 1254839017}
+  - {fileID: 2127536395}
+  - {fileID: 401521683}
+  - {fileID: 1097777490}
+  - {fileID: 640257059}
+  - {fileID: 1910570898}
+  - {fileID: 878647010}
+  - {fileID: 1668702446}
+  - {fileID: 914244282}
+  - {fileID: 493036541}
+  - {fileID: 664502693}
+  - {fileID: 455477353}
+  - {fileID: 1795317705}
+  - {fileID: 830279758}
+  - {fileID: 692186605}
+  - {fileID: 1228192239}
+  - {fileID: 1949265814}
+  - {fileID: 2345454}
+  - {fileID: 937484270}
+  - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
   nazwaDialoguGOOD: M32_3_B
   nazwaDialoguMID: M32_3_B_Mid
   nazwaDialoguBAD: M32_3_B_Bad
   firstObject: 0
   nextSentenceBuildingObject: {fileID: 1696943524}
+  nextUI: {fileID: 21538383}
 --- !u!4 &2127011091
 Transform:
   m_ObjectHideFlags: 0
@@ -108178,7 +108798,6 @@ Transform:
   - {fileID: 81887073}
   - {fileID: 187296830}
   - {fileID: 478281277}
-  - {fileID: 2127536396}
   m_Father: {fileID: 772268866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2127536395
@@ -108199,7 +108818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2127536396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -108215,7 +108834,7 @@ RectTransform:
   - {fileID: 1311256062}
   - {fileID: 377801332}
   - {fileID: 1636746800}
-  m_Father: {fileID: 2127011091}
+  m_Father: {fileID: 353503110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -108271,8 +108890,8 @@ Canvas:
   m_GameObject: {fileID: 2127536395}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1810761315}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -108283,7 +108902,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!1 &2128018279
 GameObject:
@@ -108327,6 +108946,9 @@ MonoBehaviour:
   budowanieZdan1: {fileID: 1308105539}
   budowanieZdan2: {fileID: 1696943524}
   budowanieZdan3: {fileID: 2127011089}
+  UI1: {fileID: 1751038284}
+  UI2: {fileID: 1254839017}
+  UI3: {fileID: 2127536395}
   debateWon: 0
   playedDebates: 0
   turnOffCollider: {fileID: 905840120}
@@ -109577,7 +110199,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1005373996}
-  - {fileID: 1309848552}
   - {fileID: 890972811}
   - {fileID: 1315606427}
   - {fileID: 1859730495}

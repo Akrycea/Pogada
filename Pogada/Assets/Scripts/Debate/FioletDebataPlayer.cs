@@ -7,6 +7,7 @@ public class FioletDebataPlayer : MonoBehaviour
     [SerializeField] private GameObject budowanieZdan1;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private DebateManager debateManager;
+    [SerializeField] private GameObject UI;
 
     public void fioletSentenceBuilding()
     {
@@ -15,6 +16,7 @@ public class FioletDebataPlayer : MonoBehaviour
         turnOffCollider.DisableAllExceptSpecificTag();
         Debug.Log("starting sentence building");
         budowanieZdan1.SetActive(true);
+        UI.SetActive(true);
         Debug.Log("blocking player movement");
         playerMovement.canPlayerMove = false;
     }
