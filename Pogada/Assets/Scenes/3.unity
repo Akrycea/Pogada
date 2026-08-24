@@ -2481,6 +2481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 1
+  interactable: 0
 --- !u!1 &45925103
 GameObject:
   m_ObjectHideFlags: 0
@@ -16366,12 +16367,12 @@ GameObject:
   - component: {fileID: 354958327}
   - component: {fileID: 354958332}
   - component: {fileID: 354958331}
-  - component: {fileID: 354958330}
   - component: {fileID: 354958329}
   - component: {fileID: 354958328}
   - component: {fileID: 354958334}
   - component: {fileID: 354958335}
   - component: {fileID: 354958336}
+  - component: {fileID: 354958337}
   m_Layer: 0
   m_Name: bird2 samotnik
   m_TagString: Untagged
@@ -16425,42 +16426,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeRigidBodyType: 0
   AllowDrag: 1
---- !u!58 &354958330
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354958326}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.13123395, y: 0}
-  m_Radius: 0.631234
 --- !u!50 &354958331
 Rigidbody2D:
   serializedVersion: 5
@@ -16675,6 +16640,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 1
+  interactable: 0
+--- !u!60 &354958337
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354958326}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8510982, y: 2.54}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.9637228, y: 0.76623416}
+      - {x: 0.9266745, y: 0.87737924}
+      - {x: 0.59323937, y: 0.87737924}
+      - {x: 0.6302877, y: 1.284911}
+      - {x: 0.5191427, y: 1.3219594}
+      - {x: 0.25980425, y: 1.3219594}
+      - {x: -0.03658253, y: 0.87737924}
+      - {x: -0.51821107, y: 0.6180408}
+      - {x: -0.70345277, y: 0.062315572}
+      - {x: -0.70345277, y: -0.3081679}
+      - {x: -0.6293561, y: -0.60455465}
+      - {x: -0.70345277, y: -0.90094143}
+      - {x: -0.5552594, y: -0.9750382}
+      - {x: -0.22182426, y: -1.0491349}
+      - {x: 0.18570755, y: -1.1973282}
+      - {x: 0.2968526, y: -1.1973282}
+      - {x: 0.3709493, y: -1.1602799}
+      - {x: 0.88962615, y: -0.6786514}
+      - {x: 0.9266745, y: 0.09936392}
+      - {x: 0.9637228, y: 0.09936392}
+  m_UseDelaunayMesh: 0
 --- !u!1 &357449563
 GameObject:
   m_ObjectHideFlags: 0
@@ -50330,6 +50363,7 @@ MonoBehaviour:
   camera: {fileID: 453917493}
   birdCameraButton: {fileID: 305539691}
   playerMovement: {fileID: 1361693962}
+  birdsWin: {fileID: 1802856947}
 --- !u!114 &956827951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88251,18 +88285,18 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0.2798638, y: -1.1437405}
       - {x: 0.46510556, y: -0.69916034}
-      - {x: 0.724444, y: -0.69916034}
-      - {x: 1.0208308, y: -0.36572522}
-      - {x: 1.0208308, y: -0.03229011}
-      - {x: 0.9467341, y: 0.11590328}
+      - {x: 0.48692375, y: -0.6463778}
+      - {x: 0.61836493, y: -0.41850764}
+      - {x: 0.7041365, y: -0.038887866}
+      - {x: 0.63663733, y: 0.13569668}
       - {x: 0.5392023, y: 0.22704832}
-      - {x: 0.79854065, y: 0.78277355}
+      - {x: 0.56761795, y: 0.8685449}
       - {x: 0.31691217, y: 1.0050637}
       - {x: -0.23881304, y: 1.0050637}
-      - {x: -0.6092965, y: 0.78277355}
-      - {x: -0.6092965, y: 0.56048346}
-      - {x: -0.57224816, y: 0.4493384}
-      - {x: -0.6092965, y: -0.21753184}
+      - {x: -0.35198182, y: 0.8091648}
+      - {x: -0.3783738, y: 0.613266}
+      - {x: -0.41390008, y: 0.46913192}
+      - {x: -0.4773404, y: -0.16474943}
       - {x: -0.5351998, y: -0.51391864}
       - {x: -0.57224816, y: -1.1437405}
       - {x: -0.5351998, y: -1.2178372}
@@ -88394,6 +88428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 1
+  interactable: 0
 --- !u!1 &1695363393
 GameObject:
   m_ObjectHideFlags: 0
@@ -94029,6 +94064,13 @@ MonoBehaviour:
   BlueprintUI: {fileID: 68235487}
   dialoguePlayed: 0
   stateManager: {fileID: 905840117}
+  places:
+  - {fileID: 942826592}
+  - {fileID: 1887737628}
+  - {fileID: 776297739}
+  - {fileID: 394399718}
+  - {fileID: 1126263807}
+  - {fileID: 56342687}
 --- !u!4 &1802856948
 Transform:
   m_ObjectHideFlags: 0
@@ -94566,8 +94608,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.3712963
-    width: 0.75781256
+    y: 0
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -94598,7 +94640,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.895744, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -95020,6 +95062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 1
+  interactable: 0
 --- !u!1 &1818197704
 GameObject:
   m_ObjectHideFlags: 0
@@ -100044,12 +100087,12 @@ GameObject:
   - component: {fileID: 1920950312}
   - component: {fileID: 1920950317}
   - component: {fileID: 1920950316}
-  - component: {fileID: 1920950315}
   - component: {fileID: 1920950314}
   - component: {fileID: 1920950313}
   - component: {fileID: 1920950319}
   - component: {fileID: 1920950320}
   - component: {fileID: 1920950321}
+  - component: {fileID: 1920950322}
   m_Layer: 0
   m_Name: bird4 zielony
   m_TagString: Untagged
@@ -100103,42 +100146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeRigidBodyType: 0
   AllowDrag: 1
---- !u!58 &1920950315
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920950311}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!50 &1920950316
 Rigidbody2D:
   serializedVersion: 5
@@ -100353,6 +100360,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 1
+  interactable: 0
+--- !u!60 &1920950322
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920950311}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8310862, y: 1.71}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.42493895, y: 0.62966925}
+      - {x: -0.05668958, y: 0.62966925}
+      - {x: -0.50126976, y: 0.2591858}
+      - {x: -0.50126976, y: -0.33358777}
+      - {x: -0.4642214, y: -0.5929262}
+      - {x: 0.3137939, y: -0.5929262}
+      - {x: 0.57313234, y: -0.22244272}
+      - {x: 0.57313234, y: 0.40737918}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1927252395
 GameObject:
   m_ObjectHideFlags: 0

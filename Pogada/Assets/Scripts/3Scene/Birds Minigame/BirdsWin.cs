@@ -16,6 +16,8 @@ public class BirdsWin : MonoBehaviour
 
     public StateManager stateManager;
 
+    [SerializeField] private GameObject[] places;
+
 
     public void GoodSpot()
     {
@@ -42,6 +44,12 @@ public class BirdsWin : MonoBehaviour
             dialogueRunner.StartDialogue("D3_PtakiWygrana");
             dialoguePlayed = true;
             stateManager.BirdMinigameWon = true;
+
+            //makes places for birds invisible
+            foreach (var place in places) 
+            {
+                place.GetComponent<SpriteRenderer>().enabled = false;
+            }
 
             //turning it off so the if doesnt get checked after winning the minigame
             //to save memory

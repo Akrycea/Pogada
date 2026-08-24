@@ -88,6 +88,6 @@ public class DebateManager : MonoBehaviour
     {
         debate.SetActive(false);
         dialogue.SetActive(true);
-        turnOffCollider.EnableAllColliders();
+        //turnOffCollider.EnableAllColliders();
     }
 }

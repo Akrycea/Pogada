@@ -10,11 +10,21 @@ public class ZoomOutBirds : MonoBehaviour
 
     [SerializeField]
     private PlayerMovement playerMovement;
+
+    [SerializeField] private BirdsWin birdsWin;
     public void ZoomOut()
     {
         camera.SetActive(false);
-        birdCameraButton.SetActive(true);
         playerMovement.canPlayerMove = true;
         gameObject.SetActive(false);
+
+        if (birdsWin.dialoguePlayed)
+        {
+            birdCameraButton.SetActive(false);
+        }
+        else
+        {
+            birdCameraButton.SetActive(true);
+        }
     }
 }

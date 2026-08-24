@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class BirdsPuzzle : MonoBehaviour
@@ -10,6 +11,8 @@ public class BirdsPuzzle : MonoBehaviour
     [SerializeField] private BirdsWin birdsWin;
 
     [SerializeField] private GameObject ChatBox;
+
+    [SerializeField] static bool birdTalking = false;
 
     
 
@@ -50,6 +53,14 @@ public class BirdsPuzzle : MonoBehaviour
         {
             gameObject.transform.position = currentPosition;
         }
+
+        if(birdsWin.dialoguePlayed)
+        {
+            //this should stop player from moving birds if the minigame is won
+            gameObject.GetComponent<Drag>().AllowDrag = false;
+            gameObject.GetComponent<Outline>().interactable = false;
+            gameObject.GetComponent<BirdsPuzzle>().enabled = false;
+        }
     }
 
     private bool hasSaidVoiceline = false;
@@ -59,19 +70,32 @@ public class BirdsPuzzle : MonoBehaviour
     //showing the chatbox when the player is hovering over the bird, and hiding it when they are not
     public void OnMouseOver()
     {
-        ChatBox.SetActive(true);
-
-        if (!hasSaidVoiceline)
+        if (!birdsWin.dialoguePlayed)
         {
-            audio = gameObject.GetComponent<AudioSource>();
-            audio.Play();
-            hasSaidVoiceline = true;
+            ChatBox.SetActive(true);
+
+            if (!hasSaidVoiceline && !birdTalking)
+            {
+                birdTalking = true;
+                audio = gameObject.GetComponent<AudioSource>();
+                audio.Play();
+                StartCoroutine(waitToSayThing());
+            }
         }
     }
 
     public void OnMouseExit()
     {
         ChatBox.gameObject.SetActive(false);
+    }
+
+    IEnumerator waitToSayThing()
+    {
+        yield return new WaitForSeconds(4);
+        hasSaidVoiceline = true;
+
+        //this bool should make it so only one bird can speak at a time
+        birdTalking = false;
     }
 
 }
