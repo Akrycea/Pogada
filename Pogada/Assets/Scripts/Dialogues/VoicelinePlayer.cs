@@ -12,7 +12,7 @@ public class VoicelinePlayer : MonoBehaviour
 
     void Start()
     {
-        MyAudioSource = gameObject.GetComponent<AudioSource>();
+        MyAudioSource = GameObject.Find("Player").GetComponent<AudioSource>();
     }
 
     [YarnCommand("voiceline")]
