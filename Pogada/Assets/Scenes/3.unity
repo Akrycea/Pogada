@@ -71214,7 +71214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e3ea29c853993344b811fe4bdf0d80f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -71222,7 +71222,7 @@ SpriteRenderer:
   m_Size: {x: 4.4, y: 7.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1361693964
@@ -93988,6 +93988,7 @@ GameObject:
   - component: {fileID: 1810761314}
   - component: {fileID: 1810761317}
   - component: {fileID: 1810761318}
+  - component: {fileID: 1810761319}
   m_Layer: 0
   m_Name: CameraMain
   m_TagString: MainCamera
@@ -94049,7 +94050,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -94067,14 +94068,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.3712963
-    width: 0.75781256
-    height: 1
+    y: -0.37723577
+    width: 0.99999994
+    height: 1.7560976
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
   orthographic: 1
-  orthographic size: 7.105263
+  orthographic size: 7
   m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
@@ -94099,7 +94100,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.895744, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -115.52665, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -94163,7 +94164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810761312}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
@@ -94180,6 +94181,20 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &1810761319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810761312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5dcc6b6c79dd34b98921a9f3196a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetXAspect: 16
+  _targetYAspect: 9
 --- !u!1 &1812392731
 GameObject:
   m_ObjectHideFlags: 0
