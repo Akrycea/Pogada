@@ -1,5 +1,7 @@
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class BookBehavior : MonoBehaviour
 {
@@ -10,19 +12,25 @@ public class BookBehavior : MonoBehaviour
 
     [SerializeField] private Pages[] pagesScripts;
 
+    [SerializeField] private GameObject Journal;
+    [SerializeField] private GameObject JournalButton;
+
     void Start()
     {
         totalPages = playerPages.Length;
     }
 
+    [YarnCommand("OpenBook")]
     public void OpenBook()
     {
-        gameObject.SetActive(true);
+        Journal.SetActive(true);
+        JournalButton.SetActive(false);
     }
 
     public void CloseBook()
     {
-        gameObject.SetActive(false);
+        Journal.SetActive(false);
+        JournalButton.SetActive(true);
     }
 
 
@@ -52,10 +60,11 @@ public class BookBehavior : MonoBehaviour
         playerPages[currentPageIndex].SetActive(true);
     }
 
-
+    [YarnCommand("NewPage")]
     public void NewPage(int index)
     {
-        playerPages[index] = allPages[index];
+        System.Array.Resize(ref playerPages, index);
+        playerPages[index - 1] = allPages[index - 1];
 
         totalPages = playerPages.Length;
 
@@ -65,12 +74,13 @@ public class BookBehavior : MonoBehaviour
         playerPages[currentPageIndex].SetActive(true);
     }
 
+    [YarnCommand("UpdatePage")]
     public void UpdatePage(int index)
     {
-        pagesScripts[index].UpdatePage();
+        pagesScripts[index - 1].UpdatePage();
 
         playerPages[currentPageIndex].SetActive(false);
-        currentPageIndex = index;
+        currentPageIndex = index - 1;
         playerPages[currentPageIndex].SetActive(true);
     }
 }
