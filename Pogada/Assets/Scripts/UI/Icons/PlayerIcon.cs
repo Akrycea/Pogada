@@ -94,8 +94,8 @@ public class PlayerIcon : MonoBehaviour
     private Image image;
     [YarnCommand ("HidePlayerIcon")]
     public void HidePlayerIcon()
-     {
+    {
 
         gameObject.SetActive(false);
-        }
     }
+}

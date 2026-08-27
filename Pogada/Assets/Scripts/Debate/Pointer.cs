@@ -64,9 +64,14 @@ public class Pointer : MonoBehaviour
         }
         else
         {
-            Debug.Log("Fail!");
-            dialogueRunner.StartDialogue(bad);
-            jabOBJ.SetActive(false);
+            JabFail();
         }
+    }
+
+    public void JabFail()
+    {
+        Debug.Log("Fail!");
+        dialogueRunner.StartDialogue(bad);
+        jabOBJ.SetActive(false);
     }
 }

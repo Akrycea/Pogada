@@ -1,5 +1,6 @@
 using UnityEngine;
 using Yarn.Unity;
+using System.Collections;
 
 public class Jab : MonoBehaviour
 {
@@ -18,5 +19,18 @@ public class Jab : MonoBehaviour
         pointer.bad = bad;
 
         Debug.Log("Jab command executed with good: " + good + " and bad: " + bad);
+
+        StartCoroutine(JabTimer());
+    }
+    private IEnumerator JabTimer()
+    {
+        yield return new WaitForSeconds(5f);
+
+        if(jabOBJ.activeSelf)
+        {
+            pointer.JabFail();
+            jabOBJ.SetActive(false);
+            Debug.Log("Jab ended after 5 seconds.");
+        }
     }
 }
