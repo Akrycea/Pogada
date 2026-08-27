@@ -29,19 +29,23 @@ public class ObjectDissapearing : MonoBehaviour
         }
     }
 
-
-    //jak jest myszka na obiekcie to zaczyna couroutine
-    void OnMouseOver()
+    void OnMouseDown()
     {
-        if (!isRunning) StartCoroutine(Wait());
+        alphaLevel -= 0.4f;
     }
 
-    //couroutina odpowiadajaca za powolne znikanie obiektu
-    IEnumerator Wait()
-    {
-        isRunning = true;
-        alphaLevel = alphaLevel -0.1f;
-        yield return new WaitForSeconds(0.1f);
-        isRunning = false;
-    }
+    ////jak jest myszka na obiekcie to zaczyna couroutine
+    //void OnMouseOver()
+    //{
+    //    if (!isRunning) StartCoroutine(Wait());
+    //}
+
+    ////couroutina odpowiadajaca za powolne znikanie obiektu
+    //IEnumerator Wait()
+    //{
+    //    isRunning = true;
+    //    alphaLevel = alphaLevel -0.1f;
+    //    yield return new WaitForSeconds(0.1f);
+    //    isRunning = false;
+    //}
 }
