@@ -2,6 +2,7 @@
 ---
 <<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
+<<hideTalkBubble Granat>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 57>>
@@ -209,6 +210,7 @@ Liv: Bez Perełki nic nie mówię.
 <<voiceline Player 74>>
 Bohater: No tak…
 <<HidePlayerIcon IconsPlayer>>
+<<showTalkBubble Zielony>>
 <<unblockPlayerMovement Dialogi>>
 <<zielony2dialog Dialogi>>
 <<EnableColliders StateManager>>

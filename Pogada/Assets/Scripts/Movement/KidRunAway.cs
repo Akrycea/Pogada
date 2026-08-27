@@ -1,21 +1,32 @@
+using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
 public class KidRunAway : MonoBehaviour
 {
     private Transform kidTransform;
+    [SerializeField] private Transform kidFuturePosition;
+    private SpriteRenderer kidRenderer;
 
-    [SerializeField] private Vector3 kidFuturePosition;
+    private void Start()
+    {
+        kidRenderer = GetComponent<SpriteRenderer>();
+        kidRenderer.enabled = true;
+    }
 
     [YarnCommand("RunAway")]
     public void kidRunAway()
     {
-        //add place to move to here
-        //gameobjet.transform = jakis vector kurde bele
-
-        //to jest rozwiazanie TYLKO NA DEMO
         Debug.Log("moving child");
+        StartCoroutine(RunAway());
+    }
+
+    IEnumerator RunAway()
+    {
+        kidRenderer.enabled = false;
+        yield return new WaitForSeconds(2);
         kidTransform = gameObject.GetComponent<Transform>();
-        kidTransform.Translate(kidFuturePosition);
+        kidTransform.transform.position = kidFuturePosition.position;
+        kidRenderer.enabled = true;
     }
 }

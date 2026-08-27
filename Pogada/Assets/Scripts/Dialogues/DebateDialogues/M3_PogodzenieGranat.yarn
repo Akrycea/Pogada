@@ -1,5 +1,6 @@
 ﻿title: M3_PogodzenieGranat
 ---
+<<hideTalkBubble Granat>>
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 <<voiceline Granat 34>>
 Liv: Mój kochany Perełka!
@@ -494,6 +495,7 @@ Liv: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś t
 Bohater: Dziękuję.
 <<HidePlayerIcon IconsPlayer>>
 <<granatwygranadebata Dialogi>>
+<<showTalkBubble Pomarańcz>>
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>
 ===

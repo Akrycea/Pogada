@@ -2,6 +2,7 @@
 ---
 <<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
+<<hideTalkBubble Rodzice>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Slonce" "angry">>
 <<voiceline Słońce 0>>
@@ -105,6 +106,7 @@ Bohater: Niech to dunder świśnie! Cóż, chyba muszę znaleźć te kolory.
 Bohater: Też zrobiłbym się szary, gdyby rodzice mnie zostawili.
 <<IconsOff Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
+<<showTalkBubble KłocąceSieDzieci>>
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>
 ===

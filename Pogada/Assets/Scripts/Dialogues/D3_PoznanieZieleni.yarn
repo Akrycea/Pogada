@@ -2,6 +2,7 @@
 ---
 <<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
+<<hideTalkBubble Zielony>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 47>>
@@ -126,6 +127,7 @@ Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
 <<voiceline Zielony 10>>
 Dziecko: Możesz próbować…
 <<HideIcon Icons>>
+<<showTalkBubble Granat>>
 <<unblockPlayerMovement Dialogi>>
 <<granatOdpalDialog Dialogi>>
 <<EnableColliders StateManager>>

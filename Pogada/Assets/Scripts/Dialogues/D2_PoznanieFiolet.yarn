@@ -2,6 +2,7 @@ title: D2_PoznanieFiolet
 ---
 <<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
+<<hideTalkBubble KłocąceSieDzieci>>
 <<IconsOn Dialogi>>
 <<longCamShakeSTART CinemachineCameraGateAndForest>>
 <<ChangeIcon Icons "Aureus" "angry">>
@@ -76,4 +77,5 @@ Bohater: Cóż, musimy go znaleźć. Wasi rodzice wyjechali i zostawili was pod 
 //zrob zeby bylo lepiej stary
 <<OpenBook UI>>
 <<fioletBudowanieZdan Dialogi>>
+<<showTalkBubble Zielony>>
 ===

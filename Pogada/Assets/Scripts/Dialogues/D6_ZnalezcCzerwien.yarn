@@ -1,6 +1,8 @@
 ﻿title: D6_ZnalezcCzerwien
 ---
+<<DisableColliders StateManager>>
 <<blockPlayerMovement Dialogi>>
+<<hideTalkBubble Zielony>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 53>>
@@ -125,6 +127,7 @@ Viri: No… Tak…
 Bohater: Nie martw się. Super, że masz te plany.
 <<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
+<<EnableColliders StateManager>>
 
 <<UpdatePage UI 8>>
 ===
