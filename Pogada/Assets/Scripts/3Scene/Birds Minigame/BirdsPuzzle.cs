@@ -38,6 +38,11 @@ public class BirdsPuzzle : MonoBehaviour
             birdsWin.GoodSpot();
         }  
     }
+            // dont know where to put it to make them play the animation once :(
+            //    if(Input.GetMouseButton(0) == false)
+            //{
+            //    gameObject.GetComponent<InteractionAnimation>().shineAnim();
+            //}
 
     void OnTriggerExit2D(Collider2D collision)
     {

@@ -24,7 +24,29 @@ public class KidRunAway : MonoBehaviour
     IEnumerator RunAway()
     {
         kidRenderer.enabled = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
+        kidTransform = gameObject.GetComponent<Transform>();
+        kidTransform.transform.position = kidFuturePosition.position;
+        kidRenderer.enabled = true;
+    }
+
+    [YarnCommand("ParentsRunAway")]
+    public void ParentsRunAway()
+    {
+        Debug.Log("moving parent");
+        StartCoroutine(Away());
+    }
+
+    private SpriteRenderer ksiezyc;
+    private SpriteRenderer slonce;
+    IEnumerator Away()
+    {
+        yield return new WaitForSeconds(0.1f);
+        ksiezyc = GameObject.Find("Ksiê¿yc").GetComponent<SpriteRenderer>();
+        ksiezyc.enabled = false;
+        slonce = GameObject.Find("S³oñce").GetComponent<SpriteRenderer>();
+        slonce.enabled = false;
+        yield return new WaitForSeconds(2f);
         kidTransform = gameObject.GetComponent<Transform>();
         kidTransform.transform.position = kidFuturePosition.position;
         kidRenderer.enabled = true;

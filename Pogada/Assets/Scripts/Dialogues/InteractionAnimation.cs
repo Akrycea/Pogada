@@ -57,4 +57,33 @@ public class InteractionAnimation : MonoBehaviour
         animator.Play("None");
         gameObject.transform.position = GetComponentInParent<Transform>().position + displacement;
     }
+
+
+    [YarnCommand("thunderAnim")]
+    public void thunderAnim()
+    {
+        StartCoroutine(playThunder());
+    }
+
+    IEnumerator playThunder()
+    {
+        animator.Play("Thunder");
+        yield return new WaitForSeconds(2);
+        animator.Play("None");
+        
+    }
+
+    [YarnCommand("shineAnim")]
+    public void shineAnim()
+    {
+        StartCoroutine(playShine());
+    }
+
+    IEnumerator playShine()
+    {
+        animator.Play("Sparkle");
+        yield return new WaitForSeconds(1);
+        animator.Play("None");
+
+    }
 }
