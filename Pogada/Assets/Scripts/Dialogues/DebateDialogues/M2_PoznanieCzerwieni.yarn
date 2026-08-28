@@ -144,8 +144,10 @@ title: M2_Z_Jab_1_1
 ---
 <<voicelineEnd Czerwony>>
 <<voiceline Zielony 68>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<GoodChoice PointMeter>>
+	<<HideJabIcon DebataDialogi>>
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
@@ -153,8 +155,10 @@ title: M2_Z_Jab_1_2
 ---
 <<voicelineEnd Czerwony>>
 <<voiceline Zielony 67>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Przestań krzyczeć!
 	<<BadChoice PointMeter>>
+	<<HideJabIcon DebataDialogi>>
 	<<jump M2_PoznanieCzerwieni3>>
 ===
 
@@ -278,9 +282,11 @@ title: M2_Z_Jab_2_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "happy">>
 <<voiceline Zielony 69>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Nikt nie ma nic do twojej złości, po prostu jak psujesz rzeczy to jesteś trochę straszny.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
+	<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
 ===
 
@@ -288,11 +294,13 @@ title: M2_Z_Jab_2_2
 ---
 <<voicelineEnd Czerwony>>
 <<IconsOn Dialogi>>
-<<ChangeIcon Icons "Viri" "angru">>
+<<ChangeIcon Icons "Viri" "angry">>
 <<voiceline Zielony 70>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Znowu się złościsz, jak zawsze.
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
+	<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
@@ -301,8 +309,10 @@ title: M2_C_Jab_1_1
 <<voiceline Czerwony 29>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
+<<ChangeJabIcon DebataDialogi "Robert">>
 Robert: Wszyscy się na tym skupiacie, jakbym nigdy nie czuł innych emocji.
 	<<GoodChoice PointMeter>>
+	<<HideJabIcon DebataDialogi>>
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 
@@ -311,8 +321,10 @@ title: M2_C_Jab_1_2
 <<voiceline Czerwony 30>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
+<<ChangeJabIcon DebataDialogi "Robert">>
 Robert: Zawsze tylko o tym słyszę, nawet kiedy mam pełne prawo być złym!
 	<<BadChoice PointMeter>>
+	<<HideJabIcon DebataDialogi>>
 	<<jump M2_PoznanieCzerwieni5>>
 ===
 

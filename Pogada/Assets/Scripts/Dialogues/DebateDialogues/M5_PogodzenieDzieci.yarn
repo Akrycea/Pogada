@@ -77,7 +77,9 @@ Aureus: Kiedy to wszystko moja wina.
 title: M5_F_Jab_1_1
 ---
 <<voiceline Fiolet 50>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Tak, musimy się pogodzić, żeby świat się naprawił.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 ===
@@ -85,7 +87,9 @@ Violaceus: Tak, musimy się pogodzić, żeby świat się naprawił.
 title: M5_F_Jab_1_2
 ---
 <<voiceline Fiolet 51>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Tak, twoje wygłupy zaszły za daleko. Wszystkie kolory wróciły, tylko nie ty.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DialogiDebata "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
 ===
@@ -93,14 +97,18 @@ Violaceus: Tak, twoje wygłupy zaszły za daleko. Wszystkie kolory wróciły, ty
 title: M5_P_Jab_1_1
 ---
 <<voiceline Pomarańcz 48>>
+<<ChangeJabIcon DebataDialogi "Lute">>
 Lute:  Nie możecie tak zostać pokłóceni. Będzie wam to tylko ciążyć.
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci2>>
 ===
 
 title: M5_P_Jab_1_2
 ---
 <<voiceline Pomarańcz 49>>
+<<ChangeJabIcon DebataDialogi "Lute">>
 Lute:  Musicie się przeprosić, przecież jesteśmy rodzeństwem.
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci2>>
 ===
 
@@ -160,56 +168,72 @@ Aureus: Nie. Nie, muszę myśleć też chociaż trochę o sobie.
 title: M5_F_Jab_2_1
 ---
 <<voiceline Fiolet 52>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Vus już nie przesadzaj, przecież jesteś sobą.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_2_2
 ---
  <<voiceline Fiolet 53>>
+ <<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Vus gdybyś tylko odpuścił to imię, to nie miałbyś żadnego problemu.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
 ===
 
 title: M5_B_Jab_1_1
 ---
 <<voiceline Błękit 27>>
+<<ChangeJabIcon DebataDialogi "Lus">>
 Lus: Łatwo ci mówić Violaceus, kiedy my nazywamy cię tak, jak ty chcesz.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
 ===
 
 title: M5_B_Jab_1_2
 ---
 <<voiceline Błękit 28>>
+<<ChangeJabIcon DebataDialogi "Lus">>
 Lus: Naprawdę nie powinieneś się wypowiadać Violaceus. Wszyscy mówią na ciebie tak, jak lubisz.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
 ===
 
 title: M5_F_Jab_3_1
 ---
 <<voiceline Fiolet 54>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Może Vus powinien zrobić dla mnie wyjątek. Ciężko się tak nagle przerzucić, a przecież dla rodziny się robi wyjątki.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_3_2
 ---
 <<voiceline Fiolet 55>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: No właśnie, ja nie wybrzydzam, jak niektórzy. Nie zmuszam nikogo do nagłych zmian.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
 ===
 
 title: M5_G_Jab_1_1
 ---
 <<voiceline Granat 57>>
+<<ChangeJabIcon DebataDialogi "Liv">>
 Liv: Pomyśl o Aureusie, chociaż przez chwilę, a nie ciągle ty, ty , ty.
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci3>>
 ===
 
 title: M5_G_Jab_1_2
 ---
 <<voiceline Granat 58>>
+<<ChangeJabIcon DebataDialogi "Liv">>
 Liv: Jeśli jesteś za głupi, żeby nauczyć się nowego imienia, to raczej z tobą jest problem.
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci3>>
 ===
 
@@ -268,14 +292,18 @@ Aureus: Chcę, żeby mnie kochał! On powinien mnie kochać, nieważne co!
 title: M5_F_Jab_4_1
 ---
 <<voiceline Fiolet 56>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Czemu nagle ta sytuacja spada na mnie?
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
 ===
 
 title: M5_F_Jab_4_2
 ---
 <<voiceline Fiolet 57>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Wspieram cię, po prostu musisz zacząć słuchać!
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
 ===
 
@@ -283,7 +311,7 @@ title: M5_D_Jab_3_1
 ---
 <<voiceline Żółć2 22>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
-Aureus: Wiesz co?Ja… Ja się super staram z tobą pogodzić, też musisz się postarać!
+Aureus: Wiesz co? Ja… Ja się super staram z tobą pogodzić, też musisz się postarać!
 	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" >>
 ===
 
@@ -298,14 +326,18 @@ Aureus: Może, skoro tak ci to wszystko przeszkadza, to ty powinieneś stąd sob
 title: M5_F_Jab_5_1
 ---
 <<voiceline Fiolet 58>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Czy naprawdę nikogo tutaj nie obchodzi serduszko mamy?
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci4>>
 ===
 
 title: M5_F_Jab_5_2
 ---
 <<voiceline Fiolet 59>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Czy naprawdę wszyscy zamierzają po prostu słuchać jakiegoś śmiertelnika? Halo, jesteśmy bogami!
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci4>>
 ===
 
@@ -364,59 +396,75 @@ Aureus: Właśnie! Jesteś strasznie… Strasznie samolubny!
 title: M5_F_Jab_6_1
 ---
 <<voiceline Fiolet 60>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Czemu nagle wszyscy są przeciwko mnie?
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
 ===
 
 title: M5_F_Jab_6_2
 ---
 <<voiceline Fiolet 61>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Przestańcie się jednoczyć przeciwko mnie!
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
 ===
 
 title: M5_C_Jab_1_1
 ---
 <<voiceline Czerwony 54>>
+<<ChangeJabIcon DebataDialogi "Robert">>
 Robert: Sam zawsze mówisz, że rodzina jest najważniejsza. Aureus jest równie ważny, co ty.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
 ===
 
 title: M5_C_Jab_1_2
 ---
 <<voiceline Czerwony 55>>
+<<ChangeJabIcon DebataDialogi "Robert">>
 Robert: Nie zachowuj się jak głupek. 
 
 <<voiceline Czerwony 56>>
 Robert: Przestań być wredny dla Aureusa i udawać, że się na ciebie uwzięliśmy.
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
 ===
 
 title: M5_Z_Jab_1_1
 ---
 <<voiceline Zielony 82>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Violaceus proszę? Aureus wydaje się taki nieszczęśliwy… Przecież ty też nie lubisz jak jest smutny!
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
 ===
 
 title: M5_Z_Jab_1_2
 ---
 <<voiceline Zielony 83>>
+<<ChangeJabIcon DebataDialogi "Viri">>
 Viri: Violaceus, przecież mama nigdy nie miałaby nic przeciwko. Znam ją. Nigdy!
+<<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
 ===
 
 title: M5_F_Jab_7_1
 ---
 <<voiceline Fiolet 62>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: … Ale co jeśli będziesz tego żałować?
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci5>>
 ===
 
 title: M5_F_Jab_7_2
 ---
 <<voiceline Fiolet 63>>
+<<ChangeJabIcon DebataDialogi "Violaceus">>
 Violaceus: Będziesz tego żałować, nie mogę na to pozwolić. Próbuję cię chronić Vus! 
+<<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci5>>
 ===
 

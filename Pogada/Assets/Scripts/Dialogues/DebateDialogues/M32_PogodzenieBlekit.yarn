@@ -196,16 +196,20 @@ title: M32_P_Jab_1_1
 ---
 <<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 41>>
+<<ChangeJabIcon DebateJab "Lute">>
 Lute: Po prostu lepiej jak zajmuje się tym ktoś, kto wie co robi.
 	<<GoodChoice PointMeter>>
+	<<HideJabIcon DebateJab>>
 	<<jump M32_PogodzenieBlekit4>>
 ===
 
 title: M32_P_Jab_1_2
 ---
 <<voiceline Pomarańcz 42>>
+<<ChangeJabIcon DebateJab "Lute">>
 Lute: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzić.
 	<<BadChoice PointMeter>>
+	<<HideJabIcon DebateJab>>
 	<<jump M32_PogodzenieBlekit4>>
 ===
 

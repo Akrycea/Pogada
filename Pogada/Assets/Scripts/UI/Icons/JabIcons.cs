@@ -4,7 +4,10 @@ using Yarn.Unity;
 using UnityEngine.UI;
 
 public class JabIcons : MonoBehaviour
-{ 
+{
+    [SerializeField]
+    private GameObject jabIcon;
+
     [SerializeField]
     private Image spriteRenderer;
 
@@ -27,6 +30,7 @@ public class JabIcons : MonoBehaviour
     public void ChangeJabIcon(string characterName)
     {
         Sprite characterIcon = null;
+        jabIcon.SetActive(true);
         switch (characterName)
         {
             case "Robert":
@@ -62,6 +66,6 @@ public class JabIcons : MonoBehaviour
     [YarnCommand("HideJabIcon")]
     public void HideIcon()
     {
-        gameObject.SetActive(false);
+        jabIcon.SetActive(false);
     }
 }

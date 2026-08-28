@@ -24,13 +24,13 @@ public class Jab : MonoBehaviour
     }
     private IEnumerator JabTimer()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
 
         if(jabOBJ.activeSelf)
         {
             pointer.JabFail();
             jabOBJ.SetActive(false);
-            Debug.Log("Jab ended after 5 seconds.");
+            Debug.Log("Jab ended after 10 seconds.");
         }
     }
 }
