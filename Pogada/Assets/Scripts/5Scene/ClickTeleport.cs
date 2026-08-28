@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ClickTeleport : MonoBehaviour
 {
@@ -6,9 +7,28 @@ public class ClickTeleport : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private Transform teleport;
 
+    [SerializeField] private GameObject blackoutCanvas;
+    [SerializeField] private Animator anim;
+
     private void OnMouseDown()
     {
-        editCameraScript.ChangeCamera();
+        StartCoroutine(changeScene());
+    }
+
+    IEnumerator changeScene()
+    {
+        blackoutCanvas.SetActive(true);
+        anim.Play("BlackoutIn");
+        yield return new WaitForSeconds(1);
+
+        //tutaj przenies do nastepnej sceny
         player.position = teleport.position;
+        editCameraScript.ChangeCamera();
+
+        yield return new WaitForSeconds(2);
+
+        anim.Play("BlackoutOut");
+        yield return new WaitForSeconds(1);
+        blackoutCanvas.SetActive(false);
     }
 }
