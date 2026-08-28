@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 316ed437d442dad4998fe3412eefa5b4
+guid: 483fc75dc1ce9944fa6b3d000b729abc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8475742744374635599
-    second: IMG_0520_0
+      213: -7266489109212460244
+    second: stoppedWaterfall2_0
+  - first:
+      213: -7471443340028347857
+    second: stoppedWaterfall2_1
+  - first:
+      213: 8104685234677024186
+    second: stoppedWaterfall2_2
+  - first:
+      213: -8055814278284416628
+    second: stoppedWaterfall2_3
+  - first:
+      213: -6344048612747115056
+    second: stoppedWaterfall2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,6 +96,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,45 +138,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0520_0
+      name: stoppedWaterfall2_0
       rect:
         serializedVersion: 2
-        x: 1231
-        y: 156
-        width: 285
-        height: 267
+        x: 902
+        y: 816
+        width: 266
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4c6b0e9e13ef9570800000000000000
-      internalID: 8475742744374635599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rybka_0
-      rect:
-        serializedVersion: 2
-        x: 1410
-        y: 329
-        width: 140
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1823921e8588b2e4cba750ee15ff6a07
-      internalID: -373247144
+      spriteID: c2b852997ae382b90800000000000000
+      internalID: -7266489109212460244
       vertices: []
       indices: 
       edges: []
@@ -170,8 +173,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0520_0: 8475742744374635599
-      rybka_0: -373247144
+      stoppedWaterfall2_0: -7266489109212460244
+      stoppedWaterfall2_1: -7471443340028347857
+      stoppedWaterfall2_2: 8104685234677024186
+      stoppedWaterfall2_3: -8055814278284416628
+      stoppedWaterfall2_4: -6344048612747115056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

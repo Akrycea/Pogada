@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ClickTurnOffAnimator : MonoBehaviour
 {
@@ -8,7 +9,16 @@ public class ClickTurnOffAnimator : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.enabled = false;
+            StartCoroutine(WaitObst());
+
+            //if (gameObject.name == "lodka")
+            //{
+            //    animator.enabled = false;
+            //}
+            //else
+            //{
+            //    StartCoroutine(WaitObst());
+            //}
         }
     }
 
@@ -18,5 +28,12 @@ public class ClickTurnOffAnimator : MonoBehaviour
         {
             animator.enabled = true;
         }
+    }
+
+    IEnumerator WaitObst()
+    {
+        animator.Play("StopState");
+        yield return new WaitForSeconds(5f);
+        animator.Play("MoveState");
     }
 }
