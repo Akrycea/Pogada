@@ -12,7 +12,7 @@ Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try 
 Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 
 <<voicelineEnd Player>>
-<<voiceline Fiolet 12>>
+<<voiceline Fiolet 10>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 Fiolet: Hm, no może…
 	<<UpdateDebateNumber PointMeter>>
@@ -307,7 +307,7 @@ title: M1_PoznanieFioletPoDebacie
 //<<debateWon Fiolet>>
 <<voiceline Player 37>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Czy wiesz może, gdzie Aureus mógł uciec?
+Bohater: Czy wiesz może, gdzie Vus mógł uciec?
 
 <<voiceline Player 38>>
 <<ChangePlayerIcon IconsPlayer "angry">>
@@ -346,7 +346,7 @@ Fiolet: Chyba pocieszała wcześniej Liv, która pożarła się o coś z resztą
 <<voiceline Player 41>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Dizękuję. Pójdę ich poszukać.
+Bohater: Dziękuję. Pójdę ich poszukać.
 
 <<voiceline Player 42>>
 <<ChangePlayerIcon IconsPlayer "sad">>

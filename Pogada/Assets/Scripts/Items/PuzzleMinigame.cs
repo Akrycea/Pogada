@@ -32,6 +32,7 @@ public class PuzzleMinigame : MonoBehaviour
             if (transform.parent.name == "Sun")
             {
                 statueControl.StatusSun();
+                gameObject.GetComponent<InteractionAnimation>().shineAnim();
             }
 
             if (transform.parent.name == "Moon")
