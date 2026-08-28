@@ -1,5 +1,6 @@
 title: M15_PomocZieleni
 ---
+<<hideTalkBubble Zielony>>
 <<voiceline Zielony 33>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
@@ -258,7 +259,7 @@ title: M15_DebataZielieni5
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
-->Rób za mediatora.
+->Róbmy za mediatorów.
 	<<voiceline Player 111>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understamdtalk">>
@@ -342,6 +343,4 @@ Viri: Dobrze!
 <<runAwayAnim Zielony>>
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>
-<<wait 3>>
-<<showTalkBubble Zielony>>
 ===

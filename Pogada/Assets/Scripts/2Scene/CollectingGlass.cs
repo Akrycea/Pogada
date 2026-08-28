@@ -3,11 +3,19 @@ using UnityEngine;
 public class CollectingGlass : MonoBehaviour
 {
     public StateManager stateManager;
+    [SerializeField] static int collectedGlass;
 
     private void OnMouseDown()
     {
-        gameObject.SetActive(false);
-        stateManager.GlassCollected = true;
+        if (collectedGlass < 5)
+        {
+            collectedGlass++;
+        }
+        else
+        {
+            stateManager.GlassCollected = true;
+        }
+            gameObject.SetActive(false);
     }
 
 }
