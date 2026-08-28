@@ -1,6 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using Yarn;
 using Yarn.Unity;
 
 public class YarnCommands : MonoBehaviour
@@ -309,5 +311,19 @@ public class YarnCommands : MonoBehaviour
     public void UsunRybyUI()
     {
         GameObject.Find("FishOnUI").SetActive(false);
+    }
+
+    //stops and closes the dialogue
+    private float waitTime;
+    [YarnCommand("Stop")]
+    public void StopDialogue(float time)
+    {
+        waitTime = time;
+        StartCoroutine(waitStop());
+    }
+    IEnumerator waitStop()
+    {
+        yield return new WaitForSeconds(waitTime);
+        dialRunner.Stop();
     }
 }
