@@ -14,7 +14,9 @@ public class BirdsPuzzle : MonoBehaviour
 
     [SerializeField] static bool birdTalking = false;
 
-    
+    private bool Win = false;
+    private bool WinAnimPlayed = false;
+
 
     void Start()
     {
@@ -36,11 +38,7 @@ public class BirdsPuzzle : MonoBehaviour
         if(collision.gameObject == WinObject)
         {
             birdsWin.GoodSpot();
-
-            //if (Input.GetMouseButton(0) == false)
-            //{
-            //    gameObject.GetComponent<InteractionAnimation>().shineAnim();
-            //}
+            Win = true;
         }
     }
 
@@ -51,6 +49,7 @@ public class BirdsPuzzle : MonoBehaviour
         if (collision.gameObject == WinObject)
         {
             birdsWin.BadSpot(); 
+            Win = false;
         }
     }
 
@@ -67,6 +66,12 @@ public class BirdsPuzzle : MonoBehaviour
             gameObject.GetComponent<Drag>().AllowDrag = false;
             gameObject.GetComponent<Outline>().interactable = false;
             gameObject.GetComponent<BirdsPuzzle>().enabled = false;
+        }
+
+        if (Win && WinAnimPlayed == false)
+        {
+            gameObject.GetComponent<InteractionAnimation>().shineAnim();
+            WinAnimPlayed = true;
         }
     }
 
