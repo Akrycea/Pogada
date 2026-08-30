@@ -3,7 +3,7 @@ title: M15_PomocZieleni
 <<hideTalkBubble Zielony>>
 <<voiceline Zielony 33>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
-Viri: Chciałem po prostu, żeby Liv i Robert się pogodzili.
+[g]Viri[/g]: Chciałem po prostu, żeby [b]Liv[/b] i [r]Robert[/r] się pogodzili.
 
 <<voicelineEnd Zielony>>
 <<voiceline Player 87>>
@@ -15,13 +15,13 @@ Bohater: Czy wzięcie pluszaka miało z tym pomóc?
 <<voiceline Zielony 34>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
-Viri: Pomyślałem, że jeśli go wyczyszczę, to będzie po problemie i się pogodzą.
+[g]Viri[/g]: Pomyślałem, że jeśli go wyczyszczę, to będzie po problemie i się pogodzą.
 
 <<voiceline Zielony 35>>
-Viri: Ale woda płynęła za szybko i wyrwała mi Perełkę, i ja, ja…
+[g]Viri[/g]: Ale woda płynęła za szybko i wyrwała mi Perełkę, i ja, ja…
 
 <<voiceline Zielony 36>>
-Viri: Ja nie wiedziałem już co zrobić!
+[g]Viri[/g]: Ja nie wiedziałem już co zrobić!
 <<UpdateDebateNumber PointMeter>>
 	<<jump M_1DebataZielieni1>>
 
@@ -30,7 +30,7 @@ Viri: Ja nie wiedziałem już co zrobić!
 title: M_1DebataZielieni1
 ---
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
-->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę Liv?
+->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę [b]Liv[/b]?
 	<<voiceline Player 88>>
 	<<wait 3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -67,7 +67,7 @@ title: M15_DebataZielieni1_1
 <<voiceline Zielony 37>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Viri: O to się pokłócili…
+[g]Viri[/g]: O to się pokłócili…
 	<<jump M15_DebataZielieni2>>
 ===
 
@@ -76,20 +76,20 @@ title: M15_DebataZielieni1_2
 <<voiceline Zielony 38>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Musiałem im pomóc! To było jedyne logiczne wyjście!
+[g]Viri[/g]: Musiałem im pomóc! To było jedyne logiczne wyjście!
 	<<jump M15_DebataZielieni2>>
 ===
 
 title: M15_DebataZielieni2
 ---
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
-->Każ Robertowi wyczyścić pluszaka.
+->Każ [r]Robertowi[/r] wyczyścić pluszaka.
 	<<voiceline Player 93>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
-->Po prostu porozmawiaj z Robertem.
+->Po prostu porozmawiaj z [r]Robertem[/r].
 	<<voiceline Player 94>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -101,7 +101,7 @@ title: M15_DebataZielieni2
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
-->Powinieneś zostawić Liv w spokoju.
+->Powinieneś zostawić [b]Liv[/b] w spokoju.
 	<<voiceline Player 96>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
@@ -120,7 +120,7 @@ title: M15_DebataZielieni2_1
 <<voiceline Zielony 39>>
 <<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Viri: Czemu? Przecież to Perełka jest sednem problemu.
+[g]Viri[/g]: Czemu? Przecież to Perełka jest sednem problemu.
 	<<jump M15_DebataZielieni3>>
 ===
 
@@ -129,7 +129,7 @@ title: M15_DebataZielieni2_2
 <<voiceline Zielony 40>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak nie chcesz mi pomóc, to nie!
+[g]Viri[/g]: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak nie chcesz mi pomóc, to nie!
 	<<jump M15_DebataZielieni3>>
 ===
 
@@ -137,19 +137,19 @@ Viri: Nie, nie, nie! Nikt nie chce nic zrobić, więc ja się tym zajmę. Jak ni
 title: M15_DebataZielieni3
 ---
 <<ChangeDebateIcon DebateChildren "Viri" "angry">>
-->Liv i Robert powinni sami o siebie zadbać.
+->[b]Liv[/b] i [r]Robert[/r] powinni sami o siebie zadbać.
 	<<voiceline Player 98>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni3_1>>
-->Problemem jest Robert.
+->Problemem jest [r]Robert[/r].
 	<<voiceline Player 99>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
-->Problemem jest zszarpane zaufanie Liv i Roberta.
+->Problemem jest zszarpane zaufanie [b]Liv[/b] i [r]Roberta[/r].
 	<<voiceline Player 100>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -161,7 +161,7 @@ title: M15_DebataZielieni3
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
-->Problemem jest rozbita rzeźba Roberta.
+->Problemem jest rozbita rzeźba [r]Roberta[/r].
 	<<voiceline Player 102>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -174,7 +174,7 @@ title: M15_DebataZielieni3_1
 <<voiceline Zielony 41>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Viri: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomysłem był Perełka…
+[g]Viri[/g]: To co ja mam zrobić? Oni nie chcą ze sobą rozmawiać, moim jedynym pomysłem był Perełka…
 	<<jump M15_DebataZielieni4>>
 ===
 title: M15_DebataZielieni3_2
@@ -182,7 +182,7 @@ title: M15_DebataZielieni3_2
 <<voiceline Zielony 42>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Co ty możesz wiedzieć o ich problemach?
+[g]Viri[/g]: Co ty możesz wiedzieć o ich problemach?
 	<<jump M15_DebataZielieni4>>
 ===
 
@@ -226,7 +226,7 @@ title: M15_DebataZielieni4_1
 <<voiceline Zielony 43>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu nic nie robić.
+[g]Viri[/g]: Ale ja nie mogę znieść tego jak się kłócą… Nie mogę po prostu nic nie robić.
 	<<jump M15_DebataZielieni5>>
 ===
 title: M15_DebataZielieni4_2
@@ -234,7 +234,7 @@ title: M15_DebataZielieni4_2
 <<voiceline Zielony 44>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Nic nie rozumiesz. W ogóle ich nie znasz. Wszystko poszło właśnie o Perełkę, głupku.
+[g]Viri[/g]: Nic nie rozumiesz. W ogóle ich nie znasz. Wszystko poszło właśnie o Perełkę, głupku.
 	<<jump M15_DebataZielieni5>>
 ===
 
@@ -247,7 +247,7 @@ title: M15_DebataZielieni5
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
-->Możemy spróbować porozmawiać z Robertem.
+->Możemy spróbować porozmawiać z [r]Robertem[/r].
 	<<voiceline Player 109>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -278,7 +278,7 @@ title: M15_DebataZielieni5_1
 <<voiceline Zielony 45>>
 <<ChangeDebateIcon DebateChildren "Viri" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Viri: Skoro uważasz, że to pomoże… 
+[g]Viri[/g]: Skoro uważasz, że to pomoże… 
 	<<Ending PointMeter>>
 ===
 title: M15_DebataZielieni5_2
@@ -286,7 +286,7 @@ title: M15_DebataZielieni5_2
 <<voiceline Zielony 46>>
 <<ChangeDebateIcon DebateChildren "Viri" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Viri: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
+[g]Viri[/g]: Nic nie rozumiesz! Oni ze sobą nie gadają, więc tylko ja mogę ich pogodzić! Skoro zamierzasz tylko obrażać Perełkę to sobie idź!
 	<<Ending PointMeter>>
 ===
 
@@ -299,11 +299,11 @@ title: M15_DebataZielieniPoDebata
 <<camShake CinemachineCameraGateAndForest>>
 <<DisableColliders StateManager>>
 <<voiceline Zielony 47>>
-Viri: Pewnie gdybyśmy uspokoili Roberta, to mógłby nam pomóc to wszystko wyjaśnić…
+[g]Viri[/g]: Pewnie gdybyśmy uspokoili [r]Roberta[/r], to mógłby nam pomóc to wszystko wyjaśnić…
 
 <<ChangeIcon Icons "Viri" "angry">>
 <<voiceline Zielony 48>>
-Viri: Może to po prostu nieporozumienie.
+[g]Viri[/g]: Może to po prostu nieporozumienie.
 <<HideIcon Icons>>
 
 <<voicelineEnd Zielony>>
@@ -317,14 +317,14 @@ Bohater: Chodźmy, poznamy obie strony historii. To na pewno ułatwi sprawę.
 <<voicelineEnd Player>>
 <<voiceline Zielony 49>>
 <<ChangeIcon Icons "Viri" "happy">>
-Viri: A co z Perełką?
+[g]Viri[/g]: A co z Perełką?
 <<HideIcon Icons>>
 
 <<voicelineEnd Zielony>>
 <<voiceline Player 114>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Na pewno pomoże uspokoić Liv.
+Bohater: Na pewno pomoże uspokoić [b]Liv[/b].
 
 <<voiceline Player 115>>
 Bohater: Będzie to dobry prezent na pogodzenie.
@@ -334,7 +334,7 @@ Bohater: Będzie to dobry prezent na pogodzenie.
 <<ChangeIcon Icons "Viri" "happy">>
 <<voicelineEnd Player>>
 <<voiceline Zielony 50>>
-Viri: Dobrze!
+[g]Viri[/g]: Dobrze!
 <<HideIcon Icons>>
 
 <<zielonywygranadebata Dialogi>> 

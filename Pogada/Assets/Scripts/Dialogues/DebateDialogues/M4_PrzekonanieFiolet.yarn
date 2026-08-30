@@ -3,11 +3,11 @@
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 <<voiceline Player 280>>
-Bohater: Musisz przeprosić Aureusa.
+Bohater: Musisz przeprosić [y]Aureusa[/y].
 
 <<voiceline Fiolet 38>>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Violaceus: Rozmawialiśmy już o tym staruszku. Spadaj na drzewo.
+[p]Violaceus[/p]: Rozmawialiśmy już o tym staruszku. Spadaj na drzewo.
 
 <<voicelineEnd Fiolet>>
 <<voiceline Player 281>>
@@ -24,7 +24,7 @@ Bohater: Musisz go przed tym powstrzymać.
 <<voicelineEnd Player>>
 <<voiceline Fiolet 39>>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Violaceus: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
+[p]Violaceus[/p]: Nie musiałbym nic powstrzymywać, gdyby po prostu się słuchał.
 <<UpdateDebateNumber PointMeter>>
 	<<jump M4_DebataFiolet1>>
 ===
@@ -73,7 +73,7 @@ title: M4_DebataFiolet1_1
 <<voiceline Fiolet 40>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Violaceus: Ktoś pytał?
+[p]Violaceus[/p]: Ktoś pytał?
 	<<jump M4_DebataFiolet2>>
 ===
 
@@ -82,7 +82,7 @@ title: M4_DebataFiolet1_2
 <<voiceline Fiolet 41>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Violaceus: Nie możesz tak do mnie mówić śmiertelniku!
+[p]Violaceus[/p]: Nie możesz tak do mnie mówić śmiertelniku!
 	<<jump M4_DebataFiolet2>>
 ===
 
@@ -130,7 +130,7 @@ title: M4_DebataFiolet2_1
 <<voiceline Fiolet 42>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Violaceus: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zrozumie.
+[p]Violaceus[/p]: Uczucia mamy są ważniejsze niż cały świat! Śmiertelnik nie zrozumie.
 	<<jump M4_DebataFiolet3>>
 ===
 
@@ -139,7 +139,7 @@ title: M4_DebataFiolet2_2
 <<voiceline Fiolet 43>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Violaceus: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
+[p]Violaceus[/p]: Jesteś śmiertelnikiem. Nic nie wiesz! Nigdy nie zrozumiesz!
 	<<jump M4_DebataFiolet3>>
 ===
 
@@ -187,7 +187,7 @@ title: M4_DebataFiolet3_1
 <<voiceline Fiolet 44>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Violaceus: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskazuje mi dobrą drogę.
+[p]Violaceus[/p]: Słucham? Nie, nie! Co ty mówisz?! Zmyślasz! Miłość zawsze wskazuje mi dobrą drogę.
 	<<jump M4_DebataFiolet4>>
 ===
 
@@ -196,7 +196,7 @@ title: M4_DebataFiolet3_2
 <<voiceline Fiolet 45>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Violacus: Skoro tak, to po co się pan wpycha między mnie a Aureusa? Nie masz śmiertelniku własnych dzieci, żeby im przeszkadzać?
+[p]Violaceus[/p]: Skoro tak, to po co się pan wpycha między mnie a [y]Aureusa[/y]? Nie masz śmiertelniku własnych dzieci, żeby im przeszkadzać?
 	<<jump M4_DebataFiolet4>>
 ===
 
@@ -230,7 +230,7 @@ title: M4_DebataFiolet4
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet4_2>>
-->Mama kocha Aureusa tak czy siak.
+->Mama kocha [y]Aureusa[/y] tak czy siak.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 302>>
@@ -244,7 +244,7 @@ title: M4_DebataFiolet4_1
 <<voiceline Fiolet 46>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Violaceus: Wcale nie! Inaczej bym się nie wykłócał!
+[p]Violaceus[/p]: Wcale nie! Inaczej bym się nie wykłócał!
 	<<jump M4_DebataFiolet5>>
 ===
 
@@ -253,7 +253,7 @@ title: M4_DebataFiolet4_2
 <<voiceline Fiolet 47>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Violaceus: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to co ty, pewnie swoją zostawiłeś.
+[p]Violaceus[/p]: Bardzo dobrze wiem co robię! Znam moją rodzinę najlepiej. Nie to co ty, pewnie swoją zostawiłeś.
 	<<jump M4_DebataFiolet5>>
 ===
 
@@ -266,7 +266,7 @@ title: M4_DebataFiolet5
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M4_DebataFiolet5_2>>
-->Kłócisz się zamiast przekonać do siebie Aureusa.
+->Kłócisz się zamiast przekonać do siebie [y]Aureusa[/y].
 	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 304>>
@@ -280,7 +280,7 @@ title: M4_DebataFiolet5
 	<<wait 2>>
 	<<GoodChoice PointMeter>>
 	<<jump M4_DebataFiolet5_1>>
-->Mama na pewno porozmawiałby z Aureusem.
+->Mama na pewno porozmawiałby z [y]Aureusem[/y].
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 306>>
@@ -301,7 +301,7 @@ title: M4_DebataFiolet5_1
 <<voiceline Fiolet 10>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Violaceus: Hm, no może...
+[p]Violaceus[/p]: Hm, no może...
 	<<Ending PointMeter>>
 ===
 
@@ -310,7 +310,7 @@ title: M4_DebataFiolet5_2
 <<voiceline Fiolet 48>>
 <<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Violaceus: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej niż pan!
+[p]Violaceus[/p]: Może i kiedyś coś z tym zrobię! Na pewno zrobiłbym to lepiej niż pan!
 	<<Ending PointMeter>>
 ===
 
@@ -320,7 +320,7 @@ title: M4_DebataFioletPoDebata
 <<voiceline Fiolet 7>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Violaceus: …
+[p]Violaceus[/p]: …
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
@@ -345,7 +345,7 @@ Bohater: To będziesz go kochał nieważne co. Daj mu szansę.
 <<voiceline Fiolet 49>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Violaceus: Już dobra, dobra! Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
+[p]Violaceus[/p]: Już dobra, dobra! Pogadam z nim, tylko już niech pan przestanie mi jojczyć nad uchem.
 <<HideIcon Icons>>
 <<fioletDwaWygranadebata Dialogi>>
 <<unblockPlayerMovement Dialogi>>

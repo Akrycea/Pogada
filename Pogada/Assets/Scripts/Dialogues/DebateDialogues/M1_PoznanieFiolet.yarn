@@ -62,7 +62,7 @@ title: M1_PoznanieFiolet1_1
 ---
 <<voiceline Fiolet 11>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Vus ma jakiś głupi pomysł, że chce imię zmieniać.
+Dziecko 2: [y]Vus[/y] ma jakiś głupi pomysł, że chce imię zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
 
@@ -70,7 +70,7 @@ title: M1_PoznanieFiolet1_2
 ---
 <<voiceline Fiolet 12>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Vus nie znosi naszych rodziców. Imię chce nagle zmieniać.
+Dziecko 2: [y]Vus[/y] nie znosi naszych rodziców. Imię chce nagle zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
 
@@ -155,7 +155,7 @@ title: M1_PoznanieFiolet3
 	<<wait 2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
-->Może mama cieszyłaby się ze szczęścia Vusa?
+->Może mama cieszyłaby się ze szczęścia [y]Vusa[/y]?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 25>>
@@ -307,7 +307,7 @@ title: M1_PoznanieFioletPoDebacie
 //<<debateWon Fiolet>>
 <<voiceline Player 37>>
 <<ChangePlayerIcon IconsPlayer "sad">>
-Bohater: Czy wiesz może, gdzie Vus mógł uciec?
+Bohater: Czy wiesz może, gdzie [y]Vus[/y] mógł uciec?
 
 <<voiceline Player 38>>
 <<ChangePlayerIcon IconsPlayer "angry">>
@@ -379,7 +379,7 @@ Fiolet: Nie. Pewnie mama wie.
 
 <<voiceline Fiolet 28>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Fiolet: Powiedz Vusowi, jak go znajdziesz, żeby się słuchał mamy.
+Fiolet: Powiedz [y]Vusowi[/y], jak go znajdziesz, żeby się słuchał mamy.
 <<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
