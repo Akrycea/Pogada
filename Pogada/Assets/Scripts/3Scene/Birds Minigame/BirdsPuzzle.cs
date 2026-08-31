@@ -68,7 +68,7 @@ public class BirdsPuzzle : MonoBehaviour
             gameObject.GetComponent<BirdsPuzzle>().enabled = false;
         }
 
-        if (Win && WinAnimPlayed == false)
+        if (Win && WinAnimPlayed == false && Input.GetMouseButton(0) == false)
         {
             gameObject.GetComponent<InteractionAnimation>().shineAnim();
             WinAnimPlayed = true;

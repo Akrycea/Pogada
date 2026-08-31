@@ -38,6 +38,7 @@ public class PuzzleMinigame : MonoBehaviour
             if (transform.parent.name == "Moon")
             {
                 statueControl.StatusMoon();
+                gameObject.GetComponent<InteractionAnimation>().shineAnim();
             }
         }
     }
