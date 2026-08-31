@@ -119,30 +119,31 @@ public class Debate : MonoBehaviour
 
     [YarnCommand("GoodChoice")]
     public void GoodChoice()
-    {
+    {  
+        YourPoints += 1;
         UpdateDebateSliders();
-        YourPoints += 1; 
     }
 
     [YarnCommand("BadChoice")]
     public void BadChoice()
-    {
-        UpdateDebateSliders();
+    {     
         EnemyPoints += 1;
+        UpdateDebateSliders();
     }
 
     [YarnCommand("VGoodChoice")]
     public void VGoodChoice()
     {
-        UpdateDebateSliders();
         YourPoints += 2;
+        UpdateDebateSliders();
+
     }
 
     [YarnCommand("VBadChoice")]
     public void VBadChoice()
     {
-        UpdateDebateSliders();
         EnemyPoints += 2;
+        UpdateDebateSliders();
     }
 
     public void UpdateDebateSliders()
