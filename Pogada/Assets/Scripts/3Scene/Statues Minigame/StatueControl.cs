@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -63,7 +64,23 @@ public class StatueControl : MonoBehaviour
             dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
             dialogueRunner.StartDialogue("P3_Statua_fin");
             //dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
-            Czerwony.SetActive(true);
+            //Czerwony.SetActive(true);
         }
+    }
+
+    [YarnCommand("RobertAppear")]
+    public void RobertAppear()
+    {
+        StartCoroutine(redAppear());
+    }
+
+    IEnumerator redAppear()
+    {
+        Czerwony.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        Czerwony.GetComponent<KidRunAway>().kidRunAway();
+        Czerwony.GetComponent<InteractionAnimation>().runAwayAnim();
+        yield return new WaitForSeconds(1);
+        Czerwony.GetComponent<InteractionAnimation>().wantsToTalk = true;
     }
 }

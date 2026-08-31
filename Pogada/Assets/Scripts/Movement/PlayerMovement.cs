@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
     //deklaracje do animacji i zmiany koloru animacji
     private Animator animator;
     public StateManager stateManager;
+
+    public bool flipped = false;
     void Start()
     {
         //to pozniej gdzie indziej przeniesc ale to musi byc kiedys wywolywane poki co
@@ -212,6 +214,14 @@ public class PlayerMovement : MonoBehaviour
     {
         facingDirection *= -1;
         rbPlayer.transform.Rotate(0.0f, 180.0f, 0.0f);
+        if (!flipped)
+        {
+            flipped = true;
+        }
+        else
+        {
+            flipped = false;
+        }
     }
 
     //sprawdza czy postac idzie pod gore

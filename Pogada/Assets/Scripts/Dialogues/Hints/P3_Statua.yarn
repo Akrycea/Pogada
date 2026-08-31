@@ -16,8 +16,8 @@ title: P3_Statua_fin
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 352>>
 Jak nowa. Viri się ucieszy, oby Robert też się zainteresował.
-<<changeCharacterDialogue Dialogi "Czerwony" "D7_PoznanieCzerwieni">>
-<<showTalkBubble Czerwony>>
+<<RobertAppear StatueParts>>
 <<unblockPlayerMovement Dialogi>>
 <<HidePlayerIcon IconsPlayer>>
+<<changeCharacterDialogue Dialogi "Czerwony" "D7_PoznanieCzerwieni">>
 ===
