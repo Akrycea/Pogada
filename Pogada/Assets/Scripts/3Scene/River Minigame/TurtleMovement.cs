@@ -47,7 +47,7 @@ public class TurtleMovement : MonoBehaviour
             if(LeftRight == false && transform.position == startPosition)
             {
                 cameBack = true;
-                gameObject.tag = "ZGpassable";
+                //gameObject.tag = "ZGpassable";
             }
         }
 

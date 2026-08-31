@@ -6,11 +6,15 @@ public class Turtle : MonoBehaviour
 {
     public TurtleMovement turtleMovement;
 
+    [SerializeField] private GameObject turtleSpot;
+
     void Update()
     {
         if(turtleMovement.cameBack)
         {
             turtleMovement.enabled = false;
+            gameObject.tag = "ZGpassable";
+            turtleSpot.tag = "ZGpassable";
         }
     }
 
@@ -18,9 +22,8 @@ public class Turtle : MonoBehaviour
     {
         turtleMovement.cameBack = false;
         turtleMovement.enabled = true;
+
+        gameObject.tag = "ZGnotpassable";
+        turtleSpot.tag = "ZGnotpassable";
     }
-
-    
-
-
 }
