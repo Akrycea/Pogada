@@ -59313,6 +59313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d71c6d23d3126f40b03c5f4682b9146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pMovement: {fileID: 1361693962}
   nextCamera: {fileID: 1855470026}
 --- !u!61 &1063159187
 BoxCollider2D:
@@ -75992,6 +75993,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   stateManager: {fileID: 905840117}
+  flipped: 0
 --- !u!212 &1361693963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108996,6 +108998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d71c6d23d3126f40b03c5f4682b9146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pMovement: {fileID: 0}
   nextCamera: {fileID: 505790734}
 --- !u!1 &1967887825
 GameObject:
@@ -112866,6 +112869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d71c6d23d3126f40b03c5f4682b9146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pMovement: {fileID: 1361693962}
   nextCamera: {fileID: 1756727626}
 --- !u!61 &2053819540
 BoxCollider2D:

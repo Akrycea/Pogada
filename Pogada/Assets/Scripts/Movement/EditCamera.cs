@@ -14,6 +14,7 @@ public class EditCamera : MonoBehaviour
 
     //public CameraMovement camMovementScript;
 
+    [SerializeField] private PlayerMovement pMovement;
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -27,11 +28,11 @@ public class EditCamera : MonoBehaviour
     [SerializeField] private GameObject nextCamera;
     public void ChangeCamera()
     {
-        if (nextCamera.activeSelf == false)
+        if (nextCamera.activeSelf == false && !pMovement.flipped)
         {
             nextCamera.SetActive(true);
         }
-        else
+        else if (nextCamera.activeSelf == true && pMovement.flipped) 
         {
             nextCamera.SetActive(false);
         }
