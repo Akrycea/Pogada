@@ -24,6 +24,9 @@ public class DebateManager : MonoBehaviour
 
     public DebataPlayer sentenceBuilding;
 
+    [SerializeField] private GameObject Dialogi;
+    [SerializeField] private GameObject GenUI;
+
     public void OnMouseDown()
     {
         StartDebate();
@@ -32,6 +35,7 @@ public class DebateManager : MonoBehaviour
     public void StartDebate()
     {
         StartCoroutine(ShowPogadanka()); 
+        GenUI.SetActive(false);
     }
 
     private IEnumerator ShowPogadanka()
@@ -88,6 +92,7 @@ public class DebateManager : MonoBehaviour
     {
         debate.SetActive(false);
         dialogue.SetActive(true);
-        //turnOffCollider.EnableAllColliders();
+        Dialogi.SetActive(true);
+        GenUI.SetActive(true);
     }
 }
