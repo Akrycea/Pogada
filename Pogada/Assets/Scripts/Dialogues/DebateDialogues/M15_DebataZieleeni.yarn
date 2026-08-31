@@ -3,7 +3,7 @@ title: M15_PomocZieleni
 <<hideTalkBubble Zielony>>
 <<voiceline Zielony 33>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
-[g]Viri[/g]: Chciałem po prostu, żeby [b]Liv[/b] i [r]Robert[/r] się pogodzili.
+[g]Viri[/g]: Chciałem po prostu, żeby [bl]Liv[/bl] i [r]Robert[/r] się pogodzili.
 
 <<voicelineEnd Zielony>>
 <<voiceline Player 87>>
@@ -30,7 +30,7 @@ Bohater: Czy wzięcie pluszaka miało z tym pomóc?
 title: M_1DebataZielieni1
 ---
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
-->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę [b]Liv[/b]?
+->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę [bl]Liv[/bl]?
 	<<voiceline Player 88>>
 	<<wait 3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -101,7 +101,7 @@ title: M15_DebataZielieni2
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
-->Powinieneś zostawić [b]Liv[/b] w spokoju.
+->Powinieneś zostawić [bl]Liv[/bl] w spokoju.
 	<<voiceline Player 96>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
@@ -137,7 +137,7 @@ title: M15_DebataZielieni2_2
 title: M15_DebataZielieni3
 ---
 <<ChangeDebateIcon DebateChildren "Viri" "angry">>
-->[b]Liv[/b] i [r]Robert[/r] powinni sami o siebie zadbać.
+->[bl]Liv[/bl] i [r]Robert[/r] powinni sami o siebie zadbać.
 	<<voiceline Player 98>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
@@ -149,7 +149,7 @@ title: M15_DebataZielieni3
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
-->Problemem jest zszarpane zaufanie [b]Liv[/b] i [r]Roberta[/r].
+->Problemem jest zszarpane zaufanie [bl]Liv[/bl] i [r]Roberta[/r].
 	<<voiceline Player 100>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -324,7 +324,7 @@ Bohater: Chodźmy, poznamy obie strony historii. To na pewno ułatwi sprawę.
 <<voiceline Player 114>>
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
-Bohater: Na pewno pomoże uspokoić [b]Liv[/b].
+Bohater: Na pewno pomoże uspokoić [bl]Liv[/bl].
 
 <<voiceline Player 115>>
 Bohater: Będzie to dobry prezent na pogodzenie.

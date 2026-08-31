@@ -3,13 +3,13 @@
 <<hideTalkBubble Granat>>
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 <<voiceline Granat 34>>
-[b]Liv[/b]: Mój kochany Perełka!
+[bl]Liv[/bl]: Mój kochany Perełka!
 
 <<voiceline Granat 45>>
-[b]Liv[/b]: I jeszcze go pan wyczyścił!
+[bl]Liv[/bl]: I jeszcze go pan wyczyścił!
 
 <<voiceline Granat 36>>
-[b]Liv[/b]: Hurra!
+[bl]Liv[/bl]: Hurra!
 
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 <<voicelineEnd Granat>>
@@ -19,11 +19,11 @@ Bohater: To [g]Viri[/g] wyczyścił Perełkę, jemu należą się za to podzięk
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 <<voicelineEnd Player>>
 <<voiceline Granat 37>>
-[b]Liv[/b]: [g]Viri[/g]?
+[bl]Liv[/bl]: [g]Viri[/g]?
 
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<voiceline Granat 38>>
-[b]Liv[/b]: Chwila, nie pozwoliłam ci dotykać pana Perełki!
+[bl]Liv[/bl]: Chwila, nie pozwoliłam ci dotykać pana Perełki!
 
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 <<voicelineEnd Granat>>
@@ -82,7 +82,7 @@ title: M3_PogodzenieGranat_1
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<voiceline Granat 39>>
-[b]Liv[/b]: No i? Pobrudzenie Perełki to i tak jego wina.
+[bl]Liv[/bl]: No i? Pobrudzenie Perełki to i tak jego wina.
 	<<Jab DebataDialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
@@ -91,10 +91,10 @@ title: M3_PogodzenieGranat_2
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<voiceline Granat 40>>
-[b]Liv[/b]: Perełka jest najważniejszym członkiem tej rodziny! 
+[bl]Liv[/bl]: Perełka jest najważniejszym członkiem tej rodziny! 
 
 <<voiceline Granat 41>>
-[b]Liv[/b]: [r]Robert[/r] okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
+[bl]Liv[/bl]: [r]Robert[/r] okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
 	<<Jab DebataDialogi  "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
 ===
 
@@ -122,7 +122,7 @@ title:M3_C_Jab_1_2
 [r]Robert[/r]: Widzi pan? To jak rozmowa ze ścianą. 
 
 <<voiceline Czerwony 44>>
-[r]Robert[/r]: Przepraszam, słyszysz głuchoto?
+[r]Robert[/r]: Przepraszam, słyszysz [bl]głuchoto[/bl]?
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
@@ -168,7 +168,7 @@ title: M3_PogodzenieGranat2_1
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<voiceline Granat 42>>
-[b]Liv[/b]: Tylko dlatego, że mama go tak nauczyła. Nigdy nie przeprasza z serduszka, jak się powinno.
+[bl]Liv[/bl]: Tylko dlatego, że mama go tak nauczyła. Nigdy nie przeprasza z serduszka, jak się powinno.
 	<<jump M3_PogodzenieGranat3>>
 ===
 
@@ -177,10 +177,10 @@ title: M3_PgodzenieGranat2_2
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
 <<voiceline Granat 43>>
-[b]Liv[/b]: Nie wybaczę komuś, kto mówi przeprosiny na odwal! 
+[bl]Liv[/bl]: Nie wybaczę komuś, kto mówi przeprosiny na odwal! 
 
 <<voiceline Granat 44>>
-[b]Liv[/b]: Niech znowu zamknie się w swoim brzydkim domku.
+[bl]Liv[/bl]: Niech znowu zamknie się w swoim brzydkim domku.
 	<<jump M3_PogodzenieGranat3>>
 ===
 title: M3_PogodzenieGranat3
@@ -223,7 +223,7 @@ title: M3_PogodzenieGranat3_1
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 45>>
-[b]Liv[/b]: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
+[bl]Liv[/bl]: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
 
@@ -232,7 +232,7 @@ title: M3_PogodzenieGranat3_2
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 46>>
-[b]Liv[/b]: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
+[bl]Liv[/bl]: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
 ===
 
@@ -286,7 +286,7 @@ title:M3_Z_Jab_1_2
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 79>>
 <<ChangeJabIcon DebataDialogi "Viri">>
-[g]Viri[/g]: [b]Liv[/b] odpuść już proszę. 
+[g]Viri[/g]: [bl]Liv[/bl] odpuść już proszę. 
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
@@ -333,7 +333,7 @@ title: M3_PogodzenieGranat4_1
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 47>>
-[b]Liv[/b]: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rzeźbą. Wredzioch.
+[bl]Liv[/bl]: Nawet jeśli nie kłamał, to mógł mnie tak nie straszyć tą głupią rzeźbą. Wredzioch.
 	<<jump M3_PogodzenieGranat5>>
 ===
 
@@ -342,7 +342,7 @@ title: M3_PogodzenieGranat4_2
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 48>>
-[b]Liv[/b]: To nie jest mój problem. Ja mam Perełkę, a [r]Robert[/r] może sobie iść rozwalać rzeczy gdzieś indziej. Z dala ode mnie.
+[bl]Liv[/bl]: To nie jest mój problem. Ja mam Perełkę, a [r]Robert[/r] może sobie iść rozwalać rzeczy gdzieś indziej. Z dala ode mnie.
 	<<jump M3_PogodzenieGranat5>>
 ===
 title: M3_PogodzenieGranat5
@@ -385,7 +385,7 @@ title: M3_PogodzenieGranat5_1
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 49>>
-[b]Liv[/b]: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę. 
+[bl]Liv[/bl]: Eh, no jeśli przestanie robić takie rzeczy to mu wybaczę. 
 	<<Ending PointMeter>>
 ===
 
@@ -394,7 +394,7 @@ title: M3_PogodzenieGranat5_2
 <<ChangeDebateIcon DebateChildren "Liv" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 50>>
-[b]Liv[/b]: Ugh, nie chce więcej widzieć jego wybuchów straszności.
+[bl]Liv[/bl]: Ugh, nie chce więcej widzieć jego wybuchów straszności.
 	<<Ending PointMeter>>
 ===
 
@@ -407,7 +407,7 @@ title: M3_PogodzenieGranatPoDebata
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "sad">>
 <<camShake CinemachineCameraVillage>>
-[b]Liv[/b]: I tak nie chce mi się już być złą.
+[bl]Liv[/bl]: I tak nie chce mi się już być złą.
 
 <<ChangeIcon Icons "Robert" "sad">>
 <<voicelineEnd Granat>>
@@ -421,7 +421,7 @@ title: M3_PogodzenieGranatPoDebata
 <<ChangeIcon Icons "Liv" "angry">>
 <<voicelineEnd Czerwony>>
 <<voiceline Granat 52>>
-[b]Liv[/b]: Wierzę ci już, wierzę!
+[bl]Liv[/bl]: Wierzę ci już, wierzę!
 
 <<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Granat>>
@@ -444,14 +444,14 @@ Bohater: Cieszę się, że wszyscy się już dogadują.
 Bohater: [r]Robert[/r], pamiętaj proszę o czym gadaliśmy wcześniej.
 
 <<voiceline Player 201>>
-Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
+Bohater: Ja muszę pójść jeszcze pomóc [y]Aureusowi[/y].
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Liv" "happy">>
 <<voicelineEnd Player>>
 <<voiceline Granat 53>>
-[b]Liv[/b]: O czym gadaliście? O czym, o czym?
+[bl]Liv[/bl]: O czym gadaliście? O czym, o czym?
 
 <<ChangeIcon Icons "Robert" "happy">>
 <<voicelineEnd Granat>>
@@ -464,7 +464,7 @@ Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 <<ChangeIcon Icons "Liv" "sad">>
 <<voicelineEnd Czerwony>>
 <<voiceline Granat 54>>
-[b]Liv[/b]: Ty też masz wtedy takie wrażenie? Że wybuchniesz?
+[bl]Liv[/bl]: Ty też masz wtedy takie wrażenie? Że wybuchniesz?
 
 <<ChangeIcon Icons "Robert" "sad">>
 <<voicelineEnd Granat>>
@@ -474,7 +474,7 @@ Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 <<ChangeIcon Icons "Liv" "happy">>
 <<voicelineEnd Czerwony>>
 <<voiceline Granat 55>>
-[b]Liv[/b]: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
+[bl]Liv[/bl]: Ja gram wtedy w berka z rybkami! Powinieneś spróbować, po grze jestem już zbyt zmęczona, żeby krzyczeć.
 
 <<ChangeIcon Icons "[g]Viri[/g]" "happy">>
 <<voicelineEnd Granat>>
@@ -491,13 +491,13 @@ Bohater: Ja muszę pójść jeszcze pomóc Aureusowi.
 <<voicelineEnd Czerwony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 202>>
-Bohater: Zanim się rozbiegniecie, [b]Liv[/b] powiedz mi prosze gdzie jest Lus?
+Bohater: Zanim się rozbiegniecie, [bl]Liv[/bl] powiedz mi prosze gdzie jest [lb]Lus[/lb]?
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<voiceline Granat 56>>
-[b]Liv[/b]: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
+[bl]Liv[/bl]: Możesz przejść przez mój domek. Za nim są pola, powinna być gdzieś tam ze swoim zwierzakiem.
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>

@@ -3,7 +3,7 @@
 <<voiceline Czerwony 16>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-[r]Robert[/r]: Przeprosiłem ją tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
+[r]Robert[/r]: Przeprosiłem [bl]ją[/bl] tak, jak mama uczyła, ale ona cały czas narzekała, że nie mówię tego tak naprawdę.
 
 <<voiceline Czerwony 17>>
 [r]Robert[/r]: A potem zaczęła mi kłamać prosto w twarz.
@@ -31,7 +31,7 @@ Bohater: Spokojnie. Wierzę ci.
 <<voiceline Czerwony 20>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-[r]Robert[/r]: Ona w ogóle nie wierzyła. A ja nie kłamię!
+[r]Robert[/r]: [bl]Ona[/bl] w ogóle nie wierzyła. A ja nie kłamię!
 <<UpdateDebateNumber PointMeter>>
 	<<jump M2_PoznanieCzerwieni1>>
 ===
@@ -44,7 +44,7 @@ title: M2_PoznanieCzerwieni1
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
-->Oddaj [b]Liv[/b] jej pluszaka.
+->Oddaj [bl]Liv[/bl] jej pluszaka.
 	<<voiceline Player 138>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
@@ -84,19 +84,19 @@ title: M2_PoznanieCzerwieni1_2
 <<voiceline Czerwony 22>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-[r]Robert[/r]: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A [b]Liv[/b] nie słucha.
+[r]Robert[/r]: To była głupia pomyłka! Mówiłem jej, że tylko skapnęła mi farba! A [bl]Liv[/bl] nie słucha.
 	<<jump M2_PoznanieCzerwieni2>>
 ===
 
 title: M2_PoznanieCzerwieni2
 ---
-->Czemu jeszcze nie powiedziałeś tego [b]Liv[/b]?
+->Czemu jeszcze nie powiedziałeś tego [bl]Liv[/bl]?
 	<<voiceline Player 142>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
-->Może wytłumaczymy to [b]Liv[/b] razem?
+->Może wytłumaczymy to [bl]Liv[/bl] razem?
 	<<voiceline Player 143>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
@@ -108,7 +108,7 @@ title: M2_PoznanieCzerwieni2
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
-->Powiedz to [b]Liv[/b].
+->Powiedz to [bl]Liv[/bl].
 	<<voiceline Player 145>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
@@ -204,7 +204,7 @@ title: M2_PoznanieCzerwieni3_1
 [r]Robert[/r]: Albo znowu powie mi, że jestem agresywny.
 
 <<voiceline Czerwony 58>>
-[r]Robert[/r]: Nie jestem! Jest okropną kłamczuchą!
+[r]Robert[/r]: Nie jestem! Jest okropną [bl]kłamczuchą[/bl]!
 	<<jump M2_PoznanieCzerwieni4>>
 ===
 
@@ -213,7 +213,7 @@ title: M2_PoznanieCzerwieni3_2
 <<voiceline Czerwony 26>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-[r]Robert[/r]: Rodzinie powinna wierzyć na słowo! A ona tylko kłamie!
+[r]Robert[/r]: Rodzinie powinna wierzyć na słowo! A [bl]ona[/bl] tylko kłamie!
 
 <<voiceline Czerwony 59>>
 [r]Robert[/r]: Kłamie! Kłamie!
@@ -240,7 +240,7 @@ title: M2_PoznanieCzerwieni4
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
-->Wspominała, że nie radzisz sobie ze złością.
+->[bl]Wspominała[/bl], że nie radzisz sobie ze złością.
 	<<voiceline Player 155>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
@@ -271,7 +271,7 @@ title: M2_PoznanieCzerwieni4_2
 <<voiceline Czerwony 28>>
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-[r]Robert[/r]: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak [b]Liv[/b] i cała reszta!
+[r]Robert[/r]: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak [bl]Liv[/bl] i cała reszta!
 	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
 ===
 
@@ -342,7 +342,7 @@ title: M2_PoznanieCzerwieni5
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
-->[b]Liv[/b] chyba miała rację.
+->[bl]Liv[/bl] chyba miała rację.
 	<<voiceline Player 159>>
 	<<wait 2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
@@ -466,7 +466,7 @@ Bohater: Po prostu czasem trzeba poćwiczyć nie wybuchanie od złości.
 <<ChangeIcon Icons "Viri" "happy">>
 <<voicelineEnd Player>>
 <<voiceline Zielony 72>>
-[g]Viri[/g]: Jakby [b]Liv[/b] usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
+[g]Viri[/g]: Jakby [bl]Liv[/bl] usłyszała o tym wszystkim, to na pewno by cię zrozumiała.
 
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 73>>

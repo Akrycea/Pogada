@@ -6,126 +6,163 @@
 <<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 47>>
+
 Bohater: Dzień dobry.
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 1>>
-Dziecko: …
+
+[g]Dziecko[/g]: …
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 48>>
-Bohater: Szukam Vusa, widziałeś go może?
+
+Bohater: Szukam [y]Vusa[/y], widziałeś go może?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 2>>
-Dziecko: A jakie to ma znaczenie? 
+
+[g]Dziecko[/g]: A jakie to ma znaczenie? 
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 49>>
-Bohater: Pokłócił się z bratem i chciałem zbadać sprawę.
+
+Bohater: Pokłócił się z [p]bratem[/p] i chciałem zbadać sprawę.
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 3>>
-Dziecko: I tak się już nigdy nie pogodzą…
+
+[g]Dziecko[/g]: I tak się już nigdy nie pogodzą…
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 50>>
+
 Bohater: Czy… coś się stało, że jesteś taki smętny?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 4>>
-Dziecko: ...
+
+[g]Dziecko[/g]: ...
 
 <<voiceline Zielony 5>>
-Dziecko: No, może...
+
+[g]Dziecko[/g]: No, może...
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<voiceline Player 51>>
 <<ChangePlayerIcon IconsPlayer "happy">>
+
 Bohater: Chcesz o tym porozmawiać?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Player>>
 <<voiceline Zielony 6>>
-Dziecko: Chyba nie. Może z mamą? Albo tatą.
+
+[g]Dziecko[/g]: Chyba nie. Może z mamą? Albo tatą.
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 52>>
+
 Bohater: Niestety wasi rodzice wyjechali na trochę. Ja się wami zajmuję.
 
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 53>>
+
 Bohater: Nie musisz mi mówić, jeśli nie chcesz.
 
 <<voiceline Player 54>>
+
 Bohater: Będę szukał [lb]Lus[/lb], może z nią chciałbyś porozmawiać?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Viri" "angry">>
 <<voiceline Zielony 7>>
-Dziecko: Hm… Nie, nie…
+
+[g]Dziecko[/g]: Hm… Nie, nie…
 
 <<ChangeIcon Icons "Viri" "sad">>
 <<voiceline Zielony 8>>
-Dziecko: Rozmawiała z [b]Liv[/b], a [b]Liv[/b] już mnie nie kocha.
+
+[g]Dziecko[/g]: Rozmawiała z [bl]Liv[/bl], a [bl]Liv[/bl] już mnie nie kocha.
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "sad">>
 <<voiceline Player 55>>
+
 Bohater: Jak to?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Player>>
 <<voiceline Zielony 7>>
-Dziecko: …
+
+[g]Dziecko[/g]: …
+
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
 <<voicelineEnd Zielony>>
 <<ChangePlayerIcon IconsPlayer "happy">>
 <<voiceline Player 56>>
+
 Bohater: Porozmawiam z nią. Upewnię się, że nadal cię kocha. Dobrze?
+
 <<HidePlayerIcon IconsPlayer>>
 
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<voicelineEnd Player>>
 <<voiceline Zielony 10>>
-Dziecko: Możesz próbować…
+
+[g]Dziecko[/g]: Możesz próbować…
+
+
 <<HideIcon Icons>>
 <<showTalkBubble Granat>>
 <<unblockPlayerMovement Dialogi>>

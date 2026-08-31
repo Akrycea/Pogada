@@ -3,7 +3,7 @@
 <<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 <<voiceline Player 9>>
-Bohater: To co się teraz liczy, to odnalezienie twojego rodzeństwa i wytłumaczenie całej sprawy.
+Bohater: To co się teraz liczy, to odnalezienie twojego [y]rodzeństwa[/y] i wytłumaczenie całej sprawy.
 
 <<voiceline Player 10>>
 Bohater: Jeśli będziesz ze mną współpracować, to załatwimy sprawę w try miga.
@@ -14,14 +14,14 @@ Bohater: Czy nie milej byłoby bez tych kłótni między wami?
 <<voicelineEnd Player>>
 <<voiceline Fiolet 10>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Dziecko2: Hm, no może…
+[p]Dziecko2[/p]: Hm, no może…
 	<<UpdateDebateNumber PointMeter>>
 	<<jump M1_PoznanieFiolet1>>
 ===
 
 title: M1_PoznanieFiolet1
 ---
-->Nie powinieneś bez powodu krzyczeć na brata.
+->Nie powinieneś bez powodu krzyczeć na [y]brata[/y].
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 12>>
@@ -62,7 +62,7 @@ title: M1_PoznanieFiolet1_1
 ---
 <<voiceline Fiolet 11>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: [y]Vus[/y] ma jakiś głupi pomysł, że chce imię zmieniać.
+[p]Dziecko2[/p]: [y]Vus[/y] ma jakiś głupi pomysł, że chce imię zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
 
@@ -70,7 +70,7 @@ title: M1_PoznanieFiolet1_2
 ---
 <<voiceline Fiolet 12>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: [y]Vus[/y] nie znosi naszych rodziców. Imię chce nagle zmieniać.
+[p]Dziecko2[/p]: [y]Vus[/y] nie znosi naszych rodziców. Imię chce nagle zmieniać.
 	<<jump M1_PoznanieFiolet2>>
 ===
 
@@ -117,7 +117,7 @@ title: M1_PoznanieFiolet2_1
 ---
 <<voiceline Fiolet 13>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego żałował.
+[p]Dziecko2[/p]: Po to mama daje imię, żeby je nosić! Z dumą! Mama wie lepiej, jakie imię nam pasuje. Potem będzie tego żałował.
 	<<jump M1_PoznanieFiolet3>>
 ===
 
@@ -125,10 +125,10 @@ title: M1_PoznanieFiolet2_2
 ---
 <<voiceline Fiolet 14>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Mamie na pewno będzie przykro z tego powodu! 
+[p]Dziecko2[/p]: Mamie na pewno będzie przykro z tego powodu! 
 
 <<voiceline Fiolet 15>>
-Dziecko 2: Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie!
+[p]Dziecko2[/p]: Ja na to nie pozwolę, nie będzie łamania zasad na mojej warcie!
 	<<jump M1_PoznanieFiolet3>>
 ===
 
@@ -175,7 +175,7 @@ title: M1_PoznanieFiolet3_1
 ---
 <<voiceline Fiolet 16>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Dziecko 2: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczęśliwa! A to ona jest najważniejsza.
+[p]Dziecko2[/p]: Znam mamę najlepiej z rodzeństwa i na sto procent byłaby nieszczęśliwa! A to ona jest najważniejsza.
 	<<jump M1_PoznanieFiolet4>>
 ===
 
@@ -183,7 +183,7 @@ title: M1_PoznanieFiolet3_2
 ---
 <<voiceline Fiolet 17>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Zasad się nie łamie i kropka!
+[p]Dziecko2[/p]: Zasad się nie łamie i kropka!
 	<<jump M1_PoznanieFiolet4>>
 ===
 
@@ -230,10 +230,10 @@ title: M1_PoznanieFiolet4_1
 ---
 <<voiceline Fiolet 18>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Przecież ja go wspieram! 
+[p]Dziecko2[/p]: Przecież ja go wspieram! 
 
 <<voiceline Fiolet 19>>
-Dziecko 2: Powstrzymuję go przed złym wyborem.
+[p]Dziecko2[/p]: Powstrzymuję go przed złym wyborem.
 	<<jump M1_PoznanieFiolet5>>
 ===
 
@@ -241,7 +241,7 @@ title: M1_PoznanieFiolet4_2
 ---
 <<voiceline Fiolet 20>>
 <<ChangeDebatePlayerIcon DebatePlayer "accuse">>
-Dziecko 2: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
+[p]Dziecko2[/p]: Nic się na tym nie znasz staruszku. Ktoś musi go powstrzymać.
 	<<jump M1_PoznanieFiolet5>>
 ===
 
@@ -288,7 +288,7 @@ title: M1_PoznanieFiolet5_1
 ---
 <<voiceline Fiolet 21>>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
-Dziecko 2: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i nie uciekał.
+[p]Dziecko2[/p]: Cóż… No łatwiej by się rozmawiało, gdyby się nie wściekał i nie uciekał.
 	<<Ending PointMeter>>
 ===
 
@@ -296,7 +296,7 @@ title: M1_PoznanieFiolet5_2
 ---
 <<voiceline Fiolet 22>>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
-Dziecko 2: Śmiertelnik jak ty nie zrozumie.
+[p]Dziecko2[/p]: Śmiertelnik jak ty nie zrozumie.
 	<<Ending PointMeter>>
 ===
 
@@ -322,10 +322,10 @@ Bohater: Wiesz, gdzie mógł się zaszyć?
 <<voicelineEnd Player>>
 <<voiceline Fiolet 23>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Fiolet: Hm, jak komukolwiek jest źle to się biegnie do Lus.
+[p]Dziecko2[/p]: Hm, jak komukolwiek jest źle to się biegnie do [lb]Lus[/lb].
 
 <<voiceline Fiolet 24>>
-Fiolet: Ona najlepiej przytula.
+[p]Dziecko2[/p]: Ona najlepiej przytula.
 <<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
@@ -339,7 +339,7 @@ Bohater: Wiesz, gdzie ją znajdę?
 <<voicelineEnd Player>>
 <<voiceline Fiolet 25>>
 <<ChangeIcon Icons "Violaceus" "happy">>
-Fiolet: Chyba pocieszała wcześniej Liv, która pożarła się o coś z resztą. Powinny być w wiosce niedaleko stąd.
+[p]Dziecko2[/p]: Chyba pocieszała wcześniej [b]Liv[/b], która pożarła się o coś z resztą. Powinny być w wiosce niedaleko stąd.
 <<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
@@ -361,7 +361,7 @@ Bohater: Na ten moment to ja się wami zajmuję i nie chcę żadnych bójek.
 <<voicelineEnd Player>>
 <<voiceline Fiolet 26>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Fiolet: My się nie biliśmy! Po prostu przemawiałem mu do rozsądku.
+[p]Dziecko2[/p]: My się nie biliśmy! Po prostu przemawiałem mu do rozsądku.
 <<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>
@@ -375,11 +375,11 @@ Bohater: Pogadamy o tym jeszcze. Czy wiesz może, czemu świat nie ma kolorów?
 <<voicelineEnd Player>>
 <<voiceline Fiolet 27>>
 <<ChangeIcon Icons "Violaceus" "sad">>
-Fiolet: Nie. Pewnie mama wie.
+[p]Dziecko2[/p]: Nie. Pewnie mama wie.
 
 <<voiceline Fiolet 28>>
 <<ChangeIcon Icons "Violaceus" "angry">>
-Fiolet: Powiedz [y]Vusowi[/y], jak go znajdziesz, żeby się słuchał mamy.
+[p]Dziecko2[/p]: Powiedz [y]Vusowi[/y], jak go znajdziesz, żeby się słuchał mamy.
 <<HideIcon Icons>>
 
 <<voicelineEnd Fiolet>>

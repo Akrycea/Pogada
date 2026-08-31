@@ -7,23 +7,23 @@ title: D2_PoznanieFiolet
 <<longCamShakeSTART CinemachineCameraGateAndForest>>
 <<ChangeIcon Icons "Aureus" "angry">>
 <<voiceline KłocąceSieDzieci 1>>
-<color=yellow>Dziecko1</color>: Nie masz racji! Mogę robić, co chcę!
+[y]Dziecko1[/y]: Nie masz racji! Mogę robić, co chcę!
 
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 2>>
-Dziecko2: Nie, kiedy sprawiasz tym mamie przykrość! Tak nie można i kropka!
+[p]Dziecko2[/p]: Nie, kiedy sprawiasz tym mamie przykrość! Tak nie można i kropka!
 
 <<ChangeIcon Icons "Aureus" "angry">>
 <<voiceline KłocąceSieDzieci 3>>
-Dziecko1: Kłamczuch jesteś! I ty i mama! Kłamczuch jesteś! Każde dziecko wie, że można być kim się tylko chce! A ty jesteś wredzioch!
+[y]Dziecko1[/y]: Kłamczuch jesteś! I ty i mama! Kłamczuch jesteś! Każde dziecko wie, że można być kim się tylko chce! A ty jesteś wredzioch!
 
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 4>>
-Dziecko2: Nie wcale nie! Jeśli będziesz się dalej tak zachowywał, to kto wie, co się może stać? Co jeśli mama będzie tak nieszczęśliwa, że zniknie? Będziesz wtedy zadowolony Vus?
+[p]Dziecko2[/p]: Nie wcale nie! Jeśli będziesz się dalej tak zachowywał, to kto wie, co się może stać? Co jeśli mama będzie tak nieszczęśliwa, że zniknie? Będziesz wtedy zadowolony [y]Vus[/y]?
 
 <<ChangeIcon Icons "Aureus" "angry">>
 <<voiceline KłocąceSieDzieci 5>>
-Dziecko1: Lala, nic nie słyszę! Jesteś wredzioch i złośliwiec!
+[y]Dziecko1[/y]: Lala, nic nie słyszę! Jesteś wredzioch i złośliwiec!
 <<longCamShakeEND CinemachineCameraGateAndForest>>
 <<fightCloudDisappear KłocąceSieDzieci>>
 //<<RunAway Żółć>>
@@ -44,7 +44,7 @@ Bohater: Co tu się dzieje?
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 6>>
-Dziecko2: I co pan zrobił? Ten głupol przez pana uciekł i będzie miał durne pomysły!
+[p]Dziecko2[/p]: I co pan zrobił? Ten głupol przez pana uciekł i będzie miał durne pomysły!
 <<HideIcon Icons>>
 
 <<IconPlayerOn Dialogi>>
@@ -58,7 +58,7 @@ Bohater: Wydaje mi się, że kłócił się z tobą, nie ze mną.
 <<voicelineEnd Player>>
 <<ChangeIcon Icons "Violaceus" "angry">>
 <<voiceline KłocąceSieDzieci 7>>
-Dziecko2: Ta, ode mnie by nie uciekł!
+[p]Dziecko2[/p]: Ta, ode mnie by nie uciekł!
 <<HideIcon Icons>>
 
 <<voicelineEnd KłocąceSieDzieci>>
@@ -75,7 +75,7 @@ Bohater: Cóż, musimy go znaleźć. Wasi rodzice wyjechali i zostawili was pod 
 //<<EnableColliders StateManager>>
 
 //zrob zeby bylo lepiej stary
-<<OpenBook UI>>
+//<<OpenBook UI>>
 <<fioletBudowanieZdan Dialogi>>
 <<showTalkBubble Zielony>>
 ===
