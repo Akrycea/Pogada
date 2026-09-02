@@ -6,6 +6,7 @@
 <<voiceline Player 4>>
 Przysięgam, że kiedyś było tutaj przejście wyżej.
 <<changeHint Player "P0_Chmury_1">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===
@@ -18,6 +19,7 @@ title: P0_Chmury_1
 <<voiceline Player 5>>
 Nie wejdę tam bez jakichś schodów.
 <<changeHint Player "P0_Chmury_2">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===
@@ -30,6 +32,7 @@ title: P0_Chmury_2
 <<voiceline Player 6>>
 Te chmury może się na coś przydadzą.
 <<changeHint Player "P0_Chmury">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===

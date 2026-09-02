@@ -6,6 +6,7 @@
 <<voiceline Player 8>>
 Zamknięte na trzy spusty. Trzeba by znaleźć klucz.
 <<changeHint Player "P1_Brama_2">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===
@@ -18,6 +19,7 @@ title: P1_Brama_2
 <<voiceline Player 9>>
 Zamknięte. Kto nie trzyma zapasowego klucza pod wycieraczką?
 <<changeHint Player "P1_Brama_3">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===
@@ -30,6 +32,7 @@ title: P1_Brama_3
 <<voiceline Player 10>>
 Nie przejdę bez klucza. Może jakiś się znajdzie w okolicy?
 <<changeHint Player "P1_Brama_2">>
+<<nextHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===
@@ -38,10 +41,10 @@ title: P1_Brama_fin
 ---
 //<<IconPlayerOn Dialogi>>
 //<<ChangePlayerIcon IconsPlayer "happy">>
+<<clearHint Player>>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 11>>
 Otwarte. Zobaczymy co kryją te całe niebiosa. 
-<<clearHint Player>>
 <<unblockPlayerMovement Dialogi>>
 //<<HidePlayerIcon IconsPlayer>>
 ===

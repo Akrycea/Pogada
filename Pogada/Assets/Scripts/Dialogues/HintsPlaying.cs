@@ -8,7 +8,7 @@ public class HintsPlaying : MonoBehaviour
     public string nextHint;
     [SerializeField] private DialogueRunner dialogueRunner;
     public bool playingHints = false;
-    [SerializeField] private bool readyToSayHint = false;
+    public bool readyToSayHint = false;
     public bool countingDown = false;
 
 
@@ -50,9 +50,15 @@ public class HintsPlaying : MonoBehaviour
         {
             dialogueRunner.StartDialogue(nextHint);
             anim.hideTalkBubble();
-            countingDown = true;
-            readyToSayHint = false;
         }
+    }
+
+    //start sayings hints after closing current hint
+    [YarnCommand("nextHint")]
+    public void startNextHint()
+    {
+        countingDown = true;
+        readyToSayHint = false;
     }
 
 
