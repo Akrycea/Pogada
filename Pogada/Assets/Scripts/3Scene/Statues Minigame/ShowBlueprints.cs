@@ -12,9 +12,12 @@ public class ShowBlueprints : MonoBehaviour
 
     public bool done = false;
 
+    private HintsPlaying hints;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        hints = GameObject.Find("Player").GetComponent<HintsPlaying>();
     }
 
     public void OnMouseDown()
@@ -24,6 +27,7 @@ public class ShowBlueprints : MonoBehaviour
             blueprintsUI.SetActive(false);
             spriteRenderer.sprite = spriteArray[1];
             done = true;
+            hints.startHint("P3_Statua");
         }
     }
 }

@@ -1,44 +1,48 @@
 ﻿title: P7_DrzwiFiolet
 ---
-<<IconPlayerOn Dialogi>>
+//<<changeHintTime Player 30>>
+//<<IconPlayerOn Dialogi>>
 <<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 361>>
 Czegoś tu brakuje…
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
+<<changeHint Player "P7_DrzwiFiolet_1">>
 ===
 
 title: P7_DrzwiFiolet_1
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "angry">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 362>>
 W te miejsca chyba są się coś włożyć.
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
+<<changeHint Player "P7_DrzwiFiolet">>
 ===
 
 title: P7_DrzwiFiolet_2
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "angry">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 363>>
 Te szkiełka chyba mogą się w coś ułożyć.
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P7_DrzwiFiolet_fin
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "angry">>
+<<clearHint Player>>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 364>>
 Jest, Violaceus! Muszę z nim porozmawiać!
 <<unblockPlayerMovement Dialogi>>
 <<showTalkBubble Fiolet>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===

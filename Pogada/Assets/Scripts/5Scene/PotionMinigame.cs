@@ -1,7 +1,8 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro.Examples;
 using UnityEngine;
-using System.Linq;
-using System.Collections.Generic;
+using Yarn.Unity;
 
 public class PotionMinigame : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PotionMinigame : MonoBehaviour
 
     [SerializeField] private DebataPlayer debataPlayer;
 
+    public DialogueRunner dialogueRunner;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,6 +30,7 @@ public class PotionMinigame : MonoBehaviour
             {
                 Debug.Log("Win");
                 debataPlayer.wygranaMinigierka = true;
+                dialogueRunner.StartDialogue("P8_Potka_fin");
                 debataPlayer.SentenceBuildingStart();
             }
             else

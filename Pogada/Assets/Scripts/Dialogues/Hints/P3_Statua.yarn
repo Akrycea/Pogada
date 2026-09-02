@@ -1,23 +1,24 @@
 ﻿title: P3_Statua
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "happy">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 351>>
 Tylko po kolei, na pewno się uda.
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P3_Statua_fin
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "happy">>
+<<clearHint Player>>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 352>>
 Jak nowa. Viri się ucieszy, oby Robert też się zainteresował.
 <<RobertAppear StatueParts>>
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 <<changeCharacterDialogue Dialogi "Czerwony" "D7_PoznanieCzerwieni">>
 ===

@@ -10,6 +10,8 @@ public class GlassMinigameWin : MonoBehaviour
 
     [SerializeField] private DebataPlayer debataPlayer;
 
+    public DialogueRunner dialogueRunner;
+
 
 
 
@@ -22,6 +24,7 @@ public class GlassMinigameWin : MonoBehaviour
             Debug.Log("glass won");
             stateManager.GlassMinigameWon = true;
             debataPlayer.wygranaMinigierka = true;
+            dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
 
             debataPlayer.SentenceBuildingStart();
         }

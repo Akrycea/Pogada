@@ -14,6 +14,7 @@ public class CollectingGlass : MonoBehaviour
         else
         {
             stateManager.GlassCollected = true;
+            GameObject.Find("Player").GetComponent<HintsPlaying>().changeHint("P7_DrzwiFiolet_2");
         }
             gameObject.SetActive(false);
     }
