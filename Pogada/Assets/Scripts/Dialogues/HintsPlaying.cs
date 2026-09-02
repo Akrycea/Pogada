@@ -4,10 +4,11 @@ using Yarn.Unity;
 
 public class HintsPlaying : MonoBehaviour
 {
-    [SerializeField] private float hintTimer;
+    public float hintTimer;
     public string nextHint;
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private bool readyToSayHint = false;
+    public bool playingHints = false;
     public bool countingDown = false;
     [SerializeField] private Outline outline;
 
@@ -20,9 +21,12 @@ public class HintsPlaying : MonoBehaviour
     
     void Update()
     {
-        if (countingDown && !readyToSayHint)
+        if (playingHints)
         {
-            StartingHint();
+            if (countingDown && !readyToSayHint)
+            {
+                StartingHint();
+            }
         }
 
         if (readyToSayHint)
@@ -42,6 +46,7 @@ public class HintsPlaying : MonoBehaviour
 
     IEnumerator hintPlayer()
     {
+        countingDown = false;
         readyToSayHint = false;
         yield return new WaitForSeconds(hintTimer);
         readyToSayHint = true;
@@ -53,6 +58,7 @@ public class HintsPlaying : MonoBehaviour
         {
             dialogueRunner.StartDialogue(nextHint);
             anim.hideTalkBubble();
+            countingDown = true;
             readyToSayHint = false;
         }
     }
@@ -65,10 +71,19 @@ public class HintsPlaying : MonoBehaviour
         gameObject.GetComponent<HintsPlaying>().nextHint = hint;
     }
 
+    //sets bohater's next hint timer
+    [YarnCommand("changeHintTime")]
+    public void changeHintTime(float time)
+    {
+        gameObject.GetComponent<HintsPlaying>().hintTimer = time;
+    }
+
     //clears hints
     [YarnCommand("clearHint")]
-    public void clearHint(string hint)
+    public void clearHint()
     {
+        playingHints = false;
+        readyToSayHint = false;
         countingDown = false;
         gameObject.GetComponent<HintsPlaying>().nextHint = "";
     }

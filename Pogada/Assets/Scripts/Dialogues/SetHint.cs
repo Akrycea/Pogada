@@ -9,7 +9,7 @@ public class SetHint : MonoBehaviour
         if(collision.name == "Player")
         {
             hintsPlaying.nextHint = nextHint;
-            hintsPlaying.countingDown = true;
+            hintsPlaying.playingHints = true;
             gameObject.SetActive(false);
         }
     }
