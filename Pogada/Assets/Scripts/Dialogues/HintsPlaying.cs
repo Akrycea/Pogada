@@ -20,7 +20,7 @@ public class HintsPlaying : MonoBehaviour
     
     void Update()
     {
-        if (countingDown)
+        if (countingDown && !readyToSayHint)
         {
             StartingHint();
         }
@@ -28,6 +28,10 @@ public class HintsPlaying : MonoBehaviour
         if (readyToSayHint)
         {
             anim.wantsToTalk = true;
+        }
+        else
+        {
+            anim.wantsToTalk = false;
         }
     }
 
@@ -49,7 +53,7 @@ public class HintsPlaying : MonoBehaviour
         {
             dialogueRunner.StartDialogue(nextHint);
             anim.hideTalkBubble();
-            readyToSayHint =false;
+            readyToSayHint = false;
         }
     }
 
@@ -61,8 +65,11 @@ public class HintsPlaying : MonoBehaviour
         gameObject.GetComponent<HintsPlaying>().nextHint = hint;
     }
 
-    private void OnMouseOver()
+    //clears hints
+    [YarnCommand("clearHint")]
+    public void clearHint(string hint)
     {
-        outline.interactable = true;
+        countingDown = false;
+        gameObject.GetComponent<HintsPlaying>().nextHint = "";
     }
 }
