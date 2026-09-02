@@ -46,7 +46,7 @@ public class Pointer : MonoBehaviour
             direction = -1f;
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space))
         {
             CheckSuccess();
         }
