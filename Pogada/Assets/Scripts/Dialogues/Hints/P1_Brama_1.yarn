@@ -1,46 +1,47 @@
 ﻿title: P1_Brama_1
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "happy">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 8>>
 Zamknięte na trzy spusty. Trzeba by znaleźć klucz.
-<<bramaPuzzle2 Dialogues>>
+<<changeHint Player "P1_Brama_2">>
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_2
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "angry">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "angry">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 9>>
 Zamknięte. Kto nie trzyma zapasowego klucza pod wycieraczką?
-<<bramaPuzzle3 Dialogues>>
+<<changeHint Player "P1_Brama_3">>
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_3
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "sad">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "sad">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 10>>
 Nie przejdę bez klucza. Może jakiś się znajdzie w okolicy?
-<<bramaPuzzle1 Dialogues>>
+<<changeHint Player "P1_Brama_2">>
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===
 
 title: P1_Brama_fin
 ---
-<<IconPlayerOn Dialogi>>
-<<ChangePlayerIcon IconsPlayer "happy">>
+//<<IconPlayerOn Dialogi>>
+//<<ChangePlayerIcon IconsPlayer "happy">>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 11>>
 Otwarte. Zobaczymy co kryją te całe niebiosa. 
+<<clearHint Player>>
 <<unblockPlayerMovement Dialogi>>
-<<HidePlayerIcon IconsPlayer>>
+//<<HidePlayerIcon IconsPlayer>>
 ===

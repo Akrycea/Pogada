@@ -40,29 +40,6 @@ public class YarnCommands : MonoBehaviour
         GameObject.Find(character).GetComponent<ClickDialogue>().nazwaDialogu = dialogue;
     }
 
-    //komentarze bohatera na P1_Brama
-    private ClickDialogue brama;
-    [YarnCommand("bramaPuzzle1")]
-    public void bramaPuzzle1()
-    {
-        brama = GameObject.Find("gateCollider").GetComponent<ClickDialogue>();
-        brama.nazwaDialogu = "P1_Brama_1";
-        brama.dialoguePlayed = false;
-    }
-    [YarnCommand("bramaPuzzle2")]
-    public void bramaPuzzle2()
-    {
-        brama = GameObject.Find("gateCollider").GetComponent<ClickDialogue>();
-        brama.nazwaDialogu = "P1_Brama_2";
-        brama.dialoguePlayed = false;
-    }
-    [YarnCommand("bramaPuzzle3")]
-    public void bramaPuzzle3()
-    {
-        brama = GameObject.Find("gateCollider").GetComponent<ClickDialogue>();
-        brama.nazwaDialogu = "P1_Brama_3";
-        brama.dialoguePlayed = false;
-    }
 
     //nastepne klikniecie  na fiolet powinno odpalic budowanie zdan debata
     public FioletDebataPlayer fioletDebataPlayer;

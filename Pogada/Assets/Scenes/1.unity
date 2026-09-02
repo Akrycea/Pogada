@@ -2439,9 +2439,9 @@ MonoBehaviour:
   hintTimer: 15
   nextHint: 
   dialogueRunner: {fileID: 360092058}
+  playingHints: 0
   readyToSayHint: 0
   countingDown: 0
-  outline: {fileID: 1113190389}
 --- !u!114 &40098675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6370,12 +6370,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122892698}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.0722, y: 64.079, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 216.01842, y: 56.715008, z: -21.498545}
   m_LocalScale: {x: 1.0261, y: 1.1129, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222354729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124781098
 GameObject:
@@ -11710,6 +11710,9 @@ Transform:
   - {fileID: 899978041}
   - {fileID: 1316632661}
   - {fileID: 58183734}
+  - {fileID: 979673516}
+  - {fileID: 1700709565}
+  - {fileID: 122892700}
   m_Father: {fileID: 2117876612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225485051
@@ -35912,6 +35915,99 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &732880486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732880487}
+  - component: {fileID: 732880489}
+  - component: {fileID: 732880488}
+  m_Layer: 7
+  m_Name: GateHint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &732880487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732880486}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.8, y: -0.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1056348370}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732880488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732880486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f278ba463037d4faeb0df8e97b4463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextHint: P1_Brama_1
+  hintsPlaying: {fileID: 40098674}
+--- !u!61 &732880489
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732880486}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.95788574}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 8.858551}
+  m_EdgeRadius: 0
 --- !u!1 &740128975
 GameObject:
   m_ObjectHideFlags: 0
@@ -38580,7 +38676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectSprites:
   - {fileID: 0}
-  - {fileID: -5554929186394264782, guid: bdb543d8e638d0345b7eb810cdcc92f4, type: 3}
+  - {fileID: -5554929186394264782, guid: 8a5c7b6e4c5b5f440867e25304d527c2, type: 3}
 --- !u!212 &830231744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38630,7 +38726,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.1402674, y: 6.71}
+  m_Size: {x: 1.3701711, y: 5.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -43744,12 +43840,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979673514}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 90.7, y: 69.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 207.64622, y: 62.236004, z: -21.498545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222354729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987898995
 GameObject:
@@ -46738,6 +46834,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481317849}
+  - {fileID: 732880487}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058073003
@@ -49700,7 +49797,6 @@ GameObject:
   - component: {fileID: 1113190386}
   - component: {fileID: 1113190388}
   - component: {fileID: 1113190387}
-  - component: {fileID: 1113190389}
   - component: {fileID: 1113190390}
   m_Layer: 0
   m_Name: InteractionsBohater
@@ -49801,21 +49897,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1113190389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113190385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a48f60508af0d43a0b1aa49594debc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineWidth: 10
-  interactable: 0
-  alpha: 1
 --- !u!61 &1113190390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52930,7 +53011,7 @@ Transform:
   m_GameObject: {fileID: 1201339012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.1, y: 3.88, z: 0.3880167}
+  m_LocalPosition: {x: 7.44, y: 3.88, z: 0.3880167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52950,7 +53031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectSprites:
   - {fileID: 0}
-  - {fileID: -4848458041922501000, guid: bdb543d8e638d0345b7eb810cdcc92f4, type: 3}
+  - {fileID: -6797533947947338715, guid: 8a5c7b6e4c5b5f440867e25304d527c2, type: 3}
 --- !u!212 &1201339015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53000,7 +53081,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.1402674, y: 6.71}
+  m_Size: {x: 1.6001998, y: 7.6800003}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -74705,12 +74786,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700709563}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.3, y: 61.764244, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 188.24623, y: 54.40025, z: -21.498545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222354729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705101949
 GameObject:
@@ -77888,7 +77969,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1794887887}
   - component: {fileID: 1794887888}
-  - component: {fileID: 1794887889}
   m_Layer: 0
   m_Name: gateCollider
   m_TagString: Untagged
@@ -77957,21 +78037,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.4918823, y: 3.214981}
   m_EdgeRadius: 0
---- !u!114 &1794887889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794887886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2481e91fc086a349926577df3f99ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nazwaDialogu: P1_Brama_1
-  dialogueRunner: {fileID: 360092058}
-  dialoguePlayed: 0
 --- !u!1 &1797658423
 GameObject:
   m_ObjectHideFlags: 0
@@ -92754,7 +92819,4 @@ SceneRoots:
   - {fileID: 434145511}
   - {fileID: 907097187}
   - {fileID: 392574998}
-  - {fileID: 979673516}
-  - {fileID: 1700709565}
-  - {fileID: 122892700}
   - {fileID: 1056348370}

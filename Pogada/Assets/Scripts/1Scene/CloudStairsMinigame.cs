@@ -19,6 +19,7 @@ public class CloudStairsMinigame : MonoBehaviour
             stepsCollider.isTrigger = false;
             blockerCloudsCollider.isTrigger = true;
             hints.clearHint();
+            gameObject.GetComponent<CloudStairsMinigame>().enabled = false;
         }
     }
 }

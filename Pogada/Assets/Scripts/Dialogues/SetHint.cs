@@ -10,6 +10,7 @@ public class SetHint : MonoBehaviour
         {
             hintsPlaying.nextHint = nextHint;
             hintsPlaying.playingHints = true;
+            hintsPlaying.countingDown = true;
             gameObject.SetActive(false);
         }
     }

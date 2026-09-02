@@ -20,7 +20,6 @@ public class Outline : MonoBehaviour
     {
         if (interactable)
         {
-            Debug.Log("mouse over " + gameObject.name);
             ObjectRenderer.material.SetFloat("_OutlineActive", 1.1f);
             ObjectRenderer.material.SetFloat("_OutlineSize", outlineWidth);
             ObjectRenderer.material.SetFloat("_Alphathreshold", alpha);

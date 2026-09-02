@@ -7,10 +7,10 @@ public class HintsPlaying : MonoBehaviour
     public float hintTimer;
     public string nextHint;
     [SerializeField] private DialogueRunner dialogueRunner;
-    [SerializeField] private bool readyToSayHint = false;
     public bool playingHints = false;
+    [SerializeField] private bool readyToSayHint = false;
     public bool countingDown = false;
-    [SerializeField] private Outline outline;
+
 
     private InteractionAnimation anim;
     void Start()
@@ -28,15 +28,6 @@ public class HintsPlaying : MonoBehaviour
                 StartingHint();
             }
         }
-
-        if (readyToSayHint)
-        {
-            anim.wantsToTalk = true;
-        }
-        else
-        {
-            anim.wantsToTalk = false;
-        }
     }
 
     public void StartingHint()
@@ -50,6 +41,7 @@ public class HintsPlaying : MonoBehaviour
         readyToSayHint = false;
         yield return new WaitForSeconds(hintTimer);
         readyToSayHint = true;
+        anim.wantsToTalk = true;
     }
 
     public void OnMouseDown()
@@ -82,9 +74,20 @@ public class HintsPlaying : MonoBehaviour
     [YarnCommand("clearHint")]
     public void clearHint()
     {
-        playingHints = false;
         readyToSayHint = false;
         countingDown = false;
+        playingHints = false;
+        anim.hideTalkBubble();
         gameObject.GetComponent<HintsPlaying>().nextHint = "";
+    }
+
+    //start playing hints
+    [YarnCommand("startHint")]
+    public void startHint(string hint)
+    {
+        gameObject.GetComponent<HintsPlaying>().nextHint = hint;
+        readyToSayHint = false;
+        countingDown = true;
+        playingHints = true;
     }
 }
