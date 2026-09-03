@@ -75,5 +75,10 @@ public class Glass : MonoBehaviour
         {
             gameObject.transform.position = currentPosition;
         }
+
+        if (stateManager.GlassMinigameWon == true)
+        {
+            drag.AllowDrag = false;
+        }
     }
 }
