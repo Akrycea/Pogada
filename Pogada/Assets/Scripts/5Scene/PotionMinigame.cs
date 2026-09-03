@@ -38,6 +38,7 @@ public class PotionMinigame : MonoBehaviour
                 Debug.Log("loss");
                 ResetIngredients();
                 System.Array.Clear(playersItems, 0, playersItems.Length);
+                currentObject = 0;
             }
         }
     }
