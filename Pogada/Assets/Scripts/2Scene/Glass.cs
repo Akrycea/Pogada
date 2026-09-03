@@ -10,15 +10,12 @@ public class Glass : MonoBehaviour
     [SerializeField] private GameObject currentObject;
     [SerializeField] private GameObject picture;
 
-
     [SerializeField] private string WinObject;
-
 
     [SerializeField] GlassMinigameWin glassMinigameWin;
 
-
-
-
+    [SerializeField] private StateManager stateManager;
+    [SerializeField] private Drag drag;
 
     void Start()
     {
@@ -74,7 +71,7 @@ public class Glass : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0) == false)
+        if (Input.GetMouseButton(0) == false && stateManager.GlassMinigameWon == false)
         {
             gameObject.transform.position = currentPosition;
         }

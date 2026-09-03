@@ -27,7 +27,7 @@ public class CollectingOwl : MonoBehaviour
         stateManager.OwlCollected = true;
         owlMinigame.SetActive(true);
         debataPlayer.wygranaMinigierka = true;
-        debataPlayer.sentenceBuilding();
+        //debataPlayer.sentenceBuilding();
         Owl.TurnUIon();
         //dialogue.nazwaDialogu = 
         //ukladanie zdan ^

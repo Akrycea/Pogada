@@ -40,7 +40,7 @@ public class StateManager : MonoBehaviour
     public int FishCollected; // needs to be x amount of fish
     public bool BlueprintCollected;
     public bool OwlCollected;
-    public bool GlassCollected;
+    public int GlassCollected;
 
     //Debates won
     public bool Violaceus1DebateWon;

@@ -13,8 +13,6 @@ public class GlassMinigameWin : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
 
-
-
     public void GoodSpot()
     {
         glassWin++;
@@ -25,8 +23,6 @@ public class GlassMinigameWin : MonoBehaviour
             stateManager.GlassMinigameWon = true;
             debataPlayer.wygranaMinigierka = true;
             dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
-
-            debataPlayer.SentenceBuildingStart();
         }
     }
 
