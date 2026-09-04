@@ -12,7 +12,11 @@ public class TouchTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(changeScene());
+        if (collision.gameObject.name == "Player" )
+        {
+            StartCoroutine(changeScene());
+        }
+            
     }
     IEnumerator changeScene()
     {

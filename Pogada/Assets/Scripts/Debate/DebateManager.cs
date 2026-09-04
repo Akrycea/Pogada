@@ -27,26 +27,27 @@ public class DebateManager : MonoBehaviour
     [SerializeField] private GameObject Dialogi;
     [SerializeField] private GameObject GenUI;
 
+    private bool pogadankaShowed = false;
+
     public void OnMouseDown()
     {
-        StartDebate();
+        //StartDebate();
     }
 
     public void StartDebate()
     {
-        StartCoroutine(ShowPogadanka()); 
-        GenUI.SetActive(false);
+        if(!pogadankaShowed)
+        {
+            StartCoroutine(ShowPogadanka());
+            GenUI.SetActive(false);
+        }    
     }
 
     private IEnumerator ShowPogadanka()
     {
-        //debateDial.StartDialogue("M15_PomocZieleni");
-
         pogadanka.SetActive(true);
         yield return new WaitForSeconds(3f);
         pogadanka.SetActive(false);
-
-        //sentenceBuilding.sentenceBuilding();
     }
 
     public void ShowDebate()

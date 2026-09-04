@@ -27,7 +27,7 @@ public class DebataPlayer : MonoBehaviour
 
     public DebateManager debateManager;
 
-
+    [SerializeField] private bool pogadankaShowed = false;
 
     public void OnMouseDown()
     {
@@ -83,5 +83,6 @@ public class DebataPlayer : MonoBehaviour
     public void SettingDebateWon()
     {
         debateWon = true;
+        pogadankaShowed = false;
     }
 }
