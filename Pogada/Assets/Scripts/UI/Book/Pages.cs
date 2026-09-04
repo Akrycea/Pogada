@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Pages : MonoBehaviour
 {
     [SerializeField] public Sprite[] pagesSprites;
-    private int currentPageIndex = -1;
+    private int currentPageIndex = 0;
     [SerializeField] private Image pageImage;
 
 
@@ -15,7 +15,7 @@ public class Pages : MonoBehaviour
 
     public void UpdatePage()
     {
-        currentPageIndex++;
         pageImage.sprite = pagesSprites[currentPageIndex];
+        currentPageIndex++;
     }
 }
