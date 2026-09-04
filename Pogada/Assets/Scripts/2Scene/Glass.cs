@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Glass : MonoBehaviour
 {
-    private Vector2 startPosition;
+    private Vector3 startPosition;
     [SerializeField]
-    private Vector2 currentPosition;
-    private Vector2 picturePosition;
+    private Vector3 currentPosition;
+    private Vector3 picturePosition;
 
     [SerializeField] private GameObject currentObject;
     [SerializeField] private GameObject picture;
