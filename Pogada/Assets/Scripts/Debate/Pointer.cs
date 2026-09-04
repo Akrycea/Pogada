@@ -8,7 +8,7 @@ public class Pointer : MonoBehaviour
 
     public Transform pointA; // Reference to the starting point
     public Transform pointB; // Reference to the ending point
-    public float moveSpeed = 100f; // Speed at which the pointer moves
+    public float moveSpeed = 15f; // Speed at which the pointer moves
 
     private float direction = 1f; // 1 for moving towards B, -1 for moving towards A
     private RectTransform pointerTransform;
@@ -22,6 +22,8 @@ public class Pointer : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     public GameObject jabOBJ;
+
+    private Transform pointerYPosition;
 
     void Start()
     {
@@ -50,6 +52,9 @@ public class Pointer : MonoBehaviour
         {
             CheckSuccess();
         }
+
+        // Ensure the pointer stays at the same Y position as the safe zone
+        pointerTransform.position = new Vector3(pointerTransform.position.x, safeZone.position.y, pointerTransform.position.z);
     }
 
 
