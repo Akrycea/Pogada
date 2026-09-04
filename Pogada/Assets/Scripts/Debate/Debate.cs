@@ -26,18 +26,21 @@ public class Debate : MonoBehaviour
     [YarnCommand("Ending")]
     public void Ending()
     {
+
+        if (debateNumber == 1)
+        {
+            stateManager.Violaceus1DebateWon = true;
+            dialogueRunner.StartDialogue("M1_PoznanieFioletPoDebacie");
+            debateManager.EndDebate();
+        }
+
         if (YourPoints > EnemyPoints)
         {
             Debug.Log("you won");
             //checks which debate is active and activates the appropriate color
 
-            if(debateNumber == 1)
-            {
-                stateManager.Violaceus1DebateWon = true;
-                dialogueRunner.StartDialogue("M1_PoznanieFioletPoDebacie");
-                debateManager.EndDebate();
-            }
-            else if (debateNumber == 2)
+        
+            if (debateNumber == 2)
             {
                 stateManager.ViriDebateWon = true;
                 dialogueRunner.StartDialogue("M15_DebataZielieniPoDebata");
@@ -95,15 +98,24 @@ public class Debate : MonoBehaviour
             }
         }
 
-        if (EnemyPoints > YourPoints || EnemyPoints == YourPoints)
+        if (EnemyPoints > YourPoints || EnemyPoints == YourPoints && debateNumber > 1)
         {
             Debug.Log("you lost");
             debateNumber = debateNumber--;
             playerMovement.canPlayerMove = true;
             turnOffCollider.EnableAllColliders();
         }
+
         YourPoints = 0;
         EnemyPoints = 0;
+        UpdateDebateSliders();
+    }
+
+    // kids points! 10 is max 
+    [YarnCommand("SetKidPoints")]
+    public void SetKidPoints(int points)
+    {
+        EnemyPoints = points;
         UpdateDebateSliders();
     }
 

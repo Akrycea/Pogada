@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class FioletDebataPlayer : MonoBehaviour
 {
@@ -12,8 +13,16 @@ public class FioletDebataPlayer : MonoBehaviour
     public void fioletSentenceBuilding()
     {
         debateManager.StartDebate();
-
+        StartCoroutine(WaitForPogadanka());
         turnOffCollider.DisableAllExceptSpecificTag();
+
+
+    }
+
+    private IEnumerator WaitForPogadanka()
+    {
+        yield return new WaitForSeconds(3f);
+        
         Debug.Log("starting sentence building");
         budowanieZdan1.SetActive(true);
         UI.SetActive(true);
@@ -21,3 +30,5 @@ public class FioletDebataPlayer : MonoBehaviour
         playerMovement.canPlayerMove = false;
     }
 }
+
+
