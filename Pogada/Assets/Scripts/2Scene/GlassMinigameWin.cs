@@ -12,6 +12,8 @@ public class GlassMinigameWin : MonoBehaviour
 
     public DialogueRunner dialogueRunner;
 
+    [SerializeField] private GameObject Violaceus;
+
 
     public void GoodSpot()
     {
@@ -23,6 +25,8 @@ public class GlassMinigameWin : MonoBehaviour
             stateManager.GlassMinigameWon = true;
             debataPlayer.wygranaMinigierka = true;
             dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
+
+            Violaceus.SetActive(true);
         }
     }
 

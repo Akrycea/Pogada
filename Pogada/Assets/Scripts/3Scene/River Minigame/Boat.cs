@@ -10,7 +10,10 @@ public class Boat : MonoBehaviour
 
     void OnMouseDown()
     {
-        boatMovement.enabled = true;
+        if (!isRunning)
+        {
+            boatMovement.enabled = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
