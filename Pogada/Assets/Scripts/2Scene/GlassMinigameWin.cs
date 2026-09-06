@@ -19,7 +19,7 @@ public class GlassMinigameWin : MonoBehaviour
     {
         glassWin++;
 
-        if (glassWin == 4)
+        if (glassWin == 4 && Input.GetMouseButton(0))
         {
             Debug.Log("glass won");
             stateManager.GlassMinigameWon = true;

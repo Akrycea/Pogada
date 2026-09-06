@@ -1,29 +1,27 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class FioletDisappearing : MonoBehaviour
 {
     [SerializeField] private GameObject fiolet;
     [SerializeField] private KidRunAway fioletRunAway;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "InteractionsBohater")
         {
             fioletRunAway.kidRunAway();
-            fiolet.SetActive(false);
+            StartCoroutine(WaitRunAway());
         }
 
+        IEnumerator WaitRunAway()
+        {
+            yield return new WaitForSeconds(2);
+            fiolet.SetActive(false);
+        }
     }
+
 }
+

@@ -83,6 +83,6 @@ public class DebataPlayer : MonoBehaviour
     public void SettingDebateWon()
     {
         debateWon = true;
-        pogadankaShowed = false;
+        pogadankaShowed = true;
     }
 }

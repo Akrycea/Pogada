@@ -104,6 +104,7 @@ public class Debate : MonoBehaviour
             debateNumber = debateNumber--;
             playerMovement.canPlayerMove = true;
             turnOffCollider.EnableAllColliders();
+            debateManager.EndDebate();
         }
 
         YourPoints = 0;

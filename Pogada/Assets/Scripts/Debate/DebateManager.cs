@@ -27,7 +27,7 @@ public class DebateManager : MonoBehaviour
     [SerializeField] private GameObject Dialogi;
     [SerializeField] private GameObject GenUI;
 
-    private bool pogadankaShowed = false;
+    public bool pogadankaShowed = false;
 
     public void OnMouseDown()
     {
