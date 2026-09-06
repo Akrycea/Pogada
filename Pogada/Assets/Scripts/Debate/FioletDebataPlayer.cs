@@ -10,6 +10,9 @@ public class FioletDebataPlayer : MonoBehaviour
     [SerializeField] private DebateManager debateManager;
     [SerializeField] private GameObject UI;
 
+    [SerializeField] private BookBehavior bookBehavior;
+    [SerializeField] private GameObject GeneralUI;
+
     public void fioletSentenceBuilding()
     {
         debateManager.StartDebate();
@@ -28,6 +31,9 @@ public class FioletDebataPlayer : MonoBehaviour
         UI.SetActive(true);
         Debug.Log("blocking player movement");
         playerMovement.canPlayerMove = false;
+        GeneralUI.SetActive(false);
+
+        bookBehavior.OpenBook();
     }
 }
 

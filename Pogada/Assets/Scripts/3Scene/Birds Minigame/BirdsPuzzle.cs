@@ -17,6 +17,8 @@ public class BirdsPuzzle : MonoBehaviour
     [SerializeField] private bool Win = false;
     [SerializeField] private bool WinAnimPlayed = false;
 
+    [SerializeField] private StateManager stateManager;
+
 
     void Start()
     {
@@ -70,7 +72,7 @@ public class BirdsPuzzle : MonoBehaviour
             gameObject.GetComponent<BirdsPuzzle>().enabled = false;
         }
 
-        if (Win == true && WinAnimPlayed == false && Input.GetMouseButton(0) == false)
+        if (Win == true && WinAnimPlayed == false && Input.GetMouseButton(0) == false && stateManager.zielony == true)
         {
             gameObject.GetComponent<InteractionAnimation>().shineAnim();
             WinAnimPlayed = true;

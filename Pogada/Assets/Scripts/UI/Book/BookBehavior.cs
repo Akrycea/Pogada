@@ -18,6 +18,8 @@ public class BookBehavior : MonoBehaviour
     [SerializeField] private TurnOffCollider turnOffCollider;
     [SerializeField] private GameObject UI;
 
+    [SerializeField] private bool wasUIon;
+
     void Start()
     {
         totalPages = playerPages.Length;
@@ -29,6 +31,15 @@ public class BookBehavior : MonoBehaviour
         Journal.SetActive(true);
         JournalButton.SetActive(false);
 
+        if (UI.activeSelf)
+        {
+            wasUIon = true;
+        }
+        else
+        {
+            wasUIon = false;
+        }
+
         turnOffCollider.DisableAllExceptSpecificTag();
         UI.SetActive(false);
     }
@@ -39,7 +50,15 @@ public class BookBehavior : MonoBehaviour
         JournalButton.SetActive(true);
 
         turnOffCollider.EnableAllColliders();
-        UI.SetActive(true);
+
+        if (wasUIon)
+        {
+            UI.SetActive(true);
+        }
+        else
+        {
+            UI.SetActive(false);
+        }
     }
 
 
