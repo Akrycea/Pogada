@@ -33,10 +33,6 @@ public class DebataPlayer : MonoBehaviour
     {
         if (wygranaMinigierka)
         {
-            //debateManager.StartDebate();
-            ////sentenceBuilding();
-            //StartCoroutine(WaitForPogadanka());
-
             SentenceBuildingStart();
         }
     }

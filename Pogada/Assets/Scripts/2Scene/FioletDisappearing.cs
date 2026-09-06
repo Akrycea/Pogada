@@ -18,7 +18,7 @@ public class FioletDisappearing : MonoBehaviour
 
         IEnumerator WaitRunAway()
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(5);
             fiolet.SetActive(false);
         }
     }
