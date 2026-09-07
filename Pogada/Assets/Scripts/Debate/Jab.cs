@@ -20,7 +20,7 @@ public class Jab : MonoBehaviour
 
         Debug.Log("Jab command executed with good: " + good + " and bad: " + bad);
 
-        StartCoroutine(JabTimer());
+        //StartCoroutine(JabTimer());
     }
     private IEnumerator JabTimer()
     {

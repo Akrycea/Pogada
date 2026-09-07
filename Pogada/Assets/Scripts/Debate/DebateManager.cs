@@ -36,11 +36,11 @@ public class DebateManager : MonoBehaviour
 
     public void StartDebate()
     {
-        if(!pogadankaShowed)
+        if (!pogadankaShowed)
         {
             StartCoroutine(ShowPogadanka());
-            GenUI.SetActive(false);
-        }    
+            //GenUI.SetActive(false);
+        }
     }
 
     private IEnumerator ShowPogadanka()

@@ -79,4 +79,10 @@ public class Pointer : MonoBehaviour
         dialogueRunner.StartDialogue(bad);
         jabOBJ.SetActive(false);
     }
+
+    [YarnCommand("ChangePointerSpeed")]
+    public void ChangePointerSpeed()
+    {
+        moveSpeed = 30f;
+    }
 }

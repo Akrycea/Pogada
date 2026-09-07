@@ -29,6 +29,9 @@ public class DebataPlayer : MonoBehaviour
 
     [SerializeField] private bool pogadankaShowed = false;
 
+    [SerializeField] private GameObject pogadanka;
+    [SerializeField] private GameObject genUI;
+
     public void OnMouseDown()
     {
         if (wygranaMinigierka)
@@ -45,8 +48,14 @@ public class DebataPlayer : MonoBehaviour
 
     private IEnumerator WaitForPogadanka()
     {
-        yield return new WaitForSeconds(3f);
-        sentenceBuilding();
+        if (debateWon == false)
+        {
+            //pogadanka.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            //pogadanka.SetActive(false);
+            //genUI.SetActive(false);
+            sentenceBuilding();
+        }
     }
 
     public void sentenceBuilding()
@@ -60,18 +69,21 @@ public class DebataPlayer : MonoBehaviour
             Debug.Log("blocking player movement");
             playerMovement.canPlayerMove = false;
             playedDebates++;
+            genUI.SetActive(false);
         }
         else if (wygranaMinigierka && playedDebates == 1 && !debateWon)
         {
             budowanieZdan2.SetActive(true);
             UI2.SetActive(true);
             playedDebates++;
+            genUI.SetActive(false);
         }
         else if (wygranaMinigierka && playedDebates >= 2 && !debateWon)
         {
             budowanieZdan3.SetActive(true);
             UI3.SetActive(true);
             playedDebates++;
+            genUI.SetActive(false);
         }
     }
 
