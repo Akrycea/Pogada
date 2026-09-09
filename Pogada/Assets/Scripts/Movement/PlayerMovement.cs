@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //deklaracje do chodzenia
     private Rigidbody2D rbPlayer;
-    float speedX;
+    public float speedX;
     float speedY;
     public float movSpeed;
     private Vector2 newVelocity;

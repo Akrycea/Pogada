@@ -6,7 +6,7 @@ using UnityEngine;
 public class LoopShortSound : MonoBehaviour
 {
     private AudioSource audioSource;
-    [SerializeField] private bool playing;
+    public bool playing;
     [SerializeField] float maxQuietTime;
     [SerializeField] float minQuietTime;
     public AudioClip[] sfxs;
