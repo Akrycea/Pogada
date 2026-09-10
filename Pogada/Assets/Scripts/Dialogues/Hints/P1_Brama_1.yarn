@@ -41,6 +41,7 @@ title: P1_Brama_fin
 ---
 //<<IconPlayerOn Dialogi>>
 //<<ChangePlayerIcon IconsPlayer "happy">>
+<<playSFX Dialogi QuestCompleteSound>>
 <<clearHint Player>>
 <<blockPlayerMovement Dialogi>>
 <<voiceline Player 11>>

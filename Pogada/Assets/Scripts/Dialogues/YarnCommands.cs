@@ -40,6 +40,11 @@ public class YarnCommands : MonoBehaviour
         GameObject.Find(character).GetComponent<ClickDialogue>().nazwaDialogu = dialogue;
     }
 
+    [YarnCommand("playSFX")]
+    public void playThisSfx(string audioSource)
+    {
+        GameObject.Find(audioSource).GetComponent<AudioSource>().Play();
+    }
 
     //nastepne klikniecie  na fiolet powinno odpalic budowanie zdan debata
     public FioletDebataPlayer fioletDebataPlayer;

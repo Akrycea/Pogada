@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class CloudStairsMinigame : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class CloudStairsMinigame : MonoBehaviour
     [SerializeField] private Collider2D stepsCollider;
     [SerializeField] private Collider2D blockerCloudsCollider;
     private HintsPlaying hints;
+
+    [SerializeField] DialogueRunner dialogueRunner;
     private void Start()
     {
         hints = GameObject.Find("Player").GetComponent<HintsPlaying>();
@@ -19,6 +22,7 @@ public class CloudStairsMinigame : MonoBehaviour
             stepsCollider.isTrigger = false;
             blockerCloudsCollider.isTrigger = true;
             hints.clearHint();
+            dialogueRunner.StartDialogue("P0_Chmury_fin");
             gameObject.GetComponent<CloudStairsMinigame>().enabled = false;
         }
     }

@@ -7,6 +7,7 @@ public class DebataPlayer : MonoBehaviour
 {
     [SerializeField]
     private PlayerMovement playerMovement;
+    private HintsPlaying hintsPlaying;
     public StateManager stateManager;
     public bool wygranaMinigierka;
 
@@ -42,6 +43,8 @@ public class DebataPlayer : MonoBehaviour
 
     public void SentenceBuildingStart()
     {
+        hintsPlaying = GameObject.Find("Player").GetComponent<HintsPlaying>();
+        hintsPlaying.clearHint();
         debateManager.StartDebate();
         StartCoroutine(WaitForPogadanka());
     }
