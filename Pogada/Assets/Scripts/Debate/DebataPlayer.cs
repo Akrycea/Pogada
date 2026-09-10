@@ -33,6 +33,8 @@ public class DebataPlayer : MonoBehaviour
     [SerializeField] private GameObject pogadanka;
     [SerializeField] private GameObject genUI;
 
+    [SerializeField] private MusicPlay musicPlay;
+
     public void OnMouseDown()
     {
         if (wygranaMinigierka)
@@ -43,6 +45,8 @@ public class DebataPlayer : MonoBehaviour
 
     public void SentenceBuildingStart()
     {
+        musicPlay = GameObject.Find("StaticSounds").GetComponent<MusicPlay>();
+        musicPlay.playNewTrack("Debate");
         hintsPlaying = GameObject.Find("Player").GetComponent<HintsPlaying>();
         hintsPlaying.clearHint();
         debateManager.StartDebate();
@@ -55,6 +59,7 @@ public class DebataPlayer : MonoBehaviour
         {
             //pogadanka.SetActive(true);
             yield return new WaitForSeconds(3f);
+            //MusicManager.Instance.PlayMusic("Debate");
             //pogadanka.SetActive(false);
             //genUI.SetActive(false);
             sentenceBuilding();

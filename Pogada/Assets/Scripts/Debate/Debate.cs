@@ -113,6 +113,7 @@ public class Debate : MonoBehaviour
 
         YourPoints = 0;
         EnemyPoints = 0;
+        MusicManager.Instance.PlayMusic("Entrance");
         UpdateDebateSliders();
     }
 

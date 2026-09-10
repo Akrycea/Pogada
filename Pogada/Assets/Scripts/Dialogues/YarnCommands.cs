@@ -53,7 +53,7 @@ public class YarnCommands : MonoBehaviour
     {
         //fioletdebata = GameObject.Find("Fiolet").GetComponent<DebataPlayer>();
         //fioletdebata.wygranaMinigierka = true;
-
+        MusicManager.Instance.PlayMusic("Debate");
         fioletDebataPlayer.fioletSentenceBuilding();
     }
 

@@ -5,8 +5,11 @@ using UnityEngine.Video;
 
 public class CutscenePlaying : MonoBehaviour
 {
+    [SerializeField] MusicPlay musicPlay;
     private VideoPlayer vidPlayer;
     [SerializeField] private float cutsceneDuration;
+
+    public string trackName;
     void Start()
     {
         vidPlayer = gameObject.GetComponent<VideoPlayer>();
@@ -14,6 +17,7 @@ public class CutscenePlaying : MonoBehaviour
 
     public void PlayCutscene()
     {
+        musicPlay.playNewTrack(trackName);
         vidPlayer.Play();
         StartCoroutine(awaitCutsceneEnd());
     }
