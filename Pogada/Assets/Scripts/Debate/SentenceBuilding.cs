@@ -50,6 +50,14 @@ public class SentenceBuilding : MonoBehaviour
     public string nazwaDialoguMID;
     public string nazwaDialoguBAD;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) && gameObject.activeSelf)
+        {
+            checkSentence();
+        }
+    }
+
     //tu mozna zrobic ze musisz zaliczyc kilka pod rzad dobrze
     public void checkSentence()
     {
