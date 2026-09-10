@@ -15,6 +15,8 @@ public class BookBehavior : MonoBehaviour
     [SerializeField] private GameObject Journal;
     [SerializeField] private GameObject JournalButton;
 
+    [SerializeField] private PlayerMovement playerMovement;
+
     [SerializeField] private TurnOffCollider turnOffCollider;
     [SerializeField] private GameObject UI;
 
@@ -24,6 +26,25 @@ public class BookBehavior : MonoBehaviour
     {
         totalPages = playerPages.Length;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && Journal.activeSelf)
+        {
+            CloseBook();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && Journal.activeSelf)
+        {
+            LeftPage();
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) && Journal.activeSelf)
+        {
+            RightPage();
+        }
+    }
+    
 
     [YarnCommand("OpenBook")]
     public void OpenBook()
@@ -42,6 +63,8 @@ public class BookBehavior : MonoBehaviour
 
         turnOffCollider.DisableAllExceptSpecificTag();
         UI.SetActive(false);
+
+        playerMovement.canPlayerMove = false;
     }
 
     public void CloseBook()
@@ -59,7 +82,10 @@ public class BookBehavior : MonoBehaviour
         {
             UI.SetActive(false);
         }
+
+        playerMovement.canPlayerMove = true;
     }
+
 
 
     public void LeftPage()

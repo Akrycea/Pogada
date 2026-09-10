@@ -18435,7 +18435,7 @@ MonoBehaviour:
   - {fileID: 1274437476}
   - {fileID: 882699025}
   - {fileID: 1101784262}
-  - {fileID: 1006129566}
+  - {fileID: 467040803}
   - {fileID: 33671718}
   - {fileID: 904568231}
   startPosition: {x: 0, y: 0, z: 0}
@@ -27703,7 +27703,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467040799}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -27752,7 +27752,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -27768,11 +27768,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.13804626, y: 0.27032638}
-      - {x: -0.3988703, y: 0.17097071}
-      - {x: -0.19336694, y: -0.118784785}
-      - {x: 0.114483, y: -0.118784666}
-      - {x: 0.3397088, y: 0.17097062}
+    - - {x: -1.3826833, y: 0.45689464}
+      - {x: -1.9538107, y: 0.6236198}
+      - {x: -2.560268, y: -0.315858}
+      - {x: -1.8230823, y: -0.51996636}
   m_UseDelaunayMesh: 0
 --- !u!212 &467040802
 SpriteRenderer:
@@ -43181,6 +43180,7 @@ MonoBehaviour:
   - {fileID: 963783893}
   Journal: {fileID: 1369826518}
   JournalButton: {fileID: 579194678}
+  playerMovement: {fileID: 0}
   turnOffCollider: {fileID: 905840120}
   UI: {fileID: 844744080}
   wasUIon: 0
@@ -115044,7 +115044,10 @@ MonoBehaviour:
   - "WYJD\u0179"
   - "PROSZ\u0118"
   rightAnswer4:
-  - 
+  - "WYJD\u0179"
+  - "PROSZ\u0118"
+  - DO
+  - NAS
   rightAnswer5:
   - 
   rightAnswer6:
