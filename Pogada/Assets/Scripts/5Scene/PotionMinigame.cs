@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro.Examples;
@@ -18,9 +19,13 @@ public class PotionMinigame : MonoBehaviour
 
     public DialogueRunner dialogueRunner;
 
+    private AudioSource audioSource;
+    [SerializeField] AudioClip[] audioClips;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         playersItems[currentObject] = collision.gameObject;
+        playRandomSound();
         currentObject++;
         collision.gameObject.SetActive(false);
 
@@ -51,6 +56,12 @@ public class PotionMinigame : MonoBehaviour
             //item.SetActive(true);
             item.GetComponent<IngredientControl>().ReturnToPosition();
         }
+    }
+
+    private void  playRandomSound()
+    {
+        AudioClip randomClip = audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
+        audioSource.PlayOneShot(randomClip);
     }
 
 }
