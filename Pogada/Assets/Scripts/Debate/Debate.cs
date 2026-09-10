@@ -23,6 +23,10 @@ public class Debate : MonoBehaviour
 
     [SerializeField] private TurnOffCollider turnOffCollider;
 
+    //for sounds during the debate
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] audioClips;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -134,6 +138,7 @@ public class Debate : MonoBehaviour
     public void GoodChoice()
     {  
         YourPoints += 1;
+        audioSource.PlayOneShot(audioClips[0]);
         UpdateDebateSliders();
     }
 
@@ -141,6 +146,7 @@ public class Debate : MonoBehaviour
     public void BadChoice()
     {     
         EnemyPoints += 1;
+        audioSource.PlayOneShot(audioClips[1]);
         UpdateDebateSliders();
     }
 
@@ -148,6 +154,7 @@ public class Debate : MonoBehaviour
     public void VGoodChoice()
     {
         YourPoints += 2;
+        audioSource.PlayOneShot(audioClips[0]);
         UpdateDebateSliders();
 
     }
@@ -156,6 +163,7 @@ public class Debate : MonoBehaviour
     public void VBadChoice()
     {
         EnemyPoints += 2;
+        audioSource.PlayOneShot(audioClips[1]);
         UpdateDebateSliders();
     }
 
