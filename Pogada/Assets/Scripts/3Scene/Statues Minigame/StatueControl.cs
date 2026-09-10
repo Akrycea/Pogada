@@ -24,6 +24,12 @@ public class StatueControl : MonoBehaviour
 
     public ShowBlueprints showBlueprints;
 
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void Update()
     {
@@ -61,11 +67,18 @@ public class StatueControl : MonoBehaviour
     {
         if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
         {
-            dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
-            dialogueRunner.StartDialogue("P3_Statua_fin");
-            //dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
-            //Czerwony.SetActive(true);
+            StartCoroutine(winningStatues());
         }
+    }
+
+    IEnumerator winningStatues()
+    {
+        audioSource.Play();
+        yield return new WaitForSeconds(1.5f);
+        dialogueRunner = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+        dialogueRunner.StartDialogue("P3_Statua_fin");
+        //dialogueRunner.StartDialogue("D7_PoznanieCzerwieni");
+        //Czerwony.SetActive(true);
     }
 
     [YarnCommand("RobertAppear")]
