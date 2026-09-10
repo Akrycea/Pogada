@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CollectingGlass : MonoBehaviour
@@ -7,8 +8,9 @@ public class CollectingGlass : MonoBehaviour
 
     private void OnMouseDown()
     {
-        gameObject.SetActive(false);
-        stateManager.GlassCollected++;
+        StartCoroutine(wait());
+        //gameObject.SetActive(false);
+        //stateManager.GlassCollected++;
 
         //if (collectedGlass < 4)
         //{
@@ -20,6 +22,13 @@ public class CollectingGlass : MonoBehaviour
         //    GameObject.Find("Player").GetComponent<HintsPlaying>().changeHint("P7_DrzwiFiolet_2");
         //}
         //    
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.6f);
+        gameObject.SetActive(false);
+        stateManager.GlassCollected++;
     }
 
 }
