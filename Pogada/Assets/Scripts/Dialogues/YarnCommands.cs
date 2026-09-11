@@ -306,6 +306,7 @@ public class YarnCommands : MonoBehaviour
     IEnumerator waitStop()
     {
         yield return new WaitForSeconds(waitTime);
+        GameObject.Find("Icons").SetActive(false);
         dialRunner.Stop();
     }
 }
