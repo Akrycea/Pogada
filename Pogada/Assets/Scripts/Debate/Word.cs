@@ -9,10 +9,13 @@ public class Word : MonoBehaviour
 
     private void OnMouseDown()
     {
-        sentenceScript.sentence.Add(gameObject.name);
-        Debug.Log("Added word '" + gameObject.name + "' to sentence.");
+        if (sentenceScript.sentence.Count < 10)
+        {
+            sentenceScript.sentence.Add(gameObject.name);
+            //Debug.Log("Added word '" + gameObject.name + "' to sentence.");
 
-        budowaneZdanieUI.text = budowaneZdanieUI.text + gameObject.name + " ";
+            //budowaneZdanieUI.text = budowaneZdanieUI.text + gameObject.name + " ";
+        }
 
     }
 }

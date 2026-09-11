@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class SentenceBuilding : MonoBehaviour
 {
@@ -52,6 +53,13 @@ public class SentenceBuilding : MonoBehaviour
 
     private void Update()
     {
+
+        budowaneZdanieUI.text = ""; //Clear the text
+        foreach (string item in sentence)
+        {//Add each item to the text
+            budowaneZdanieUI.text += item.ToString() + " ";
+        }
+
         if (Input.GetKeyDown(KeyCode.Return) && gameObject.activeSelf)
         {
             checkSentence();
@@ -199,4 +207,14 @@ public class SentenceBuilding : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+
+    private string selectedWord;
+    public void deleteOneWord()
+    {
+        //int num = Mathf.RoundToInt(UnityEngine.Random.Range(0, sentence.Count - 1));
+        int num = Mathf.RoundToInt(sentence.Count - 1);
+        selectedWord = sentence[num];
+        sentence.RemoveAt(num);
+      //  budowaneZdanieUI.text = budowaneZdanieUI.text - sentence[num];
+    }
 }
