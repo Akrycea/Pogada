@@ -34,31 +34,31 @@ title: M_1DebataZielieni1
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Miałeś nadzieję, że pogodzą się jeśli wyczyścisz i oddasz Perełkę [bl]Liv[/bl]?
 	<<voiceline Player 88>>
-	<<wait 3>>
+	<<wait 4.3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni1_1>>
 ->Co ma piernik do wiatraka?
 	<<voiceline Player 89>>
-	<<wait 2>>
+	<<wait 1.7>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
 ->To słaby pomysł.
 	<<voiceline Player 90>>
-	<<wait 2>>
+	<<wait 1.3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
 ->Czemu twoja interwencja miałaby naprawić sytuację?
 	<<voiceline Player 91>>
-	<<wait 2>>
+	<<wait 3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni1_1>>
 ->Nie rozwiązuj problemów innych osób.
 	<<voiceline Player 91>>
-	<<wait 2>>
+	<<wait 2.4>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni1_2>>
@@ -87,31 +87,31 @@ title: M15_DebataZielieni2
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Każ [r]Robertowi[/r] wyczyścić pluszaka.
 	<<voiceline Player 93>>
-	<<wait 2>>
+	<<wait 2.1>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Po prostu porozmawiaj z [r]Robertem[/r].
 	<<voiceline Player 94>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni2_1>>
 ->Powinieneś zostawić Perełkę.
 	<<voiceline Player 95>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Powinieneś zostawić [bl]Liv[/bl] w spokoju.
 	<<voiceline Player 96>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni2_2>>
 ->Umycie Perełki chyba nie pomoże.
 	<<voiceline Player 97>>
-	<<wait 2>>
+	<<wait 2.4>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni2_1>>
@@ -141,31 +141,31 @@ title: M15_DebataZielieni3
 <<ChangeDebateIcon DebateChildren "Viri" "angry">>
 ->[bl]Liv[/bl] i [r]Robert[/r] powinni sami o siebie zadbać.
 	<<voiceline Player 98>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni3_1>>
 ->Problemem jest [r]Robert[/r].
 	<<voiceline Player 99>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
 ->Problemem jest zszarpane zaufanie [bl]Liv[/bl] i [r]Roberta[/r].
 	<<voiceline Player 100>>
-	<<wait 2>>
+	<<wait 3.2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni3_1>>
 ->Zabawki niczego nie naprawią.
 	<<voiceline Player 101>>
-	<<wait 2>>
+	<<wait 1.9>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
 ->Problemem jest rozbita rzeźba [r]Roberta[/r].
 	<<voiceline Player 102>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni3_2>>
@@ -193,31 +193,31 @@ title: M15_DebataZielieni4
 <<ChangeDebateIcon DebateChildren "Viri" "sad">>
 ->Perełka nie ma z tą relacją nic wspólnego.
 	<<voiceline Player 103>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
 ->Ich relację mogą naprawić tylko oni sami.
 	<<voiceline Player 104>>
-	<<wait 2>>
+	<<wait 2.7>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni4_1>>
 ->Ich relacja to nie twoja sprawa.
 	<<voiceline Player 105>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
 ->Marnujesz swój czas.
 	<<voiceline Player 106>>
-	<<wait 2>>
+	<<wait 1.4>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni4_2>>
 ->Nic tutaj nie zdziałasz.
 	<<voiceline Player 107>>
-	<<wait 2>>
+	<<wait 1.5>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni4_1>>
@@ -245,31 +245,31 @@ title: M15_DebataZielieni5
 <<ChangeDebateIcon DebateChildren "Viri" "angry">>
 ->Wystarczy zmusić ich do rozmowy.
 	<<voiceline Player 108>>
-	<<wait 2>>
+	<<wait 1.9>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
 ->Możemy spróbować porozmawiać z [r]Robertem[/r].
 	<<voiceline Player 109>>
-	<<wait 2>>
+	<<wait 2.3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M15_DebataZielieni5_1>>
 ->Może to po prostu nieporozumienie.
 	<<voiceline Player 110>>
-	<<wait 2>>
+	<<wait 2.3>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>
 ->Róbmy za mediatorów.
 	<<voiceline Player 111>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<ChangeDebatePlayerIcon DebatePlayer "understamdtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M15_DebataZielieni5_1>>
 ->Nie możesz naprawiać zabawek innych dzieci.
 	<<voiceline Player 112>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M15_DebataZielieni5_2>>

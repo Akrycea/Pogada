@@ -29,35 +29,35 @@ title: M32_PogodzenieBlekit1
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 247>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_1>>
 ->Co za różnica?
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 248>>
-	<<wait 2>>
+	<<wait 1.2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Nie cieszysz się do Chmurki?
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 249>>
-	<<wait 2>>
+	<<wait 1.6>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->Ja się w to nie mieszam.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 250>>
-	<<wait 2>>
+	<<wait 1.4>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_2>>
 ->[o]Lute[/o] jest trochę nieśmiała, to wszystko.
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 251>>
-	<<wait 2>>
+	<<wait 2.8>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit1_1>>
 ===
@@ -86,7 +86,7 @@ title: M32_PogodzenieBlekit2
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 252>>
-	<<wait 2>>
+	<<wait 1.4>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Twoje wymagania nie pomagają.
@@ -100,21 +100,21 @@ title: M32_PogodzenieBlekit2
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 254>>
-	<<wait 2>>
+	<<wait 1.5>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_1>>
 ->Przeprosiny to przeprosiny.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 255>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_2>>
 ->Pomysł przeprosin jest jej.
 	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 256>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit2_1>>
 ===
@@ -143,35 +143,35 @@ title: M32_PogodzenieBlekit3
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 257>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Najważniejsze, że jest.
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 258>>
-	<<wait 2>>
+	<<wait 1.6>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_1>>
 ->Daj jej spokój.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 259>>
-	<<wait 2>>
+	<<wait 1.2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Nie musi mówić za siebie.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 260>>
-	<<wait 2>>
+	<<wait 1.6>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_2>>
 ->Musisz dać jej szansę zebrać się w sobie.
 	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 261>>
-	<<wait 2>>
+	<<wait 2.5>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit3_1>>
 ===
@@ -221,35 +221,35 @@ title: M32_PogodzenieBlekit4
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 262>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Najważniejsze, że zwierzakowi nic się nie stało.
 	<<ChangeDebateIcon DebateChildren "Lus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 263>>
-	<<wait 2>>
+	<<wait 2.4>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ->Szukała rozwiązania, specjalnie poprosiła mnie o pomoc, żeby się dogadać.
 	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 264>>
-	<<wait 2>>
+	<<wait 4.4>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Przeprosiny są jej, nie moje, obiecuję.
 	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 265>>
-	<<wait 2>>
+	<<wait 2.4>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_1>>
 ->Obrażanie się nie jest rozwiązaniem.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 266>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit4_2>>
 ===
@@ -278,14 +278,14 @@ title: M32_PogodzenieBlekit5
 	<<ChangeDebateIcon DebateChildren "Lus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 267>>
-	<<wait 2>>
+	<<wait 3.7>>
 	<<VGoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->[o]Lute[/o] potrzebuje wsparcia, ale to nic złego.
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 268>>
-	<<wait 2>>
+	<<wait 2.8>>
 	<<GoodChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_1>>
 ->Licza się jej słowa, nie kompani.
@@ -306,7 +306,7 @@ title: M32_PogodzenieBlekit5
 	<<ChangeDebateIcon DebateChildren "Lus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 271>>
-	<<wait 2>>
+	<<wait 3.2>>
 	<<BadChoice PointMeter>>
 	<<jump M32_PogodzenieBlekit5_2>>
 ===

@@ -27,35 +27,35 @@ title: M1_PoznanieFiolet1
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 12>>
-	<<wait 2>>
+	<<wait 2.8>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->Od kiedy rodzeństwa się kłócą?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 13>>
-	<<wait 2>>
+	<<wait 2.3>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->Co ci zrobił?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 14>>
-	<<wait 2>>
+	<<wait 1.6>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ->O co się pokłóciliście?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 15>>
-	<<wait 2>>
+	<<wait 1.5>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_1>>
 ->O co się darliście?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 16>>
-	<<wait 2>>
+	<<wait 1.6>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet1_2>>
 ===
@@ -82,35 +82,35 @@ title: M1_PoznanieFiolet2
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 17>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Czemu uważasz, że sprawi tym przykrość mamie?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 18>>
-	<<wait 2>>
+	<<wait 2.8>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Każdy ma swoje imię i może robić z nim co chce.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 19>>
-	<<wait 2>>
+	<<wait 3>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_1>>
 ->Wydaje mi się, że waszych rodziców to zupełnie nie interesuje.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 20>>
-	<<wait 2>>
+	<<wait 3.4>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ->Co tobie do tego?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 21>>
-	<<wait 2>>
+	<<wait 1.2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet2_2>>
 ===
@@ -140,35 +140,35 @@ title: M1_PoznanieFiolet3
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 22>>
-	<<wait 2>>
+	<<wait 2.7>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->Kogo obchodzi mama? Jesteście już duzi.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 23>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->To tylko imię.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 24>>
-	<<wait 2>>
+	<<wait 1.3>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ->Może mama cieszyłaby się ze szczęścia [y]Vusa[/y]?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 25>>
-	<<wait 2>>
+	<<wait 2.7>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_1>>
 ->A co, jakbyś ty chciał zmienić imię?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 26>>
-	<<wait 2>>
+	<<wait 2.1>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet3_2>>
 ===
@@ -195,35 +195,35 @@ title: M1_PoznanieFiolet4
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 27>>
-	<<wait 2>>
+	<<wait 3.9>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Czemu jej nie spytacie?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 28>>
-	<<wait 2>>
+	<<wait 1.5>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Jako rodzeństwo powinniście się chyba zawsze wspierać?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 29>>
-	<<wait 2>>
+	<<wait 3.4>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_1>>
 ->Sam sobie wymyśliłeś te zasady.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 30>>
-	<<wait 2>>
+	<<wait 2.1>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_2>>
 ->Chyba ty jesteś bardziej przeciwko temu, niż wasza mama.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 31>>
-	<<wait 2>>
+	<<wait 3.2>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet4_1>>
 ===
@@ -253,35 +253,35 @@ title: M1_PoznanieFiolet5
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 32>>
-	<<wait 2>>
+	<<wait 2.5>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ->Krzyczenie na niego nikomu nie pomoże.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 33>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<VGoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Światu brakuje kolorów, a wy skupiacie się na imionach?
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 34>>
-	<<wait 2>>
+	<<wait 3.8>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ->To nie jest aż tak poważny temat, żeby się o to kłócić.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 35>>
-	<<wait 2>>
+	<<wait 3.4>>
 	<<GoodChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_1>>
 ->Ta cała kłótnia nie ma sensu.
 	<<ChangeDebateIcon DebateChildren "Violaceus" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 36>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<BadChoice PointMeter>>
 	<<jump M1_PoznanieFiolet5_2>>
 ===

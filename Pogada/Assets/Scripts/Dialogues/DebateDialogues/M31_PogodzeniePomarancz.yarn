@@ -30,35 +30,35 @@ title: M31_DebataPomarancz1
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 212>>
-	<<wait 2>>
+	<<wait 1.2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Musisz powiedzieć jej co się stało.
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 213>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_1>>
 ->Nie masz się czego bać.
 	<<ChangeDebateIcon DebateChildren "Lute" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 214>>
-	<<wait 2>>
+	<<wait 1.7>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->To co ze zwierzakiem?
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 215>>
-	<<wait 2>>
+	<<wait 1.5>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_2>>
 ->Ktoś powinien oddać [lb]Lus[/lb] jej zwierzaka.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 216>>
-	<<wait 2>>
+	<<wait 2.9>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz1_1>>
 ===
@@ -90,35 +90,35 @@ title: M31_DebataPomarancz2
 	<<ChangeDebateIcon DebateChildren "Lute" "happy">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 217>>
-	<<wait 2>>
+	<<wait 3.5>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Użalanie się nad sobą nie pomoże.
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 218>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może moglibyśmy zrobić to razem?
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 219>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_1>>
 ->Wytłumacz [lb]Lus[/lb] sytuację i sprawa rozwiązana.
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 220>>
-	<<wait 2>>
+	<<wait 3.3>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ->Może [lb]Lus[/lb] miałaby rację.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 221>>
-	<<wait 2>>
+	<<wait 1.7>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz2_2>>
 ===
@@ -147,35 +147,35 @@ title: M31_DebataPomarancz3
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 222>>
-	<<wait 2>>
+	<<wait 2.4>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie wiemy, kiedy wasza mama wróci.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 223>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Nie bądź tchórzem.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 224>>
-	<<wait 2>>
+	<<wait 1.8>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_2>>
 ->Obecnie to my mamy Chmurkę, możemy rozwiązać to tu i teraz.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 225>>
-	<<wait 2>>
+	<<wait 3.6>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_1>>
 ->Ja się wami obecnie zajmuję.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 226>>
-	<<wait 2>>
+	<<wait 2.5>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz3_1>>
 ===
@@ -211,7 +211,7 @@ title: M31_DebataPomarancz4
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 227>>
-	<<wait 2>>
+	<<wait 3.1>>
 	<<VGoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Inne dzieci poradziły sobie same.
@@ -225,21 +225,21 @@ title: M31_DebataPomarancz4
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 229>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie robię niczego za nikogo.
 <<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<voiceline Player 220>>
-	<<wait 2>>
+	<<wait 2.2>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_1>>
 ->Jesteś już na tyle duża, abyś robiła to sama.
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 231>>
-	<<wait 2>>
+	<<wait 3>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ===
@@ -268,14 +268,14 @@ title: M31_DebataPomarancz5
 	<<ChangeDebateIcon DebateChildren "Lute" "sad">>
 	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 232>>
-	<<wait 2>>
+	<<wait 3.5>>
 	<<GoodChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_1>>
 ->Musisz sama rozwiązać ten problem.
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 233>>
-	<<wait 2>>
+	<<wait 2.6>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Ja również porozmawiam z [lb]Lus[/lb].
@@ -289,14 +289,14 @@ title: M31_DebataPomarancz5
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 235>>
-	<<wait 2>>
+	<<wait 3.7>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ->Mogę co najwyżej zanieść tam  Chmurkę, ale to ty się wypowiesz.
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 236>>
-	<<wait 2>>
+	<<wait 3.9>>
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz5_2>>
 ===
