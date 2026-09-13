@@ -8,7 +8,6 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class SentenceBuilding : MonoBehaviour
 {

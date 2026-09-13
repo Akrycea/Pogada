@@ -9,13 +9,25 @@ public class Fish : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private bool LockFishB4red = false;
+
+    public StateManager stateManager;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void OnMouseDown()
     {
-        StartCoroutine(takingFish());
+        if (LockFishB4red && stateManager.czerwony == true)
+        {
+            StartCoroutine(takingFish());
+        }
+        else if (LockFishB4red == false)
+        {
+            StartCoroutine(takingFish());
+        }
+       
     }
 
     IEnumerator takingFish()

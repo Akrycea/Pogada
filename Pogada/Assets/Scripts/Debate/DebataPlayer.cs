@@ -35,11 +35,15 @@ public class DebataPlayer : MonoBehaviour
 
     [SerializeField] private MusicPlay musicPlay;
 
+    [SerializeField] private bool clicked = false;
+
     public void OnMouseDown()
     {
-        if (wygranaMinigierka)
+        if (wygranaMinigierka && clicked == false && debateWon == false)
         {
             SentenceBuildingStart();
+            turnOffCollider.DisableAllExceptSpecificTag();
+            clicked = true;
         }
     }
 
@@ -63,6 +67,8 @@ public class DebataPlayer : MonoBehaviour
             //pogadanka.SetActive(false);
             //genUI.SetActive(false);
             sentenceBuilding();
+            yield return new WaitForSeconds(10f);
+            clicked = false;
         }
     }
 
@@ -99,6 +105,6 @@ public class DebataPlayer : MonoBehaviour
     public void SettingDebateWon()
     {
         debateWon = true;
-        pogadankaShowed = true;
+        //pogadankaShowed = true;
     }
 }

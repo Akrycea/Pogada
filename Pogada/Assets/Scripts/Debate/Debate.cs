@@ -102,10 +102,10 @@ public class Debate : MonoBehaviour
             }
         }
 
-        if (EnemyPoints > YourPoints || EnemyPoints == YourPoints && debateNumber > 1)
+        if (EnemyPoints > YourPoints || EnemyPoints == YourPoints)
         {
             Debug.Log("you lost");
-            debateNumber = debateNumber--;
+            debateNumber = debateNumber - 1;
             playerMovement.canPlayerMove = true;
             turnOffCollider.EnableAllColliders();
             debateManager.EndDebate();

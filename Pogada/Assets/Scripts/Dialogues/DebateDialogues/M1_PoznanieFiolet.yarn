@@ -394,11 +394,13 @@ Bohater: Wszyscy porozmawiamy, jak go znajdę.
 
 <<voiceline Player 46>>
 Bohater: Do później.
-<<RunAway Fiolet>>
-<<runAwayAnim Fiolet>>
+//<<RunAway Fiolet>>
+//<<runAwayAnim Fiolet>>
 <<HidePlayerIcon IconsPlayer>>
 <<unblockPlayerMovement Dialogi>>
 <<EnableColliders StateManager>>
+
+<<UpdateDebateNumber PointMeter>>
 
 <<NewPage UI 3>>
 <<NewPage UI 4>>

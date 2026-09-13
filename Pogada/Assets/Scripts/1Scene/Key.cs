@@ -40,6 +40,8 @@ public class Key : MonoBehaviour
                 dialogueRunner.StartDialogue("P1_Brama_fin");
                 dialoguPlayed=true;
             }
+
+            gameObject.SetActive(false);
         }
 
     }
