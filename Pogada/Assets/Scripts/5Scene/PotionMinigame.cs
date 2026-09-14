@@ -25,7 +25,7 @@ public class PotionMinigame : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         playersItems[currentObject] = collision.gameObject;
-        playRandomSound();
+        //playRandomSound();
         currentObject++;
         collision.gameObject.SetActive(false);
 
