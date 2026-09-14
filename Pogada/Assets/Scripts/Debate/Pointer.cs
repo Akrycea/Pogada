@@ -1,5 +1,6 @@
 using UnityEngine;
 using Yarn.Unity;
+using System.Collections;
 
 public class Pointer : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class Pointer : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     public GameObject jabOBJ;
+    [SerializeField] private GameObject RobertJab;
 
     private Transform pointerYPosition;
 
@@ -66,14 +68,26 @@ public class Pointer : MonoBehaviour
             Debug.Log("Success!");
             dialogueRunner.StartDialogue(good);
             jabOBJ.SetActive(false);
+
+            //StartCoroutine(WaitingForJab());
+            
+
         }
         else
         {
             JabFail();
         }
     }
+    
 
-    public void JabFail()
+    private IEnumerator WaitingForJab()
+    {
+        yield return new WaitForSeconds(3f);
+        RobertJab.SetActive(false);
+    }
+
+
+public void JabFail()
     {
         Debug.Log("Fail!");
         dialogueRunner.StartDialogue(bad);
