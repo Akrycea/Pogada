@@ -63,7 +63,7 @@ title: M5_PogodzenieDzieci1_1
 <<voiceline Żółć2 16>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: To przez moją kłótnię nie ma żółtego, prawda?
-	<<Jab DebataDialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" 3>>
 	
 ===
 
@@ -72,7 +72,7 @@ title: M5_PogodzenieDzieci1_2
 <<voiceline Żółć2 17>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: Kiedy to wszystko moja wina.
-	<<Jab DebataDialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" 3>>
 	
 ===
 
@@ -82,8 +82,8 @@ title: M5_F_Jab_1_1
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Tak, musimy się pogodzić, żeby świat się naprawił.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
-	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
+	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 33>>
 ===
 
 title: M5_F_Jab_1_2
@@ -92,8 +92,8 @@ title: M5_F_Jab_1_2
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Tak, twoje wygłupy zaszły za daleko. Wszystkie kolory wróciły, tylko nie ty.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DialogiDebata "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
-	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" >>
+	<<Jab DialogiDebata "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
+	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
 ===
 
 title: M5_P_Jab_1_1
@@ -153,7 +153,7 @@ title: M5_PogodzenieDzieci2_1
 <<voiceline Żółć2 18>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: Może. Ale jeśli mam tu żyć, to chcę żyć jako [y]Aureus[/y]. Jako ja.
-	<<Jab DebataDialogi "M5_F_Jab_2_1" "M5_F_Jab_2_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_2_1" "M5_F_Jab_2_2" 3>>
 	
 ===
 
@@ -162,7 +162,7 @@ title: M5_PogodzenieDzieci2_2
 <<voiceline Żółć2 19>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Nie. Nie, muszę myśleć też chociaż trochę o sobie.
-	<<Jab DebataDialogi "M5_F_Jab_2_1" "M5_F_Jab_2_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_2_1" "M5_F_Jab_2_2" 3>>
 	
 ===
 
@@ -173,7 +173,7 @@ title: M5_F_Jab_2_1
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: [y]Vus[/y] już nie przesadzaj, przecież jesteś sobą.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" 3>>
 ===
 
 title: M5_F_Jab_2_2
@@ -182,7 +182,7 @@ title: M5_F_Jab_2_2
  <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Vus gdybyś tylko odpuścił to imię, to nie miałbyś żadnego problemu.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" 3>>
 ===
 
 title: M5_B_Jab_1_1
@@ -191,7 +191,7 @@ title: M5_B_Jab_1_1
 <<ChangeJabIcon DebataDialogi "Lus">>
 [lb]Lus[/lb]: Łatwo ci mówić [p]Violaceus[/p], kiedy my nazywamy cię tak, jak ty chcesz.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" 3>>
 ===
 
 title: M5_B_Jab_1_2
@@ -200,7 +200,7 @@ title: M5_B_Jab_1_2
 <<ChangeJabIcon DebataDialogi "Lus">>
 [lb]Lus[/lb]: Naprawdę nie powinieneś się wypowiadać [p]Violaceus[/p]. Wszyscy mówią na ciebie tak, jak lubisz.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" 3>>
 ===
 
 title: M5_F_Jab_3_1
@@ -209,7 +209,7 @@ title: M5_F_Jab_3_1
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Może Vus powinien zrobić dla mnie wyjątek. Ciężko się tak nagle przerzucić, a przecież dla rodziny się robi wyjątki.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" 3>>
 ===
 
 title: M5_F_Jab_3_2
@@ -218,7 +218,7 @@ title: M5_F_Jab_3_2
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: No właśnie, ja nie wybrzydzam, jak niektórzy. Nie zmuszam nikogo do nagłych zmian.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" 3>>
 ===
 
 title: M5_G_Jab_1_1
@@ -278,7 +278,7 @@ title: M5_PogodzenieDzieci3_1
 <<voiceline Żółć2 20>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: Niby tak. Ale, nawet jeśli to głupie, chcę, żeby mój własny brat mnie wspierał. Nie chcę żyć bez niego.
-	<<Jab DebataDialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" 3>>
 	
 ===
 
@@ -287,7 +287,7 @@ title: M5_PogodzenieDzieci3_2
 <<voiceline Żółć2 21>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Chcę, żeby mnie kochał! On powinien mnie kochać, nieważne co!
-	<<Jab DebataDialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_4_1" "M5_F_Jab_4_2" 3>>
 	
 ===
 
@@ -297,7 +297,7 @@ title: M5_F_Jab_4_1
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czemu nagle ta sytuacja spada na mnie?
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
+	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
 
 title: M5_F_Jab_4_2
@@ -306,7 +306,7 @@ title: M5_F_Jab_4_2
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Wspieram cię, po prostu musisz zacząć słuchać!
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" >>
+	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
 
 title: M5_D_Jab_3_1
@@ -314,7 +314,7 @@ title: M5_D_Jab_3_1
 <<voiceline Żółć2 22>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Wiesz co? Ja… Ja się super staram z tobą pogodzić, też musisz się postarać!
-	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" 3>>
 ===
 
 title: M5_D_Jab_3_2
@@ -322,7 +322,7 @@ title: M5_D_Jab_3_2
 <<voiceline Żółć2 23>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Może, skoro tak ci to wszystko przeszkadza, to ty powinieneś stąd sobie pójść!
-	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" 3>>
 ===
 
 title: M5_F_Jab_5_1
@@ -382,7 +382,7 @@ title: M5_PogodzenieDzieci4_1
 <<voiceline Żółć2 24>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: Właśnie! Pomyśl o nas, nie o innych. O mnie.
-	<<Jab DebataDialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" 3>>
 	
 ===
 
@@ -391,7 +391,7 @@ title: M5_PogodzenieDzieci4_2
 <<voiceline Żółć2 25>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Właśnie! Jesteś strasznie… Strasznie samolubny!
-	<<Jab DebataDialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" 3>>
 	
 ===
 
@@ -401,7 +401,7 @@ title: M5_F_Jab_6_1
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czemu nagle wszyscy są przeciwko mnie?
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" 3>>
 ===
 
 title: M5_F_Jab_6_2
@@ -410,7 +410,7 @@ title: M5_F_Jab_6_2
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Przestańcie się jednoczyć przeciwko mnie!
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" 3>>
 ===
 
 title: M5_C_Jab_1_1
@@ -419,7 +419,7 @@ title: M5_C_Jab_1_1
 <<ChangeJabIcon DebataDialogi "Robert">>
 [r]Robert[/r]: Sam zawsze mówisz, że rodzina jest najważniejsza. [y]Aureus[/y] jest równie ważny, co ty.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" 3>>
 ===
 
 title: M5_C_Jab_1_2
@@ -431,7 +431,7 @@ title: M5_C_Jab_1_2
 <<voiceline Czerwony 56>>
 [r]Robert[/r]: Przestań być wredny dla [y]Aureusa[/y] i udawać, że się na ciebie uwzięliśmy.
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" 3>>
 ===
 
 title: M5_Z_Jab_1_1
@@ -440,7 +440,7 @@ title: M5_Z_Jab_1_1
 <<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: [p]Violaceus[/p] proszę? [y]Aureus[/y] wydaje się taki nieszczęśliwy… Przecież ty też nie lubisz jak jest smutny!
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" 3>>
 ===
 
 title: M5_Z_Jab_1_2
@@ -449,7 +449,7 @@ title: M5_Z_Jab_1_2
 <<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: [p]Violaceus[/p], przecież mama nigdy nie miałaby nic przeciwko. Znam ją. Nigdy!
 <<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" >>
+	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" 3>>
 ===
 
 title: M5_F_Jab_7_1

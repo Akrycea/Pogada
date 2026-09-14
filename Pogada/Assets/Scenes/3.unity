@@ -126075,9 +126075,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.06133056
+    y: 0
     width: 1
-    height: 1.1226611
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
@@ -126107,7 +126107,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112.92484, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -136901,6 +136901,8 @@ MonoBehaviour:
   editCamera: {fileID: 1964556286}
   blackoutCanvas: {fileID: 1936845717}
   anim: {fileID: 1957381054}
+  stateManager: {fileID: 905840117}
+  nextCamera: {fileID: 505790734}
 --- !u!212 &1964556284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -137009,7 +137011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964556281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d71c6d23d3126f40b03c5f4682b9146, type: 3}
   m_Name: 

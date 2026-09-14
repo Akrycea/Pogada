@@ -16,6 +16,8 @@ public class OwlWin : MonoBehaviour
     [SerializeField] private GameObject blackoutCanvas;
     [SerializeField] private Animator anim;
 
+    public StateManager stateManager;
+
     private void OnMouseDown()
     {
         Debug.Log("OwlWin Click");
@@ -26,14 +28,14 @@ public class OwlWin : MonoBehaviour
             OwlOnUI.SetActive(false);
             colliders.SetActive(false);
 
-            //tutaj przenies do nastepnej sceny
-            //player.position = teleport.position;
-            //editCamera.ChangeCamera();
+        //tutaj przenies do nastepnej sceny
+        //player.position = teleport.position;
+        //editCamera.ChangeCamera();
 
-        StartCoroutine(changeScene());
-
-
-        //}
+        if (stateManager.LuteDebateWon)
+        {
+            StartCoroutine(changeScene());
+        }
     }
 
     IEnumerator changeScene()
@@ -44,12 +46,25 @@ public class OwlWin : MonoBehaviour
 
         //tutaj przenies do nastepnej sceny
         player.position = teleport.position;
-        editCamera.ChangeCamera();
+        ChangeCamera();
 
         yield return new WaitForSeconds(2);
 
         anim.Play("BlackoutOut");
         yield return new WaitForSeconds(1);
         blackoutCanvas.SetActive(false);
+    }
+
+    [SerializeField] private GameObject nextCamera;
+    public void ChangeCamera()
+    {
+        if (nextCamera.activeSelf == false)
+        {
+            nextCamera.SetActive(true);
+        }
+        else if (nextCamera.activeSelf == true)
+        {
+            nextCamera.SetActive(false);
+        }
     }
 }

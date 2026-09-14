@@ -85,7 +85,7 @@ title: M3_PogodzenieGranat_1
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<voiceline Granat 39>>
 [bl]Liv[/bl]: No i? Pobrudzenie Perełki to i tak jego wina.
-	<<Jab DebataDialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
+	<<Jab DebataDialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" 1>>
 ===
 
 title: M3_PogodzenieGranat_2
@@ -97,7 +97,7 @@ title: M3_PogodzenieGranat_2
 
 <<voiceline Granat 41>>
 [bl]Liv[/bl]: [r]Robert[/r] okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
-	<<Jab DebataDialogi  "M3_C_Jab_1_1" "M3_C_Jab_1_2" >>
+	<<Jab DebataDialogi  "M3_C_Jab_1_1" "M3_C_Jab_1_2" 1>>
 ===
 
 title:M3_C_Jab_1_1
@@ -226,7 +226,7 @@ title: M3_PogodzenieGranat3_1
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 45>>
 [bl]Liv[/bl]: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
-	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
+	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" 1>>
 ===
 
 title: M3_PogodzenieGranat3_2
@@ -235,7 +235,7 @@ title: M3_PogodzenieGranat3_2
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 46>>
 [bl]Liv[/bl]: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
-	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" >>
+	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" 1>>
 ===
 
 title:M3_C_Jab_2_1
@@ -252,7 +252,7 @@ title:M3_C_Jab_2_1
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" 1>>
 ===
 
 title:M3_C_Jab_2_2
@@ -266,7 +266,7 @@ title:M3_C_Jab_2_2
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" 1>>
 ===
 
 title:M3_Z_Jab_1_1

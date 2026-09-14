@@ -130,7 +130,7 @@ title: M2_PoznanieCzerwieni2_1
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 [r]Robert[/r]: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
-	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" 0>>
 ===
 
 title: M2_PoznanieCzerwieni2_2
@@ -139,7 +139,7 @@ title: M2_PoznanieCzerwieni2_2
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 [r]Robert[/r]: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
-	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" >>
+	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" 0>>
 ===
 
 title: M2_Z_Jab_1_1
@@ -265,7 +265,7 @@ title: M2_PoznanieCzerwieni4_1
 
 <<voiceline Czerwony 60>>
 [r]Robert[/r]: Nie o to chodzi! Nikt nie będzie mnie nazywał kłamczuchem!
-	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
+	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" 0>>
 ===
 
 title: M2_PoznanieCzerwieni4_2
@@ -274,7 +274,7 @@ title: M2_PoznanieCzerwieni4_2
 <<ChangeDebateIcon DebateChildren "Robert" "happy">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 [r]Robert[/r]: Ty w ogóle nie próbujesz pomóc! Zachowujesz się tak samo jak [bl]Liv[/bl] i cała reszta!
-	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
+	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" 0>>
 ===
 
 
@@ -289,7 +289,7 @@ title: M2_Z_Jab_2_1
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" >>
+	<<Jab DebataDialogi "M2_C_Jab_1_1" "M2_C_Jab_1_2" 0>>
 ===
 
 title: M2_Z_Jab_2_2
@@ -303,7 +303,7 @@ title: M2_Z_Jab_2_2
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
-	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" >>
+	<<Jab DebataDialogi "M2_Z_Jab_2_1" "M2_Z_Jab_2_2" 0>>
 ===
 
 title: M2_C_Jab_1_1
