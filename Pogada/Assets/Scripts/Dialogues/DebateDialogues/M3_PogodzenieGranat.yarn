@@ -15,7 +15,7 @@
 
 <<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 <<voicelineEnd Granat>>
-<<voiceline Player 172>>
+<<voiceline Player 173>>
 Bohater: To [g]Viri[/g] wyczyścił Perełkę, jemu należą się za to podziękowania.
 
 <<ChangeDebateIcon DebateChildren "Liv" "sadtalk">>
@@ -48,7 +48,7 @@ Bohater: To [g]Viri[/g] wyczyścił Perełkę, jemu należą się za to podzięk
 title: M3_PogodenieGranat1
 ---
 ->[r]Robert[/r] nie kłamał podczas waszej kłótni.
-	<<voiceline Player 173>>
+	<<voiceline Player 172>>
 	<<wait 4.1>>
 	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<VGoodChoice PointMeter>>
