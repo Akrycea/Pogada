@@ -88708,6 +88708,7 @@ GameObject:
   - component: {fileID: 1193450837}
   - component: {fileID: 1193450839}
   - component: {fileID: 1193450838}
+  - component: {fileID: 1193450840}
   m_Layer: 5
   m_Name: widly
   m_TagString: Untagged
@@ -88772,6 +88773,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193450836}
   m_CullTransparentMesh: 1
+--- !u!114 &1193450840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193450836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d94b63ff4682c4ea4882695607c7c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 905840117}
+  sprites:
+  - {fileID: 3307528072835412787, guid: 48e2edd59773ad844bd901077a2343f8, type: 3}
+  - {fileID: 5086690886255336400, guid: 0b41a29a7f0105e4f87ea2dd283616eb, type: 3}
+  - {fileID: 5371412345509669250, guid: ae8f26e54fdd460438c9c7f0bf59937c, type: 3}
+  - {fileID: 21300000, guid: ad7b13284c2e1674e99536b8232e4714, type: 3}
+  - {fileID: -42247810052226467, guid: ebc95103851eaeb41aaed39cfbc02dfe, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spriteRenderer: {fileID: 1193450838}
 --- !u!1 &1194000400
 GameObject:
   m_ObjectHideFlags: 0
@@ -132033,9 +132057,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -1.125
-    width: 0
-    height: 2.25
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
@@ -132065,7 +132089,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.393139, y: 2.2356734, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:

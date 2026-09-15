@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class BirdsPuzzle : MonoBehaviour
 {
@@ -42,12 +43,15 @@ public class BirdsPuzzle : MonoBehaviour
                 Win = true;
             }
         }
-
         
+        if(collision.gameObject == currentObject && currentObject == WinObject && Win == false)
+        {
+            birdsWin.GoodSpot();
+            Win = true;
+        }
     }
 
        
-
     void OnTriggerExit2D(Collider2D collision)
     {
         if (Win == true && collision.gameObject == WinObject)
@@ -74,10 +78,22 @@ public class BirdsPuzzle : MonoBehaviour
 
         if (Win == true && WinAnimPlayed == false && Input.GetMouseButton(0) == false && stateManager.zielony == true)
         {
-            gameObject.GetComponent<InteractionAnimation>().shineAnim();
-            WinAnimPlayed = true;
+            StartCoroutine(PlayAnimation());
         }
     }
+
+        IEnumerator PlayAnimation()
+        {
+            gameObject.GetComponent<InteractionAnimation>().shineAnim();
+            WinAnimPlayed = true;
+            yield return new WaitForSeconds(10f);
+            WinAnimPlayed = false;
+        }   
+
+
+
+
+
 
     private bool hasSaidVoiceline = false;
     private AudioSource audio;
