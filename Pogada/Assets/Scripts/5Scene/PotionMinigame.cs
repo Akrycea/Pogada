@@ -36,7 +36,7 @@ public class PotionMinigame : MonoBehaviour
                 Debug.Log("Win");
                 debataPlayer.wygranaMinigierka = true;
                 dialogueRunner.StartDialogue("P8_Potka_fin");
-                debataPlayer.SentenceBuildingStart();
+                //debataPlayer.SentenceBuildingStart();
             }
             else
             {
