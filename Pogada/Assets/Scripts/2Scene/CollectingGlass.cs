@@ -6,29 +6,26 @@ public class CollectingGlass : MonoBehaviour
     public StateManager stateManager;
     private static int collectedGlass;
 
+    [SerializeField] private GameObject glassUI;
+
+    [SerializeField] private GameObject Spots;
+
     private void OnMouseDown()
     {
-        StartCoroutine(wait());
-        //gameObject.SetActive(false);
-        //stateManager.GlassCollected++;
-
-        //if (collectedGlass < 4)
-        //{
-        //    collectedGlass++;
-        //}
-        //else
-        //{
-        //    stateManager.GlassCollected = true;
-        //    GameObject.Find("Player").GetComponent<HintsPlaying>().changeHint("P7_DrzwiFiolet_2");
-        //}
-        //    
+        StartCoroutine(wait());   
+        
+        if(stateManager.GlassCollected == 4)
+        {
+            Spots.SetActive(true);
+        }
     }
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.3f);
         gameObject.SetActive(false);
         stateManager.GlassCollected++;
+        glassUI.SetActive(true);
     }
 
 }
