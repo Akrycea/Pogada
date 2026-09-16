@@ -309,10 +309,4 @@ public class YarnCommands : MonoBehaviour
         GameObject.Find("Icons").SetActive(false);
         dialRunner.Stop();
     }
-
-    [YarnCommand("changeObjectFuturePosition")]
-    public void changeObjectFuturePosition(string newObjective, string kid)
-    {
-        GameObject.Find(kid).GetComponent<KidRunAway>().kidFuturePosition = GameObject.Find(newObjective).GetComponent<Transform>();
-    }
 }

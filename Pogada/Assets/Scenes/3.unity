@@ -2557,7 +2557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &30370891
 Transform:
   m_ObjectHideFlags: 0
@@ -7276,7 +7276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &121596266
 Transform:
   m_ObjectHideFlags: 0
@@ -10788,7 +10788,6 @@ GameObject:
   - component: {fileID: 164577023}
   - component: {fileID: 164577025}
   - component: {fileID: 164577026}
-  - component: {fileID: 164577027}
   m_Layer: 0
   m_Name: Czerwony
   m_TagString: Untagged
@@ -11294,22 +11293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kidFuturePosition: {fileID: 1756679122}
---- !u!114 &164577027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164577014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdff33ce6ee3c7a488179b53c8f2f1c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afterThisDebate: 4
-  waitTime: 90
-  runAway: {fileID: 164577026}
-  debate: {fileID: 975314286}
 --- !u!1 &165502928
 GameObject:
   m_ObjectHideFlags: 0
@@ -13725,7 +13708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &196089407
 Transform:
   m_ObjectHideFlags: 0
@@ -18653,7 +18636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &279228180
 Transform:
   m_ObjectHideFlags: 0
@@ -19799,37 +19782,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293181510}
   m_CullTransparentMesh: 1
---- !u!1 &297775314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 297775315}
-  m_Layer: 0
-  m_Name: Czerwony2Waypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &297775315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297775314}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 79.8, y: 42.6, z: -0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1816784730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297963948
 GameObject:
   m_ObjectHideFlags: 0
@@ -23566,7 +23518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &345397939
 Transform:
   m_ObjectHideFlags: 0
@@ -30781,7 +30733,6 @@ GameObject:
   - component: {fileID: 413875703}
   - component: {fileID: 413875704}
   - component: {fileID: 413875705}
-  - component: {fileID: 413875706}
   m_Layer: 0
   m_Name: Fiolet
   m_TagString: Untagged
@@ -31265,22 +31216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kidFuturePosition: {fileID: 2029021948}
---- !u!114 &413875706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413875690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdff33ce6ee3c7a488179b53c8f2f1c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afterThisDebate: 7
-  waitTime: 10
-  runAway: {fileID: 413875705}
-  debate: {fileID: 975314286}
 --- !u!1 &414635518
 GameObject:
   m_ObjectHideFlags: 0
@@ -33549,7 +33484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &450804049
 Transform:
   m_ObjectHideFlags: 0
@@ -34970,7 +34905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &476416007
 Transform:
   m_ObjectHideFlags: 0
@@ -39681,7 +39616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &543526109
 Transform:
   m_ObjectHideFlags: 0
@@ -64425,37 +64360,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &886816492
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 886816493}
-  m_Layer: 0
-  m_Name: GranatWaypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &886816493
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886816492}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 87.15, y: 44.77, z: -0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1816784730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888202575
 GameObject:
   m_ObjectHideFlags: 0
@@ -70685,7 +70589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &959781194
 Transform:
   m_ObjectHideFlags: 0
@@ -72011,37 +71915,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &974018084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 974018085}
-  m_Layer: 0
-  m_Name: FioletWaypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &974018085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974018084}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.55, y: 41.58, z: -0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1816784730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974259421
 GameObject:
   m_ObjectHideFlags: 0
@@ -82895,37 +82768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0.5
   stretchAmount: 0.15
---- !u!1 &1110330242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110330243}
-  m_Layer: 0
-  m_Name: PomaranczWaypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1110330243
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110330242}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.76, y: 42.76, z: -0.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1816784730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1112064834
 GameObject:
   m_ObjectHideFlags: 0
@@ -82943,7 +82785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1112064835
 Transform:
   m_ObjectHideFlags: 0
@@ -91562,7 +91404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1242517868
 Transform:
   m_ObjectHideFlags: 0
@@ -93719,7 +93561,7 @@ Transform:
   m_GameObject: {fileID: 1270992897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72.97, y: -1.61, z: 0.16379248}
+  m_LocalPosition: {x: -72.73, y: -1.96, z: 0.16379248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102857,7 +102699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1376319619
 Transform:
   m_ObjectHideFlags: 0
@@ -103428,8 +103270,6 @@ GameObject:
   - component: {fileID: 1385958524}
   - component: {fileID: 1385958523}
   - component: {fileID: 1385958525}
-  - component: {fileID: 1385958527}
-  - component: {fileID: 1385958526}
   m_Layer: 0
   m_Name: Granat
   m_TagString: Untagged
@@ -103962,35 +103802,6 @@ MonoBehaviour:
   animator: {fileID: 911812604}
   wantsToTalk: 0
   displacement: {x: 0, y: 0, z: 0}
---- !u!114 &1385958526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385958515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdff33ce6ee3c7a488179b53c8f2f1c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afterThisDebate: 6
-  waitTime: 70
-  runAway: {fileID: 1385958527}
-  debate: {fileID: 975314286}
---- !u!114 &1385958527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385958515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdc32e593522184e974e82fbe2f0bfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kidFuturePosition: {fileID: 886816493}
 --- !u!1 &1386112170
 GameObject:
   m_ObjectHideFlags: 0
@@ -105250,7 +105061,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 523179902943371449, guid: 64fc0a8deab4a724b945da1001bc3737, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106937,7 +106748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1416235832
 Transform:
   m_ObjectHideFlags: 0
@@ -107496,7 +107307,6 @@ GameObject:
   - component: {fileID: 1423638216}
   - component: {fileID: 1423638215}
   - component: {fileID: 1423638217}
-  - component: {fileID: 1423638218}
   m_Layer: 0
   m_Name: Zielony
   m_TagString: Untagged
@@ -107985,22 +107795,6 @@ MonoBehaviour:
   animator: {fileID: 1840443365}
   wantsToTalk: 0
   displacement: {x: -0.8, y: 2.8, z: 0}
---- !u!114 &1423638218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423638206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdff33ce6ee3c7a488179b53c8f2f1c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afterThisDebate: 4
-  waitTime: 90
-  runAway: {fileID: 1423638214}
-  debate: {fileID: 975314286}
 --- !u!1 &1426893675
 GameObject:
   m_ObjectHideFlags: 0
@@ -110151,7 +109945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1455387346
 Transform:
   m_ObjectHideFlags: 0
@@ -119750,7 +119544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1597812944
 Transform:
   m_ObjectHideFlags: 0
@@ -125250,7 +125044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1686080517
 Transform:
   m_ObjectHideFlags: 0
@@ -126375,37 +126169,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1708851896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708851897}
-  m_Layer: 0
-  m_Name: Zielony2Waypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1708851897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708851896}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83.2, y: 43.4, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1816784730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713201530
 GameObject:
   m_ObjectHideFlags: 0
@@ -129618,7 +129381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1756679122}
   m_Layer: 0
-  m_Name: Czerwony1Waypoint
+  m_Name: CzerwonyWaypoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -134084,13 +133847,8 @@ Transform:
   m_Children:
   - {fileID: 1928014670}
   - {fileID: 242288945}
-  - {fileID: 1708851897}
   - {fileID: 2029021948}
   - {fileID: 1756679122}
-  - {fileID: 297775315}
-  - {fileID: 886816493}
-  - {fileID: 1110330243}
-  - {fileID: 974018085}
   - {fileID: 1996602349}
   - {fileID: 965293440}
   - {fileID: 1675722088}
@@ -134581,7 +134339,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 523179902943371449, guid: 64fc0a8deab4a724b945da1001bc3737, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137006,8 +136764,6 @@ GameObject:
   - component: {fileID: 1850937846}
   - component: {fileID: 1850937845}
   - component: {fileID: 1850937847}
-  - component: {fileID: 1850937849}
-  - component: {fileID: 1850937848}
   m_Layer: 0
   m_Name: "Pomara\u0144cz"
   m_TagString: Untagged
@@ -137467,35 +137223,6 @@ MonoBehaviour:
   animator: {fileID: 1391491895}
   wantsToTalk: 0
   displacement: {x: 0, y: 0, z: 0}
---- !u!114 &1850937848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850937837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdff33ce6ee3c7a488179b53c8f2f1c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  afterThisDebate: 5
-  waitTime: 60
-  runAway: {fileID: 1850937849}
-  debate: {fileID: 975314286}
---- !u!114 &1850937849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850937837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdc32e593522184e974e82fbe2f0bfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kidFuturePosition: {fileID: 0}
 --- !u!1 &1852712171
 GameObject:
   m_ObjectHideFlags: 0
@@ -137513,7 +137240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1852712172
 Transform:
   m_ObjectHideFlags: 0
@@ -147487,7 +147214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2014709147
 Transform:
   m_ObjectHideFlags: 0
