@@ -5,7 +5,7 @@ using Yarn.Unity;
 public class KidRunAway : MonoBehaviour
 {
     private Transform kidTransform;
-    [SerializeField] private Transform kidFuturePosition;
+    public Transform kidFuturePosition;
     private SpriteRenderer kidRenderer;
 
     private void Start()
