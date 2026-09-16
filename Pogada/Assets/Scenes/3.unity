@@ -5262,7 +5262,7 @@ GameObject:
   - component: {fileID: 81887077}
   m_Layer: 0
   m_Name: MAMA
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7645,7 +7645,7 @@ GameObject:
   - component: {fileID: 127142966}
   m_Layer: 0
   m_Name: "PRZYPROWADZILI\u015AMY"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7809,7 +7809,7 @@ GameObject:
   - component: {fileID: 128270611}
   m_Layer: 0
   m_Name: TATY
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12872,7 +12872,7 @@ GameObject:
   - component: {fileID: 187296834}
   m_Layer: 0
   m_Name: "SZUKA\u0141A"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22810,7 +22810,7 @@ GameObject:
   - component: {fileID: 340148189}
   m_Layer: 0
   m_Name: MAMY
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24154,7 +24154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2793969101404723117, guid: f13a3a68076f01241a36f3511399f4de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
@@ -26115,7 +26115,7 @@ GameObject:
   - component: {fileID: 378232606}
   m_Layer: 0
   m_Name: ZWIERZAKIEM
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30211,7 +30211,7 @@ GameObject:
   - component: {fileID: 410876441}
   m_Layer: 0
   m_Name: "ZGUB\u0118"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31868,6 +31868,7 @@ GameObject:
   - component: {fileID: 423267662}
   - component: {fileID: 423267661}
   - component: {fileID: 423267663}
+  - component: {fileID: 423267664}
   m_Layer: 0
   m_Name: vines
   m_TagString: Untagged
@@ -32006,6 +32007,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.110613, y: 11.71}
   m_EdgeRadius: 0
+--- !u!114 &423267664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423267659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 905840117}
+  sprites:
+  - {fileID: -1437936444705433311, guid: 66032865a3b72aa43b16a8e9ec37cae0, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
+  - {fileID: -6531427831219540240, guid: a0ce2a6dec2aa6142bb4ac5051edda10, type: 3}
 --- !u!1 &423999316
 GameObject:
   m_ObjectHideFlags: 0
@@ -33027,7 +33050,7 @@ GameObject:
   - component: {fileID: 441695808}
   m_Layer: 0
   m_Name: "TWOJ\u0104"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35316,7 +35339,7 @@ GameObject:
   - component: {fileID: 478281281}
   m_Layer: 0
   m_Name: TWOJEJ
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37677,7 +37700,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6846191351258106031, guid: 81fe77a8e9e27de4ab6c66364d8aed98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39496,8 +39519,8 @@ Transform:
   m_GameObject: {fileID: 540267607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1091, y: 0.2001, z: 0}
-  m_LocalScale: {x: 1.5678886, y: 1.6472971, z: 1}
+  m_LocalPosition: {x: 0.3174, y: 0.2001, z: 0}
+  m_LocalScale: {x: 1.5895255, y: 1.6472971, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 189202290}
@@ -42293,7 +42316,7 @@ GameObject:
   - component: {fileID: 586826215}
   m_Layer: 0
   m_Name: Z
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44713,7 +44736,7 @@ GameObject:
   - component: {fileID: 608641985}
   m_Layer: 0
   m_Name: "MIN\u0118LI\u015AMY"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49244,7 +49267,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2793969101404723117, guid: f13a3a68076f01241a36f3511399f4de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
@@ -50619,7 +50642,7 @@ GameObject:
   - component: {fileID: 689951251}
   m_Layer: 0
   m_Name: MAMY
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61941,7 +61964,7 @@ GameObject:
   - component: {fileID: 850789203}
   m_Layer: 0
   m_Name: "SI\u0118"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68683,7 +68706,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8842426558571674231, guid: 29509fdbce1125b4dacb1ff83d18dabf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -72724,7 +72747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &987870170
 Transform:
   m_ObjectHideFlags: 0
@@ -75478,8 +75501,8 @@ Transform:
   m_GameObject: {fileID: 1021095995}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1091, y: 0.2001, z: 0}
-  m_LocalScale: {x: 1.5678886, y: 1.6472971, z: 1}
+  m_LocalPosition: {x: 0.4737, y: 0.2001, z: 0}
+  m_LocalScale: {x: 1.6058315, y: 1.6472971, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2042208324}
@@ -86930,7 +86953,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5826980857872724912, guid: 84978b665c0ddfe4f8b551c56bdb3217, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -91918,7 +91941,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 5994141125263885348, guid: bf3f325e83fd3594195320793efd6471, type: 3}
+  m_Sprite: {fileID: 2019344361, guid: 05f1a447b12afd34d85eff73f3c8dafc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91967,7 +91990,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.9900002, y: 0.7800564}
+    oldSize: {x: 5.04, y: 0.77}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -100230,7 +100253,7 @@ GameObject:
   - component: {fileID: 1355444590}
   m_Layer: 0
   m_Name: MAM
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104575,7 +104598,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2793969101404723117, guid: f13a3a68076f01241a36f3511399f4de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
@@ -105701,7 +105724,7 @@ GameObject:
   - component: {fileID: 1411926503}
   m_Layer: 0
   m_Name: LUTE
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106949,7 +106972,7 @@ GameObject:
   - component: {fileID: 1417720436}
   m_Layer: 0
   m_Name: "SZUKALI\u015AMY"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108838,8 +108861,8 @@ Transform:
   m_GameObject: {fileID: 1441863552}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1091, y: 0.2001, z: 0}
-  m_LocalScale: {x: 1.5678886, y: 1.6472971, z: 1}
+  m_LocalPosition: {x: 0.3956, y: 0.2001, z: 0}
+  m_LocalScale: {x: 1.5976785, y: 1.6472971, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 405254966}
@@ -110617,7 +110640,7 @@ GameObject:
   - component: {fileID: 1463992540}
   m_Layer: 0
   m_Name: "CI\u0118"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119376,7 +119399,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3931839381192601545, guid: a2b1e6ae44e730f47967ce69f8f81e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120351,7 +120374,7 @@ GameObject:
   - component: {fileID: 1608453748}
   m_Layer: 0
   m_Name: CHMURKA
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129064,7 +129087,7 @@ GameObject:
   - component: {fileID: 1752751034}
   m_Layer: 0
   m_Name: "SIOSTR\u0118"
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141551,7 +141574,7 @@ GameObject:
   - component: {fileID: 1927252400}
   m_Layer: 0
   m_Name: AUREUSA
-  m_TagString: Untagged
+  m_TagString: puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146431,7 +146454,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2793969101404723117, guid: f13a3a68076f01241a36f3511399f4de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_FlipX: 0
