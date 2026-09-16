@@ -14,10 +14,7 @@ public class CollectingGlass : MonoBehaviour
     {
         StartCoroutine(wait());   
         
-        if(stateManager.GlassCollected == 4)
-        {
-            Spots.SetActive(true);
-        }
+        
     }
 
     IEnumerator wait()
@@ -26,6 +23,11 @@ public class CollectingGlass : MonoBehaviour
         gameObject.SetActive(false);
         stateManager.GlassCollected++;
         glassUI.SetActive(true);
+
+        if (stateManager.GlassCollected == 4)
+        {
+            Spots.SetActive(true);
+        }
     }
 
 }
