@@ -42,13 +42,14 @@ public class DebataPlayer : MonoBehaviour
         if (wygranaMinigierka && clicked == false && debateWon == false)
         {
             SentenceBuildingStart();
-            turnOffCollider.DisableAllExceptSpecificTag();
-            clicked = true;
         }
     }
 
     public void SentenceBuildingStart()
     {
+        turnOffCollider.DisableAllExceptSpecificTag();
+        clicked = true;
+
         musicPlay = GameObject.Find("StaticSounds").GetComponent<MusicPlay>();
         musicPlay.playNewTrack("Debate");
         hintsPlaying = GameObject.Find("Player").GetComponent<HintsPlaying>();

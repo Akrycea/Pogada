@@ -63,6 +63,11 @@ public class SentenceBuilding : MonoBehaviour
         {
             checkSentence();
         }
+
+        if (Input.GetKeyDown(KeyCode.Backspace) && gameObject.activeSelf && sentence.Count > 0)
+        {
+            EraseLastWord();
+        }
     }
 
     //tu mozna zrobic ze musisz zaliczyc kilka pod rzad dobrze

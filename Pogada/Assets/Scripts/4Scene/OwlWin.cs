@@ -18,6 +18,8 @@ public class OwlWin : MonoBehaviour
 
     public StateManager stateManager;
 
+    [SerializeField] private GameObject OwlObject;
+
     private void OnMouseDown()
     {
         Debug.Log("OwlWin Click");
@@ -53,6 +55,8 @@ public class OwlWin : MonoBehaviour
         anim.Play("BlackoutOut");
         yield return new WaitForSeconds(1);
         blackoutCanvas.SetActive(false);
+
+        OwlObject.SetActive(true);
     }
 
     [SerializeField] private GameObject nextCamera;
