@@ -56356,7 +56356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &774245512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100943,9 +100943,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1945876579}
   spriteArray:
-  - {fileID: -5601881423753774490, guid: 50d7d790c27808546b292814e2284709, type: 3}
-  - {fileID: 5426126293646186356, guid: a3bd76eb905dde141ba4886c8736daba, type: 3}
-  - {fileID: 8685319050377019557, guid: 8c468741a7a2443479004f572ecda551, type: 3}
+  - {fileID: 21300000, guid: 50d7d790c27808546b292814e2284709, type: 3}
+  - {fileID: 21300000, guid: a3bd76eb905dde141ba4886c8736daba, type: 3}
+  - {fileID: 21300000, guid: 8c468741a7a2443479004f572ecda551, type: 3}
   OwlOnUI: {fileID: 774245511}
 --- !u!114 &1361693966
 MonoBehaviour:
@@ -133009,8 +133009,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.16481481
-    width: 0.4729167
+    y: 0
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -133041,7 +133041,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -115.526665, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -142631,7 +142631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00018311, y: -26}
+  m_AnchoredPosition: {x: 0.00018311, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945876579
@@ -142654,7 +142654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5601881423753774490, guid: 50d7d790c27808546b292814e2284709, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50d7d790c27808546b292814e2284709, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
