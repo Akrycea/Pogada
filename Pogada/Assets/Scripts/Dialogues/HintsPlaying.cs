@@ -80,6 +80,8 @@ public class HintsPlaying : MonoBehaviour
     [YarnCommand("clearHint")]
     public void clearHint()
     {
+        anim.enabled = false;
+        anim.wantsToTalk = false;
         readyToSayHint = false;
         countingDown = false;
         playingHints = false;
@@ -91,6 +93,7 @@ public class HintsPlaying : MonoBehaviour
     [YarnCommand("startHint")]
     public void startHint(string hint)
     {
+        anim.enabled = true;
         gameObject.GetComponent<HintsPlaying>().nextHint = hint;
         readyToSayHint = false;
         countingDown = true;
