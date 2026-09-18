@@ -5994,7 +5994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &92101471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27345,8 +27345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.858, y: 282.87}
-  m_SizeDelta: {x: 611.38, y: 440.26}
+  m_AnchoredPosition: {x: 4.76, y: 295.07}
+  m_SizeDelta: {x: 599.19, y: 464.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382155568
 MonoBehaviour:
@@ -53836,7 +53836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &710913630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54611,7 +54611,7 @@ MonoBehaviour:
   - {fileID: 1431971781}
   - {fileID: 1828097353}
   - {fileID: 683410424}
-  currentPageIndex: 10
+  currentPageIndex: 0
   totalPages: 0
   pagesScripts:
   - {fileID: 710913631}
@@ -69790,7 +69790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2958262985454349539, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -460
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2958262985454349540, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_ChildAlignment
@@ -69842,7 +69842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986520364887, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.345
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986520364887, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -69890,7 +69890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2958262987206614837, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 118.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2958262987206614837, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -69978,11 +69978,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8020628925107869966, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8020628925107869966, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -393
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8020628925107869966, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -70094,7 +70094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8020628925673895293, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 74.880005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8020628925673895293, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -74556,6 +74556,7 @@ MonoBehaviour:
   Wygrana: {fileID: 1332293172}
   Przegrana: {fileID: 1985604996}
   DecorationsScript: {fileID: 926644601}
+  DziecipodDrzewem: {fileID: 1957057896}
 --- !u!1 &976107268
 GameObject:
   m_ObjectHideFlags: 0
@@ -81959,6 +81960,7 @@ MonoBehaviour:
   - {fileID: 1098894540}
   - {fileID: 1582506797}
   JabNumber: 0
+  isJabbing: 0
 --- !u!114 &1081340440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107907,7 +107909,7 @@ Transform:
   m_GameObject: {fileID: 1399200383}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.04, y: 56.31, z: 0}
+  m_LocalPosition: {x: 64.7, y: 60.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -140876,7 +140878,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850937837}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ea2b527efd7c125439d64640a3300d8d, type: 2}
   m_CullingMode: 0

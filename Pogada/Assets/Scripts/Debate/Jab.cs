@@ -11,6 +11,8 @@ public class Jab : MonoBehaviour
 
     [SerializeField] private int JabNumber;
 
+    [SerializeField] private bool isJabbing;
+
     [YarnCommand("Jab")]
     public void Jabbing(string good, string bad, int number)
     {
@@ -23,7 +25,8 @@ public class Jab : MonoBehaviour
         Debug.Log("Jab command executed with good: " + good + " and bad: " + bad);
 
         JabNumber = number;
-        StartCoroutine(JabTimer());
+        //StartCoroutine(JabTimer());
+        
     }
     private IEnumerator JabTimer()
     {

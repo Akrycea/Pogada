@@ -33,6 +33,8 @@ public class Debate : MonoBehaviour
 
     [SerializeField] private DecorationsScript DecorationsScript;
 
+    [SerializeField] private GameObject DziecipodDrzewem;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -97,9 +99,12 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M4_DebataFioletPoDebata");
                 stateManager.niebieski = false;
                 stateManager.fiolet = true;
-                //szybkie rozwiazanie na targi
-                GameObject.Find("DzieciPodDrzewem").SetActive(true);
                 debateManager.EndDebate();
+
+                //szybkie rozwiazanie na targi
+                //GameObject.Find("DzieciPodDrzewem").SetActive(true);
+                DziecipodDrzewem.SetActive(true);
+
             }
             else if (debateNumber == 8)
             {
@@ -133,14 +138,14 @@ public class Debate : MonoBehaviour
     private IEnumerator WaitForWygrana()
     {
         Wygrana.SetActive(true);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2.5f);
         Wygrana.SetActive(false);
     }
 
     private IEnumerator WaitForPrzegrana()
     {
         Przegrana.SetActive(true);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2.5f);
         Przegrana.SetActive(false);
     }
 

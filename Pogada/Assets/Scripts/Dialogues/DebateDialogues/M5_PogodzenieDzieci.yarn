@@ -83,6 +83,7 @@ title: M5_F_Jab_1_1
 <<voiceline Fiolet 50>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Tak, musimy się pogodzić, żeby świat się naprawił.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
@@ -174,6 +175,7 @@ title: M5_F_Jab_2_1
 <<voiceline Fiolet 52>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: [y]Vus[/y] już nie przesadzaj, przecież jesteś sobą.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" 3>>
 ===
@@ -441,6 +443,7 @@ title: M5_Z_Jab_1_1
 <<voiceline Zielony 82>>
 <<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: [p]Violaceus[/p] proszę? [y]Aureus[/y] wydaje się taki nieszczęśliwy… Przecież ty też nie lubisz jak jest smutny!
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" 3>>
 ===
@@ -459,6 +462,7 @@ title: M5_F_Jab_7_1
 <<voiceline Fiolet 62>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: … Ale co jeśli będziesz tego żałować?
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci5>>
 ===
