@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
+using System.Collections;
 
 public class Debate : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class Debate : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip[] audioClips;
 
+    [SerializeField] private GameObject Wygrana;
+    [SerializeField] private GameObject Przegrana;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -43,7 +47,8 @@ public class Debate : MonoBehaviour
             Debug.Log("you won");
             //checks which debate is active and activates the appropriate color
 
-        
+            StartCoroutine(WaitForWygrana());
+
             if (debateNumber == 2)
             {
                 stateManager.ViriDebateWon = true;
@@ -109,6 +114,8 @@ public class Debate : MonoBehaviour
             playerMovement.canPlayerMove = true;
             turnOffCollider.EnableAllColliders();
             debateManager.EndDebate();
+
+            StartCoroutine(WaitForPrzegrana());
         }
 
         YourPoints = 0;
@@ -117,8 +124,22 @@ public class Debate : MonoBehaviour
         UpdateDebateSliders();
     }
 
-    // kids points! 10 is max 
-    [YarnCommand("SetKidPoints")]
+    private IEnumerator WaitForWygrana()
+    {
+        Wygrana.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        Wygrana.SetActive(false);
+    }
+
+    private IEnumerator WaitForPrzegrana()
+    {
+        Przegrana.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        Przegrana.SetActive(false);
+    }
+
+// kids points! 10 is max 
+[YarnCommand("SetKidPoints")]
     public void SetKidPoints(int points)
     {
         EnemyPoints = points;

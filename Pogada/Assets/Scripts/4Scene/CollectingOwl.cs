@@ -14,6 +14,8 @@ public class CollectingOwl : MonoBehaviour
     [SerializeField]
     private DebataPlayer debataPlayer;
 
+    public DialogueRunner dialogueRunner;
+
     //public ClickDialogue dialogue;
 
     void Start()
@@ -31,6 +33,9 @@ public class CollectingOwl : MonoBehaviour
         Owl.TurnUIon();
         //dialogue.nazwaDialogu = 
         //ukladanie zdan ^
+
+        //P5_Zwierzak_fin
+        dialogueRunner.StartDialogue("P5_Zwierzak_fin");
     }
 }
 
