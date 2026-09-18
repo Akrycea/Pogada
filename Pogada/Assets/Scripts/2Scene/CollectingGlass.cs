@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Yarn.Unity;
 
 public class CollectingGlass : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CollectingGlass : MonoBehaviour
     [SerializeField] private GameObject glassUI;
 
     [SerializeField] private GameObject Spots;
+
+    public DialogueRunner dialogueRunner;
 
     private void OnMouseDown()
     {
@@ -27,6 +30,7 @@ public class CollectingGlass : MonoBehaviour
         if (stateManager.GlassCollected == 4)
         {
             Spots.SetActive(true);
+            dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
         }
     }
 
