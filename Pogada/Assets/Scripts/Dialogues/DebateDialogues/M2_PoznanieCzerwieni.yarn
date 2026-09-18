@@ -2,6 +2,7 @@
 ---
 <<SetKidPoints PointMeter 4>>
 
+<<showTalkBubble Czerwony>>
 <<voiceline Czerwony 16>>
 <<ChangeDebateIcon DebateChildren "Robert" "sad">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
@@ -384,6 +385,7 @@ title: M2_PoznanieCzerwieni5_2
 
 title: M2_PoznanieCzerwieniPoDebata
 ---
+<<hideTalkBubble Czerwony>>
 <<debateWon Czerwony>>
 <<DisableColliders StateManager>>
 <<voiceline Player 162>>

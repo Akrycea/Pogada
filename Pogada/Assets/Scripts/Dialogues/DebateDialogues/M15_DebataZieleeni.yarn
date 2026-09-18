@@ -1,8 +1,6 @@
 title: M15_PomocZieleni
 ---
 <<SetKidPoints PointMeter 2>>
-
-<<hideTalkBubble Zielony>>
 <<voiceline Zielony 33>>
 <<ChangeDebateIcon DebateChildren "Viri" "sadtalk">>
 [g]Viri[/g]: Chciałem po prostu, żeby [bl]Liv[/bl] i [r]Robert[/r] się pogodzili.
@@ -295,6 +293,7 @@ title: M15_DebataZielieni5_2
 
 title: M15_DebataZielieniPoDebata
 ---
+<<hideTalkBubble Zielony>>
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "sad">>
 <<debateWon Zielony>>

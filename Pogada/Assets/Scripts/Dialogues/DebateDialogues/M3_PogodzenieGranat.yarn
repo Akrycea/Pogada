@@ -2,7 +2,6 @@
 ---
 <<SetKidPoints PointMeter 4>>
 
-<<hideTalkBubble Granat>>
 <<ChangeDebateIcon DebateChildren "Liv" "happytalk">>
 <<voiceline Granat 34>>
 [bl]Liv[/bl]: Mój kochany Perełka!
@@ -403,6 +402,7 @@ title: M3_PogodzenieGranat5_2
 
 title: M3_PogodzenieGranatPoDebata
 ---
+<<hideTalkBubble Granat>>
 <<debateWon Granat>>
 <<DisableColliders StateManager>>
 <<voiceline Granat 51>>
