@@ -29,6 +29,8 @@ public class DebateManager : MonoBehaviour
 
     public bool pogadankaShowed = false;
 
+    [SerializeField] private DecorationsScript DecorationsScript;
+
     public void OnMouseDown()
     {
         //StartDebate();
@@ -58,34 +60,42 @@ public class DebateManager : MonoBehaviour
         if (debateScript.debateNumber == 0)
         {
             debateDial.StartDialogue("M1_PoznanieFiolet");
+            DecorationsScript.ShowDecorations(0);
         }
         else if (debateScript.debateNumber == 1)
         {
             debateDial.StartDialogue("M15_PomocZieleni");
+            DecorationsScript.ShowDecorations(1);
         }
         else if (debateScript.debateNumber == 2)
         {
             debateDial.StartDialogue("M2_PoznanieCzerwieni");
+            DecorationsScript.ShowDecorations(2);
         }
         else if (debateScript.debateNumber == 3)
         {
             debateDial.StartDialogue("M3_PogodzenieGranat");
+            DecorationsScript.ShowDecorations(3);
         }
         else if (debateScript.debateNumber == 4)
         {
             debateDial.StartDialogue("M31_PogodzeniePomarancz");
+            DecorationsScript.ShowDecorations(4);
         }
         else if (debateScript.debateNumber == 5)
         {
             debateDial.StartDialogue("M32_PogodzenieBlekit");
+            DecorationsScript.ShowDecorations(5);
         }
         else if (debateScript.debateNumber == 6)
         {
             debateDial.StartDialogue("M4_PrzekonanieFiolet");
+            DecorationsScript.ShowDecorations(6);
         }
         else if (debateScript.debateNumber == 7)
         {
             debateDial.StartDialogue("M5_PogodzenieDzieci");
+            DecorationsScript.ShowDecorations(7);
         }
     }
 

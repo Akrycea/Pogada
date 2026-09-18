@@ -31,6 +31,8 @@ public class Debate : MonoBehaviour
     [SerializeField] private GameObject Wygrana;
     [SerializeField] private GameObject Przegrana;
 
+    [SerializeField] private DecorationsScript DecorationsScript;
+
     [YarnCommand("Ending")]
     public void Ending()
     {
@@ -122,6 +124,8 @@ public class Debate : MonoBehaviour
         EnemyPoints = 0;
         MusicManager.Instance.PlayMusic("Entrance");
         UpdateDebateSliders();
+
+        DecorationsScript.HideDecorations();
     }
 
     private IEnumerator WaitForWygrana()

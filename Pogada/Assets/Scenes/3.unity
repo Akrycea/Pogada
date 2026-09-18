@@ -67409,6 +67409,7 @@ MonoBehaviour:
   Dialogi: {fileID: 1511099220}
   GenUI: {fileID: 844744080}
   pogadankaShowed: 0
+  DecorationsScript: {fileID: 926644601}
 --- !u!114 &905840120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69096,6 +69097,7 @@ GameObject:
   - component: {fileID: 926644600}
   - component: {fileID: 926644599}
   - component: {fileID: 926644598}
+  - component: {fileID: 926644601}
   m_Layer: 5
   m_Name: DebateImages
   m_TagString: Untagged
@@ -69120,8 +69122,8 @@ RectTransform:
   - {fileID: 1618397018}
   - {fileID: 377533434}
   - {fileID: 1274322442}
-  - {fileID: 944177705}
   - {fileID: 2118686262}
+  - {fileID: 944177705}
   - {fileID: 328036898}
   - {fileID: 1195393827}
   - {fileID: 1534350995}
@@ -69196,6 +69198,27 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 98
   m_TargetDisplay: 0
+--- !u!114 &926644601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926644596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51056c352258448419b023f939808503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decorations:
+  - {fileID: 377533433}
+  - {fileID: 1274322441}
+  - {fileID: 2118686261}
+  - {fileID: 944177704}
+  - {fileID: 328036897}
+  - {fileID: 1195393826}
+  - {fileID: 377533433}
+  - {fileID: 1534350994}
 --- !u!1001 &927012252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73657,6 +73680,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9b2eeca2202039946935b4cd81d5b89e, type: 3}
   Wygrana: {fileID: 1332293172}
   Przegrana: {fileID: 1985604996}
+  DecorationsScript: {fileID: 926644601}
 --- !u!1 &976107268
 GameObject:
   m_ObjectHideFlags: 0
