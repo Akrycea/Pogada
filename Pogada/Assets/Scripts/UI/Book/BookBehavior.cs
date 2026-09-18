@@ -22,6 +22,10 @@ public class BookBehavior : MonoBehaviour
 
     [SerializeField] private bool wasUIon;
 
+    //NA EXPO TYLKO IDK HOW TO DO IT BETTER
+    [SerializeField] private Collider2D CheckCollider;
+    [SerializeField] private bool wereCollidersOn;
+
     void Start()
     {
         totalPages = playerPages.Length;
@@ -61,6 +65,15 @@ public class BookBehavior : MonoBehaviour
             wasUIon = false;
         }
 
+        if (CheckCollider.enabled == true)
+        {
+            wereCollidersOn = true;
+        }
+        else
+        {
+            wereCollidersOn = false;
+        }
+
         turnOffCollider.DisableAllExceptSpecificTag();
         UI.SetActive(false);
 
@@ -72,8 +85,6 @@ public class BookBehavior : MonoBehaviour
         Journal.SetActive(false);
         JournalButton.SetActive(true);
 
-        turnOffCollider.EnableAllColliders();
-
         if (wasUIon)
         {
             UI.SetActive(true);
@@ -83,6 +94,11 @@ public class BookBehavior : MonoBehaviour
             UI.SetActive(false);
         }
 
+        if (wereCollidersOn)
+        {
+            turnOffCollider.EnableAllColliders();
+        }
+  
         playerMovement.canPlayerMove = true;
     }
 
