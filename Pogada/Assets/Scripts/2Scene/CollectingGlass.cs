@@ -30,7 +30,7 @@ public class CollectingGlass : MonoBehaviour
         if (stateManager.GlassCollected == 4)
         {
             Spots.SetActive(true);
-            dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
+            dialogueRunner.StartDialogue("P7_DrzwiFiolet_2");
         }
     }
 
