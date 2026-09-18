@@ -97,6 +97,8 @@ public class Debate : MonoBehaviour
                 dialogueRunner.StartDialogue("M4_DebataFioletPoDebata");
                 stateManager.niebieski = false;
                 stateManager.fiolet = true;
+                //szybkie rozwiazanie na targi
+                GameObject.Find("DzieciPodDrzewem").SetActive(true);
                 debateManager.EndDebate();
             }
             else if (debateNumber == 8)
