@@ -13,6 +13,7 @@ public class Key : MonoBehaviour
     public SpriteChangeAfterPuzzle gateSpriteChange1;
     public SpriteChangeAfterPuzzle gateSpriteChange2;
     public GameObject gateSprite;
+    public GameObject lockSprite;
 
     public GameObject gateStop;
 
@@ -29,6 +30,7 @@ public class Key : MonoBehaviour
             gateSpriteChange2 = gateSpriteChange2.GetComponent<SpriteChangeAfterPuzzle>();
             gateSpriteChange2.myPuzzleGotCompleted();
 
+            lockSprite.SetActive(false);
 
             gateSprite.SetActive(false);
 
