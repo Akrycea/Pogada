@@ -306,6 +306,19 @@ public class YarnCommands : MonoBehaviour
     IEnumerator waitStop()
     {
         yield return new WaitForSeconds(waitTime);
+        dialRunner.Stop();
+    }
+
+    //stops and closes the dialogue with icons
+    [YarnCommand("StopDial")]
+    public void StopDial(float time)
+    {
+        waitTime = time;
+        StartCoroutine(waitStopDial());
+    }
+    IEnumerator waitStopDial()
+    {
+        yield return new WaitForSeconds(waitTime);
         GameObject.Find("Icons").SetActive(false);
         dialRunner.Stop();
     }
