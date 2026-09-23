@@ -13,7 +13,7 @@ title: M2_1_C_Mid
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "happy">>
 <<voiceline Czerwony 8>>
-<<Stop Dialogi 2>>
+<<StopDial Dialogi 2>>
 Robert: Mama każe mówić proszę.
 <<HideIcon Icons>>
 ===
@@ -23,7 +23,7 @@ title: M2_1_C_Bad
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 9>>
-<<Stop Dialogi 1>>
+<<StopDial Dialogi 1>>
 Robert: Nie.
 <<HideIcon Icons>>
 ===
@@ -33,7 +33,7 @@ title: M2_2_C
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "sad">>
 <<voiceline Czerwony 10>>
-<<Stop Dialogi 2>>
+<<StopDial Dialogi 2>>
 Robert: Co tu jest do powiedzenia?
 <<HideIcon Icons>>
 <<nextSenteneceBuilding Dialogi>>
@@ -44,7 +44,7 @@ title: M2_2_C_Mid
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 11>>
-<<Stop Dialogi 2>>
+<<StopDial Dialogi 2>>
 Robert: Nie mam ochoty.
 <<HideIcon Icons>>
 ===
@@ -54,7 +54,7 @@ title: M2_2_C_Bad
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 12>>
-<<Stop Dialogi 2.5>>
+<<StopDial Dialogi 2.5>>
 Robert: Nie ma pan pracy do zrobienia?
 <<HideIcon Icons>>
 ===
@@ -64,7 +64,7 @@ title: M2_3_C
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "sad">>
 <<voiceline Czerwony 13>>
-<<Stop Dialogi 1>>
+<<StopDial Dialogi 1>>
 Robert: Jak?
 <<HideIcon Icons>>
 <<nextSenteneceBuilding Dialogi>>
@@ -75,7 +75,7 @@ title: M2_3_C_Mid
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "angry">>
 <<voiceline Czerwony 14>>
-<<Stop Dialogi 2>>
+<<StopDial Dialogi 2>>
 Robert: Ja nic nie muszę!
 <<HideIcon Icons>>
 ===
@@ -84,7 +84,7 @@ title: M2_3_C_Bad
 ---
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Robert" "sad">>
-<<Stop Dialogi 2>>
+<<StopDial Dialogi 2>>
 <<voiceline Czerwony 15>>
 Robert: Chcę pobyć sam.
 <<HideIcon Icons>>
