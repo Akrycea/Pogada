@@ -23,7 +23,7 @@ public class BoatMovement : MonoBehaviour
 
     public ClickTurnOffAnimator animator;
 
-
+    [SerializeField] private GameObject PerelkaUI;
 
     void Start()
     {
@@ -63,6 +63,7 @@ public class BoatMovement : MonoBehaviour
         {
             zielonyDebataPlayer.wygranaMinigierka = true;
             dialogueRunner.StartDialogue("P2_Rzeczka_fin");
+            PerelkaUI.SetActive(true);
             gameObject.SetActive(false);
             Debug.Log("koniec, done");
             enabled = false;

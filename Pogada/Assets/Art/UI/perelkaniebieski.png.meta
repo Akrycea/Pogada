@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: c0244e4a4ed3c2042b413a186de9cce6
+guid: 7d3a2d8d47732a04e85a7a1dcd557d5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4288286290806077465
-    second: IMG_2300_0
+      213: -3237511324347324693
+    second: perelkaniebieski_0
+  - first:
+      213: -1587157066704679222
+    second: perelkaniebieski_1
+  - first:
+      213: 63724047479942367
+    second: perelkaniebieski_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_2300_0
+      name: perelkaniebieski_0
       rect:
         serializedVersion: 2
-        x: 763
-        y: 1233
-        width: 2247
-        height: 1476
+        x: 1413
+        y: 113
+        width: 242
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e7835db652fc74c0800000000000000
-      internalID: -4288286290806077465
+      spriteID: be629f38a9c0213d0800000000000000
+      internalID: -3237511324347324693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perelkaniebieski_1
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 100
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace01549e0949f9e0800000000000000
+      internalID: -1587157066704679222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perelkaniebieski_2
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 100
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc21bdfea462e000800000000000000
+      internalID: 63724047479942367
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      IMG_2300_0: -4288286290806077465
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

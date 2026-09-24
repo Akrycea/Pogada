@@ -229,7 +229,7 @@ title: M31_DebataPomarancz4
 	<<BadChoice PointMeter>>
 	<<jump M31_DebataPomarancz4_2>>
 ->Nie robię niczego za nikogo.
-<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<ChangeDebateIcon DebateChildren "Lute" "angry">>
 	<<voiceline Player 220>>
 	<<wait 2.2>>
