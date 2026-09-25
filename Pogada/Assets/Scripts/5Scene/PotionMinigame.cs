@@ -23,6 +23,8 @@ public class PotionMinigame : MonoBehaviour
     [SerializeField] AudioClip[] audioClips;
 
     [SerializeField] private InteractionAnimation interactionAnimationAureus;
+    [SerializeField] private KidRunAway kidRunAureus;
+    [SerializeField] private Animator animatorAureus;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -39,6 +41,9 @@ public class PotionMinigame : MonoBehaviour
                 debataPlayer.wygranaMinigierka = true;
                 dialogueRunner.StartDialogue("P8_Potka_fin");
                 //debataPlayer.SentenceBuildingStart();
+                interactionAnimationAureus.runAwayAnim();
+                kidRunAureus.kidRunAway();
+                animatorAureus.enabled = true;
                 interactionAnimationAureus.wantsToTalk = true;
             }
             else
