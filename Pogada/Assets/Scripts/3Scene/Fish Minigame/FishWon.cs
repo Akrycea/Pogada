@@ -16,8 +16,8 @@ public class FishWon : MonoBehaviour
     private DialogueRunner dialogueRunner;
 
     [SerializeField] private GameObject ViriRobert;
-    [SerializeField] private GameObject Robert;
-    [SerializeField] private GameObject Viri;
+    [SerializeField] private SpriteRenderer Robert;
+    [SerializeField] private SpriteRenderer Viri;
 
 
     public void FishWin()
@@ -30,8 +30,8 @@ public class FishWon : MonoBehaviour
             stateManager.FishMinigameWon = true;
             Debug.Log("Fish Minigame Won");
 
-            Robert.SetActive(false);
-            Viri.SetActive(false);
+            Robert.enabled = false;
+            Viri.enabled = false;
             ViriRobert.SetActive(true);
 
             granat = GameObject.Find("Granat").GetComponent<ClickDialogue>();
