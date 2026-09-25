@@ -164,7 +164,7 @@ public class YarnCommands : MonoBehaviour
     public void granat2debata()
     {
         Debug.Log("odpalam debate");
-        debateManager.ShowDebate();
+        granatdebata.SentenceBuildingStart();
 
 
     }
