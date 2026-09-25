@@ -42,33 +42,33 @@ Bohater: Spokojnie. Wierzę ci.
 title: M2_PoznanieCzerwieni1
 ---
 ->Jak zaczęło się to zamieszanie?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 137>>
 	<<wait 1.9>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Oddaj [bl]Liv[/bl] jej pluszaka.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 138>>
 	<<wait 1.7>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Czemu ukradłeś Perełkę?
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 139>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ->Jak to było z tym pluszakiem?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 140>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_1>>
 ->Po co brudziłeś Perełkę?
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 141>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni1_2>>
 ===
@@ -94,33 +94,33 @@ title: M2_PoznanieCzerwieni1_2
 title: M2_PoznanieCzerwieni2
 ---
 ->Czemu jeszcze nie powiedziałeś tego [bl]Liv[/bl]?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 142>>
 	<<wait 2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Może wytłumaczymy to [bl]Liv[/bl] razem?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 143>>
 	<<wait 2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ->Specjalnie czy nie, zepsułeś jej zabawkę.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 144>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Powiedz to [bl]Liv[/bl].
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 145>>
 	<<wait 1.2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_2>>
 ->Ja mogę z nią porozmawiać.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 146>>
 	<<wait 1.7>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni2_1>>
 ===
@@ -168,33 +168,33 @@ title: M2_Z_Jab_1_2
 title: M2_PoznanieCzerwieni3
 ---
 ->Powinieneś pogodzić się z tym, że ci nie wierzy.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 147>>
 	<<wait 2.4>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może jesteś za mało przekonujący.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 148>>
 	<<wait 2.1>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Mogła nie uwierzyć w złości, czynami możesz ją przekonać.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 149>>
 	<<wait 4>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ->Ciężko uwierzyć bez dowodów.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 150>>
 	<<wait 2.4>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_2>>
 ->Może uwierzyć grupie.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 151>>
 	<<wait 1.7>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni3_1>>
 ===
@@ -226,33 +226,33 @@ title: M2_PoznanieCzerwieni3_2
 title: M2_PoznanieCzerwieni4
 ---
 ->Któreś z was nie mówi prawdy, to pewne.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 152>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->Mówiła, że rozbiłeś statuę ze złości.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 153>>
 	<<wait 2.7>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Miała rację, że psujesz rzeczy, jak się złościsz.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 154>>
 	<<wait 2.9>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ->[bl]Wspominała[/bl], że nie radzisz sobie ze złością.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 155>>
 	<<wait 2.5>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_1>>
 ->Nie unoś się.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 156>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni4_2>>
 ===
@@ -334,33 +334,33 @@ title: M2_C_Jab_1_2
 title: M2_PoznanieCzerwieni5
 ---
 ->Wydajesz się bardzo przeżywać strach innych dzieci.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 157>>
 	<<wait 3.3>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Wydaje mi się, że kłamiesz i cię to stresuje.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 158>>
 	<<wait 3>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->[bl]Liv[/bl] chyba miała rację.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 159>>
 	<<wait 2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ->Nie ma nic złego w tym, że się złościsz.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 160>>
 	<<wait 2.9>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_1>>
 ->Zniszczyłeś pluszaka, masz za swoje.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 161>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M2_PoznanieCzerwieni5_2>>
 ===

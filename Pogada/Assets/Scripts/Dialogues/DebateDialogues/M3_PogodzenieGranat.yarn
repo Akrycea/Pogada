@@ -47,33 +47,33 @@ Bohater: To [g]Viri[/g] wyczyścił Perełkę, jemu należą się za to podzięk
 title: M3_PogodenieGranat1
 ---
 ->[r]Robert[/r] nie kłamał podczas waszej kłótni.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 172>>
 	<<wait 4.1>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Wygląda na to, że doszło do nieporozumienia.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 175>>
 	<<wait 2.5>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_1>>
 ->Niepotrzebnie przezywałaś brata.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 176>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->Przestańcie się skupiać na pluszaku.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 177>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ->[r]Robertowi[/r] należą się przeprosiny.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 178>>
 	<<wait 2.1>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat_2>>
 ===
@@ -133,33 +133,33 @@ title:M3_C_Jab_1_2
 title: M3_PogodzenieGranat2
 ---
 ->Czy przeprosił cię za to?
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 179>>
 	<<wait 1.4>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Sama mówiłaś, że [r]Robert[/r] wyraził skruchę.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 180>>
 	<<wait 2.3>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_1>>
 ->Wybacz mu i po problemie.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 181>>
 	<<wait 1.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Już prowadziliście tą rozmowę.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 182>>
 	<<wait 2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ->Przeprosił, więc jest uniewinniony.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 183>>
 	<<wait 1.9>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat2_2>>
 ===
@@ -188,33 +188,33 @@ title: M3_PogodzenieGranat3
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Zakładanie intencji innych może być mylące.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 184>>
 	<<wait 2.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->[r]Robert[/r] starał się poprawnie przeprosić na własny sposób.
-	<<voiceline Player 185>>
-	<<wait 2.2>>
 	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
+	<<voiceline Player 185>>
+	<<wait 4>>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_1>>
 ->Przeprosiny to przeprosiny.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 186>>
 	<<wait 1.7>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Nie wiesz przecież, co się dzieje w jego głowie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 187>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ->Powinnaś ufać mu bezgranicznie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 188>>
 	<<wait 2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat3_2>>
 ===
@@ -298,33 +298,33 @@ title: M3_PogodzenieGranat4
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Mówił szczerze, złościł się, bo mu nie ufałaś.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 189>>
 	<<wait 3.2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Nikt nie lubi, jak nazywa się go kłamczuchem.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 190>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_1>>
 ->Też bym się zezłościł na jego miejscu.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 191>>
 	<<wait 2.2>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Skoro sobie nie ufacie, to nie ma o czym mówić.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 192>>
 	<<wait 2.6>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ->Odwracasz uwagę od rzeczywistego problemu.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 193>>
 	<<wait .32>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat4_2>>
 ===
@@ -350,33 +350,33 @@ title: M3_PogodzenieGranat5
 ---
 <<ChangeDebateIcon DebateChildren "Liv" "angry">>
 ->Nie robił tego, aby cię wystraszyć.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 194>>
 	<<wait 2.1>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<VGoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Widać, że żałuje, daj mu szansę.
+	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<voiceline Player 195>>
 	<<wait 2.8>>
-	<<ChangeDebatePlayerIcon DebatePlayer "understandtalk">>
 	<<GoodChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_1>>
 ->Jego złość jest osobnym problemem.
+	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<voiceline Player 196>>
 	<<wait 2.1>>
-	<<ChangeDebatePlayerIcon DebatePlayer "distresstalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Zareagował poprawnie.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 197>>
 	<<wait 1.5>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ->Powinnaś przestać się na tym skupiać.
+	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<voiceline Player 198>>
 	<<wait 2.4>>
-	<<ChangeDebatePlayerIcon DebatePlayer "accusetalk">>
 	<<BadChoice PointMeter>>
 	<<jump M3_PogodzenieGranat5_2>>
 ===
