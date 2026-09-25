@@ -157,6 +157,7 @@ public class YarnCommands : MonoBehaviour
     {
         granatdebata = GameObject.Find("Granat").GetComponent<DebataPlayer>();
         granatdebata.wygranaMinigierka = true;
+        granatdebata.SentenceBuildingStart();
     }
 
     //odpala debate z wybieraniem zdan po dobrym ulozeniu zdania podczas debaty granat
@@ -164,9 +165,7 @@ public class YarnCommands : MonoBehaviour
     public void granat2debata()
     {
         Debug.Log("odpalam debate");
-        granatdebata.SentenceBuildingStart();
-
-
+        debateManager.ShowDebate();
     }
 
     public GameObject GranatDrzwi;
