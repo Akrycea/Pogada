@@ -67,6 +67,7 @@ public class StatueControl : MonoBehaviour
     {
         if (sunNumber == sunParts.Length - 1 && moonNumber == moonParts.Length - 1)
         {
+            GameObject.Find("Player").GetComponent<HintsPlaying>().clearHint();
             StartCoroutine(winningStatues());
         }
     }
