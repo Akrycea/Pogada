@@ -322,4 +322,11 @@ public class YarnCommands : MonoBehaviour
         GameObject.Find("Icons").SetActive(false);
         dialRunner.Stop();
     }
+
+    //shows ksiezyc at the d13
+    [YarnCommand("showKsiezyc")]
+    public void showKsiezyc()
+    {
+        GameObject.Find("Ksiê¿ycDrzewo").GetComponent<SpriteRenderer>().enabled = true;
+    }
 }
