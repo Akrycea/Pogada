@@ -94,6 +94,7 @@ title: M5_F_Jab_1_2
 <<voiceline Fiolet 51>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Tak, twoje wygłupy zaszły za daleko. Wszystkie kolory wróciły, tylko nie ty.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DialogiDebata "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
@@ -104,6 +105,7 @@ title: M5_P_Jab_1_1
 <<voiceline Pomarańcz 48>>
 <<ChangeJabIcon DebataDialogi "Lute">>
 [o]Lute[/o]:  Nie możecie tak zostać pokłóceni. Będzie wam to tylko ciążyć.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci2>>
 ===
@@ -113,6 +115,7 @@ title: M5_P_Jab_1_2
 <<voiceline Pomarańcz 49>>
 <<ChangeJabIcon DebataDialogi "Lute">>
 [o]Lute[/o]:  Musicie się przeprosić, przecież jesteśmy rodzeństwem.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci2>>
 ===
@@ -185,6 +188,7 @@ title: M5_F_Jab_2_2
  <<voiceline Fiolet 53>>
  <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Vus gdybyś tylko odpuścił to imię, to nie miałbyś żadnego problemu.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" 3>>
 ===
@@ -194,6 +198,7 @@ title: M5_B_Jab_1_1
 <<voiceline Błękit 27>>
 <<ChangeJabIcon DebataDialogi "Lus">>
 [lb]Lus[/lb]: Łatwo ci mówić [p]Violaceus[/p], kiedy my nazywamy cię tak, jak ty chcesz.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" 3>>
 ===
@@ -203,6 +208,7 @@ title: M5_B_Jab_1_2
 <<voiceline Błękit 28>>
 <<ChangeJabIcon DebataDialogi "Lus">>
 [lb]Lus[/lb]: Naprawdę nie powinieneś się wypowiadać [p]Violaceus[/p]. Wszyscy mówią na ciebie tak, jak lubisz.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" 3>>
 ===
@@ -212,6 +218,7 @@ title: M5_F_Jab_3_1
 <<voiceline Fiolet 54>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Może Vus powinien zrobić dla mnie wyjątek. Ciężko się tak nagle przerzucić, a przecież dla rodziny się robi wyjątki.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" 3>>
 ===
@@ -221,6 +228,7 @@ title: M5_F_Jab_3_2
 <<voiceline Fiolet 55>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: No właśnie, ja nie wybrzydzam, jak niektórzy. Nie zmuszam nikogo do nagłych zmian.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_G_Jab_1_1" "M5_G_Jab_1_2" 3>>
 ===
@@ -230,6 +238,7 @@ title: M5_G_Jab_1_1
 <<voiceline Granat 57>>
 <<ChangeJabIcon DebataDialogi "Liv">>
 [bl]Liv[/bl]: Pomyśl o [y]Aureusie[/y], chociaż przez chwilę, a nie ciągle ty, ty , ty.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci3>>
 ===
@@ -239,6 +248,7 @@ title: M5_G_Jab_1_2
 <<voiceline Granat 58>>
 <<ChangeJabIcon DebataDialogi "Liv">>
 [bl]Liv[/bl]: Jeśli jesteś za głupi, żeby nauczyć się nowego imienia, to raczej z tobą jest problem.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci3>>
 ===
@@ -300,6 +310,7 @@ title: M5_F_Jab_4_1
 <<voiceline Fiolet 56>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czemu nagle ta sytuacja spada na mnie?
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
@@ -309,6 +320,7 @@ title: M5_F_Jab_4_2
 <<voiceline Fiolet 57>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Wspieram cię, po prostu musisz zacząć słuchać!
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
@@ -318,6 +330,7 @@ title: M5_D_Jab_3_1
 <<voiceline Żółć2 22>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Wiesz co? Ja… Ja się super staram z tobą pogodzić, też musisz się postarać!
+<<GoodChoice PointMeter>>
 	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" 3>>
 ===
 
@@ -326,6 +339,7 @@ title: M5_D_Jab_3_2
 <<voiceline Żółć2 23>>
 <<ChangeDebateIcon DebateChildren "Aureus" "angry">>
 [y]Aureus[/y]: Może, skoro tak ci to wszystko przeszkadza, to ty powinieneś stąd sobie pójść!
+<<BadChoice PointMeter>>
 	<<Jab DebataDialogi "M5_F_Jab_5_1" "M5_F_Jab_5_2" 3>>
 ===
 
@@ -334,6 +348,7 @@ title: M5_F_Jab_5_1
 <<voiceline Fiolet 58>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czy naprawdę nikogo tutaj nie obchodzi serduszko mamy?
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci4>>
 ===
@@ -343,6 +358,7 @@ title: M5_F_Jab_5_2
 <<voiceline Fiolet 59>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czy naprawdę wszyscy zamierzają po prostu słuchać jakiegoś śmiertelnika? Halo, jesteśmy bogami!
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci4>>
 ===
@@ -404,6 +420,7 @@ title: M5_F_Jab_6_1
 <<voiceline Fiolet 60>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Czemu nagle wszyscy są przeciwko mnie?
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" 3>>
 ===
@@ -413,6 +430,7 @@ title: M5_F_Jab_6_2
 <<voiceline Fiolet 61>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Przestańcie się jednoczyć przeciwko mnie!
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_C_Jab_1_1" "M5_C_Jab_1_2" 3>>
 ===
@@ -422,6 +440,7 @@ title: M5_C_Jab_1_1
 <<voiceline Czerwony 54>>
 <<ChangeJabIcon DebataDialogi "Robert">>
 [r]Robert[/r]: Sam zawsze mówisz, że rodzina jest najważniejsza. [y]Aureus[/y] jest równie ważny, co ty.
+<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" 3>>
 ===
@@ -434,6 +453,7 @@ title: M5_C_Jab_1_2
 
 <<voiceline Czerwony 56>>
 [r]Robert[/r]: Przestań być wredny dla [y]Aureusa[/y] i udawać, że się na ciebie uwzięliśmy.
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_Z_Jab_1_1" "M5_Z_Jab_1_2" 3>>
 ===
@@ -453,6 +473,7 @@ title: M5_Z_Jab_1_2
 <<voiceline Zielony 83>>
 <<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: [p]Violaceus[/p], przecież mama nigdy nie miałaby nic przeciwko. Znam ją. Nigdy!
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<Jab DebataDialogi "M5_F_Jab_7_1" "M5_F_Jab_7_2" 3>>
 ===
@@ -472,6 +493,7 @@ title: M5_F_Jab_7_2
 <<voiceline Fiolet 63>>
 <<ChangeJabIcon DebataDialogi "Violaceus">>
 [p]Violaceus[/p]: Będziesz tego żałować, nie mogę na to pozwolić. Próbuję cię chronić Vus! 
+<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
 	<<jump M5_PogodzenieDzieci5>>
 ===
