@@ -333,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicPlay: {fileID: 1495693004}
   cutsceneDuration: 11
+  isEndCutscene: 0
   trackName: Cutscene
 --- !u!1 &486162127
 GameObject:
@@ -940,7 +941,7 @@ MonoBehaviour:
   - trackName: Debate
     clip: {fileID: 8300000, guid: aa9e3e129e5a9ee4294adf3f88116fc0, type: 3}
   - trackName: End
-    clip: {fileID: 8300000, guid: 0f2374e8c1809844e9efac52bfc43010, type: 3}
+    clip: {fileID: 8300000, guid: 8356dd6a79caf3b42a97a32fc3c4f3d1, type: 3}
 --- !u!114 &1486932570
 MonoBehaviour:
   m_ObjectHideFlags: 0
