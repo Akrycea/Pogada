@@ -22,6 +22,8 @@ public class PotionMinigame : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] AudioClip[] audioClips;
 
+    [SerializeField] private InteractionAnimation interactionAnimationAureus;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         playersItems[currentObject] = collision.gameObject;
@@ -37,6 +39,7 @@ public class PotionMinigame : MonoBehaviour
                 debataPlayer.wygranaMinigierka = true;
                 dialogueRunner.StartDialogue("P8_Potka_fin");
                 //debataPlayer.SentenceBuildingStart();
+                interactionAnimationAureus.wantsToTalk = true;
             }
             else
             {
