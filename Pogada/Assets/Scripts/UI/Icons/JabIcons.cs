@@ -26,11 +26,14 @@ public class JabIcons : MonoBehaviour
     [SerializeField]
     private Sprite Violaceus;
 
+    public string characterName;
+
     [YarnCommand("ChangeJabIcon")]
     public void ChangeJabIcon(string characterName)
     {
         Sprite characterIcon = null;
         jabIcon.SetActive(true);
+        Debug.Log(characterName);
         switch (characterName)
         {
             case "Robert":
@@ -60,6 +63,8 @@ public class JabIcons : MonoBehaviour
         {
             spriteRenderer.sprite = characterIcon;
         }
+
+        Debug.Log(characterName);
     }
 
 
