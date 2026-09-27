@@ -28434,6 +28434,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 774245515}
   - {fileID: 332517450}
   - {fileID: 1017679551}
   - {fileID: 68235488}
@@ -65999,7 +66000,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1369826519}
-  - {fileID: 774245515}
   - {fileID: 352425869}
   - {fileID: 844744081}
   - {fileID: 1231796018}
@@ -70489,17 +70489,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774245511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -7251.4287}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1945876578}
-  m_Father: {fileID: 715005190}
+  m_Father: {fileID: 323959911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 9075.788, y: 546.9597}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &774318821
@@ -154203,8 +154203,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.2798638, y: -1.1437405}
-      - {x: 0.46510556, y: -0.69916034}
+    - - {x: 0.46510556, y: -0.69916034}
       - {x: 0.48692375, y: -0.6463778}
       - {x: 0.61836493, y: -0.41850764}
       - {x: 0.7041365, y: -0.038887866}
@@ -154218,11 +154217,7 @@ PolygonCollider2D:
       - {x: -0.41390008, y: 0.46913192}
       - {x: -0.4773404, y: -0.16474943}
       - {x: -0.5351998, y: -0.51391864}
-      - {x: -0.57224816, y: -1.1437405}
-      - {x: -0.5351998, y: -1.2178372}
-      - {x: -0.2017647, y: -1.2178372}
-      - {x: -0.12766801, y: -1.1807889}
-      - {x: 0.13167043, y: -1.1807889}
+      - {x: -0.0713498, y: -0.6428431}
   m_UseDelaunayMesh: 0
 --- !u!114 &1691068078
 MonoBehaviour:
@@ -163270,8 +163265,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.3796296
-    width: 0.7369792
+    y: 0
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -163302,7 +163297,7 @@ Transform:
   m_GameObject: {fileID: 1810761312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112.112144, y: -1.054542, z: 3.9805708}
+  m_LocalPosition: {x: -114.4513, y: -1.054542, z: 3.9805708}
   m_LocalScale: {x: 0.84758806, y: 2.1923003, z: 3.1147838}
   m_ConstrainProportionsScale: 0
   m_Children:
