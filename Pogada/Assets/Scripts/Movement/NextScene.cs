@@ -9,7 +9,10 @@ public class NextScene : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(changeScene());
+        if (collision.name == "Player")
+        {
+            StartCoroutine(changeScene());
+        }
     }
 
     IEnumerator changeScene()
