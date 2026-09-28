@@ -11,7 +11,7 @@ public class OwlWin : MonoBehaviour
 
     [SerializeField] private Transform player;
     [SerializeField] private Transform teleport;
-    [SerializeField] private EditCamera editCamera;
+    [SerializeField] private EditCameraSimple editCameraSimple;
 
     [SerializeField] private GameObject blackoutCanvas;
     [SerializeField] private Animator anim;
