@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TouchTeleport : MonoBehaviour
 {
-    [SerializeField] private EditCamera editCameraScript;
+    [SerializeField] private EditCameraSimple editCameraScript;
     [SerializeField] private Transform player;
     [SerializeField] private Transform teleport;
 

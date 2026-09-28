@@ -2,6 +2,7 @@ using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
+using System.Collections;
 
 public class BookBehavior : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class BookBehavior : MonoBehaviour
     [SerializeField] private Collider2D CheckCollider;
     [SerializeField] private bool wereCollidersOn;
 
+    [SerializeField] private Animator animator;
+
     void Start()
     {
         totalPages = playerPages.Length;
@@ -48,7 +51,7 @@ public class BookBehavior : MonoBehaviour
             RightPage();
         }
     }
-    
+
 
     [YarnCommand("OpenBook")]
     public void OpenBook()
@@ -78,6 +81,8 @@ public class BookBehavior : MonoBehaviour
         UI.SetActive(false);
 
         playerMovement.canPlayerMove = false;
+
+        animator.enabled = false;
     }
 
     public void CloseBook()
@@ -98,7 +103,7 @@ public class BookBehavior : MonoBehaviour
         {
             turnOffCollider.EnableAllColliders();
         }
-  
+
         playerMovement.canPlayerMove = true;
     }
 
@@ -152,5 +157,15 @@ public class BookBehavior : MonoBehaviour
         playerPages[currentPageIndex].SetActive(false);
         currentPageIndex = index - 1;
         playerPages[currentPageIndex].SetActive(true);
+
+        StartCoroutine(PlayAnimation());
+    }
+    IEnumerator PlayAnimation()
+    {
+        animator.enabled = true;
+        yield return new WaitForSeconds(10f);
+        animator.enabled = false;
     }
 }
+
+
