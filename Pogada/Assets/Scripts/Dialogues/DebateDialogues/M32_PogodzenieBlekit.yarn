@@ -191,6 +191,7 @@ title: M32_PogodzenieBlekit3_2
 <<ChangeDebateIcon DebateChildren "Lus" "angrytalk">>
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 [lb]Lus[/lb]: Cała [o]Lute[/o]. Wykorzysta innych, żeby zmusić mnie do wybaczenia. Sama ma to gdzieś.
+	<<ChangeJabIcon DebateJab "Lute">>
 	<<Jab DebataDialogi "M32_P_Jab_1_1" "M32_P_Jab_1_2" 2>>
 ===
 
@@ -198,7 +199,6 @@ title: M32_P_Jab_1_1
 ---
 <<voicelineEnd Błękit>>
 <<voiceline Pomarańcz 41>>
-<<ChangeJabIcon DebateJab "Lute">>
 [o]Lute[/o]: Po prostu lepiej jak zajmuje się tym ktoś, kto wie co robi.
 	<<GoodChoice PointMeter>>
 	<<HideJabIcon DebateJab>>
@@ -208,7 +208,6 @@ title: M32_P_Jab_1_1
 title: M32_P_Jab_1_2
 ---
 <<voiceline Pomarańcz 42>>
-<<ChangeJabIcon DebateJab "Lute">>
 [o]Lute[/o]: Wiedziałam, że będzie niezadowolona. Przy mamie musiałaby się pogodzić.
 	<<BadChoice PointMeter>>
 	<<HideJabIcon DebateJab>>

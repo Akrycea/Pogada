@@ -84,6 +84,7 @@ title: M3_PogodzenieGranat_1
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 <<voiceline Granat 39>>
 [bl]Liv[/bl]: No i? Pobrudzenie Perełki to i tak jego wina.
+	<<ChangeJabIcon DebataDialogi "Robert">>
 	<<Jab DebataDialogi "M3_C_Jab_1_1" "M3_C_Jab_1_2" 1>>
 ===
 
@@ -96,6 +97,7 @@ title: M3_PogodzenieGranat_2
 
 <<voiceline Granat 41>>
 [bl]Liv[/bl]: [r]Robert[/r] okłamał mnie i wziął go, żeby go specjalnie pobrudzić.
+	<<ChangeJabIcon DebataDialogi "Robert">>
 	<<Jab DebataDialogi  "M3_C_Jab_1_1" "M3_C_Jab_1_2" 1>>
 ===
 
@@ -105,7 +107,6 @@ title:M3_C_Jab_1_1
 <<ChangeIcon Icons "Robert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 <<voiceline Czerwony 42>>
-<<ChangeJabIcon DebataDialogi "Robert">>
 [r]Robert[/r]: No przepraszam bardzo za ubrudzenie Perełki. Jeszcze czegoś?
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
@@ -225,6 +226,7 @@ title: M3_PogodzenieGranat3_1
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 45>>
 [bl]Liv[/bl]: On tylko rzuca formułkami.  I do tego się strasznie zezłościł, pewnie dlatego, że kłamał.
+	<<ChangeIcon Icons "Robert" "sad">>
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" 1>>
 ===
 
@@ -234,13 +236,13 @@ title: M3_PogodzenieGranat3_2
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 46>>
 [bl]Liv[/bl]: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
+	<<ChangeIcon Icons "Robert" "sad">>
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" 1>>
 ===
 
 title:M3_C_Jab_2_1
 ---
 <<IconsOn Dialogi>>
-<<ChangeIcon Icons "Robert" "sad">>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 <<voiceline Czerwony 45>>
 <<ChangeJabIcon DebataDialogi "Robert">>
@@ -265,6 +267,7 @@ title:M3_C_Jab_2_2
 	<<BadChoice PointMeter>>
 	<<HideIcon Icons>>
 	<<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Viri">>
 	<<Jab DebataDialogi "M3_Z_Jab_1_1" "M3_Z_Jab_1_2" 1>>
 ===
 
@@ -273,7 +276,6 @@ title:M3_Z_Jab_1_1
 <<IconsOn Dialogi>>
 <<ChangeIcon Icons "Viri" "angry">>
 <<voiceline Zielony 78>>
-<<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: Skoro przeprosił, to się liczy! Musisz mu uwierzyć, spójrz na niego.
 	<<GoodChoice PointMeter>>
 	<<HideIcon Icons>>
