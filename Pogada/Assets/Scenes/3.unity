@@ -52973,6 +52973,7 @@ GameObject:
   - component: {fileID: 579194681}
   - component: {fileID: 579194680}
   - component: {fileID: 579194683}
+  - component: {fileID: 579194684}
   m_Layer: 5
   m_Name: JournalButton
   m_TagString: Untagged
@@ -53116,6 +53117,28 @@ MonoBehaviour:
   - {fileID: 1623386022, guid: 8006c926fc2bb70498bce3a0fc9e9971, type: 3}
   - {fileID: 1623386022, guid: 8006c926fc2bb70498bce3a0fc9e9971, type: 3}
   spriteRenderer: {fileID: 579194681}
+--- !u!95 &579194684
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579194678}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99ab27031bd881c439cfbc96c6815625, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &579733055
 GameObject:
   m_ObjectHideFlags: 0
@@ -66095,6 +66118,7 @@ MonoBehaviour:
   wasUIon: 0
   CheckCollider: {fileID: 1423638212}
   wereCollidersOn: 0
+  animator: {fileID: 0}
 --- !u!114 &715005192
 MonoBehaviour:
   m_ObjectHideFlags: 0
