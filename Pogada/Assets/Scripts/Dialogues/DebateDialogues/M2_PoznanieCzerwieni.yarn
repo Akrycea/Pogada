@@ -131,6 +131,7 @@ title: M2_PoznanieCzerwieni2_1
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
 [r]Robert[/r]: Nie będę rozmawiać z kimś, kto mi nie wierzy! Nie będę!
+	<<ChangeJabIcon DebataDialogi "Viri>>
 	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" 0>>
 ===
 
@@ -139,6 +140,7 @@ title: M2_PoznanieCzerwieni2_2
 <<voiceline Czerwony 24>>
 <<ChangeDebateIcon DebateChildren "Robert" "angry">>
 <<ChangeDebatePlayerIcon DebatePlayer "distress">>
+<<ChangeJabIcon DebataDialogi "Viri">>
 [r]Robert[/r]: Mówiłem wam obu jak było i nikt nie słucha! Nikt mnie tutaj nie słucha!
 	<<Jab DebataDialogi "M2_Z_Jab_1_1" "M2_Z_Jab_1_2" 0>>
 ===
@@ -147,7 +149,7 @@ title: M2_Z_Jab_1_1
 ---
 <<voicelineEnd Czerwony>>
 <<voiceline Zielony 68>>
-<<ChangeJabIcon DebataDialogi "Viri">>
+
 [g]Viri[/g]: Nie musisz się denerwować, przecież wiemy, że nie kłamiesz.
 	<<GoodChoice PointMeter>>
 	<<HideJabIcon DebataDialogi>>
@@ -158,7 +160,6 @@ title: M2_Z_Jab_1_2
 ---
 <<voicelineEnd Czerwony>>
 <<voiceline Zielony 67>>
-<<ChangeJabIcon DebataDialogi "Viri">>
 [g]Viri[/g]: Przestań krzyczeć!
 	<<BadChoice PointMeter>>
 	<<HideJabIcon DebataDialogi>>
