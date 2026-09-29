@@ -88,17 +88,21 @@ public class DebataPlayer : MonoBehaviour
         }
         else if (wygranaMinigierka && playedDebates == 1 && !debateWon)
         {
+            turnOffCollider.DisableAllExceptSpecificTag();
             budowanieZdan2.SetActive(true);
             UI2.SetActive(true);
             playedDebates++;
             genUI.SetActive(false);
+            playerMovement.canPlayerMove = false;
         }
         else if (wygranaMinigierka && playedDebates >= 2 && !debateWon)
         {
+            turnOffCollider.DisableAllExceptSpecificTag();
             budowanieZdan3.SetActive(true);
             UI3.SetActive(true);
             playedDebates++;
             genUI.SetActive(false);
+            playerMovement.canPlayerMove = false;
         }
     }
 

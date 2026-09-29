@@ -10,7 +10,7 @@ public class JabbingInBG : MonoBehaviour
     public void JabbingInZone()
     {
         var pos = SafeZoneUI.localPosition;
-        SafeZoneUI.localPosition = new Vector3(Random.Range(-659, 43), pos.y, pos.z);
+        SafeZoneUI.localPosition = new Vector3(Random.Range(-308, 394), pos.y, pos.z);
 
         SafeZoneUI.sizeDelta = new Vector2(Random.Range(75, 500), 100);
     }
