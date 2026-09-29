@@ -10,6 +10,8 @@ public class TouchTeleport : MonoBehaviour
     [SerializeField] private GameObject blackoutCanvas;
     [SerializeField] private Animator anim;
 
+    [SerializeField] private YarnCommands dialogi;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collision detected with: " + collision.gameObject.name);
@@ -22,6 +24,7 @@ public class TouchTeleport : MonoBehaviour
     }
     IEnumerator changeScene()
     {
+        dialogi.blockPlayerMovement();
         blackoutCanvas.SetActive(true);
         anim.Play("BlackoutIn");
         yield return new WaitForSeconds(1);
@@ -36,6 +39,7 @@ public class TouchTeleport : MonoBehaviour
         yield return new WaitForSeconds(1);
         blackoutCanvas.SetActive(false);
 
+        dialogi.unblockPlayerMovement();
         GameObject.Find("kryjowka").GetComponent<EditCamera>().enabled = true;
     }
 }

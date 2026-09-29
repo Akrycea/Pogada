@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro.Examples;
 using UnityEngine;
+using Yarn;
 
 public class OwlWin : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class OwlWin : MonoBehaviour
 
     public StateManager stateManager;
 
+    [SerializeField] private YarnCommands dialogi;
+
     private void OnMouseDown()
     {
         Debug.Log("OwlWin Click");
@@ -33,6 +36,7 @@ public class OwlWin : MonoBehaviour
     {
         OwlOnUI.SetActive(false);
         colliders.SetActive(false);
+        dialogi.blockPlayerMovement();
 
         blackoutCanvas.SetActive(true);
         anim.Play("BlackoutIn");
@@ -47,6 +51,8 @@ public class OwlWin : MonoBehaviour
         anim.Play("BlackoutOut");
         yield return new WaitForSeconds(1);
         blackoutCanvas.SetActive(false);
+
+        dialogi.unblockPlayerMovement();
 
         //OwlObject.SetActive(true);
     }
