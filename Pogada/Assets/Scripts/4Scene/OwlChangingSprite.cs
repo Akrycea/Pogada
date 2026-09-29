@@ -13,6 +13,8 @@ public class OwlChangingSprite : MonoBehaviour
     [SerializeField] private GameObject audioSource2;
     [SerializeField] private GameObject audioSource3;
 
+    public bool PlayOwlSound = true;
+
     private bool play1;
     public void TurnUIon()
     {
@@ -52,7 +54,7 @@ public class OwlChangingSprite : MonoBehaviour
 
     private void Update()
     {
-        if(spriteRenderer.sprite == spriteArray[0] && play1 == true)
+        if(spriteRenderer.sprite == spriteArray[0] && play1 == true && PlayOwlSound)
         {
             audioSource1.SetActive(true);
             audioSource2.SetActive(false);
@@ -62,7 +64,7 @@ public class OwlChangingSprite : MonoBehaviour
             }
             audioSource3.SetActive(false);
         }
-        else if (spriteRenderer.sprite == spriteArray[1])
+        else if (spriteRenderer.sprite == spriteArray[1] && PlayOwlSound)
         {
             audioSource1.SetActive(false);
             audioSource2.SetActive(true);
@@ -72,7 +74,7 @@ public class OwlChangingSprite : MonoBehaviour
             }
             audioSource3.SetActive(false);
         }
-        else if (spriteRenderer.sprite == spriteArray[2])
+        else if (spriteRenderer.sprite == spriteArray[2] && PlayOwlSound)
         {
             audioSource1.SetActive(false);
             audioSource2.SetActive(false);
@@ -81,6 +83,12 @@ public class OwlChangingSprite : MonoBehaviour
                 audioSource3.GetComponent<AudioSource>().Play();
             }
             audioSource3.SetActive(true);
+        }
+        else if (!PlayOwlSound)
+        {
+            audioSource1.SetActive(false);
+            audioSource2.SetActive(false);
+            audioSource3.SetActive(false);
         }
     }
 

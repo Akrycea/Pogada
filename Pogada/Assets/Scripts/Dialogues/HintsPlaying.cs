@@ -94,6 +94,7 @@ public class HintsPlaying : MonoBehaviour
     public void startHint(string hint)
     {
         anim.enabled = true;
+        anim.wantsToTalk = false;
         gameObject.GetComponent<HintsPlaying>().nextHint = hint;
         readyToSayHint = false;
         countingDown = true;

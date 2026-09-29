@@ -18,14 +18,10 @@ public class OwlWin : MonoBehaviour
 
     public StateManager stateManager;
 
-    //[SerializeField] private GameObject OwlObject;
-
     private void OnMouseDown()
     {
         Debug.Log("OwlWin Click");
-        //tutaj przenies do nastepnej sceny
-        //player.position = teleport.position;
-        //editCamera.ChangeCamera();
+        GameObject.Find("Player").GetComponent<OwlChangingSprite>().PlayOwlSound = false;
 
         if (stateManager.LuteDebateWon)
         {

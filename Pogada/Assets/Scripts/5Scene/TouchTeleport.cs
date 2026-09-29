@@ -35,5 +35,7 @@ public class TouchTeleport : MonoBehaviour
         anim.Play("BlackoutOut");
         yield return new WaitForSeconds(1);
         blackoutCanvas.SetActive(false);
+
+        GameObject.Find("kryjowka").GetComponent<EditCamera>().enabled = true;
     }
 }
