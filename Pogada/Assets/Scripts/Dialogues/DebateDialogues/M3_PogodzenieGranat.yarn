@@ -236,7 +236,7 @@ title: M3_PogodzenieGranat3_2
 <<ChangeDebatePlayerIcon DebatePlayer "understand">>
 <<voiceline Granat 46>>
 [bl]Liv[/bl]: Nie wierzę nikomu, kto się tak wścieka i gada jak encyklopedia.
-	<<ChangeIcon Icons "Robert" "sad">>
+	<<ChangeJabIcon DebataDialogi "Robert">>
 	<<Jab DebataDialogi "M3_C_Jab_2_1" "M3_C_Jab_2_2" 1>>
 ===
 
@@ -245,7 +245,7 @@ title:M3_C_Jab_2_1
 <<IconsOn Dialogi>>
 <<ChangeDebateIcon DebateChildren "Liv" "sad">>
 <<voiceline Czerwony 45>>
-<<ChangeJabIcon DebataDialogi "Robert">>
+
 [r]Robert[/r]: To przepraszam! 
 
 <<voiceline Czerwony 46>>
