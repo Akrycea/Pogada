@@ -64,7 +64,8 @@ title: M5_PogodzenieDzieci1_1
 ---
 <<voiceline Żółć2 16>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
-[y]Aureus[/y]: To przez moją kłótnię nie ma żółtego, prawda?
+[y]Aureus[/y]: To przez moją kłótnię nie ma żółtego, prawda?\
+	<<ChangeJabIcon DebataDialogi "Violaceus">>
 	<<Jab DebataDialogi "M5_F_Jab_1_1" "M5_F_Jab_1_2" 3>>
 	
 ===
@@ -85,6 +86,7 @@ title: M5_F_Jab_1_1
 [p]Violaceus[/p]: Tak, musimy się pogodzić, żeby świat się naprawił.
 <<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Lute">>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
 	<<Jab DebataDialogi "M5_P_Jab_1_1" "M5_P_Jab_1_2" 3>>
 ===
@@ -181,6 +183,7 @@ title: M5_F_Jab_2_1
 [p]Violaceus[/p]: [y]Vus[/y] już nie przesadzaj, przecież jesteś sobą.
 //<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Lus">>
 	<<Jab DebataDialogi "M5_B_Jab_1_1" "M5_B_Jab_1_2" 3>>
 ===
 
@@ -202,6 +205,7 @@ title: M5_B_Jab_1_1
 [lb]Lus[/lb]: Łatwo ci mówić [p]Violaceus[/p], kiedy my nazywamy cię tak, jak ty chcesz.
 //<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Violaceus">>
 	<<Jab DebataDialogi "M5_F_Jab_3_1" "M5_F_Jab_3_2" 3>>
 ===
 
@@ -315,6 +319,7 @@ title: M5_F_Jab_4_1
 [p]Violaceus[/p]: Czemu nagle ta sytuacja spada na mnie?
 //<<GoodChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Aureus">>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
 
@@ -325,6 +330,7 @@ title: M5_F_Jab_4_2
 [p]Violaceus[/p]: Wspieram cię, po prostu musisz zacząć słuchać!
 //<<BadChoice PointMeter>>
 <<HideJabIcon DebataDialogi>>
+	<<ChangeJabIcon DebataDialogi "Aureus">>
 	<<Jab DebataDialogi "M5_D_Jab_3_1" "M5_D_Jab_3_2" 3>>
 ===
 
@@ -407,6 +413,7 @@ title: M5_PogodzenieDzieci4_1
 <<voiceline Żółć2 24>>
 <<ChangeDebateIcon DebateChildren "Aureus" "sad">>
 [y]Aureus[/y]: Właśnie! Pomyśl o nas, nie o innych. O mnie.
+	<<ChangeJabIcon DebataDialogi "Violaceus">>
 	<<Jab DebataDialogi "M5_F_Jab_6_1" "M5_F_Jab_6_2" 3>>
 	
 ===
