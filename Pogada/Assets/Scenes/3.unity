@@ -18990,6 +18990,8 @@ GameObject:
   - component: {fileID: 225515182}
   - component: {fileID: 225515185}
   - component: {fileID: 225515184}
+  - component: {fileID: 225515187}
+  - component: {fileID: 225515186}
   m_Layer: 0
   m_Name: wodospad
   m_TagString: ZGnotpassable
@@ -19041,7 +19043,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   spriteArray:
   - {fileID: -6985584474321384189, guid: a45d20524550ad443be1209b0decc2b1, type: 3}
-  - {fileID: 1322395126236173682, guid: fe87d2d37fab1a94b8f879624ba474cf, type: 3}
+  - {fileID: 7676078067478248792, guid: 44e97fb9a6b6efd4aa1a399f485b37de, type: 3}
 --- !u!50 &225515179
 Rigidbody2D:
   serializedVersion: 5
@@ -19107,7 +19109,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3521752, y: 3.25}
+    oldSize: {x: 2.351395, y: 3.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19169,7 +19171,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 1322395126236173682, guid: fe87d2d37fab1a94b8f879624ba474cf, type: 3}
+  m_Sprite: {fileID: 7676078067478248792, guid: 44e97fb9a6b6efd4aa1a399f485b37de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19324,6 +19326,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &225515186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225515175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca20be210c3f904ca725e264a4a2972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &225515187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225515175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 905840117}
+  sprites:
+  - {fileID: 400142612779926154, guid: a04f7e822f57afb4b8f822589680d55b, type: 3}
+  - {fileID: 400142612779926154, guid: a04f7e822f57afb4b8f822589680d55b, type: 3}
+  - {fileID: 400142612779926154, guid: a04f7e822f57afb4b8f822589680d55b, type: 3}
+  - {fileID: 400142612779926154, guid: a04f7e822f57afb4b8f822589680d55b, type: 3}
+  - {fileID: 400142612779926154, guid: a04f7e822f57afb4b8f822589680d55b, type: 3}
+  - {fileID: 7676078067478248792, guid: 44e97fb9a6b6efd4aa1a399f485b37de, type: 3}
+  - {fileID: 7676078067478248792, guid: 44e97fb9a6b6efd4aa1a399f485b37de, type: 3}
+  - {fileID: 7676078067478248792, guid: 44e97fb9a6b6efd4aa1a399f485b37de, type: 3}
 --- !u!1 &227044945
 GameObject:
   m_ObjectHideFlags: 0
@@ -70513,7 +70549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &774245512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80800,6 +80836,7 @@ GameObject:
   - component: {fileID: 882699026}
   - component: {fileID: 882699032}
   - component: {fileID: 882699031}
+  - component: {fileID: 882699036}
   - component: {fileID: 882699033}
   - component: {fileID: 882699035}
   - component: {fileID: 882699034}
@@ -81160,6 +81197,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72cb8c27b1703d74bbc6d0044eed3ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &882699036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882699024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3faf3aed51377b540a48257cd4921953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &882703792
@@ -126843,7 +126892,7 @@ MonoBehaviour:
   - {fileID: 937484270}
   - {fileID: 1696720006}
   dialogueRunner: {fileID: 1748553146}
-  nazwaDialoguGOOD: M12_3_C
+  nazwaDialoguGOOD: M2_3_C
   nazwaDialoguMID: M2_3_C_Mid
   nazwaDialoguBAD: M2_3_C_Bad
   firstObject: 0
@@ -130882,6 +130931,7 @@ GameObject:
   - component: {fileID: 1402817448}
   - component: {fileID: 1402817450}
   - component: {fileID: 1402817449}
+  - component: {fileID: 1402817451}
   m_Layer: 0
   m_Name: patyki2
   m_TagString: ZGnotpassable
@@ -131172,6 +131222,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1402817451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402817442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 905840117}
+  sprites:
+  - {fileID: -8572084234936777465, guid: fec0b0f903d02744890c0dcd133aa670, type: 3}
+  - {fileID: -8572084234936777465, guid: fec0b0f903d02744890c0dcd133aa670, type: 3}
+  - {fileID: 3659414616361349518, guid: 9e0d001fbe72d5f45ba333d7f36e4245, type: 3}
+  - {fileID: 3659414616361349518, guid: 9e0d001fbe72d5f45ba333d7f36e4245, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
 --- !u!1 &1403303173
 GameObject:
   m_ObjectHideFlags: 0
@@ -154277,6 +154349,7 @@ MonoBehaviour:
   teleport: {fileID: 965293440}
   blackoutCanvas: {fileID: 1936845717}
   anim: {fileID: 1957381054}
+  dialogi: {fileID: 1511099221}
 --- !u!1 &1676563137
 GameObject:
   m_ObjectHideFlags: 0
@@ -165542,6 +165615,7 @@ GameObject:
   - component: {fileID: 1826449907}
   - component: {fileID: 1826449909}
   - component: {fileID: 1826449908}
+  - component: {fileID: 1826449910}
   m_Layer: 0
   m_Name: patyki1
   m_TagString: ZGnotpassable
@@ -165832,6 +165906,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1826449910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826449901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e95a2b27840be40adb83f257da0808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateManager: {fileID: 905840117}
+  sprites:
+  - {fileID: -8572084234936777465, guid: fec0b0f903d02744890c0dcd133aa670, type: 3}
+  - {fileID: -8572084234936777465, guid: fec0b0f903d02744890c0dcd133aa670, type: 3}
+  - {fileID: 3659414616361349518, guid: 9e0d001fbe72d5f45ba333d7f36e4245, type: 3}
+  - {fileID: 3659414616361349518, guid: 9e0d001fbe72d5f45ba333d7f36e4245, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
+  - {fileID: -6953654735863652412, guid: 765bd54b59573f04e9499e9e947ab280, type: 3}
 --- !u!1 &1826596320
 GameObject:
   m_ObjectHideFlags: 0
@@ -178497,6 +178593,7 @@ MonoBehaviour:
   blackoutCanvas: {fileID: 1936845717}
   anim: {fileID: 1957381054}
   stateManager: {fileID: 905840117}
+  dialogi: {fileID: 1511099221}
   nextCamera: {fileID: 505790734}
 --- !u!212 &1964556284
 SpriteRenderer:
