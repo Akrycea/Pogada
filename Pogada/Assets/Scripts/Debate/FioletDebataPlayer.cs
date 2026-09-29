@@ -13,13 +13,15 @@ public class FioletDebataPlayer : MonoBehaviour
     [SerializeField] private BookBehavior bookBehavior;
     [SerializeField] private GameObject GeneralUI;
 
+    [SerializeField] 
+
     public void fioletSentenceBuilding()
     {
         debateManager.StartDebate();
         StartCoroutine(WaitForPogadanka());
         turnOffCollider.DisableAllExceptSpecificTag();
 
-
+        playerMovement.canPlayerMove = false;
     }
 
     private IEnumerator WaitForPogadanka()
@@ -30,9 +32,8 @@ public class FioletDebataPlayer : MonoBehaviour
         budowanieZdan1.SetActive(true);
         UI.SetActive(true);
         Debug.Log("blocking player movement");
-        playerMovement.canPlayerMove = false;
+        
         GeneralUI.SetActive(false);
-
         bookBehavior.OpenBook();
     }
 }

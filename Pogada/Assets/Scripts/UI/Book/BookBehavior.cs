@@ -80,8 +80,6 @@ public class BookBehavior : MonoBehaviour
         turnOffCollider.DisableAllExceptSpecificTag();
         UI.SetActive(false);
 
-        playerMovement.canPlayerMove = false;
-
         animator.enabled = false;
     }
 
@@ -103,8 +101,6 @@ public class BookBehavior : MonoBehaviour
         {
             turnOffCollider.EnableAllColliders();
         }
-
-        playerMovement.canPlayerMove = true;
     }
 
 
