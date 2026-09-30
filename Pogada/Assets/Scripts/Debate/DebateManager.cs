@@ -92,7 +92,7 @@ public class DebateManager : MonoBehaviour
             debateDial.StartDialogue("M4_PrzekonanieFiolet");
             DecorationsScript.ShowDecorations(6);
         }
-        else if (debateScript.debateNumber == 7)
+        else if (debateScript.debateNumber >= 7)
         {
             debateDial.StartDialogue("M5_PogodzenieDzieci");
             DecorationsScript.ShowDecorations(7);

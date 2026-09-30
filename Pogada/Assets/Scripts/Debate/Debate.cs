@@ -106,7 +106,7 @@ public class Debate : MonoBehaviour
                 DziecipodDrzewem.SetActive(true);
 
             }
-            else if (debateNumber == 8)
+            else if (debateNumber >= 8)
             {
                 stateManager.AureusDebateWon = true;
                 dialogueRunner.StartDialogue("M5_DebataZolcPoDebata");
