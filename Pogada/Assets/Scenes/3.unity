@@ -111042,7 +111042,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b4f1d28d0a31744799578af937d2f1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -111072,6 +111072,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bc83bd9c24850514397406651c2fdde6, type: 3}
   blueprintsUI: {fileID: 68235487}
   done: 0
+  blueprintsSpot: {fileID: 115904778}
 --- !u!61 &1180005338
 BoxCollider2D:
   m_ObjectHideFlags: 0
