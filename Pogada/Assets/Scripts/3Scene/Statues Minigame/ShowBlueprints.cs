@@ -14,6 +14,8 @@ public class ShowBlueprints : MonoBehaviour
 
     private HintsPlaying hints;
 
+    [SerializeField] private GameObject blueprintsSpot;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,6 +27,7 @@ public class ShowBlueprints : MonoBehaviour
         if (blueprintsUI.activeInHierarchy == true)
         {
             blueprintsUI.SetActive(false);
+            blueprintsSpot.SetActive(false);
             spriteRenderer.sprite = spriteArray[1];
             done = true;
             hints.startHint("P3_Statua");
