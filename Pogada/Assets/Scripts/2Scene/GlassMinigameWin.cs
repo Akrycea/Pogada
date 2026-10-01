@@ -27,6 +27,7 @@ public class GlassMinigameWin : MonoBehaviour
             dialogueRunner.StartDialogue("P7_DrzwiFiolet_fin");
 
             Violaceus.SetActive(true);
+            Violaceus.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
